@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08101c">
+<meta name="description" content="CONVERGENCE: an original elemental story and a source-backed, append-only observation atlas.">
+<title>CONVERGENCE // THE LAST WITNESS</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="mast">
+  <a class="brand" href="#arena"><span class="sigil" aria-hidden="true">◈</span><span><b>CONVERGENCE</b><small>THE LAST WITNESS · ROOT0</small></span></a>
+  <nav class="nav" aria-label="Primary">
+    <button class="nav-item active" data-tab="arena" aria-pressed="true">01 / ARENA</button>
+    <button class="nav-item" data-tab="atlas" aria-pressed="false">02 / ATLAS</button>
+    <button class="nav-item" data-tab="lineage" aria-pressed="false">03 / LINEAGE</button>
+  </nav>
+  <a class="git-link" href="https://github.com/DavidWise01/convergence" target="_blank" rel="noopener noreferrer">SOURCE ↗</a>
+</header>
+<main>
+<section class="pane active" id="arena" aria-label="Elemental finale">
+  <div class="arena-shell">
+    <div class="arena-top"><span class="eyebrow">CHAPTER I · THE FINAL CONVERGENCE</span><span class="live-marker"><i></i> CANVAS2D · ORIGINAL STORY</span></div>
+    <div class="arena-wrap">
+      <canvas id="stage" width="1280" height="720" aria-label="Animated original elemental duel between a luminous guardian and a volcanic sovereign">Your browser needs Canvas2D to display the arena.</canvas>
+      <div class="stage-fade"></div>
+      <div class="hud left-hud"><span class="hud-label">THE WITNESS</span><div class="meter"><div class="fill cool" id="witness-meter"></div></div><small>CLARITY / 100</small></div>
+      <div class="hud right-hud"><span class="hud-label">THE INFERNO</span><div class="meter"><div class="fill warm" id="inferno-meter"></div></div><small>INTENSITY / 100</small></div>
+      <div class="scene-title"><span id="scene-number">I / IV</span><strong id="scene-name">THE TWO HORIZONS</strong></div>
+      <div class="dialogue"><div class="speaker" id="speaker">NARRATOR</div><p id="dialogue-line" aria-live="polite">At the last edge of the archive, two powers meet. One burns for an answer; one refuses to invent one.</p></div>
+      <div class="stage-controls">
+        <button id="previous" aria-label="Previous chapter">◂</button>
+        <button id="play" aria-label="Pause animation">Ⅱ</button>
+        <button id="next" aria-label="Next chapter">▸</button>
+        <button id="sound" aria-label="Enable ambient sound" aria-pressed="false">♪ OFF</button>
+      </div>
+      <div class="chapter-dots" id="chapter-dots" aria-label="Chapters">
+        <button class="selected" data-scene="0" aria-label="Chapter 1"></button>
+        <button data-scene="1" aria-label="Chapter 2"></button>
+        <button data-scene="2" aria-label="Chapter 3"></button>
+        <button data-scene="3" aria-label="Chapter 4"></button>
+      </div>
+    </div>
+    <div class="arena-bottom"><div><b>FOUR ACTS · ONE OBSERVATION</b><span>Inspired by epic elemental finales; all characters, choreography, visuals and dialogue here are original.</span></div><button id="enter-atlas" class="solid">ENTER THE EVIDENCE ATLAS ↗</button></div>
+  </div>
+  <div class="story-ribbon"><span class="ribbon-kicker">THE RULE OF THE WORLD</span><p>The victory is not to silence the fire. It is to see it clearly without becoming it.</p><span class="ribbon-code">OBSERVE · COMPARE · CITE · PRESERVE</span></div>
+</section>
+<section class="pane" id="atlas" aria-label="Convergence atlas" hidden>
+  <div class="section-intro"><div><div class="eyebrow">FIELD OBSERVATIONS / THE NETWORK</div><h1>THE CONVERGENCE ATLAS</h1><p>Read-only observations from the existing convergence scout. A match is an invitation to examine sources, never a claim of copying, coordination, or causation.</p></div><div class="intro-ornament" aria-hidden="true">◉</div></div>
+  <div class="atlas-summary">
+    <div class="stat"><small>OBSERVATIONS LOADED</small><strong id="stat-total">—</strong><span>Real crawler records only</span></div>
+    <div class="stat"><small>UNIQUE HOSTS</small><strong id="stat-hosts">—</strong><span>Not independent witnesses by default</span></div>
+    <div class="stat"><small>ANCESTRY</small><strong>UNKNOWN</strong><span>Until source-root tracing</span></div>
+  </div>
+  <div class="atlas-tools"><label for="search">SEARCH OBSERVATIONS</label><input id="search" type="search" placeholder="phrase, domain, URL…" autocomplete="off"><button id="reload">REFRESH SOURCES</button></div>
+  <p class="atlas-status" id="atlas-status" role="status">Atlas has not been loaded yet.</p>
+  <div class="cards" id="observations"></div>
+  <aside class="atlas-foot">Evidence source: <a href="https://github.com/DavidWise01/the-convergence-audit/tree/main/crawler" target="_blank" rel="noopener noreferrer">the-convergence-audit/crawler ↗</a>. Empty or inaccessible ledger means <b>no verified observations loaded</b>, not zero convergences across the internet.</aside>
+</section>
+<section class="pane" id="lineage" aria-label="Source lineage" hidden>
+  <div class="section-intro"><div><div class="eyebrow">THE UNBROKEN THREAD / ORIGINS</div><h1>ROOTS, NOT ECHOES</h1><p>The story is a metaphor. These links are the actual repositories. Independent roots are counted by provenance, not appearances.</p></div><div class="intro-ornament" aria-hidden="true">◇</div></div>
+  <div class="lineage-grid">
+    <article class="root-card"><span class="root-index">ROOT / 00</span><h2>FIDDLER</h2><time datetime="2025-12-25">25 DEC 2025</time><p>Public Git history for Fiddler begins here. Earlier work may exist, but this is a verified public anchor.</p><a href="https://github.com/rgiskard01-fiddler/Fiddler/commit/53f21e26279203b471ddc5190f23e5e203d41993" target="_blank" rel="noopener noreferrer">VIEW INITIAL COMMIT ↗</a></article>
+    <article class="root-card"><span class="root-index">ROOT / 01</span><h2>MODEWEAVER & E.V.E.</h2><p>Documented collaboration, drift correction, tangent/lattice concepts, and an extrapolate–verify–execute discipline.</p><a href="https://github.com/DavidWise01/eve-constitution" target="_blank" rel="noopener noreferrer">READ THE CONSTITUTION ↗</a></article>
+    <article class="root-card"><span class="root-index">ROOT / 02</span><h2>PROVENANCE SPINE</h2><p>Append-only evidence boundaries, source ancestry, independently tracked witness lanes, and preserved failed cases.</p><a href="https://github.com/DavidWise01/toph-cortex" target="_blank" rel="noopener noreferrer">OPEN THE SPINE ↗</a></article>
+    <article class="root-card"><span class="root-index">ROOT / 03</span><h2>THE SCOUT</h2><p>Bounded public-web crawler. Literal matching, source URLs and content hashes; candidates remain unreviewed.</p><a href="https://github.com/DavidWise01/the-convergence-audit/tree/main/crawler" target="_blank" rel="noopener noreferrer">INSPECT CRAWLER ↗</a></article>
+  </div>
+  <div class="invariant"><span>CANONICAL INVARIANT</span><div>CONVERGENCE ≠ COPYING<br>REPETITION ≠ INDEPENDENCE<br>PERMUTATION ≠ NEW ORIGIN</div><p>An observation can be retained without deciding why two things resemble one another.</p></div>
+</section>
+</main>
+<footer><div>ROOT0 / DAVID LEE WISE · AN ORIGINAL CONVERGENCE INTERPRETATION</div><div>ALL BATTLE CHARACTERS ARE ORIGINAL · NO OFFICIAL AVATAR ASSETS</div><a href="https://github.com/DavidWise01/convergence">GITHUB ↗</a></footer>
+<script src="./app.js" defer></script>
+</body></html>
