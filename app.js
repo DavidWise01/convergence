@@ -25,7 +25,7 @@ seed();
 function change(n){
  scene=(n+scenes.length)%scenes.length;elapsed=0;
  const s=scenes[scene];
- title.textContent=s.name;number.textContent=String.fromCharCode(73+scene)+' / IV';
+ title.textContent=s.name;number.textContent=['I','II','III','IV'][scene]+' / IV';
  speaker.textContent=s.speaker;line.textContent=s.line;
  $('witness-meter').style.width=s.cool+'%';$('inferno-meter').style.width=s.hot+'%';
  document.querySelectorAll('[data-scene]').forEach((b,i)=>{b.classList.toggle('selected',i===scene);b.setAttribute('aria-current',i===scene?'step':'false')});
