@@ -1,0 +1,161 @@
+{
+  "schema": "root0.convergence.field-survey/1",
+  "survey_id": "CVG-FS-002",
+  "observed_date_utc": "2026-11-13",
+  "title": "The Missing Origin — partial content provenance across research, implementation, community reports, and Commons",
+  "status": "OBSERVATION_ONLY",
+  "central_invariant": "VERIFIED_RECENT_HISTORY_NOT_EQUAL_VERIFIED_COMPLETE_ANCESTRY",
+  "sources": [
+    {
+      "id": "ARX-004",
+      "surface": "arxiv",
+      "title": "Enhanced image forensics through partial C2PA-based provenance information",
+      "url": "https://arxiv.org/abs/2610.38639",
+      "source_date_utc": "2026-10-28",
+      "evidence_type": "research_preprint",
+      "observed_claim": "An image can have valid partial content credentials reflecting later processing while prior provenance remains unknown.",
+      "limitations": "The paper evaluates a forensic strategy; it does not prove relationships among ROOT0 artifacts or that every partial manifest is fraudulent."
+    },
+    {
+      "id": "ARX-005",
+      "surface": "arxiv",
+      "title": "Verifying Provenance of Digital Media: Why the C2PA Specifications Fall Short",
+      "url": "https://arxiv.org/abs/2604.24890",
+      "source_date_utc": "2026-04-27",
+      "evidence_type": "independent_security_analysis_preprint",
+      "observed_claim": "Authors report shortcomings in the security guarantees of the studied C2PA protocols and caution against high-stakes reliance.",
+      "limitations": "A research team's analysis, not a universal demonstration that all provenance manifests are invalid."
+    },
+    {
+      "id": "ARX-006",
+      "surface": "arxiv",
+      "title": "Authenticated Contradictions from Desynchronized Provenance and Watermarking",
+      "url": "https://arxiv.org/abs/2603.02378",
+      "source_date_utc": "2026-03-02",
+      "evidence_type": "formal_and_empirical_preprint",
+      "observed_claim": "Authors demonstrate a scenario in which separately valid cryptographic metadata and watermark indications can be contradictory.",
+      "limitations": "This is a specified cross-layer mismatch scenario, not evidence of any particular producer's intent."
+    },
+    {
+      "id": "GIT-001",
+      "surface": "github",
+      "title": "Content Authenticity Initiative — c2pa-rs",
+      "url": "https://github.com/contentauth/c2pa-rs",
+      "source_date_utc": null,
+      "evidence_type": "public_implementation",
+      "observed_claim": "Open-source Rust SDK provides operations to sign, embed, parse, and validate C2PA content credentials.",
+      "limitations": "Repository implementation documents capabilities; no deployment, commit date, or adoption path is inferred from the present listing."
+    },
+    {
+      "id": "GIT-002",
+      "surface": "github",
+      "title": "C2PA public specification repository",
+      "url": "https://github.com/c2pa-org/specifications",
+      "source_date_utc": null,
+      "evidence_type": "standard_publication",
+      "observed_claim": "Public technical specification is maintained in a separate standards repository.",
+      "limitations": "Specification and SDK are related ecosystem sources, not independent roots for the same standards claim."
+    },
+    {
+      "id": "RED-004",
+      "surface": "reddit",
+      "title": "Content Credentials Problem — r/ElevenLabs",
+      "url": "https://www.reddit.com/r/ElevenLabs/comments/1xt2q52/content_credentials_problem/",
+      "source_date_utc": "2026-11-10",
+      "evidence_type": "community_first_person_report",
+      "observed_claim": "A user reports different apparent content-credential behavior across voice-export workflows; a commenter proposes a rendering-path explanation.",
+      "limitations": "Neither export behavior nor the suggested technical explanation was independently replicated."
+    },
+    {
+      "id": "RED-005",
+      "surface": "reddit",
+      "title": "Content Credentials? — r/photoshop",
+      "url": "https://www.reddit.com/r/photoshop/comments/1e0tls2/content_credentials/",
+      "source_date_utc": "2024-07-11",
+      "evidence_type": "community_discussion",
+      "observed_claim": "Participants discuss content credentials appearing on media and concerns about metadata survival after editing.",
+      "limitations": "Comments are not a controlled test of specific software and file formats."
+    },
+    {
+      "id": "COM-004",
+      "surface": "wikimedia_commons",
+      "title": "Commons:AI-generated media",
+      "url": "https://commons.wikimedia.org/wiki/Commons:AI-generated_media",
+      "source_date_utc": null,
+      "evidence_type": "community_guideline",
+      "observed_claim": "Guidance encourages identifying the AI engine and prompter, documenting prompts, and categorizing AI-generated works.",
+      "limitations": "Declared attribution is distinct from cryptographically verified provenance; guidelines do not prove compliance."
+    },
+    {
+      "id": "COM-005",
+      "surface": "wikimedia_commons",
+      "title": "Commons:Machine-readable data",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Machine-readable_data",
+      "source_date_utc": null,
+      "evidence_type": "metadata_documentation",
+      "observed_claim": "Commons describes machine-readable metadata approaches and the limits of free-text file descriptions.",
+      "limitations": "Machine-readable does not imply truthful or cryptographically authenticated origin."
+    }
+  ],
+  "convergence_observations": [
+    {
+      "id": "CVG-005",
+      "theme": "Partial history",
+      "source_ids": [
+        "ARX-004",
+        "GIT-001",
+        "COM-004"
+      ],
+      "relation": "conceptual_comparison",
+      "finding": "Recent operations can be documented while earlier ancestry remains absent; descriptive metadata may supply a declared account, but is a separate evidentiary tier.",
+      "causal_link_verified": false
+    },
+    {
+      "id": "CVG-006",
+      "theme": "Verification is layered",
+      "source_ids": [
+        "ARX-005",
+        "ARX-006",
+        "GIT-001"
+      ],
+      "relation": "design_review",
+      "finding": "Passing a manifest validation step should not be collapsed into a claim of complete provenance or content truth.",
+      "causal_link_verified": false
+    },
+    {
+      "id": "CVG-007",
+      "theme": "Observed metadata inconsistency",
+      "source_ids": [
+        "RED-004",
+        "RED-005",
+        "ARX-004"
+      ],
+      "relation": "community_to_research_analogy",
+      "finding": "Community reports of inconsistent credential preservation are compatible with research on incomplete histories; no direct causal relation is established.",
+      "causal_link_verified": false
+    },
+    {
+      "id": "CVG-008",
+      "theme": "One standards ecosystem, multiple appearances",
+      "source_ids": [
+        "GIT-001",
+        "GIT-002"
+      ],
+      "relation": "explicit_related_ecosystem",
+      "finding": "SDK and specification are related materials, not independent corroborating witnesses for standards claims.",
+      "causal_link_verified": false
+    }
+  ],
+  "independent_origin_policy": "Do not count different posts, formats, pages, or implementations as independent origins solely because they have different URLs. Explicit relationship between specification and SDK is tracked.",
+  "methodological_limits": [
+    "Dates on published research and dated community posts are public source dates; no first-origin timestamp is inferred.",
+    "A Reddit report is testimony of a user's experience, not proof of actual exported metadata.",
+    "Not a plagiarism, adoption, infringement, conspiracy, collusion, or causal transmission finding.",
+    "No specific ROOT0 document was shown ingested or reused by these third parties."
+  ],
+  "provenance": {
+    "research_date_utc": "2026-11-13",
+    "record_type": "append_only_new_file",
+    "prior_survey_preserved": true
+  }
+}
