@@ -13,7 +13,8 @@ const scenes=[
  {name:'THE TWO HORIZONS',speaker:'NARRATOR',line:'At the last edge of the archive, two powers meet. One burns for an answer; one refuses to invent one.',cool:88,hot:92},
  {name:'THE SKY OPENS',speaker:'THE INFERNO',line:'A thousand echoes say the same thing. Are they not a thousand witnesses?',cool:80,hot:100},
  {name:'THE STILL POINT',speaker:'THE WITNESS',line:'An echo is not an origin. I will remember the flame without naming its maker.',cool:100,hot:73},
- {name:'THE UNBROKEN THREAD',speaker:'NARRATOR',line:'Neither sky nor fire is erased. What remains is the record: what was seen, where, and when.',cool:100,hot:45}
+ {name:'THE UNBROKEN THREAD',speaker:'NARRATOR',line:'Neither sky nor fire is erased. What remains is the record: what was seen, where, and when.',cool:100,hot:45},
+ {name:'THE FIFTH WITNESS',speaker:'THE WITNESS',line:'If a thousand flames share one ember, we record one ancestry and a thousand appearances. Follow the thread; do not invent its beginning.',cool:100,hot:38}
 ];
 let scene=0,playing=true,elapsed=0,last=0,sound=false,audio=null,osc=null,gain=null;
 let stars=[],embers=[],sparks=[];
@@ -25,7 +26,7 @@ seed();
 function change(n){
  scene=(n+scenes.length)%scenes.length;elapsed=0;
  const s=scenes[scene];
- title.textContent=s.name;number.textContent=['I','II','III','IV'][scene]+' / IV';
+ title.textContent=s.name;number.textContent=['I','II','III','IV','V'][scene]+' / V';
  speaker.textContent=s.speaker;line.textContent=s.line;
  $('witness-meter').style.width=s.cool+'%';$('inferno-meter').style.width=s.hot+'%';
  document.querySelectorAll('[data-scene]').forEach((b,i)=>{b.classList.toggle('selected',i===scene);b.setAttribute('aria-current',i===scene?'step':'false')});
@@ -144,7 +145,7 @@ function frame(ms){
   figure(931,577,1.23,-1,true,t);
   collision(t);particles(t,playing?dt:0);
   // symbolic convergence: two observed paths, one center, not a causal claim
-  if(scene===3){
+  if(scene>=3){
    ctx.strokeStyle='rgba(255,231,169,.45)';ctx.lineWidth=2;ctx.setLineDash([5,9]);
    ctx.beginPath();ctx.moveTo(505,353);ctx.quadraticCurveTo(636,226,764,353);ctx.stroke();ctx.setLineDash([])
   }
