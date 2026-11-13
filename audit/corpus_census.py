@@ -130,11 +130,17 @@ def rank_path(p):
          3 if path.endswith((".md",".txt",".dlw")) else
          4,path)
 
-def repo_scan(repo,token,maxfiles):
+def repo_scan(repo,token,maxfiles,previous=None):
+ """Resume in ranked file-order. Never mark a repo fully scanned after just the first batch."""
  name=repo["name"];files=tree_files(repo,token)
  candidates=[f for f in sorted(files,key=lambda x:rank_path(x["path"])) if (f.get("size") or 0)<=MAX_FILE_BYTES]
- chosen=candidates[:maxfiles]
- errors=[];hits=[];fetch_ok=0
+ old=previous if previous and previous.get("status") in ("PARTIAL","SCANNED") else {}
+ cursor=int(old.get("next_file_index",0))
+ # Reject impossible stale cursor; inventory reorders across source commits -> surface caveat.
+ cursor=min(cursor,len(candidates))
+ chosen=candidates[cursor:cursor+maxfiles]
+ errors=list(old.get("errors",[]));hits=list(old.get("hits",[]))
+ fetch_ok=int(old.get("files_fetched",0))
  for f in chosen:
   raw=f"https://raw.githubusercontent.com/{OWNER}/{urllib.parse.quote(repo['default_branch'],safe='')}/{urllib.parse.quote(f['path'],safe='/')}"
   try:
@@ -145,12 +151,17 @@ def repo_scan(repo,token,maxfiles):
     source.feed(body);body=source.text()
    themes,exact=phrase_scan(body)
    if themes or exact:
-    hits.append({"path":f["path"],"file_sha256":digest(body),"themes":themes,"exact_phrases":exact,"url":f"https://github.com/{OWNER}/{name}/blob/{repo['default_branch']}/{urllib.parse.quote(f['path'],safe='/')}"})
+    hit={"path":f["path"],"file_sha256":digest(body),"themes":themes,"exact_phrases":exact,"url":f"https://github.com/{OWNER}/{name}/blob/{repo['default_branch']}/{urllib.parse.quote(f['path'],safe='/')}"}
+    if not any(x.get("path")==hit["path"] and x.get("file_sha256")==hit["file_sha256"] for x in hits):hits.append(hit)
   except Exception as e:errors.append({"path":f["path"],"error":type(e).__name__})
+ next_index=cursor+len(chosen)
  return {"repo":repo["full_name"],"default_branch":repo["default_branch"],"fork":bool(repo.get("fork")),"archived":bool(repo.get("archived")),
- "files_eligible":len(files),"files_small_enough":len(candidates),"files_selected":len(chosen),
- "files_fetched":fetch_ok,"files_skipped_budget":max(0,len(candidates)-len(chosen)),
- "files_skipped_size":len(files)-len(candidates),"scan_mode":"PRIORITIZED_NOT_FULL_FILE_COVERAGE" if len(candidates)>len(chosen) else "ALL_SMALL_ELIGIBLE_FILES",
+ "files_eligible":len(files),"files_small_enough":len(candidates),"files_selected":next_index,
+ "next_file_index":next_index,"files_fetched":fetch_ok,"files_skipped_budget":max(0,len(candidates)-next_index),
+ "files_skipped_size":len(files)-len(candidates),
+ "status":"SCANNED" if next_index>=len(candidates) else "PARTIAL",
+ "scan_mode":"ALL_SIZE_ELIGIBLE_FILES" if next_index>=len(candidates) else "RESUMABLE_PARTIAL",
+ "head_revision_pinned":False,
  "hits":hits,"errors":errors}
 
 def allowed_robot(url,cache):
@@ -163,19 +174,20 @@ def allowed_robot(url,cache):
  return cache[origin] is not None and cache[origin].can_fetch(USER_AGENT,url)
 
 def site_scan(state,maxpages):
- """Public 0root.ai only; mirror links are *not* counted as independent witnesses."""
- queue=["https://0root.ai/","https://0root.ai/world2/"]
- seen=set();robots={};count=0;errs=[]
- while queue and count<maxpages:
-  u=queue.pop(0)
+ """Resumable public 0root.ai site traversal; stop if robots cannot be checked."""
+ queue=list(state.get("site_queue",["https://0root.ai/","https://0root.ai/world2/"]))
+ seen=set(state.get("site_seen",[]))
+ robots={};count=0;errs=[]
+ attempts=0
+ while queue and count<maxpages and attempts<maxpages*4:
+  u=queue.pop(0);attempts+=1
   p=urllib.parse.urlparse(u)
   if p.scheme!="https" or p.hostname not in ("0root.ai","www.0root.ai") or u in seen:continue
   seen.add(u)
   if not allowed_robot(u,robots):errs.append({"url":u,"error":"robots_unreadable_or_disallowed"});continue
   try:
    body=get(u,maxbytes=1_000_000)
-   page=TextPage();page.feed(body)
-   content=page.text()
+   page=TextPage();page.feed(body);content=page.text()
    themes,exact=phrase_scan(content)
    state["pages"][u]={"url":u,"sha256":digest(content),"themes":themes,"exact_phrases":exact,
      "host":p.hostname,"owned_ancestry":"DavidWise01/0root.ai","source_surface":"public_website"}
@@ -183,11 +195,13 @@ def site_scan(state,maxpages):
    for link in page.links[:300]:
     nxt=urllib.parse.urldefrag(urllib.parse.urljoin(u,link))[0]
     q=urllib.parse.urlparse(nxt)
-    if q.scheme=="https" and q.hostname in ("0root.ai","www.0root.ai") and nxt not in seen and nxt not in queue and len(queue)<maxpages*20:
+    if q.scheme=="https" and q.hostname in ("0root.ai","www.0root.ai") and nxt not in seen and nxt not in queue and len(queue)<15000:
      queue.append(nxt)
    time.sleep(.4)
   except Exception as e:errs.append({"url":u,"error":type(e).__name__})
- return {"visited_ok":count,"errors":errs,"seen_urls_this_run":len(seen),"remaining_url_queue_not_persisted":len(queue)}
+ state["site_queue"]=queue
+ state["site_seen"]=sorted(seen)
+ return {"visited_ok":count,"errors":errs,"seen_urls_total":len(seen),"remaining_url_queue":len(queue)}
 
 def main():
  ap=argparse.ArgumentParser()
@@ -210,7 +224,7 @@ def main():
    "scope":"PUBLIC repositories under owner, forks/archived included; not private repos, issues, external archives or history"}
  for r in census:
   name=r["full_name"]
-  if name.lower() not in {x.lower() for x in state["seen"]}:
+  if name not in state["seen"]:
    state["seen"][name]={"status":"PENDING","repo":name}
  completed=0;errors=0
  for r in census:
@@ -218,8 +232,8 @@ def main():
   if state["seen"][name].get("status")=="SCANNED":continue
   if completed+errors>=max(0,args.max_repos):break
   try:
-   result=repo_scan(r,token,max(1,args.max_files_per_repo))
-   result["status"]="SCANNED";result["observed_utc"]=now
+   result=repo_scan(r,token,max(1,args.max_files_per_repo),state["seen"].get(name))
+   result["observed_utc"]=now
    state["seen"][name]=result;completed+=1
   except Exception as e:
    state["seen"][name]={"repo":name,"status":"ERROR","type":type(e).__name__,"error":str(e),"observed_utc":now};errors+=1
@@ -230,25 +244,27 @@ def main():
  if args.site:site=site_scan(state,max(1,args.max_site_pages))
  atomic(OUT/"state.json",state)
  rows=[v for k,v in state["seen"].items() if k.lower() in expected]
- scanned=[v for v in rows if v.get("status")=="SCANNED"]
+ scanned=[v for v in rows if v.get("status") in ("SCANNED","PARTIAL")]
+ fully_scanned=[v for v in rows if v.get("status")=="SCANNED"]
  report={
   "schema":"root0.convergence.corpus-coverage/1","generated_utc":now,
   "owned_source_surfaces":["github.com/DavidWise01","0root.ai"],
   "one_ancestry_two_surfaces":True,"github_public_repositories_enumerated":len(census),
-  "github_repositories_scanned":len(scanned),"github_repositories_error":sum(v.get("status")=="ERROR" for v in rows),
+  "github_repositories_started":len(scanned),"github_repositories_scanned":len(fully_scanned),"github_repositories_partial":sum(v.get("status")=="PARTIAL" for v in rows),"github_repositories_error":sum(v.get("status")=="ERROR" for v in rows),
   "github_repositories_pending":sum(v.get("status")=="PENDING" for v in rows),
   "github_eligible_files":sum(v.get("files_eligible",0) for v in scanned),
   "github_files_fetched":sum(v.get("files_fetched",0) for v in scanned),
   "github_files_skipped_budget":sum(v.get("files_skipped_budget",0) for v in scanned),
   "github_files_skipped_size":sum(v.get("files_skipped_size",0) for v in scanned),
+  "github_revisions_not_pinned":True,
   "github_file_errors":sum(len(v.get("errors",[])) for v in scanned),
   "site_unique_pages_scanned":len(state["pages"]),
   "site_last_run":site,
   "claims_not_supported":["all source files read","private repos examined","historical revisions exhausted","all 0root.ai pages covered","independent source origins inferred","cross-platform copying proven"],
   "repository_census_complete":True,
-  "repo_level_scan_complete":len(scanned)==len(census) and not any(v.get("status")!="SCANNED" for v in rows),
-  "all_eligible_file_contents_complete":len(scanned)==len(census) and all(v.get("files_skipped_budget",0)==0 and v.get("files_skipped_size",0)==0 and not v.get("errors") for v in scanned),
-  "website_complete":False
+  "repo_level_scan_complete":len(fully_scanned)==len(census),
+  "all_eligible_file_contents_complete":len(fully_scanned)==len(census) and all(v.get("files_skipped_budget",0)==0 and v.get("files_skipped_size",0)==0 and not v.get("errors") for v in scanned),
+  "website_complete":not bool(state.get("site_queue")) and not bool(site and site.get("errors")) and len(state["pages"])>0
  }
  atomic(OUT/"coverage.json",report)
  findings=[]
