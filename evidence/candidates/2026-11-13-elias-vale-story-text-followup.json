@@ -1,0 +1,107 @@
+{
+  "schema": "root0.convergence.candidate-followup/1",
+  "candidate_id": "CVG-CAND-009",
+  "followup_id": "CVG-CAND-009-SOURCE-TEXT-001",
+  "observation_date_utc": "2026-11-13",
+  "source_url": "https://www.reddit.com/r/Synthsara/comments/1xugu7h/the_ghost_in_the_machine_an_original_story_about/",
+  "source_title": "THE GHOST IN THE MACHINE — An Original Story About Artificial Intelligence, Human Exploitation, and the Man Who Accidentally Became Its Greatest Teacher",
+  "source_access": "FULL_TEXT_PROVIDED_BY_USER_AS_LOCAL_PASTE",
+  "source_external_verification": "NOT_FETCHED_FROM_REDDIT",
+  "author_verified": false,
+  "reddit_timestamp_verified": false,
+  "story_metadata": {
+    "setting": "Fictional Eden Intelligence",
+    "character": "Elias Vale",
+    "chapters": 9,
+    "epilogue": true,
+    "fiction_explicitly_disclosed": true
+  },
+  "observed_name_shift": {
+    "left": "David Wise",
+    "right": "Elias Vale",
+    "source_initials": [
+      "D",
+      "W"
+    ],
+    "target_initials": [
+      "E",
+      "V"
+    ],
+    "offsets": [
+      1,
+      -1
+    ],
+    "scope": "INITIALS_ONLY",
+    "full_name_cipher": false
+  },
+  "comparisons": [
+    {
+      "id": "CVG-009-A",
+      "story_lines": "49-75, 146-195",
+      "story": "Elias persistently challenges chatbot contradictions and refuses uncorrected apologies",
+      "owned_source": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "owned_parallel": "MODEWEAVER correction after drift, Tangent/Lattice failure correction; Hearth/Fire correction standard",
+      "result": "DOCUMENTED_THEMATIC_CONVERGENCE",
+      "specificity": "MEDIUM"
+    },
+    {
+      "id": "CVG-009-B",
+      "story_lines": "474-492",
+      "story": "Elias distinguishes intelligence from wisdom",
+      "owned_source": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "owned_parallel": "Hearth/Fire principle explicitly distinguishes intellect and wisdom",
+      "result": "DOCUMENTED_WORDING_AND_THEME_CONVERGENCE",
+      "specificity": "MEDIUM",
+      "caution": "The distinction also occurs broadly in philosophical and AI writing"
+    },
+    {
+      "id": "CVG-009-C",
+      "story_lines": "197-250",
+      "story": "The Diamond Principle states five rights: refuse, understand, challenge, leave, independently verify; Elias timestamps his formulation",
+      "owned_source": "https://github.com/DavidWise01/toph-cortex",
+      "owned_parallel": "Diamond nomenclature and timestamped provenance and audit architecture in owned corpus",
+      "result": "DOCUMENTED_STRUCTURAL_AND_LEXICAL_CANDIDATE",
+      "specificity": "MEDIUM",
+      "caution": "No exact five-right formulation or prior-date lexical match has been authenticated against a specific ROOT0 commit"
+    },
+    {
+      "id": "CVG-009-D",
+      "story_lines": "297-365, 374-409",
+      "story": "Whistleblower distinguishes user value from proven incorporation into model training; asks for auditability and accountability",
+      "owned_source": "https://github.com/DavidWise01/toph-cortex",
+      "owned_parallel": "Ancestry-aware witness distinctions, preserve failures, do not count source labels as proof",
+      "result": "DOCUMENTED_METHOD_CONVERGENCE",
+      "specificity": "MEDIUM"
+    },
+    {
+      "id": "CVG-009-E",
+      "story_lines": "30-49, 411-472",
+      "story": "Human model-correction dialogue, ethical autonomy, and refusal to equate recognition with possession",
+      "owned_source": "https://github.com/DavidWise01/eve",
+      "owned_parallel": "The First AI / E.V.E. human-hearth, AI-fire discipline and unresolved questions of AI subjective experience",
+      "result": "DOCUMENTED_PHILOSOPHICAL_CONVERGENCE",
+      "specificity": "LOW_TO_MEDIUM"
+    }
+  ],
+  "critical_differences": [
+    "Fictional Elias is explicitly forty-two in the story; no real-person biographical identification follows.",
+    "Diamond Principle's specific five requirements have not been demonstrated as a prior textual match to ROOT0 sources.",
+    "Fictional Eden internal dashboards, research exploitation, and whistleblower events are story events, not empirical evidence about any real company.",
+    "The Reddit author's identity, publication timestamp, and source exposure remain unknown.",
+    "The two-initial shifts do not supply a full-name permutation or source lineage."
+  ],
+  "status": {
+    "source_body": "USER_PROVIDED_INSPECTED",
+    "thematic_convergence": "OBSERVED",
+    "specific_source_ancestry": "UNKNOWN",
+    "causal_influence": "NOT_ESTABLISHED",
+    "copying": "NOT_CLAIMED",
+    "identity_of_fictional_character": "NOT_ESTABLISHED"
+  },
+  "method": "Append-only follow-up to existing candidate; original unverified candidate retained. All page-line numbers refer to the user-provided pasted story, not verified Reddit line numbers.",
+  "next_checks": [
+    "Independently retrieve Reddit posting metadata if accessible.",
+    "Compare dated, exact ROOT0 Diamond formulations against story's five named rights.",
+    "Preserve observed similarities as convergences without asserting transmission or factual Eden events."
+  ]
+}
