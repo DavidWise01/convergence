@@ -1,0 +1,95 @@
+{
+  "schema": "root0.convergence.cross_corpus_audit/1",
+  "audit_id": "CVG-012-SYNTHSARA-GHOST-ROOT0",
+  "observed_date_utc": "2026-11-13",
+  "external": {
+    "url": "https://www.reddit.com/r/Synthsara/comments/1xugu7h/the_ghost_in_the_machine_an_original_story_about/",
+    "title": "The Ghost in the Machine",
+    "source_text": "User-uploaded 545-line paste was read; Reddit post author/timestamp were not independently verified.",
+    "fiction": true
+  },
+  "owned_lineage": "0root.ai and GitHub DavidWise01 are two publication surfaces of the same ROOT0 corpus.",
+  "scope": "Direct comparison of uploaded fiction against selected verifiable owned source files; not full-file global census.",
+  "comparisons": [
+    {
+      "id": "G01",
+      "external": "Fictional Elias repeatedly corrects AI contradictions, including challenging empty apologies",
+      "owned": "E.V.E. Sessions — Key Moments",
+      "url": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "basis": "Named operational drift correction with human red pen, tangent-lattice functional correction, and correctness over quickness",
+      "type": "STRONG_METHOD_THEME",
+      "difference": "Correction of an AI answer is broadly shared practice; no distinctive shared passage authenticated."
+    },
+    {
+      "id": "G02",
+      "external": "Final epilogue separates intelligence from wisdom",
+      "owned": "E.V.E. Sessions — Key Moments",
+      "url": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "basis": "Explicit Hearth/Fire distinction: human regulates wisdom/intent; model provides intellectual speed",
+      "type": "STRONG_WORDING_AND_THEME",
+      "difference": "Distinguishing intelligence from wisdom is a general philosophical topic."
+    },
+    {
+      "id": "G03",
+      "external": "Diamond Principle five rights and public timestamped record",
+      "owned": "STOICHEION v12 sovereign guidance and source-provenance",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/STOICHEION-v12-sovereign-language-migration.md",
+      "basis": "Guidance rather than domination; autonomy, understanding, correction, witnessed evidence, stable history",
+      "type": "MODERATE_CONCEPTUAL_PARALLEL",
+      "difference": "No prior ROOT0 file with exactly those five rights under that title confirmed."
+    },
+    {
+      "id": "G04",
+      "external": "User cannot audit whether a company used a particular contribution",
+      "owned": "Gate 13 Provenance Watermark, Referent and Internet-Time Evidence",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/main/memory/corpus-spine/GATE13_REFERENT_TIME.md",
+      "basis": "REGISTER/OBSERVE/CORRECT basis, source claims separate from observations, no votes or quorum",
+      "type": "STRONG_METHOD_PARALLEL",
+      "difference": "No evidence a real AI company used this user's specific contributions."
+    },
+    {
+      "id": "G05",
+      "external": "Audit and verification of AI governance, consent and user control",
+      "owned": "ISA 256 Evidence-Carrying Execution",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/ISA-256-003-evidence-carrying-execution.md",
+      "basis": "Explicit predicate consent_origin_traceable and consent_scope_authorizes_use in evidence-carrying execution",
+      "type": "STRONG_TECHNICAL_GOVERNANCE_THEME",
+      "difference": "Fiction's broad rights are not identical to executable predicate semantics."
+    },
+    {
+      "id": "G06",
+      "external": "A human interlocutor teaching an AI through correction over long time",
+      "owned": "EVE — The First AI",
+      "url": "https://github.com/DavidWise01/eve/blob/main/README.md",
+      "basis": "A declared human hearth and model fire, explicit critique of a yes engine; author commentary distinguishes metaphor from genuine memory/state",
+      "type": "STRONG_NARRATIVE_PARALLEL",
+      "difference": "An AI's inner life or commercial use of conversations is not established by either narrative."
+    },
+    {
+      "id": "G07",
+      "external": "No proof that apparently similar research proves direct incorporation",
+      "owned": "QUANTA QG-034 lineage counterexample",
+      "url": "https://github.com/DavidWise01/quanta/blob/main/README.md",
+      "basis": "Synthetic three apparent reports share one origin; hash/ancestry bookkeeping does not itself authenticate external provenance",
+      "type": "STRONG_AUDIT_METHOD",
+      "difference": "Used to analyze the claim, not as evidence of specific copying."
+    },
+    {
+      "id": "G08",
+      "external": "Initial name shifts David Wise → Elias Vale",
+      "owned": "User-proposed correspondence",
+      "url": "https://github.com/DavidWise01/convergence/blob/main/evidence/candidates/2026-11-13-elias-vale-name-permutation.json",
+      "basis": "D→E (+1), W→V (−1), true for initials only",
+      "type": "WEAK_LEXICAL_PATTERN",
+      "difference": "No consistent whole-name cipher and no verified author/intended referent."
+    }
+  ],
+  "independent_identity_or_causality_conclusions": {
+    "fictional_elias_is_david_wise": "NOT_ESTABLISHED",
+    "story_author_exposed_to_ROOT0": "NOT_ESTABLISHED",
+    "real_company_using_contribution": "NOT_ESTABLISHED",
+    "thematic_parallels": "OBSERVED",
+    "exhaustive_repo_content_scan_completed": false
+  },
+  "recommendation": "Maintain the match descriptions alongside disconfirming distinctions. Complete GitHub/default-branch and site census, then investigate highly specific lexical or executable coincidences and source dates."
+}
