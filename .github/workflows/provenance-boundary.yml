@@ -1,0 +1,21 @@
+name: Provenance boundary regression
+on:
+  push:
+    paths:
+      - 'boundary/**'
+      - 'boundary.html'
+      - '.github/workflows/provenance-boundary.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test 4-state provenance and witness boundary
+        run: node boundary/test_provenance.cjs
