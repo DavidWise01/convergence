@@ -32,6 +32,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify scanner compiles
+        run: python -m py_compile audit/corpus_census.py
       - name: Enumerate ROOT0 public GitHub and inspect files/site
         env:
           GH_TOKEN: ${{ github.token }}
