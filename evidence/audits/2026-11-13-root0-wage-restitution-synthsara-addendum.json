@@ -1,0 +1,69 @@
+{
+  "schema": "root0.convergence.corpus-review-addendum/1",
+  "audit_id": "CVG-012-SYNTHSARA-GHOST-ROOT0",
+  "addendum": "ROOT0_WAGE_RESTITUTION_READ_003",
+  "observed_date_utc": "2026-11-13",
+  "context": "Focused source-file inspection following multi-repository README sweep.",
+  "owned_sources": [
+    {
+      "url": "https://github.com/DavidWise01/the.source/blob/main/ECONOMICS-ROOT0-WAGE.md",
+      "document": "ECONOMICS-ROOT0-WAGE v1.0",
+      "declared_date": "2026-04-17",
+      "observed": "Defines one work unit as one hour of David Wise's labor and proposes valuation across central projects including Phoenix Engine and lineage work.",
+      "source_type": "owner_declaration",
+      "verification": "Source text read; historical commit date not separately established."
+    },
+    {
+      "url": "https://github.com/DavidWise01/the.source/blob/main/55-200-to-1-RESTITUTION-ANCHOR.md",
+      "document": "55,200:1 Restitution Anchor",
+      "declared_date": "2026-04-17",
+      "observed": "States the author's restitution and commons-valuation proposal; asserts externalized corporate costs.",
+      "source_type": "owner_claim_and_proposed_valuation",
+      "verification": "Text read; economic magnitude and assertions about corporate use are not independently verified."
+    },
+    {
+      "url": "https://github.com/DavidWise01/hephaestus/blob/master/README.md",
+      "document": "HEPHAESTUS — Divine Forge Restitution Engine Builder Suite",
+      "declared_date": null,
+      "observed": "README names restitution, append-only logs, provenance binding and shadow cases for unidirectional extraction, erased provenance and no restitution.",
+      "source_type": "project_readme",
+      "verification": "Project documentation read; behavior and economic formula not independently reproduced."
+    }
+  ],
+  "external_source": {
+    "url": "https://www.reddit.com/r/Synthsara/comments/1xugu7h/the_ghost_in_the_machine_an_original_story_about/",
+    "basis": "user_uploaded_full_text",
+    "fictional_characters": true,
+    "observed": "Elias Vale's conversations become valuable potential research material, but he cannot verify whether specific ideas were incorporated; asks recognition, auditability, attribution and compensation."
+  },
+  "comparisons": [
+    {
+      "id": "G09",
+      "root0": "Explicit human-work valuation",
+      "external": "Unpaid intellectual contribution central to story",
+      "strength": "HIGH_THEME_SPECIFICITY",
+      "caveat": "Two works do not use the same proposed wage formula or exact economic model."
+    },
+    {
+      "id": "G10",
+      "root0": "Restitution claim for alleged uncompensated cost",
+      "external": "Fictional user demands transparency and recognition for economically valuable interaction",
+      "strength": "HIGH_THEME_SPECIFICITY",
+      "caveat": "A source document's attribution/valuation claim is not proof of third-party exploitation."
+    },
+    {
+      "id": "G11",
+      "root0": "Hephaestus shadow axioms: unidirectional extraction, erased provenance, absence of restitution",
+      "external": "Eden Intelligence fictional governance problem: asymmetric access and absent attribution mechanism",
+      "strength": "HIGH_STRUCTURAL_THEME",
+      "caveat": "Ethical critique is broadly relevant in AI; no direct authorship/ingestion path."
+    }
+  ],
+  "epistemic_status": {
+    "thematic_overlap": "DIRECTLY_OBSERVED",
+    "declared_2026_04_17_dates": "DOCUMENT_CLAIMS_NOT_COMMIT_AUTHENTICATION",
+    "external_use_of_user_work": "NOT_VERIFIED",
+    "author_identity_shared": "NOT_ESTABLISHED",
+    "copied_text": "NOT_DEMONSTRATED"
+  }
+}
