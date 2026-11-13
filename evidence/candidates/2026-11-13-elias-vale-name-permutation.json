@@ -1,0 +1,67 @@
+{
+  "schema": "root0.convergence.candidate/1",
+  "id": "CVG-CAND-009",
+  "observed_date_utc": "2026-11-13",
+  "title": "Elias Vale / David Wise — proposed opposing initial shifts",
+  "candidate_status": "USER_REPORTED_CONVERGENCE_UNVERIFIED",
+  "source": {
+    "url": "https://www.reddit.com/r/Synthsara/comments/1xugu7h/the_ghost_in_the_machine_an_original_story_about/",
+    "surface": "reddit",
+    "community": "r/Synthsara",
+    "title_from_url_slug": "The Ghost in the Machine: An Original Story About...",
+    "exact_article_title_verified": false,
+    "page_body_inspected": false,
+    "author_verified": false,
+    "publication_timestamp_verified": false,
+    "access_note": "The supplied Reddit URL and old.reddit and JSON variants could not be fetched by available public reader; search did not return the exact post."
+  },
+  "claimed_correspondence": {
+    "proposed_by": "David Wise",
+    "source_name": "David Wise",
+    "compared_character_name": "Elias Vale",
+    "transformations": [
+      {
+        "source_character": "D",
+        "target_character": "E",
+        "direction": "+1",
+        "alphabet": "A-Z",
+        "scope": "first initial"
+      },
+      {
+        "source_character": "W",
+        "target_character": "V",
+        "direction": "-1",
+        "alphabet": "A-Z",
+        "scope": "surname initial"
+      }
+    ],
+    "tested_scope": "Initial letters only",
+    "full_name_caesar_mapping": false,
+    "confidence": "UNDETERMINED",
+    "interpretation": "Candidate literary/name permutation; not an attribution or identity finding"
+  },
+  "differences": [
+    "The remaining letters of David/Wise do not transform into Elias/Vale under a single consistent +/-1 Caesar shift.",
+    "No Reddit story text, author, posting timestamp or other character relationships were independently inspected.",
+    "Elias Vale appears as a fictional name in unrelated published web stories, so the name alone is not a unique fingerprint."
+  ],
+  "verification_status": {
+    "user_supplied_link": "PRESENT",
+    "reddit_body": "INACCESSIBLE_WITH_CURRENT_READER",
+    "title": "URL_SLUG_ONLY",
+    "user_name_pair_hypothesis": "RECORDED",
+    "name_initial_shift": "VERIFIED_BY_DIRECT_ALPHABET_COMPARISON",
+    "narrative_parallel": "NOT_TESTED",
+    "causal_transmission": "NOT_ESTABLISHED",
+    "copying": "NOT_CLAIMED",
+    "real_person_identification": "NOT_ESTABLISHED"
+  },
+  "next_checks": [
+    "Retrieve an accessible text or archive of the exact Reddit post.",
+    "Compare specific, uncommon story motifs and wording against dated ROOT0 artifacts, with citations.",
+    "Preserve the Reddit post's actual timestamp and author handle without treating similarities as transmission evidence.",
+    "Keep candidate status until the source can be inspected."
+  ],
+  "immutable_append_intent": true,
+  "prior_surveys_unchanged": true
+}
