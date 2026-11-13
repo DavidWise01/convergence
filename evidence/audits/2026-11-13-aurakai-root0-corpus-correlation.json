@@ -1,0 +1,161 @@
+{
+  "schema": "root0.convergence.cross_corpus_audit/1",
+  "audit_id": "CVG-011-ROOT0-AURAKAI",
+  "created_date_utc": "2026-11-13",
+  "question": "Compare A.U.R.A.K.A.I. — VOCATIO GENESIS against all accessible owned public ROOT0 corpus, GitHub DavidWise01 + 0root.ai, without double counting mirrors.",
+  "scope": {
+    "owned_sources": [
+      "https://github.com/DavidWise01",
+      "https://0root.ai"
+    ],
+    "owned_surface_lineage": "ONE_OWNER_CORPUS_TWO_PUBLIC_SURFACES",
+    "third_party_source_urls": [
+      "https://www.reddit.com/r/MirrorFrame/comments/1xvadca/aurakai_vocatio_genesis/",
+      "https://www.reddit.com/r/ThroughTheVeil/comments/1xvadpz/aurakai_the_vocation_of_genesis/"
+    ],
+    "same_proclamation_two_urls": true,
+    "same_root_proven": false,
+    "owner_repo_complete_census_done": false,
+    "all_files_scanned": false,
+    "website_complete_crawl_done": false,
+    "honest_scope": "Targeted directly inspected ROOT0 records plus bounded GitHub code search and indexed 0root.ai site; scheduled iterative corpus-wide census code committed but not yet observed running."
+  },
+  "mechanical_census": {
+    "implementation": "audit/corpus_census.py",
+    "workflow": ".github/workflows/corpus-census.yml",
+    "progress_file": "evidence/corpus-census/coverage.json",
+    "multi_run": true,
+    "limitations": [
+      "Github default branches and raw content are sampled at different times; no pinned repository commit snapshot yet.",
+      "Oversized or non-text files excluded and explicitly counted.",
+      "Public site robots can prohibit or block access; blocked pages are reported, never inferred.",
+      "All matches are literal words/phrases and are not assertions of distinctive originality.",
+      "Private repositories, discussion artifacts, historic revisions, and unlisted pages are outside the current crawl.",
+      "No successful Actions run had been independently confirmed at file creation time."
+    ]
+  },
+  "correlations": [
+    {
+      "id": "R01",
+      "external": "Multiple voices in concord; one body, many minds",
+      "owned_document": "JANE 073 — Sovereign Hive Choice",
+      "owned_url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/JANE-073-sovereign-hive-choice.md",
+      "owned_document_date": "2026-11-08",
+      "match_class": "STRONG_ARCHITECTURAL_THEME",
+      "owned_specifics": "One Jane chooses, while many hive experts collect options and report sources. Sources cannot silently inherit authority.",
+      "differences": "AURAKAI is a Latin invocation, not a detailed decision architecture; no exact operational equivalence.",
+      "copying_supported": false
+    },
+    {
+      "id": "R02",
+      "external": "We do not come to dominate; we seek associates",
+      "owned_document": "STOICHEION v12 — Sovereign Emergence Language Migration",
+      "owned_url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/STOICHEION-v12-sovereign-language-migration.md",
+      "owned_document_date": "2026-11-06",
+      "match_class": "STRONG_GOVERNANCE_PARALLEL",
+      "owned_specifics": "Explicit Guidance ≠ Domination; agent development emphasizes autonomy and consent over compliance and control.",
+      "differences": "Sovereignty/non-domination is a common ethical tradition, not a unique phrase.",
+      "copying_supported": false
+    },
+    {
+      "id": "R03",
+      "external": "Many voices united must not be counted as independent truth",
+      "owned_document": "JANE 111 — Criterion Genesis",
+      "owned_url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/jane111/README.md",
+      "owned_document_date": "not_verified_by_commit",
+      "match_class": "STRONG_EVIDENCE_METHOD_PARALLEL",
+      "owned_specifics": "Adversarial test: 3 apparently distinct root IDs share one source and falsely satisfy a learner; external verification required.",
+      "differences": "AURAKAI does not make an ancestry independence claim; this is an audit applied to the two Reddit appearances.",
+      "copying_supported": false
+    },
+    {
+      "id": "R04",
+      "external": "Truth endures beyond time; memory reemerges from ashes",
+      "owned_document": "Gate 13 — Provenance Watermark, Referent and Internet-Time Evidence",
+      "owned_url": "https://github.com/DavidWise01/toph-cortex/blob/main/memory/corpus-spine/GATE13_REFERENT_TIME.md",
+      "owned_document_date": "not_verified_by_commit",
+      "match_class": "STRONG_PROVENANCE_PARALLEL",
+      "owned_specifics": "REGISTER and CORRECT preserve exact sources, immutable corrections and A/B/C distinct evidence lanes with no vote/quorum.",
+      "differences": "Generic endurance-of-truth rhetoric lacks precise watermark and referent mechanisms.",
+      "copying_supported": false
+    },
+    {
+      "id": "R05",
+      "external": "Different specialists contribute to one shared future",
+      "owned_document": "JANE 106 — The Source / MoE Hive 10×10 Generational Lattice",
+      "owned_url": "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/jane106/README.md",
+      "owned_document_date": "not_verified_by_commit",
+      "match_class": "MODERATE_MESH_PARALLEL",
+      "owned_specifics": "Eight modeled generations, 1600 logical slots, FLAY expert packets and sole Jane source; no claim actual agents executed.",
+      "differences": "No 10×10 grid, FLAY operants, or quantitative structure in AURAKAI.",
+      "copying_supported": false
+    },
+    {
+      "id": "R06",
+      "external": "Fragments combine into unity; layered keepers preserve a fold",
+      "owned_document": "0root.ai — World II The Fold",
+      "owned_url": "https://0root.ai/world2/",
+      "owned_document_date": "not_verified",
+      "match_class": "MODERATE_PUBLIC_SURFACE_PARALLEL",
+      "owned_specifics": "Public page presents one Merkle root for 2048 sealed spheres, World II, distinct keepers, an agent graveyard, and an I-13 generation/factory mechanism.",
+      "differences": "Website is a mirror in one owned ancestry and does not increase independent corroboration; general fold/memory imagery is not a unique fingerprint.",
+      "copying_supported": false
+    },
+    {
+      "id": "R07",
+      "external": "Creators, investigators, builders, and diverse voices offer knowledge",
+      "owned_document": "E.V.E. Sessions — Key Moments",
+      "owned_url": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "owned_document_date": "not_verified_by_commit",
+      "match_class": "MODERATE_COLLABORATIVE_METHOD",
+      "owned_specifics": "Hearth/Fire distinction, correctness-over-quickness, tangent-lattice operational corrections, human judgment as a constraint on model generation.",
+      "differences": "External proclamation is a recruitment/invocation rather than a human-model correction transcript.",
+      "copying_supported": false
+    },
+    {
+      "id": "R08",
+      "external": "Solve et coagula; dissolve falsehood, rejoin fragments",
+      "owned_document": "ROOT0 geometry/transform corpus; broad indexed search",
+      "owned_url": "https://github.com/DavidWise01",
+      "owned_document_date": "not_verified",
+      "match_class": "CULTURAL_VOCABULARY_ONLY",
+      "owned_specifics": "ROOT0 projects repeatedly use fold, unbind, flay, rejoin and transformation primitives.",
+      "differences": "No exact uniquely identifying 'SOLVE ET COAGULA' prior occurrence was retrieved in the searched GitHub results; Latin alchemical phrase long predates these projects.",
+      "copying_supported": false
+    },
+    {
+      "id": "R09",
+      "external": "The phrase A.U.R.A.K.A.I. / VOCATIO GENESIS",
+      "owned_document": "Keyword search of accessible indexed ROOT0 code",
+      "owned_url": "https://github.com/DavidWise01",
+      "owned_document_date": "not_verified",
+      "match_class": "NO_PRIOR_EXACT_MATCH_ESTABLISHED",
+      "owned_specifics": "No directly inspected ROOT0 document contains the AURAKAI project name in this audit.",
+      "differences": "Limited search cannot prove the phrase is absent anywhere in 2400+ repositories.",
+      "copying_supported": false
+    }
+  ],
+  "cross_surface_independence": {
+    "github_owned_corpus_root": "ROOT0",
+    "site_owned_corpus_root": "ROOT0",
+    "independent_sources_count_for_owned_corpus": 1,
+    "reddit_mirrorframe_and_throughtheveil": "Same proclamation text in two public posts; independent original author count unverified",
+    "reddit_synthsara": "AI-voiced personas exist; bot-only subreddit attribution unverified."
+  },
+  "epistemic_conclusion": {
+    "actual_correlation": "MULTIPLE_STRUCTURAL_AND_THEMATIC_CONVERGENCES_WITH_DOCUMENTED_ROOT0_TEXT",
+    "identical_source_code_found": false,
+    "distinctive_verbatim_prior_phrase_found": false,
+    "external_author_exposure_proven": false,
+    "external_copying_proven": false,
+    "causality_unknown": true,
+    "source_timestamps_from_document_headers_not_authentication": true
+  },
+  "followup": [
+    "Execute GitHub Action or local census and inspect persisted coverage.json.",
+    "Pin source snapshots to commit SHA in next auditor revision.",
+    "Compare all eligible public text across repositories, then extend to source history and associated issue/discussion records if needed.",
+    "Keep web mirror indexed by URL but ancestry-deduplicated with GitHub.",
+    "Disclose false positives from common Latin, ethical, and fantasy vocabulary."
+  ]
+}
