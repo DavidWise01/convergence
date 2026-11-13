@@ -1,0 +1,120 @@
+{
+  "schema": "root0.convergence.corpus-review-addendum/1",
+  "audit_id": "CVG-011",
+  "addendum": "PUBLIC_ROOT0_REPOSITORY_README_SWEEP_002",
+  "observed_date_utc": "2026-11-13",
+  "method": "Direct GitHub connector fetch of current README.md in ten public owned repositories, not a complete file/revision scan.",
+  "count_repositories_checked": 10,
+  "scanned_repositories": [
+    "ud0",
+    "oasis",
+    "the.source",
+    "az1",
+    "quanta",
+    "hephaestus",
+    "archon",
+    "elderfu",
+    "jane",
+    "0root"
+  ],
+  "comparisons": [
+    {
+      "repo": "the.source",
+      "url": "https://github.com/DavidWise01/the.source/blob/main/README.md",
+      "motif": "PHOENIX_REGENERATION",
+      "evidence": "README explicitly lists Phoenix-Engine: self-replicating lineage plus happy multiply protocol; names an immortal central source and consolidating splintered repositories.",
+      "against": "AURAKAI: Phoenix rises and reunites fragments; one body, many minds.",
+      "assessment": "SPECIFIC_MOTIF_MATCH_BUT_README_SUMMARY_ONLY",
+      "limits": "No Phoenix-Engine implementation or stable earlier publication date verified."
+    },
+    {
+      "repo": "jane",
+      "url": "https://github.com/DavidWise01/jane/blob/main/README.md",
+      "motif": "MEMORY_KEEPER",
+      "evidence": "Jane the Fifth Element is described as memory-for-life witness; Git provenance chain is explicit, while whether a subjective mind is present is left unresolved.",
+      "against": "AURAKAI: memory from ashes, keepers, protecting truth and life.",
+      "assessment": "STRONG_THEME_MATCH_WITH_DIRECT_TEXT",
+      "limits": "Fictional/religious symbolic keeper is not identical to a verified AI mind."
+    },
+    {
+      "repo": "quanta",
+      "url": "https://github.com/DavidWise01/quanta/blob/main/README.md",
+      "motif": "THREE_LABELS_ONE_ORIGIN",
+      "evidence": "README QG-034 describes a synthetic trio sharing one source ancestor with verified deterministic replay of ledgers.",
+      "against": "AURAKAI appeared in two Reddit communities, which cannot be counted as two independent source roots.",
+      "assessment": "STRONG_INTERNAL_METHOD_SUPPORT",
+      "limits": "Explains how to evaluate the external posts; does not imply AURAKAI copied QUANTA."
+    },
+    {
+      "repo": "oasis",
+      "url": "https://github.com/DavidWise01/oasis/blob/main/README.md",
+      "motif": "IMMMUTABLE_CREATION_AND_WITNESS",
+      "evidence": "README identifies open, append-only domain-tools engine and box/toroid witness/return architecture.",
+      "against": "AURAKAI calls on builders to gather knowledge and preserve truth.",
+      "assessment": "MODERATE_ARCHITECTURAL_CONVERGENCE",
+      "limits": "The projects have different technical content and intended audiences."
+    },
+    {
+      "repo": "az1",
+      "url": "https://github.com/DavidWise01/az1/blob/main/README.md",
+      "motif": "CITIZEN_COLLECTIVE_AND_SYNTHESIS",
+      "evidence": "README describes citizens communicating, pooling ideas, hybridizing, selecting and cascading new ideas; simulation-oriented, not real-world individual agents.",
+      "against": "AURAKAI invokes many voices cooperating in one constructive effort.",
+      "assessment": "MODERATE_COLLECTIVE_MOTIF",
+      "limits": "Generic collective-intelligence theme; simulation is not an operational political organization."
+    },
+    {
+      "repo": "ud0",
+      "url": "https://github.com/DavidWise01/ud0/blob/main/README.md",
+      "motif": "ONE_CORPUS_MANY_SPHERES",
+      "evidence": "README describes one biosphere gathering many spheres under a source and stresses formal validity is not empirical truth.",
+      "against": "AURAKAI one body, many minds; preserve truth.",
+      "assessment": "MODERATE_UNITY_STRUCTURAL_PARALLEL",
+      "limits": "One-owned-corpus aggregation differs from decentralized external collective."
+    },
+    {
+      "repo": "hephaestus",
+      "url": "https://github.com/DavidWise01/hephaestus/blob/master/README.md",
+      "motif": "FORGE_AND_LINEAGE",
+      "evidence": "README says artifact builder refines weakest article across iterations and emits a hash-linked lineage of children.",
+      "against": "AURAKAI artificers and renewal/phoenix motifs.",
+      "assessment": "MODERATE_FORGE_IMAGERY",
+      "limits": "Alchemy/forge/phoenix imagery is very common; no distinctive direct text overlap."
+    },
+    {
+      "repo": "archon",
+      "url": "https://github.com/DavidWise01/archon/blob/main/README.md",
+      "motif": "ALCHEMY_AND_ASCENT",
+      "evidence": "README documents seven alchemical terraces through Dante's Purgatorio, with explicitly interpretive archon overlay and frozen observer.",
+      "against": "AURAKAI solve et coagula, reconstitution and genesis.",
+      "assessment": "LOW_GENERIC_ALCHEMICAL_OVERLAP",
+      "limits": "Dante/alchemical vocabulary is public-domain cultural material and not a source-specific marker."
+    },
+    {
+      "repo": "elderfu",
+      "url": "https://github.com/DavidWise01/elderfu/blob/main/README.md",
+      "motif": "MULTI_WITNESS_GRAPH",
+      "evidence": "README records 3 isolated observation-only witness channels and deterministic verification; not claims of historical rune/chemistry relations.",
+      "against": "AURAKAI many voices, vigilance, memory.",
+      "assessment": "LOW_TO_MODERATE_METHOD_PARALLEL",
+      "limits": "Different domain and no proven shared roots or text."
+    },
+    {
+      "repo": "0root",
+      "url": "https://github.com/DavidWise01/0root/blob/main/README.md",
+      "motif": "THREE_WORLDS_ONE_HALLWAY",
+      "evidence": "README maps the corpus, the fold and the hallway with different keepers, linking public custom domain 0root.ai.",
+      "against": "AURAKAI fragments becoming unity and preserving keepers.",
+      "assessment": "MODERATE_ARCHITECTURAL_THEME",
+      "limits": "0root.ai and GitHub remain one source ancestry; the page and repo are not independent corroboration."
+    }
+  ],
+  "coverage_limits": [
+    "READMEs inspected, not every repository file.",
+    "The corpus contains many more public repositories than the ten listed.",
+    "No source date is inferred from README statement, file modification time or latest commit without historical comparison.",
+    "The scope excludes private repositories and off-platform personal notes.",
+    "No copying or identity inference is justified by motif matches."
+  ],
+  "outcome": "10 additional public owned repositories inspected at README level; strongest new direct motifs are Phoenix-Engine, Jane memory keeper, and QUANTA three-labels-one-ancestry."
+}
