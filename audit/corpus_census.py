@@ -74,6 +74,9 @@ def get(url,token=None,maxbytes=2_500_000):
  if token and parsed.hostname=="api.github.com":headers["Authorization"]="Bearer "+token
  req=urllib.request.Request(url,headers=headers)
  with urllib.request.urlopen(req,timeout=18) as r:
+  final=urllib.parse.urlparse(r.geturl())
+  if final.scheme!="https" or final.hostname not in {"api.github.com","raw.githubusercontent.com","0root.ai","www.0root.ai"}:
+   raise ValueError("unsafe_redirect_destination")
   payload=r.read(maxbytes+1)
   if len(payload)>maxbytes:raise ValueError("response_too_large")
   return payload.decode("utf-8","replace")
@@ -201,6 +204,7 @@ def site_scan(state,maxpages):
   except Exception as e:errs.append({"url":u,"error":type(e).__name__})
  state["site_queue"]=queue
  state["site_seen"]=sorted(seen)
+ state["site_errors"]=list(state.get("site_errors",[]))+errs
  return {"visited_ok":count,"errors":errs,"seen_urls_total":len(seen),"remaining_url_queue":len(queue)}
 
 def main():
@@ -264,7 +268,8 @@ def main():
   "repository_census_complete":True,
   "repo_level_scan_complete":len(fully_scanned)==len(census),
   "all_eligible_file_contents_complete":len(fully_scanned)==len(census) and all(v.get("files_skipped_budget",0)==0 and v.get("files_skipped_size",0)==0 and not v.get("errors") for v in scanned),
-  "website_complete":not bool(state.get("site_queue")) and not bool(site and site.get("errors")) and len(state["pages"])>0
+  "website_complete":not bool(state.get("site_queue")) and not bool(state.get("site_errors")) and len(state["pages"])>0,
+  "website_pages_errors_total":len(state.get("site_errors",[]))
  }
  atomic(OUT/"coverage.json",report)
  findings=[]
