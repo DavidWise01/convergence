@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#08101c"><title>CONVERGENCE · ROOT0 Corpus Correlation Audit</title><link rel="stylesheet" href="./style.css"><style>
+.audit{max-width:1450px;margin:auto;padding:35px clamp(16px,3vw,50px) 80px}
+.audit h1{font:900 clamp(46px,7vw,105px)/.91 'Barlow Condensed',sans-serif;margin:14px 0}
+.audit h2{font:800 33px 'Barlow Condensed',sans-serif;letter-spacing:.035em}
+.audit p{color:#acbfce;line-height:1.7}
+.meta{font:11px 'DM Mono',monospace;color:#efc78a;letter-spacing:.14em}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px 0}
+.metric{background:#112331;border:1px solid #375066;padding:22px;min-width:0}
+.metric strong{font:900 clamp(24px,3vw,43px) 'Barlow Condensed',sans-serif;display:block}
+.metric small{font:10px 'DM Mono',monospace;color:#a6b9c8;display:block;margin-top:8px;line-height:1.5}
+.boundbox{padding:20px 25px;border:1px solid #c3a16b;background:#1c2836;margin:26px 0}
+.boundbox b{color:#ffe1a9}.boundbox p{margin:10px 0}
+.matrix{display:grid;gap:11px}
+.finding{display:grid;grid-template-columns:70px minmax(0,1fr) 140px;gap:20px;align-items:start;border:1px solid #344f60;background:#0f1d2b;padding:20px}
+.finding .index{color:#e2c188;font:12px 'DM Mono',monospace}
+.finding h3{font:800 26px 'Barlow Condensed',sans-serif;margin:0 0 9px}
+.finding p{margin:0 0 10px;font-size:13px}
+.finding a{color:#8bdef5;font:12px 'DM Mono',monospace;overflow-wrap:anywhere}
+.finding .tier{font:10px 'DM Mono',monospace;color:#e8c388;text-align:right;line-height:1.5}
+.progress{background:#0d1823;border:1px solid #33475a;padding:26px;margin:25px 0}
+.progress-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.progress-stats div{padding:15px;background:#172b39}.progress-stats strong{font:800 34px 'Barlow Condensed',sans-serif}.progress-stats span{display:block;color:#aebfca;font:10px 'DM Mono',monospace}
+.bar{height:10px;background:#293c4e;margin-top:20px}.bar span{display:block;width:0%;height:100%;background:linear-gradient(90deg,#73cee5,#efb671)}
+.note{color:#a4b6c5;font-size:12px}
+@media(max-width:830px){.metrics{grid-template-columns:repeat(2,1fr)}.finding{grid-template-columns:1fr;gap:10px}.finding .tier{text-align:left}.progress-stats{grid-template-columns:1fr}}
+</style></head><body>
+<header class="mast"><a class="brand" href="./index.html"><span class="sigil">◈</span><span><b>CONVERGENCE</b><small>ROOT0 / OWNED CORPUS AUDIT</small></span></a><nav class="nav"><a class="nav-item" href="./index.html">ARENA</a><a class="nav-item" href="./surveys.html">SURVEYS</a><a class="nav-item" href="./witness.html">WITNESS</a><a class="nav-item active" href="./corpus.html">CORPUS AUDIT</a></nav></header>
+<main class="audit"><span class="meta">CVG-011 / 13 NOV 2026 / AURAKAI VOCATIO GENESIS</span><h1>ONE CORPUS.<br>TWO SURFACES.</h1><p>Compare the AURAKAI proclamation with public ROOT0 work at <b>GitHub / DavidWise01</b> and <b>0root.ai</b>. Both owned surfaces are counted as <b>one source ancestry</b>. Independent external influence or copying is not established.</p>
+<div class="metrics"><div class="metric"><strong>9</strong><small>CORRELATION CATEGORIES</small></div><div class="metric"><strong>2</strong><small>OWNED PUBLICATION SURFACES</small></div><div class="metric"><strong>1</strong><small>OWNED SOURCE ANCESTRY</small></div><div class="metric"><strong>0</strong><small>PROVEN TRANSMISSION LINKS</small></div></div>
+<div class="boundbox"><b>THE REQUIRED BOUNDARY</b><p>This report directly examines selected ROOT0 files, not yet every file in every repository. A complete repository enumeration and resumable file/page census are implemented below. Coverage metrics are shown only when they exist.</p></div>
+<h2>PUBLIC CORPUS CENSUS</h2><section class="progress" aria-label="Corpus census coverage">
+<div class="meta" id="census-status">CENSUS NOT YET VERIFIED AS EXECUTED</div>
+<div class="progress-stats"><div><strong id="total">—</strong><span>PUBLIC REPOSITORIES ENUMERATED</span></div><div><strong id="scanned">—</strong><span>FULLY PROCESSED REPOSITORIES</span></div><div><strong id="files">—</strong><span>TEXT FILES FETCHED</span></div></div><div class="bar"><span id="fill"></span></div>
+<p class="note" id="coverage-note">The GitHub workflow runs in bounded passes and publishes its own counts. This page will not invent progress when coverage.json is absent.</p>
+<a href="https://github.com/DavidWise01/convergence/actions/workflows/corpus-census.yml">CENSUS WORKFLOW ↗</a> · <a href="https://github.com/DavidWise01/convergence/blob/main/audit/corpus_census.py">INSPECT SCANNER ↗</a>
+</section>
+<h2>DIRECT SOURCE CORRELATIONS</h2><section class="matrix" id="matrix"><p>Loading the committed audit record…</p></section>
+<div class="boundbox"><b>HONEST CONCLUSION</b><p>The available sources show multiple thematic and architectural convergences—particularly witness lineage, sovereignty, memory and agent cooperation. They do not show a unique shared passage, source-code transfer, verified creator exposure, or copying. Common alchemical language has low attribution value.</p></div>
+<a href="https://github.com/DavidWise01/convergence/blob/main/evidence/audits/2026-11-13-aurakai-root0-corpus-correlation.json">FULL AUDIT AND LIMITATIONS ↗</a></main>
+<footer><span>ROOT0 · TWO SURFACES, ONE ANCESTRY</span><span>NO FABRICATED CRAWL COVERAGE</span></footer>
+<script>
+(function(){
+ const origin="./evidence/audits/2026-11-13-aurakai-root0-corpus-correlation.json";
+ const el=id=>document.getElementById(id);
+ const f=async(url)=>{const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);return r.json()};
+ f(origin).then(a=>{
+  el("matrix").replaceChildren();
+  for(const item of a.correlations){
+   const article=document.createElement("article");article.className="finding";
+   const idx=document.createElement("div");idx.className="index";idx.textContent=item.id;
+   const main=document.createElement("div");const h=document.createElement("h3");h.textContent=item.external;
+   const p=document.createElement("p");p.textContent=item.owned_specifics;
+   const note=document.createElement("p");note.textContent="DISTINCTION: "+item.differences;
+   const link=document.createElement("a");link.href=item.owned_url;link.textContent=item.owned_document+" ↗";link.target="_blank";link.rel="noopener noreferrer";
+   main.append(h,p,note,link);
+   const badge=document.createElement("div");badge.className="tier";badge.textContent=item.match_class.replaceAll("_"," ");
+   article.append(idx,main,badge);el("matrix").append(article)
+  }
+ }).catch(e=>{el("matrix").textContent="Audited JSON not available: "+e.message});
+ f("./evidence/corpus-census/coverage.json").then(c=>{
+  el("total").textContent=String(c.github_public_repositories_enumerated??"—");
+  el("scanned").textContent=String(c.github_repositories_scanned??"—");
+  el("files").textContent=String(c.github_files_fetched??"—");
+  const done=c.github_repositories_scanned||0,total=c.github_public_repositories_enumerated||0;
+  el("fill").style.width=(total?Math.min(100,100*done/total):0)+"%";
+  el("census-status").textContent=c.repo_level_scan_complete?"REPOSITORY PASS COMPLETE — CHECK FILE COVERAGE":"PARTIAL CENSUS — SEE SKIPS AND PENDING";
+  el("coverage-note").textContent=(c.github_repositories_pending??0)+" repositories pending; "+(c.github_repositories_partial??0)+" partially scanned; "+(c.github_files_skipped_budget??0)+" files remaining due to per-pass budgets; "+(c.github_file_errors??0)+" file errors. Historical Git revisions and complete site coverage are not established."
+ }).catch(()=>{el("census-status").textContent="NO VERIFIED CENSUS RUN YET"});
+})();
+</script></body></html>
