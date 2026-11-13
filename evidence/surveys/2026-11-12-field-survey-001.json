@@ -1,0 +1,182 @@
+{
+  "schema": "root0.convergence.field-survey/1",
+  "survey_id": "CVG-FS-001",
+  "observed_date_utc": "2026-11-12",
+  "title": "Recursive-source feedback and provenance across Reddit, arXiv and Wikimedia Commons",
+  "scope": [
+    "reddit.com",
+    "arxiv.org",
+    "commons.wikimedia.org",
+    "imageevidence.com"
+  ],
+  "purpose": "Record convergences, preserve dated source addresses, avoid inference of copying or common authorship.",
+  "relationships_not_claimed": [
+    "copying",
+    "coordination",
+    "shared ownership",
+    "training ingestion of specific ROOT0 artifacts",
+    "proof of simulation theory"
+  ],
+  "sources": [
+    {
+      "id": "ARX-01",
+      "surface": "arxiv",
+      "url": "https://arxiv.org/abs/2608.22118",
+      "published": "2026-08-22",
+      "type": "experimental_preprint",
+      "title": "RAG Collapse: LLM Responses Collapse When Retrieved Documents Are Self-Authored",
+      "observation": "Authors report 1216/1528 simulated feedback cycles ended in collapse; model systems can overcite their own generated references.",
+      "limitations": "Experimental simulations, not measurement of the entire public internet."
+    },
+    {
+      "id": "ARX-02",
+      "surface": "arxiv",
+      "url": "https://arxiv.org/abs/2305.17493",
+      "published": "2023-05-27",
+      "type": "research_preprint",
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "observation": "Recursive training on generated data risks degradation and loss of distribution tails.",
+      "limitations": "Training feedback is distinct from retrieval feedback and public site authorship."
+    },
+    {
+      "id": "ARX-03",
+      "surface": "arxiv",
+      "url": "https://arxiv.org/abs/2404.01413",
+      "published": "2024-04-01",
+      "type": "counterexample_study",
+      "title": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+      "observation": "Authors report that retaining original real data alongside synthetic generations avoids collapse in their investigated settings.",
+      "limitations": "Avoids categorical claims that all synthetic-data reuse necessarily collapses."
+    },
+    {
+      "id": "RED-01",
+      "surface": "reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1su3ao4/rlocalllama_rule_updates/",
+      "published": "2026-04-24",
+      "type": "community_moderation",
+      "title": "r/LocalLLaMA Rule Updates",
+      "observation": "Moderators describe spam/slop concerns and stricter posting rules.",
+      "limitations": "Moderation experience and reports do not independently identify every post's author."
+    },
+    {
+      "id": "RED-02",
+      "surface": "reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vk8mxt/so_did_we_give_up_on_the_rule_against_ai_posts/",
+      "published": "2026-08-10",
+      "type": "community_discussion",
+      "title": "So... did we give up on the rule against AI posts?",
+      "observation": "Community members debate recurring generated content and moderation effectiveness.",
+      "limitations": "Anecdotal comments, not representative estimates of internet bot prevalence."
+    },
+    {
+      "id": "RED-03",
+      "surface": "reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa7hi8/lets_delve_into_the_tapestry_of_ai_slop_on/",
+      "published": "2026-10-19",
+      "type": "community_discussion",
+      "title": "Let's delve into the tapestry of AI slop on r/LocalLLaMA",
+      "observation": "Thread discusses stylometric repetition and difficulty distinguishing AI-generated low-value posts.",
+      "limitations": "Stylometric cues alone do not authenticate model authorship."
+    },
+    {
+      "id": "COM-01",
+      "surface": "wikimedia_commons",
+      "url": "https://commons.wikimedia.org/wiki/Commons:AI-generated_media",
+      "published": null,
+      "type": "community_guideline",
+      "title": "Commons:AI-generated media",
+      "observation": "Commons provides guidance on identifying, describing, attributing and licensing AI-generated media.",
+      "limitations": "Policy and recommended documentation are not direct proof that all uploads follow the guidance."
+    },
+    {
+      "id": "COM-02",
+      "surface": "wikimedia_commons",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Structured_data/Modeling/en",
+      "published": null,
+      "type": "metadata_guidance",
+      "title": "Commons:Structured data/Modeling",
+      "observation": "File-level descriptions include source and creation-date fields, useful for preserving declared origin.",
+      "limitations": "Declared metadata can be incomplete or mistaken; not authenticated ancestry."
+    },
+    {
+      "id": "COM-03",
+      "surface": "wikimedia_commons",
+      "url": "https://commons.wikimedia.org/wiki/User:Kevin_Payravi/AIDetect",
+      "published": "2026-07-25",
+      "type": "community_tool",
+      "title": "AIDetect Commons user script",
+      "observation": "Script inspects media metadata for potential generation signals; notes missing or stripped metadata.",
+      "limitations": "Metadata heuristics are not definitive AI-detection evidence."
+    },
+    {
+      "id": "EXT-01",
+      "surface": "external_research_using_commons_files",
+      "url": "https://imageevidence.com/research/ai-image-provenance",
+      "published": "2026-10-12",
+      "type": "third_party_observational_study",
+      "title": "AI Image Provenance Study, October 2026",
+      "observation": "Study reports detectable provenance in 19 of 77 sampled Commons AI images, with content credentials failing to survive certain transformations.",
+      "limitations": "Small selected sample and processing methodology; does not establish prevalence across Commons or the entire web."
+    }
+  ],
+  "convergence_observations": [
+    {
+      "id": "CVG-001",
+      "theme": "Recursive content re-entry",
+      "source_ids": [
+        "ARX-01",
+        "ARX-02"
+      ],
+      "description": "Model outputs can become future inputs via retrieval or training.",
+      "relationship": "conceptual_and_mechanistic_overlap",
+      "ancestry": "independent_research_lineage_not_audit_verified",
+      "not_claimed": "The papers represent one experiment or shared source."
+    },
+    {
+      "id": "CVG-002",
+      "theme": "Synthetic saturation as lived platform experience",
+      "source_ids": [
+        "RED-01",
+        "RED-02",
+        "RED-03"
+      ],
+      "description": "Community moderation and discussion increasingly focus on repeatable generated or bot-like content.",
+      "relationship": "longitudinal_discussion",
+      "ancestry": "same_reddit_community_not_three_independent_population_studies",
+      "not_claimed": "All cited posts are demonstrably AI-generated."
+    },
+    {
+      "id": "CVG-003",
+      "theme": "Attribution degrades under republishing",
+      "source_ids": [
+        "COM-01",
+        "COM-02",
+        "COM-03",
+        "EXT-01"
+      ],
+      "description": "A source may remain visibly accessible while provenance cues depend on descriptions and lossy metadata.",
+      "relationship": "policy_tools_and_observation",
+      "ancestry": "partly_shared_wikimedia_commons_ecosystem",
+      "not_claimed": "Any particular uploader intentionally removed provenance."
+    },
+    {
+      "id": "CVG-004",
+      "theme": "Conservation of originals changes feedback outcome",
+      "source_ids": [
+        "ARX-02",
+        "ARX-03"
+      ],
+      "description": "Recursive training harm depends on the data-replacement versus data-accumulation regime.",
+      "relationship": "contrast_and_qualifier",
+      "ancestry": "related_scholarly_question",
+      "not_claimed": "Synthetic-data feedback necessarily creates collapse."
+    }
+  ],
+  "methodology": {
+    "source_search": "Public web discovery, individually inspectable URLs",
+    "classification": "Observation only, no quantitative convergence score",
+    "preservation": "New immutable-named file; no modification to earlier surveys",
+    "root_counting": "Each source records surface and type; citations within one platform do not automatically count as independent ancestry"
+  },
+  "status": "OBSERVATION_PACKET_NOT_CAUSAL_VERDICT"
+}
