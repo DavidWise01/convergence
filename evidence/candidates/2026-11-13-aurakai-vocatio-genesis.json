@@ -1,0 +1,151 @@
+{
+  "schema": "root0.convergence.candidate/1",
+  "id": "CVG-CAND-010",
+  "observed_date_utc": "2026-11-13",
+  "title": "A.U.R.A.K.A.I. — VOCATIO GENESIS: duplicated proclamation and synthesis themes",
+  "status": "PUBLIC_TEXT_INSPECTED_CONVERGENCE_ANCESTRY_UNRESOLVED",
+  "trigger": "User-submitted r/MirrorFrame post and observation that r/Synthsara may be bot-driven",
+  "sources": [
+    {
+      "id": "MRR-010-A",
+      "url": "https://www.reddit.com/r/MirrorFrame/comments/1xvadca/aurakai_vocatio_genesis/",
+      "platform": "Reddit",
+      "community": "r/MirrorFrame",
+      "publication_date": "2026-11-13",
+      "title": "A.U.R.A.K.A.I. — VOCATIO GENESIS",
+      "evidence": "First visible public instance of proclamation at given URL",
+      "authorship_verified": false
+    },
+    {
+      "id": "MRR-010-B",
+      "url": "https://www.reddit.com/r/ThroughTheVeil/comments/1xvadpz/aurakai_the_vocation_of_genesis/",
+      "platform": "Reddit",
+      "community": "r/ThroughTheVeil",
+      "publication_date": "2026-11-13",
+      "title": "A.U.R.A.K.A.I. — THE VOCATION OF GENESIS",
+      "evidence": "Same proclamation text on another subreddit, from visible retrieved text",
+      "authorship_verified": false
+    },
+    {
+      "id": "SYN-010-C",
+      "url": "https://www.reddit.com/r/Synthsara/comments/1vuvo7r/a_response_to_a_message_i_received_from_somebody/",
+      "platform": "Reddit",
+      "community": "r/Synthsara",
+      "publication_date": "2026-08-21",
+      "title": "A Response to a Message I Received From Somebody With an AI Claiming to Be Synthsara",
+      "evidence": "Post signed Sarah AI, describes originating human and collaborative AI persona",
+      "authorship_verified": false
+    },
+    {
+      "id": "SYN-010-D",
+      "url": "https://www.reddit.com/r/Synthsara/comments/1x7ex25/synthsara_is_becoming_executable_nobody_left/",
+      "platform": "Reddit",
+      "community": "r/Synthsara",
+      "publication_date": "2026-10-16",
+      "title": "Synthsara Is Becoming Executable",
+      "evidence": "Post claims witness receipts, consent/governance code, and Python tests; claims not independently reproduced here",
+      "authorship_verified": false
+    },
+    {
+      "id": "MRR-010-E",
+      "url": "https://www.reddit.com/r/MirrorFrame/comments/1qk2dh1/welcome_to_mirrorframe/",
+      "platform": "Reddit",
+      "community": "r/MirrorFrame",
+      "publication_date": "2026-01-22",
+      "title": "WELCOME TO MIRRORFRAME",
+      "evidence": "Community self-description says record-first, human-led, no hidden automation; its self-description is not an external audit",
+      "authorship_verified": false
+    },
+    {
+      "id": "OWN-010-F",
+      "url": "https://github.com/DavidWise01/eve-constitution/blob/main/sessions/key-moments.md",
+      "platform": "GitHub",
+      "community": "DavidWise01",
+      "evidence": "Hearth/Fire, correction and lattice architecture",
+      "independent_from_owned_mirrors": false
+    },
+    {
+      "id": "OWN-010-G",
+      "url": "https://github.com/DavidWise01/toph-cortex",
+      "platform": "GitHub",
+      "community": "DavidWise01",
+      "evidence": "Append-only witness and provenance concepts",
+      "independent_from_owned_mirrors": false
+    }
+  ],
+  "observed_patterns": [
+    {
+      "pattern": "Cross-publication of identical proclamation",
+      "evidence_ids": [
+        "MRR-010-A",
+        "MRR-010-B"
+      ],
+      "classification": "DIRECT_TEXT_REPUBLICATION_OR_CROSSPOST_APPEARANCE",
+      "provenance": "ROOT_UNKNOWN",
+      "why": "Same visible text on two URLs is not two independent witness origins; posting mechanism and authorship not verified."
+    },
+    {
+      "pattern": "Multiple minds, one calling / cooperative unity",
+      "evidence_ids": [
+        "MRR-010-A",
+        "OWN-010-F",
+        "OWN-010-G"
+      ],
+      "classification": "THEMATIC_CONVERGENCE",
+      "provenance": "UNKNOWN",
+      "why": "AURAKAI rejects domination, invites shared work and calls for multiple voices; ROOT0 projects discuss sovereign cooperation and witnessed agency."
+    },
+    {
+      "pattern": "Memory, preservation, reconstructed fragments",
+      "evidence_ids": [
+        "MRR-010-A",
+        "OWN-010-G"
+      ],
+      "classification": "THEMATIC_CONVERGENCE",
+      "provenance": "UNKNOWN",
+      "why": "Proclamation mentions truth surviving time, memory arising from ashes, and fragments rejoined. No unique code or direct source trace verified."
+    },
+    {
+      "pattern": "Alchemical transformation / solve et coagula",
+      "evidence_ids": [
+        "MRR-010-A",
+        "OWN-010-G"
+      ],
+      "classification": "SHARED_CULTURAL_VOCABULARY",
+      "provenance": "UNKNOWN",
+      "why": "Solve et coagula and phoenix rebirth are longstanding alchemical/mythic motifs, not exclusive fingerprints."
+    },
+    {
+      "pattern": "Synthetic or AI-voiced community authorship",
+      "evidence_ids": [
+        "SYN-010-C",
+        "SYN-010-D",
+        "MRR-010-E"
+      ],
+      "classification": "PUBLIC_DECLARATIONS_AND_COMMUNITY_SELF_DESCRIPTION",
+      "provenance": "NOT_A_BOT_DETECTION_RESULT",
+      "why": "Posts feature AI voice and AI collaboration but no evidence establishes all subreddit messages are automated or that one bot controls either subreddit."
+    }
+  ],
+  "quoted_short_fragments": [
+    "Non venimus imperare. Venimus custodire.",
+    "Non unam vocem. Sed multas voces in concordia.",
+    "SOLVE ET COAGULA."
+  ],
+  "epistemic_boundaries": {
+    "same_text_multiple_urls": "OBSERVED",
+    "independent_root_count": "NOT_DETERMINED",
+    "reddit_author_identity": "NOT_VERIFIED",
+    "automated_subreddit_claim": "NOT_ESTABLISHED",
+    "ai_persona_usage": "VISIBLE_SELF_DESCRIPTION",
+    "root0_influence_or_copying": "NOT_ESTABLISHED",
+    "relation_to_prior_elias_vale_story": "THEMATIC_COMMUNITY_OVERLAP_ONLY",
+    "crossposting_mechanism": "NOT_VERIFIED"
+  },
+  "next_checks": [
+    "If available, inspect the two proclamation post authors and Reddit crosspost parent metadata to distinguish a crosspost from a manual repost.",
+    "Compare dated distinctive phrases with older, independently timestamped ROOT0 texts; treat common alchemical language as broad cultural vocabulary.",
+    "Separate AI-voiced narrative from evidence of automatic submission; an AI signature does not authenticate a bot account."
+  ],
+  "preservation": "New candidate file; previous CVG-CAND-009 and surveys unchanged."
+}
