@@ -33,7 +33,9 @@ TARGET={
  "witness_ancestry":["witness","lineage","ancestry","independent","provenance","source root","trace roots"],
  "memory_preservation":["append-only","immutable","memory","preserve","sealed","merkle","watermark"],
  "alchemy_rejoining":["solve et coagula","alchemy","dissolve","coagula","flay","fold","unbind","recombine"],
- "distributed_keepers":["keeper","cortex","agents","multi-agent","moe","swarm","diaspora"]
+ "distributed_keepers":["keeper","cortex","agents","multi-agent","moe","swarm","diaspora"],
+ "ethical_correction":["drift","correction","contradiction","wisdom","ethics","governance","accountability","hearth","fire"],
+ "contribution_consent":["contribution","intellectual labor","credit","recognition","compensation","consent","opt out","attribution","transparency","diamond"]
 }
 PHRASES=[
  "guidance ≠ domination",
@@ -46,6 +48,9 @@ PHRASES=[
  "non unam vocem",
  "solve et coagula",
  "unum corpus multae mentes",
+ "diamond principle",
+ "unpaid intelligence problem",
+ "an apology without correction",
 ]
 # No blanket assertion that shared generic words are unique, meaningful or transmitted.
 SUFFIXES={".md",".txt",".rst",".html",".htm",".js",".ts",".py",".json",".jsonl",".yaml",".yml",".dlw"}
