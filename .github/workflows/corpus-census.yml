@@ -1,0 +1,49 @@
+name: ROOT0 corpus-wide correlation census
+on:
+  workflow_dispatch:
+    inputs:
+      max_repos:
+        description: "Number of repositories to process in one bounded pass"
+        required: false
+        default: "60"
+      max_files:
+        description: "Maximum candidate text files inspected per repository"
+        required: false
+        default: "16"
+      max_site_pages:
+        description: "Maximum 0root.ai pages per pass"
+        required: false
+        default: "35"
+  schedule:
+    - cron: "17 */6 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: convergence-owned-corpus-census
+  cancel-in-progress: false
+jobs:
+  corpus-census:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Enumerate ROOT0 public GitHub and inspect files/site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python audit/corpus_census.py \
+            --max-repos "${{ inputs.max_repos || '60' }}" \
+            --max-files-per-repo "${{ inputs.max_files || '16' }}" \
+            --max-site-pages "${{ inputs.max_site_pages || '35' }}" \
+            --site
+      - name: Commit only changed coverage and correlation records
+        run: |
+          git add evidence/corpus-census/
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name='ROOT0 Corpus Census' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'audit: persist bounded corpus census, coverage, and lexical matches'
+          git push
