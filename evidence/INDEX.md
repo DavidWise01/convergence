@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| B009 · 2026-11-14 | Cross-route ancestry / two paths versus independent roots | Synthetic 12/12 local tests PASS; real-world source identities not verified | [B009 report](./audits/2026-11-14-b009-cross-route-ancestry.md) |
 | C009 · 2026-11-14 | [r/ChatGPT "caveman quantum computer"](https://www.reddit.com/r/ChatGPT/comments/1xvyhxn/did_chatgpt_just_design_a_caveman_quantum_computer/) | Partial screenshots observed; source ancestry UNKNOWN; screenshot files **not archived** in Git | [2026-11-14 Reddit candidate](./candidates/2026-11-14-reddit-caveman-quantum-computer.json) |
 | B008 · 2026-11-13 | Parallel transport / 5 wired + 5 wireless + 7 OSI analytical model | Synthetic model, not public-internet provenance | [Test source](../audit/parallel17.py) |
 | B006 · 2026-11-13 | Historical adapter persistence examples | Documented sources and synthetic experiment; not a global attribution | [Audit](./audits/2026-11-13-b006-adapter-persistence-test.md) |
