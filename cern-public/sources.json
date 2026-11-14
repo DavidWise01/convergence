@@ -1,0 +1,137 @@
+{
+  "snapshot_date": "2026-11-14",
+  "purpose": "Public CERN evidence and computational lineage, historical REAP to modern systems",
+  "verified_public_sources": [
+    {
+      "group": "historical",
+      "name": "Ferranti Mercury July 1961 publication on Archive.org",
+      "url": "https://archive.org/details/bitsavers_ferrantiFeatureJul61_763465",
+      "kind": "catalogue/document",
+      "status": "catalogued; source artifact not mirrored"
+    },
+    {
+      "group": "historical",
+      "name": "REAP and bubble chamber 1963 report",
+      "url": "https://cds.cern.ch/record/223864/files/p1.pdf?version=1",
+      "kind": "document",
+      "status": "public link, full binary not rehosted"
+    },
+    {
+      "group": "historical",
+      "name": "CERN bubble chamber library report 1963",
+      "url": "https://cds.cern.ch/record/297896/files/CERN-TC-PHYSICS-63-11.pdf",
+      "kind": "document",
+      "status": "public link, not rehosted"
+    },
+    {
+      "group": "data",
+      "name": "CERN Open Data",
+      "url": "https://opendata.cern.ch/",
+      "kind": "portal",
+      "status": "public"
+    },
+    {
+      "group": "data",
+      "name": "CERN Open Data records API",
+      "url": "https://opendata.cern.ch/api/records/",
+      "kind": "api",
+      "status": "public; metadata CC0"
+    },
+    {
+      "group": "data",
+      "name": "CERN Open Data terms",
+      "url": "https://opendata.cern/docs/terms-of-use",
+      "kind": "policy",
+      "status": "public"
+    },
+    {
+      "group": "documents",
+      "name": "CERN Repository records API",
+      "url": "https://repository.cern/api/records",
+      "kind": "api",
+      "status": "public records only; item-specific rights"
+    },
+    {
+      "group": "documents",
+      "name": "CERN repository API documentation",
+      "url": "https://repository.cern/docs/reference/reference/",
+      "kind": "api_documentation",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "CERN open-source directory",
+      "url": "https://github.com/CERN/awesome-cern",
+      "kind": "repository_index",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "CMSSW",
+      "url": "https://github.com/cms-sw/cmssw",
+      "kind": "source_code",
+      "status": "public; Apache-2.0"
+    },
+    {
+      "group": "software",
+      "name": "ROOT",
+      "url": "https://github.com/root-project/root",
+      "kind": "source_code",
+      "status": "public; check repository license"
+    },
+    {
+      "group": "software",
+      "name": "ACTS",
+      "url": "https://github.com/acts-project/acts",
+      "kind": "source_code",
+      "status": "public; check repository license"
+    },
+    {
+      "group": "software",
+      "name": "CERN GitLab public projects",
+      "url": "https://gitlab.cern.ch/explore/projects",
+      "kind": "repository_index",
+      "status": "public subset"
+    },
+    {
+      "group": "software",
+      "name": "CERN CMS container guide",
+      "url": "https://opendata.cern.ch/docs/cms-guide-docker",
+      "kind": "environment_documentation",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "LHCb Run 3 reconstruction thesis",
+      "url": "https://repository.cern/records/zjbhq-qwh84/files/CERN-THESIS-2023-097.pdf?download=1",
+      "kind": "document",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "Key4hep",
+      "url": "https://key4hep.github.io/key4hep-doc/",
+      "kind": "documentation",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "Geant4",
+      "url": "https://geant4.web.cern.ch/",
+      "kind": "documentation",
+      "status": "public"
+    },
+    {
+      "group": "software",
+      "name": "LHCb processing flow",
+      "url": "https://indico.cern.ch/event/1491351/contributions/6377183/attachments/3039895/5369669/U2_workshop_March2024%20%282%29.pdf",
+      "kind": "presentation",
+      "status": "public"
+    }
+  ],
+  "observed_limitations": [
+    "This is a curated starting inventory, not a complete download.",
+    "No physical 1950s-1960s REAP magnetic tapes verified.",
+    "Automated harvest is bounded, no unrestricted corpus copying."
+  ]
+}
