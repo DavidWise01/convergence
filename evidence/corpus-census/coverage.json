@@ -1,0 +1,46 @@
+{
+  "all_eligible_file_contents_complete": false,
+  "claims_not_supported": [
+    "all source files read",
+    "private repos examined",
+    "historical revisions exhausted",
+    "all 0root.ai pages covered",
+    "independent source origins inferred",
+    "cross-platform copying proven"
+  ],
+  "generated_utc": "2026-11-14T06:22:33.172938+00:00",
+  "github_eligible_files": 3775,
+  "github_file_errors": 469,
+  "github_files_fetched": 0,
+  "github_files_skipped_budget": 3268,
+  "github_files_skipped_size": 38,
+  "github_public_repositories_enumerated": 2154,
+  "github_repositories_error": 0,
+  "github_repositories_partial": 11,
+  "github_repositories_pending": 2094,
+  "github_repositories_scanned": 49,
+  "github_repositories_started": 60,
+  "github_revisions_not_pinned": true,
+  "one_ancestry_two_surfaces": true,
+  "owned_source_surfaces": [
+    "github.com/DavidWise01",
+    "0root.ai"
+  ],
+  "repo_level_scan_complete": false,
+  "repository_census_complete": true,
+  "schema": "root0.convergence.corpus-coverage/1",
+  "site_last_run": {
+    "errors": [
+      {
+        "error": "HTTPError",
+        "url": "https://0root.ai/world2/"
+      }
+    ],
+    "remaining_url_queue": 0,
+    "seen_urls_total": 24,
+    "visited_ok": 23
+  },
+  "site_unique_pages_scanned": 23,
+  "website_complete": false,
+  "website_pages_errors_total": 1
+}
