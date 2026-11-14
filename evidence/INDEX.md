@@ -26,3 +26,5 @@ When a URL, screenshot or file is submitted with **"add this to evidence"**:
 Do not promote plausible automated derivation to confirmed ancestry without an independently verifiable causal link.
 
 - **H014 (2026-11-14)** — [REAP: CERN Mercury → IBM 709 software lineage](./audits/2026-11-14-h014-reap-program-lineage.md). Primary-document evidence; source binaries and downstream exact descendants unresolved.
+
+- **H015 (2026-11-14)** — [CERN public computing lineage, software catalogue and bounded open-data harvester](../cern-public/README.md) · [source index](../cern-public/sources.json) · [harvest tool](../cern-public/harvest.py). Public inventory committed; API snapshot is generated only after running the manual workflow.
