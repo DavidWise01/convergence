@@ -1,0 +1,48 @@
+{
+  "schema": "convergence.evidence.candidate.v1",
+  "recorded_date": "2026-11-14",
+  "source_surface": "reddit",
+  "submission_id": "1xvyhxn",
+  "subreddit": "r/ChatGPT",
+  "url": "https://www.reddit.com/r/ChatGPT/comments/1xvyhxn/did_chatgpt_just_design_a_caveman_quantum_computer/",
+  "title_from_url_slug": "Did ChatGPT just design a caveman quantum computer?",
+  "title_verified": false,
+  "supplied_by": "user",
+  "observation_status": "URL_ONLY_CONTENT_INACCESSIBLE",
+  "retrieval_attempts": [
+    {
+      "method": "web open original Reddit URL",
+      "result": "DisabledError; post text unavailable"
+    },
+    {
+      "method": "web open old.reddit.com version",
+      "result": "not accessible"
+    },
+    {
+      "method": "web search for exact slug and submission ID",
+      "result": "no matching results"
+    }
+  ],
+  "post_body_observed": false,
+  "comments_observed": false,
+  "poster_identity_observed": false,
+  "timestamp_of_publication_observed": false,
+  "claims_verified": false,
+  "context": [
+    "B007 17-position wired/wireless/OSI analytic overlay",
+    "B008 parallel wired/wireless ancestry experiment",
+    "Candidate for later comparison with ROOT0/QUANTA quantum-computer work"
+  ],
+  "comparison_status": "NOT_EVALUATED_NO_POST_CONTENT",
+  "ancestry": "UNKNOWN",
+  "evidence_grade": "POINTER_ONLY",
+  "hypotheses_not_established": [
+    "independent convergence",
+    "shared upstream origin",
+    "author exposure to ROOT0 corpus",
+    "content copying",
+    "working quantum hardware"
+  ],
+  "required_followup": "Acquire original post text and public metadata, capture content and observation time, then assess specific testable technical claims and independent provenance. Do not infer similarity from title alone.",
+  "operator_note": "A user-submitted URL is an evidence lead, not proof of the content or origin."
+}
