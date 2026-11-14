@@ -44,3 +44,7 @@ Go to repository **Settings → Pages → Build and deployment → Deploy from a
 \`{{ observe → compare → cite → preserve }}\`
 
 Created for David Lee Wise / ROOT0. No official Avatar art, audio, characters, or branding is used.
+
+## Evidence intake — persistent handoff
+
+When the owner says **"add this to evidence"**, preserve the provided source as a dated record in this repository, link it from [the evidence index](./evidence/INDEX.md), and re-fetch the commit to verify. See [the canonical intake contract](./evidence/INTAKE.md) for observation status, provenance, screenshot limitations, and future-chat retrieval. A source being saved does not mean its claims or ancestry are verified.
