@@ -1,0 +1,21 @@
+# CONVERGENCE — Evidence index
+
+Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
+
+| Evidence | Observation | Status | Canonical record |
+| --- | --- | --- | --- |
+| C009 · 2026-11-14 | [r/ChatGPT "caveman quantum computer"](https://www.reddit.com/r/ChatGPT/comments/1xvyhxn/did_chatgpt_just_design_a_caveman_quantum_computer/) | Partial screenshots observed; source ancestry UNKNOWN; screenshot files **not archived** in Git | [2026-11-14 Reddit candidate](./candidates/2026-11-14-reddit-caveman-quantum-computer.json) |
+| B008 · 2026-11-13 | Parallel transport / 5 wired + 5 wireless + 7 OSI analytical model | Synthetic model, not public-internet provenance | [Test source](../audit/parallel17.py) |
+| B006 · 2026-11-13 | Historical adapter persistence examples | Documented sources and synthetic experiment; not a global attribution | [Audit](./audits/2026-11-13-b006-adapter-persistence-test.md) |
+
+Other retained candidate, survey, and audit records remain in their original files under `evidence/`. This index is an **intake entry point**, not an assertion that every older record has been enumerated.
+
+## New evidence
+
+When a URL, screenshot or file is submitted with **"add this to evidence"**:
+
+1. Store a dated candidate JSON and commit it.
+2. Add a row here, with the actual observation and uncertainty status.
+3. Verify both GitHub files and return direct source, record, and commit links.
+
+Do not promote plausible automated derivation to confirmed ancestry without an independently verifiable causal link.
