@@ -1,0 +1,35 @@
+{
+  "schema": "convergence.evidence.research.v1",
+  "id": "H012",
+  "recorded_at": "2026-11-14",
+  "question": "Earliest bit/byte stored and sent through a transistor",
+  "findings": [
+    {
+      "date": "1947-12-16",
+      "finding": "Bardeen and Brattain transistor device successfully amplified electrical signals at Bell Labs. Not documented as the first digital bit stored or sent."
+    },
+    {
+      "date": "1947-12-23",
+      "finding": "Audio amplification demonstrated to Bell Labs leadership; no digital byte involved."
+    },
+    {
+      "date": "1953-11-16",
+      "finding": "Manchester transistor computer demonstrated running programs with transistorized logic; main storage was a magnetic drum."
+    },
+    {
+      "period": "1953–1954",
+      "finding": "Computer History Museum documents transistor registers and small memory circuitry in early computers. Exact first stored digital bit via a transistor not identified."
+    }
+  ],
+  "boundaries": [
+    "A transistor can transmit or amplify an analog signal; no byte semantics follow.",
+    "A bistable transistor latch uses transistor circuitry to preserve one bit; a transistor by itself is not necessarily a memory cell.",
+    "Early Manchester machine's drum is not transistor-based main storage."
+  ],
+  "source_links": [
+    "https://www.computerhistory.org/siliconengine/invention-of-the-point-contact-transistor/",
+    "https://www.computerhistory.org/siliconengine/transistorized-computers-emerge/",
+    "https://www.computerhistory.org/storageengine/transistors-make-fast-memories/",
+    "https://www.curation.cs.manchester.ac.uk/digital60/www.digital60.org/birth/manchestercomputers/transistorcomputer/index.html"
+  ]
+}
