@@ -8,7 +8,7 @@
   "title_from_url_slug": "Did ChatGPT just design a caveman quantum computer?",
   "title_verified": false,
   "supplied_by": "user",
-  "observation_status": "URL_ONLY_CONTENT_INACCESSIBLE",
+  "observation_status": "USER_SCREENSHOTS_PARTIAL_POST_VISIBLE",
   "retrieval_attempts": [
     {
       "method": "web open original Reddit URL",
@@ -21,9 +21,13 @@
     {
       "method": "web search for exact slug and submission ID",
       "result": "no matching results"
+    },
+    {
+      "method": "user-provided screenshots",
+      "result": "Two slides visibly establish mechanical rotating 4-position memory proposal and the post's short caption; no full-text/post metadata verified."
     }
   ],
-  "post_body_observed": false,
+  "post_body_observed": "PARTIAL_SCREENSHOTS",
   "comments_observed": false,
   "poster_identity_observed": false,
   "timestamp_of_publication_observed": false,
@@ -33,9 +37,9 @@
     "B008 parallel wired/wireless ancestry experiment",
     "Candidate for later comparison with ROOT0/QUANTA quantum-computer work"
   ],
-  "comparison_status": "NOT_EVALUATED_NO_POST_CONTENT",
+  "comparison_status": "PRELIMINARY_GEOMETRIC_STATE_ANALOGY",
   "ancestry": "UNKNOWN",
-  "evidence_grade": "POINTER_ONLY",
+  "evidence_grade": "PARTIAL_USER_SCREENSHOTS",
   "hypotheses_not_established": [
     "independent convergence",
     "shared upstream origin",
@@ -43,6 +47,16 @@
     "content copying",
     "working quantum hardware"
   ],
-  "required_followup": "Acquire original post text and public metadata, capture content and observation time, then assess specific testable technical claims and independent provenance. Do not infer similarity from title alone.",
-  "operator_note": "A user-submitted URL is an evidence lead, not proof of the content or origin."
+  "required_followup": "Collect remaining slides, full public post, author/date metadata, and technical diagram; compare distinctive mechanisms against independently dated source designs. User screenshots alone do not establish causal ancestry.",
+  "operator_note": "A user-submitted URL is an evidence lead, not proof of the content or origin.",
+  "screenshot_evidence": {
+    "type": "two user-uploaded screenshots of Reddit page and embedded ChatGPT conversation",
+    "scope": "visible excerpts only; other slides, full post and comments not available",
+    "observed_prompt": "How would you design computers without switches, imagining the technology when computers were first invented and how it would look today?",
+    "observed_answer_summary": "Proposes a computer based on mechanical motion, rotation, pressure, light and sound; a cylinder with many angular storage positions; four states 0°,90°,180°,270° mapping to values 0,1,2,3.",
+    "observed_post_caption": "Was playing around with some thought experiments with ChatGPT regarding how computers would have been designed without switches, etc and it came up with this....",
+    "observed_at": "2026-11-14",
+    "screenshots_preserved_in_repository": false
+  },
+  "technical_observation": "Four distinguishable mechanical angles give log2(4)=2 classical bits per position; no superposition, entanglement, or quantum evidence shown. A rotating mechanical register is conceptually related to multi-state representation, not proof of copied design."
 }
