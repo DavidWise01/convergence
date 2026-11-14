@@ -1,0 +1,19 @@
+name: B009 Cross-Route Ancestry
+on:
+  push:
+    paths:
+      - 'audit/cross_route_b009.py'
+      - '.github/workflows/cross-route-b009.yml'
+  workflow_dispatch:
+jobs:
+  cross-route:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run 12 B009 regression tests
+        run: python3 -m unittest discover -s audit -p cross_route_b009.py -v
