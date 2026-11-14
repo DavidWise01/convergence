@@ -1,0 +1,19 @@
+name: B008 Parallel 17 Provenance
+on:
+  push:
+    paths:
+      - 'audit/parallel17.py'
+      - '.github/workflows/parallel17.yml'
+  workflow_dispatch:
+jobs:
+  provenance:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: B008 parallel-transport ancestry regression
+        run: python3 -m unittest audit.parallel17 -v
