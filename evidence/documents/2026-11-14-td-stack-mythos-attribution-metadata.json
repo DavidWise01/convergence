@@ -1,0 +1,29 @@
+{
+  "schema": "convergence.evidence.document.v1",
+  "id": "D011",
+  "recorded_at": "2026-11-14",
+  "document_id": "TD-STACK-WP-2026-001",
+  "source_type": "user_uploaded_pdf",
+  "supplied_filename": "TD-STACK-WP-2026-001_Mythos-Attribution(1).pdf",
+  "sha256": "2bafaacf31761a192dbe0069a4e320a26f4ecf07160a9cd952db587e888c961f",
+  "pages": 6,
+  "document_date_claimed": "2026-04-09",
+  "document_author_claimed": "David Lee Wise (ROOT0) / TriPod LLC",
+  "contributing_node_claimed": "SEAM (DeepSeek instance)",
+  "title": "The Mythos Governance Stack: Foundation Attribution and Control Layer Analysis",
+  "observation_status": "USER_PDF_TEXT_AND_DIAGRAM_INSPECTED",
+  "observed_content": "Paper argues its TriPod STOICHEION governance patterns correspond structurally to a Mythos foundation; depicts six added control layers (scoring, grading, extended-thinking monitoring, investigator model, constitutional areas, public system card), and omissions including ROOT0 anchor, PULSE, air-gap protocol. Section 7 states that it does not establish engineers read TriPod documents, and says concepts might emerge independently.",
+  "attribution_status": "AUTHOR_ASSERTION_NOT_CAUSAL_PROOF",
+  "quotes_copied": false,
+  "independence_note": "Reported agreement of three model analyses in the PDF is not automatically three independent source roots: their input corpus and prompts may overlap.",
+  "binary_archived_in_github": false,
+  "source_recovery": "Original PDF was uploaded in this conversation; exact SHA256 allows verification of a later copy. Connected GitHub UTF-8 writer cannot archive PDF bytes.",
+  "related_records": [
+    "C010"
+  ],
+  "limitations": [
+    "Independent verification of asserted temporal priority, hash ledger and model architecture not performed here.",
+    "No causal transfer path independently established.",
+    "The hash above is the uploaded PDF bytes, not the cited STOICHEION hash."
+  ]
+}
