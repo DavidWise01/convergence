@@ -4,6 +4,9 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| C010 · 2026-11-14 | [r/agi: Coxon on Anthropic / Mythos training efficiency](https://www.reddit.com/r/agi/comments/1xw5nxg/coxon_on_why_he_quit_anthropic_is_seeing/) | Reported statement; training-compute numbers not independently verified | [C010 candidate](./candidates/2026-11-14-reddit-coxon-mythos-compute-efficiency.json) |
+| D011 · 2026-11-14 | User PDF: TD-STACK-WP-2026-001 / Mythos Governance Stack | Six-page user-supplied paper inspected; SHA256 retained; attribution an author's assertion; PDF bytes not Git-archived | [D011 metadata](./documents/2026-11-14-td-stack-mythos-attribution-metadata.json) |
+| H012 · 2026-11-14 | Bell Labs transistor signal 1947; Manchester digital computer 1953 | Historical source-backed timeline; first single bit not established | [H012 audit](./audits/2026-11-14-transistor-first-signal-bit-timeline.json) |
 | B009 · 2026-11-14 | Cross-route ancestry / two paths versus independent roots | Synthetic 12/12 local tests PASS; real-world source identities not verified | [B009 report](./audits/2026-11-14-b009-cross-route-ancestry.md) |
 | C009 · 2026-11-14 | [r/ChatGPT "caveman quantum computer"](https://www.reddit.com/r/ChatGPT/comments/1xvyhxn/did_chatgpt_just_design_a_caveman_quantum_computer/) | Partial screenshots observed; source ancestry UNKNOWN; screenshot files **not archived** in Git | [2026-11-14 Reddit candidate](./candidates/2026-11-14-reddit-caveman-quantum-computer.json) |
 | B008 · 2026-11-13 | Parallel transport / 5 wired + 5 wireless + 7 OSI analytical model | Synthetic model, not public-internet provenance | [Test source](../audit/parallel17.py) |
