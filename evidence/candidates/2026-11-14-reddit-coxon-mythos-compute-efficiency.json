@@ -1,0 +1,71 @@
+{
+  "schema": "convergence.evidence.candidate.v1",
+  "id": "C010",
+  "recorded_at": "2026-11-14",
+  "submitted_source": "https://www.reddit.com/r/agi/comments/1xw5nxg/coxon_on_why_he_quit_anthropic_is_seeing/",
+  "source_surface": "Reddit r/agi",
+  "source_identifiers": {
+    "reddit_post": "1xw5nxg",
+    "topic": "Jacob Coxon on reported superexponential pretraining compute efficiency, Mythos"
+  },
+  "observation_status": "PARTIAL_PUBLIC_REDDIT_TEXT",
+  "observed_content": {
+    "post_title": "Coxon on why he quit: Anthropic is seeing superexponential algorithmic progress (excerpt in title)",
+    "post_date_observed": "2026-11-14",
+    "format": "shared URL",
+    "claim_summary": "Post shares Jacob Coxon's allegation that progress in model-training compute efficiency is superexponential and that Mythos could be retrained with a fraction of earlier compute.",
+    "commentary": "Users discuss whether accelerating curves must eventually flatten, how the chart is measured, and uncertainty about the y-axis.",
+    "quotes_copied": false
+  },
+  "retrieval_log": [
+    {
+      "method": "web Reddit search result",
+      "result": "public title/comment excerpts retrieved"
+    },
+    {
+      "method": "direct Reddit open",
+      "result": "inaccessible via site fetch"
+    },
+    {
+      "method": "independent public context",
+      "result": "reported Coxon post and The Decoder article located"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Coxon described Anthropic pretraining efficiency as superexponential",
+      "attribution": "Coxon public statement as reported",
+      "status": "ATTRIBUTED_STATEMENT"
+    },
+    {
+      "claim": "Mythos can be retrained with a fraction of compute",
+      "attribution": "Coxon public claim",
+      "status": "NOT_INDEPENDENTLY_VERIFIED"
+    },
+    {
+      "claim": "Training algorithmic gains are superexponential across time",
+      "attribution": "interpretation of illustrative investor slide",
+      "status": "UNVERIFIED_MEASUREMENT"
+    }
+  ],
+  "hypotheses": [
+    "Accelerating algorithmic efficiency could enable more frequent automated iteration, but does not establish an existing recursive publishing pipeline.",
+    "Multiple Reddit reposts and news rewrites are appearances of a shared upstream statement, not independent original evidence."
+  ],
+  "ancestry_status": "SHARED_REPORTED_CLAIM_NOT_INDEPENDENT_VERIFICATION",
+  "related_records": [
+    "TD-STACK-WP-2026-001",
+    "B009 cross-route ancestry audit"
+  ],
+  "limitations": [
+    "Original quantitative chart data/units not independently inspected",
+    "Reddit author and any deployment environment not independently verified",
+    "No evidence of causal derivation from ROOT0 corpus"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/agi/comments/1xw5nxg/coxon_on_why_he_quit_anthropic_is_seeing/",
+    "https://herald.jaaaames.com/",
+    "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/"
+  ]
+}
