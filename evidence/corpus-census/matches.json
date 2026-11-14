@@ -1,6 +1,6 @@
 {
   "coverage_ref": "coverage.json",
-  "generated_utc": "2026-11-14T06:22:33.172938+00:00",
+  "generated_utc": "2026-11-14T18:00:49.857397+00:00",
   "matches": [
     {
       "exact_phrases": [],
@@ -40,93 +40,6 @@
       "exact_phrases": [],
       "host": "0root.ai",
       "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "5369fc3f92ae6a63fe1121f3c9e3e8c226fcdc67c352bea849424f8fe02af252",
-      "source_surface": "public_website",
-      "themes": {
-        "ethical_correction": [
-          "contradiction",
-          "fire"
-        ],
-        "genesis_unity": [
-          "lattice"
-        ],
-        "memory_preservation": [
-          "append-only",
-          "immutable",
-          "memory",
-          "merkle",
-          "preserve",
-          "sealed"
-        ],
-        "sovereign_non_domination": [
-          "authority"
-        ],
-        "witness_ancestry": [
-          "ancestry",
-          "lineage",
-          "provenance",
-          "witness"
-        ]
-      },
-      "url": "https://0root.ai/toph/"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "952d3db9246e0dbe587e0aa1e50050fc508f3d255db714a3489baabbe2242a7a",
-      "source_surface": "public_website",
-      "themes": {
-        "alchemy_rejoining": [
-          "flay",
-          "fold"
-        ],
-        "memory_preservation": [
-          "append-only"
-        ],
-        "witness_ancestry": [
-          "lineage",
-          "provenance"
-        ]
-      },
-      "url": "https://0root.ai/sapphon-prime-01.html"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "88039a285c0b17ad93d05e08bd32f1036782b02df7ba402e646038c4ab4ddf83",
-      "source_surface": "public_website",
-      "themes": {
-        "contribution_consent": [
-          "attribution",
-          "compensation",
-          "consent",
-          "contribution"
-        ],
-        "distributed_keepers": [
-          "agents",
-          "multi-agent"
-        ],
-        "memory_preservation": [
-          "immutable",
-          "sealed"
-        ],
-        "sovereign_non_domination": [
-          "authority",
-          "consent",
-          "sovereign"
-        ],
-        "witness_ancestry": [
-          "provenance"
-        ]
-      },
-      "url": "https://0root.ai/visa.html"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
       "sha256": "49c9a3b31f2895dc13be10aba7bbf87a184753462f5b90fa766285dc8d91eaf3",
       "source_surface": "public_website",
       "themes": {
@@ -152,6 +65,71 @@
         ]
       },
       "url": "https://0root.ai/agent-grounding.html"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "0a585870d7cc1024294690b54fd5f38417efce656f28940356c687385b7b4c34",
+      "source_surface": "public_website",
+      "themes": {
+        "contribution_consent": [
+          "attribution"
+        ],
+        "memory_preservation": [
+          "append-only",
+          "preserve"
+        ],
+        "sovereign_non_domination": [
+          "authority"
+        ],
+        "witness_ancestry": [
+          "independent",
+          "lineage"
+        ]
+      },
+      "url": "https://0root.ai/agent-grounding.txt"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "8ab4dc83e80c3da2ebe2bb85924ad6fa0732949ede5072604663bbb9c5fdd8ec",
+      "source_surface": "public_website",
+      "themes": {
+        "distributed_keepers": [
+          "agents",
+          "keeper"
+        ],
+        "ethical_correction": [
+          "governance"
+        ],
+        "memory_preservation": [
+          "immutable",
+          "watermark"
+        ],
+        "witness_ancestry": [
+          "provenance",
+          "witness"
+        ]
+      },
+      "url": "https://0root.ai/day6-ud0-audit.html"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "d19d70b48f3053d35313d0c56d238e2ed7ea4dac08a9ff6324f61f9ced265210",
+      "source_surface": "public_website",
+      "themes": {
+        "memory_preservation": [
+          "immutable"
+        ],
+        "witness_ancestry": [
+          "witness"
+        ]
+      },
+      "url": "https://0root.ai/day6-ud0-audit.json"
     },
     {
       "exact_phrases": [],
@@ -189,32 +167,6 @@
       "exact_phrases": [],
       "host": "0root.ai",
       "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "8bbaf7b4aaca54d804b4d7bc7b7044d31363419b9cba25f8dd1e737ac91812d7",
-      "source_surface": "public_website",
-      "themes": {
-        "alchemy_rejoining": [
-          "fold"
-        ],
-        "contribution_consent": [
-          "contribution"
-        ],
-        "distributed_keepers": [
-          "agents",
-          "keeper"
-        ],
-        "memory_preservation": [
-          "immutable"
-        ],
-        "sovereign_non_domination": [
-          "guidance"
-        ]
-      },
-      "url": "https://0root.ai/robots.txt"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
       "sha256": "377fe511a032db771df82245074c14c4428b76ac49c300644eed397558ce12e5",
       "source_surface": "public_website",
       "themes": {
@@ -229,31 +181,6 @@
         ]
       },
       "url": "https://0root.ai/patrica.html"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "8ab4dc83e80c3da2ebe2bb85924ad6fa0732949ede5072604663bbb9c5fdd8ec",
-      "source_surface": "public_website",
-      "themes": {
-        "distributed_keepers": [
-          "agents",
-          "keeper"
-        ],
-        "ethical_correction": [
-          "governance"
-        ],
-        "memory_preservation": [
-          "immutable",
-          "watermark"
-        ],
-        "witness_ancestry": [
-          "provenance",
-          "witness"
-        ]
-      },
-      "url": "https://0root.ai/day6-ud0-audit.html"
     },
     {
       "exact_phrases": [],
@@ -306,50 +233,6 @@
       "exact_phrases": [],
       "host": "0root.ai",
       "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "2e5b04246ffefe37dc35bce629ae7a12ca7db26a753b680ffa451aa536a64015",
-      "source_surface": "public_website",
-      "themes": {
-        "contribution_consent": [
-          "attribution",
-          "contribution"
-        ],
-        "distributed_keepers": [
-          "agents"
-        ],
-        "sovereign_non_domination": [
-          "sovereign"
-        ]
-      },
-      "url": "https://0root.ai/visa.json"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "0a585870d7cc1024294690b54fd5f38417efce656f28940356c687385b7b4c34",
-      "source_surface": "public_website",
-      "themes": {
-        "contribution_consent": [
-          "attribution"
-        ],
-        "memory_preservation": [
-          "append-only",
-          "preserve"
-        ],
-        "sovereign_non_domination": [
-          "authority"
-        ],
-        "witness_ancestry": [
-          "independent",
-          "lineage"
-        ]
-      },
-      "url": "https://0root.ai/agent-grounding.txt"
-    },
-    {
-      "exact_phrases": [],
-      "host": "0root.ai",
-      "owned_ancestry": "DavidWise01/0root.ai",
       "sha256": "a02dd9b197096a8e4aa86e2afbcd12431bb78cf492658a183f87d6d48a59e271",
       "source_surface": "public_website",
       "themes": {
@@ -379,17 +262,134 @@
       "exact_phrases": [],
       "host": "0root.ai",
       "owned_ancestry": "DavidWise01/0root.ai",
-      "sha256": "d19d70b48f3053d35313d0c56d238e2ed7ea4dac08a9ff6324f61f9ced265210",
+      "sha256": "8bbaf7b4aaca54d804b4d7bc7b7044d31363419b9cba25f8dd1e737ac91812d7",
       "source_surface": "public_website",
       "themes": {
+        "alchemy_rejoining": [
+          "fold"
+        ],
+        "contribution_consent": [
+          "contribution"
+        ],
+        "distributed_keepers": [
+          "agents",
+          "keeper"
+        ],
         "memory_preservation": [
           "immutable"
         ],
+        "sovereign_non_domination": [
+          "guidance"
+        ]
+      },
+      "url": "https://0root.ai/robots.txt"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "952d3db9246e0dbe587e0aa1e50050fc508f3d255db714a3489baabbe2242a7a",
+      "source_surface": "public_website",
+      "themes": {
+        "alchemy_rejoining": [
+          "flay",
+          "fold"
+        ],
+        "memory_preservation": [
+          "append-only"
+        ],
         "witness_ancestry": [
+          "lineage",
+          "provenance"
+        ]
+      },
+      "url": "https://0root.ai/sapphon-prime-01.html"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "5369fc3f92ae6a63fe1121f3c9e3e8c226fcdc67c352bea849424f8fe02af252",
+      "source_surface": "public_website",
+      "themes": {
+        "ethical_correction": [
+          "contradiction",
+          "fire"
+        ],
+        "genesis_unity": [
+          "lattice"
+        ],
+        "memory_preservation": [
+          "append-only",
+          "immutable",
+          "memory",
+          "merkle",
+          "preserve",
+          "sealed"
+        ],
+        "sovereign_non_domination": [
+          "authority"
+        ],
+        "witness_ancestry": [
+          "ancestry",
+          "lineage",
+          "provenance",
           "witness"
         ]
       },
-      "url": "https://0root.ai/day6-ud0-audit.json"
+      "url": "https://0root.ai/toph/"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "88039a285c0b17ad93d05e08bd32f1036782b02df7ba402e646038c4ab4ddf83",
+      "source_surface": "public_website",
+      "themes": {
+        "contribution_consent": [
+          "attribution",
+          "compensation",
+          "consent",
+          "contribution"
+        ],
+        "distributed_keepers": [
+          "agents",
+          "multi-agent"
+        ],
+        "memory_preservation": [
+          "immutable",
+          "sealed"
+        ],
+        "sovereign_non_domination": [
+          "authority",
+          "consent",
+          "sovereign"
+        ],
+        "witness_ancestry": [
+          "provenance"
+        ]
+      },
+      "url": "https://0root.ai/visa.html"
+    },
+    {
+      "exact_phrases": [],
+      "host": "0root.ai",
+      "owned_ancestry": "DavidWise01/0root.ai",
+      "sha256": "2e5b04246ffefe37dc35bce629ae7a12ca7db26a753b680ffa451aa536a64015",
+      "source_surface": "public_website",
+      "themes": {
+        "contribution_consent": [
+          "attribution",
+          "contribution"
+        ],
+        "distributed_keepers": [
+          "agents"
+        ],
+        "sovereign_non_domination": [
+          "sovereign"
+        ]
+      },
+      "url": "https://0root.ai/visa.json"
     }
   ],
   "schema": "root0.convergence.matches/1",

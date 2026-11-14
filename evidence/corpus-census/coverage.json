@@ -8,18 +8,18 @@
     "independent source origins inferred",
     "cross-platform copying proven"
   ],
-  "generated_utc": "2026-11-14T06:22:33.172938+00:00",
-  "github_eligible_files": 3775,
-  "github_file_errors": 469,
+  "generated_utc": "2026-11-14T18:00:49.857397+00:00",
+  "github_eligible_files": 5278,
+  "github_file_errors": 882,
   "github_files_fetched": 0,
-  "github_files_skipped_budget": 3268,
-  "github_files_skipped_size": 38,
-  "github_public_repositories_enumerated": 2154,
+  "github_files_skipped_budget": 4356,
+  "github_files_skipped_size": 40,
+  "github_public_repositories_enumerated": 2155,
   "github_repositories_error": 0,
-  "github_repositories_partial": 11,
-  "github_repositories_pending": 2094,
-  "github_repositories_scanned": 49,
-  "github_repositories_started": 60,
+  "github_repositories_partial": 9,
+  "github_repositories_pending": 2046,
+  "github_repositories_scanned": 100,
+  "github_repositories_started": 109,
   "github_revisions_not_pinned": true,
   "one_ancestry_two_surfaces": true,
   "owned_source_surfaces": [
@@ -30,15 +30,10 @@
   "repository_census_complete": true,
   "schema": "root0.convergence.corpus-coverage/1",
   "site_last_run": {
-    "errors": [
-      {
-        "error": "HTTPError",
-        "url": "https://0root.ai/world2/"
-      }
-    ],
+    "errors": [],
     "remaining_url_queue": 0,
     "seen_urls_total": 24,
-    "visited_ok": 23
+    "visited_ok": 0
   },
   "site_unique_pages_scanned": 23,
   "website_complete": false,
