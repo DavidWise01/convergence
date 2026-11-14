@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CONVERGENCE · B008 PARALLEL 17</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#050c15;color:#e7eef7}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 50% 15%,#183748 0,#070e19 58%,#03060b 100%);min-height:100vh}
+header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 24px;border-bottom:1px solid #46607766;flex-wrap:wrap}
+a{color:#8cf1fa}header a{text-decoration:none}h1{font-size:clamp(24px,4vw,42px);margin:4px 0;color:#fff}small,.muted{color:#97aabd}
+main{max-width:1240px;margin:auto;padding:20px}.eyebrow{color:#fbab67;letter-spacing:.19em;font-size:12px}
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.metric,.panel{border:1px solid #35546b;background:#0a1826d9;border-radius:16px;padding:16px}
+.metric strong{display:block;font-size:28px;color:#8ef3ff}.metric span{color:#bdcfde;font-size:12px}
+canvas{width:100%;height:auto;aspect-ratio:1100/590;display:block;border-radius:12px;background:#071522}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}button{cursor:pointer;color:#e6fbff;background:#163344;border:1px solid #60c5dd;border-radius:9px;padding:11px 16px;font:inherit}
+button[aria-pressed=true]{background:#d88835;color:#1b0f07;border-color:#ffd1a1}
+.readout{line-height:1.6;white-space:pre-wrap;color:#d1ecf5;background:#07111e;border:1px solid #253f51;border-radius:10px;padding:14px}
+.legend{display:flex;gap:18px;flex-wrap:wrap;color:#b0c6da;font-size:13px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+footer{font-size:13px;line-height:1.6;color:#a9bbca;margin:20px 0}
+@media(max-width:660px){.summary{grid-template-columns:1fr 1fr}header{padding:13px}}
+</style></head><body>
+<header><a href="./index.html">◈ CONVERGENCE / ROOT0</a><a href="https://github.com/DavidWise01/convergence/blob/main/audit/parallel17.py">SOURCE + TESTS ↗</a></header>
+<main><div class="eyebrow">B008 / THE TWO PATHS / SYNTHETIC PROVENANCE</div><h1>Parallel 17 · One Root</h1>
+<p class="muted">Five wired positions. Five wireless positions. Seven OSI checkpoints applied to each route. This is an analytical overlay, not a literal 17-layer network protocol.</p>
+<div class="summary"><div class="metric"><strong>−5 / +5</strong><span>Transport positions</span></div><div class="metric"><strong>× 7</strong><span>OSI checkpoints per path</span></div><div class="metric"><strong id="roots">1</strong><span>Known distinct roots</span></div></div>
+<section class="panel"><canvas id="mesh" width="1100" height="590" aria-label="Animated schematic of parallel wired and wireless transport with seven OSI stages converging at a witness"></canvas>
+<div class="legend"><span><i class="dot" style="background:#5bd6f3"></i>Wired</span><span><i class="dot" style="background:#ff9c51"></i>Wireless</span><span><i class="dot" style="background:#b2f0a9"></i>Confirmed origin</span><span><i class="dot" style="background:#e8da76"></i>Unknown ancestry</span></div>
+<div class="controls"><button data-mode="shared" aria-pressed="true">Shared origin</button><button data-mode="independent" aria-pressed="false">Independent wireless root</button><button data-mode="missing" aria-pressed="false">Unresolved wireless source</button></div>
+<div class="readout" id="readout" role="status" aria-live="polite">One source, two routed appearances. Independent routes are not independent origins.</div></section>
+<footer>Experiment: deterministic, deliberately constructed evidence graph. The animation is not evidence of real-world infrastructure. Origin edges must be supported by independently reviewable records; a similar payload or a different network path does not establish independence. <a href="./boundary.html">Provenance boundaries</a> · <a href="./witness.html">Witness lab</a></footer></main>
+<script>
+(()=>{'use strict';const c=document.getElementById('mesh'),ctx=c.getContext('2d'),readout=document.getElementById('readout'),rootEl=document.getElementById('roots');let mode='shared',time=0;const layers=['PHY','LINK','NET','TRAN','SESS','PRES','APP'];
+function node(x,y,label,color,r=13){ctx.save();ctx.shadowColor=color;ctx.shadowBlur=15;ctx.fillStyle='#10293c';ctx.strokeStyle=color;ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.fillStyle='#e5f6ff';ctx.textAlign='center';ctx.font='12px ui-monospace,monospace';ctx.fillText(label,x,y+31);ctx.restore()}
+function line(x1,y1,x2,y2,color,alpha=1){ctx.strokeStyle=color;ctx.globalAlpha=alpha;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();ctx.globalAlpha=1}
+function route(y,color,prefix){let pts=[[115,y]];for(let j=0;j<5;j++)pts.push([180+j*49,y]);for(let j=0;j<7;j++)pts.push([460+j*74,y]);pts.push([1010,295]);for(let j=1;j<pts.length;j++)line(...pts[j-1],...pts[j],color,.47);
+pts.slice(1,-1).forEach(([x,yy],i)=>node(x,yy,i<5?prefix+(i+1):layers[i-5],color,i<5?8:11));
+const step=((time*.00018)%1)*(pts.length-1);const k=Math.min(pts.length-2,Math.floor(step));const t=step-k;
+const x=pts[k][0]+(pts[k+1][0]-pts[k][0])*t,yy=pts[k][1]+(pts[k+1][1]-pts[k][1])*t;
+ctx.save();ctx.shadowColor=color;ctx.shadowBlur=22;ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,yy,5,0,Math.PI*2);ctx.fill();ctx.restore()}
+function draw(ms){time=ms;ctx.clearRect(0,0,1100,590);ctx.fillStyle='#071522';ctx.fillRect(0,0,1100,590);ctx.strokeStyle='#143344';ctx.lineWidth=1;
+for(let x=0;x<1100;x+=45){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,590);ctx.stroke()}for(let y=0;y<590;y+=45){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(1100,y);ctx.stroke()}
+const second=mode==='independent'?'#b2f0a9':mode==='missing'?'#e8da76':'#b2f0a9';
+node(75,170,'ROOT A','#b2f0a9',21);node(75,420,mode==='shared'?'ROOT A':mode==='independent'?'ROOT B':'UNKNOWN',second,21);
+line(75,170,115,170,'#b2f0a9');line(75,420,115,420,second);
+ctx.fillStyle='#9eb4c9';ctx.textAlign='center';ctx.font='14px system-ui';ctx.fillText('WIRED −5',320,116);ctx.fillText('WIRELESS +5',320,372);ctx.fillText('SEVEN OSI CHECKPOINTS / ROUTE',704,62);
+route(170,'#5bd6f3','W');route(420,mode==='missing'?'#e8da76':'#ff9c51','R');node(1010,295,'MERGE','#bfeaff',27);
+ctx.fillStyle='#c5e8fa';ctx.font='14px system-ui';ctx.fillText('Two paths. Count ancestry, not appearances.',550,554);
+requestAnimationFrame(draw)}
+document.querySelectorAll('button[data-mode]').forEach(btn=>btn.addEventListener('click',()=>{mode=btn.dataset.mode;document.querySelectorAll('button[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+const text={shared:'KNOWN ROOTS: 1 / UNKNOWN PARENTS: 0. Both routes converge at the same original source. Path diversity ≠ source independence.',independent:'KNOWN ROOTS: 2 / UNKNOWN PARENTS: 0. A separately documented source B supplies the wireless path.',missing:'KNOWN ROOTS: 1 / UNKNOWN PARENTS: 1. Wired provenance remains verified; wireless ancestry is unresolved, not presumed shared or independent.'};
+readout.textContent=text[mode];rootEl.textContent=mode==='independent'?'2':'1'}));requestAnimationFrame(draw)})();
+</script></body></html>
