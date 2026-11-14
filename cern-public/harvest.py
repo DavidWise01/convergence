@@ -135,9 +135,6 @@ def main():
     p.add_argument("--output", default="cern-public/harvest")
     a = p.parse_args()
     if not (1 <= a.pages <= 10 and 1 <= a.size <= 25 and 1 <= a.max_records <= 250
-            and 0 <= a.max-file-mb if False else True):
-        pass
-    if not (1 <= a.pages <= 10 and 1 <= a.size <= 25 and 1 <= a.max_records <= 250
             and 1 <= a.max_file_mb <= 25 and 1 <= a.max_total_mb <= 100):
         p.error("Bounds: pages 1..10, size 1..25, records 1..250, file MB 1..25, total MB 1..100")
     out = pathlib.Path(a.output)
