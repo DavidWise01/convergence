@@ -1,0 +1,85 @@
+{
+  "id": "AETHER-003",
+  "date": "2026-11-18",
+  "scope": {
+    "owners": [
+      "DavidWise01",
+      "rgiskard01-fiddler"
+    ],
+    "previous_inventory": 2171,
+    "full_blob_crawl_completed": false,
+    "live_0root_access": "failed"
+  },
+  "fingerprints": [
+    {
+      "terms": [
+        "MEMSISTOR",
+        "PRE-SIST",
+        "17",
+        "208"
+      ],
+      "source": "https://github.com/DavidWise01/jane-emu/commit/6bad73d5dc7e55d6fa4849e26f514ba245594d66",
+      "external": "not established"
+    },
+    {
+      "terms": [
+        "STOICHEION",
+        "TRIAD",
+        "PATRICIA"
+      ],
+      "source": "https://github.com/DavidWise01/toph-cortex/blob/b7208fe772a4cfd8f47c8f5a8ea20de21b43a5fe/research/isa256/stoicheion_lattice_49152.py",
+      "external": "not established"
+    },
+    {
+      "terms": [
+        "I-13",
+        "four planes",
+        "17 opcodes"
+      ],
+      "source": "https://github.com/rgiskard01-fiddler/Fiddler",
+      "caveat": "I13-H1.1 teaching brief reports frozen spec 17 versus then-current implementation 15; version-dependent",
+      "external": "not established"
+    },
+    {
+      "terms": [
+        "NEON",
+        "ARGON",
+        "nested zipper"
+      ],
+      "source": "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+      "external": "Gemini elemental naming only; no zipper match"
+    },
+    {
+      "terms": [
+        "append-only",
+        "Merkle",
+        "independent witnesses",
+        "agent memory"
+      ],
+      "external": "https://datatracker.ietf.org/doc/draft-maintainer-1f916-agent-record/01/",
+      "classification": "functional overlap; antecedents RFC6962 and SCITT; unknown lineage"
+    },
+    {
+      "terms": [
+        "Jacobi",
+        "decoding"
+      ],
+      "external": "https://proceedings.mlr.press/v235/fu24a.html",
+      "classification": "external prior art 2024"
+    },
+    {
+      "terms": [
+        "MYTHOS"
+      ],
+      "external": "https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf",
+      "classification": "April 2026 external announcement precedes earliest retrieved owned May commit"
+    }
+  ],
+  "limitations": [
+    "Search index capped and incomplete; zero hits not absence",
+    "No matched control corpus or exposure denominator",
+    "No proof of copying, causal transmission or physical time dilation",
+    "0root.ai and Git mirrors may share ancestry",
+    "No private source content included"
+  ]
+}
