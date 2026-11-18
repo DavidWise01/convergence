@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-003 · 2026-11-18 | Two-account semantic fingerprint comparison | Bounded indexed search; functional overlap, lineage unknown; full blob crawl pending | [Audit](./audits/2026-11-18-aether-003.json) |
 | TD-NEON-001 · 2026-11-18 | [Gemini Neon Benchmarks](https://www.reddit.com/r/singularity/comments/1xzrlbh/gemini_neon_benchmarks/) | Observed naming convergence; causation unknown | [Candidate](./candidates/2026-11-18-td-neon-001.json) |
 | H013 · 2026-11-14 | 1832 telegraph → 1953 ferrite-core memory, major-war overlay | Historical chronology; no claim of continuous physical infrastructure | [H013 chronology](./audits/2026-11-14-h013-war-overlay-substrate-timeline.md) |
 | C010 · 2026-11-14 | [r/agi: Coxon on Anthropic / Mythos training efficiency](https://www.reddit.com/r/agi/comments/1xw5nxg/coxon_on_why_he_quit_anthropic_is_seeing/) | Reported statement; training-compute numbers not independently verified | [C010 candidate](./candidates/2026-11-14-reddit-coxon-mythos-compute-efficiency.json) |
