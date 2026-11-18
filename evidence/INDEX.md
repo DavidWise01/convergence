@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-004 · 2026-11-18 | Signed temporal gaps across eight selected terminology matches | Three positive, five negative; correlated naming family; causal ancestry unknown | [Audit](./audits/2026-11-18-aether-004.json) |
 | AETHER-003 · 2026-11-18 | Two-account semantic fingerprint comparison | Bounded indexed search; functional overlap, lineage unknown; full blob crawl pending | [Audit](./audits/2026-11-18-aether-003.json) |
 | TD-NEON-001 · 2026-11-18 | [Gemini Neon Benchmarks](https://www.reddit.com/r/singularity/comments/1xzrlbh/gemini_neon_benchmarks/) | Observed naming convergence; causation unknown | [Candidate](./candidates/2026-11-18-td-neon-001.json) |
 | H013 · 2026-11-14 | 1832 telegraph → 1953 ferrite-core memory, major-war overlay | Historical chronology; no claim of continuous physical infrastructure | [H013 chronology](./audits/2026-11-14-h013-war-overlay-substrate-timeline.md) |
