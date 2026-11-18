@@ -1,0 +1,97 @@
+{
+  "id": "AETHER-004",
+  "date": "2026-11-18",
+  "method": "Signed calendar-day lag between earliest retrieved DavidWise01 commit and dated external observation. Neither date is proof of first use; Argon is a latest-bound model card update. Selected cases, not randomized.",
+  "rows": [
+    {
+      "term": "neon",
+      "owned_date": "2026-05-31",
+      "owned_url": "https://github.com/DavidWise01/higgs-suite/commit/3520afad6d97c8f9918c6831ccece422f8a7fc34",
+      "external_date": "2026-11-18",
+      "external_url": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "delta_days": 171,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "carbon",
+      "owned_date": "2026-05-29",
+      "owned_url": "https://github.com/DavidWise01/bridge-burner/commit/170ffdfd6238071be91263eeae1b9c51e5dd9e00",
+      "external_date": "2026-11-10",
+      "external_url": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+      "delta_days": 165,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "hydrogen",
+      "owned_date": "2026-05-28",
+      "owned_url": "https://github.com/DavidWise01/al-h2o-reactor/commit/aece18939c2a68e3cd3fe28027261f8242d4444a",
+      "external_date": "2026-11-12",
+      "external_url": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "delta_days": 168,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "argon",
+      "owned_date": "2026-10-22",
+      "owned_url": "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+      "external_date": "2026-10-13",
+      "external_url": "https://deepmind.google/models/model-cards/",
+      "delta_days": -9,
+      "external_date_type": "model card update; upper bound on first appearance",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "mythos",
+      "owned_date": "2026-05-29",
+      "owned_url": "https://github.com/DavidWise01/tripod/commit/57ab6fb3b5ef8d58177e5f088ec8742af63be1a8",
+      "external_date": "2026-04-07",
+      "external_url": "https://www.anthropic.com/research/mythos-preview",
+      "delta_days": -52,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "atlas",
+      "owned_date": "2026-06-01",
+      "owned_url": "https://github.com/DavidWise01/atlas/commit/e756245de29e90bc6890f19a72308193fac8431d",
+      "external_date": "2025-10-21",
+      "external_url": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "delta_days": -223,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "oasis",
+      "owned_date": "2026-05-30",
+      "owned_url": "https://github.com/DavidWise01/oasis/commit/e1cc9a873041e0e6fdd5e058ff929f7707dbbf22",
+      "external_date": "2024-10-31",
+      "external_url": "https://oasis-model.github.io/",
+      "delta_days": -576,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    },
+    {
+      "term": "jacobi",
+      "owned_date": "2026-07-08",
+      "owned_url": "https://github.com/DavidWise01/jacobi-space/commit/8c7ff948caae79eb29e63f526f0378fca3896562",
+      "external_date": "2023-11-21",
+      "external_url": "https://www.lmsys.org/blog/2023-11-21-lookahead-decoding/",
+      "delta_days": -960,
+      "external_date_type": "published announcement or model card",
+      "ancestry": "unknown"
+    }
+  ],
+  "controls": {
+    "status": "pending",
+    "design": "Pre-register matched word frequency, domain and time windows; select non-owned repositories before external lookup; include negative findings and collapse mirrors and same-vendor naming families."
+  },
+  "limitations": [
+    "No transmission rate inferred from dates alone",
+    "No full historical crawl or verified public exposure times",
+    "No independent causal paths established",
+    "Google elemental names count as one correlated family, not four independent confirmations"
+  ]
+}
