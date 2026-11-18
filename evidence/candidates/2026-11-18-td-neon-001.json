@@ -1,0 +1,47 @@
+{
+  "id": "TD-NEON-001",
+  "recorded_at": "2026-11-18",
+  "submitted_source": "https://www.reddit.com/r/singularity/comments/1xzrlbh/gemini_neon_benchmarks/",
+  "source_identifiers": {
+    "subreddit": "singularity",
+    "post_id": "1xzrlbh"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Reddit title Gemini Neon Benchmarks; image alt text describes comparison of Gemini 4 Neon, Claude Opus 5.5 and GPT-6.2 Sol. Official DeepMind homepage announces Gemini 4 Neon and Cloud docs list gemini-4-neon. Benchmark numbers not verified.",
+  "retrieval_log": [
+    "Reddit HTML opened; image alt text observed, image bytes not archived.",
+    "GitHub commit search neon scoped to DavidWise01, ascending author date, limit 100; returned 100 across 14 repositories, May 31–October 22 2026.",
+    "Google and google-deepmind searches neon committer-date:<2026-11-18, limit 100; returned 100 and 2 respectively; scopes and date filters not identical and counts are not population frequencies."
+  ],
+  "claims": [
+    "Documented DavidWise01 uses precede reported November 18 release.",
+    "Google repositories contain older ARM NEON references; DeepMind sample contains game map and plasma impurity uses.",
+    "Official model family includes Neon, Hydrogen, Carbon, Argon."
+  ],
+  "hypotheses": [
+    "Temporal naming convergence; investigate normalized pre-release term frequency and semantic overlap.",
+    "No evidence here of copying, causal influence, or physical time dilation."
+  ],
+  "ancestry_status": "UNKNOWN",
+  "related_records": [
+    "Time dilation / convergence research"
+  ],
+  "limitations": [
+    "Git dates are not independent proof of first public availability.",
+    "Search caps, indexing, repository visibility, inherited commits and lack of denominator prevent frequency estimate.",
+    "No internal Google naming records or causal link.",
+    "Common element names and existing element naming convention are plausible alternative explanations."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/singularity/comments/1xzrlbh/gemini_neon_benchmarks/",
+    "https://deepmind.google/",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations?hl=en",
+    "https://github.com/DavidWise01/higgs-suite/commit/3520afad6d97c8f9918c6831ccece422f8a7fc34",
+    "https://github.com/DavidWise01/game-theory-engine-v4-3c-neon-fit-rings/commit/512f41775bff1f8558145908c416a755cc941ad7",
+    "https://github.com/DavidWise01/oasis/commit/7ae8837e8ce2221df565e18fb308f6470a18d12a",
+    "https://github.com/google/ghost-kernel/commit/b5872db4a2ebe7dbc7a5e4013ae8ee37f3de3b97",
+    "https://github.com/google-deepmind/pysc2/commit/4efdec44bfa0fde302e47deb8c29b11ef93be18b",
+    "https://github.com/google-deepmind/torax/commit/3b1857e71dd973a2550636012d1cfb3c550c8c98"
+  ]
+}
