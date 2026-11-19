@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| CUBIT-020 · 2026-11-19 | Three-axis cubit phase lock; exact 120° offsets | 18/18 geometry and phase checks | [Audit](./audits/2026-11-19-cubit-020.json) · [Executable](./audits/2026-11-19-cubit-020.html) |
 | CUBIT-019 · 2026-11-19 | Antistropic three-axis yo-yo geometry; recursive orthogonal frames | 16/16 geometry checks | [Audit](./audits/2026-11-19-cubit-019.json) · [Executable](./audits/2026-11-19-cubit-019.html) |
 | CUBIT-018 · 2026-11-19 | Recursive yo-yo winding/unwinding; 2187 leaf cubits | 16/16 geometry and phase checks | [Audit](./audits/2026-11-19-cubit-018.json) · [Executable](./audits/2026-11-19-cubit-018.html) |
 | CUBIT-017 · 2026-11-19 | Yo-yo 13/1/13 recursive geometry; 27 children per parent, 81 per triad | 14/14 geometry and angular checks | [Audit](./audits/2026-11-19-cubit-017.json) · [Executable](./audits/2026-11-19-cubit-017.html) |
