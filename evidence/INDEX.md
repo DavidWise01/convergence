@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-000 · recorded 2026-11-18 | E.V.E. tangent and lattice foundational transcript | Historical date unverified; retrospective geometry; raw source not published | [Origin record](./audits/2026-11-18-aether-000-tangent.json) |
 | AETHER-006 · 2026-11-18 | December 2025–November 2026 Jacobi chronology and prospective fingerprint freeze | Public sources only; early interval unresolved | [Audit](./audits/2026-11-18-aether-006.json) |
 | AETHER-004 · 2026-11-18 | Signed temporal gaps across eight selected terminology matches | Three positive, five negative; correlated naming family; causal ancestry unknown | [Audit](./audits/2026-11-18-aether-004.json) |
 | AETHER-003 · 2026-11-18 | Two-account semantic fingerprint comparison | Bounded indexed search; functional overlap, lineage unknown; full blob crawl pending | [Audit](./audits/2026-11-18-aether-003.json) |
