@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-024 · 2026-11-19 | Four waves converge into implicit singlet; correct twin-wave interpretation | User notation preserved; equal partition provisional | [Audit](./audits/2026-11-19-aether-024.json) |
 | ARC-CUBIT-021 · 2026-11-19 | Exact 11-scale recursive angular clock; independent local winding and base-60 projection | 23/23 arithmetic and geometry checks; 61320 cubits | [Audit](./audits/2026-11-19-arc-cubit-021.json) · [Executable](./audits/2026-11-19-arc-cubit-021.html) |
 | AETHER-023 · 2026-11-19 | Twin-wave phase displacement: 26 relative shifts and 416 orientation-phase labels | Synthetic cyclic indexing; physical frequency unmeasured | [Audit](./audits/2026-11-19-aether-023.json) |
 | TD-GEMINI-ELEMENTS-001-P1 · 2026-11-19 | Prospective owner prediction: skip Krypton; Radon → Oganesson → 184 | PENDING; Radon previously rumored; 184 unresolved; no deadline supplied | [Prediction](./candidates/2026-11-19-td-gemini-elements-001-p1.json) |
