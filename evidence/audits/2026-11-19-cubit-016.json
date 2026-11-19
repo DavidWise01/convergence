@@ -1,0 +1,140 @@
+{
+  "id": "CUBIT-016",
+  "parent": "CUBIT-015",
+  "parent_blob_sha": "e24256af271b2eba554b1ecf2fb7c098085e11c0",
+  "supersedes_interpretation": "CUBIT-015 witness hierarchy is out of scope; retained only as historical record",
+  "recorded_date": "2026-11-19",
+  "model": "three equal identical cubits, equilateral planar placement around empty centroid; nominal bounding spheres tangent",
+  "notation": "{{ (a) [b] {c} }}",
+  "tick_arcseconds": 7.5,
+  "scale": "l_P/(5*pi) hypothetical local characteristic length",
+  "geometry": {
+    "frequency": 8,
+    "V": 1280,
+    "E": 1920,
+    "F": 642,
+    "pentagons": 12,
+    "hexagons": 630,
+    "other": 0,
+    "euler": 2,
+    "closed": true,
+    "oriented": true,
+    "trivalent": true,
+    "hex_fraction": 0.9813084112149533,
+    "radial_deficit": 0.0044293701119551,
+    "sphericity": 0.9983962345354349,
+    "area_unit": 12.530240928493484,
+    "volume_unit": 4.1607090473356125,
+    "edge_ratio": 1.372325538785535,
+    "face_area_ratio": 2.3225141486140344
+  },
+  "arrangement": {
+    "r": 1,
+    "centers": [
+      [
+        7.07050159149938e-17,
+        1.1547005383792517,
+        0
+      ],
+      [
+        -1.0000000000000002,
+        -0.5773502691896255,
+        0
+      ],
+      [
+        0.9999999999999998,
+        -0.5773502691896264,
+        0
+      ]
+    ],
+    "ids": [
+      "a",
+      "b",
+      "c"
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "gap": 0.15470053837925168,
+    "links": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "phaseOffsets": [
+      0,
+      57600,
+      115200
+    ]
+  },
+  "counts": {
+    "cubits": 3,
+    "addresses": 81,
+    "hexagons": 1890,
+    "pentagons": 36,
+    "vertices": 3840,
+    "edges": 5760
+  },
+  "tests": [
+    {
+      "name": "three equal cubits",
+      "pass": true
+    },
+    {
+      "name": "common radius",
+      "pass": true
+    },
+    {
+      "name": "equilateral tangency",
+      "pass": true
+    },
+    {
+      "name": "empty centroid",
+      "pass": true
+    },
+    {
+      "name": "equal radial placement",
+      "pass": true
+    },
+    {
+      "name": "120 degree phase offset",
+      "pass": true
+    },
+    {
+      "name": "shell topology unchanged",
+      "pass": true
+    },
+    {
+      "name": "81 local addresses",
+      "pass": true
+    },
+    {
+      "name": "cyclic symmetry",
+      "pass": true
+    },
+    {
+      "name": "no central cubit",
+      "pass": true
+    }
+  ],
+  "pass_count": 10,
+  "total": 10,
+  "executable": "evidence/audits/2026-11-19-cubit-016.html",
+  "html_commit": "a58b2c7d43179702f5d09a4c82729a020b1ee42f",
+  "limits": [
+    "Equilateral tangent bounding spheres and 120-degree angular phase offsets are chosen defaults. Discrete shell surfaces need not actually touch at those exact points.",
+    "No physical-scale validation or actual traversal. Browser rendering not executed; JS geometry tested."
+  ],
+  "watermark": ".dlw"
+}
