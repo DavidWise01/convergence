@@ -1,0 +1,277 @@
+{
+  "id": "AETHER-010",
+  "recorded_at": "2026-11-18",
+  "window_start": "2025-12-01",
+  "preceding_uncommitted_audit": "AETHER-009",
+  "historical_claim": {
+    "feb_march_2026": [
+      "ethos",
+      "pathos",
+      "logos"
+    ],
+    "status": "user reported; date not independently established"
+  },
+  "register": [
+    {
+      "term": "hydrogen",
+      "atomic_number": 1,
+      "retrieved_commits": 17,
+      "earliest_retrieved": "2026-05-28",
+      "cap": 100,
+      "role": "previously recorded naming match",
+      "caveat": null
+    },
+    {
+      "term": "helium",
+      "atomic_number": 2,
+      "retrieved_commits": 1,
+      "earliest_retrieved": "2026-11-02",
+      "cap": 100,
+      "role": "prospective watch",
+      "caveat": null
+    },
+    {
+      "term": "carbon",
+      "atomic_number": 6,
+      "retrieved_commits": 100,
+      "earliest_retrieved": "2026-05-29",
+      "cap": 100,
+      "role": "previously recorded naming match",
+      "caveat": null
+    },
+    {
+      "term": "neon",
+      "atomic_number": 10,
+      "retrieved_commits": 100,
+      "earliest_retrieved": "2026-05-31",
+      "cap": 100,
+      "role": "previously recorded naming match",
+      "caveat": null
+    },
+    {
+      "term": "argon",
+      "atomic_number": 18,
+      "retrieved_commits": 10,
+      "earliest_retrieved": "2026-10-22",
+      "cap": 100,
+      "role": "previously recorded naming match",
+      "caveat": null
+    },
+    {
+      "term": "krypton",
+      "atomic_number": 36,
+      "retrieved_commits": 5,
+      "earliest_retrieved": "2026-10-20",
+      "cap": 100,
+      "role": "prospective watch",
+      "caveat": null
+    },
+    {
+      "term": "xenon",
+      "atomic_number": 54,
+      "retrieved_commits": null,
+      "earliest_retrieved": null,
+      "cap": 100,
+      "role": "comparison control",
+      "caveat": null
+    },
+    {
+      "term": "radon",
+      "atomic_number": 86,
+      "retrieved_commits": 21,
+      "earliest_retrieved": "2026-08-02",
+      "cap": 100,
+      "role": "prospective watch",
+      "caveat": "mathematical theorem homonym included in commit counts"
+    }
+  ],
+  "ternary": {
+    "values": {
+      "0": "unresolved",
+      "-1": "contradicted",
+      "+1": "supported"
+    },
+    "axes": [
+      "lexical",
+      "structural",
+      "ancestry"
+    ],
+    "states": [
+      {
+        "L": -1,
+        "S": -1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": -1,
+        "S": -1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": -1,
+        "S": -1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": -1,
+        "S": 0,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": -1,
+        "S": 0,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": -1,
+        "S": 0,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": -1,
+        "S": 1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": -1,
+        "S": 1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": -1,
+        "S": 1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 0,
+        "S": -1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 0,
+        "S": -1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 0,
+        "S": -1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 0,
+        "S": 0,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 0,
+        "S": 0,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 0,
+        "S": 0,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 0,
+        "S": 1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 0,
+        "S": 1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 0,
+        "S": 1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 1,
+        "S": -1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 1,
+        "S": -1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 1,
+        "S": -1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 1,
+        "S": 0,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 1,
+        "S": 0,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 1,
+        "S": 0,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      },
+      {
+        "L": 1,
+        "S": 1,
+        "A": -1,
+        "classification": "proposed ancestry contradicted"
+      },
+      {
+        "L": 1,
+        "S": 1,
+        "A": 0,
+        "classification": "ancestry unresolved"
+      },
+      {
+        "L": 1,
+        "S": 1,
+        "A": 1,
+        "classification": "ancestry supported separately"
+      }
+    ]
+  },
+  "prospective_rule": "New announcements after 2026-11-18 only; record prior occurrences, misses, and correlated vendor naming families separately. Freeze exact wording and functional role before matching. Unknown is not contradiction. No causal claim without independent evidence.",
+  "source_links": [
+    "https://github.com/DavidWise01/tripod-quantum-dots/commit/5e12ec5178889936efe35158b2cfbe714844fabd",
+    "https://github.com/DavidWise01/oasis/commit/0e5c6401daac19d641bcbcaf40253d1201263dce",
+    "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+    "https://github.com/DavidWise01/jane/commit/eb4a1139f28bae98864978be9defc689325ce245"
+  ],
+  "limitations": [
+    "Counts inherited from prior bounded indexed searches; not exhaustive.",
+    "No matched control corpus completed.",
+    "No claim of first use, causal transmission, or prediction success.",
+    "Synthetic state enumeration only; no new external semantic match tested."
+  ]
+}
