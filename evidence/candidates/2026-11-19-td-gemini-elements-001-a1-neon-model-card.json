@@ -1,0 +1,114 @@
+{
+  "id": "TD-GEMINI-ELEMENTS-001-A1",
+  "recorded_at": "2026-11-19T17:37-06:00",
+  "recorded_at_precision": "conversation minute",
+  "submitted_source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+  "source_identifiers": {
+    "publisher": "Google DeepMind",
+    "title": "Gemini 4 Neon",
+    "type": "official model card",
+    "published": "2026-11-18"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": {
+    "dependency": "Neon adapted from Carbon",
+    "role": "Complex coding and analytical work, extended tool-using agents, efficiency",
+    "context_tokens": 1000000,
+    "default_synchronous_output_tokens": 64000,
+    "background_long_decode_max_tokens": 1000000,
+    "knowledge_cutoff": "2026-03",
+    "reported_benchmark_examples": [
+      {
+        "name": "GraphWalks",
+        "range": "256k–1M",
+        "metric": "BFS F1",
+        "percent": 95.2
+      },
+      {
+        "name": "AutomationBench",
+        "percent": 56.3
+      },
+      {
+        "name": "Terminal-bench 4.1",
+        "metric": "cheating-adjusted accuracy",
+        "percent": 65.2
+      }
+    ],
+    "safety_report": "Full separate report was described as forthcoming at retrieval."
+  },
+  "retrieval_log": [
+    {
+      "route": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "result": "Retrieved HTML, publication date, dependencies, data, evaluation, limitations and safety sections"
+    },
+    {
+      "route": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+      "result": "Retrieved; refers to Argon as base"
+    },
+    {
+      "route": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "result": "Retrieved; adapted from Carbon"
+    },
+    {
+      "route": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+      "result": "Retrieved; new base, sparse MoE transformer, broad data categories including web documents and code, crawled data; March 2026 knowledge cutoff"
+    }
+  ],
+  "claims": [
+    {
+      "status": "OBSERVED",
+      "statement": "Official model cards document Argon as a new base, Carbon based on Argon, Hydrogen and Neon adapted from Carbon."
+    },
+    {
+      "status": "OBSERVED",
+      "statement": "Model cards describe public web and code as categories of Argon training data, not specific repository membership."
+    },
+    {
+      "status": "VERIFIED",
+      "statement": "June 10 elemental persona Git anchor predates November 18 Neon card by 161 calendar days, but postdates declared March 2026 knowledge cutoff.",
+      "basis": "Parent record and official model card; calendar subtraction."
+    }
+  ],
+  "hypotheses": [
+    {
+      "statement": "Compare model role specialization, dependency structure and execution latency to the owner's elemental agent corpus and operational time compression research.",
+      "status": "UNKNOWN"
+    },
+    {
+      "statement": "Public-information-pool exposure is possible in principle; specific inclusion or transmission is not established, and March cutoff weakens inference from June artifacts to base model knowledge.",
+      "status": "UNKNOWN"
+    }
+  ],
+  "ancestry_status": "Documented internal Google model lineage only; relationship to ROOT0 corpus UNKNOWN. Four cards share provider and model family, not independent corroboration.",
+  "related_records": [
+    {
+      "id": "TD-GEMINI-ELEMENTS-001",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001.json",
+      "blob_sha": "7619f8d3e899fe4addf4a92c42f57cab2082f7ca"
+    },
+    {
+      "id": "TD-GEMINI-ELEMENTS-001-P1",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001-p1.json",
+      "blob_sha": "15f86315cefdcdd632455f6dad82d6fdb3e9da3a",
+      "relationship": "Prospective Radon/Oganesson/184 prediction remains pending; Neon predates it."
+    }
+  ],
+  "source_links": [
+    "https://deepmind.google/models/model-cards/gemini-4-neon/",
+    "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+    "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+    "https://deepmind.google/models/model-cards/gemini-4-argon/",
+    "https://deepmind.google/models/model-cards/",
+    "https://deepmind.com/models/evals-methodology/gemini-4-neon",
+    "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/agents/_personas.json"
+  ],
+  "limitations": [
+    "Official vendor description and selected reported scores, not independent benchmark replication.",
+    "Knowledge cutoff is not a documented ingestion log or exact end of all post-training; no identified ROOT0 corpus exposure.",
+    "Earlier exhaustive periodic-table naming makes overlap low-specificity; no verified equivalent dependency tree in ROOT0 corpus.",
+    "No controlled latency comparison or time-dilation ratio measured; calendar lead only.",
+    "HTML observations summarized rather than entire copyrighted card copied; linked PDF not archived."
+  ],
+  "media_archived": false,
+  "watermark": ".dlw"
+}
