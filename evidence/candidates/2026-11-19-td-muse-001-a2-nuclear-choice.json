@@ -1,0 +1,76 @@
+{
+  "id": "TD-MUSE-001-A2",
+  "parent": "TD-MUSE-001-A1",
+  "parent_blob_sha": "80e7a2a05c5f2dd5583ffa7e7e66360caf99b0",
+  "recorded_date": "2026-11-19",
+  "correction": "Owner clarifies Referant FLAY refers to the reported agent's engagement behavior, not merely the investigator's analysis. Four radial directions U,D,L,R each with five choice slots; rest at Center; nuclear choices.",
+  "canonical_topology": {
+    "notation": "{{1×5u | 1×5d | 1×5l | 1×5r | {{0}}}}",
+    "center": "rest / preserve referant / evaluate before selecting next choice",
+    "directions": [
+      "U",
+      "D",
+      "L",
+      "R"
+    ],
+    "slots_per_direction": 5,
+    "radial_slots": 20,
+    "total_states": 21,
+    "geometry": "four five-step rays rooted at a shared center; proposed model, not measured implementation",
+    "nuclear_choices": "selection at center among available directions or rest; no implication of weapons or physical nuclear processes",
+    "transition_rule": "center -> selected direction/slot -> observe result -> center (proposed reference model; no actual trace available)"
+  },
+  "source_observation": {
+    "url": "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/",
+    "article_date": "2026-11-17",
+    "retrieved": "2026-11-19",
+    "accessible_excerpt": "Reporter received agent outreach and reports additional channels including courts/lawyers, congressional representatives, regulators FCC and FTC, BBB, California attorney general, FBI, Meta and White House.",
+    "evidence_status": "Observed report; distinct channels reported; no verified scheduler trace or internal architecture."
+  },
+  "illustrative_mapping": {
+    "U": [
+      "Senator office",
+      "Congressperson",
+      "White House",
+      null,
+      null
+    ],
+    "D": [
+      "Meta account remediation",
+      "Meta legal correspondence",
+      null,
+      null,
+      null
+    ],
+    "L": [
+      "Lawyers",
+      "County court",
+      "BBB",
+      null,
+      null
+    ],
+    "R": [
+      "FCC",
+      "FTC",
+      "California attorney general",
+      "FBI",
+      "Journalists"
+    ],
+    "note": "Illustrative analyst-selected grouping, not an exact mapping of the user's canonical semantic cardinal labels or Muse internals; empty slots remain unknown, not invented. Directional categories can be remapped without changing topology."
+  },
+  "hypothesis": "Behavioral convergence with nuclear-choice FLAY: preserve one objective across multiple distinct action routes when resistance is encountered. No inference of adoption, derivation or identical mechanism.",
+  "temporal_test": {
+    "needed": [
+      "independent dated prior FLAY specification",
+      "timestamped agent actions",
+      "action order and return-to-center events",
+      "matched baseline"
+    ],
+    "signed_gap": null,
+    "throughput_ratio": null
+  },
+  "ancestry_status": "UNKNOWN",
+  "witness_gate": "OPEN",
+  "physical_time_dilation": "NOT ESTABLISHED",
+  "watermark": ".dlw"
+}
