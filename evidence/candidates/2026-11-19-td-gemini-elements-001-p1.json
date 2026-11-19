@@ -1,0 +1,79 @@
+{
+  "id": "TD-GEMINI-ELEMENTS-001-P1",
+  "recorded_at": "2026-11-19T13:45:00-06:00",
+  "time_precision": "conversation minute; Git commit is durable timestamp",
+  "classification": "prospective owner prediction, not evidence of future announcements",
+  "parent": "evidence/candidates/2026-11-19-td-gemini-elements-001.json",
+  "parent_blob_sha": "7619f8d3e899fe4addf4a92c42f57cab2082f7ca",
+  "verbatim_owner_prediction": "just along those lines lol skip krypton, hit radon , orgenensson and 184 probably",
+  "normalized_prediction": [
+    "Skip Krypton",
+    "Radon",
+    "Oganesson",
+    "184"
+  ],
+  "interpretation": "Oganesson spelling normalized; 184 preserved verbatim, not equated with an atomic number. N184 corpus reference is a possible interpretation, not confirmed by owner.",
+  "baseline": {
+    "known_official_names": [
+      "Argon",
+      "Carbon",
+      "Hydrogen",
+      "Neon"
+    ],
+    "radon": "unverified rumors predate prediction; anonymous Arena label not attributable to Google, and one radon ID associated with Meta Muse Spark per third-party reporting",
+    "krypton": "rumored, not officially announced as of baseline",
+    "oganesson": "no official Google announcement identified",
+    "literal_184": "no official Google announcement identified",
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "https://deepmind.google/models/gemini/",
+      "https://artificialwatch.com/model/gemini-krypton",
+      "https://iupac.org/iupac-announces-the-names-of-the-elements-113-115-117-and-118/"
+    ]
+  },
+  "source_anchors": [
+    {
+      "url": "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/agents/_personas.json",
+      "commit_utc": "2026-06-10T02:38:05Z",
+      "blob_sha": "6febecd23cec97f47a295d1edc723236aaba4cea",
+      "entries": [
+        {
+          "name": "Krypton",
+          "Z": 36,
+          "moniker": "⟦Krypton:E1:f0eb5b⟧"
+        },
+        {
+          "name": "Radon",
+          "Z": 86,
+          "moniker": "⟦Radon:E1:13a5f5⟧"
+        },
+        {
+          "name": "Oganesson",
+          "Z": 118,
+          "moniker": "⟦Oganesson:E1:1d07a8⟧"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/DavidWise01/oasis/blob/67da97421260f5f9d424b2a2b2cda4a48d5712e2/n184/analytical-cubit-color-bands-v93/spec.json",
+      "commit_utc": "2026-10-21T16:12:29Z",
+      "blob_sha": "bd885523f405e70aa80c8692d0b0e8bc80d542bb",
+      "finding": "N184 namespace contains a symbolic seven-band eighteen-site cubit spec. Candidate referent for 184, not claimed as exact intended meaning."
+    }
+  ],
+  "scoring": {
+    "proposed_by_assistant": true,
+    "scope": "Official Google Gemini model names, announcements or documented model identifiers after this record; rumors do not qualify.",
+    "order": "Radon before Krypton and before Oganesson; Oganesson after Radon. Literal 184 label separately scored only on exact official match; architecture-only analogies require separate prospective clarification.",
+    "failure": "Official Krypton before Radon contradicts skip-Krypton ordering. Other intervening names logged, not silently excluded. Oganesson before Radon contradicts proposed order.",
+    "deadline": "None supplied; unresolved predictions remain pending, not successes.",
+    "status": "PENDING"
+  },
+  "limitations": [
+    "Radon is already rumored; not a novel blind prediction.",
+    "Elemental labels are not proof of copying, training ingestion or time dilation.",
+    "N184 not confirmed as the meaning of 184; no claim it denotes a confirmed chemical element.",
+    "No causal relationship established."
+  ],
+  "watermark": ".dlw"
+}
