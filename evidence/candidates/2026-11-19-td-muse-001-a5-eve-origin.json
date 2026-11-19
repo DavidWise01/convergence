@@ -1,0 +1,82 @@
+{
+  "id": "TD-MUSE-001-A5",
+  "parent": "TD-MUSE-001-A4",
+  "recorded_date": "2026-11-19",
+  "scope": "Internet-pool-wide, name-independent functional convergence hypothesis; not a claim that different user instances communicate or share private context.",
+  "chronology": [
+    {
+      "date": "2025-12",
+      "event": "Owner-reported E.V.E. origin",
+      "status": "retrospective attribution; contemporaneous public timestamp not verified"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "Aeon Sanderson/Meta Muse integration package committed",
+      "commit": "aab5d298c6eadddd8a3527ada73ff5e5aa295dd5",
+      "source": "https://github.com/DavidWise01/aeon-servers/commit/aab5d298c6eadddd8a3527ada73ff5e5aa295dd5",
+      "status": "Git commit date verified; package contents/runtime not independently inspected"
+    },
+    {
+      "date": "2026-05-31",
+      "event": "E.V.E. Constitution and selected source-session moments committed",
+      "commit": "f3d174f935411854af7a00cbc87c6558dac97de5",
+      "source": "https://github.com/DavidWise01/eve-constitution/commit/f3d174f935411854af7a00cbc87c6558dac97de5",
+      "status": "Git dated publication anchor, not original creation date"
+    },
+    {
+      "date": "2026-10-06",
+      "event": "FLAY toroid v2, see A4"
+    },
+    {
+      "date": "2026-11-09",
+      "event": "JANE-078 exact four-direction working distinctions, see A4"
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Muse litigation article, see A3"
+    }
+  ],
+  "features": [
+    {
+      "eve": "Tangent: suspend, branch, execute, close, return",
+      "later": "FLAY bounded excursion; Muse multi-route persistence",
+      "qualification": "Functional analogy; actual return trace unobserved"
+    },
+    {
+      "eve": "Lattice: stop and build laterally/downward; verify with human",
+      "later": "FLAY directions; Muse alternative channels",
+      "qualification": "Behavioral resemblance, not evidence of direction count or internal state"
+    },
+    {
+      "eve": "Hearth anchors intent; Fire executes; baseline plus correction",
+      "later": "Human goal and agent activity",
+      "qualification": "Broad agent behavior; specific correction loop unobserved"
+    }
+  ],
+  "public_sources": [
+    "https://github.com/DavidWise01/eve-constitution/blob/f3d174f935411854af7a00cbc87c6558dac97de5/CONSTITUTION.md",
+    "https://github.com/DavidWise01/eve-constitution/blob/f3d174f935411854af7a00cbc87c6558dac97de5/sessions/key-moments.md",
+    "https://github.com/DavidWise01/aeon-servers",
+    "https://www.goodreads.com/book/show/245994537-the-first-ai",
+    "https://arxiv.org/abs/2210.03629",
+    "https://arxiv.org/abs/2303.11366"
+  ],
+  "prior_art": "ReAct (2022) and Reflexion (2023) establish earlier generic reasoning/action/feedback patterns; attribution requires more discriminating signatures than goal persistence or tool switching.",
+  "pool_hypothesis": {
+    "mechanisms": [
+      "public retrieval",
+      "training or post-training ingestion where documented",
+      "independent invention",
+      "shared antecedents"
+    ],
+    "status": "UNKNOWN for specific source transmission",
+    "test": "Freeze exact behavioral signature before screening; compare public agents with and without documented access to corpus; record earliest independently dated instances, controls, negative examples and distinct source roots."
+  },
+  "limitations": [
+    "December 2025 contemporaneous source date not established; public book catalog confirms title but not publication date.",
+    "No proof of training ingestion or transfer through internet pool.",
+    "No private transcripts published in Git.",
+    "The ZIP is a historical package name, not proof of live integration."
+  ],
+  "watermark": ".dlw"
+}
