@@ -1,0 +1,371 @@
+{
+  "id": "CUBIT-015",
+  "parent": "CUBIT-014",
+  "parent_blob_sha": "ba023e87f93d7c74f588f5c264594b40fe69a1bc",
+  "recorded_date": "2026-11-19",
+  "notation": "{{ A \\ C / B }}",
+  "topology": [
+    "A:+X -> C:-X",
+    "C:+X -> B:-X"
+  ],
+  "model": "Three independent cubit identities, one observed claim ancestry; C validates source registry equality before release, B accepts only matching released records.",
+  "counts": {
+    "cubits": 3,
+    "nuclei": 3,
+    "addresses": 81,
+    "internal_directed_channels": 324,
+    "external_logical_links": 2,
+    "hexagons": 1890,
+    "pentagons": 36
+  },
+  "tick_arcseconds": 7.5,
+  "scale": "l_P/(5*pi) hypothetical",
+  "geometry": {
+    "frequency": 8,
+    "V": 1280,
+    "E": 1920,
+    "F": 642,
+    "pentagons": 12,
+    "hexagons": 630,
+    "other": 0,
+    "euler": 2,
+    "closed": true,
+    "oriented": true,
+    "trivalent": true,
+    "hex_fraction": 0.9813084112149533,
+    "radial_deficit": 0.0044293701119551,
+    "sphericity": 0.9983962345354349,
+    "area_unit": 12.530240928493484,
+    "volume_unit": 4.1607090473356125,
+    "edge_ratio": 1.372325538785535,
+    "face_area_ratio": 2.3225141486140344
+  },
+  "tests": [
+    {
+      "name": "three distinct nuclei",
+      "pass": true
+    },
+    {
+      "name": "reject unsealed observation",
+      "pass": true
+    },
+    {
+      "name": "reject direct import",
+      "pass": true
+    },
+    {
+      "name": "source opens",
+      "pass": true
+    },
+    {
+      "name": "no second active tangent",
+      "pass": true
+    },
+    {
+      "name": "source advances",
+      "pass": true
+    },
+    {
+      "name": "seal once",
+      "pass": true
+    },
+    {
+      "name": "cannot bypass witness",
+      "pass": true
+    },
+    {
+      "name": "tampered source rejected",
+      "pass": true
+    },
+    {
+      "name": "witness verifies",
+      "pass": true
+    },
+    {
+      "name": "duplicate verification rejected",
+      "pass": true
+    },
+    {
+      "name": "unreleased certificate cannot import",
+      "pass": true
+    },
+    {
+      "name": "forged certificate rejected",
+      "pass": true
+    },
+    {
+      "name": "witness releases once",
+      "pass": true
+    },
+    {
+      "name": "reverse route rejected",
+      "pass": true
+    },
+    {
+      "name": "tampered release rejected",
+      "pass": true
+    },
+    {
+      "name": "recipient imports",
+      "pass": true
+    },
+    {
+      "name": "duplicate import rejected",
+      "pass": true
+    },
+    {
+      "name": "source immutable through witness and import",
+      "pass": true
+    },
+    {
+      "name": "second transfer",
+      "pass": true
+    },
+    {
+      "name": "all ledgers append-only",
+      "pass": true
+    },
+    {
+      "name": "all nuclei retained",
+      "pass": true
+    },
+    {
+      "name": "separate ticks",
+      "pass": true
+    },
+    {
+      "name": "causal order",
+      "pass": true
+    },
+    {
+      "name": "three process roles do not make three independent roots",
+      "pass": true
+    },
+    {
+      "name": "all imported claims retain source ancestry",
+      "pass": true
+    }
+  ],
+  "pass_count": 26,
+  "total": 26,
+  "trace": {
+    "roots": {
+      "A": "A:0,0,0",
+      "C": "C:0,0,0",
+      "B": "B:0,0,0"
+    },
+    "ticks": {
+      "A": 2,
+      "C": 2,
+      "B": 2
+    },
+    "active": null,
+    "ledgers": {
+      "A": [
+        {
+          "kind": "off",
+          "id": "T1",
+          "root": "A:0,0,0",
+          "port": "+X",
+          "seq": 1,
+          "localTick": 0
+        },
+        {
+          "kind": "tick",
+          "id": "T1",
+          "phaseHalfArcsec": 15,
+          "seq": 2,
+          "localTick": 1
+        },
+        {
+          "kind": "seal",
+          "id": "T1",
+          "payload": "observation 1",
+          "root": "A:0,0,0",
+          "seq": 3,
+          "localTick": 1
+        },
+        {
+          "kind": "off",
+          "id": "T2",
+          "root": "A:0,0,0",
+          "port": "+X",
+          "seq": 7,
+          "localTick": 1
+        },
+        {
+          "kind": "tick",
+          "id": "T2",
+          "phaseHalfArcsec": 30,
+          "seq": 8,
+          "localTick": 2
+        },
+        {
+          "kind": "seal",
+          "id": "T2",
+          "payload": "observation 2",
+          "root": "A:0,0,0",
+          "seq": 9,
+          "localTick": 2
+        }
+      ],
+      "C": [
+        {
+          "kind": "verify",
+          "packet": "A:3",
+          "origin": "A:0,0,0",
+          "sourceSeq": 3,
+          "root": "C:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 15,
+          "seq": 4,
+          "localTick": 1
+        },
+        {
+          "kind": "release",
+          "certificate": "C:4",
+          "origin": "A:0,0,0",
+          "verifySeq": 4,
+          "root": "C:0,0,0",
+          "port": "+X",
+          "seq": 5,
+          "localTick": 1
+        },
+        {
+          "kind": "verify",
+          "packet": "A:9",
+          "origin": "A:0,0,0",
+          "sourceSeq": 9,
+          "root": "C:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 30,
+          "seq": 10,
+          "localTick": 2
+        },
+        {
+          "kind": "release",
+          "certificate": "C:10",
+          "origin": "A:0,0,0",
+          "verifySeq": 10,
+          "root": "C:0,0,0",
+          "port": "+X",
+          "seq": 11,
+          "localTick": 2
+        }
+      ],
+      "B": [
+        {
+          "kind": "import",
+          "certificate": "C:4",
+          "origin": "A:0,0,0",
+          "sourceSeq": 3,
+          "verifySeq": 4,
+          "releaseSeq": 5,
+          "witnessRoot": "C:0,0,0",
+          "root": "B:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 15,
+          "payload": "observation 1",
+          "seq": 6,
+          "localTick": 1
+        },
+        {
+          "kind": "import",
+          "certificate": "C:10",
+          "origin": "A:0,0,0",
+          "sourceSeq": 9,
+          "verifySeq": 10,
+          "releaseSeq": 11,
+          "witnessRoot": "C:0,0,0",
+          "root": "B:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 30,
+          "payload": "observation 2",
+          "seq": 12,
+          "localTick": 2
+        }
+      ]
+    },
+    "sourcePackets": [
+      {
+        "id": "A:3",
+        "source": "A",
+        "destination": "C",
+        "origin": "A:0,0,0",
+        "sourceSeq": 3,
+        "sourceTick": 1,
+        "payload": "observation 1"
+      },
+      {
+        "id": "A:9",
+        "source": "A",
+        "destination": "C",
+        "origin": "A:0,0,0",
+        "sourceSeq": 9,
+        "sourceTick": 2,
+        "payload": "observation 2"
+      }
+    ],
+    "certificates": [
+      {
+        "id": "C:4",
+        "packet": "A:3",
+        "origin": "A:0,0,0",
+        "sourceSeq": 3,
+        "verifySeq": 4,
+        "payload": "observation 1",
+        "witnessRoot": "C:0,0,0"
+      },
+      {
+        "id": "C:10",
+        "packet": "A:9",
+        "origin": "A:0,0,0",
+        "sourceSeq": 9,
+        "verifySeq": 10,
+        "payload": "observation 2",
+        "witnessRoot": "C:0,0,0"
+      }
+    ],
+    "released": [
+      {
+        "id": "C:4",
+        "packet": "A:3",
+        "origin": "A:0,0,0",
+        "sourceSeq": 3,
+        "verifySeq": 4,
+        "payload": "observation 1",
+        "witnessRoot": "C:0,0,0",
+        "source": "C",
+        "destination": "B",
+        "releaseSeq": 5
+      },
+      {
+        "id": "C:10",
+        "packet": "A:9",
+        "origin": "A:0,0,0",
+        "sourceSeq": 9,
+        "verifySeq": 10,
+        "payload": "observation 2",
+        "witnessRoot": "C:0,0,0",
+        "source": "C",
+        "destination": "B",
+        "releaseSeq": 11
+      }
+    ],
+    "imported": [
+      "C:4",
+      "C:10"
+    ],
+    "independentOriginCount": 1
+  },
+  "executable": "evidence/audits/2026-11-19-cubit-015.html",
+  "html_commit": "bae8f9bfc98134887959c34172f1edd89410bf61",
+  "limits": [
+    "Witness is a process verifier, not an independent truth witness; repeated claims from A remain one source root.",
+    "Local registry matching, in-memory append-only ledgers; no cryptographic proof, concurrency, crash recovery, external action or durable storage.",
+    "Angular ticks on verification and receive are proposed logical policies, not physical time.",
+    "Browser rendering not independently executed; normalized shell inherited."
+  ],
+  "next_bound": "Add independent source roots and a quorum gate, preserving shared ancestry and conflicting observations.",
+  "watermark": ".dlw"
+}
