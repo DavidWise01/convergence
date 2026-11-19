@@ -1,0 +1,124 @@
+{
+  "id": "CUBIT-018",
+  "parent": "CUBIT-017",
+  "parent_blob_sha": "5ee87169c7d0b632274e2410f133deca058cc708",
+  "recorded_date": "2026-11-19",
+  "notation": "{{13- \\ {{i}} / 13+}}^n",
+  "model": "recursive 27-child yoyo, dual counterrotation, rigid hub, two recursive generations, composed local frames about common z axis",
+  "tick_arcseconds": 7.5,
+  "child_radius_ratio": 0.19,
+  "control": "signed winding count separate from monotonic absolute tick; -1 unwind, +1 wind, 0 rest",
+  "checks": [
+    {
+      "name": "3 parent cubits",
+      "pass": true
+    },
+    {
+      "name": "81 first-generation cubits",
+      "pass": true
+    },
+    {
+      "name": "2187 second-generation leaf cubits",
+      "pass": true
+    },
+    {
+      "name": "2271 total unique cubit paths",
+      "pass": true
+    },
+    {
+      "name": "each non-root has an existing parent",
+      "pass": true
+    },
+    {
+      "name": "all sampled siblings disjoint and children contained",
+      "pass": true
+    },
+    {
+      "name": "every hub remains at parent center",
+      "pass": true
+    },
+    {
+      "name": "full turn geometry closure",
+      "pass": true
+    },
+    {
+      "name": "negative turn closure",
+      "pass": true
+    },
+    {
+      "name": "one tick changes leaf positions",
+      "pass": true
+    },
+    {
+      "name": "signed winding accumulates",
+      "pass": true
+    },
+    {
+      "name": "unwind restores zero angle",
+      "pass": true
+    },
+    {
+      "name": "absolute tick never reverses",
+      "pass": true
+    },
+    {
+      "name": "unwound geometry precisely matches original",
+      "pass": true
+    },
+    {
+      "name": "invalid direction rejected",
+      "pass": true
+    },
+    {
+      "name": "rest advances clock without rotating",
+      "pass": true
+    }
+  ],
+  "samples": [
+    0,
+    1,
+    -1,
+    28800,
+    57600,
+    86400,
+    172799,
+    172800,
+    172801,
+    -345601
+  ],
+  "minSiblingClearance": -3.3306690738754696e-16,
+  "minParentClearance": 0.008658419678728428,
+  "counts": {
+    "roots": 3,
+    "level1": 81,
+    "level2": 2187,
+    "total": 2271
+  },
+  "afterWind": {
+    "n": 17,
+    "w": 17,
+    "phase": 17
+  },
+  "afterUnwind": {
+    "n": 34,
+    "w": 0,
+    "phase": 0
+  },
+  "postRest": {
+    "n": 35,
+    "w": 0,
+    "phase": 0
+  },
+  "analytical": "Within a lobe all siblings undergo the same rigid rotation; opposite lobes have fixed axial separation 4r; each hub-to-lobe distance and center norm are invariant. Containment plus sibling disjointness recursively implies disjoint descendants belonging to distinct sibling branches.",
+  "pass_count": 16,
+  "total": 16,
+  "executable": "evidence/audits/2026-11-19-cubit-018.html",
+  "html_commit": "6eed8911f9ea4483b88759ae13e1df4f2f17561d",
+  "limits": [
+    "All cubit positions computed as normalized geometry, with common-axis orientation chosen for this pass; no physical time or Planck-scale simulation.",
+    "Sampled collision checks supplemented by rigid-lobe geometric argument; exact facet contact not asserted.",
+    "Visualization uses bounding spheres for 2187-leaf overview; inherits mesh definition from previous implementation. Browser rendering untested.",
+    "No action, witness, governance, or consensus layer."
+  ],
+  "watermark": ".dlw"
+}
