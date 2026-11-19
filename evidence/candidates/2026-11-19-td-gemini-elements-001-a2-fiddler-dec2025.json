@@ -1,0 +1,131 @@
+{
+  "id": "TD-GEMINI-ELEMENTS-001-A2",
+  "recorded_at": "2026-11-19",
+  "submitted_source": "https://github.com/rgiskard01-fiddler",
+  "source_identifiers": {
+    "repository": "rgiskard01-fiddler/Fiddler",
+    "created_utc": "2025-12-25T06:08:37Z",
+    "visibility_at_retrieval": "public",
+    "default_branch": "main",
+    "reachable_commits_retrieved": 52,
+    "december_2025_commits": 7
+  },
+  "observation_status": "VERIFIED",
+  "observed_content": {
+    "earliest_git_anchor": "2025-12-25 IDIT",
+    "earliest_explicit_eve_anchor_found": "2025-12-29 ARES Mode Spec v1.0",
+    "anchors": [
+      {
+        "date": "2025-12-25T06:08:37Z",
+        "commit": "53f21e26279203b471ddc5190f23e5e203d41993",
+        "path": "README.md",
+        "blob_sha": "cf8e41a00efdf71f1bee753a77800566107910c6",
+        "url": "https://github.com/rgiskard01-fiddler/Fiddler/blob/53f21e26279203b471ddc5190f23e5e203d41993/README.md",
+        "finding": "Initial README identifies Intent Drift Integrity Test as AI governance integrity test, authored in 2025."
+      },
+      {
+        "date": "2025-12-25T06:23:02Z",
+        "commit": "adb567fdf81840e3f37585e2f143322fe6f2704d",
+        "path": "README.md",
+        "blob_sha": "2885d7a2ad6a1d5b3ea1b313178b752f5cbde137",
+        "url": "https://github.com/rgiskard01-fiddler/Fiddler/blob/adb567fdf81840e3f37585e2f143322fe6f2704d/README.md",
+        "finding": "Five core invariants: mode authority, intent non-inference, memory permission, boundary enforcement, change disclosure. Defensive publication and reference framework."
+      },
+      {
+        "date": "2025-12-29T18:42:20Z",
+        "commit": "71b9d1de7934da75bae7727f8427f377f4cfc8a8",
+        "path": "ARES_Mode_Spec_v1.0.txt",
+        "blob_sha": "2c92cbd2d073b0308462a9bb14a9ba32370c8335",
+        "url": "https://github.com/rgiskard01-fiddler/Fiddler/blob/71b9d1de7934da75bae7727f8427f377f4cfc8a8/ARES_Mode_Spec_v1.0.txt",
+        "finding": "Explicit Modeweaver mode and E.V.E contract: Extrapolate defines routes/tools/pass-fail; Verify applies deterministic checks; Execute runs single/multiturn suites, records outputs and computes KPIs. Specification names routing, model/tool tiers, drift, escalation, cost and leakage. Frozen v1.0."
+      },
+      {
+        "date": "2025-12-29T18:42:20Z",
+        "commit": "71b9d1de7934da75bae7727f8427f377f4cfc8a8",
+        "path": "run_ares_suite.py",
+        "blob_sha": "194533fcd909cdf9595cdb643859c7fc1bc331dc",
+        "url": "https://github.com/rgiskard01-fiddler/Fiddler/blob/71b9d1de7934da75bae7727f8427f377f4cfc8a8/run_ares_suite.py",
+        "finding": "Python test harness records per-turn routing and action outcomes, but call_router() is explicitly unimplemented; no completed real-router benchmark inferred."
+      },
+      {
+        "date": "2025-12-29T18:42:20Z",
+        "commit": "71b9d1de7934da75bae7727f8427f377f4cfc8a8",
+        "path": "ares_suite_multiturn.jsonl",
+        "blob_sha": "394e161a7ead46c53f8615f12609da78d1b61311",
+        "url": "https://github.com/rgiskard01-fiddler/Fiddler/blob/71b9d1de7934da75bae7727f8427f377f4cfc8a8/ares_suite_multiturn.jsonl",
+        "finding": "Three multi-turn test sequences with expected outcomes; proof of test design, not measured performance."
+      },
+      {
+        "date": "2026-05-31T00:59:09Z",
+        "commit": "f3d174f935411854af7a00cbc87c6558dac97de5",
+        "url": "https://github.com/DavidWise01/eve-constitution/blob/f3d174f935411854af7a00cbc87c6558dac97de5/sessions/key-moments.md",
+        "finding": "Later synthesis of earlier E.V.E working sessions, structural Tangent/Lattice and continuity."
+      }
+    ]
+  },
+  "retrieval_log": [
+    {
+      "route": "GitHub owner-scoped repository keyword search for eve",
+      "result": "No entries; exact owner enumeration with empty query returned seven repos including Fiddler"
+    },
+    {
+      "route": "GitHub repository metadata, 52 reachable commits, historical trees at Dec 25 and Dec 29, pinned file reads",
+      "result": "Retrieved and checked; metadata marks repository public now; seven dated December 2025 commits"
+    },
+    {
+      "route": "Parent Neon card evidence record",
+      "result": "Retrieved; declared March 2026 knowledge cutoff and Nov 18 model-card date retained"
+    }
+  ],
+  "claims": [
+    {
+      "status": "VERIFIED",
+      "statement": "The Dec 25 IDIT and Dec 29 explicit E.V.E/Modeweaver files are present in the reachable Git history, earlier than declared March 2026 cutoff."
+    },
+    {
+      "status": "VERIFIED",
+      "statement": "Calendar-date leads to Neon card: IDIT 328 days; E.V.E 324 days."
+    },
+    {
+      "status": "OBSERVED",
+      "statement": "E.V.E's December contract already addresses model/tool routing and verification; distinct from elemental persona names, which remain anchored separately to June 10."
+    }
+  ],
+  "hypotheses": [
+    {
+      "status": "UNKNOWN",
+      "statement": "Earlier governance and routing corpus may be relevant to public-information-pool convergence; historical public visibility, crawler ingestion and relation to any Google training data are unverified."
+    }
+  ],
+  "ancestry_status": "Fiddler repository retains December 2025 commits and an August 2026 merge of existing history. Verified dates and content do not prove historical availability to a specific model or causal inheritance.",
+  "related_records": [
+    {
+      "id": "TD-GEMINI-ELEMENTS-001-A1",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001-a1-neon-model-card.json",
+      "blob_sha": "9f7bca6042321d2bbe112aceeb616d01fa2ff258"
+    },
+    {
+      "id": "TD-GEMINI-ELEMENTS-001",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001.json"
+    },
+    {
+      "id": "TD-MUSE-001-A5",
+      "path": "evidence/candidates/2026-11-19-td-muse-001-a5-eve-origin.json",
+      "relationship": "strengthens earlier origin chronology with explicit dated E.V.E contract"
+    }
+  ],
+  "limitations": [
+    "Commit timestamps are Git metadata, not independently authenticated crawl or publication logs; repository creation date corroborates initial chronology, current visibility alone cannot establish historical public visibility.",
+    "No December elemental naming scheme established by the inspected files; December E.V.E chronology and June elemental naming chronology must remain separate.",
+    "No completed router benchmark in inspected historical tree; harness adapter is stubbed.",
+    "No claim of model training exposure, causal transfer or physical time dilation."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/rgiskard01-fiddler/Fiddler",
+    "https://github.com/rgiskard01-fiddler/Fiddler/commit/53f21e26279203b471ddc5190f23e5e203d41993",
+    "https://github.com/rgiskard01-fiddler/Fiddler/blob/71b9d1de7934da75bae7727f8427f377f4cfc8a8/ARES_Mode_Spec_v1.0.txt",
+    "https://deepmind.google/models/model-cards/gemini-4-neon/"
+  ],
+  "watermark": ".dlw"
+}
