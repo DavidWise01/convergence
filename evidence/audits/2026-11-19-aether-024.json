@@ -1,0 +1,26 @@
+{
+  "id": "AETHER-024",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-023",
+  "canonical_user_notation": "~~|~~|~~|~~| > ^i",
+  "capacity_notation": "52 × n × {{ inversion, upside-down, backwards, mirrored }}²",
+  "correction": "Four waves, not two. Prior two-carrier model is superseded as a wave-count interpretation.",
+  "proposed_mapping": [
+    "inversion",
+    "upside-down",
+    "backwards",
+    "mirrored"
+  ],
+  "proposed_equal_partition": {
+    "per_wave": 13,
+    "waves": 4,
+    "internal_total": 52,
+    "valence": 2,
+    "totality": 54
+  },
+  "limits": [
+    "Equal partition is a proposed bookkeeping convention, not a user-confirmed allocation.",
+    "Meaning of exponent two remains unspecified beyond paired geometry; no physical wave claim.",
+    "No phase dynamics tested."
+  ]
+}
