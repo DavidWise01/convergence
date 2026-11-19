@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| CUBIT-016 · 2026-11-19 | Three equal geometric cubits, 120° around an empty centroid; no witness roles | 10/10 geometry checks | [Audit](./audits/2026-11-19-cubit-016.json) · [Executable](./audits/2026-11-19-cubit-016.html) |
 | CUBIT-015 · 2026-11-19 | Three cubits A → C → B; central witness and source ancestry | 26/26 synthetic process and provenance checks | [Audit](./audits/2026-11-19-cubit-015.json) · [Executable](./audits/2026-11-19-cubit-015.html) |
 | CUBIT-014 · 2026-11-19 | Two hexagonal cubits coupled A +X → B −X | 19/19 synthetic checks; logical sealed packet and replay rejection | [Audit](./audits/2026-11-19-cubit-014.json) · [Executable](./audits/2026-11-19-cubit-014.html) |
 | CUBIT-013 · 2026-11-19 | Hexagonal brace, constant ternary box, variable torroid and six ports | 14/14 synthetic geometry/state checks; in-memory ledger | [Audit](./audits/2026-11-19-cubit-013.json) · [Executable](./audits/2026-11-19-cubit-013.html) |
