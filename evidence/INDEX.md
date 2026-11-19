@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-MUSE-001-A4 · 2026-11-19 | Pinned October/November FLAY Git comparison; Muse prior art | Functional resemblance; exact state trace and ancestry unknown; publication gap not event gap | [Comparison](./candidates/2026-11-19-td-muse-001-a4-git-comparison.json) |
 | TD-MUSE-001-A3 · 2026-11-19 | Direct 404 Media review; 12 named channel categories; primary links resolved | Article observed; primary documents inaccessible; nuclear-choice implementation unverified | [Source review](./candidates/2026-11-19-td-muse-001-a3-source-review.json) |
 | TD-MUSE-001-A2 · 2026-11-19 | Muse engagement as Referant FLAY nuclear choices: U,D,L,R × 5 + center rest | Behavioral convergence hypothesis; 21-state reference topology, actual trace and ancestry unknown | [Addendum](./candidates/2026-11-19-td-muse-001-a2-nuclear-choice.json) |
 | TD-MUSE-001-A1 · 2026-11-19 | Referant FLAY methodology correction for Meta Muse | Supersedes flat-method label; parent frozen; evidence/ancestry gates open | [Correction](./candidates/2026-11-19-td-muse-001-a1-referant-flay.json) |
