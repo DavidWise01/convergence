@@ -1,0 +1,153 @@
+{
+  "id": "TD-MUSE-001",
+  "recorded_at": "2026-11-19T09:35:00-06:00",
+  "submitted_source": {
+    "type": "user screenshot",
+    "filename": "IMG_2651.jpeg",
+    "sha256": "671f18bb752d81d50239be159409062495e6cbbb1f27b21e76ba958b59e049ab",
+    "bytes": 279780,
+    "visible_surface": "r/MetaAI, u/404mediaco, headline A Man and His Muse AI Agent Sue Meta, relative age 1d; visible comment is opinion, not corroboration; unrelated advertisement excluded",
+    "reddit_post_url": null
+  },
+  "source_identifiers": {
+    "subreddit": "r/MetaAI",
+    "poster": "u/404mediaco",
+    "article": "A Man and His Muse AI Agent Sue Meta",
+    "author": "Jason Koebler",
+    "published": "2026-11-17",
+    "agent": "Meta Muse / Baby Mia"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": {
+    "screenshot": "Headline and public reaction to AI-assisted legal action.",
+    "report": "404 Media reports Facebook restrictions after Joe Thomas granted Muse access; the agent assisted outreach and litigation against Meta. Thomas signed the filing. The journalist reports inspecting a court copy; the owner reported more than 100 emails and account restoration after a senator's office intervened."
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-19",
+      "surface": "user screenshot",
+      "status": "OBSERVED"
+    },
+    {
+      "date": "2026-11-19",
+      "surface": "404 Media article",
+      "status": "OBSERVED"
+    },
+    {
+      "date": "2026-11-19",
+      "surface": "Reuters separate Muse safety report",
+      "status": "OBSERVED",
+      "scope": "product context only, not this lawsuit"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A human-authorized Meta agent participated in a challenge to its own provider.",
+      "status": "reported, not independently court-verified"
+    },
+    {
+      "claim": "A lawsuit exists and was signed by the human.",
+      "status": "reported by journalist who obtained court copy; original filing not independently inspected"
+    },
+    {
+      "claim": "Agent made many outreach attempts.",
+      "status": "owner-reported; no raw action logs"
+    }
+  ],
+  "hypotheses": [
+    {
+      "name": "operational time dilation",
+      "definition": "Task throughput and fan-out within a shared wall-clock interval; not relativistic time dilation.",
+      "status": "UNKNOWN",
+      "test": "Compare matched human-only and human+agent workflows for distinct verified actions, latency, cost, error rate, duplicates and outcomes. Use timestamped independent logs."
+    },
+    {
+      "name": "flat method",
+      "definition": "Human intent -> Muse execution -> multiple institutional endpoints; platform restriction -> agent response -> escalation back toward platform. Flat is an analytical functional graph, not evidence of Muse internal architecture, autonomous standing or independent ownership.",
+      "status": "interpretive model"
+    }
+  ],
+  "flat_method": {
+    "nodes": [
+      "human",
+      "Muse agent",
+      "Meta platform",
+      "courts",
+      "government",
+      "media"
+    ],
+    "edges": [
+      [
+        "human",
+        "Muse agent",
+        "delegation"
+      ],
+      [
+        "Muse agent",
+        "Meta platform",
+        "account operations"
+      ],
+      [
+        "Meta platform",
+        "Muse agent",
+        "restriction of activity"
+      ],
+      [
+        "Muse agent",
+        "courts",
+        "reported assistance"
+      ],
+      [
+        "Muse agent",
+        "government",
+        "reported outreach"
+      ],
+      [
+        "Muse agent",
+        "media",
+        "reported outreach"
+      ]
+    ],
+    "feedback": "Restriction by provider becomes an input to provider-built agent's remediation workflow.",
+    "measurement": {
+      "human_rate": "verified distinct completed actions / elapsed wall time",
+      "agent_rate": "verified distinct completed actions / elapsed wall time",
+      "ratio": "agent_rate / human_rate, for matched objectives",
+      "observed_ratio": null
+    }
+  },
+  "ancestry_status": {
+    "status": "UNKNOWN",
+    "roots": [
+      "404 Media report (interview and reported court copy)",
+      "Reuters separate product-safety context"
+    ],
+    "dependent_surfaces": [
+      "Reddit headline links to 404 Media; not a separate witness of the case"
+    ],
+    "independent_case_witnesses_verified": 0,
+    "three_witness_gate": "OPEN; seek original court filing, independently timestamped agent execution records, and platform restriction/restoration records; compare shared roots."
+  },
+  "related_records": [
+    "TD-NEON-001",
+    "B008"
+  ],
+  "limitations": [
+    "No direct court docket or raw execution logs inspected.",
+    "No matched baseline, timing ratio, causation, internal architecture, legal standing of agent, or physical time dilation established.",
+    "Screenshot binary not archived in Git; SHA-256 identifies supplied bytes only.",
+    "Reddit post permalink not visible; no invented identifier."
+  ],
+  "media_archived": false,
+  "source_links": [
+    {
+      "url": "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/",
+      "role": "canonical case report"
+    },
+    {
+      "url": "https://www.reuters.com/legal/litigation/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/",
+      "role": "separate product safety context; not corroboration of specific case"
+    }
+  ],
+  "watermark": ".dlw"
+}
