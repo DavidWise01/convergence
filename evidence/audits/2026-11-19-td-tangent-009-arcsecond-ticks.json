@@ -1,0 +1,108 @@
+{
+  "id": "TD-TANGENT-009",
+  "parent": "TD-TANGENT-008",
+  "parent_blob_sha": "9639e563105aaa3edd7b793e0e1c305627bc9047",
+  "recorded_date": "2026-11-19",
+  "owner_correction": {
+    "ramp": "hexagonal",
+    "notation": "{{x,y:z}}^2",
+    "tick_arcseconds": 7.5
+  },
+  "arithmetic": {
+    "unit": "half-arcsecond integer",
+    "increment": 15,
+    "ticks_per_degree": 480,
+    "ticks_per_60_degree_sector": 28800,
+    "ticks_per_360_degree_cycle": 172800
+  },
+  "interpretation": "Model tick as an increment of angular phase. A regular hexagonal phase partition into six 60-degree sectors is an explicit test assumption, not a claim that each physical ramp edge sweeps 60 degrees or that arcseconds measure elapsed time.",
+  "sample": [
+    {
+      "tick": 0,
+      "cycle": 0,
+      "sector": 0,
+      "phaseHalfArcseconds": 0
+    },
+    {
+      "tick": 1,
+      "cycle": 0,
+      "sector": 0,
+      "phaseHalfArcseconds": 15
+    },
+    {
+      "tick": 480,
+      "cycle": 0,
+      "sector": 0,
+      "phaseHalfArcseconds": 7200
+    },
+    {
+      "tick": 28799,
+      "cycle": 0,
+      "sector": 0,
+      "phaseHalfArcseconds": 431985
+    },
+    {
+      "tick": 28800,
+      "cycle": 0,
+      "sector": 1,
+      "phaseHalfArcseconds": 432000
+    },
+    {
+      "tick": 172799,
+      "cycle": 0,
+      "sector": 5,
+      "phaseHalfArcseconds": 2591985
+    },
+    {
+      "tick": 172800,
+      "cycle": 1,
+      "sector": 0,
+      "phaseHalfArcseconds": 0
+    },
+    {
+      "tick": 172801,
+      "cycle": 1,
+      "sector": 0,
+      "phaseHalfArcseconds": 15
+    }
+  ],
+  "tests": [
+    {
+      "name": "exact integer tick arithmetic",
+      "pass": true
+    },
+    {
+      "name": "six equal angular sectors",
+      "pass": true
+    },
+    {
+      "name": "first tick equals 7.5 arcseconds",
+      "pass": true
+    },
+    {
+      "name": "sector boundary advances",
+      "pass": true
+    },
+    {
+      "name": "full phase wraps",
+      "pass": true
+    },
+    {
+      "name": "absolute tick persists at wrap",
+      "pass": true
+    },
+    {
+      "name": "one tick after wrap",
+      "pass": true
+    }
+  ],
+  "pass_count": 7,
+  "limits": [
+    "Synthetic arithmetic, not a physical clock or measured Planck-scale quantity.",
+    "No angular velocity or elapsed seconds specified.",
+    "No proof of external Muse implementation.",
+    "Durable crash recovery and recursive shared-edge integrity remain open."
+  ],
+  "next_bound": "Separate monotonic tick ancestry from wrapped phase; test nested excursion phase tracking and restart recovery.",
+  "watermark": ".dlw"
+}
