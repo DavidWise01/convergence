@@ -1,0 +1,263 @@
+{
+  "id": "CUBIT-014",
+  "parent": "CUBIT-013",
+  "parent_blob_sha": "4f5aa74ceaf39307236c9228228ad82766121c5f",
+  "recorded_date": "2026-11-19",
+  "notation": "{{A \\/ /\\/ B}}",
+  "model": "two identical near-spherical cubits; distinct roots; one directed A +X to B -X link",
+  "scale": "l_P/(5*pi) characteristic length (hypothetical)",
+  "tick_arcseconds": 7.5,
+  "counts": {
+    "cubits": 2,
+    "roots": 2,
+    "addresses": 54,
+    "internal_directed_channels": 216,
+    "external_logical_links": 1,
+    "hexagons": 1260,
+    "pentagons": 24
+  },
+  "geometry": {
+    "frequency": 8,
+    "V": 1280,
+    "E": 1920,
+    "F": 642,
+    "pentagons": 12,
+    "hexagons": 630,
+    "other": 0,
+    "euler": 2,
+    "closed": true,
+    "oriented": true,
+    "trivalent": true,
+    "hex_fraction": 0.9813084112149533,
+    "radial_deficit": 0.0044293701119551,
+    "sphericity": 0.9983962345354349,
+    "area_unit": 12.530240928493484,
+    "volume_unit": 4.1607090473356125,
+    "edge_ratio": 1.372325538785535,
+    "face_area_ratio": 2.3225141486140344
+  },
+  "ports": [
+    {
+      "name": "+X",
+      "address": [
+        1,
+        0,
+        0
+      ],
+      "face": 530,
+      "alignment": 1
+    },
+    {
+      "name": "-X",
+      "address": [
+        -1,
+        0,
+        0
+      ],
+      "face": 174,
+      "alignment": 1
+    }
+  ],
+  "tests": [
+    {
+      "name": "both roots distinct",
+      "pass": true
+    },
+    {
+      "name": "opposite signed ports",
+      "pass": true
+    },
+    {
+      "name": "no import before sealed source",
+      "pass": true
+    },
+    {
+      "name": "open valid source",
+      "pass": true
+    },
+    {
+      "name": "single active branch",
+      "pass": true
+    },
+    {
+      "name": "tick A only",
+      "pass": true
+    },
+    {
+      "name": "sealed packet",
+      "pass": true
+    },
+    {
+      "name": "duplicate close rejected",
+      "pass": true
+    },
+    {
+      "name": "tampered payload rejected",
+      "pass": true
+    },
+    {
+      "name": "reverse route rejected",
+      "pass": true
+    },
+    {
+      "name": "valid import",
+      "pass": true
+    },
+    {
+      "name": "replay rejected",
+      "pass": true
+    },
+    {
+      "name": "source history unchanged by receive",
+      "pass": true
+    },
+    {
+      "name": "second distinct transfer",
+      "pass": true
+    },
+    {
+      "name": "both ledgers append-only",
+      "pass": true
+    },
+    {
+      "name": "both roots constant",
+      "pass": true
+    },
+    {
+      "name": "separate monotonic angular clocks",
+      "pass": true
+    },
+    {
+      "name": "one imported record per sealed packet",
+      "pass": true
+    },
+    {
+      "name": "global causal order",
+      "pass": true
+    }
+  ],
+  "trace": {
+    "roots": {
+      "A": "A:0,0,0",
+      "B": "B:0,0,0"
+    },
+    "ticks": {
+      "A": 2,
+      "B": 2
+    },
+    "active": null,
+    "ledgers": {
+      "A": [
+        {
+          "type": "off",
+          "id": "T1",
+          "root": "A:0,0,0",
+          "port": "+X",
+          "seq": 1,
+          "localTick": 0
+        },
+        {
+          "type": "tick",
+          "id": "T1",
+          "phaseHalfArcsec": 15,
+          "seq": 2,
+          "localTick": 1
+        },
+        {
+          "type": "on",
+          "id": "T1",
+          "root": "A:0,0,0",
+          "payload": "observation 1",
+          "seq": 3,
+          "localTick": 1
+        },
+        {
+          "type": "off",
+          "id": "T2",
+          "root": "A:0,0,0",
+          "port": "+X",
+          "seq": 5,
+          "localTick": 1
+        },
+        {
+          "type": "tick",
+          "id": "T2",
+          "phaseHalfArcsec": 30,
+          "seq": 6,
+          "localTick": 2
+        },
+        {
+          "type": "on",
+          "id": "T2",
+          "root": "A:0,0,0",
+          "payload": "observation 2",
+          "seq": 7,
+          "localTick": 2
+        }
+      ],
+      "B": [
+        {
+          "type": "import",
+          "packet": "A:3",
+          "sourceRoot": "A:0,0,0",
+          "sourceSeq": 3,
+          "sourceTick": 1,
+          "payload": "observation 1",
+          "root": "B:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 15,
+          "seq": 4,
+          "localTick": 1
+        },
+        {
+          "type": "import",
+          "packet": "A:7",
+          "sourceRoot": "A:0,0,0",
+          "sourceSeq": 7,
+          "sourceTick": 2,
+          "payload": "observation 2",
+          "root": "B:0,0,0",
+          "port": "-X",
+          "phaseHalfArcsec": 30,
+          "seq": 8,
+          "localTick": 2
+        }
+      ]
+    },
+    "packets": [
+      {
+        "id": "A:3",
+        "source": "A",
+        "destination": "B",
+        "sourceRoot": "A:0,0,0",
+        "sourceSeq": 3,
+        "sourceTick": 1,
+        "payload": "observation 1"
+      },
+      {
+        "id": "A:7",
+        "source": "A",
+        "destination": "B",
+        "sourceRoot": "A:0,0,0",
+        "sourceSeq": 7,
+        "sourceTick": 2,
+        "payload": "observation 2"
+      }
+    ],
+    "imported": [
+      "A:3",
+      "A:7"
+    ]
+  },
+  "pass_count": 19,
+  "total": 19,
+  "executable": "evidence/audits/2026-11-19-cubit-014.html",
+  "html_commit": "bc1b42ed248d770f3b519b20ca986bdcd7fbe3e0",
+  "limitations": [
+    "Logical in-memory simulation; imported packet authenticated only against local sealed source registry, not cryptographic or network authentication.",
+    "No external effects, durable crash recovery, concurrent execution or real shell-edge routing.",
+    "Recipient increments local angular phase on accepted import, a proposed policy; tick is not elapsed physical time.",
+    "Browser render not independently executed."
+  ],
+  "watermark": ".dlw"
+}
