@@ -1,0 +1,218 @@
+{
+  "id": "TD-TANGENT-007",
+  "parent": "TD-MUSE-001-A6",
+  "recorded_date": "2026-11-19",
+  "notation": "{{x,y:z}}^2",
+  "owner_model": "off-ramp / on-ramp of diodic memory of recursion",
+  "proposed_bound": "Reentry integrity; strict base revision, single successful merge per branch, child closes into private parent branch before root publishes, stale sibling is rejected pending explicit new excursion.",
+  "decisions": "Operational test interpretation only. Strict compare-and-swap is a proposed policy, not a claim about canonical x,y,z meanings. No external effects executed.",
+  "test_model": "function run(c){let head=0;const b=new Map(),ledger=[];const results=c.ops.map(op=>{const [verb,id,base,pp]=op.split(\":\");const n=Number(base);if(verb===\"open\"){if(b.has(id)||n!==head||(pp&&(!b.has(pp)||b.get(pp).closed)))return false;b.set(id,{base:n,parent:pp||null,closed:false,local:[]});return true;}const x=b.get(id);if(!x||x.closed||x.base!==n||[...b.values()].some(y=>y.parent===id&&!y.closed))return false;if(x.parent){const parent=b.get(x.parent);if(!parent||parent.closed)return false;parent.local.push(id);x.closed=true;return true;}if(n!==head)return false;x.closed=true;ledger.push({id,base:n,next:n+1,nested:x.local.slice()});head++;return true;});return {name:c.name,ops:c.ops,expected:c.expected,actual:results,pass:JSON.stringify(results)===JSON.stringify(c.expected),ledger,head};}",
+  "tests": [
+    {
+      "name": "normal return",
+      "ops": [
+        "open:a:0",
+        "close:a:0"
+      ],
+      "expected": [
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": []
+        }
+      ],
+      "head": 1
+    },
+    {
+      "name": "duplicate return",
+      "ops": [
+        "open:a:0",
+        "close:a:0",
+        "close:a:0"
+      ],
+      "expected": [
+        true,
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true,
+        false
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": []
+        }
+      ],
+      "head": 1
+    },
+    {
+      "name": "unknown return",
+      "ops": [
+        "close:a:0"
+      ],
+      "expected": [
+        false
+      ],
+      "actual": [
+        false
+      ],
+      "pass": true,
+      "ledger": [],
+      "head": 0
+    },
+    {
+      "name": "stale sibling",
+      "ops": [
+        "open:a:0",
+        "open:b:0",
+        "close:a:0",
+        "close:b:0"
+      ],
+      "expected": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "actual": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": []
+        }
+      ],
+      "head": 1
+    },
+    {
+      "name": "nested return",
+      "ops": [
+        "open:a:0",
+        "open:b:0:a",
+        "close:b:0",
+        "close:a:0"
+      ],
+      "expected": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": [
+            "b"
+          ]
+        }
+      ],
+      "head": 1
+    },
+    {
+      "name": "parent premature",
+      "ops": [
+        "open:a:0",
+        "open:b:0:a",
+        "close:a:0",
+        "close:b:0",
+        "close:a:0"
+      ],
+      "expected": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "actual": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": [
+            "b"
+          ]
+        }
+      ],
+      "head": 1
+    },
+    {
+      "name": "wrong reference",
+      "ops": [
+        "open:a:0",
+        "close:a:1",
+        "close:a:0"
+      ],
+      "expected": [
+        true,
+        false,
+        true
+      ],
+      "actual": [
+        true,
+        false,
+        true
+      ],
+      "pass": true,
+      "ledger": [
+        {
+          "id": "a",
+          "base": 0,
+          "next": 1,
+          "nested": []
+        }
+      ],
+      "head": 1
+    }
+  ],
+  "pass_count": 7,
+  "test_count": 7,
+  "limitations": [
+    "In-memory synthetic test, not a concurrent or durable database test.",
+    "Rejects stale siblings rather than automatically rebasing; retry/rebase semantics remain open.",
+    "Closed child is a local append, not a public commit until parent closes.",
+    "No inference about Meta Muse internal implementation or ancestry."
+  ],
+  "next_bound": "Crash recovery between receiving a return and persisting the append; prove idempotent replay with durable transaction keys.",
+  "watermark": ".dlw"
+}
