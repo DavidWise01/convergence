@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-TANGENT-009 · 2026-11-19 | Hexagonal ramp 7.5 arcsecond ticks; wrapped phase versus absolute tick | 7/7 synthetic arithmetic checks; physical timing unspecified | [Audit](./audits/2026-11-19-td-tangent-009-arcsecond-ticks.json) |
 | TD-TANGENT-008 · 2026-11-19 | Hexagonal diodic ramp geometry correction | Minimal directed hex-cell model; 4/4 structural checks; recursive ramp untested | [Audit](./audits/2026-11-19-td-tangent-008-hexagonal.json) |
 | TD-TANGENT-007 · 2026-11-19 | Diodic recursive off-ramp/on-ramp reentry integrity | Synthetic 7/7 cases PASS; durable recovery untested | [Audit](./audits/2026-11-19-td-tangent-007.json) |
 | TD-MUSE-001-A6 · 2026-11-19 | E.V.E. Tangent as bounded measurable action; FLAY as selection geometry | Owner clarification; historical source pinned; observed Muse lifecycle unverified | [Tangent action](./candidates/2026-11-19-td-muse-001-a6-tangent-action.json) |
