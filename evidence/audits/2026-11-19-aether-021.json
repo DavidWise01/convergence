@@ -1,0 +1,62 @@
+{
+  "id": "AETHER-021",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-020 (conversation)",
+  "syntax": "52 × n × {{ inversion, upside-down, backwards, mirrored }}²",
+  "wave": "..||...|....|||...|..",
+  "capacity": {
+    "totality": 54,
+    "valence": 2,
+    "interior": 52
+  },
+  "interpretation": "Two 26-address shells; paired transform applications modeled as coordinate sign flips; square interpretation provisional",
+  "tests": [
+    {
+      "transform": [
+        -1,
+        -1,
+        -1
+      ],
+      "bijective": true,
+      "involution": true
+    },
+    {
+      "transform": [
+        1,
+        -1,
+        1
+      ],
+      "bijective": true,
+      "involution": true
+    },
+    {
+      "transform": [
+        1,
+        1,
+        -1
+      ],
+      "bijective": true,
+      "involution": true
+    },
+    {
+      "transform": [
+        -1,
+        1,
+        1
+      ],
+      "bijective": true,
+      "involution": true
+    }
+  ],
+  "orderedPairs": 16,
+  "uniquePairCompositions": [
+    "1,1,1",
+    "-1,1,-1",
+    "-1,-1,1",
+    "1,-1,-1"
+  ],
+  "limits": [
+    "Computational geometry only; no physical gravitational wave claim.",
+    "Pair composition count does not multiply storage capacity."
+  ]
+}
