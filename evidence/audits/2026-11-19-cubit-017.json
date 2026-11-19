@@ -1,0 +1,540 @@
+{
+  "id": "CUBIT-017",
+  "parent": "CUBIT-016",
+  "parent_blob_sha": "efce49d3cf431a755d65c86d7b8ee4eebfff6816",
+  "recorded_date": "2026-11-19",
+  "notation": "{{ 13 \\ {{i}} / 13 }}",
+  "model": "three equal parent cubits with 27 child cubits each; two mirrored 13-cubit planar lobes and a hub; child shell is inherited mesh at child scale",
+  "counts": {
+    "parent_cubits": 3,
+    "leaf_cubits": 81,
+    "total_including_parents": 84,
+    "child_cubits_per_parent": 27
+  },
+  "tick_arcseconds": 7.5,
+  "child_radius_ratio": 0.19,
+  "parent_geometry": {
+    "frequency": 8,
+    "V": 1280,
+    "E": 1920,
+    "F": 642,
+    "pentagons": 12,
+    "hexagons": 630,
+    "other": 0,
+    "euler": 2,
+    "closed": true,
+    "oriented": true,
+    "trivalent": true,
+    "hex_fraction": 0.9813084112149533,
+    "radial_deficit": 0.0044293701119551,
+    "sphericity": 0.9983962345354349,
+    "area_unit": 12.530240928493484,
+    "volume_unit": 4.1607090473356125,
+    "edge_ratio": 1.372325538785535,
+    "face_area_ratio": 2.3225141486140344
+  },
+  "arrangement": {
+    "r": 1,
+    "centers": [
+      [
+        7.07050159149938e-17,
+        1.1547005383792517,
+        0
+      ],
+      [
+        -1.0000000000000002,
+        -0.5773502691896255,
+        0
+      ],
+      [
+        0.9999999999999998,
+        -0.5773502691896264,
+        0
+      ]
+    ],
+    "ids": [
+      "a",
+      "b",
+      "c"
+    ],
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "gap": 0.15470053837925168,
+    "links": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "phaseOffsets": [
+      0,
+      57600,
+      115200
+    ]
+  },
+  "children": [
+    {
+      "id": "hub",
+      "address": [
+        0,
+        0,
+        0
+      ],
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "lobe": 0
+    },
+    {
+      "id": "+0",
+      "address": [
+        0,
+        0,
+        1
+      ],
+      "p": [
+        0,
+        0,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-0",
+      "address": [
+        0,
+        0,
+        -1
+      ],
+      "p": [
+        0,
+        0,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+1",
+      "address": [
+        0,
+        1,
+        -1
+      ],
+      "p": [
+        0.38,
+        0,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-1",
+      "address": [
+        0,
+        -1,
+        1
+      ],
+      "p": [
+        -0.38,
+        0,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+2",
+      "address": [
+        0,
+        1,
+        0
+      ],
+      "p": [
+        0.19000000000000006,
+        0.32908965343808666,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-2",
+      "address": [
+        0,
+        -1,
+        0
+      ],
+      "p": [
+        -0.19000000000000006,
+        -0.32908965343808666,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+3",
+      "address": [
+        0,
+        1,
+        1
+      ],
+      "p": [
+        -0.18999999999999992,
+        0.3290896534380867,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-3",
+      "address": [
+        0,
+        -1,
+        -1
+      ],
+      "p": [
+        0.18999999999999992,
+        -0.3290896534380867,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+4",
+      "address": [
+        1,
+        -1,
+        -1
+      ],
+      "p": [
+        -0.38,
+        4.6536578367599424e-17,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-4",
+      "address": [
+        -1,
+        1,
+        1
+      ],
+      "p": [
+        0.38,
+        -4.6536578367599424e-17,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+5",
+      "address": [
+        1,
+        -1,
+        0
+      ],
+      "p": [
+        -0.19000000000000017,
+        -0.3290896534380866,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-5",
+      "address": [
+        -1,
+        1,
+        0
+      ],
+      "p": [
+        0.19000000000000017,
+        0.3290896534380866,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+6",
+      "address": [
+        1,
+        -1,
+        1
+      ],
+      "p": [
+        0.19000000000000006,
+        -0.32908965343808666,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-6",
+      "address": [
+        -1,
+        1,
+        -1
+      ],
+      "p": [
+        -0.19000000000000006,
+        0.32908965343808666,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+7",
+      "address": [
+        1,
+        0,
+        -1
+      ],
+      "p": [
+        0.57,
+        0.3290896534380866,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-7",
+      "address": [
+        -1,
+        0,
+        1
+      ],
+      "p": [
+        -0.57,
+        -0.3290896534380866,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+8",
+      "address": [
+        1,
+        0,
+        0
+      ],
+      "p": [
+        4.030185907154646e-17,
+        0.6581793068761733,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-8",
+      "address": [
+        -1,
+        0,
+        0
+      ],
+      "p": [
+        -4.030185907154646e-17,
+        -0.6581793068761733,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+9",
+      "address": [
+        1,
+        0,
+        1
+      ],
+      "p": [
+        -0.5699999999999998,
+        0.3290896534380869,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-9",
+      "address": [
+        -1,
+        0,
+        -1
+      ],
+      "p": [
+        0.5699999999999998,
+        -0.3290896534380869,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+10",
+      "address": [
+        1,
+        1,
+        -1
+      ],
+      "p": [
+        -0.5700000000000001,
+        -0.3290896534380865,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-10",
+      "address": [
+        -1,
+        -1,
+        1
+      ],
+      "p": [
+        0.5700000000000001,
+        0.3290896534380865,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+11",
+      "address": [
+        1,
+        1,
+        0
+      ],
+      "p": [
+        -1.2090557721463936e-16,
+        -0.6581793068761733,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-11",
+      "address": [
+        -1,
+        -1,
+        0
+      ],
+      "p": [
+        1.2090557721463936e-16,
+        0.6581793068761733,
+        -0.38
+      ],
+      "lobe": -1
+    },
+    {
+      "id": "+12",
+      "address": [
+        1,
+        1,
+        1
+      ],
+      "p": [
+        0.5700000000000001,
+        -0.32908965343808644,
+        0.38
+      ],
+      "lobe": 1
+    },
+    {
+      "id": "-12",
+      "address": [
+        -1,
+        -1,
+        -1
+      ],
+      "p": [
+        -0.5700000000000001,
+        0.32908965343808644,
+        -0.38
+      ],
+      "lobe": -1
+    }
+  ],
+  "measurements": {
+    "minCenterDistance": 0.3799999999999998,
+    "maxChildBound": 0.95,
+    "clearance": 0.045570629888044945
+  },
+  "tests": [
+    {
+      "name": "27 unique child cubits",
+      "pass": true
+    },
+    {
+      "name": "balanced ternary bijection",
+      "pass": true
+    },
+    {
+      "name": "13/1/13",
+      "pass": true
+    },
+    {
+      "name": "opposite lobes mirror through axle",
+      "pass": true
+    },
+    {
+      "name": "no child bounding-sphere overlap",
+      "pass": true
+    },
+    {
+      "name": "all child bounds inside parent surface radial lower bound",
+      "pass": true
+    },
+    {
+      "name": "two rings per lobe",
+      "pass": true
+    },
+    {
+      "name": "hub nominally touches both lobe centers",
+      "pass": true
+    },
+    {
+      "name": "81 leaf cubits in three parents",
+      "pass": true
+    },
+    {
+      "name": "phase increment is 7.5 arcseconds",
+      "pass": true
+    },
+    {
+      "name": "opposite signed phase",
+      "pass": true
+    },
+    {
+      "name": "cycle wraps without resetting absolute tick",
+      "pass": true
+    },
+    {
+      "name": "opposite phase symmetry",
+      "pass": true
+    },
+    {
+      "name": "parent geometry standards inherited",
+      "pass": true
+    }
+  ],
+  "pass_count": 14,
+  "total": 14,
+  "executable": "evidence/audits/2026-11-19-cubit-017.html",
+  "html_commit": "3720f8e67803093a4821978802947e0c8c437d2d",
+  "limits": [
+    "13+1+13, ring radii, 0.19 child scale and opposing angular phase are chosen interpretations of yoyo, not explicit user dimensions.",
+    "Spherical bounds are tangent in some locations; exact shell contacts not established.",
+    "Parent radius normalized; child shells recursively scaled as computational geometry, not distinct measured physical Planck bubbles.",
+    "Counterrotation applies to leaf center coordinates in the interactive model; tests cover phase arithmetic, static containment and mirror geometry, not physical dynamics or memory behavior. Browser rendering untested."
+  ],
+  "watermark": ".dlw"
+}
