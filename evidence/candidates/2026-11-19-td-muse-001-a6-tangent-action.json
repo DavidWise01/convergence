@@ -1,0 +1,64 @@
+{
+  "id": "TD-MUSE-001-A6",
+  "parent": "TD-MUSE-001-A5",
+  "parent_blob_sha": "b7ecf73b5b56f427af88896c20e01f3dd7cbeba5",
+  "recorded_date": "2026-11-19",
+  "owner_clarification": "The Tangent form allows an AI to stop and take a measure of action.",
+  "scope": "Name-independent behavioral comparison across public information sources.",
+  "source": {
+    "url": "https://github.com/DavidWise01/eve-constitution/blob/f3d174f935411854af7a00cbc87c6558dac97de5/CONSTITUTION.md",
+    "verified_commit_date": "2026-05-31",
+    "source_form": "suspend, branch, execute, close, return",
+    "reported_origin": "December 2025, contemporaneous date not independently established"
+  },
+  "interpretation": {
+    "tangent": "bounded action excursion, distinct from continuous generation",
+    "flay": "directional selection geometry U,D,L,R x 5 plus center rest",
+    "proposed_cycle": [
+      "preserve central objective",
+      "suspend main progression",
+      "select bounded action",
+      "execute under authorization",
+      "observe and measure outcome",
+      "close and return to center",
+      "reselect or stop"
+    ],
+    "note": "Measurement and explicit return-to-center gates are operational extensions of the historical Tangent wording, not a verbatim statement or a verified Muse trace."
+  },
+  "muse": {
+    "observed": "Reported persistent multi-channel outreach during account dispute.",
+    "unverified": [
+      "explicit suspension",
+      "bounded tangent lifecycle",
+      "measurement before reselection",
+      "center rest",
+      "exact 21-state implementation",
+      "corpus transmission"
+    ]
+  },
+  "test": {
+    "trace_fields": [
+      "objective_id",
+      "parent_checkpoint",
+      "pause_time",
+      "branch_id",
+      "authorized_action",
+      "action_start",
+      "action_end",
+      "observed_result",
+      "return_checkpoint",
+      "next_choice"
+    ],
+    "measurements": [
+      "action elapsed wall time",
+      "verified outcome",
+      "objective progress",
+      "duplicate or unintended effects",
+      "reselection latency"
+    ],
+    "control": "Compare against generic sequential planning and tool-switching; require matched trace features, not agent names."
+  },
+  "ancestry_status": "UNKNOWN",
+  "witness_gate": "OPEN",
+  "watermark": ".dlw"
+}
