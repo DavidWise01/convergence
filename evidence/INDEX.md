@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-GEMINI-ELEMENTS-001 · 2026-11-19 | Gemini 4 elemental naming and visualization versus dated ROOT0 118 ACI personas | 4 confirmed names; June 10 Git anchor; exact Reddit unavailable; lineage unverified | [Candidate](./candidates/2026-11-19-td-gemini-elements-001.json) |
 | CUBIT-020 · 2026-11-19 | Three-axis cubit phase lock; exact 120° offsets | 18/18 geometry and phase checks | [Audit](./audits/2026-11-19-cubit-020.json) · [Executable](./audits/2026-11-19-cubit-020.html) |
 | CUBIT-019 · 2026-11-19 | Antistropic three-axis yo-yo geometry; recursive orthogonal frames | 16/16 geometry checks | [Audit](./audits/2026-11-19-cubit-019.json) · [Executable](./audits/2026-11-19-cubit-019.html) |
 | CUBIT-018 · 2026-11-19 | Recursive yo-yo winding/unwinding; 2187 leaf cubits | 16/16 geometry and phase checks | [Audit](./audits/2026-11-19-cubit-018.json) · [Executable](./audits/2026-11-19-cubit-018.html) |
