@@ -1,0 +1,191 @@
+{
+  "id": "AETHER-023",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-022",
+  "notation": "52 × n × {{ inversion, upside-down, backwards, mirrored }}²",
+  "wave": "..||...|....|||...|..",
+  "capacity": {
+    "totality": 54,
+    "valence": 2,
+    "interior": 52
+  },
+  "model": "Each labeled 26-address carrier receives an abstract cyclic index. Fix A as phase origin; shift B by k modulo 26. Orientation and phase are independent bookkeeping coordinates, not a proven geometric commutation relation. Cosine is a hypothetical sinusoidal phase correlation, not measured gravity.",
+  "phases": [
+    {
+      "k": 0,
+      "degrees": 0,
+      "coherence": 1,
+      "restored": true
+    },
+    {
+      "k": 1,
+      "degrees": 13.846153846153847,
+      "coherence": 0.970941817426052,
+      "restored": true
+    },
+    {
+      "k": 2,
+      "degrees": 27.692307692307693,
+      "coherence": 0.8854560256532099,
+      "restored": true
+    },
+    {
+      "k": 3,
+      "degrees": 41.53846153846154,
+      "coherence": 0.7485107481711011,
+      "restored": true
+    },
+    {
+      "k": 4,
+      "degrees": 55.38461538461539,
+      "coherence": 0.5680647467311559,
+      "restored": true
+    },
+    {
+      "k": 5,
+      "degrees": 69.23076923076923,
+      "coherence": 0.35460488704253557,
+      "restored": true
+    },
+    {
+      "k": 6,
+      "degrees": 83.07692307692308,
+      "coherence": 0.120536680255323,
+      "restored": true
+    },
+    {
+      "k": 7,
+      "degrees": 96.92307692307692,
+      "coherence": -0.12053668025532288,
+      "restored": true
+    },
+    {
+      "k": 8,
+      "degrees": 110.76923076923077,
+      "coherence": -0.35460488704253545,
+      "restored": true
+    },
+    {
+      "k": 9,
+      "degrees": 124.61538461538461,
+      "coherence": -0.5680647467311557,
+      "restored": true
+    },
+    {
+      "k": 10,
+      "degrees": 138.46153846153845,
+      "coherence": -0.7485107481711012,
+      "restored": true
+    },
+    {
+      "k": 11,
+      "degrees": 152.30769230769232,
+      "coherence": -0.8854560256532096,
+      "restored": true
+    },
+    {
+      "k": 12,
+      "degrees": 166.15384615384616,
+      "coherence": -0.970941817426052,
+      "restored": true
+    },
+    {
+      "k": 13,
+      "degrees": 180,
+      "coherence": -1,
+      "restored": true
+    },
+    {
+      "k": 14,
+      "degrees": 193.84615384615384,
+      "coherence": -0.9709418174260521,
+      "restored": true
+    },
+    {
+      "k": 15,
+      "degrees": 207.69230769230768,
+      "coherence": -0.8854560256532101,
+      "restored": true
+    },
+    {
+      "k": 16,
+      "degrees": 221.53846153846155,
+      "coherence": -0.7485107481711013,
+      "restored": true
+    },
+    {
+      "k": 17,
+      "degrees": 235.3846153846154,
+      "coherence": -0.5680647467311559,
+      "restored": true
+    },
+    {
+      "k": 18,
+      "degrees": 249.23076923076923,
+      "coherence": -0.3546048870425359,
+      "restored": true
+    },
+    {
+      "k": 19,
+      "degrees": 263.0769230769231,
+      "coherence": -0.12053668025532357,
+      "restored": true
+    },
+    {
+      "k": 20,
+      "degrees": 276.9230769230769,
+      "coherence": 0.1205366802553232,
+      "restored": true
+    },
+    {
+      "k": 21,
+      "degrees": 290.7692307692308,
+      "coherence": 0.35460488704253557,
+      "restored": true
+    },
+    {
+      "k": 22,
+      "degrees": 304.61538461538464,
+      "coherence": 0.5680647467311548,
+      "restored": true
+    },
+    {
+      "k": 23,
+      "degrees": 318.46153846153845,
+      "coherence": 0.7485107481711007,
+      "restored": true
+    },
+    {
+      "k": 24,
+      "degrees": 332.3076923076923,
+      "coherence": 0.88545602565321,
+      "restored": true
+    },
+    {
+      "k": 25,
+      "degrees": 346.15384615384613,
+      "coherence": 0.970941817426052,
+      "restored": true
+    }
+  ],
+  "tests": {
+    "phaseStates": 26,
+    "jointOrientationPhaseStates": 416,
+    "relativeOrientationPhaseStates": 104,
+    "restorationChecks": 676,
+    "allRestored": true,
+    "halfCycle": {
+      "k": 13,
+      "degrees": 180,
+      "coherence": -1,
+      "restored": true
+    },
+    "fullCycleRestores": true
+  },
+  "invariant": "Relative phase can vary while address count and source identity remain fixed.",
+  "limitations": [
+    "Cyclic ordering is chosen, not derived from the 3D shell adjacency.",
+    "No physical frequency, energy, or gravitational wave measurement.",
+    "832 prior orientation checks and current phase checks are separate."
+  ]
+}
