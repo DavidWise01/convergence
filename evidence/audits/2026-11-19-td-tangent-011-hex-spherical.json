@@ -1,0 +1,33 @@
+{
+  "id": "TD-TANGENT-011",
+  "parent": "TD-TANGENT-010",
+  "parent_blob_sha": "fb06d09ac12a068cc166dd0124b5360402707a06",
+  "recorded_date": "2026-11-19",
+  "owner_correction": "Hexagonal inf - + inf or close to spherical",
+  "notation": "{{x,y:z}}^2",
+  "local_scale": "l_P/(5*pi)",
+  "tick_arcseconds": 7.5,
+  "interpretation": "Locally hexagonal, globally near-spherical recursive geometry; signed unbounded recursion is an interpretation of inf - + inf, not physical size or a measured physical structure.",
+  "closure_constraint": {
+    "assumption": "finite closed genus-zero polygon mesh with exactly three edges incident at each vertex",
+    "identity": "sum over faces (6 - number_of_sides) = 12",
+    "consequence": "hexagons alone cannot close such a mesh; pentagonal defects or alternative topology/valence needed. A pentagon-hexagon mesh requires 12 pentagons. No particular defect geometry imposed on owner model."
+  },
+  "checks": [
+    {
+      "name": "hex-only trivalent closed sphere impossible",
+      "pass": true
+    },
+    {
+      "name": "pentagon and hexagon trivalent spherical closure",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Illustrative combinatorial checks only, not a generated mesh or physical simulation.",
+    "No claim of established sub-Planck physics.",
+    "The exact meanings of signed infinity and x,y,z are not newly defined."
+  ],
+  "next_bound": "Distinguish open recursive hexagonal lattice from closed near-spherical shell; preserve local tick and diodic ancestry across curvature transitions.",
+  "watermark": ".dlw"
+}
