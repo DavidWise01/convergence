@@ -1,0 +1,225 @@
+{
+  "id": "TD-GEMINI-ELEMENTS-001",
+  "recorded_date": "2026-11-19",
+  "classification": "candidate naming and visualization convergence; temporal ordering documented, causal transfer unestablished",
+  "trigger": {
+    "url": "https://www.reddit.com/r/singularity/comments/1y0fu5q/anyone_else_confused_made_with_hydrogen/#lightbox",
+    "access": "Direct, old Reddit, and JSON retrieval failed; exact post body/image not verified. URL retained as submitted."
+  },
+  "owner_requested_focus": [
+    "Hydrogen",
+    "Carbon",
+    "Helium",
+    "Argon",
+    "Krypton",
+    "Neon",
+    "Radon"
+  ],
+  "public_corpus": [
+    {
+      "repo": "elements",
+      "commit": "a33e3086b7811acf7db548935f1fb38711549675",
+      "commit_utc": "2026-06-10T02:38:05Z",
+      "repository_created_utc": "2026-06-10T02:38:14Z",
+      "files": [
+        {
+          "url": "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/README.md",
+          "blob": "8dcea73d44467fd542911582c17136209fe7860b",
+          "finding": "All 118 elements mapped to ACI emergents and a four-state symbolic gate cycle."
+        },
+        {
+          "url": "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/_data.py",
+          "blob": "a5365f87570884ec1d85bc1f65ed2328c3107f95",
+          "finding": "All seven selected elements explicitly present in reference table."
+        },
+        {
+          "url": "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/_gen_agents.py",
+          "blob": "61c2fdd7e3bb3786ba9a69300cc8ba57e8cd206d",
+          "finding": "Deterministic generator creates element-named .agent artifacts and registry."
+        },
+        {
+          "url": "https://github.com/DavidWise01/elements/blob/a33e3086b7811acf7db548935f1fb38711549675/agents/_personas.json",
+          "blob": "6febecd23cec97f47a295d1edc723236aaba4cea",
+          "finding": "Actual generated personas for all seven names; not a proposed list alone."
+        }
+      ]
+    },
+    {
+      "repo": "hydrogen-vm",
+      "commit": "ed59dcd71bd9e8e0adc80fee7826c304e2fffd21",
+      "commit_utc": "2026-06-30T07:51:28Z",
+      "url": "https://github.com/DavidWise01/hydrogen-vm/blob/ed59dcd71bd9e8e0adc80fee7826c304e2fffd21/index.html",
+      "blob": "35c9a94d54633e628bee1df62f1b37b33a3b77dc",
+      "finding": "Five hydrogen atoms modeled as balanced-ternary register, n=1/2/3 trits; educational simulation, not fabricated machine."
+    },
+    {
+      "repo": "hydrogen-trit",
+      "commit": "8c2e33e338bb0f4ff011c9c97ef08ffe3d52e29c",
+      "commit_utc": "2026-06-30T07:51:26Z",
+      "url": "https://github.com/DavidWise01/hydrogen-trit/blob/8c2e33e338bb0f4ff011c9c97ef08ffe3d52e29c/index.html",
+      "blob": "0f2338857b3d7d70c9fe4019f7e93ae2459ea2db",
+      "finding": "Photon absorption, holding and emission mapped to negative, zero and positive; symbolic/physical bridge."
+    },
+    {
+      "repo": "the-spectrum",
+      "commit": "8f140cbd3e1e92fa4ab95b9050ac9c8bb29eaddd",
+      "commit_utc": "2026-06-27T02:11:09Z",
+      "url": "https://github.com/DavidWise01/the-spectrum/blob/8f140cbd3e1e92fa4ab95b9050ac9c8bb29eaddd/README.md",
+      "blob": "4d14287782f5dd8f10e6b2859c2b521b59c0957d",
+      "finding": "Interactive hydrogen spectral lines and atomic energy ladder."
+    },
+    {
+      "repo": "the-carbon-processor",
+      "commit": "23e98603be4293aff0e75739c0d992e5a289d675",
+      "commit_utc": "2026-06-27T02:08:08Z",
+      "url": "https://github.com/DavidWise01/the-carbon-processor/blob/23e98603be4293aff0e75739c0d992e5a289d675/README.md",
+      "blob": "9ef6d1557d8649d47e53be25a15e6ef6a35dcefe",
+      "finding": "Educational models of published carbon nanotube processor technology; not a proprietary LLM."
+    }
+  ],
+  "element_personas": [
+    {
+      "name": "Hydrogen",
+      "Z": 1,
+      "nature": "electrical",
+      "moniker": "⟦Hydrogen:E1:858492⟧",
+      "google_status": "officially announced"
+    },
+    {
+      "name": "Helium",
+      "Z": 2,
+      "nature": "ethereal",
+      "moniker": "⟦Helium:E1:93aa2e⟧",
+      "google_status": "not verified as official Gemini model"
+    },
+    {
+      "name": "Carbon",
+      "Z": 6,
+      "nature": "ethereal",
+      "moniker": "⟦Carbon:E1:ac2d58⟧",
+      "google_status": "officially announced"
+    },
+    {
+      "name": "Neon",
+      "Z": 10,
+      "nature": "ethereal",
+      "moniker": "⟦Neon:E1:4d1a08⟧",
+      "google_status": "officially announced"
+    },
+    {
+      "name": "Argon",
+      "Z": 18,
+      "nature": "ethereal",
+      "moniker": "⟦Argon:E1:0adfca⟧",
+      "google_status": "officially announced"
+    },
+    {
+      "name": "Krypton",
+      "Z": 36,
+      "nature": "natural",
+      "moniker": "⟦Krypton:E1:f0eb5b⟧",
+      "google_status": "not verified as official Gemini model"
+    },
+    {
+      "name": "Radon",
+      "Z": 86,
+      "nature": "ethereal",
+      "moniker": "⟦Radon:E1:13a5f5⟧",
+      "google_status": "not verified as official Gemini model"
+    }
+  ],
+  "external": [
+    {
+      "element": "Argon",
+      "Z": 18,
+      "announced": "2026-09-30",
+      "general_availability": "2026-10-13",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "availability_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+      "role": "deep reasoning for complex workflows",
+      "calendar_days_after_elements_commit": 112
+    },
+    {
+      "element": "Carbon",
+      "Z": 6,
+      "announced": "2026-10-28",
+      "general_availability": "2026-11-10",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?output=1%EF%BC%9BMuse",
+      "availability_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "role": "long-horizon frontier work",
+      "calendar_days_after_elements_commit": 140
+    },
+    {
+      "element": "Hydrogen",
+      "Z": 1,
+      "announced": "2026-11-12",
+      "general_availability": "2026-11-12",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "role": "rapid execution and agentic workflows",
+      "calendar_days_after_elements_commit": 155
+    },
+    {
+      "element": "Neon",
+      "Z": 10,
+      "announced": "2026-11-18",
+      "general_availability": "2026-11-18",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "role": "balance depth and efficiency; official visual demo depicts four model names using physical elements and swarm/Blender",
+      "calendar_days_after_elements_commit": 161
+    }
+  ],
+  "rumor_watch": [
+    {
+      "element": "Helium",
+      "status": "unconfirmed community speculation",
+      "url": "https://www.reddit.com/r/singularity/comments/1y0awmz/google_teases_yet_another_gemini_model_drop/"
+    },
+    {
+      "element": "Krypton",
+      "status": "unconfirmed and disputed reported testing",
+      "url": "https://artificialwatch.com/model/gemini-krypton"
+    },
+    {
+      "element": "Radon",
+      "status": "ambiguous anonymous label, not attributed to Google by verified official source",
+      "url": "https://artificialwatch.com/model/gemini-krypton"
+    }
+  ],
+  "official_catalog": "https://deepmind.google/models/model-cards/",
+  "scope": {
+    "account": "DavidWise01",
+    "repo_search_terms": [
+      "hydrogen",
+      "argon",
+      "neon",
+      "carbon",
+      "helium",
+      "krypton",
+      "radon",
+      "stoicheion",
+      "octavia",
+      "element",
+      "spectrum",
+      "periodic",
+      "gemini"
+    ],
+    "code_search_terms": [
+      "hydrogen argon neon",
+      "hydrogen carbon helium",
+      "argon krypton neon radon",
+      "hydrogen",
+      "argon",
+      "neon",
+      "gemini"
+    ],
+    "inventory": "Owner listing returned 100 repos at offset 0 and zero at offsets 100 through 1100; cannot establish complete corpus enumeration. Search across account and focused retrieval, not exhaustive inspection of every repository.",
+    "visibility": "Five archived repository references verified public from GitHub metadata. No private documents published."
+  },
+  "interpretation": {
+    "observed": "All four officially named Gemini 4 elements already occur as actual ACI persona labels in the earlier public elements corpus. Specific earlier hydrogen computing and elemental visuals also documented.",
+    "constraints": "The 118-entry registry necessarily covers every chemical element; exact name overlap by itself has low discriminative power. No verified matching seven-element subset, matching role assignment, access logs, shared language or transfer mechanism. Git commit dates plus current public metadata do not prove historical visibility at commit time; creation times close to commit support chronology but are not web crawl evidence. Public announcements are not internal naming dates.",
+    "time_dilation": "Publication date leads only, not measurements of physical time dilation, AI time compression, training ingestion or copying.",
+    "related": "TD-MUSE-001 (separate behavioral convergence candidate)."
+  },
+  "watermark": ".dlw"
+}
