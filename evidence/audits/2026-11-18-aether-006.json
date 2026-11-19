@@ -1,0 +1,130 @@
+{
+  "id": "AETHER-006",
+  "recorded_at": "2026-11-18",
+  "window": [
+    "2025-12-01",
+    "2026-11-18"
+  ],
+  "notation": "{{ jacobi space /cubit lives in geometry here\\ }}",
+  "geometry": {
+    "status": "proposed analytical embedding",
+    "coordinates": [
+      "dated observation",
+      "lexical similarity",
+      "structural similarity",
+      "ancestry",
+      "control comparison"
+    ],
+    "warning": "Jacobi coordinates describe relative configurations; coordinate proximity is not source lineage or physical time dilation"
+  },
+  "public_timeline": [
+    {
+      "date": "2025-12-01",
+      "observation": "Requested observation boundary",
+      "url": null,
+      "status": "requested boundary"
+    },
+    {
+      "date": "2026-04-17",
+      "observation": "STOICHEION manual",
+      "url": "https://github.com/DavidWise01/the.source/commit/e444dd9fcc820f26af927288b1a734a681dc4dd9",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-05-27",
+      "observation": "ToroidKernel",
+      "url": "https://github.com/DavidWise01/toroid-kernel/commit/a05bfe9d51471f19aa66eabb2b6eb8d1f327219b",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-05-31",
+      "observation": "NEON physics visualization",
+      "url": "https://github.com/DavidWise01/higgs-suite/commit/3520afad6d97c8f9918c6831ccece422f8a7fc34",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-06-03",
+      "observation": "Aether gravity elemental",
+      "url": "https://github.com/DavidWise01/elementals/commit/7924ee93daa86bc6d2188ba74eec89cba7bfebbb",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-07-08",
+      "observation": "Jacobi Space",
+      "url": "https://github.com/DavidWise01/jacobi-space/commit/8c7ff948caae79eb29e63f526f0378fca3896562",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-07-23",
+      "observation": "Cubit zero-sphere",
+      "url": "https://github.com/DavidWise01/ud0/commit/044bb1ec3a962adf7e1641c78756361573e829f9",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-08-03",
+      "observation": "Fiddler neon lattice",
+      "url": "https://github.com/rgiskard01-fiddler/Fiddler/commit/2fe2f3f3e6914ea00f55432d7f60b4803aa57af6",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-09-09",
+      "observation": "Hallway catalog receipt date",
+      "url": "https://github.com/rgiskard01-fiddler/0root",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-10-22",
+      "observation": "Neon Argon nested zipper",
+      "url": "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+      "status": "retrieved source reference"
+    },
+    {
+      "date": "2026-11-17",
+      "observation": "Memsistor PRE-SIST",
+      "url": "https://github.com/DavidWise01/jane-emu/commit/6bad73d5dc7e55d6fa4849e26f514ba245594d66",
+      "status": "retrieved source reference"
+    }
+  ],
+  "early_period": "December 2025 through March 2026 remains open for public-source verification; private material omitted from public ledger.",
+  "prospective_freeze": {
+    "effective": "2026-11-18",
+    "fingerprints": [
+      [
+        "MEMSISTOR",
+        "PRE-SIST",
+        "Lead-208"
+      ],
+      [
+        "STOICHEION",
+        "TRIAD",
+        "PATRICIA"
+      ],
+      [
+        "I-13",
+        "four planes",
+        "17 opcodes"
+      ],
+      [
+        "NEON",
+        "ARGON",
+        "nested zipper"
+      ],
+      [
+        "HEGEMON",
+        "five-field gyroscope"
+      ]
+    ],
+    "rule": "Only announcements after freeze qualify as prospective observations; preserve misses and antecedents; require functional match and traceable ancestry separately."
+  },
+  "prior_audit_correction": {
+    "argon_external_date": "2026-09-30",
+    "owned_date": "2026-10-22",
+    "delta_days": -22
+  },
+  "limitations": [
+    "No exhaustive historical crawl",
+    "No verified December Jacobi geometry source",
+    "No causal attribution",
+    "Private material excluded"
+  ]
+}
