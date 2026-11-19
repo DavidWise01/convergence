@@ -1,0 +1,443 @@
+{
+  "id": "ARC-CUBIT-021",
+  "parent": "CUBIT-020",
+  "parent_blob_sha": "8930448cb4dc76c13bb5e4c500000fc8e6566432",
+  "recorded_date": "2026-11-19",
+  "scale_labels": [
+    "year",
+    "month",
+    "day",
+    "hour",
+    "minute",
+    "second",
+    "degree",
+    "arcminute",
+    "arcsecond",
+    "arcdegree",
+    "arc-arcdegree"
+  ],
+  "notation": "°:′:″:″′:″′′",
+  "owner_rule": "arcsecond is ninth timing scale; append prime marks recursively; 7.5 local units per tick",
+  "model_choices": "Base-60 extension below arcsecond, independent local phase per angular depth, aggregate projected angular register; prior 13–1–13 geometry and orthogonal root axes inherited",
+  "formula": {
+    "unit": "u_d = 60^(-d) arcsecond, d=0 for scale 9",
+    "step": "7.5 u_d",
+    "exact_integer": "increment = sign * 15 * 60^(D-d) half-finest units",
+    "projected_turn": "2592000 * 60^D half-finest units",
+    "local_turn": "172800 local winding ticks",
+    "absolute_tick": "each accepted step advances monotonic count even if rest or unwind"
+  },
+  "tests": [
+    {
+      "name": "five angular fields after six calendar/clock labels",
+      "pass": true
+    },
+    {
+      "name": "exact 7.5 at arc-arcdegree",
+      "pass": true
+    },
+    {
+      "name": "8 fine ticks carry into arcdegree",
+      "pass": true
+    },
+    {
+      "name": "480 fine ticks carry into arcsecond",
+      "pass": true
+    },
+    {
+      "name": "28800 fine ticks carry into arcminute",
+      "pass": true
+    },
+    {
+      "name": "1728000 fine ticks carry into degree",
+      "pass": true
+    },
+    {
+      "name": "base full turn wraps exactly",
+      "pass": true
+    },
+    {
+      "name": "fine projected full turn exact",
+      "pass": true
+    },
+    {
+      "name": "negative borrow wraps from zero",
+      "pass": true
+    },
+    {
+      "name": "mixed depths exact sum",
+      "pass": true
+    },
+    {
+      "name": "independent local phase registers",
+      "pass": true
+    },
+    {
+      "name": "unwind restores projection without decreasing absolute ticks",
+      "pass": true
+    },
+    {
+      "name": "rest advances time only",
+      "pass": true
+    },
+    {
+      "name": "invalid direction/depth/count rejected",
+      "pass": true
+    },
+    {
+      "name": "32-depth exact integer precision",
+      "pass": true
+    },
+    {
+      "name": "deep unwind exact",
+      "pass": true
+    },
+    {
+      "name": "local cubit turn distinguished from projected turn",
+      "pass": true
+    },
+    {
+      "name": "three recursive generations instantiated, unique addresses",
+      "pass": true
+    },
+    {
+      "name": "27 children per internal cubit",
+      "pass": true
+    },
+    {
+      "name": "containment at independently wound levels",
+      "pass": true
+    },
+    {
+      "name": "no sibling bounding sphere overlap",
+      "pass": true
+    },
+    {
+      "name": "perpendicular local axes",
+      "pass": true
+    },
+    {
+      "name": "equal depth windings reproduce CUBIT-020",
+      "pass": true
+    }
+  ],
+  "counts": {
+    "roots": 3,
+    "G1": 81,
+    "G2": 2187,
+    "G3": 59049,
+    "total": 61320
+  },
+  "mixedExample": {
+    "depth": 2,
+    "absoluteTicks": "3",
+    "signedWinding": [
+      "1",
+      "1",
+      "1"
+    ],
+    "localPhaseTicks": [
+      "1",
+      "1",
+      "1"
+    ],
+    "projectedHalfFinestUnits": "54915",
+    "wrappedHalfFinestUnits": "54915",
+    "turnHalfFinestUnits": "9331200000",
+    "fields": [
+      "0",
+      "0",
+      "7",
+      "37",
+      "37.5"
+    ],
+    "symbols": [
+      "°",
+      "′",
+      "″",
+      "″′",
+      "″′′"
+    ],
+    "fieldString": "0° 0′ 7″ 37″′ 37.5″′′",
+    "geometryPhase": [
+      1,
+      1,
+      1
+    ]
+  },
+  "negativeExample": {
+    "depth": 2,
+    "absoluteTicks": "1",
+    "signedWinding": [
+      "0",
+      "0",
+      "-1"
+    ],
+    "localPhaseTicks": [
+      "0",
+      "0",
+      "172799"
+    ],
+    "projectedHalfFinestUnits": "-15",
+    "wrappedHalfFinestUnits": "9331199985",
+    "turnHalfFinestUnits": "9331200000",
+    "fields": [
+      "359",
+      "59",
+      "59",
+      "59",
+      "52.5"
+    ],
+    "symbols": [
+      "°",
+      "′",
+      "″",
+      "″′",
+      "″′′"
+    ],
+    "fieldString": "359° 59′ 59″ 59″′ 52.5″′′",
+    "geometryPhase": [
+      0,
+      0,
+      172799
+    ]
+  },
+  "localFullCycle": {
+    "depth": 2,
+    "absoluteTicks": "172800",
+    "signedWinding": [
+      "0",
+      "0",
+      "172800"
+    ],
+    "localPhaseTicks": [
+      "0",
+      "0",
+      "0"
+    ],
+    "projectedHalfFinestUnits": "2592000",
+    "wrappedHalfFinestUnits": "2592000",
+    "turnHalfFinestUnits": "9331200000",
+    "fields": [
+      "0",
+      "6",
+      "0",
+      "0",
+      "0"
+    ],
+    "symbols": [
+      "°",
+      "′",
+      "″",
+      "″′",
+      "″′′"
+    ],
+    "fieldString": "0° 6′ 0″ 0″′ 0″′′",
+    "geometryPhase": [
+      0,
+      0,
+      0
+    ]
+  },
+  "deepStress": {
+    "depth": 32,
+    "absoluteTicks": "4",
+    "signedWinding": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "localPhaseTicks": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "projectedHalfFinestUnits": "0",
+    "wrappedHalfFinestUnits": "0",
+    "turnHalfFinestUnits": "2062884959698107109234389811200000000000000000000000000000000000",
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "symbols": [
+      "°",
+      "′",
+      "″",
+      "″′",
+      "″′′",
+      "″′′′",
+      "″′′′′",
+      "″′′′′′",
+      "″′′′′′′",
+      "″′′′′′′′",
+      "″′′′′′′′′",
+      "″′′′′′′′′′",
+      "″′′′′′′′′′′",
+      "″′′′′′′′′′′′",
+      "″′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+      "″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′"
+    ],
+    "fieldString": "0° 0′ 0″ 0″′ 0″′′ 0″′′′ 0″′′′′ 0″′′′′′ 0″′′′′′′ 0″′′′′′′′ 0″′′′′′′′′ 0″′′′′′′′′′ 0″′′′′′′′′′′ 0″′′′′′′′′′′′ 0″′′′′′′′′′′′′ 0″′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′ 0″′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′′",
+    "geometryPhase": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "minParentClearance": 0.0016450997389583048,
+  "minSiblingClearance": -3.3306690738754696e-16,
+  "maxParentChildAxisDot": 5.551115123125783e-17,
+  "pass_count": 23,
+  "total": 23,
+  "executable": "evidence/audits/2026-11-19-arc-cubit-021.html",
+  "html_commit": "c2a20a0e051d01f0a2a6ccd967c7ecd6b417662a",
+  "limitations": [
+    "Base-60 recursion is a chosen rule, not an observed physical law. Calendar fields are labels, not mixed-radix calendar arithmetic. No conversion from angle to elapsed seconds without an angular velocity model.",
+    "Fine local rotation and projected angular carry are different quantities; carry does not advance the parent local rotation register.",
+    "Geometry computed using double-precision normalized coordinates; clock uses exact BigInt. 32 additional marks stress-tested, software limit 64.",
+    "Bounding sphere containment tested at independently wound sample and inherited analytically from rigid lobe model; physical dynamics and exact facet contact untested. Browser rendering not independently executed."
+  ],
+  "watermark": ".dlw"
+}
