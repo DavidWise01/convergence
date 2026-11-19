@@ -1,0 +1,210 @@
+{
+  "id": "AETHER-022",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-021",
+  "notation": "52 × n × {{ inversion, upside-down, backwards, mirrored }}²",
+  "wave": "..||...|....|||...|..",
+  "interpretation": "Independent ordered orientation choice on each of two labeled 26-address shells; 2 valence positions excluded. Proposed interpretation of exponent 2.",
+  "transforms": {
+    "I": [
+      -1,
+      -1,
+      -1
+    ],
+    "U": [
+      1,
+      -1,
+      1
+    ],
+    "B": [
+      1,
+      1,
+      -1
+    ],
+    "M": [
+      -1,
+      1,
+      1
+    ]
+  },
+  "pairs": [
+    {
+      "a": "I",
+      "b": "I",
+      "relative": [
+        1,
+        1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "I",
+      "b": "U",
+      "relative": [
+        -1,
+        1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "I",
+      "b": "B",
+      "relative": [
+        -1,
+        -1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "I",
+      "b": "M",
+      "relative": [
+        1,
+        -1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "U",
+      "b": "I",
+      "relative": [
+        -1,
+        1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "U",
+      "b": "U",
+      "relative": [
+        1,
+        1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "U",
+      "b": "B",
+      "relative": [
+        1,
+        -1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "U",
+      "b": "M",
+      "relative": [
+        -1,
+        -1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "B",
+      "b": "I",
+      "relative": [
+        -1,
+        -1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "B",
+      "b": "U",
+      "relative": [
+        1,
+        -1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "B",
+      "b": "B",
+      "relative": [
+        1,
+        1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "B",
+      "b": "M",
+      "relative": [
+        -1,
+        1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "M",
+      "b": "I",
+      "relative": [
+        1,
+        -1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "M",
+      "b": "U",
+      "relative": [
+        -1,
+        -1,
+        1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "M",
+      "b": "B",
+      "relative": [
+        -1,
+        1,
+        -1
+      ],
+      "preserves": true
+    },
+    {
+      "a": "M",
+      "b": "M",
+      "relative": [
+        1,
+        1,
+        1
+      ],
+      "preserves": true
+    }
+  ],
+  "results": {
+    "addresses": 52,
+    "pairs": 16,
+    "uniqueJointMappings": 16,
+    "relativeClasses": {
+      "1,1,1": 4,
+      "-1,1,-1": 4,
+      "-1,-1,1": 4,
+      "1,-1,-1": 4
+    },
+    "inversePass": 16,
+    "pointChecks": 832
+  },
+  "invariant": "Joint orientation and relative orientation are distinct; neither changes carrier capacity.",
+  "limitations": [
+    "Finite synthetic sign-flip geometry, not physical wave propagation.",
+    "No timing, amplitude, coupling or energy dynamics tested."
+  ]
+}
