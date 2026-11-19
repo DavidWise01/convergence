@@ -1,0 +1,86 @@
+{
+  "id": "TD-NORTH-STAR-001",
+  "recorded_at": "2026-11-19",
+  "recorded_at_precision": "calendar date; not source creation timestamp",
+  "submitted_source": "https://www.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/",
+  "source_identifiers": {
+    "platform": "Reddit",
+    "subreddit": "AI_ethics_and_rights",
+    "post_id": "1y0czek",
+    "title_from_slug": "The North Star",
+    "title_verified": false
+  },
+  "observation_status": "URL_ONLY",
+  "observed_content": {
+    "surface": "Owner-submitted URL",
+    "observation": "URL identifies subreddit and post ID; title inferred only from slug. Original post text, author, timestamp, media and comments not retrieved."
+  },
+  "retrieval_log": [
+    {
+      "route": "https://www.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/",
+      "result": "DisabledError"
+    },
+    {
+      "route": "https://old.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/",
+      "result": "not accessible"
+    },
+    {
+      "route": "https://www.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/.json",
+      "result": "DisabledError"
+    },
+    {
+      "route": "https://redd.it/1y0czek",
+      "result": "not accessible"
+    },
+    {
+      "route": "web search: exact ID, title and subreddit",
+      "result": "No matching post; unrelated North Star results excluded"
+    }
+  ],
+  "claims": [],
+  "hypotheses": [
+    {
+      "statement": "Possible thematic comparison to AI ethics, rights and orienting principles in ROOT0 governance research, based on URL/subreddit only; review pending.",
+      "status": "UNKNOWN"
+    }
+  ],
+  "ancestry_status": "UNKNOWN; no source content or transmission mechanism verified",
+  "related_records": [
+    {
+      "id": "TD-SYNTHSARA-DATA-WAR-001",
+      "path": "evidence/candidates/2026-11-19-td-synthsara-data-war-001.json",
+      "relationship": "same owner-submitted time evidence collection only"
+    },
+    {
+      "id": "TD-GEMINI-ELEMENTS-001",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001.json",
+      "relationship": "same evidence collection only"
+    },
+    {
+      "id": "TD-MUSE-001-A5",
+      "path": "evidence/candidates/2026-11-19-td-muse-001-a5-eve-origin.json",
+      "relationship": "potential comparison context; not corroboration"
+    }
+  ],
+  "comparison_candidates": [
+    {
+      "url": "https://github.com/DavidWise01/positronic-law/blob/3c8ccca9a24b22c56baf48946464950dd81447f0/README.md",
+      "reason": "Earlier documented synthetic intelligence rights and obligations framework; no substantive match can be scored without Reddit content."
+    },
+    {
+      "url": "https://github.com/DavidWise01/eve-constitution/blob/f3d174f935411854af7a00cbc87c6558dac97de5/CONSTITUTION.md",
+      "reason": "Earlier constitution and orienting values; comparison pending."
+    }
+  ],
+  "limitations": [
+    "URL preservation only; no original post publication date or content verified.",
+    "No causal links, temporal lag, AI consciousness, copying or time dilation inferred.",
+    "No media archived."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/"
+  ],
+  "next_review": "Append source-review addendum if original post or screenshot becomes available.",
+  "watermark": ".dlw"
+}
