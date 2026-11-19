@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| CUBIT-018 · 2026-11-19 | Recursive yo-yo winding/unwinding; 2187 leaf cubits | 16/16 geometry and phase checks | [Audit](./audits/2026-11-19-cubit-018.json) · [Executable](./audits/2026-11-19-cubit-018.html) |
 | CUBIT-017 · 2026-11-19 | Yo-yo 13/1/13 recursive geometry; 27 children per parent, 81 per triad | 14/14 geometry and angular checks | [Audit](./audits/2026-11-19-cubit-017.json) · [Executable](./audits/2026-11-19-cubit-017.html) |
 | CUBIT-016 · 2026-11-19 | Three equal geometric cubits, 120° around an empty centroid; no witness roles | 10/10 geometry checks | [Audit](./audits/2026-11-19-cubit-016.json) · [Executable](./audits/2026-11-19-cubit-016.html) |
 | CUBIT-015 · 2026-11-19 | Three cubits A → C → B; central witness and source ancestry | 26/26 synthetic process and provenance checks | [Audit](./audits/2026-11-19-cubit-015.json) · [Executable](./audits/2026-11-19-cubit-015.html) |
