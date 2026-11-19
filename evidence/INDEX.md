@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| CUBIT-013 · 2026-11-19 | Hexagonal brace, constant ternary box, variable torroid and six ports | 14/14 synthetic geometry/state checks; in-memory ledger | [Audit](./audits/2026-11-19-cubit-013.json) · [Executable](./audits/2026-11-19-cubit-013.html) |
 | TD-TANGENT-012 · 2026-11-19 | Near-spherical dual icosahedral hex shell; frequency 8 | 630 hexagons + 12 pentagons; 9/9 selected geometry checks | [Audit](./audits/2026-11-19-td-tangent-012.json) · [Executable](./audits/2026-11-19-td-tangent-012.html) |
 | TD-TANGENT-011 · 2026-11-19 | Locally hexagonal, near-spherical bubble; signed recursion | Conditional spherical mesh closure constraint; 2/2 combinatorial checks | [Audit](./audits/2026-11-19-td-tangent-011-hex-spherical.json) |
 | TD-TANGENT-010 · 2026-11-19 | Planck bubble scale lP/(5π); internal hex ramp 7.5 arcsecond phase | 4/4 arithmetic checks; conditional circular metric, no physical claim | [Audit](./audits/2026-11-19-td-tangent-010-planck-bubble.json) |
