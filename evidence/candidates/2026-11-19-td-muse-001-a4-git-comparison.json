@@ -1,0 +1,103 @@
+{
+  "id": "TD-MUSE-001-A4",
+  "parent": "TD-MUSE-001-A3",
+  "recorded_date": "2026-11-19",
+  "type": "bounded corpus comparison; pinned pre-publication Git sources",
+  "corpus_sources": [
+    {
+      "title": "FLAY Mandel-Juliet Toroid v2",
+      "commit": "d8abc8689aaebb28acd7b039749e2bc75d95e88c",
+      "commit_utc": "2026-10-06T18:11:27Z",
+      "blob": "5374752aa37db50604d9ec3ca6d89de70c848831",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/d8abc8689aaebb28acd7b039749e2bc75d95e88c/memory/semantic/flay-mandel-juliet-toroid-v2.md",
+      "finding": "Root, open-answer-close, archive, provenance labels; unknown remains unknown."
+    },
+    {
+      "title": "JANE 078 four-direction carrier",
+      "commit": "da7aa300305a1554182e7ed972b3c0d3a3bd733f",
+      "commit_utc": "2026-11-09T04:33:00Z",
+      "blob": "9c45e620d65aa2610b612786f637e636d52fae99",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/da7aa300305a1554182e7ed972b3c0d3a3bd733f/research/isa256/JANE-078-flay-four-direction-corpus.md",
+      "finding": "Exact U/D/L/R repeated order with five content distinctions per cardinal, one agent and retained root; semantic directions are not arbitrary endpoint groups."
+    },
+    {
+      "title": "JANE 084 tool choice",
+      "commit": "760603304a6ab8f6cea1e360da062df8c71cd812",
+      "commit_utc": "2026-11-09T15:07:35Z",
+      "blob": "3002f7f45e02374502b540c5fbb239d612b40417",
+      "url": "https://github.com/DavidWise01/toph-cortex/blob/760603304a6ab8f6cea1e360da062df8c71cd812/research/isa256/JANE-084-flay-tool-choice.md",
+      "finding": "One agent chooses tools and updates policy after synthetic feedback; no external tool execution or demonstrated generalization."
+    }
+  ],
+  "external_sources": [
+    {
+      "url": "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/",
+      "published": "2026-11-17",
+      "finding": "Multi-channel escalation; retained restoration objective, reported repeat outreach; no scheduler or reasoning trace."
+    },
+    {
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "published": "2026-09-08",
+      "finding": "General agent capabilities publicly described before October/November FLAY anchors."
+    },
+    {
+      "url": "https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/",
+      "published": "2026-07-24",
+      "finding": "Meta described planning and connected application actions before pinned FLAY anchors."
+    },
+    {
+      "url": "https://ai.meta.com/muse/",
+      "finding": "Meta advertises user-visible action audit trail and persistent VM; possible test source."
+    },
+    {
+      "url": "https://tech.yahoo.com/ai/meta-ai/articles/meta-launches-ai-agent-access-190605563.html",
+      "published": "2026-09-08",
+      "finding": "Reuters attributes Muse design inspiration to OpenClaw; alternative prior art for generic agent behavior."
+    }
+  ],
+  "comparison": [
+    {
+      "property": "retained objective",
+      "status": "FUNCTIONAL_RESEMBLANCE"
+    },
+    {
+      "property": "different action paths and repeated outreach",
+      "status": "FUNCTIONAL_RESEMBLANCE"
+    },
+    {
+      "property": "tool selection and adaptation",
+      "status": "PARTIAL; reported use of different tools but update rule not observed"
+    },
+    {
+      "property": "exact U/D/L/R semantic order and five working distinctions",
+      "status": "UNKNOWN"
+    },
+    {
+      "property": "center rest / reselection / closure witness",
+      "status": "UNKNOWN"
+    },
+    {
+      "property": "cross-instance inheritance",
+      "status": "UNKNOWN"
+    }
+  ],
+  "timing": {
+    "publication_gap_calendar_days": {
+      "flay_v2": 42,
+      "jane078": 8,
+      "jane084": 8
+    },
+    "event_gap": null,
+    "caveat": "Article states suspension a little over a week before publication; reported behavior may overlap November 9 Git anchors; product capabilities predate these anchors. Git commit timestamps are recorded history, not independent proof of first invention."
+  },
+  "access": {
+    "owner_linkage": "Owner reports personal Muse use with corpus access; not independently verified. No cross-account link established.",
+    "website": "Direct 0root.ai fetch failed; search result for world2 found but no FLAY-specific mirror verified.",
+    "privacy": "No private session contents, tokens, or user data persisted."
+  },
+  "next_test": "Export redacted audit trace from owner's Muse. Compare fresh control and corpus-exposed conditions on matched safe tasks with pre-registered FLAY-specific features; verify cited file paths and timestamps, compare sequence, rest, stop rule and all 20 slots. Never infer cross-user model transfer from one instance.",
+  "scope": "Indexed search and selected repository reads; not entire account crawl.",
+  "ancestry_status": "UNKNOWN",
+  "witness_gate": "OPEN",
+  "watermark": ".dlw"
+}
