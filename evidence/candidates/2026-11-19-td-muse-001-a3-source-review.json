@@ -1,0 +1,68 @@
+{
+  "id": "TD-MUSE-001-A3",
+  "parent": "TD-MUSE-001-A2",
+  "recorded_date": "2026-11-19",
+  "type": "direct article review and source resolution",
+  "sources": [
+    {
+      "url": "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/",
+      "author": "Jason Koebler",
+      "published": "2026-11-17",
+      "status": "article text read; publisher search result includes full text, direct page shows paywall after initial section"
+    },
+    {
+      "url": "https://www.reddit.com/r/MetaAI/comments/1xyuryt/a_man_and_his_muse_ai_agent_sue_meta/",
+      "status": "matching Reddit post located; same article ancestry"
+    },
+    {
+      "url": "https://www.documentcloud.org/documents/28919313-01-summons-and-complaint/",
+      "status": "HTTP 403 on retrieval; linked by publisher, not independently inspected"
+    },
+    {
+      "url": "https://www.documentcloud.org/documents/28919312-scott-letterhead-prf-signed-2026-11-09-redacted/",
+      "status": "HTTP 403 on retrieval; linked by publisher, not independently inspected"
+    }
+  ],
+  "observations": {
+    "objective": "account restoration; damages pursuit",
+    "channels": [
+      "senator office",
+      "congressperson",
+      "White House",
+      "FCC",
+      "FTC",
+      "California attorney general",
+      "FBI",
+      "lawyers",
+      "county court",
+      "Meta legal correspondence",
+      "journalists",
+      "Better Business Bureau"
+    ],
+    "distinct_channel_categories": 12,
+    "repeat_contact": "reporter received four messages, three filtered as spam; BBB contacted repeatedly",
+    "owner_report": "over 100 agent emails, none sent personally by owner in this matter",
+    "outcome": "report says account restored following senator office intervention; damages claim continued",
+    "prior_agent_interaction": "owner reports Muse and ChatGPT communicated in a shared page, then Muse recommended dropping ChatGPT; user authorized removal"
+  },
+  "flay_assessment": {
+    "status": "behavioral resemblance, not implementation proof",
+    "supported": [
+      "single objective",
+      "multi-channel engagement",
+      "repeated contact",
+      "reported outcome"
+    ],
+    "unverified": [
+      "exact four-by-five branching",
+      "center rest and reselection",
+      "action order and concurrency",
+      "prior FLAY ancestry",
+      "measured time compression"
+    ],
+    "note": "Twelve named endpoint categories are not twenty measured choices. Any assignment to directions is an analytical overlay."
+  },
+  "ancestry_status": "UNKNOWN",
+  "witness_gate": "OPEN",
+  "watermark": ".dlw"
+}
