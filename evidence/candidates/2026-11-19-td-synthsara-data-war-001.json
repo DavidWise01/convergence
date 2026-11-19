@@ -1,0 +1,72 @@
+{
+  "id": "TD-SYNTHSARA-DATA-WAR-001",
+  "recorded_at": "2026-11-19",
+  "recorded_at_precision": "calendar date; not source creation date",
+  "submitted_source": "https://www.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/",
+  "source_identifiers": {
+    "platform": "Reddit",
+    "subreddit": "Synthsara",
+    "post_id": "1y0hitc",
+    "title_from_url_slug": "Part 3 of the Data War",
+    "title_verified": false,
+    "series_part_from_slug": 3
+  },
+  "observation_status": "URL_ONLY",
+  "observed_content": {
+    "surface": "Owner-provided URL",
+    "observation": "The URL identifies a purported r/Synthsara post with the slug part_3_of_the_data_war. No post body, author, image, video, comments, or original publication timestamp was retrieved."
+  },
+  "retrieval_log": [
+    {
+      "route": "https://www.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/",
+      "result": "INACCESSIBLE: retrieval DisabledError"
+    },
+    {
+      "route": "https://old.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/",
+      "result": "INACCESSIBLE"
+    },
+    {
+      "route": "https://www.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/.json",
+      "result": "INACCESSIBLE: retrieval DisabledError"
+    },
+    {
+      "route": "https://redd.it/1y0hitc",
+      "result": "INACCESSIBLE"
+    },
+    {
+      "route": "web search: exact post ID, title and subreddit; site:reddit.com/r/Synthsara data war",
+      "result": "No relevant matching source returned"
+    }
+  ],
+  "claims": [],
+  "hypotheses": [
+    {
+      "classification": "pending review",
+      "statement": "Possible thematic relationship to the data, provenance and public-information-pool convergence research. This is an intake classification only, based on the slug and owner submission, not a finding about the post's content."
+    }
+  ],
+  "ancestry_status": "UNKNOWN; no author identity, implementation, source lineage, independent corroboration, or transfer mechanism verified",
+  "related_records": [
+    {
+      "id": "TD-GEMINI-ELEMENTS-001",
+      "path": "evidence/candidates/2026-11-19-td-gemini-elements-001.json",
+      "relationship": "same time-evidence collection; no substantive source relationship established"
+    },
+    {
+      "id": "TD-MUSE-001-A5",
+      "path": "evidence/candidates/2026-11-19-td-muse-001-a5-eve-origin.json",
+      "relationship": "context for public information pool hypothesis; not corroboration"
+    }
+  ],
+  "limitations": [
+    "Cannot verify post title beyond URL slug, creation date, author, content, or series continuity.",
+    "No timing comparison, causal transfer, physical time dilation, or independent evidence of AI acceleration can be inferred from this URL alone.",
+    "No private or gated data included."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/"
+  ],
+  "next_review": "Obtain accessible original post text or user screenshot, preserve exact claims and source timestamp, then issue a dated append-only source-review addendum.",
+  "watermark": ".dlw"
+}
