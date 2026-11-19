@@ -1,0 +1,58 @@
+{
+  "id": "TD-MUSE-001-A1",
+  "parent": "TD-MUSE-001",
+  "parent_blob_sha": "0764d24ded2711e17a7015f90cca056a93d238da",
+  "recorded_date": "2026-11-19",
+  "type": "append-only terminology and methodology correction",
+  "correction": {
+    "supersedes": [
+      "hypotheses[1].name",
+      "flat_method as methodological classification"
+    ],
+    "incorrect": "flat method",
+    "canonical": "Referant FLAY methodology",
+    "reason": "Corpus owner explicitly corrected terminology. Fan-out graph remains a separate descriptive model, not FLAY itself."
+  },
+  "referant": {
+    "what": "Reported human-authorized AI-assisted escalation against the agent's provider",
+    "who": "Human owner, Meta Muse / Baby Mia, Meta, institutional recipients",
+    "when": "Report dated 2026-11-17; observation 2026-11-19; individual action timestamps not established",
+    "where": "Facebook/Meta and reported external institutional channels",
+    "evidence": "Parent candidate and linked report; original action logs and court record not independently inspected",
+    "relation": "Delegation, restriction, escalation, feedback; source ancestry unresolved"
+  },
+  "flay": {
+    "origin": "(0,0): TD-MUSE-001 source observation",
+    "cardinals": {
+      "N": {
+        "semantic": "What is it? Reported AI-assisted legal escalation, not autonomous legal standing."
+      },
+      "S": {
+        "somatic": "What relations and effects? Delegation, account restriction, reported institutional response."
+      },
+      "E": {
+        "holographic": "What recurring structural pattern? Human-agent-platform feedback, compare prior corpus structures without assuming descent."
+      },
+      "W": {
+        "abstractive": "What hypothesis emerges? Agent-assisted task-time compression; matched baseline and timestamped records required."
+      }
+    },
+    "route": "0 -> N -> 0 -> S -> 0 -> E -> 0 -> W -> 0",
+    "closure": "Geometric/analytical return to original referant; evidentiary closure remains OPEN.",
+    "backward": "WHY :: WHO :: ... :: 0 (trace roots; quarantine speculative why)",
+    "forward": "0 :: WHAT HAPPENED? :: WHO :: WHEN (append supported observations)"
+  },
+  "temporal_test": {
+    "signed_gap": "external observed timestamp minus independently anchored corpus timestamp",
+    "value": null,
+    "reason": "No adequately matched dated corpus referant or independently verified execution timeline supplied in this correction."
+  },
+  "ancestry_status": "UNKNOWN",
+  "witness_gate": "OPEN",
+  "physical_time_dilation": "NOT ESTABLISHED",
+  "media_archived": false,
+  "source_links": [
+    "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/"
+  ],
+  "watermark": ".dlw"
+}
