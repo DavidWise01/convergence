@@ -1,0 +1,55 @@
+{
+  "id": "TD-TANGENT-010",
+  "parent": "TD-TANGENT-009",
+  "parent_blob_sha": "1810b34c316cc5e94393178ac61129db7c065dab",
+  "recorded_date": "2026-11-19",
+  "owner_model": {
+    "bubble_characteristic_length": "l_P/(5*pi)",
+    "angular_tick_arcseconds": 7.5,
+    "geometry": "hexagonal internal ramp",
+    "notation": "{{x,y:z}}^2"
+  },
+  "constants": {
+    "planck_length_m": 1.616255e-35,
+    "source": "https://physics.nist.gov/cuu/pdf/all.pdf",
+    "edition": "2022 CODATA",
+    "c_m_s": 299792458
+  },
+  "derived": {
+    "bubble_length_m": 1.0289398901879653e-36,
+    "angular_tick_rad": 0.0000363610260832152,
+    "ticks_per_full_phase": 172800,
+    "conditional_circular_reference": {
+      "assumption": "bubble characteristic length treated as reference radius, not a specified physical radius; arc length not hexagonal edge length",
+      "arc_length_per_tick_exact": "l_P/432000",
+      "arc_length_per_tick_m": 3.7413310185185186e-41,
+      "light_travel_time_s": 1.2479736960289104e-49
+    }
+  },
+  "tests": [
+    {
+      "name": "bubble normalization",
+      "pass": true
+    },
+    {
+      "name": "angular conversion",
+      "pass": true
+    },
+    {
+      "name": "pi cancellation for circular reference radius",
+      "pass": true
+    },
+    {
+      "name": "full reference circumference",
+      "pass": true
+    }
+  ],
+  "pass_count": 4,
+  "limitations": [
+    "Bubble definition is a proposed computational geometry, not established physical structure.",
+    "Radius vs diameter not specified; arc calculation conditional.",
+    "No physical clock frequency, angular velocity, or Planck-scale measurement demonstrated.",
+    "Hexagonal path metric differs from reference circle; no physical time dilation inferred."
+  ],
+  "watermark": ".dlw"
+}
