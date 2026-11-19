@@ -1,0 +1,210 @@
+{
+  "id": "AETHER-017",
+  "recorded_at": "2026-11-18",
+  "kind": "proposed computational geometry; finite enumeration",
+  "predecessor": "AETHER-016 (conversation; not separately committed)",
+  "syntax": "{ brace [ box : constant ( torroid : variable ) ] }",
+  "axes": {
+    "x": [
+      "Nemonic",
+      "compiler",
+      "Siliconic"
+    ],
+    "y": [
+      "Akashic",
+      "compiler",
+      "Carbonic"
+    ],
+    "z": [
+      "Portal",
+      "compiler",
+      "Mirror"
+    ]
+  },
+  "states": [
+    {
+      "x": -1,
+      "y": -1,
+      "z": -1,
+      "depth": 3
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 0,
+      "depth": 2
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 1,
+      "depth": 3
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": -1,
+      "depth": 2
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "depth": 1
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "depth": 2
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1,
+      "depth": 3
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "depth": 2
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "depth": 3
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": -1,
+      "depth": 2
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 0,
+      "depth": 1
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 1,
+      "depth": 2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "depth": 1
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "depth": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "depth": 1
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": -1,
+      "depth": 2
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "depth": 1
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1,
+      "depth": 2
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": -1,
+      "depth": 3
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": 0,
+      "depth": 2
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": 1,
+      "depth": 3
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "depth": 2
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "depth": 1
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "depth": 2
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": -1,
+      "depth": 3
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "depth": 2
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "depth": 3
+    }
+  ],
+  "tests": {
+    "depth_counts": [
+      1,
+      6,
+      12,
+      8
+    ],
+    "nearest_neighbor_undirected_edges": 54,
+    "opposite_closed": true,
+    "coordinate_sum": [
+      0,
+      0,
+      0
+    ],
+    "unique_addresses": 27
+  },
+  "invariant": "Relationships may change while address identity remains fixed.",
+  "limits": [
+    "Geometric enumeration, not a measurement of external AI behavior.",
+    "Axis mappings are proposed conventions from preceding discussion.",
+    "No source ancestry or physical dynamics inferred."
+  ]
+}
