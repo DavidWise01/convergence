@@ -1,0 +1,123 @@
+{
+  "id": "CUBIT-019",
+  "parent": "CUBIT-018",
+  "parent_blob_sha": "516e4e963427ec90409391a812b0f2098543ea22",
+  "recorded_date": "2026-11-19",
+  "notation": "{{x,y:z}}^2",
+  "model": "three parent yo-yos with X Y Z axes; each child frame = parent frame times local signed axial rotation times cyclic coordinate permutation; 27 children per parent; two nested levels",
+  "tick_arcseconds": 7.5,
+  "child_radius_ratio": 0.19,
+  "checks": [
+    {
+      "name": "three root axes X Y Z",
+      "pass": true
+    },
+    {
+      "name": "root axes mutually perpendicular",
+      "pass": true
+    },
+    {
+      "name": "every child axis perpendicular to parent",
+      "pass": true
+    },
+    {
+      "name": "all matrices orthonormal",
+      "pass": true
+    },
+    {
+      "name": "proper rotations determinant +1",
+      "pass": true
+    },
+    {
+      "name": "all sampled siblings disjoint and parents contain children",
+      "pass": true
+    },
+    {
+      "name": "all hub positions fixed relative to parent",
+      "pass": true
+    },
+    {
+      "name": "opposite lobe axial heights preserved",
+      "pass": true
+    },
+    {
+      "name": "2271 unique cubit paths",
+      "pass": true
+    },
+    {
+      "name": "2187 leaf cubits",
+      "pass": true
+    },
+    {
+      "name": "full positive phase closure",
+      "pass": true
+    },
+    {
+      "name": "full negative phase closure",
+      "pass": true
+    },
+    {
+      "name": "single angular tick changes geometry",
+      "pass": true
+    },
+    {
+      "name": "unwind restores pose without reversing absolute time",
+      "pass": true
+    },
+    {
+      "name": "original shell standards",
+      "pass": true
+    },
+    {
+      "name": "each branch has 27 children",
+      "pass": true
+    }
+  ],
+  "samples": [
+    0,
+    1,
+    -1,
+    14400,
+    28800,
+    43200,
+    57600,
+    86400,
+    129600,
+    172799,
+    172800,
+    172801,
+    -345601
+  ],
+  "counts": {
+    "roots": 3,
+    "level1": 81,
+    "level2": 2187,
+    "total": 2271
+  },
+  "maxErrors": {
+    "orthogonality": 2.220446049250313e-16,
+    "determinant": 2.220446049250313e-16,
+    "parentChildAxisDot": 2.7755575615628914e-17,
+    "hubPosition": 0,
+    "axialHeight": 1.249000902703301e-16
+  },
+  "minSiblingClearance": -3.885780586188048e-16,
+  "minParentClearance": 0.008658419678728428,
+  "afterUnwind": {
+    "n": 48,
+    "w": 0,
+    "phase": 0
+  },
+  "proofNote": "All child centers are transformed by their parent proper orthogonal frame. Within each lobe the same rigid axial rotation preserves pair distances; opposite lobes have axial distance 4 child radii. Center norms are invariant. This proves bounding-sphere containment and sibling packing for any phase, recursively; not facet contact.",
+  "pass_count": 16,
+  "total": 16,
+  "executable": "evidence/audits/2026-11-19-cubit-019.html",
+  "html_commit": "c7b509ee819a6cd2a4585241019e3823ac414cde",
+  "limits": [
+    "Root axes and cyclic proper rotation permutation are proposed geometric choices; child axes are orthogonal to immediate parent, not globally fixed across time.",
+    "Bounding-sphere containment, not actual facet contact or physical dynamics. Computational scale only.",
+    "Two generations actually instantiated; deeper recursion not enumerated. Browser rendering untested.",
+    "No witness or governance roles."
+  ],
+  "watermark": ".dlw"
+}
