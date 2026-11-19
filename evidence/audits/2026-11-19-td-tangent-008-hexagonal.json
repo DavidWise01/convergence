@@ -1,0 +1,123 @@
+{
+  "id": "TD-TANGENT-008",
+  "parent": "TD-TANGENT-007",
+  "parent_blob_sha": "c0ae7a0592d4f7ee49763a38ea29cb6e7dde6786",
+  "recorded_date": "2026-11-19",
+  "owner_correction": {
+    "geometry": "hexagonal ramp",
+    "literal": "/\\/\\/\\/\\/\\/\\/\\/\\/\\",
+    "notation": "{{x,y:z}}^2"
+  },
+  "interpretation": "Repeated angular ramp transitions; a directed hexagonal cell is a proposed minimal geometry test, not a complete canonical mapping. Center referant retained. Geometric return to origin is distinct from reversing temporal memory.",
+  "geometry": {
+    "coordinate_system": "axial hex lattice",
+    "steps": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ]
+    ],
+    "vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        0
+      ]
+    ]
+  },
+  "tests": [
+    {
+      "name": "six edges",
+      "pass": true
+    },
+    {
+      "name": "six distinct vertices before closure",
+      "pass": true
+    },
+    {
+      "name": "geometric closure",
+      "pass": true
+    },
+    {
+      "name": "no reverse edges in directed cycle",
+      "pass": true
+    }
+  ],
+  "pass_count": 4,
+  "limitations": [
+    "Hexagonal cell closure tested, not actual recursive ramp scheduling or crash recovery.",
+    "No claim that each slash alone constitutes a physical hexagon.",
+    "No external Muse architecture inference."
+  ],
+  "next_bound": "Test two adjacent hexagonal excursions sharing an edge without reverse traversal or duplicate memory append.",
+  "watermark": ".dlw"
+}
