@@ -1,0 +1,77 @@
+{
+  "id": "AETHER-025",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-024",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "52 × n × {{ inversion, upside-down, backwards, mirrored }}²",
+  "model": "Four unit-direction phasors at 0,90,180,270 degrees; amplitudes independently varied. Activity proxy sum of squared amplitudes; not physical energy.",
+  "result": {
+    "cases": [
+      {
+        "amplitudes": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "resultant": [
+          0,
+          0
+        ],
+        "magnitude": 0,
+        "activity": 4
+      },
+      {
+        "amplitudes": [
+          1.25,
+          1,
+          1,
+          1
+        ],
+        "resultant": [
+          0.2499999999999998,
+          0
+        ],
+        "magnitude": 0.2499999999999998,
+        "activity": 4.5625
+      },
+      {
+        "amplitudes": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "resultant": [
+          0.9999999999999998,
+          0
+        ],
+        "magnitude": 0.9999999999999998,
+        "activity": 3
+      },
+      {
+        "amplitudes": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "resultant": [
+          0,
+          0
+        ],
+        "magnitude": 0,
+        "activity": 0
+      }
+    ],
+    "enumerated": 81,
+    "zeroResultant": 9,
+    "activeZero": 8
+  },
+  "invariant": "A zero resultant can coexist with nonzero internal activity.",
+  "limits": [
+    "Quadrature phases are chosen experimental convention, not user-specified.",
+    "No gravitational wave physics or dynamics established.",
+    "No carrier partition assumed."
+  ]
+}
