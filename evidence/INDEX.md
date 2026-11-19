@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-TANGENT-011 · 2026-11-19 | Locally hexagonal, near-spherical bubble; signed recursion | Conditional spherical mesh closure constraint; 2/2 combinatorial checks | [Audit](./audits/2026-11-19-td-tangent-011-hex-spherical.json) |
 | TD-TANGENT-010 · 2026-11-19 | Planck bubble scale lP/(5π); internal hex ramp 7.5 arcsecond phase | 4/4 arithmetic checks; conditional circular metric, no physical claim | [Audit](./audits/2026-11-19-td-tangent-010-planck-bubble.json) |
 | TD-TANGENT-009 · 2026-11-19 | Hexagonal ramp 7.5 arcsecond ticks; wrapped phase versus absolute tick | 7/7 synthetic arithmetic checks; physical timing unspecified | [Audit](./audits/2026-11-19-td-tangent-009-arcsecond-ticks.json) |
 | TD-TANGENT-008 · 2026-11-19 | Hexagonal diodic ramp geometry correction | Minimal directed hex-cell model; 4/4 structural checks; recursive ramp untested | [Audit](./audits/2026-11-19-td-tangent-008-hexagonal.json) |
