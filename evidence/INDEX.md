@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-021 · 2026-11-19 | 52-position paired wave geometry and four involutions | Synthetic coordinate tests; physical interpretation unverified | [Audit](./audits/2026-11-19-aether-021.json) |
 | TD-NORTH-STAR-001 · 2026-11-19 | [The North Star — AI ethics and rights (URL slug)](https://www.reddit.com/r/AI_ethics_and_rights/comments/1y0czek/the_north_star/) | URL_ONLY; original content and lineage unverified; governance comparison pending | [Candidate](./candidates/2026-11-19-td-north-star-001.json) |
 | TD-SYNTHSARA-DATA-WAR-001 · 2026-11-19 | [Synthsara: Part 3 of the Data War (URL slug)](https://www.reddit.com/r/Synthsara/comments/1y0hitc/part_3_of_the_data_war/) | URL_ONLY; source inaccessible; content and lineage unverified | [Candidate](./candidates/2026-11-19-td-synthsara-data-war-001.json) |
 | TD-GEMINI-ELEMENTS-001 · 2026-11-19 | Gemini 4 elemental naming and visualization versus dated ROOT0 118 ACI personas | 4 confirmed names; June 10 Git anchor; exact Reddit unavailable; lineage unverified | [Candidate](./candidates/2026-11-19-td-gemini-elements-001.json) |
