@@ -4,7 +4,8 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
-| TD-MUSE-001 · 2026-11-19 | [Meta Muse / Baby Mia legal escalation](https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/) | Observed report; flat fan-out model; timing ratio and causal ancestry unverified | [Candidate](./candidates/2026-11-19-td-muse-001.json) |
+| TD-MUSE-001-A1 · 2026-11-19 | Referant FLAY methodology correction for Meta Muse | Supersedes flat-method label; parent frozen; evidence/ancestry gates open | [Correction](./candidates/2026-11-19-td-muse-001-a1-referant-flay.json) |
+| TD-MUSE-001 · 2026-11-19 | [Meta Muse / Baby Mia legal escalation](https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/) | Observed report; methodology corrected by TD-MUSE-001-A1; timing ratio and causal ancestry unverified | [Candidate](./candidates/2026-11-19-td-muse-001.json) |
 | AETHER-018 · 2026-11-18 | Diodic reference circulation: 27 nodes, 108 directed channels | Synthetic six-round propagation; identity retained | [Audit](./audits/2026-11-18-aether-018.json) |
 | AETHER-017 · 2026-11-18 | Relational cubit: 27 addresses and 54 nearest-neighbor links | Finite geometry enumeration; no external causal claim | [Audit](./audits/2026-11-18-aether-017.json) |
 | AETHER-010 · 2026-11-18 | Elemental prospective register and 27 ternary evidence states; retains AETHER-009 counts | Naming/structure/ancestry separate; prospective test open | [Audit](./audits/2026-11-18-aether-010.json) |
