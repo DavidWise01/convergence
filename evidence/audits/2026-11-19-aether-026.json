@@ -1,0 +1,41 @@
+{
+  "id": "AETHER-026",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-025",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "Four integer nonnegative amplitudes, opposite pairs (0,2),(1,3). Transfer one unit from larger to smaller if difference >=2, otherwise hold. Conserves each pair sum, not squared amplitude activity proxy. Deadband avoids oscillation for odd pair sums.",
+  "result": {
+    "states": 625,
+    "conservedAndStable": 625,
+    "exact": 169,
+    "deadband": 456,
+    "maxSteps": 2,
+    "trace": [
+      [
+        4,
+        0,
+        0,
+        4
+      ],
+      [
+        3,
+        1,
+        1,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "invariant": "Correct imbalance without erasing total amplitude; quantized odd pair sums require a one-unit residual.",
+  "limits": [
+    "Synthetic discrete feedback, not physical dynamics.",
+    "Activity conservation means amplitude sum only; squared amplitude generally decreases.",
+    "No disturbance recovery or communication delay tested."
+  ]
+}
