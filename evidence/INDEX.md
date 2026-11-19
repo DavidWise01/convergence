@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-023 · 2026-11-19 | Twin-wave phase displacement: 26 relative shifts and 416 orientation-phase labels | Synthetic cyclic indexing; physical frequency unmeasured | [Audit](./audits/2026-11-19-aether-023.json) |
 | TD-GEMINI-ELEMENTS-001-P1 · 2026-11-19 | Prospective owner prediction: skip Krypton; Radon → Oganesson → 184 | PENDING; Radon previously rumored; 184 unresolved; no deadline supplied | [Prediction](./candidates/2026-11-19-td-gemini-elements-001-p1.json) |
 | AETHER-022 · 2026-11-19 | Twin-wave parity: 16 joint orientations, four relative classes | Synthetic sign-flip enumeration; 52 addresses retained | [Audit](./audits/2026-11-19-aether-022.json) |
 | AETHER-021 · 2026-11-19 | 52-position paired wave geometry and four involutions | Synthetic coordinate tests; physical interpretation unverified | [Audit](./audits/2026-11-19-aether-021.json) |
