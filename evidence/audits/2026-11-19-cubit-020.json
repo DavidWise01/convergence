@@ -1,0 +1,148 @@
+{
+  "id": "CUBIT-020",
+  "parent": "CUBIT-019",
+  "parent_blob_sha": "50ac123df3576b3d93febc5bc05baead201ac6b9",
+  "recorded_date": "2026-11-19",
+  "notation": "{{ X- X+ | Y- Y+ | Z- Z+ }}",
+  "model": "inherited recursive orthogonal yo-yos, shared signed winding with exact 120 degree root-branch phase offsets, opposing lobes",
+  "tick_arcseconds": 7.5,
+  "period_ticks": 172800,
+  "phase_offset_ticks": [
+    0,
+    57600,
+    115200
+  ],
+  "child_radius_ratio": 0.19,
+  "checks": [
+    {
+      "name": "initial phase offsets 0, 57600, 115200",
+      "pass": true
+    },
+    {
+      "name": "exact 120 degree phase spacing",
+      "pass": true
+    },
+    {
+      "name": "balanced unit phasor sum",
+      "pass": true
+    },
+    {
+      "name": "positive and negative lobe phases opposed",
+      "pass": true
+    },
+    {
+      "name": "each recursive axle perpendicular to parent",
+      "pass": true
+    },
+    {
+      "name": "orthonormal local frames",
+      "pass": true
+    },
+    {
+      "name": "hub centers preserved",
+      "pass": true
+    },
+    {
+      "name": "recursive bounding spheres disjoint and contained",
+      "pass": true
+    },
+    {
+      "name": "2,271 unique cubit paths",
+      "pass": true
+    },
+    {
+      "name": "2,187 terminal cubits",
+      "pass": true
+    },
+    {
+      "name": "120 degree shift cyclically permutes phase labels",
+      "pass": true
+    },
+    {
+      "name": "120 degrees not a labeled phase closure",
+      "pass": true
+    },
+    {
+      "name": "full positive period closure",
+      "pass": true
+    },
+    {
+      "name": "full negative period closure",
+      "pass": true
+    },
+    {
+      "name": "one tick changes phase exactly 7.5 arcseconds",
+      "pass": true
+    },
+    {
+      "name": "unwind restores staggered initial pose at greater absolute tick",
+      "pass": true
+    },
+    {
+      "name": "rest retains pose and advances absolute tick",
+      "pass": true
+    },
+    {
+      "name": "inherited shell geometry",
+      "pass": true
+    }
+  ],
+  "samples": [
+    0,
+    1,
+    -1,
+    14400,
+    28800,
+    43200,
+    57600,
+    86400,
+    115200,
+    129600,
+    172799,
+    172800,
+    172801,
+    -345601
+  ],
+  "maxPhasorResidual": 6.753223014464258e-16,
+  "maxOrthogonalityError": 2.220446049250313e-16,
+  "minSiblingClearance": -3.3306690738754696e-16,
+  "minParentClearance": 0.0086584196787284,
+  "initialPhases": [
+    0,
+    57600,
+    115200
+  ],
+  "oneThirdCycle": [
+    57600,
+    115200,
+    0
+  ],
+  "fullCycle": [
+    0,
+    57600,
+    115200
+  ],
+  "afterUnwind": {
+    "n": 961,
+    "w": 0,
+    "phase": 0
+  },
+  "counts": {
+    "roots": 3,
+    "level1": 81,
+    "level2": 2187,
+    "total": 2271
+  },
+  "proof": "The phase offsets are exact integer ticks modulo P. Their unit phasors sum to zero as the three cube roots of unity times a shared phase. Orthogonal parent frames and rigid in-lobe axial rotations preserve norms and distances, with fixed axial separation for opposite lobes. Thus the bounding-sphere packing argument applies for every phase.",
+  "pass_count": 18,
+  "total": 18,
+  "executable": "evidence/audits/2026-11-19-cubit-020.html",
+  "html_commit": "3d30e027bc6a49b8b581edc65e70ed3a2e224205",
+  "limitations": [
+    "120-degree phase offsets and common winding rate are selected model rules, not emergent synchronization or physical resonance.",
+    "Phasor balance describes scalar phases, not cancellation of 3D angular momentum about different axes.",
+    "Bounding-sphere packing verified by rigid geometry and numeric samples; exact facet contacts and physical dynamics untested.",
+    "Two recursive generations enumerated; browser rendering not independently executed. No witness/governance layer."
+  ],
+  "watermark": ".dlw"
+}
