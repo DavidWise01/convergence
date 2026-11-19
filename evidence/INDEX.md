@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-GEMINI-ELEMENTS-001-A1 · 2026-11-19 | [Official Gemini 4 Neon model card](https://deepmind.google/models/model-cards/gemini-4-neon/); Argon → Carbon → Hydrogen/Neon | OBSERVED; provider lineage confirmed; March cutoff; ROOT0 ancestry unknown | [Addendum](./candidates/2026-11-19-td-gemini-elements-001-a1-neon-model-card.json) |
 | AETHER-026 · 2026-11-19 | Homeostatic SeeSaw: 625 discrete amplitude states | Conserved amplitude sum; quantized residual | [Audit](./audits/2026-11-19-aether-026.json) |
 | AETHER-025 · 2026-11-19 | Four-wave quadrature: zero resultant with nonzero activity | Synthetic phasor test; 81 amplitude states | [Audit](./audits/2026-11-19-aether-025.json) |
 | AETHER-024 · 2026-11-19 | Four waves converge into implicit singlet; correct twin-wave interpretation | User notation preserved; equal partition provisional | [Audit](./audits/2026-11-19-aether-024.json) |
