@@ -1,0 +1,34 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A3",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A2"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "For integer-coefficient polynomials, (E-I)^m f(x) is divisible by m! at integer x; expand in falling factorials using integer Stirling numbers. Combine with A1 fixed multiplicity m+1 and A2 triangular budget m(m+1)/2 as separate components indexed by same m.",
+  "retrieval_log": [
+    {
+      "surface": "Executed local Python exact integer arithmetic",
+      "result": "12025 monomial cases passed; m=0..64, j=0..m+4, x=-3,-1,0,1,3; divisibility, lower-order cancellation and degree-m equality checked. Negative control f(x)=binom(x,2), m=2 yields 1, not divisible by 2."
+    }
+  ],
+  "claims": [
+    "Factorial divisibility for Z[x]; not general integer-valued polynomials."
+  ],
+  "hypotheses": [
+    "Investigate a genuine intertwiner linking finite differences with representation lift; compare against external automorphic construction."
+  ],
+  "ancestry_status": "UNKNOWN; target-aware analogy using classical finite differences",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A1",
+    "TD-RIEMANN-CLAUDE-001-A2"
+  ],
+  "limitations": [
+    "Common generation parameter does not establish operator equivalence; no automorphic theta lift, root existence or RH proof established."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
