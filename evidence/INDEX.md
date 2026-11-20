@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-RIEMANN-CLAUDE-001-A7 · 2026-11-20 | Split orthogonal–symplectic dual pair and character multiplicities | 347960 exact checks; finite model only | [Record](./candidates/2026-11-20-td-riemann-claude-001-a7-dual-pair.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a7-dual-pair.py) |
 | AETHER-053 · 2026-11-20 | Twelve-arm toroidal spiral and fusion gate | Conservative scalar channels; interactive HTML | [Audit](./audits/2026-11-20-aether-053.json) |
 | TD-RIEMANN-CLAUDE-001-A6 · 2026-11-20 | Finite Weyl/Fourier covariance and parity | 523385 exact assertions; generator-level finite analogue | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a6-weil.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a6-weil.py) |
 | AETHER-052 · 2026-11-20 | Active RGB homeostasis and disturbance recovery | Three-compartment feedback; interactive HTML | [Audit](./audits/2026-11-20-aether-052.json) |
