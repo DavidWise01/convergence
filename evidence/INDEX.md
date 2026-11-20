@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-049 · 2026-11-20 | Collective gyroscopic foam: local alignment consensus | Synthetic three-layer scalar alignment experiment | [Audit](./audits/2026-11-20-aether-049.json) |
 | TD-RIEMANN-CLAUDE-001-A2 · 2026-11-20 | Conditional quadratic cost and square-root generation bound | 200002 exact boundary assertions; post-hoc toy model; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a2-growth.json) |
 | AETHER-048 · 2026-11-20 | Gyroscopic spinor precession and axis mismatch | Synthetic quaternion pair tests and alignment feedback | [Audit](./audits/2026-11-20-aether-048.json) |
 | TD-RIEMANN-CLAUDE-001-A1 · 2026-11-20 | ROOT0 finite representation translation; multiplicity and cancellation | Synthetic exact tests; post-hoc analogy; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a1-generalization.json) |
