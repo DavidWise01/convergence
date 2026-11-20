@@ -1,0 +1,210 @@
+{
+  "id": "AETHER-039",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-038",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.25″",
+  "model": "Unit Cartesian lattice steps; each step right-composes quaternion rotation by signed 1.25 arcseconds about matching axis. Count unique reachable addresses within Manhattan radius; test inverse and square paths.",
+  "result": {
+    "deltaRadians": 0.0000060601710138692,
+    "reverse": [
+      {
+        "route": [
+          "+X",
+          "-X"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      },
+      {
+        "route": [
+          "-X",
+          "+X"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      },
+      {
+        "route": [
+          "+Y",
+          "-Y"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      },
+      {
+        "route": [
+          "-Y",
+          "+Y"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      },
+      {
+        "route": [
+          "+Z",
+          "-Z"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      },
+      {
+        "route": [
+          "-Z",
+          "+Z"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "residualRadians": 0
+      }
+    ],
+    "squares": [
+      {
+        "route": [
+          "+X",
+          "+Y",
+          "-X",
+          "-Y"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1.0000000000000002,
+          5.564138783258112e-17,
+          -5.564074727218773e-17,
+          1.8362836358445426e-11
+        ],
+        "residualRadians": 3.672567271722804e-11
+      },
+      {
+        "route": [
+          "+Y",
+          "+Z",
+          "-Y",
+          "-Z"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1.0000000000000002,
+          1.8362836358445426e-11,
+          5.564138783258112e-17,
+          -5.564074727218773e-17
+        ],
+        "residualRadians": 3.672567271722804e-11
+      },
+      {
+        "route": [
+          "+Z",
+          "+X",
+          "-Z",
+          "-X"
+        ],
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "q": [
+          1.0000000000000002,
+          -5.564074727218773e-17,
+          1.8362836358445426e-11,
+          5.564138783258112e-17
+        ],
+        "residualRadians": 3.672567271722804e-11
+      }
+    ],
+    "shells": [
+      {
+        "r": 0,
+        "n": 1
+      },
+      {
+        "r": 1,
+        "n": 7
+      },
+      {
+        "r": 2,
+        "n": 25
+      },
+      {
+        "r": 3,
+        "n": 63
+      },
+      {
+        "r": 4,
+        "n": 129
+      }
+    ]
+  },
+  "limits": [
+    "Chosen axis-coupling rule; not user-confirmed.",
+    "Quaternion residuals floating point, not exact integer multi-axis register.",
+    "No physical Planck bubble or gravitational dynamics established; lattice distances abstract."
+  ]
+}
