@@ -1,0 +1,364 @@
+{
+  "id": "AETHER-060",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-059",
+  "name": "Adaptive Gain Memory",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "memory": {
+    "source": "AETHER-059",
+    "sourcePath": "evidence/audits/2026-11-20-aether-059.json",
+    "signature": {
+      "arm": 0,
+      "frequencyShift": 0.12,
+      "tolerance": 0.015,
+      "shockTick": 128
+    },
+    "gains": [
+      0.04,
+      0.04,
+      0.04,
+      0.02,
+      0,
+      0.004,
+      0,
+      0,
+      0,
+      0,
+      0.004,
+      0.04
+    ],
+    "immutableReuse": true
+  },
+  "model": "12 Kuramoto-style arms and 20 links, same parameterization as 059. Fixed/uniform/recall policies share identical pre-event history; at tick 128 the stored gains are reused only if frequency shift is within +/- .015 of +.12. Unfamiliar events use zero adaptation as conservative fallback; no new candidate search. All simulations run 512 ticks.",
+  "tests": [
+    {
+      "name": "matched recall",
+      "mode": "recall",
+      "shift": 0.12,
+      "matched": true,
+      "rejected": false,
+      "final": {
+        "coherence": 0.999599852131754,
+        "correctionCost": 124.50534287057114
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9966695184241403,
+          "cost": 4.26656965875588
+        },
+        {
+          "t": 192,
+          "R": 0.9989440620417129,
+          "cost": 13.086929876656958
+        },
+        {
+          "t": 256,
+          "R": 0.9993725249557893,
+          "cost": 33.74982803847111
+        },
+        {
+          "t": 384,
+          "R": 0.9995513672122126,
+          "cost": 78.19415883670541
+        },
+        {
+          "t": 512,
+          "R": 0.999599852131754,
+          "cost": 124.50534287057114
+        }
+      ]
+    },
+    {
+      "name": "matched fixed",
+      "mode": "fixed",
+      "shift": 0.12,
+      "matched": false,
+      "rejected": false,
+      "final": {
+        "coherence": 0.9802403527528895,
+        "correctionCost": 0
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9803070844085989,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9802408569428338,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9802403527803588,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9802403527528897,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9802403527528895,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "matched uniform",
+      "mode": "uniform",
+      "shift": 0.12,
+      "matched": false,
+      "rejected": false,
+      "final": {
+        "coherence": 0.9999999273011215,
+        "correctionCost": 150.20322385170658
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9913021012368456,
+          "cost": 3.066226241122585
+        },
+        {
+          "t": 192,
+          "R": 0.9970095891427855,
+          "cost": 10.91291552164099
+        },
+        {
+          "t": 256,
+          "R": 0.9996475975108154,
+          "cost": 34.070438743198736
+        },
+        {
+          "t": 384,
+          "R": 0.9999949851898403,
+          "cost": 90.69812697644275
+        },
+        {
+          "t": 512,
+          "R": 0.9999999273011215,
+          "cost": 150.20322385170658
+        }
+      ]
+    },
+    {
+      "name": "unfamiliar +.25 safe fallback",
+      "mode": "recall",
+      "shift": 0.25,
+      "matched": false,
+      "rejected": true,
+      "final": {
+        "coherence": 0.960440101589453,
+        "correctionCost": 0
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9609102141050534,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9604455144793907,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9604401023346854,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.960440101589453,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.960440101589453,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "unfamiliar -.12 safe fallback",
+      "mode": "recall",
+      "shift": -0.12,
+      "matched": false,
+      "rejected": true,
+      "final": {
+        "coherence": 0.9622999254478014,
+        "correctionCost": 0
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9623761069351312,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9623004972812291,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9622999254815839,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9622999254478013,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9622999254478014,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "unfamiliar +.25 uniform control",
+      "mode": "uniform",
+      "shift": 0.25,
+      "matched": false,
+      "rejected": false,
+      "final": {
+        "coherence": 0.9989564621942623,
+        "correctionCost": 182.29159156753838
+      },
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "cost": 0
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9815393710770808,
+          "cost": 3.8289357973970977
+        },
+        {
+          "t": 192,
+          "R": 0.9938398383475563,
+          "cost": 13.764706272901496
+        },
+        {
+          "t": 256,
+          "R": 0.9978288036537988,
+          "cost": 42.21523753726388
+        },
+        {
+          "t": 384,
+          "R": 0.9985708970085999,
+          "cost": 109.42244849363375
+        },
+        {
+          "t": 512,
+          "R": 0.9989564621942623,
+          "cost": 182.29159156753838
+        }
+      ]
+    }
+  ],
+  "trialAccounting": {
+    "originalTrainingCandidates": 60,
+    "repeatRecallCandidates": 0,
+    "unfamiliarSearchCandidates": 0
+  },
+  "limitations": [
+    "Oracle event signature supplied to selector, not inferred from raw observations.",
+    "Only one stored pattern; no independent multi-event experience pool.",
+    "Unfamiliar fallback sacrifices coherence; future bound needs evidence-gated exploration.",
+    "No real physical energy, Planck foam, quantum spinors or nuclear fusion."
+  ]
+}
