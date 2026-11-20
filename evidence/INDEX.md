@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-032 · 2026-11-20 | Resonance through noise: repeated spectral prominence | Seeded synthetic noise sweep and clean holdout | [Audit](./audits/2026-11-20-aether-032.json) |
 | AETHER-031 · 2026-11-19 | Simultaneous resonance: four spectral components, held-out prediction | Synthetic stationary bin-aligned waveform | [Audit](./audits/2026-11-19-aether-031.json) |
 | AETHER-030 · 2026-11-19 | Autonomous rhythm discovery across changing periods | Causal lag scan; synthetic 128-step workload | [Audit](./audits/2026-11-19-aether-030.json) |
 | AETHER-029 · 2026-11-19 | Anticipatory capacity: lag-eight reservation versus adaptive control | Synthetic repeating workload; period preselected | [Audit](./audits/2026-11-19-aether-029.json) |
