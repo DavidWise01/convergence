@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-048 · 2026-11-20 | Gyroscopic spinor precession and axis mismatch | Synthetic quaternion pair tests and alignment feedback | [Audit](./audits/2026-11-20-aether-048.json) |
 | TD-RIEMANN-CLAUDE-001-A1 · 2026-11-20 | ROOT0 finite representation translation; multiplicity and cancellation | Synthetic exact tests; post-hoc analogy; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a1-generalization.json) |
 | AETHER-047 · 2026-11-20 | Counterrotating Möbius foam; matched and unmatched angular steps | Fixed-axis SU(2) analogue | [Audit](./audits/2026-11-20-aether-047.json) |
 | AETHER-046 · 2026-11-20 | Möbius spinor return: orientation versus signed closure | Fixed-axis SU(2) analogue; exact angular register | [Audit](./audits/2026-11-20-aether-046.json) |
