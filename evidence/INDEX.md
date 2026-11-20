@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-036 · 2026-11-20 | Spectral collision: position versus velocity assignment | Synthetic crossing tracks; identity ambiguity retained | [Audit](./audits/2026-11-20-aether-036.json) |
 | AETHER-035 · 2026-11-20 | Frequency migration with bounded local tracking | Synthetic 64-window frequency tracking | [Audit](./audits/2026-11-20-aether-035.json) |
 | AETHER-034 · 2026-11-20 | Adaptive phase locking under drift and abrupt displacement | Synthetic 64-window comparison of phase gains | [Audit](./audits/2026-11-20-aether-034.json) |
 | AETHER-033 · 2026-11-20 | Selective resonance amplification through coherent accumulation | Seeded synthetic 32-window experiment | [Audit](./audits/2026-11-20-aether-033.json) |
