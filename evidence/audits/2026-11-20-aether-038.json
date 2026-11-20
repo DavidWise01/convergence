@@ -1,0 +1,66 @@
+{
+  "id": "AETHER-038",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-037",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.25″",
+  "model": "Arcsecond interpretation inherited provisionally. Fixed axis register; one initial bubble and n interactions, hence n+1 bubbles. Each bubble has 52 nominal internal addresses and 2 valence positions.",
+  "result": {
+    "transitions": 1036800,
+    "passed": 1036800,
+    "closure": 0,
+    "quarter": 1296000,
+    "half": 2592000,
+    "distinctRegisters": 5,
+    "examples": [
+      {
+        "interactions": 0,
+        "bubbles": 1,
+        "ticks": 0,
+        "degrees": 0,
+        "internal": 52
+      },
+      {
+        "interactions": 1,
+        "bubbles": 2,
+        "ticks": 5,
+        "degrees": 0.00034722222222222224,
+        "internal": 104
+      },
+      {
+        "interactions": 8,
+        "bubbles": 9,
+        "ticks": 40,
+        "degrees": 0.002777777777777778,
+        "internal": 468
+      },
+      {
+        "interactions": 48,
+        "bubbles": 49,
+        "ticks": 240,
+        "degrees": 0.016666666666666666,
+        "internal": 2548
+      },
+      {
+        "interactions": 2880,
+        "bubbles": 2881,
+        "ticks": 14400,
+        "degrees": 1,
+        "internal": 149812
+      },
+      {
+        "interactions": 1036800,
+        "bubbles": 1036801,
+        "ticks": 0,
+        "degrees": 0,
+        "internal": 53913652
+      }
+    ]
+  },
+  "artifact": "experiments/aether-038/index.html",
+  "limitations": [
+    "Orientation update only; no physical distance, energy transfer, phase coherence or Planck scale dynamics simulated.",
+    "Canvas visual spacing and local orientation exaggeration schematic.",
+    "Capacity accounting is nominal, not actual allocated per-bubble storage."
+  ]
+}
