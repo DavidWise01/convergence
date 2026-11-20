@@ -1,0 +1,946 @@
+{
+  "id": "AETHER-036",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-035",
+  "correction": "AETHER-035 frequencies did collide at window 49; individual source recovery not established there.",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "Four labeled tracks, noiseless unordered unique frequency observations, initial positions and velocities supplied. Compare nearest previous position against constant velocity prediction, exhaustive assignment minimizing squared distance, lexicographic tie resolution, allow shared bin at collision. Two tracks cross at t=10; two stationary. At collision identity is unresolved from observations alone; scoring measures compatibility with synthetic truth.",
+  "results": {
+    "nearest": {
+      "correct": 60,
+      "post": 20,
+      "trace": [
+        {
+          "t": 1,
+          "truth": [
+            11,
+            29,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            11,
+            29,
+            36
+          ],
+          "assigned": [
+            11,
+            29,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 2,
+          "truth": [
+            12,
+            28,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            12,
+            28,
+            36
+          ],
+          "assigned": [
+            12,
+            28,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 3,
+          "truth": [
+            13,
+            27,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            13,
+            27,
+            36
+          ],
+          "assigned": [
+            13,
+            27,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 4,
+          "truth": [
+            14,
+            26,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            14,
+            26,
+            36
+          ],
+          "assigned": [
+            14,
+            26,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 5,
+          "truth": [
+            15,
+            25,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            15,
+            25,
+            36
+          ],
+          "assigned": [
+            15,
+            25,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 6,
+          "truth": [
+            16,
+            24,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            16,
+            24,
+            36
+          ],
+          "assigned": [
+            16,
+            24,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 7,
+          "truth": [
+            17,
+            23,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            17,
+            23,
+            36
+          ],
+          "assigned": [
+            17,
+            23,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 8,
+          "truth": [
+            18,
+            22,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            18,
+            22,
+            36
+          ],
+          "assigned": [
+            18,
+            22,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 9,
+          "truth": [
+            19,
+            21,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            19,
+            21,
+            36
+          ],
+          "assigned": [
+            19,
+            21,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 10,
+          "truth": [
+            20,
+            20,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            20,
+            36
+          ],
+          "assigned": [
+            20,
+            20,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": true
+        },
+        {
+          "t": 11,
+          "truth": [
+            21,
+            19,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            19,
+            21,
+            36
+          ],
+          "assigned": [
+            19,
+            21,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 12,
+          "truth": [
+            22,
+            18,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            18,
+            22,
+            36
+          ],
+          "assigned": [
+            18,
+            22,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 13,
+          "truth": [
+            23,
+            17,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            17,
+            23,
+            36
+          ],
+          "assigned": [
+            17,
+            23,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 14,
+          "truth": [
+            24,
+            16,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            16,
+            24,
+            36
+          ],
+          "assigned": [
+            16,
+            24,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 15,
+          "truth": [
+            25,
+            15,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            15,
+            25,
+            36
+          ],
+          "assigned": [
+            15,
+            25,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 16,
+          "truth": [
+            26,
+            14,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            14,
+            26,
+            36
+          ],
+          "assigned": [
+            14,
+            26,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 17,
+          "truth": [
+            27,
+            13,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            13,
+            27,
+            36
+          ],
+          "assigned": [
+            13,
+            27,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 18,
+          "truth": [
+            28,
+            12,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            12,
+            28,
+            36
+          ],
+          "assigned": [
+            12,
+            28,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 19,
+          "truth": [
+            29,
+            11,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            11,
+            29,
+            36
+          ],
+          "assigned": [
+            11,
+            29,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        },
+        {
+          "t": 20,
+          "truth": [
+            30,
+            10,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            10,
+            30,
+            36
+          ],
+          "assigned": [
+            10,
+            30,
+            4,
+            36
+          ],
+          "correct": 2,
+          "collision": false
+        }
+      ]
+    },
+    "velocity": {
+      "correct": 80,
+      "post": 40,
+      "trace": [
+        {
+          "t": 1,
+          "truth": [
+            11,
+            29,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            11,
+            29,
+            36
+          ],
+          "assigned": [
+            11,
+            29,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 2,
+          "truth": [
+            12,
+            28,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            12,
+            28,
+            36
+          ],
+          "assigned": [
+            12,
+            28,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 3,
+          "truth": [
+            13,
+            27,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            13,
+            27,
+            36
+          ],
+          "assigned": [
+            13,
+            27,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 4,
+          "truth": [
+            14,
+            26,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            14,
+            26,
+            36
+          ],
+          "assigned": [
+            14,
+            26,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 5,
+          "truth": [
+            15,
+            25,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            15,
+            25,
+            36
+          ],
+          "assigned": [
+            15,
+            25,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 6,
+          "truth": [
+            16,
+            24,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            16,
+            24,
+            36
+          ],
+          "assigned": [
+            16,
+            24,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 7,
+          "truth": [
+            17,
+            23,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            17,
+            23,
+            36
+          ],
+          "assigned": [
+            17,
+            23,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 8,
+          "truth": [
+            18,
+            22,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            18,
+            22,
+            36
+          ],
+          "assigned": [
+            18,
+            22,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 9,
+          "truth": [
+            19,
+            21,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            19,
+            21,
+            36
+          ],
+          "assigned": [
+            19,
+            21,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 10,
+          "truth": [
+            20,
+            20,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            20,
+            36
+          ],
+          "assigned": [
+            20,
+            20,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": true
+        },
+        {
+          "t": 11,
+          "truth": [
+            21,
+            19,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            19,
+            21,
+            36
+          ],
+          "assigned": [
+            21,
+            19,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 12,
+          "truth": [
+            22,
+            18,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            18,
+            22,
+            36
+          ],
+          "assigned": [
+            22,
+            18,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 13,
+          "truth": [
+            23,
+            17,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            17,
+            23,
+            36
+          ],
+          "assigned": [
+            23,
+            17,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 14,
+          "truth": [
+            24,
+            16,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            16,
+            24,
+            36
+          ],
+          "assigned": [
+            24,
+            16,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 15,
+          "truth": [
+            25,
+            15,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            15,
+            25,
+            36
+          ],
+          "assigned": [
+            25,
+            15,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 16,
+          "truth": [
+            26,
+            14,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            14,
+            26,
+            36
+          ],
+          "assigned": [
+            26,
+            14,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 17,
+          "truth": [
+            27,
+            13,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            13,
+            27,
+            36
+          ],
+          "assigned": [
+            27,
+            13,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 18,
+          "truth": [
+            28,
+            12,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            12,
+            28,
+            36
+          ],
+          "assigned": [
+            28,
+            12,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 19,
+          "truth": [
+            29,
+            11,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            11,
+            29,
+            36
+          ],
+          "assigned": [
+            29,
+            11,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        },
+        {
+          "t": 20,
+          "truth": [
+            30,
+            10,
+            4,
+            36
+          ],
+          "observed": [
+            4,
+            10,
+            30,
+            36
+          ],
+          "assigned": [
+            30,
+            10,
+            4,
+            36
+          ],
+          "correct": 4,
+          "collision": false
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Known initial labels and velocities, deterministic constant velocities, noiseless perfect peak detection; no raw waveform separation.",
+    "Crossing versus bouncing is observationally ambiguous without model assumptions; no independent identity proof.",
+    "Not physical gravity or a 52-address implementation."
+  ]
+}
