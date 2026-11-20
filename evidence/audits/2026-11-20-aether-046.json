@@ -1,0 +1,103 @@
+{
+  "id": "AETHER-046",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-045",
+  "notation": "{ -CMB:p [ CMB:0 ( +CMB:d ) ] }; ~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds",
+  "model": "Abstract Mobius-inspired sign-reversing return and SU(2) rotation exp(-i theta sigma_x/2), initially (1,0). Fixed-axis angular register 41 ticks per step, 40 ticks per arcsecond. First spatial angular closure is 41 full turns; signed spinor closure 82 turns. Weak/medium/strong mixing gains from prior experiment separate from geometric angular step.",
+  "result": {
+    "states": [
+      {
+        "degrees": 0,
+        "p": [
+          1,
+          0
+        ],
+        "d": [
+          0,
+          0
+        ],
+        "norm": 1
+      },
+      {
+        "degrees": 180,
+        "p": [
+          6.123233995736766e-17,
+          0
+        ],
+        "d": [
+          0,
+          -1
+        ],
+        "norm": 1
+      },
+      {
+        "degrees": 360,
+        "p": [
+          -1,
+          0
+        ],
+        "d": [
+          0,
+          -1.2246467991473532e-16
+        ],
+        "norm": 1
+      },
+      {
+        "degrees": 540,
+        "p": [
+          -1.8369701987210297e-16,
+          0
+        ],
+        "d": [
+          0,
+          1
+        ],
+        "norm": 1
+      },
+      {
+        "degrees": 720,
+        "p": [
+          1,
+          0
+        ],
+        "d": [
+          0,
+          2.4492935982947064e-16
+        ],
+        "norm": 1
+      }
+    ],
+    "angular": {
+      "stepTicks": 41,
+      "turnTicks": 51840000,
+      "orientationClosure": 51840000,
+      "turnsAtOrientationClosure": 41,
+      "signedClosure": 103680000,
+      "turnsAtSignedClosure": 82
+    },
+    "strengths": [
+      {
+        "g": 0.025,
+        "firstContinuousTransfer": 62.83185307179586,
+        "firstContinuousSignedReturn": 251.32741228718345
+      },
+      {
+        "g": 0.1,
+        "firstContinuousTransfer": 15.707963267948966,
+        "firstContinuousSignedReturn": 62.83185307179586
+      },
+      {
+        "g": 0.25,
+        "firstContinuousTransfer": 6.283185307179586,
+        "firstContinuousSignedReturn": 25.132741228718345
+      }
+    ]
+  },
+  "limitations": [
+    "Mobius topology is an analogy; a physical spinor bundle on foam not constructed.",
+    "Global spinor sign alone is not observable without relative phase reference.",
+    "Thermal, spatial and coupling strength dynamics remain separate.",
+    "No physical Planck-scale mechanism established."
+  ]
+}
