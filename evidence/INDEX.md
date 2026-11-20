@@ -3,7 +3,8 @@
 Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
-| --- | --- | --- | --- |
+| --- | --- | --- |
+| TD-RIEMANN-CLAUDE-001-A9 · 2026-11-20 | Orbit oscillator decomposition: invariant line + p-sector | Six numerical cases; commutant dimension 2; no tower multiplicity growth | [Record](./candidates/2026-11-20-td-riemann-claude-001-a9-orbit-oscillator.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a9-orbit-oscillator.py) |
 | AETHER-057 · 2026-11-20 | Twelve-arm harmonic phase locking | Coupled oscillator tests; oxygen-mediated links; HTML | [Audit](./audits/2026-11-20-aether-057.json) |
 | AETHER-056 · 2026-11-20 | Temporal resonance gates | Discrete synchronized encounters and conservation; HTML | [Audit](./audits/2026-11-20-aether-056.json) |
 | AETHER-055 · 2026-11-20 | Toroidal intersection gates | Analytic intersections; conservative static exchange graph; HTML | [Audit](./audits/2026-11-20-aether-055.json) |
