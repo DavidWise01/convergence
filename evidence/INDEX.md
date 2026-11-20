@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| TD-RIEMANN-CLAUDE-001-A6 · 2026-11-20 | Finite Weyl/Fourier covariance and parity | 523385 exact assertions; generator-level finite analogue | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a6-weil.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a6-weil.py) |
 | AETHER-052 · 2026-11-20 | Active RGB homeostasis and disturbance recovery | Three-compartment feedback; interactive HTML | [Audit](./audits/2026-11-20-aether-052.json) |
 | TD-RIEMANN-CLAUDE-001-A5 · 2026-11-20 | S3 dual actions and rational centralizer decomposition | 153 exact loop checks plus structural assertions; finite analogue only | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a5-dual-actions.json) |
 | AETHER-051 · 2026-11-20 | RGB foam instantiation; oxygen-mediated transport | Conservative three-layer diffusion; interactive HTML | [Audit](./audits/2026-11-20-aether-051.json) |
