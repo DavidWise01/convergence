@@ -1,0 +1,55 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A11",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A10"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Restrict finite Schrödinger model for quadratic U=F_p^2 with Q=x²+y² to determinant-isotypic subspaces of C[U^m]. Numerically test Fourier and quadratic phase operators on each slot and GL shear on m=2. Commutant of compressed generators has dimension 1 for p=5,m=1 (d=1), and p=3,m=2 (d=6), supporting irreducibility under these generators.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Executed local Python/NumPy tests",
+      "results": [
+        {
+          "p": 5,
+          "m": 1,
+          "ambient": 25,
+          "isotypic_dimension": 1,
+          "commutant_dimension": 1,
+          "max_leak": 2.0430938007282325e-16,
+          "max_unitarity_error": 2.220446049250313e-16
+        },
+        {
+          "p": 3,
+          "m": 2,
+          "ambient": 81,
+          "isotypic_dimension": 6,
+          "commutant_dimension": 1,
+          "max_leak": 4.9655134012874615e-16,
+          "max_unitarity_error": 4.171157531770363e-15,
+          "commutant_singular_gap": 0.921312134384874
+        }
+      ]
+    }
+  ],
+  "claims": [
+    "Two first-occurrence determinant-isotypic spaces irreducible under tested unitary generators to numerical tolerance."
+  ],
+  "hypotheses": [
+    "Compute exact cyclotomic certificates and higher-rank cases; inspect theta-lift irreducibility and occurrence under larger fields."
+  ],
+  "ancestry_status": "UNKNOWN: target-aware classical analogue, no traceable corpus-to-paper relationship",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A10"
+  ],
+  "limitations": [
+    "Only two finite first-occurrence cases; floating-point SVD rather than exact cyclotomic proof; no full presentation check for Sp(2m,F_p), global automorphic theta lifting or RH proof."
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a11-irred.py",
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
