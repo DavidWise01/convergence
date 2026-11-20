@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-035 · 2026-11-20 | Frequency migration with bounded local tracking | Synthetic 64-window frequency tracking | [Audit](./audits/2026-11-20-aether-035.json) |
 | AETHER-034 · 2026-11-20 | Adaptive phase locking under drift and abrupt displacement | Synthetic 64-window comparison of phase gains | [Audit](./audits/2026-11-20-aether-034.json) |
 | AETHER-033 · 2026-11-20 | Selective resonance amplification through coherent accumulation | Seeded synthetic 32-window experiment | [Audit](./audits/2026-11-20-aether-033.json) |
 | AETHER-032 · 2026-11-20 | Resonance through noise: repeated spectral prominence | Seeded synthetic noise sweep and clean holdout | [Audit](./audits/2026-11-20-aether-032.json) |
