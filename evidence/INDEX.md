@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-RIEMANN-CLAUDE-001-A12 · 2026-11-20 | Exact theta tower extension: old embedding survives, new Fourier mixes | Four exact regression cases; irreducibility still unresolved | [Record](./candidates/2026-11-20-td-riemann-claude-001-a12-extension.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a12-extension.py) |
 | TD-RIEMANN-CLAUDE-001-A11 · 2026-11-20 | Finite determinant-isotypic symplectic irreducibility at first occurrence | Two numerical cases; commutant dimension 1; not global theta lifting | [Record](./candidates/2026-11-20-td-riemann-claude-001-a11-irred.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a11-irred.py) |
 | AETHER-059 · 2026-11-20 | Emergent resonance selection | 60 gain trials, correction budget comparisons and HTML | [Audit](./audits/2026-11-20-aether-059.json) |
 | TD-RIEMANN-CLAUDE-001-A10 · 2026-11-20 | Finite theta-rank first occurrence of determinant character | Exact integer projection; 5 cases; no global theta lift claim | [Record](./candidates/2026-11-20-td-riemann-claude-001-a10-first-occurrence.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a10-first-occurrence.py) |
