@@ -1,0 +1,152 @@
+{
+  "id": "AETHER-042",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-041 (conversation)",
+  "supersedes": "1.25 arcsecond coupling in AETHER-037–039; corrected to 1.025 arcseconds in AETHER-040",
+  "notation": "{ -1 [ 0 (+1) ] } × n; ~~|~~|~~|~~| > ^i",
+  "capacity": "54 totality -2 valence =52 internal positions per bubble",
+  "model": "Three 9×9 layers, conservative synchronous nearest-neighbor scalar diffusion, initial unit mass center −1. In-plane coefficient 0.12, gated interfaces −1↔0 coefficient 0.03 and 0↔+1 coefficient 0.08. Uniform comparator 0.12 everywhere. No direct −1↔+1 link.",
+  "count": 243,
+  "links": 594,
+  "results": {
+    "gated": [
+      {
+        "t": 1,
+        "layerMass": [
+          0.97,
+          0.03,
+          0
+        ],
+        "total": 1,
+        "min": 0
+      },
+      {
+        "t": 4,
+        "layerMass": [
+          0.8901066399999998,
+          0.09750648,
+          0.01238688
+        ],
+        "total": 1.0000000000000002,
+        "min": 0
+      },
+      {
+        "t": 8,
+        "layerMass": [
+          0.8019507790102139,
+          0.15441484190042873,
+          0.04363437908935679
+        ],
+        "total": 0.9999999999999989,
+        "min": 0
+      },
+      {
+        "t": 16,
+        "layerMass": [
+          0.6688729543927381,
+          0.21684400203572887,
+          0.11428304357153327
+        ],
+        "total": 1.0000000000000007,
+        "min": 0.00006892611298306227
+      },
+      {
+        "t": 32,
+        "layerMass": [
+          0.5074729643849137,
+          0.2750927900796869,
+          0.2174342455353995
+        ],
+        "total": 0.9999999999999997,
+        "min": 0.0012656917233966978
+      },
+      {
+        "t": 64,
+        "layerMass": [
+          0.380482503866987,
+          0.31761660443295125,
+          0.301900891700062
+        ],
+        "total": 1.0000000000000016,
+        "min": 0.0033815767908241083
+      }
+    ],
+    "uniform": [
+      {
+        "t": 1,
+        "layerMass": [
+          0.88,
+          0.12,
+          0
+        ],
+        "total": 1,
+        "min": 0
+      },
+      {
+        "t": 4,
+        "layerMass": [
+          0.66114304,
+          0.2774092799999999,
+          0.061447680000000005
+        ],
+        "total": 0.9999999999999997,
+        "min": 0
+      },
+      {
+        "t": 8,
+        "layerMass": [
+          0.5178418453479426,
+          0.3239508341096447,
+          0.15820732054241277
+        ],
+        "total": 0.9999999999999998,
+        "min": 0
+      },
+      {
+        "t": 16,
+        "layerMass": [
+          0.3981338759869063,
+          0.33306923945828565,
+          0.26879688455480755
+        ],
+        "total": 0.9999999999999996,
+        "min": 0.00019908040893205196
+      },
+      {
+        "t": 32,
+        "layerMass": [
+          0.341697466628049,
+          0.3333331240966089,
+          0.3249694092753422
+        ],
+        "total": 0.9999999999999979,
+        "min": 0.0019502499906576562
+      },
+      {
+        "t": 64,
+        "layerMass": [
+          0.3334732472847966,
+          0.3333333333332017,
+          0.3331934193820013
+        ],
+        "total": 0.9999999999999999,
+        "min": 0.003737661331571626
+      }
+    ]
+  },
+  "angular": {
+    "ticksPerArcsecond": 40,
+    "stepTicks": 41,
+    "turnTicks": 51840000,
+    "gcd": 1,
+    "closureSteps": 51840000,
+    "turns": 41,
+    "singleTurnClosure": false
+  },
+  "limitations": [
+    "Lipid-inspired abstraction; no molecular or physical Planck foam simulation.",
+    "Coefficients chosen, not measured.",
+    "Scalar transport, not four-wave dynamics; angular register calculated separately.",
+    "No evidence universal scale self-similarity."
+  ]
+}
