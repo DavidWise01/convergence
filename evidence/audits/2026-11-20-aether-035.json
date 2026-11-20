@@ -1,0 +1,1110 @@
+{
+  "id": "AETHER-035",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-034",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "64 independent 120-sample windows, four initially labeled DFT bins [24,15,10,6], bin-aligned step migration at rates defined in code by floor(t/12), -floor(t/16), floor(t/24), -floor(t/32). Gaussian noise sigma 1 seed 35026; each tracker selects strongest bin within one bin of prior estimate, versus fixed initial bin comparator.",
+  "result": {
+    "windows": 64,
+    "assignments": 256,
+    "correct": 256,
+    "fixedError": 324,
+    "adaptiveError": 0,
+    "trace": [
+      {
+        "window": 1,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 2,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 3,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 4,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 5,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 6,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 7,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 8,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 9,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 10,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 11,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 12,
+        "truth": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          24,
+          15,
+          10,
+          6
+        ],
+        "fixed": 0,
+        "adaptive": 0
+      },
+      {
+        "window": 13,
+        "truth": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "fixed": 1,
+        "adaptive": 0
+      },
+      {
+        "window": 14,
+        "truth": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "fixed": 1,
+        "adaptive": 0
+      },
+      {
+        "window": 15,
+        "truth": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "fixed": 1,
+        "adaptive": 0
+      },
+      {
+        "window": 16,
+        "truth": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          15,
+          10,
+          6
+        ],
+        "fixed": 1,
+        "adaptive": 0
+      },
+      {
+        "window": 17,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 18,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 19,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 20,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 21,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 22,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 23,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 24,
+        "truth": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "next": [
+          25,
+          14,
+          10,
+          6
+        ],
+        "fixed": 2,
+        "adaptive": 0
+      },
+      {
+        "window": 25,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 26,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 27,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 28,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 29,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 30,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 31,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 32,
+        "truth": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "next": [
+          26,
+          14,
+          11,
+          6
+        ],
+        "fixed": 4,
+        "adaptive": 0
+      },
+      {
+        "window": 33,
+        "truth": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "fixed": 6,
+        "adaptive": 0
+      },
+      {
+        "window": 34,
+        "truth": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "fixed": 6,
+        "adaptive": 0
+      },
+      {
+        "window": 35,
+        "truth": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "fixed": 6,
+        "adaptive": 0
+      },
+      {
+        "window": 36,
+        "truth": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          26,
+          13,
+          11,
+          5
+        ],
+        "fixed": 6,
+        "adaptive": 0
+      },
+      {
+        "window": 37,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 38,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 39,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 40,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 41,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 42,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 43,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 44,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 45,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 46,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 47,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 48,
+        "truth": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "next": [
+          27,
+          13,
+          11,
+          5
+        ],
+        "fixed": 7,
+        "adaptive": 0
+      },
+      {
+        "window": 49,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 50,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 51,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 52,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 53,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 54,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 55,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 56,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 57,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 58,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 59,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 60,
+        "truth": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          28,
+          12,
+          12,
+          5
+        ],
+        "fixed": 10,
+        "adaptive": 0
+      },
+      {
+        "window": 61,
+        "truth": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "fixed": 11,
+        "adaptive": 0
+      },
+      {
+        "window": 62,
+        "truth": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "fixed": 11,
+        "adaptive": 0
+      },
+      {
+        "window": 63,
+        "truth": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "fixed": 11,
+        "adaptive": 0
+      },
+      {
+        "window": 64,
+        "truth": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "next": [
+          29,
+          12,
+          12,
+          5
+        ],
+        "fixed": 11,
+        "adaptive": 0
+      }
+    ]
+  },
+  "limits": [
+    "Known initial labels and bounded one-bin migrations; frequencies remain separated; no crossing identity test.",
+    "Window-local phase is fixed, not continuous physical oscillator phase.",
+    "One seeded synthetic run; no physical gravitational-wave or 52-address implementation claim."
+  ]
+}
