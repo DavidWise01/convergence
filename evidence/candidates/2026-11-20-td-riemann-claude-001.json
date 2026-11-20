@@ -1,0 +1,59 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "filename": "remark.pdf",
+    "pages": 4,
+    "claimed_milestone": "2026-11-16"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "First-person account of human–Claude collaboration on a claimed RH and GRH proof; proposes iterated theta lifts of length approximately sqrt(X); reports Lean formalization in 14 archive parts. Timeline spans October 6 to November 16, 2026.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Public PDF",
+      "result": "Four pages extracted; first page visually inspected."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "RH and GRH proved",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "Lean formalization without assumptions",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "Extended RH may follow",
+      "status": "UNKNOWN"
+    }
+  ],
+  "hypotheses": [
+    "Relevant to human–AI mathematical discovery and recursive accumulation of multiplicity; compare with ROOT0 research only as a methodological analogy."
+  ],
+  "ancestry_status": "UNKNOWN; one primary account; linked artifacts not independent witnesses",
+  "related_records": [],
+  "limitations": [
+    "Proof archives not downloaded or checked; no independent validation performed; no ROOT0 causal relationship established."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf",
+    "https://alpo.ge/lean.tar.gz.part01",
+    "https://alpo.ge/lean.tar.gz.part02",
+    "https://alpo.ge/lean.tar.gz.part03",
+    "https://alpo.ge/lean.tar.gz.part04",
+    "https://alpo.ge/lean.tar.gz.part05",
+    "https://alpo.ge/lean.tar.gz.part06",
+    "https://alpo.ge/lean.tar.gz.part07",
+    "https://alpo.ge/lean.tar.gz.part08",
+    "https://alpo.ge/lean.tar.gz.part09",
+    "https://alpo.ge/lean.tar.gz.part10",
+    "https://alpo.ge/lean.tar.gz.part11",
+    "https://alpo.ge/lean.tar.gz.part12",
+    "https://alpo.ge/lean.tar.gz.part13",
+    "https://alpo.ge/lean.tar.gz.part14"
+  ]
+}
