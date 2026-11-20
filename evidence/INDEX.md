@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-030 · 2026-11-19 | Autonomous rhythm discovery across changing periods | Causal lag scan; synthetic 128-step workload | [Audit](./audits/2026-11-19-aether-030.json) |
 | AETHER-029 · 2026-11-19 | Anticipatory capacity: lag-eight reservation versus adaptive control | Synthetic repeating workload; period preselected | [Audit](./audits/2026-11-19-aether-029.json) |
 | AETHER-028 · 2026-11-19 | Adaptive correction capacity across 64 workload steps | Synthetic scalar backlog comparison | [Audit](./audits/2026-11-19-aether-028.json) |
 | AETHER-027 · 2026-11-19 | Persistence through resistance: 64 recurring disturbances | Synthetic conservative transport with uncorrected control | [Audit](./audits/2026-11-19-aether-027.json) |
