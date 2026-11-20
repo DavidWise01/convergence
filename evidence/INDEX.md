@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-057 · 2026-11-20 | Twelve-arm harmonic phase locking | Coupled oscillator tests; oxygen-mediated links; HTML | [Audit](./audits/2026-11-20-aether-057.json) |
 | AETHER-056 · 2026-11-20 | Temporal resonance gates | Discrete synchronized encounters and conservation; HTML | [Audit](./audits/2026-11-20-aether-056.json) |
 | AETHER-055 · 2026-11-20 | Toroidal intersection gates | Analytic intersections; conservative static exchange graph; HTML | [Audit](./audits/2026-11-20-aether-055.json) |
 | TD-RIEMANN-CLAUDE-001-A8 · 2026-11-20 | Hyperbolic tower norm-fiber square-root residual | 406 exact assertions; fixed-prime orbit multiplicity constant | [Record](./candidates/2026-11-20-td-riemann-claude-001-a8-tower.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a8-tower.py) |
