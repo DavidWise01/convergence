@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-059 · 2026-11-20 | Emergent resonance selection | 60 gain trials, correction budget comparisons and HTML | [Audit](./audits/2026-11-20-aether-059.json) |
 | TD-RIEMANN-CLAUDE-001-A10 · 2026-11-20 | Finite theta-rank first occurrence of determinant character | Exact integer projection; 5 cases; no global theta lift claim | [Record](./candidates/2026-11-20-td-riemann-claude-001-a10-first-occurrence.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a10-first-occurrence.py) |
 | AETHER-058 · 2026-11-20 | Adaptive harmonic frequency migration | Bounded local feedback and controls; interactive HTML | [Audit](./audits/2026-11-20-aether-058.json) |
 | TD-RIEMANN-CLAUDE-001-A9 · 2026-11-20 | Orbit oscillator decomposition: invariant line + p-sector | Six numerical cases; commutant dimension 2; no tower multiplicity growth | [Record](./candidates/2026-11-20-td-riemann-claude-001-a9-orbit-oscillator.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a9-orbit-oscillator.py) |
