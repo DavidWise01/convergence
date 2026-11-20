@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-051 · 2026-11-20 | RGB foam instantiation; oxygen-mediated transport | Conservative three-layer diffusion; interactive HTML | [Audit](./audits/2026-11-20-aether-051.json) |
 | TD-RIEMANN-CLAUDE-001-A4 · 2026-11-20 | Exact polynomial lattice intertwiner; modular rank and C2 obstruction | 94176 exact checks; not theta lifting; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a4-intertwiner.json) |
 | AETHER-050 · 2026-11-20 | Nitrogen–oxygen–hydrogen chromatic foam | User-defined elemental mapping; conceptual analogy | [Audit](./audits/2026-11-20-aether-050.json) |
 | TD-RIEMANN-CLAUDE-001-A3 · 2026-11-20 | Factorial divisibility under recursive finite differences | 12025 exact cases; integer-valued polynomial counterexample; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a3-divisibility.json) |
