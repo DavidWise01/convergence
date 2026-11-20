@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-038 · 2026-11-20 | Coherent bubble chain instantiation; exact angular register | Exhaustive angular transitions; computational model | [Audit](./audits/2026-11-20-aether-038.json) |
 | AETHER-037 · 2026-11-20 | Bounded four-wave bubble and proposed angular coupling | User notation retained; angle interpretation provisional | [Audit](./audits/2026-11-20-aether-037.json) |
 | AETHER-036 · 2026-11-20 | Spectral collision: position versus velocity assignment | Synthetic crossing tracks; identity ambiguity retained | [Audit](./audits/2026-11-20-aether-036.json) |
 | AETHER-035 · 2026-11-20 | Frequency migration with bounded local tracking | Synthetic 64-window frequency tracking | [Audit](./audits/2026-11-20-aether-035.json) |
