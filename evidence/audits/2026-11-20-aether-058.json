@@ -1,0 +1,433 @@
+{
+  "id": "AETHER-058",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-057",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "name": "Adaptive frequency migration",
+  "model": "12 Kuramoto-like phase oscillators, 20 symmetric connections, natural frequencies inherited from 057. Nitrogen weak arm frequency jumps +.12 (or +.25) from tick 128. Fixed control: corrections always zero. Adaptive: corrections_i(t+1)=clip(corrections_i(t)+.015 * coupling_force_i(t),-.12,.12). K=.3. Initial phases same as 057; adaptation occurs before migration as well.",
+  "results": [
+    {
+      "name": "no migration",
+      "adaptive": false,
+      "drift": 0,
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 32,
+          "R": 0.9824911114015058,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 64,
+          "R": 0.9795006926658623,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190545,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 128,
+          "R": 0.9794708582317909,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 129,
+          "R": 0.9794708580721799,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 144,
+          "R": 0.9794708572347616,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 160,
+          "R": 0.9794708571574119,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 192,
+          "R": 0.979470857150946,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 256,
+          "R": 0.9794708571509066,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 384,
+          "R": 0.9794708571509068,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 512,
+          "R": 0.9794708571509066,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        }
+      ],
+      "finalCoherence": 0.9794708571509066,
+      "velocitySpread": 3.3306690738754696e-16,
+      "meanEffective": 0.0013952946906981949,
+      "arm0Correction": 0
+    },
+    {
+      "name": "fixed / +.12",
+      "adaptive": false,
+      "drift": 0.12,
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 32,
+          "R": 0.9824911114015058,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 64,
+          "R": 0.9795006926658623,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190545,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 128,
+          "R": 0.9794708582317909,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087232,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 144,
+          "R": 0.9809256543873549,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 160,
+          "R": 0.980307084408599,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 192,
+          "R": 0.9802408569428338,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 256,
+          "R": 0.9802403527803588,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 384,
+          "R": 0.9802403527528898,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        },
+        {
+          "t": 512,
+          "R": 0.9802403527528899,
+          "correction": 0,
+          "effectiveW": 0.07184996658814442
+        }
+      ],
+      "finalCoherence": 0.9802403527528899,
+      "velocitySpread": 8.326672684688674e-17,
+      "meanEffective": 0.011395294690697257,
+      "arm0Correction": 0
+    },
+    {
+      "name": "adaptive / +.12",
+      "adaptive": true,
+      "drift": 0.12,
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 32,
+          "R": 0.968893576290884,
+          "correction": -0.011761429945828971,
+          "effectiveW": -0.05991146335768455
+        },
+        {
+          "t": 64,
+          "R": 0.9857185325493832,
+          "correction": 0.012246793573416449,
+          "effectiveW": -0.03590323983843913
+        },
+        {
+          "t": 127,
+          "R": 0.9982070367502661,
+          "correction": 0.03629303131995228,
+          "effectiveW": -0.011857002091903289
+        },
+        {
+          "t": 128,
+          "R": 0.9982651012521946,
+          "correction": 0.03650888633640886,
+          "effectiveW": 0.10835885292455329
+        },
+        {
+          "t": 129,
+          "R": 0.9984442047092754,
+          "correction": 0.03672122297958173,
+          "effectiveW": 0.10857118956772616
+        },
+        {
+          "t": 144,
+          "R": 0.9955616657378243,
+          "correction": 0.01965256413743107,
+          "effectiveW": 0.09150253072557549
+        },
+        {
+          "t": 160,
+          "R": 0.9969032116183815,
+          "correction": 0.0018257469215687756,
+          "effectiveW": 0.07367571350971319
+        },
+        {
+          "t": 192,
+          "R": 0.9989154458492834,
+          "correction": -0.02304491700501811,
+          "effectiveW": 0.048805049583126314
+        },
+        {
+          "t": 256,
+          "R": 0.9998712092350316,
+          "correction": -0.04694879257987549,
+          "effectiveW": 0.024901174008268932
+        },
+        {
+          "t": 384,
+          "R": 0.9999981319570662,
+          "correction": -0.05868706265777977,
+          "effectiveW": 0.01316290393036465
+        },
+        {
+          "t": 512,
+          "R": 0.9999999721485384,
+          "correction": -0.060222256659558604,
+          "effectiveW": 0.01162770992858582
+        }
+      ],
+      "finalCoherence": 0.9999999721485384,
+      "velocitySpread": 0.000019625926157923468,
+      "meanEffective": 0.011395294690698277,
+      "arm0Correction": -0.060222256659558604
+    },
+    {
+      "name": "fixed / +.25",
+      "adaptive": false,
+      "drift": 0.25,
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 32,
+          "R": 0.9824911114015058,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 64,
+          "R": 0.9795006926658623,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 127,
+          "R": 0.9794708584190545,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 128,
+          "R": 0.9794708582317909,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 129,
+          "R": 0.9814448294131286,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 144,
+          "R": 0.9646846650565846,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 160,
+          "R": 0.9609102141050538,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 192,
+          "R": 0.960445514479391,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 256,
+          "R": 0.960440102334685,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 384,
+          "R": 0.9604401015894509,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        },
+        {
+          "t": 512,
+          "R": 0.9604401015894508,
+          "correction": 0,
+          "effectiveW": 0.2018499665881444
+        }
+      ],
+      "finalCoherence": 0.9604401015894508,
+      "velocitySpread": 0,
+      "meanEffective": 0.02222862802403114,
+      "arm0Correction": 0
+    },
+    {
+      "name": "adaptive / +.25",
+      "adaptive": true,
+      "drift": 0.25,
+      "samples": [
+        {
+          "t": 0,
+          "R": 0.08634491048379632,
+          "correction": 0,
+          "effectiveW": -0.04815003341185557
+        },
+        {
+          "t": 32,
+          "R": 0.968893576290884,
+          "correction": -0.011761429945828971,
+          "effectiveW": -0.05991146335768455
+        },
+        {
+          "t": 64,
+          "R": 0.9857185325493832,
+          "correction": 0.012246793573416449,
+          "effectiveW": -0.03590323983843913
+        },
+        {
+          "t": 127,
+          "R": 0.9982070367502661,
+          "correction": 0.03629303131995228,
+          "effectiveW": -0.011857002091903289
+        },
+        {
+          "t": 128,
+          "R": 0.9982651012521946,
+          "correction": 0.03650888633640886,
+          "effectiveW": 0.23835885292455328
+        },
+        {
+          "t": 129,
+          "R": 0.9973386548745541,
+          "correction": 0.03672122297958173,
+          "effectiveW": 0.23857118956772616
+        },
+        {
+          "t": 144,
+          "R": 0.9781230209285793,
+          "correction": -0.001592265682551644,
+          "effectiveW": 0.20025770090559278
+        },
+        {
+          "t": 160,
+          "R": 0.9847666474830472,
+          "correction": -0.04140560757391717,
+          "effectiveW": 0.16044435901422724
+        },
+        {
+          "t": 192,
+          "R": 0.9948221705766628,
+          "correction": -0.09680024098202583,
+          "effectiveW": 0.10504972560611858
+        },
+        {
+          "t": 256,
+          "R": 0.9980456874375502,
+          "correction": -0.12,
+          "effectiveW": 0.08184996658814442
+        },
+        {
+          "t": 384,
+          "R": 0.9985297684160193,
+          "correction": -0.12,
+          "effectiveW": 0.08184996658814442
+        },
+        {
+          "t": 512,
+          "R": 0.9989272436916239,
+          "correction": -0.12,
+          "effectiveW": 0.08184996658814442
+        }
+      ],
+      "finalCoherence": 0.9989272436916239,
+      "velocitySpread": 0.0002214768428777658,
+      "meanEffective": 0.040063389916269926,
+      "arm0Correction": -0.12
+    }
+  ],
+  "artifact": "experiments/aether-058/index.html",
+  "limitations": [
+    "Adaptive and fixed cases diverge pre-migration; comparison not isolated causal effect of post-event adaptation.",
+    "Applied correction is bounded, external algorithmic parameter; physical energy accounting absent.",
+    "No measured weak, medium, strong, or fusion forces.",
+    "1.025 arcsecond bubble register not coupled to simulated ticks.",
+    "Changing effective frequency does not itself create an adaptive learning proof."
+  ]
+}
