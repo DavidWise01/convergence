@@ -1,0 +1,144 @@
+{
+  "id": "AETHER-045",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-044",
+  "notation": "{ -CMB : p− [ CMB : shared tail (+CMB : d+) ] }; ~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds (separate angular register)",
+  "model": "Two complex amplitudes representing an abstract two-component state, unitary mixing exp(-i g sigma_x) through shared conceptual interface. Weak/medium/strong are relative coupling magnitudes, not Standard Model force identifications. Initial state (1,0).",
+  "results": [
+    {
+      "name": "weak",
+      "g": 0.025,
+      "trace": [
+        {
+          "t": 0,
+          "p": 1,
+          "d": 0,
+          "norm": 1
+        },
+        {
+          "t": 1,
+          "p": 0.9993751301974833,
+          "d": 0.0006248698025168767,
+          "norm": 1.0000000000000002
+        },
+        {
+          "t": 8,
+          "p": 0.960530497001443,
+          "d": 0.03946950299855749,
+          "norm": 1.0000000000000004
+        },
+        {
+          "t": 16,
+          "p": 0.8483533546735832,
+          "d": 0.15164664532641745,
+          "norm": 1.0000000000000007
+        },
+        {
+          "t": 32,
+          "p": 0.4854002388493565,
+          "d": 0.5145997611506455,
+          "norm": 1.000000000000002
+        },
+        {
+          "t": 64,
+          "p": 0.000852612102623461,
+          "d": 0.9991473878973809,
+          "norm": 1.0000000000000044
+        }
+      ],
+      "maxNormError": 4.440892098500626e-15
+    },
+    {
+      "name": "medium",
+      "g": 0.1,
+      "trace": [
+        {
+          "t": 0,
+          "p": 1,
+          "d": 0,
+          "norm": 1
+        },
+        {
+          "t": 1,
+          "p": 0.9900332889206209,
+          "d": 0.009966711079379185,
+          "norm": 1
+        },
+        {
+          "t": 8,
+          "p": 0.48540023884935624,
+          "d": 0.5145997611506451,
+          "norm": 1.0000000000000013
+        },
+        {
+          "t": 16,
+          "p": 0.0008526121026234582,
+          "d": 0.9991473878973787,
+          "norm": 1.0000000000000022
+        },
+        {
+          "t": 32,
+          "p": 0.9965924593791001,
+          "d": 0.0034075406209036867,
+          "norm": 1.0000000000000038
+        },
+        {
+          "t": 64,
+          "p": 0.9864162828487253,
+          "d": 0.013583717151282355,
+          "norm": 1.0000000000000075
+        }
+      ],
+      "maxNormError": 7.549516567451064e-15
+    },
+    {
+      "name": "strong",
+      "g": 0.25,
+      "trace": [
+        {
+          "t": 0,
+          "p": 1,
+          "d": 0,
+          "norm": 1
+        },
+        {
+          "t": 1,
+          "p": 0.9387912809451863,
+          "d": 0.06120871905481365,
+          "norm": 0.9999999999999999
+        },
+        {
+          "t": 8,
+          "p": 0.173178189568194,
+          "d": 0.826821810431805,
+          "norm": 0.999999999999999
+        },
+        {
+          "t": 16,
+          "p": 0.42724998309569223,
+          "d": 0.5727500169043062,
+          "norm": 0.9999999999999984
+        },
+        {
+          "t": 32,
+          "p": 0.021170259838307764,
+          "d": 0.9788297401616897,
+          "norm": 0.9999999999999974
+        },
+        {
+          "t": 64,
+          "p": 0.917111680253249,
+          "d": 0.08288831974674486,
+          "norm": 0.9999999999999938
+        }
+      ],
+      "maxNormError": 6.217248937900877e-15
+    }
+  ],
+  "limits": [
+    "Two-component mathematical analogue only; physical spinor transformation behavior not established by p/d glyphs.",
+    "Medium is not a distinct fundamental force.",
+    "Thermal energy, spatial tails, actual interactions, and angular register not dynamically coupled in this experiment."
+  ]
+}
