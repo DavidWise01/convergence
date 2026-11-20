@@ -1,0 +1,64 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A6",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A5"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Finite Schrödinger/Weyl model over F_p for odd p. Verified Weyl multiplication with cocycle (bc-ad)/2, Q shear covariance W(a,b)->W(a,b+a), positive Fourier covariance W(a,b)->W(-b,a), Fourier square parity via exact cyclotomic coefficient histograms, parity commuting with Q and F, F/Q noncommutation witness. Parity subspaces dimensions (p+1)/2 and (p-1)/2.",
+  "retrieval_log": [
+    {
+      "surface": "Executed local Python script",
+      "results": [
+        [
+          3,
+          191
+        ],
+        [
+          5,
+          1327
+        ],
+        [
+          7,
+          4951
+        ],
+        [
+          11,
+          29647
+        ],
+        [
+          13,
+          57631
+        ],
+        [
+          17,
+          167911
+        ],
+        [
+          19,
+          261727
+        ]
+      ],
+      "total": 523385
+    }
+  ],
+  "claims": [
+    "Exact finite Weyl and Fourier covariance identities; projective symplectic action at generator level, not a verified full normalized Weil representation or dual-pair theta lift."
+  ],
+  "hypotheses": [
+    "Construct genuine embedded orthogonal/symplectic dual pair in higher dimension; test isotypic multiplicities."
+  ],
+  "ancestry_status": "UNKNOWN; classical construction chosen after target inspection",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A5"
+  ],
+  "limitations": [
+    "No full group relations or Weil normalization tested; finite model not automorphic; no RH or nineteenth-root proof; no source ancestry established."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a6-weil.py"
+}
