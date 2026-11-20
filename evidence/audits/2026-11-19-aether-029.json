@@ -1,0 +1,1575 @@
+{
+  "id": "AETHER-029",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-028",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "Scalar service backlog; 64 steps repeating [1,1,3,3,5,5,2,2]. Compare fixed capacity 1, prior adaptive rule, and adaptive rule with lag-8 reservation using only past observations. Capacity ceiling 5. Prediction is not a future observation.",
+  "runs": {
+    "fixed": {
+      "peak": 112,
+      "final": 112,
+      "backlogArea": 3560,
+      "capacityBudget": 64,
+      "trace": [
+        {
+          "t": 1,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 2,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 3,
+          "l": 3,
+          "c": 1,
+          "q": 2,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 4,
+          "l": 3,
+          "c": 1,
+          "q": 4,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 5,
+          "l": 5,
+          "c": 1,
+          "q": 8,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 6,
+          "l": 5,
+          "c": 1,
+          "q": 12,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 7,
+          "l": 2,
+          "c": 1,
+          "q": 13,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 8,
+          "l": 2,
+          "c": 1,
+          "q": 14,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 9,
+          "l": 1,
+          "c": 1,
+          "q": 14,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 10,
+          "l": 1,
+          "c": 1,
+          "q": 14,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 11,
+          "l": 3,
+          "c": 1,
+          "q": 16,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 12,
+          "l": 3,
+          "c": 1,
+          "q": 18,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 13,
+          "l": 5,
+          "c": 1,
+          "q": 22,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 14,
+          "l": 5,
+          "c": 1,
+          "q": 26,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 15,
+          "l": 2,
+          "c": 1,
+          "q": 27,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 16,
+          "l": 2,
+          "c": 1,
+          "q": 28,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 17,
+          "l": 1,
+          "c": 1,
+          "q": 28,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 18,
+          "l": 1,
+          "c": 1,
+          "q": 28,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 19,
+          "l": 3,
+          "c": 1,
+          "q": 30,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 20,
+          "l": 3,
+          "c": 1,
+          "q": 32,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 21,
+          "l": 5,
+          "c": 1,
+          "q": 36,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 22,
+          "l": 5,
+          "c": 1,
+          "q": 40,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 23,
+          "l": 2,
+          "c": 1,
+          "q": 41,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 24,
+          "l": 2,
+          "c": 1,
+          "q": 42,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 25,
+          "l": 1,
+          "c": 1,
+          "q": 42,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 26,
+          "l": 1,
+          "c": 1,
+          "q": 42,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 27,
+          "l": 3,
+          "c": 1,
+          "q": 44,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 28,
+          "l": 3,
+          "c": 1,
+          "q": 46,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 29,
+          "l": 5,
+          "c": 1,
+          "q": 50,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 30,
+          "l": 5,
+          "c": 1,
+          "q": 54,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 31,
+          "l": 2,
+          "c": 1,
+          "q": 55,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 32,
+          "l": 2,
+          "c": 1,
+          "q": 56,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 33,
+          "l": 1,
+          "c": 1,
+          "q": 56,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 34,
+          "l": 1,
+          "c": 1,
+          "q": 56,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 35,
+          "l": 3,
+          "c": 1,
+          "q": 58,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 36,
+          "l": 3,
+          "c": 1,
+          "q": 60,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 37,
+          "l": 5,
+          "c": 1,
+          "q": 64,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 38,
+          "l": 5,
+          "c": 1,
+          "q": 68,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 39,
+          "l": 2,
+          "c": 1,
+          "q": 69,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 40,
+          "l": 2,
+          "c": 1,
+          "q": 70,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 41,
+          "l": 1,
+          "c": 1,
+          "q": 70,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 42,
+          "l": 1,
+          "c": 1,
+          "q": 70,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 43,
+          "l": 3,
+          "c": 1,
+          "q": 72,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 44,
+          "l": 3,
+          "c": 1,
+          "q": 74,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 45,
+          "l": 5,
+          "c": 1,
+          "q": 78,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 46,
+          "l": 5,
+          "c": 1,
+          "q": 82,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 47,
+          "l": 2,
+          "c": 1,
+          "q": 83,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 48,
+          "l": 2,
+          "c": 1,
+          "q": 84,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 49,
+          "l": 1,
+          "c": 1,
+          "q": 84,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 50,
+          "l": 1,
+          "c": 1,
+          "q": 84,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 51,
+          "l": 3,
+          "c": 1,
+          "q": 86,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 52,
+          "l": 3,
+          "c": 1,
+          "q": 88,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 53,
+          "l": 5,
+          "c": 1,
+          "q": 92,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 54,
+          "l": 5,
+          "c": 1,
+          "q": 96,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 55,
+          "l": 2,
+          "c": 1,
+          "q": 97,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 56,
+          "l": 2,
+          "c": 1,
+          "q": 98,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 57,
+          "l": 1,
+          "c": 1,
+          "q": 98,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 58,
+          "l": 1,
+          "c": 1,
+          "q": 98,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 59,
+          "l": 3,
+          "c": 1,
+          "q": 100,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 60,
+          "l": 3,
+          "c": 1,
+          "q": 102,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 61,
+          "l": 5,
+          "c": 1,
+          "q": 106,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 62,
+          "l": 5,
+          "c": 1,
+          "q": 110,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 63,
+          "l": 2,
+          "c": 1,
+          "q": 111,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 64,
+          "l": 2,
+          "c": 1,
+          "q": 112,
+          "predicted": null,
+          "used": 1
+        }
+      ]
+    },
+    "adaptive": {
+      "peak": 6,
+      "final": 0,
+      "backlogArea": 84,
+      "capacityBudget": 228,
+      "trace": [
+        {
+          "t": 1,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 2,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 3,
+          "l": 3,
+          "c": 1,
+          "q": 2,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 4,
+          "l": 3,
+          "c": 2,
+          "q": 3,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 5,
+          "l": 5,
+          "c": 3,
+          "q": 5,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 6,
+          "l": 5,
+          "c": 4,
+          "q": 6,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 7,
+          "l": 2,
+          "c": 5,
+          "q": 3,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 8,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 9,
+          "l": 1,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 10,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 11,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 12,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 13,
+          "l": 5,
+          "c": 3,
+          "q": 2,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 14,
+          "l": 5,
+          "c": 4,
+          "q": 3,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 15,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 16,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 17,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 18,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 19,
+          "l": 3,
+          "c": 2,
+          "q": 1,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 20,
+          "l": 3,
+          "c": 3,
+          "q": 1,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 21,
+          "l": 5,
+          "c": 4,
+          "q": 2,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 22,
+          "l": 5,
+          "c": 5,
+          "q": 2,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 23,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 24,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 25,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 26,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 27,
+          "l": 3,
+          "c": 1,
+          "q": 2,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 28,
+          "l": 3,
+          "c": 2,
+          "q": 3,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 29,
+          "l": 5,
+          "c": 3,
+          "q": 5,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 30,
+          "l": 5,
+          "c": 4,
+          "q": 6,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 31,
+          "l": 2,
+          "c": 5,
+          "q": 3,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 32,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 33,
+          "l": 1,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 34,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 35,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 36,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 37,
+          "l": 5,
+          "c": 3,
+          "q": 2,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 38,
+          "l": 5,
+          "c": 4,
+          "q": 3,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 39,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 40,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 41,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 42,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 43,
+          "l": 3,
+          "c": 2,
+          "q": 1,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 44,
+          "l": 3,
+          "c": 3,
+          "q": 1,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 45,
+          "l": 5,
+          "c": 4,
+          "q": 2,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 46,
+          "l": 5,
+          "c": 5,
+          "q": 2,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 47,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 48,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 49,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 50,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 51,
+          "l": 3,
+          "c": 1,
+          "q": 2,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 52,
+          "l": 3,
+          "c": 2,
+          "q": 3,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 53,
+          "l": 5,
+          "c": 3,
+          "q": 5,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 54,
+          "l": 5,
+          "c": 4,
+          "q": 6,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 55,
+          "l": 2,
+          "c": 5,
+          "q": 3,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 56,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 57,
+          "l": 1,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 58,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 59,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 60,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 61,
+          "l": 5,
+          "c": 3,
+          "q": 2,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 62,
+          "l": 5,
+          "c": 4,
+          "q": 3,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 63,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 64,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 2
+        }
+      ]
+    },
+    "anticipatory": {
+      "peak": 6,
+      "final": 0,
+      "backlogArea": 19,
+      "capacityBudget": 236,
+      "trace": [
+        {
+          "t": 1,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 2,
+          "l": 1,
+          "c": 1,
+          "q": 0,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 3,
+          "l": 3,
+          "c": 1,
+          "q": 2,
+          "predicted": null,
+          "used": 1
+        },
+        {
+          "t": 4,
+          "l": 3,
+          "c": 2,
+          "q": 3,
+          "predicted": null,
+          "used": 2
+        },
+        {
+          "t": 5,
+          "l": 5,
+          "c": 3,
+          "q": 5,
+          "predicted": null,
+          "used": 3
+        },
+        {
+          "t": 6,
+          "l": 5,
+          "c": 4,
+          "q": 6,
+          "predicted": null,
+          "used": 4
+        },
+        {
+          "t": 7,
+          "l": 2,
+          "c": 5,
+          "q": 3,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 8,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": null,
+          "used": 5
+        },
+        {
+          "t": 9,
+          "l": 1,
+          "c": 5,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 10,
+          "l": 1,
+          "c": 4,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 11,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 12,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 13,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 14,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 15,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 16,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 17,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 18,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 19,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 20,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 21,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 22,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 23,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 24,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 25,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 26,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 27,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 28,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 29,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 30,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 31,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 32,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 33,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 34,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 35,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 36,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 37,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 38,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 39,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 40,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 41,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 42,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 43,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 44,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 45,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 46,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 47,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 48,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 49,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 50,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 51,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 52,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 53,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 54,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 55,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 56,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 57,
+          "l": 1,
+          "c": 3,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 58,
+          "l": 1,
+          "c": 2,
+          "q": 0,
+          "predicted": 1,
+          "used": 1
+        },
+        {
+          "t": 59,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 60,
+          "l": 3,
+          "c": 3,
+          "q": 0,
+          "predicted": 3,
+          "used": 3
+        },
+        {
+          "t": 61,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 62,
+          "l": 5,
+          "c": 5,
+          "q": 0,
+          "predicted": 5,
+          "used": 5
+        },
+        {
+          "t": 63,
+          "l": 2,
+          "c": 5,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        },
+        {
+          "t": 64,
+          "l": 2,
+          "c": 4,
+          "q": 0,
+          "predicted": 2,
+          "used": 2
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Known period eight chosen in advance; no learned period or unpredictable workload validation.",
+    "Reservation can increase capacity budget; no general superiority claim.",
+    "Scalar proxy, not physical waves or autonomous recursive self-improvement."
+  ]
+}
