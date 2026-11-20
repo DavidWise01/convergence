@@ -1,0 +1,80 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A7",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A6"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Split quadratic plane Q(x,y)=xy over odd prime field. Classical dual pair O(U) x SL2 in Sp4. On functions on U, orthogonal pullbacks commute with Fourier kernel and quadratic phase because B and Q are preserved. Orbit sizes 1,2(p-1), and p-1 for each nonzero norm. Four one-dimensional O(U) character multiplicity dimensions p+1,1,(p+1)/2,(p+1)/2. Exact Fourier-square parity via exponent histograms.",
+  "retrieval_log": [
+    {
+      "surface": "Local Python execution",
+      "results": [
+        [
+          3,
+          444,
+          4,
+          [
+            4,
+            1,
+            2,
+            2
+          ]
+        ],
+        [
+          5,
+          5828,
+          6,
+          [
+            6,
+            1,
+            3,
+            3
+          ]
+        ],
+        [
+          7,
+          31804,
+          8,
+          [
+            8,
+            1,
+            4,
+            4
+          ]
+        ],
+        [
+          11,
+          309884,
+          12,
+          [
+            12,
+            1,
+            6,
+            6
+          ]
+        ]
+      ],
+      "total": 347960
+    }
+  ],
+  "claims": [
+    "Exact Q and B invariance, orbit structure, signed character dimensions and Fourier square checks. Trivial and determinant multiplicity spaces differ."
+  ],
+  "hypotheses": [
+    "Determine SL2 irreducible decomposition of these multiplicity spaces and compare with stable-range theta correspondence."
+  ],
+  "ancestry_status": "UNKNOWN; standard finite dual pair selected after target inspection",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A6"
+  ],
+  "limitations": [
+    "No full normalized group representation relations or irreducibility tests; no global automorphic theta lift, RH proof, or source ancestry established."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a7-dual-pair.py"
+}
