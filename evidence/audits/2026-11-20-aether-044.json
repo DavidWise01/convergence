@@ -1,0 +1,172 @@
+{
+  "id": "AETHER-044",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-043 (conversation)",
+  "notation": "-CMB | CMB | +CMB; ~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds (separate angular register)",
+  "model": "Three lumped thermal nodes, unit heat capacities in arbitrary energy units/K, k=.08 per step, reference 2.7255 K, initial +/-1 K. Active branch pumps cold directly to hot with COP .5 and max work .16 per step; hot node thermostatic external sink removes excess. Passive branch has neither pump nor sink. Casimir, Ice IX, Au and Ag are conceptual labels only; pressure and material properties not modeled.",
+  "results": {
+    "passive": [
+      {
+        "t": 0,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 0,
+        "removed": 0
+      },
+      {
+        "t": 1,
+        "T": [
+          1.8054999999999999,
+          2.7255,
+          3.6454999999999997
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      },
+      {
+        "t": 8,
+        "T": [
+          2.2122811268624383,
+          2.7255,
+          3.2387188731375613
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      },
+      {
+        "t": 16,
+        "T": [
+          2.4621063882554113,
+          2.7255,
+          2.9888936117445883
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      },
+      {
+        "t": 32,
+        "T": [
+          2.656123805292141,
+          2.7255,
+          2.7948761947078586
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      },
+      {
+        "t": 64,
+        "T": [
+          2.720686943607857,
+          2.7255,
+          2.7303130563921427
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      },
+      {
+        "t": 128,
+        "T": [
+          2.7254768344881657,
+          2.7255,
+          2.725523165511834
+        ],
+        "work": 0,
+        "removed": 0,
+        "balance": 0
+      }
+    ],
+    "active": [
+      {
+        "t": 0,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 0,
+        "removed": 0
+      },
+      {
+        "t": 1,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 0.16,
+        "removed": 0.16000000000000014,
+        "balance": 1.3877787807814457e-16
+      },
+      {
+        "t": 8,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 1.28,
+        "removed": 1.2800000000000011,
+        "balance": 1.1102230246251565e-15
+      },
+      {
+        "t": 16,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 2.56,
+        "removed": 2.5600000000000023,
+        "balance": 2.220446049250313e-15
+      },
+      {
+        "t": 32,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 5.120000000000002,
+        "removed": 5.1200000000000045,
+        "balance": 2.6645352591003757e-15
+      },
+      {
+        "t": 64,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 10.240000000000006,
+        "removed": 10.240000000000009,
+        "balance": 3.552713678800501e-15
+      },
+      {
+        "t": 128,
+        "T": [
+          1.7254999999999998,
+          2.7255,
+          3.7255
+        ],
+        "work": 20.480000000000015,
+        "removed": 20.480000000000018,
+        "balance": 3.552713678800501e-15
+      }
+    ]
+  },
+  "limits": [
+    "Idealized dimensionless time, chosen conductance and COP; no cryogenic device feasibility implied.",
+    "Hot external sink necessary in this model; no free energy.",
+    "Pressure and actual thermoelectric material coefficients untested.",
+    "Not physical Planck foam."
+  ]
+}
