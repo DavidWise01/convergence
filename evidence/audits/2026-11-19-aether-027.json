@@ -1,0 +1,803 @@
+{
+  "id": "AETHER-027",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-026",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "Four integer amplitudes initially [4,4,4,4]. Each iteration transfers one unit within one opposing pair, alternating pairs, reversing direction every eight iterations. Source capped at available amplitude. Corrected branch applies prior SeeSaw step after disturbance; control branch does not. Imbalance L1 across opposite pairs.",
+  "result": {
+    "iterations": 64,
+    "conserved": true,
+    "maxPre": 2,
+    "maxPost": 0,
+    "maxControl": 16,
+    "final": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "controlFinal": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "trace": [
+      {
+        "t": 1,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 2,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 3,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 4,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 5,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 6,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 7,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 8,
+        "pre": 2,
+        "post": 0,
+        "control": 16,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 9,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 10,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 11,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 12,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 13,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 14,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 15,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 16,
+        "pre": 2,
+        "post": 0,
+        "control": 0,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 17,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 18,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 19,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 20,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 21,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 22,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 23,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 24,
+        "pre": 2,
+        "post": 0,
+        "control": 16,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 25,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 26,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 27,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 28,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 29,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 30,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 31,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 32,
+        "pre": 2,
+        "post": 0,
+        "control": 0,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 33,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 34,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 35,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 36,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 37,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 38,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 39,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 40,
+        "pre": 2,
+        "post": 0,
+        "control": 16,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 41,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 42,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 43,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 44,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 45,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 46,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 47,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 48,
+        "pre": 2,
+        "post": 0,
+        "control": 0,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 49,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 50,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 51,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 52,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 53,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 54,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 55,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 56,
+        "pre": 2,
+        "post": 0,
+        "control": 16,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 57,
+        "pre": 2,
+        "post": 0,
+        "control": 14,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 58,
+        "pre": 2,
+        "post": 0,
+        "control": 12,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 59,
+        "pre": 2,
+        "post": 0,
+        "control": 10,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 60,
+        "pre": 2,
+        "post": 0,
+        "control": 8,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 61,
+        "pre": 2,
+        "post": 0,
+        "control": 6,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 62,
+        "pre": 2,
+        "post": 0,
+        "control": 4,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 63,
+        "pre": 2,
+        "post": 0,
+        "control": 2,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "t": 64,
+        "pre": 2,
+        "post": 0,
+        "control": 0,
+        "state": [
+          4,
+          4,
+          4,
+          4
+        ]
+      }
+    ]
+  },
+  "invariant": "Bounded recurring redistribution can be corrected without loss of total amplitude when correction matches disturbance capacity.",
+  "limits": [
+    "Chosen deterministic conservative disturbance; no arbitrary disturbance guarantee.",
+    "No timing delay, external amplitude loss, or physical energy dynamics tested.",
+    "Control experiences same requested schedule but realized transfer can be capped."
+  ]
+}
