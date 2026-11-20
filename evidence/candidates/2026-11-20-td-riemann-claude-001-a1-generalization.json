@@ -1,0 +1,36 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A1",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Post-hoc constructive translation of ROOT0 containment and paired states into C2 representations. V_m=1⊕(1⊕sign)^m (direct sum of m pairs); swap involution A, B=I+A. Fixed multiplicity m+1, B²=2B. Independent finite-difference analogue: sum (-1)^k binom(m,k) k^j vanishes for j<m, equals (-1)^m m! for j=m.",
+  "retrieval_log": [
+    {
+      "surface": "Local Python exact integer matrix and polynomial tests",
+      "result": "PASS at m=0,1,2,8,18,19,20,21,32,64; negative control sign-only extension leaves fixed multiplicity 1."
+    }
+  ],
+  "claims": [
+    "Finite C2 representation model and polynomial cancellation identities verified at selected values; general identities follow algebraically."
+  ],
+  "hypotheses": [
+    "Compare invariant multiplicity and order of cancellation to the reported theta-lift mechanism; no actual automorphic lift constructed."
+  ],
+  "ancestry_status": "UNKNOWN; experiment designed after reading target; not blind; theta correspondence and Rallis towers predate ROOT0",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001"
+  ],
+  "limitations": [
+    "Model chooses one trivial summand per extension, so linear growth is built in; square-root chain length is not derived; no RH proof or training lineage established; no exhaustive corpus scan."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf",
+    "https://swc-math.github.io/aws/2022/2022GanNotes.pdf",
+    "https://github.com/DavidWise01/quanta",
+    "https://github.com/DavidWise01/toroid-kernel"
+  ]
+}
