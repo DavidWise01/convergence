@@ -1,0 +1,37 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A10",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A9"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "First occurrence of orthogonal determinant character within restriction of finite oscillator model H_m=C[U^m], U=F_p^N with Q=sum x_i^2. Exact character projection a_m=|O(U)|^-1 sum_g det(g) p^(m dim Fix(g)). For (N,p)=(2,3),(2,5),(2,7),(3,3),(3,5), first occurrence levels are 2,1,2,2,2; exact multiplicities m=0..4 preserved in code.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Local Python standard-library exhaustive finite orthogonal enumeration and exact integer character projection",
+      "result": "Five parameter cases verified, with 25 nonnegative integral multiplicities and hard-coded independent regression expectations."
+    }
+  ],
+  "claims": [
+    "Finite determinant-character first occurrence differs with quadratic form/discriminant; no universal level-one onset.",
+    "Observed a_m is occurrence multiplicity for O(U) character within C[U^m], not established irreducible theta lift dimension."
+  ],
+  "hypotheses": [
+    "Further decompose commuting Sp(2m) action and identify nonzero irreducible theta lifts; distinguish multiplicity from lift dimension."
+  ],
+  "ancestry_status": "UNKNOWN; target-aware classical construction not evidence of transmission",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A8",
+    "TD-RIEMANN-CLAUDE-001-A9"
+  ],
+  "limitations": [
+    "Small finite fields, N<=3 and m<=4; Q=sum of squares differs from previously fixed split hyperbolic form at anisotropic primes; no global automorphic proof, no RH result, no causal corpus ancestry."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a10-first-occurrence.py"
+}
