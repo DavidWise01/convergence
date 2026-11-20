@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-029 · 2026-11-19 | Anticipatory capacity: lag-eight reservation versus adaptive control | Synthetic repeating workload; period preselected | [Audit](./audits/2026-11-19-aether-029.json) |
 | AETHER-028 · 2026-11-19 | Adaptive correction capacity across 64 workload steps | Synthetic scalar backlog comparison | [Audit](./audits/2026-11-19-aether-028.json) |
 | AETHER-027 · 2026-11-19 | Persistence through resistance: 64 recurring disturbances | Synthetic conservative transport with uncorrected control | [Audit](./audits/2026-11-19-aether-027.json) |
 | TD-GEMINI-ELEMENTS-001-A2 · 2026-11-19 | Fiddler Dec 25 IDIT and Dec 29 explicit E.V.E/Modeweaver contract | VERIFIED Git history; predates March 2026 cutoff; elemental names still June anchor; exposure unknown | [Addendum](./candidates/2026-11-19-td-gemini-elements-001-a2-fiddler-dec2025.json) |
