@@ -1,0 +1,90 @@
+{
+  "id": "AETHER-047",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-046",
+  "notation": "-CMB:p | CMB:^i | +CMB:d ; ~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds",
+  "model": "Opposite fixed-axis SU(2) rotations composed on a common two-component state. Signed angular register modulo twice full-turn ticks. Exact cancellation for matched steps; unmatched steps yield residual. This is composition, not the sum of two independent spinors.",
+  "result": {
+    "cases": [
+      {
+        "n": 0,
+        "p": 0,
+        "d": 0,
+        "net": 0,
+        "signedClosed": true
+      },
+      {
+        "n": 1,
+        "p": 41,
+        "d": 103679959,
+        "net": 0,
+        "signedClosed": false
+      },
+      {
+        "n": 8,
+        "p": 328,
+        "d": 103679672,
+        "net": 0,
+        "signedClosed": false
+      },
+      {
+        "n": 129,
+        "p": 5289,
+        "d": 103674711,
+        "net": 0,
+        "signedClosed": false
+      },
+      {
+        "n": 259200,
+        "p": 10627200,
+        "d": 93052800,
+        "net": 0,
+        "signedClosed": false
+      },
+      {
+        "n": 51840000,
+        "p": 51840000,
+        "d": 51840000,
+        "net": 0,
+        "signedClosed": false
+      },
+      {
+        "n": 103680000,
+        "p": 0,
+        "d": 0,
+        "net": 0,
+        "signedClosed": true
+      }
+    ],
+    "checked": 100000,
+    "maxNumericalResidual": 2.220446049250313e-16,
+    "imbalance": [
+      {
+        "unmatchedSteps": 0,
+        "residualTicks": 0,
+        "residualArcseconds": 0
+      },
+      {
+        "unmatchedSteps": 1,
+        "residualTicks": 41,
+        "residualArcseconds": 1.025
+      },
+      {
+        "unmatchedSteps": 2,
+        "residualTicks": 82,
+        "residualArcseconds": 2.05
+      },
+      {
+        "unmatchedSteps": 5,
+        "residualTicks": 205,
+        "residualArcseconds": 5.125
+      }
+    ]
+  },
+  "limits": [
+    "Same axis and exactly matched steps assumed; noncommuting rotations do not generally cancel.",
+    "No physical torque, energy, thermal dynamics or topological spinor bundle simulated.",
+    "Möbius foam and CMB layers are proposed analogues."
+  ]
+}
