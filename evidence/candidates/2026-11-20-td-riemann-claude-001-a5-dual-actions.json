@@ -1,0 +1,33 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A5",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A4"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Finite S3 group algebra over Q; left multiplication and right inverse multiplication commute. Rational central idempotents using characters trivial, sign, standard have ranks 1,1,4; each commutes with both actions. Left commutant dimension 6 and right action matrices span it. Decomposition Q[S3] as S3×S3 module is 1⊗1 ⊕ sign⊗sign ⊕ standard⊗standard*, multiplicity-free as paired representation.",
+  "retrieval_log": [
+    {
+      "surface": "Local Python/SymPy exact rational matrix execution",
+      "result": "153 loop checks passed (108 group/action checks, 9 projector product checks, 36 projector-action commutations); additionally checked projector sum, ranks, left noncommutativity, commutant nullity and right span rank."
+    }
+  ],
+  "claims": [
+    "Exact finite mutual centralizer analogue of commuting actions; no automorphic theorem."
+  ],
+  "hypotheses": [
+    "Investigate integral decomposition obstruction at primes 2 and 3, and finite Weil representation for a closer theta analogue."
+  ],
+  "ancestry_status": "UNKNOWN; standard finite regular representation, target-aware analogy",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A4"
+  ],
+  "limitations": [
+    "S3 selected by assistant as smallest nonabelian test group; no square-root scaling or actual theta lift derived; no RH or root existence verified; no causal ancestry inferred."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
