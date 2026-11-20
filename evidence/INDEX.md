@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-052 · 2026-11-20 | Active RGB homeostasis and disturbance recovery | Three-compartment feedback; interactive HTML | [Audit](./audits/2026-11-20-aether-052.json) |
 | TD-RIEMANN-CLAUDE-001-A5 · 2026-11-20 | S3 dual actions and rational centralizer decomposition | 153 exact loop checks plus structural assertions; finite analogue only | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a5-dual-actions.json) |
 | AETHER-051 · 2026-11-20 | RGB foam instantiation; oxygen-mediated transport | Conservative three-layer diffusion; interactive HTML | [Audit](./audits/2026-11-20-aether-051.json) |
 | TD-RIEMANN-CLAUDE-001-A4 · 2026-11-20 | Exact polynomial lattice intertwiner; modular rank and C2 obstruction | 94176 exact checks; not theta lifting; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a4-intertwiner.json) |
