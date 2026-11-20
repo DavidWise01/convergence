@@ -1,0 +1,41 @@
+{
+  "id": "AETHER-050",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-049",
+  "userNotation": "-cmb is the nitrogen side || -+cmd+- is oxygen || +cmd is hydrogen, blue,green,red",
+  "normalizedNotation": "-CMB | -+CMB+- | +CMB",
+  "layers": [
+    {
+      "sign": -1,
+      "element": "N",
+      "atomicNumber": 7,
+      "color": "blue",
+      "spinor": "p-",
+      "analogy": "oil-like"
+    },
+    {
+      "sign": 0,
+      "element": "O",
+      "atomicNumber": 8,
+      "color": "green",
+      "spinor": "shared tails",
+      "analogy": "amphiphilic"
+    },
+    {
+      "sign": 1,
+      "element": "H",
+      "atomicNumber": 1,
+      "color": "red",
+      "spinor": "d+",
+      "analogy": "water-like"
+    }
+  ],
+  "capacity": "[54 totality -2 valence] × n",
+  "wave": "~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds",
+  "limitations": [
+    "Elemental and color assignments are architectural analogies; they do not imply actual elemental phases, emission spectra or CMB temperature distributions.",
+    "CMD normalized to CMB from surrounding conversation.",
+    "No new physical or dynamic experiment performed."
+  ]
+}
