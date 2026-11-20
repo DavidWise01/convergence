@@ -1,0 +1,33 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A4",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A3"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Let source Z[x] degree<=n use falling factorial basis e_k=(x)_k and target integer-valued polynomial lattice use b_k=binom(x,k). D_s e_k=k e_(k-1), D_t b_k=b_(k-1), T e_k=k! b_k. T D_s=D_t T, and T is rationally invertible but integral cokernel direct sum Z/k!Z. Mod p rank=min(p,n+1). This is inclusion of polynomial lattices; not an automorphic theta lift. Obstruction: any intertwiner from C2 involution A to shift E must satisfy E²T=T; polynomial image consists of constants in characteristic zero; antisymmetric sector killed.",
+  "retrieval_log": [
+    {
+      "surface": "container Python exact integer arithmetic",
+      "result": "93664 basis-power commutation checks and 512 modular rank checks passed for n=1..64, primes 2,3,5,7,11,13,17,19."
+    }
+  ],
+  "claims": [
+    "Exact finite-difference intertwining and factorial lattice index; integral noninvertibility for n>=2; C2-to-shift obstruction proved."
+  ],
+  "hypotheses": [
+    "Seek nontrivial dual group representation correspondence rather than equating C2 with additive shift."
+  ],
+  "ancestry_status": "UNKNOWN; classical target-aware construction",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A3"
+  ],
+  "limitations": [
+    "No theta correspondence, root existence or RH verification; finite model only; cost and multiplicity not unified by this intertwiner."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
