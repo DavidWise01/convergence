@@ -1,0 +1,34 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A8",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A7"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Split hyperbolic tower Q_n=sum x_i y_i. Norm fiber counts N(0)=p^(2n-1)+(p-1)p^(n-1), N(t!=0)=p^(2n-1)-p^(n-1). Difference p^n=sqrt(X), X=p^(2n). By Witt extension the orthogonal orbit count is p+1 at fixed p independent of n>=1; hence fiber imbalance is NOT growing trivial character multiplicity.",
+  "retrieval_log": [
+    {
+      "surface": "Container Python exact integer convolution and brute-force checks",
+      "result": "406 assertions passed across 40 prime-level combinations, p=3,5,7,11,19 and n=1..8. Six brute-force cross-checks."
+    }
+  ],
+  "claims": [
+    "Exact square-root norm-fiber residual; constant orthogonal orbit multiplicity along fixed-prime tower."
+  ],
+  "hypotheses": [
+    "Test normalized finite oscillator action on invariant orbit-sum basis and actual SL2 multiplicities."
+  ],
+  "ancestry_status": "UNKNOWN; target-aware classical split quadratic tower",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A7"
+  ],
+  "limitations": [
+    "Norm-fiber imbalance not automorphic multiplicity; no theta-lift chain or RH proof verified; orbit-count theorem analytic, not enumerated group action for higher levels."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a8-tower.py"
+}
