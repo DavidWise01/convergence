@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-055 · 2026-11-20 | Toroidal intersection gates | Analytic intersections; conservative static exchange graph; HTML | [Audit](./audits/2026-11-20-aether-055.json) |
 | TD-RIEMANN-CLAUDE-001-A8 · 2026-11-20 | Hyperbolic tower norm-fiber square-root residual | 406 exact assertions; fixed-prime orbit multiplicity constant | [Record](./candidates/2026-11-20-td-riemann-claude-001-a8-tower.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a8-tower.py) |
 | AETHER-054 · 2026-11-20 | Fourfold toroidal winding and counterrotation | Parametric 3D closure test; interactive HTML | [Audit](./audits/2026-11-20-aether-054.json) |
 | TD-RIEMANN-CLAUDE-001-A7 · 2026-11-20 | Split orthogonal–symplectic dual pair and character multiplicities | 347960 exact checks; finite model only | [Record](./candidates/2026-11-20-td-riemann-claude-001-a7-dual-pair.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a7-dual-pair.py) |
