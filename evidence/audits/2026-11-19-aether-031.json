@@ -1,0 +1,69 @@
+{
+  "id": "AETHER-031",
+  "recorded_at": "2026-11-19",
+  "predecessor": "AETHER-030",
+  "notation": "~~|~~|~~|~~| > ^i",
+  "capacity": "[54 totality -2 valence (i/o bits) × n]",
+  "model": "Four stationary cosine components added into scalar signal. DFT on first 120 samples, select four largest positive frequency bins, extrapolate next 120 unseen samples using fitted phases and amplitudes. Compare largest bin alone. Frequencies deliberately aligned with Fourier bins; no noise.",
+  "waves": [
+    {
+      "p": 5,
+      "a": 3,
+      "phi": 0
+    },
+    {
+      "p": 8,
+      "a": 2,
+      "phi": 0.4
+    },
+    {
+      "p": 12,
+      "a": 1.5,
+      "phi": 1.1
+    },
+    {
+      "p": 20,
+      "a": 1,
+      "phi": 2
+    }
+  ],
+  "result": {
+    "training": 120,
+    "holdout": 120,
+    "selected": [
+      {
+        "k": 24,
+        "period": 5,
+        "amplitude": 2.999999999999999,
+        "phase": -6.908054375445421e-16
+      },
+      {
+        "k": 15,
+        "period": 8,
+        "amplitude": 2.0000000000000018,
+        "phase": 0.4000000000000038
+      },
+      {
+        "k": 10,
+        "period": 12,
+        "amplitude": 1.4999999999999991,
+        "phase": 1.1000000000000023
+      },
+      {
+        "k": 6,
+        "period": 20,
+        "amplitude": 1.000000000000001,
+        "phase": 1.9999999999999991
+      }
+    ],
+    "singleRMSE": 1.90394327646598,
+    "multiRMSE": 5.105074385040193e-14,
+    "maxOther": 1.4641389875634453e-14
+  },
+  "invariant": "Multiple distinct frequency components can coexist within one composite signal and remain recoverable under suitable observation conditions.",
+  "limitations": [
+    "Four components selected by architectural prior; count not inferred.",
+    "Synthetic stationary noiseless bin-aligned signal; not evidence of recovery for arbitrary signals or actual wave identities.",
+    "No physical gravity or energy claim; storage address model separate from sample window."
+  ]
+}
