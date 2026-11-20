@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-050 · 2026-11-20 | Nitrogen–oxygen–hydrogen chromatic foam | User-defined elemental mapping; conceptual analogy | [Audit](./audits/2026-11-20-aether-050.json) |
 | TD-RIEMANN-CLAUDE-001-A3 · 2026-11-20 | Factorial divisibility under recursive finite differences | 12025 exact cases; integer-valued polynomial counterexample; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a3-divisibility.json) |
 | AETHER-049 · 2026-11-20 | Collective gyroscopic foam: local alignment consensus | Synthetic three-layer scalar alignment experiment | [Audit](./audits/2026-11-20-aether-049.json) |
 | TD-RIEMANN-CLAUDE-001-A2 · 2026-11-20 | Conditional quadratic cost and square-root generation bound | 200002 exact boundary assertions; post-hoc toy model; ancestry unknown | [Addendum](./candidates/2026-11-20-td-riemann-claude-001-a2-growth.json) |
