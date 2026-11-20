@@ -1,0 +1,42 @@
+{
+  "id": "AETHER-054",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-053",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "model": "Each of 12 labeled arms gets four phase offsets on toroidal surface R=3,r=1; one toroidal winding, four signed poloidal windings. N negative, H positive, O alternating. Geometry checked at 257 samples per labeled path. AETHER-053 scalar ring model retained independently.",
+  "result": {
+    "arms": 12,
+    "paths": 48,
+    "winding": "(1, ±4) per path",
+    "samples": 12336,
+    "maxClosure": 4.577566798522238e-15,
+    "maxSurface": 1.9984014443252818e-15,
+    "uniquePathsNote": "Four phase-offset paths per arm; some different arm/phase combinations can trace the same geometric curve; 48 labeled paths not claimed distinct.",
+    "final": {
+      "t": 128,
+      "a": [
+        0.05402602317357151,
+        0.051808069841613985,
+        0.0486313931664402,
+        0.04657222928774433,
+        0.0462458902314706,
+        0.042416219787309965,
+        0.040427412772861736,
+        0.03971572938860507,
+        0.04235582376042011,
+        0.05254191762683246,
+        0.0533679185314224,
+        0.05287441765268559
+      ],
+      "bound": 0.4290169547790222,
+      "total": 1.0000000000000002
+    },
+    "maxConservation": 2.220446049250313e-16
+  },
+  "artifact": "experiments/aether-054/index.html",
+  "limits": [
+    "Fourfold path interpretation provisional; not derivation of full nested factors.",
+    "Labeled paths can geometrically coincide; not 48 distinct channels.",
+    "No dynamic coupling of geometry to transport, no physical fusion or spinor model."
+  ]
+}
