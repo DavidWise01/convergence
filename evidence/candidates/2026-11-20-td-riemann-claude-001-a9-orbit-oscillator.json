@@ -1,0 +1,66 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A9",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A8"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Constructed normalized Fourier F and quadratic phase T on O(H^n)-orbit-constant functions, using finite norm-orbit partitions and complex cyclotomic arithmetic. The p+1-dimensional orbit representation splits into a jointly fixed line plus p-dimensional complementary irreducible sector in six tested instances. Explicit fixed function (1+p^(n-1))*delta_0 + indicator_nonzero_isotropic. F^2=I and (FT)^3=I on restricted orbit sector; joint commutant complex dimension 2.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Local Python NumPy numerical execution",
+      "tested": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "max_observed_residual_less_than": 3e-14,
+      "all_assertions_passed": true
+    }
+  ],
+  "claims": [
+    "Six tested orbit-space decompositions numerically verified; a fixed vector is exhibited algebraically; irreducibility of p-dimensional complement inferred from commutant dimension 2 and unitarity."
+  ],
+  "hypotheses": [
+    "Test the larger O(U)-isotypic decomposition and first occurrence of theta lifts; do not equate p-dimensional summand with square-root multiplicity."
+  ],
+  "ancestry_status": "UNKNOWN; target-aware classical construction, no demonstrated copying/training path",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A8"
+  ],
+  "limitations": [
+    "Floating-point tests, not exact symbolic certification",
+    "p fixed as n grows: p+1 is constant; no tower multiplicity growth demonstrated",
+    "No global theta lift or RH/GRH proof",
+    "No exhaustive corpus provenance comparison"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf",
+    "https://doi.org/10.1016/j.ffa.2019.03.007"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a9-orbit-oscillator.py"
+}
