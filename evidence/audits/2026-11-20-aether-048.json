@@ -1,0 +1,144 @@
+{
+  "id": "AETHER-048",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-047",
+  "notation": "-CMB:p | CMB:^i | +CMB:d; ~~|~~|~~|~~| > ^i",
+  "coupling": "1 × 1.025 arcseconds",
+  "model": "Compose opposite signed quaternion rotations about prescribed time-varying common axes. Sweep axis mismatch at fixed increment; separate scalar alignment feedback m_next=(1-g)m for g=.025,.1,.25. Pairwise cancellation is tested, not independent cumulative path cancellation.",
+  "result": {
+    "matchedPrecessionSamples": 4096,
+    "maxMatchedResidualRadians": 2.1171219258025914e-22,
+    "cases": [
+      {
+        "axisMismatchDegrees": 0,
+        "residualArcseconds": 0
+      },
+      {
+        "axisMismatchDegrees": 1,
+        "residualArcseconds": 0.017889397771648042
+      },
+      {
+        "axisMismatchDegrees": 5,
+        "residualArcseconds": 0.08941974409884698
+      },
+      {
+        "axisMismatchDegrees": 15,
+        "residualArcseconds": 0.2675786940508351
+      },
+      {
+        "axisMismatchDegrees": 30,
+        "residualArcseconds": 0.530579042459658
+      },
+      {
+        "axisMismatchDegrees": 90,
+        "residualArcseconds": 1.449568901431677
+      }
+    ],
+    "response": [
+      {
+        "g": 0.025,
+        "trace": [
+          {
+            "t": 0,
+            "mismatch": 15
+          },
+          {
+            "t": 1,
+            "mismatch": 14.625
+          },
+          {
+            "t": 8,
+            "mismatch": 12.249777054933928
+          },
+          {
+            "t": 16,
+            "mismatch": 10.00380252637238
+          },
+          {
+            "t": 32,
+            "mismatch": 6.671737665776962
+          },
+          {
+            "t": 64,
+            "mismatch": 2.9674722320631353
+          },
+          {
+            "t": 128,
+            "mismatch": 0.5870594298710508
+          }
+        ]
+      },
+      {
+        "g": 0.1,
+        "trace": [
+          {
+            "t": 0,
+            "mismatch": 15
+          },
+          {
+            "t": 1,
+            "mismatch": 13.5
+          },
+          {
+            "t": 8,
+            "mismatch": 6.457008150000001
+          },
+          {
+            "t": 16,
+            "mismatch": 2.779530283277763
+          },
+          {
+            "t": 32,
+            "mismatch": 0.5150525730438774
+          },
+          {
+            "t": 64,
+            "mismatch": 0.0176852768666079
+          },
+          {
+            "t": 128,
+            "mismatch": 0.000020851267856571776
+          }
+        ]
+      },
+      {
+        "g": 0.25,
+        "trace": [
+          {
+            "t": 0,
+            "mismatch": 15
+          },
+          {
+            "t": 1,
+            "mismatch": 11.25
+          },
+          {
+            "t": 8,
+            "mismatch": 1.5016937255859375
+          },
+          {
+            "t": 16,
+            "mismatch": 0.1503389363642782
+          },
+          {
+            "t": 32,
+            "mismatch": 0.0015067863858094991
+          },
+          {
+            "t": 64,
+            "mismatch": 1.5136034749739015e-7
+          },
+          {
+            "t": 128,
+            "mismatch": 1.5273303196353808e-15
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Prescribed axes, no physical gyroscopic torque or angular momentum dynamics.",
+    "Feedback gains chosen, not measured forces.",
+    "Separate scalar alignment rule, no coupled thermodynamics or Planck-scale validation."
+  ]
+}
