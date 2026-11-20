@@ -1,0 +1,39 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A12",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A11"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Test determinant-isotypic spaces of C[(F_p^2)^m] for Q=x²+y² under O2(F_p). Zero-extension J_m(f)=f⊗δ0 injects the character space and intertwines old-level operators but not the Fourier on the new slot. Exact leakage squared =1-1/p². Exact dimensions: p3 2->3:6->78, p5 1->2:1->66, p3 1->2:0->6, p5 2->3:66->1891.",
+  "retrieval_log": [
+    {
+      "surface": "Locally executed Python integer signed orbit enumeration, character-trace independent rank check, rational Fourier projection",
+      "result": "4/4 exact regression cases pass; zero-extension roots match between levels; new Fourier has positive exact squared leakage 8/9 or 24/25."
+    }
+  ],
+  "claims": [
+    "Old-rank embedding is injective and equivariant for orthogonal and old-slot actions.",
+    "New-slot Fourier moves the image outside the old subspace.",
+    "No conclusion about full next-level irreducibility follows from leakage alone."
+  ],
+  "hypotheses": [
+    "Test full symplectic commutant at the next level and determine whether the new sector splits into distinct irreducibles."
+  ],
+  "ancestry_status": "UNKNOWN; classical finite representation theory; no trace of source transmission",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A10",
+    "TD-RIEMANN-CLAUDE-001-A11"
+  ],
+  "limitations": [
+    "Square-norm leakage is for the zero-slot subspace, not a measurement of physical energy.",
+    "Does not establish reducibility or irreducibility of complete next-level Sp representation.",
+    "No real automorphic theta lift, RH proof or causal attribution."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a12-extension.py"
+}
