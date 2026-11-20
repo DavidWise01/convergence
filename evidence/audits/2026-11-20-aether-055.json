@@ -1,0 +1,161 @@
+{
+  "id": "AETHER-055",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-054",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "model": "48 labeled curves v=4su+b modulo 1. Opposite signs intersect eight times per pair. Static cross-field pairwise exchange graph; degree-normalized gain .2. All initial state in N.",
+  "result": {
+    "labeledEvents": 4608,
+    "uniqueLocations": 1152,
+    "coincidentPairs": 32,
+    "crossFieldEvents": 4096,
+    "exchangeEdges": 512,
+    "maxIntersectionError": 1.2508129525164263e-14,
+    "runs": [
+      {
+        "enabled": true,
+        "samples": [
+          {
+            "t": 0,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 1,
+            "mass": [
+              0.8000000000000007,
+              0.06666666666666667,
+              0.13333333333333333
+            ],
+            "total": 1.0000000000000007
+          },
+          {
+            "t": 8,
+            "mass": [
+              0.4023094251242183,
+              0.27740928000000015,
+              0.32028129487578105
+            ],
+            "total": 0.9999999999999994
+          },
+          {
+            "t": 16,
+            "mass": [
+              0.3518568631830359,
+              0.32395083410964515,
+              0.3241923027073187
+            ],
+            "total": 0.9999999999999997
+          },
+          {
+            "t": 32,
+            "mass": [
+              0.33617022647592554,
+              0.3330692394582859,
+              0.3307605340657881
+            ],
+            "total": 0.9999999999999996
+          },
+          {
+            "t": 64,
+            "mass": [
+              0.3334408612355224,
+              0.33333312409660837,
+              0.33322601466786883
+            ],
+            "total": 0.9999999999999997
+          },
+          {
+            "t": 128,
+            "mass": [
+              0.3333335027908614,
+              0.3333333333332018,
+              0.3333331638759364
+            ],
+            "total": 0.9999999999999996
+          }
+        ],
+        "maxConservation": 1.3322676295501878e-15
+      },
+      {
+        "enabled": false,
+        "samples": [
+          {
+            "t": 0,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 1,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 8,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 16,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 32,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 64,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          },
+          {
+            "t": 128,
+            "mass": [
+              1,
+              0,
+              0
+            ],
+            "total": 1
+          }
+        ],
+        "maxConservation": 0
+      }
+    ]
+  },
+  "artifact": "experiments/aether-055/index.html",
+  "limits": [
+    "No synchronized moving particle encounters.",
+    "No physical spinor, fusion, thermal or pressure model.",
+    "Coincident labels not distinct physical curves."
+  ]
+}
