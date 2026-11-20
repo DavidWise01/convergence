@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-045 · 2026-11-20 | Antistrophic p/d spinor analogue; weak, medium, strong coupling | Synthetic unitary mixing; no fundamental force identification | [Audit](./audits/2026-11-20-aether-045.json) |
 | AETHER-044 · 2026-11-20 | Thermal foam: passive versus powered gradient | Lumped energy conservation test; pressure unmodeled | [Audit](./audits/2026-11-20-aether-044.json) |
 | AETHER-042 · 2026-11-20 | Three-layer amphiphilic foam and corrected 1.025″ coupling | Conservative diffusion test; analogy not physical proof | [Audit](./audits/2026-11-20-aether-042.json) |
 | AETHER-039 · 2026-11-20 | Six-direction bubble propagation; spatial versus rotational closure | Synthetic quaternion loop tests | [Audit](./audits/2026-11-20-aether-039.json) |
