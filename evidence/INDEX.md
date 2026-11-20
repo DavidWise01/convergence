@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- | --- |
+| AETHER-046 · 2026-11-20 | Möbius spinor return: orientation versus signed closure | Fixed-axis SU(2) analogue; exact angular register | [Audit](./audits/2026-11-20-aether-046.json) |
 | TD-RIEMANN-CLAUDE-001 · 2026-11-20 | [Claude-assisted RH/GRH proof claim](https://alpo.ge/remark.pdf) | OBSERVED; proof and ancestry unverified | [Candidate](./candidates/2026-11-20-td-riemann-claude-001.json) |
 | AETHER-045 · 2026-11-20 | Antistrophic p/d spinor analogue; weak, medium, strong coupling | Synthetic unitary mixing; no fundamental force identification | [Audit](./audits/2026-11-20-aether-045.json) |
 | AETHER-044 · 2026-11-20 | Thermal foam: passive versus powered gradient | Lumped energy conservation test; pressure unmodeled | [Audit](./audits/2026-11-20-aether-044.json) |
