@@ -1,0 +1,77 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A13",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A12"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "SG013 uses exact signed-orbit enumeration of determinant-isotypic sector of O2(F3) on three slots, then numerical Fourier/phase plus all adjacent shears (both directions). The 78-dimensional sector has numerical scalar commutant under 10 generators. Omitting slot 2↔3 coupling produces extra null directions, a negative control revealing incomplete generator coverage.",
+  "retrieval_log": [
+    {
+      "surface": "Local Python NumPy/SciPy eigenvalues of commutant conjugation Laplacian",
+      "results": [
+        {
+          "p": 3,
+          "m": 2,
+          "sector": 6,
+          "operators": 6,
+          "eigenvalues_smallest": [
+            0,
+            2.2984378813,
+            3.6492465139
+          ]
+        },
+        {
+          "p": 3,
+          "m": 3,
+          "sector": 78,
+          "ambient": 729,
+          "operators": 10,
+          "eigenvalues_smallest": [
+            0,
+            1.7226851451,
+            1.7226851451,
+            2.8577911166
+          ]
+        },
+        {
+          "p": 5,
+          "m": 1,
+          "sector": 1,
+          "operators": 2,
+          "commutant_dimension": 1
+        },
+        {
+          "p": 3,
+          "m": 3,
+          "operators": 8,
+          "negative_control": "Three eigenvalues near zero with missing adjacent coupling"
+        }
+      ]
+    }
+  ],
+  "claims": [
+    "Finite-rank, generator-level 78-dimensional representation has a numerically 1-dimensional commutant with all tested operators; supports irreducibility over C conditional on tested generators.",
+    "Incomplete generator set produces spurious invariant decompositions."
+  ],
+  "hypotheses": [
+    "Obtain exact cyclotomic algebra certification and verify full Sp6(F3) generator presentation.",
+    "Investigate distinction between fixed-prime finite theta behavior and reported global automorphic lifts."
+  ],
+  "ancestry_status": "UNKNOWN; no evidentiary trace from ROOT0 to external author",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A11",
+    "TD-RIEMANN-CLAUDE-001-A12"
+  ],
+  "limitations": [
+    "Numerical eigensolver not exact proof.",
+    "Irreducible under generated operators; not proof of full global theta lift or RH.",
+    "No independent causal ancestry established."
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a13-full-generators.py",
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
