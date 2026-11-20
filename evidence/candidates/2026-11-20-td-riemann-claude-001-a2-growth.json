@@ -1,0 +1,35 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A2",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A1"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": "Assume each new generation costs one unit plus one per predecessor. C(m)=m(m+1)/2, maximum m=floor((sqrt(8X+1)-1)/2). Alternative directed pair accounting C(m)=m² gives floor(sqrt(X)); constant marginal cost gives m=X. Combined with A1 invariant multiplicity m+1, this implies square-root scaling under quadratic accounting.",
+  "retrieval_log": [
+    {
+      "surface": "Local Python exact integer arithmetic",
+      "result": "200002 boundary assertions passed: triangular and square budgets for every integer X=0..100000; six additional triangular examples through 1000000."
+    }
+  ],
+  "claims": [
+    "Conditional square-root growth law proved algebraically and tested computationally."
+  ],
+  "hypotheses": [
+    "Compare cost accounting with actual theta-lift estimates when available."
+  ],
+  "ancestry_status": "UNKNOWN; post-hoc model motivated by known target scaling",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001",
+    "TD-RIEMANN-CLAUDE-001-A1"
+  ],
+  "limitations": [
+    "All-pairs cost is newly assumed, not derived from original ROOT0 primitive; X is toy budget, not established as paper's parameter; no theta lift or RH proof verified."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf",
+    "https://github.com/DavidWise01/quanta"
+  ]
+}
