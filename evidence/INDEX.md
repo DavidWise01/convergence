@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG018 · 2026-11-21 | Preregistered transformation fingerprint on cyclic diffusion | 311/311 exact checks; three counterexamples; structural transfer only | [Freeze](./candidates/2026-11-21-sg018-prediction-freeze.json) · [Record](./candidates/2026-11-21-sg018-predictive-fingerprint.json) · [Python](./candidates/2026-11-21-sg018-predictive-fingerprint.py) |
 | AETHER-064 · 2026-11-21 | Experimental response boundary discovery | 91-point sweep, refined transitions, independent arm controls; HTML | [Audit](./audits/2026-11-21-aether-064.json) |
 | TD-CROSSDOMAIN-SG017 · 2026-11-20 | Navier–Stokes scaling vs theta-lift multiplicity; Lean-to-paper distillation | 69 exact rational checks; structural analogy, not proof equivalence | [Record](./candidates/2026-11-20-td-crossdomain-sg017.json) · [Python](./candidates/2026-11-20-td-crossdomain-sg017.py) |
 | TD-MILLENNIUM-CLUSTER-001 · 2026-11-20 | RH / Navier–Stokes / Euler publication cluster, timing and ancestry | PARTIAL; common authors, independent verification and causal lineage unresolved | [Comparison](./candidates/2026-11-20-td-millennium-cluster-001.json) |
