@@ -1,0 +1,50 @@
+{
+  "id": "SG-018-PREFREEZE",
+  "recorded_at": "2026-11-21",
+  "status": "PREREGISTERED_BEFORE_EXECUTION",
+  "prior": "TD-CROSSDOMAIN-SG017",
+  "domain": "finite graph diffusion (new domain relative to SG001–017)",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "input": "n=7,11,13, cyclic graph Markov averaging P=(I+R+R^-1)/3",
+      "prediction": "sum conserved exactly and constants invariant for every update"
+    },
+    {
+      "id": "H2",
+      "input": "same P",
+      "prediction": "P commutes with cyclic rotation R"
+    },
+    {
+      "id": "H3",
+      "input": "same P and rational initial vectors",
+      "prediction": "centered quadratic norm is nonincreasing each update; strictly decreasing for nonconstant vectors on odd cycles"
+    },
+    {
+      "id": "N1",
+      "input": "unequal symmetric edge weighting with P=I-L/5, edge (0,1) doubled",
+      "prediction": "mass conserved; cyclic commutation fails"
+    },
+    {
+      "id": "N2",
+      "input": "pure permutation P=R",
+      "prediction": "mass and rotation covariance preserved; centered norm stays constant, not strictly decreasing"
+    },
+    {
+      "id": "N3",
+      "input": "amplification P=2I",
+      "prediction": "mass conservation fails for nonzero-mass states"
+    }
+  ],
+  "evaluation": "Exact rational arithmetic with deterministic frozen vectors; no hypothesis adjustments after reading results",
+  "hypothesis_origin": "Generalized ROOT0 preservation/transformation vocabulary and classical graph theory; predictions are classical, not novel proofs",
+  "warnings": [
+    "Pre-freeze within this session, not historical pre-2026 source",
+    "A successful test demonstrates operational transport, not unique origin or independent proof of RH/Navier-Stokes",
+    "Keep negative controls and failures"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG017",
+    "TD-RH-BRIDGE-001"
+  ]
+}
