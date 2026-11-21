@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-063 · 2026-11-20 | Experience consolidation and ancestry-aware recall | Two signatures, one policy lineage, overlap and rejection tests; HTML | [Audit](./audits/2026-11-20-aether-063.json) |
 | TD-RIEMANN-CLAUDE-001-A15 · 2026-11-20 | Exact Sp6(F3) generator closure | 728/728 nonzero vectors; 364 transvection directions; incomplete-link control 80 | [Record](./candidates/2026-11-20-td-riemann-claude-001-a15-sp6-closure.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a15-sp6-closure.py) |
 | AETHER-062 · 2026-11-20 | Bounded exploration and response graduation | Five candidates, two positive-shift validation checks, retained failures; HTML | [Audit](./audits/2026-11-20-aether-062.json) |
 | TD-RIEMANN-CLAUDE-001-A14 · 2026-11-20 | Exact scalar commutant in 78-dimensional finite theta sector | VERIFIED finite-model algebra; missing-coupling control 15 | [Record](./candidates/2026-11-20-td-riemann-claude-001-a14-exact-commutant.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a14-exact-commutant.py) |
