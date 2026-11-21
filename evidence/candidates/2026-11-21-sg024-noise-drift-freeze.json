@@ -1,0 +1,29 @@
+{
+  "id": "SG-024-FREEZE",
+  "date": "2026-11-21",
+  "status": "PROTOCOL_FROZEN_AFTER_EXPLORATORY_PILOT_BEFORE_FRESH_SEEDS",
+  "pilot_disclosure": "A 5-case seed-24021 pilot was examined before freezing the method. Pilot is not independent evidence.",
+  "stream_spec": "Length 240; uniform noise ±0.26; baseline0; isolated ±7 shocks at 42,87,173,211; gradual drift +0.005*t; abrupt +3 at 120; five kinds steady/spike/drift/step/step_spike.",
+  "detection": {
+    "window": 11,
+    "median_reference_first_window": true,
+    "threshold": 1.15,
+    "persistent_windows": 4,
+    "cooldown": 16,
+    "step_classification": "Within trailing 20 adjacent samples, any same-sign jump >1.5 classifies persistent displacement as step; otherwise drift.",
+    "no_cross_epoch_retraining": "New promoted reference stored as an immutable event, earlier references preserved."
+  },
+  "holdout": "Fresh 30 deterministic seeds per category (150 traces), no threshold changes after freeze.",
+  "expected": {
+    "steady": "no alerts",
+    "spike": "no alerts",
+    "drift": "at least one drift alert, no step alarms",
+    "step": "at least one step alarm within [120,145]",
+    "step_spike": "at least one step alarm within [120,145]"
+  },
+  "limitations": [
+    "Classification heuristic rather than formal guarantee; pilot-informed thresholds",
+    "Deterministic synthetic data",
+    "No provenance/ownership conclusions"
+  ]
+}
