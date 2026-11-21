@@ -1,0 +1,505 @@
+{
+  "id": "AETHER-061",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-060",
+  "name": "Resonance Recognition",
+  "notation": "((4×3)(3×2)(3×4)(1×2))^4; 12 explicit + ^i; N BLUE p− / O GREEN o / H RED d+",
+  "model": "At t128 compare arm0 phase step against zero-shock model prediction with identical pre-step state, yielding observed residual. Three deterministic synthetic sensor noises of approximately +/- .004 added independently to same underlying signal. Disturbance recognized only when all sensors within +/- .015 of stored .12, range <= .018, and roots distinct. Activate AETHER-059 gains from t129. Unknown, one-outlier and repeated-root cases reject; all controls same initial conditions.",
+  "caseResults": [
+    {
+      "id": "known",
+      "shock": 0.12,
+      "sensor": "independent",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          0.11695206566432398,
+          0.11605233776751751,
+          0.11793495111968043
+        ],
+        "agreement": true,
+        "known": true,
+        "accepted": true,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": 0.1200000000000001
+      },
+      "final": {
+        "R": 0.9995996684988374,
+        "cost": 124.2479551736317
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087235,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9964993045948235,
+          "cost": 4.113616098178995
+        },
+        {
+          "t": 192,
+          "R": 0.9989200604849736,
+          "cost": 12.890078502475584
+        },
+        {
+          "t": 256,
+          "R": 0.9993695544898374,
+          "cost": 33.52494336535053
+        },
+        {
+          "t": 384,
+          "R": 0.9995506312424197,
+          "cost": 77.94742943811977
+        },
+        {
+          "t": 512,
+          "R": 0.9995996684988374,
+          "cost": 124.2479551736317
+        }
+      ]
+    },
+    {
+      "id": "unknown_positive",
+      "shock": 0.25,
+      "sensor": "independent",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          0.24695206566432387,
+          0.2460523377675174,
+          0.2479349511196803
+        ],
+        "agreement": true,
+        "known": false,
+        "accepted": false,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": 0.25
+      },
+      "final": {
+        "R": 0.960440101589453,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9814448294131287,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9609102141050534,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9604455144793907,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9604401023346854,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.960440101589453,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.960440101589453,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "id": "unknown_negative",
+      "shock": -0.12,
+      "sensor": "independent",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          -0.12304793433567623,
+          -0.1239476622324827,
+          -0.12206504888031978
+        ],
+        "agreement": true,
+        "known": false,
+        "accepted": false,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": -0.1200000000000001
+      },
+      "final": {
+        "R": 0.9622999254478014,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9768566194289289,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9623761069351312,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9623004972812291,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9622999254815839,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9622999254478013,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9622999254478014,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "id": "no_change",
+      "shock": 0,
+      "sensor": "independent",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          -0.003047934335676133,
+          -0.003947662232482595,
+          -0.002065048880319684
+        ],
+        "agreement": true,
+        "known": false,
+        "accepted": false,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": 0
+      },
+      "final": {
+        "R": 0.9794708571509064,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.97947085807218,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9794708571574122,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9794708571509457,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9794708571509066,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9794708571509064,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9794708571509064,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "id": "outlier",
+      "shock": 0.12,
+      "sensor": "outlier",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          0.11695206566432398,
+          0.11605233776751751,
+          0.18793495111968045
+        ],
+        "agreement": false,
+        "known": false,
+        "accepted": false,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": 0.1200000000000001
+      },
+      "final": {
+        "R": 0.9802403527528895,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087235,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9803070844085989,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9802408569428338,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9802403527803588,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9802403527528897,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9802403527528895,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "id": "shared_root",
+      "shock": 0.12,
+      "sensor": "correlated",
+      "mode": "detected",
+      "decision": {
+        "readings": [
+          -0.003047934335676017,
+          -0.003947662232482482,
+          -0.002065048880319567
+        ],
+        "agreement": true,
+        "known": false,
+        "accepted": false,
+        "roots": [
+          "common",
+          "common",
+          "common"
+        ],
+        "independent": false,
+        "residual": 0.1200000000000001
+      },
+      "final": {
+        "R": 0.9802403527528895,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087235,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9803070844085989,
+          "cost": 0
+        },
+        {
+          "t": 192,
+          "R": 0.9802408569428338,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9802403527803588,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9802403527528897,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9802403527528895,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "id": "uniform_control",
+      "shock": 0.12,
+      "sensor": "independent",
+      "mode": "uniform",
+      "decision": {
+        "readings": [
+          0.11695206566432398,
+          0.11605233776751751,
+          0.11793495111968043
+        ],
+        "agreement": true,
+        "known": true,
+        "accepted": true,
+        "roots": [
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "independent": true,
+        "residual": 0.1200000000000001
+      },
+      "final": {
+        "R": 0.9999999253147202,
+        "cost": 149.85150063244907
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087235,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9910754650752199,
+          "cost": 2.9251132829016004
+        },
+        {
+          "t": 192,
+          "R": 0.9969313382993034,
+          "cost": 10.68585823013172
+        },
+        {
+          "t": 256,
+          "R": 0.999638277377538,
+          "cost": 33.76218155905063
+        },
+        {
+          "t": 384,
+          "R": 0.9999948499503758,
+          "cost": 90.35120584667632
+        },
+        {
+          "t": 512,
+          "R": 0.9999999253147202,
+          "cost": 149.85150063244907
+        }
+      ]
+    }
+  ],
+  "sourceAncestry": {
+    "gainRecord": "evidence/audits/2026-11-20-aether-059.json",
+    "recognitionSignature": "evidence/audits/2026-11-20-aether-060.json",
+    "measurementRoots": "Three simulated noise sources on one shared underlying synthetic phase; not independent factual corroboration."
+  },
+  "artifact": "experiments/aether-061/index.html",
+  "limits": [
+    "Phase-residual inference uses complete perfect simulation state and known model; not a real-world blind estimator.",
+    "Independent noise does not establish independence of underlying phenomenon or independent experimental replication.",
+    "No false-positive-rate estimate beyond enumerated scenarios.",
+    "No energy model, no physical quantum spinors, strong/weak nuclear forces, or fusion."
+  ]
+}
