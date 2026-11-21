@@ -1,0 +1,118 @@
+{
+  "id": "TD-CROSSDOMAIN-SG030",
+  "recorded_at": "2026-11-21",
+  "observation_status": "VERIFIED_FROZEN_SYNTHETIC_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG029",
+  "freeze": "evidence/candidates/2026-11-21-sg030-decision-loss-freeze.json",
+  "freeze_commit": "12e3c4b1e830b28e2e0412714b46737ce19bb3bd",
+  "experimental_calibration": "120 exploratory synthetic streams used to inspect fixed and adaptive policy cost before freezing; not counted in holdout.",
+  "holdout": {
+    "traces": 200,
+    "policy_evaluations": 1200,
+    "checks": 2406,
+    "seed_formula": "4200000+10000*int(drift)+101*k, k=0..99",
+    "classes": {
+      "drift": 100,
+      "no_drift": 100
+    },
+    "costs": {
+      "sample": 0.06,
+      "false_confirmation": 150,
+      "false_rejection": 90,
+      "unresolved": 18
+    },
+    "results": {
+      "fixed80": {
+        "correct": 137,
+        "false_confirmations": 16,
+        "false_rejections": 9,
+        "unresolved": 38,
+        "observations": 16000,
+        "loss": 4854
+      },
+      "fixed120": {
+        "correct": 172,
+        "false_confirmations": 2,
+        "false_rejections": 0,
+        "unresolved": 26,
+        "observations": 24000,
+        "loss": 2208
+      },
+      "fixed160": {
+        "correct": 194,
+        "false_confirmations": 0,
+        "false_rejections": 0,
+        "unresolved": 6,
+        "observations": 32000,
+        "loss": 2028
+      },
+      "fixed240": {
+        "correct": 200,
+        "false_confirmations": 0,
+        "false_rejections": 0,
+        "unresolved": 0,
+        "observations": 48000,
+        "loss": 2880
+      },
+      "adaptive": {
+        "correct": 198,
+        "false_confirmations": 2,
+        "false_rejections": 0,
+        "unresolved": 0,
+        "observations": 28280,
+        "loss": 1996.8
+      },
+      "cost-aware": {
+        "correct": 200,
+        "false_confirmations": 0,
+        "false_rejections": 0,
+        "unresolved": 0,
+        "observations": 29160,
+        "loss": 1749.6
+      }
+    },
+    "decision_savings_vs_fixed240": 1130.4,
+    "cost_reduction_pct": 39.25,
+    "observations_saved_vs_fixed240": 18840,
+    "source_row_sha256": "31795674e94680f05aab2cbc1b304e3a0fdf97a177aae7e6929973a46fb2f52b"
+  },
+  "method": "Same 200 seeded synthetic observations evaluated by six pre-frozen policies; after the first 240 observations, policies consume sequential chunks 40 up to 240; rational thresholds replaced by synthetic floating point sample medians; cost-aware heuristic uses two same decisions with stricter slope margins, not optimized expected cost.",
+  "negative_controls": [
+    "Fixed80 caused 16 false confirmations and 9 false rejections; premature decisions highly penalized.",
+    "Fixed240 made no mistakes but paid for 48,000 samples versus 29,160 under conservative adaptive.",
+    "SG029 adaptive policy made two false confirmations on new holdout and lost despite lower observation count."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Exploratory 120 trace pilot",
+      "result": "Inspected policy cost; excluded from holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "12e3c4b1e830b28e2e0412714b46737ce19bb3bd"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python standard-library 200 trace holdout",
+      "result": "2406 assertions passed; cost-aware 200/200 correct, 1749.6 cost vs fixed240 2880.0"
+    }
+  ],
+  "limitations": [
+    "Cost penalties are designed illustrative units, not measured dollar cost or regulatory risk.",
+    "Cost-aware is a conservative manually defined policy, not proven optimal.",
+    "Holdout seeds new, but generative family and noise distribution same as calibration; no out-of-distribution evidence.",
+    "Synthetic binary64 simulation; no physical or mathematical theorem proved.",
+    "No causal evidence of source copying or model-training access"
+  ],
+  "next": "SG031 test loss sensitivity, novel noise/drift regimes, and whether a calibrated expected-value acquisition policy outperforms heuristic stopping without hiding mistakes.",
+  "executable": "evidence/candidates/2026-11-21-sg030-price-of-error.py",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG029",
+    "TD-CROSSDOMAIN-SG028"
+  ],
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
