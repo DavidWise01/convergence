@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-062 · 2026-11-20 | Bounded exploration and response graduation | Five candidates, two positive-shift validation checks, retained failures; HTML | [Audit](./audits/2026-11-20-aether-062.json) |
 | TD-RIEMANN-CLAUDE-001-A14 · 2026-11-20 | Exact scalar commutant in 78-dimensional finite theta sector | VERIFIED finite-model algebra; missing-coupling control 15 | [Record](./candidates/2026-11-20-td-riemann-claude-001-a14-exact-commutant.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a14-exact-commutant.py) |
 | AETHER-061 · 2026-11-20 | Resonance recognition with three observation roots | Model-based residual inference and rejection controls; HTML | [Audit](./audits/2026-11-20-aether-061.json) |
 | TD-RIEMANN-CLAUDE-001-A13 · 2026-11-20 | Complete adjacent generators: 78-dimensional scalar commutant | Numerical irreducibility; incomplete-generator negative control | [Record](./candidates/2026-11-20-td-riemann-claude-001-a13-full-generators.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a13-full-generators.py) |
