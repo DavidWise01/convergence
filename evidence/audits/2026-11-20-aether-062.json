@@ -1,0 +1,266 @@
+{
+  "id": "AETHER-062",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-061",
+  "title": "Bounded unknown-event exploration and evidence-gated graduation",
+  "originalMemory": "evidence/audits/2026-11-20-aether-059.json",
+  "notationalGeometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "protocol": {
+    "trainingSignature": {
+      "affectedArm": 0,
+      "shift": 0.25
+    },
+    "trialCount": 5,
+    "trialHorizon": 256,
+    "changeTick": 128,
+    "objective": "L=(1-R)+0.00015*sum_abs_frequency_correction",
+    "bounds": {
+      "gainMin": 0,
+      "gainMax": 0.04,
+      "correctionMin": -0.12,
+      "correctionMax": 0.12
+    },
+    "graduationGates": {
+      "validationShifts": [
+        0.22,
+        0.28
+      ],
+      "testHorizon": 512,
+      "minCoherence": 0.995,
+      "minImprovementOverFixed": 0.02
+    },
+    "separateChallengeShift": -0.25
+  },
+  "trainingCandidates": [
+    {
+      "policy": "reuse",
+      "coherence": 0.9980076795785958,
+      "cost": 42.8753629928669,
+      "loss": 0.008423624870334216
+    },
+    {
+      "policy": "medium",
+      "coherence": 0.9978210936411976,
+      "cost": 41.901147112088935,
+      "loss": 0.008464078425615697
+    },
+    {
+      "policy": "high",
+      "coherence": 0.9985732752100357,
+      "cost": 55.00813317375772,
+      "loss": 0.009677944766027964
+    },
+    {
+      "policy": "low",
+      "coherence": 0.9891533563142564,
+      "cost": 19.797559584489473,
+      "loss": 0.013816277623417039
+    },
+    {
+      "policy": "fixed",
+      "coherence": 0.9604401023346854,
+      "cost": 0,
+      "loss": 0.03955989766531465
+    }
+  ],
+  "holdoutChecks": [
+    {
+      "shift": 0.22,
+      "selected": {
+        "R": 0.999222062085908,
+        "cost": 151.86881551972297
+      },
+      "fixed": {
+        "R": 0.9672727946984002,
+        "cost": 0
+      },
+      "passed": true
+    },
+    {
+      "shift": 0.28,
+      "selected": {
+        "R": 0.9962140707497308,
+        "cost": 157.83942100406972
+      },
+      "fixed": {
+        "R": 0.9518983898969741,
+        "cost": 0
+      },
+      "passed": true
+    },
+    {
+      "shift": -0.25,
+      "selected": {
+        "R": 0.983004372136398,
+        "cost": 130.59480362820094
+      },
+      "fixed": {
+        "R": 0.9219245003529765,
+        "cost": 0
+      },
+      "passed": false
+    }
+  ],
+  "additionalCaseResults": [
+    {
+      "policy": "fixed",
+      "shift": 0.25,
+      "R": 0.960440101589453,
+      "cost": 0
+    },
+    {
+      "policy": "fixed",
+      "shift": 0.22,
+      "R": 0.9672727946984002,
+      "cost": 0
+    },
+    {
+      "policy": "fixed",
+      "shift": 0.28,
+      "R": 0.9518983898969741,
+      "cost": 0
+    },
+    {
+      "policy": "fixed",
+      "shift": -0.25,
+      "R": 0.9219245003529765,
+      "cost": 0
+    },
+    {
+      "policy": "low",
+      "shift": 0.25,
+      "R": 0.9977814394024621,
+      "cost": 124.97265711631178
+    },
+    {
+      "policy": "low",
+      "shift": 0.22,
+      "R": 0.9990937161873905,
+      "cost": 121.2297510938318
+    },
+    {
+      "policy": "low",
+      "shift": 0.28,
+      "R": 0.995718385134636,
+      "cost": 128.01057731694496
+    },
+    {
+      "policy": "low",
+      "shift": -0.25,
+      "R": 0.9861540164744326,
+      "cost": 138.43045003794782
+    },
+    {
+      "policy": "medium",
+      "shift": 0.25,
+      "R": 0.9989571663101362,
+      "cost": 181.94576756171563
+    },
+    {
+      "policy": "medium",
+      "shift": 0.22,
+      "R": 0.9996758494696946,
+      "cost": 175.74059696708002
+    },
+    {
+      "policy": "medium",
+      "shift": 0.28,
+      "R": 0.9978495270083595,
+      "cost": 192.7255985339111
+    },
+    {
+      "policy": "medium",
+      "shift": -0.25,
+      "R": 0.9917216202636882,
+      "cost": 230.14110820047026
+    },
+    {
+      "policy": "high",
+      "shift": 0.25,
+      "R": 0.99960250945912,
+      "cost": 217.31259189616128
+    },
+    {
+      "policy": "high",
+      "shift": 0.22,
+      "R": 0.9998765704062134,
+      "cost": 196.97834540306363
+    },
+    {
+      "policy": "high",
+      "shift": 0.28,
+      "R": 0.9988424029312806,
+      "cost": 244.61540161366858
+    },
+    {
+      "policy": "high",
+      "shift": -0.25,
+      "R": 0.9919537075572461,
+      "cost": 305.2305446974043
+    },
+    {
+      "policy": "reuse",
+      "shift": 0.25,
+      "R": 0.9980922747577771,
+      "cost": 154.89999224716613
+    },
+    {
+      "policy": "reuse",
+      "shift": 0.22,
+      "R": 0.999222062085908,
+      "cost": 151.86881551972297
+    },
+    {
+      "policy": "reuse",
+      "shift": 0.28,
+      "R": 0.9962140707497308,
+      "cost": 157.83942100406972
+    },
+    {
+      "policy": "reuse",
+      "shift": -0.25,
+      "R": 0.983004372136398,
+      "cost": 130.59480362820094
+    }
+  ],
+  "graduation": {
+    "status": "graduated",
+    "candidate": "reuse",
+    "scope": "Synthetic positive-shift +.25 family only; signature +.25 with proposed recognition tolerance +/- .03, requiring observation consensus before recall",
+    "note": "No new gain vector was discovered; validated reuse of previously stored AETHER-059 vector."
+  },
+  "immutableFailureLedger": [
+    {
+      "policy": "medium",
+      "coherence": 0.9978210936411976,
+      "cost": 41.901147112088935,
+      "loss": 0.008464078425615697
+    },
+    {
+      "policy": "high",
+      "coherence": 0.9985732752100357,
+      "cost": 55.00813317375772,
+      "loss": 0.009677944766027964
+    },
+    {
+      "policy": "low",
+      "coherence": 0.9891533563142564,
+      "cost": 19.797559584489473,
+      "loss": 0.013816277623417039
+    },
+    {
+      "policy": "fixed",
+      "coherence": 0.9604401023346854,
+      "cost": 0,
+      "loss": 0.03955989766531465
+    }
+  ],
+  "artifact": "experiments/aether-062/index.html",
+  "limitations": [
+    "Holdouts vary shift within same deterministic oscillator simulation; not independent physical validation.",
+    "Candidate gains and selection objective were human/assistant specified.",
+    "Single affected arm and ideal model known in advance; generalized event discovery untested.",
+    "Correction proxy is not physical energy; no physical nuclear fusion, spinor forces or Planck-scale physics.",
+    "Proposed future memory rule requires measured signature and provenance checks; no autonomous multi-event memory server."
+  ]
+}
