@@ -1,0 +1,70 @@
+{
+  "id": "TD-CROSSDOMAIN-SG039-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG038",
+  "goal": "Recover correct decisions from estimator disagreement only when a predeclared oscillation-specific diagnostic supports ignoring the endpoint estimator.",
+  "architecture": "Retain SG037 risk gate, 20-observation candidate checks, and shift monitor. Estimator A is median pairwise slopes of 10-observation bin medians; B compares first/last third window medians. SG038 refuses disagreements. SG039 computes detrended Fourier power at fixed period 60; if disagreement and normalized periodicity >= .35 trust A; otherwise abstain for alarm-triggered final decision, or continue collecting when candidate disagreement.",
+  "diagnostic": "Normalized Fourier power = 2*(sum residual*cos(2πi/60)^2 + sum residual*sin(2πi/60)^2)/(n*sum residual²); residuals linearly detrended, last min(n,160) samples, minimum n=100. Same-stream diagnostic; not independent witness.",
+  "pilot": {
+    "seed_start": 37000000,
+    "seeds_per_class_and_scenario": 10,
+    "streams": 140,
+    "sg037": {
+      "correct": 125,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 14,
+      "loss": 2150.4
+    },
+    "sg038": {
+      "correct": 113,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 26,
+      "loss": 2366.4
+    },
+    "sg039": {
+      "correct": 123,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 16,
+      "loss": 2186.4
+    },
+    "disclosure": "Exploratory pilot was inspected; threshold .35 selected before holdout. Restored 10 disagreements relative to SG038, with 1 wrong decision still present."
+  },
+  "holdout": {
+    "seed_start": 41000000,
+    "seeds_per_class_and_scenario": 40,
+    "streams": 560,
+    "seed_formula": "41000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation"
+    ],
+    "comparison": [
+      "SG037",
+      "SG038",
+      "SG039",
+      "fixed240"
+    ],
+    "loss": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    },
+    "success_measure": "Primary: no increase in wrong decisions vs SG038, lower abstentions and loss. Preserve violations, exact seeds, and oscillation diagnostics."
+  },
+  "limitations": [
+    "Period 60 selected from known synthetic oscillation family, therefore not an out-of-family test.",
+    "Three methods analyze same data; no independent source ancestry.",
+    "Possible false-positive periodicity on correlated noise; threshold is pilot-informed.",
+    "Changing estimator abstentions does not prove decision quality in real-world streams."
+  ]
+}
