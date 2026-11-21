@@ -1,0 +1,178 @@
+{
+  "id": "TD-CROSSDOMAIN-SG035",
+  "date": "2026-11-21",
+  "status": "FAILED_TRANSFER_AT_ORIGINAL_RISK_BUDGET",
+  "parent": "TD-CROSSDOMAIN-SG034",
+  "freeze_commit": "415860841aa5a034b65cabc2db168de7c8503fa5",
+  "streams": 400,
+  "checks": 51,
+  "seed_formula": "17300000+200000*scenario_index+10000*int(drift)+101*k (k=0..39)",
+  "policy": "SG034 historical Wilson upper bound by predecision rho estimate; if bound < risk budget and bin calibration n>=40 use SG030 conservative adaptive; else fixed240.",
+  "risk_coverage": {
+    ".04": {
+      "adaptive": 0,
+      "correct": 342,
+      "FP": 3,
+      "FN": 3,
+      "unresolved": 52,
+      "samples": 96000,
+      "loss": 7416
+    },
+    ".06": {
+      "adaptive": 340,
+      "correct": 319,
+      "FP": 28,
+      "FN": 14,
+      "unresolved": 39,
+      "samples": 70280,
+      "loss": 10378.8
+    },
+    ".08": {
+      "adaptive": 340,
+      "correct": 319,
+      "FP": 28,
+      "FN": 14,
+      "unresolved": 39,
+      "samples": 70280,
+      "loss": 10378.8
+    },
+    ".15": {
+      "adaptive": 340,
+      "correct": 319,
+      "FP": 28,
+      "FN": 14,
+      "unresolved": 39,
+      "samples": 70280,
+      "loss": 10378.8
+    },
+    ".25": {
+      "adaptive": 397,
+      "correct": 313,
+      "FP": 35,
+      "FN": 15,
+      "unresolved": 37,
+      "samples": 65680,
+      "loss": 11206.8
+    }
+  },
+  "original_budget_breakdown": [
+    {
+      "scenario": "reference",
+      "adaptive": 71,
+      "wrong": 1,
+      "loss": 891.6,
+      "fixed_loss": 1152
+    },
+    {
+      "scenario": "correlation_switch",
+      "adaptive": 62,
+      "wrong": 18,
+      "loss": 3487.2,
+      "fixed_loss": 2106
+    },
+    {
+      "scenario": "laplace_tail",
+      "adaptive": 68,
+      "wrong": 0,
+      "loss": 775.2,
+      "fixed_loss": 1152
+    },
+    {
+      "scenario": "subtle_drift",
+      "adaptive": 70,
+      "wrong": 4,
+      "loss": 1680,
+      "fixed_loss": 1764
+    },
+    {
+      "scenario": "fast_oscillation",
+      "adaptive": 69,
+      "wrong": 19,
+      "loss": 3544.8,
+      "fixed_loss": 1242
+    }
+  ],
+  "fixed240": {
+    "wrong": 6,
+    "loss": 7416,
+    "samples": 96000
+  },
+  "original_budget": {
+    "wrong": 42,
+    "loss": 10378.8,
+    "samples": 70280
+  },
+  "holdout_digest": "ba0272ed16dc889ffd6c1870d8e60e08587409ebc8de72fae63bd1d9b0ccb931",
+  "failure_seed_groups_at_budget_0_08": {
+    "reference": [
+      17300606
+    ],
+    "correlation_switch": [
+      17500202,
+      17500505,
+      17500707,
+      17500808,
+      17501111,
+      17501212,
+      17501414,
+      17502525,
+      17502626,
+      17503030,
+      17503232,
+      17503333,
+      17503838,
+      17510202,
+      17510303,
+      17511212,
+      17512727,
+      17513838
+    ],
+    "laplace_tail": [],
+    "subtle_drift": [
+      17910202,
+      17911313,
+      17911717,
+      17912222
+    ],
+    "fast_oscillation": [
+      18100000,
+      18100606,
+      18100707,
+      18101010,
+      18101111,
+      18101212,
+      18101414,
+      18101818,
+      18101919,
+      18102424,
+      18102525,
+      18102626,
+      18103434,
+      18103535,
+      18110505,
+      18111919,
+      18112828,
+      18113333,
+      18113636
+    ]
+  },
+  "findings": [
+    "Under budget 8%, calibration-selected adaptive policy makes 42 wrong decisions compared with fixed240 six; early coverage 85%.",
+    "Unanticipated shift in rho at t240 is not visible to estimator restricted to t0..109.",
+    "Post-240 oscillations can mimic a trend during early stopping.",
+    "This violates a naive transfer interpretation of nominal 8% calibration bound, but does not disprove Wilson's finite-sample binomial result under its assumptions.",
+    "At strict budget .04, no early policies selected; losses match fixed240."
+  ],
+  "limitations": [
+    "Synthetic scenario families, not externally collected data.",
+    "Wilson bounds constrain in-distribution pooled calibration-bin errors under assumptions; not arbitrary future conditional or adversarial shifts.",
+    "SG035 policy choices frozen before holdout, though scenario set intentionally targets known weaknesses.",
+    "Risk coverage is adaptive-routing proportion, not prediction coverage.",
+    "All 42 incorrect decisions and their seeds are preserved by executable, plus grouped archive in summary."
+  ],
+  "next": "SG036 detect distribution shift during evidence acquisition, pause early stopping on instability, preserve immutable predecision and post-change observations.",
+  "executable": "evidence/candidates/2026-11-21-sg035-calibration-transfer.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
