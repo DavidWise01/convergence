@@ -1,0 +1,51 @@
+{
+  "id": "TD-CROSSDOMAIN-SG027-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG026",
+  "objective": "Selective prediction: confirmed/rejected/unresolved drift with independent step estimate, preserve unresolved rather than forcing binary decisions",
+  "pilot": {
+    "seed_start": 720000,
+    "seed_formula": "720000+173*kind_index+71*i, i=0..49",
+    "results": {
+      "total": 400,
+      "decided_correct": 395,
+      "decided_wrong": 0,
+      "unresolved": 5,
+      "step_localization_correct": 400
+    },
+    "warning": "Pilot observed before freeze; cannot count toward fresh holdout."
+  },
+  "frozen_parameters": {
+    "noise_rho": ".35 usual; .72 colored",
+    "innovation": "Uniform ±.23",
+    "window_per_side": 13,
+    "step_threshold": 1.5,
+    "drift_lower_reject_threshold": 0.0018,
+    "drift_upper_confirm_threshold": 0.0032,
+    "drift_measure": "Median pairwise slopes between ten-sample bin medians, with pre/post split at greatest step candidate",
+    "decision": "|slope| < 0.0018 => rejected; |slope| >0.0032 => confirmed; otherwise unresolved",
+    "abstentions": "Unresolved must remain in ledger and cannot be counted as correct prediction"
+  },
+  "holdout": {
+    "seed_formula": "900000+173*kind_index+71*i, i=0..49",
+    "types": [
+      "steady",
+      "impulses",
+      "drift",
+      "step",
+      "step_drift",
+      "colored_steady",
+      "colored_step_drift",
+      "negative_drift_step"
+    ],
+    "n": 400,
+    "criteria": "Report decided-correct, decided-wrong, unresolved and exact step localization. No changes after freeze."
+  },
+  "limitations": [
+    "Synthetic retrospective detector and defined noise family",
+    "Unresolved is not a correct prediction",
+    "Pilot-informed bands; no guaranteed confidence coverage",
+    "No direct external mathematical theorem provenance claims"
+  ]
+}
