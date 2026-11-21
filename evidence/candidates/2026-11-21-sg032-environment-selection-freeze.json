@@ -1,0 +1,55 @@
+{
+  "id": "TD-CROSSDOMAIN-SG032-FREEZE",
+  "recorded_at": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_CALIBRATION_BEFORE_HOLDOUT",
+  "prior": "TD-CROSSDOMAIN-SG031",
+  "goal": "Choose cost-aware or fixed240 evidence policy prospectively using estimated autocorrelation from observations 0..109, before the scored continuation at 240..479.",
+  "estimator": "Trim observations abs(value)>=1.5 in t0..109, linear-detrend retained points via OLS, estimate AR1 by zero-intercept regression of adjacent residual pairs. If fewer than 45 pairs, select conservative fixed240.",
+  "selection": "If rho_est >= 0.82 choose fixed240; otherwise choose cost-aware from SG030, unchanged. No post-outcome regime labeling.",
+  "calibration": {
+    "seed_start": 6100000,
+    "seeds_per_class_and_scenario": 25,
+    "stream_count": 200,
+    "selected_loss": 3073.2,
+    "fixed240_loss": 3750,
+    "correct_environment_ids": 189,
+    "misidentified": 11,
+    "disclosure": "Calibration used to choose threshold, not independent holdout."
+  },
+  "holdout": {
+    "seed_start": 8200000,
+    "seeds_per_class_and_scenario": 50,
+    "stream_count": 400,
+    "seed_formula": "8200000+100000*scenario_index+10000*int(drift)+101*k",
+    "scenarios": [
+      "baseline",
+      "weak_drift",
+      "high_correlation",
+      "heavy_tailed"
+    ],
+    "reference_policies": [
+      "fixed240",
+      "cost-aware"
+    ],
+    "score": [
+      "environment identification",
+      "total cost",
+      "false confirmations",
+      "false rejections",
+      "abstentions",
+      "samples"
+    ],
+    "fixed_loss": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    }
+  },
+  "limitations": [
+    "Predecision samples come from same synthetic realization, though no continuation samples leak.",
+    "The estimator assumes a stationary AR-like noise before t120 and trims large observations.",
+    "Policy threshold selected on calibration, not externally validated.",
+    "No true uncertainty probability or guarantee of universally optimal policy."
+  ]
+}
