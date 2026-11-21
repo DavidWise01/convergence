@@ -1,0 +1,19 @@
+{
+  "id": "TD-CROSSDOMAIN-SG028-FREEZE",
+  "date": "2026-11-21",
+  "status": "COMMITTED_BEFORE_FOLLOWUP_DATA_EXECUTION",
+  "parent": "TD-CROSSDOMAIN-SG027",
+  "original_case_seeds": [
+    901038,
+    901251,
+    902245,
+    903026
+  ],
+  "original_state": "unresolved",
+  "protocol": "Reproduce SG-027's first 240 synthetic AR(1)-noise observations for each unresolved case, then request exactly 240 additional observations t240..479 using the same seeded RNG state. Analyze only the newly requested samples to avoid altering the previous unresolved decision or reusing prior samples in the new estimate.",
+  "rule": "Take 24 consecutive non-overlapping 10-observation bin medians from t240..479; compute median of all distinct-bin pairwise slopes. Label confirmed if |slope| > .0032, rejected if |slope| < .0018, else unresolved. Thresholds inherited unchanged from SG-027.",
+  "controls": "Four matched synthetic same-seed, same-noise, same step and spikes, but zero actual trend; expected rejected (or unresolved), never falsely confirmed.",
+  "stop_condition": "One batch of 240 added observations; no adaptive extension or threshold retuning after results.",
+  "evidence": "Create append-only JSONL events: original SG-027 unresolved status, follow-up request, SHA256 digest of added observations, subsequent decision. Never alter the initial status.",
+  "limit": "Fresh observations are continuation of simulations, not independent external verification; the evaluator knows the generating trend for assessment. Confirmed describes classification within this toy system, not physical causal evidence."
+}
