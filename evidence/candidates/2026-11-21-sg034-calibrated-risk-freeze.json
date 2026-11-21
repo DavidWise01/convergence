@@ -1,0 +1,51 @@
+{
+  "id": "TD-CROSSDOMAIN-SG034-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_REHEARSAL_BEFORE_NEW_HOLDOUT",
+  "prior": "TD-CROSSDOMAIN-SG033",
+  "goal": "Estimate an upper one-sided risk bound on wrong early stopping decisions by binned predecision noise correlation; allow adaptive policy only if upper bound < 8%, else fixed240.",
+  "calibration": {
+    "seed_start": 11200000,
+    "per_class_scenario": 120,
+    "streams": 960,
+    "estimator": "SG032 estimate_rho from first 110 samples, trim |v| >=1.5, least squares detrend and AR1 ratio",
+    "risk_bins": [
+      "(-inf,0.45)",
+      "[0.45,0.60)",
+      "[0.60,0.75)",
+      "[0.75,0.90)",
+      "[0.90,inf)",
+      "insufficient"
+    ],
+    "bin_error": "Wrong confirmed/rejected decision by SG030 cost-aware on 240-point future continuation",
+    "bound": "One-sided 95% Wilson score upper bound with z=1.6448536269514722; require at least 40 calibration samples per bin; abstentions not counted as wrong, reported separately.",
+    "risk_budget": 0.08
+  },
+  "policies": "Select SG030 conservative cost-aware when eligible; otherwise fixed240, selected only from t0..109 and calibration, not future.",
+  "loss": {
+    "sample": 0.06,
+    "FP": 150,
+    "FN": 90,
+    "abstain": 18
+  },
+  "experiment_notes": "An exploratory calibration/test rehearsal was already run on holdout_seed_start=13200000 before this freeze. Its 480 streams are NOT final independent holdout. Selected policy got 414 correct, 11 wrong, 55 abstentions, cost 7644 vs fixed240 8748. Final holdout will use new seeds.",
+  "holdout": {
+    "seed_start": 15200000,
+    "per_class_scenario": 60,
+    "streams": 480,
+    "seed_formula": "15200000+100000*scenario_index+10000*int(drift)+101*k, k=0..59",
+    "scenarios": [
+      "baseline",
+      "weak_drift",
+      "high_correlation",
+      "heavy_tailed"
+    ],
+    "evaluation": "No changes to algorithm, risk bins, risk budget, calibration seeds or loss after this freeze"
+  },
+  "limitations": [
+    "Wilson score only bounds sampled binomial wrong-decision rate under iid calibration assumption; labels correlated by designed environments and distribution shift can invalidate risk interpretation.",
+    "Abstentions excluded from wrong-risk numerator; reported separately",
+    "Risk budget 8% is not a guarantee on any particular stream or on all environments",
+    "Thresholds chosen from synthetic stress context; not external validation"
+  ]
+}
