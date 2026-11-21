@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG031 · 2026-11-21 | Frozen cost-shift and unfamiliar-noise policy stress test | **MIXED** 320 streams, 1,280 policy evaluations; high-correlation cost-aware 14 false confirmations/80 | [Freeze](./candidates/2026-11-21-sg031-cost-shift-freeze.json) · [Evidence](./candidates/2026-11-21-sg031-cost-shift.json) · [Python](./candidates/2026-11-21-sg031-cost-shift.py) |
 | TD-CROSSDOMAIN-SG030 · 2026-11-21 | Asymmetric decision loss and adaptive evidence cost | 200 fresh streams: cost-aware 200/200 at 1749.6 units vs fixed240 at 2880; baseline adaptive 2 false confirmations | [Freeze](./candidates/2026-11-21-sg030-decision-loss-freeze.json) · [Record](./candidates/2026-11-21-sg030-price-of-error.json) · [Python](./candidates/2026-11-21-sg030-price-of-error.py) |
 | TD-CROSSDOMAIN-SG029 · 2026-11-21 | Sequential evidence acquisition and stopping cost | 8/8 synthetic decisions; 1120 vs 1920 observations (41.7% saved); known seeds, not fresh holdout | [Freeze](./candidates/2026-11-21-sg029-cost-of-knowing-freeze.json) · [Record](./candidates/2026-11-21-sg029-cost-of-knowing.json) · [Python](./candidates/2026-11-21-sg029-cost-of-knowing.py) |
 | AETHER-076 · 2026-11-21 | Decision-aware calibration limits | 896 scenarios; 11 residual-only wrong acceptances; 0 under gain-corner gate | [Audit](./audits/2026-11-21-aether-076.json) |
