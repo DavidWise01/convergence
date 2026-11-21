@@ -1,0 +1,1377 @@
+{
+  "id": "AETHER-075",
+  "date": "2026-11-21",
+  "predecessor": "AETHER-074",
+  "title": "Calibration drift and expiring reference certificates",
+  "source": "evidence/audits/2026-11-21-aether-074.json",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "protocol": {
+    "epochsPerScenario": 8,
+    "referenceChallenge": [
+      0.007192482456181948,
+      -0.004166084250259394,
+      0.0064330572988854804,
+      0.0010015151804571194,
+      -0.002167430881051572,
+      0.0023118544574540255,
+      -0.011551524553577651,
+      -0.0010550630898119085,
+      0.003749720541848751,
+      -0.00013139048368818963,
+      0.00939513387023109,
+      -0.0029298867559308765,
+      -0.0006475289288979604,
+      0.004366313152414633,
+      -0.007758069670830506,
+      0.000017224867864923555,
+      -0.005016734504531928,
+      -0.0029593606608277426,
+      0.011122579964206061,
+      0.0001642037329705759,
+      0.00347047822870271,
+      0.000333652966797775,
+      -0.007537991108062638,
+      0.004322123239041188,
+      -0.005538159594646259,
+      -0.004250886187553901,
+      0.003885804999926751,
+      -0.00199921495443741,
+      0.010442143759775152,
+      0.002865758921644556,
+      -0.0059421444524197335,
+      0.001593522222050714,
+      -0.007756538485445169,
+      0.0006113078052320953,
+      0.0017726695620856004,
+      -0.006261302804994689,
+      0.007798501333351824,
+      0.002570064852635722,
+      0.0027987821150408684,
+      0.004134101464517467
+    ],
+    "trainingIndices": "3–25",
+    "validationIndices": "28–39",
+    "candidateLags": [
+      0,
+      1,
+      2
+    ],
+    "renewEveryEpochs": 2,
+    "certificateValidThroughFollowingEpoch": true,
+    "monitorThreshold": 0.0005,
+    "trainingRmsMax": 0.00045,
+    "validationRmsMax": 0.0005,
+    "minimumLagFitGap": 0.0008,
+    "qualificationGainRange": [
+      0.55,
+      1.5
+    ],
+    "observerOnly": true
+  },
+  "scenarioLedgers": [
+    {
+      "id": "stable",
+      "label": "Stable reference",
+      "missed": [],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9971458972116661,
+            "offset": 0.0029997171406013975,
+            "rms": 0.000032438637287889313,
+            "validationRms": 0.00004051202961819721,
+            "runnerGap": 0.005047243830523974,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00004487607509791887,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9991280677225332,
+            "offset": 0.0029999217970905355,
+            "rms": 0.00003601077792379722,
+            "validationRms": 0.00003768228366621275,
+            "runnerGap": 0.0050519783842494,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621275,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0012689896358271,
+            "offset": 0.003000140691866145,
+            "rms": 0.0000356286149599367,
+            "validationRms": 0.00003103639628872039,
+            "runnerGap": 0.00506214887453885,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00003836686163622929,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0031788685087855,
+            "offset": 0.0030003339710846337,
+            "rms": 0.00003145095390006362,
+            "validationRms": 0.000024260997076951,
+            "runnerGap": 0.005075826868102916,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.000024260997076951,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 1.0031788685087855,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.004509975558585,
+            "offset": 0.0030004664446884816,
+            "rms": 0.00002551211240114096,
+            "validationRms": 0.000023588252242304133,
+            "runnerGap": 0.005089264704013149,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.000025100855151235076,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 1.0031788685087855,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.005019958120463,
+            "offset": 0.0030005139934072608,
+            "rms": 0.000022128520250870588,
+            "validationRms": 0.00002981716280125364,
+            "runnerGap": 0.005096789503271481,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00002981716280125364,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0046159644340225,
+            "offset": 0.0030004679601170372,
+            "rms": 0.0000248520581871997,
+            "validationRms": 0.0000368148073063254,
+            "runnerGap": 0.005094090721721117,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.000037712276451726644,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-ramp",
+      "label": "Gradual gain drift",
+      "missed": [],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 1.03,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0271458972116663,
+            "offset": 0.002999717140601397,
+            "rms": 0.00003243863728788944,
+            "validationRms": 0.0000405120296181968,
+            "runnerGap": 0.005200126109314698,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00019282752498183623,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 1.06,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0591280677225332,
+            "offset": 0.0029999217970905355,
+            "rms": 0.00003601077792379704,
+            "validationRms": 0.00003768228366621269,
+            "runnerGap": 0.005357743090653215,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621269,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 1.0591280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 1.12,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.121268989635827,
+            "offset": 0.003000140691866146,
+            "rms": 0.00003562861495993662,
+            "validationRms": 0.00003103639628872105,
+            "runnerGap": 0.00567368149070486,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00035291574735014523,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 1.0591280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 1.2,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.2031788685087854,
+            "offset": 0.0030003339710846337,
+            "rms": 0.00003145095390006364,
+            "validationRms": 0.000024260997076950828,
+            "runnerGap": 0.00609505408384636,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.000024260997076950828,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 1.2031788685087854,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 1.28,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.284509975558585,
+            "offset": 0.0030004664446884816,
+            "rms": 0.000025512112401140952,
+            "validationRms": 0.000023588252242304465,
+            "runnerGap": 0.00651618720016092,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.0004416279062592691,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 1.2031788685087854,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 1.35,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.3550199581204632,
+            "offset": 0.003000513993407261,
+            "rms": 0.00002212852025087053,
+            "validationRms": 0.00002981716280125318,
+            "runnerGap": 0.006880440583765577,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00002981716280125318,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.3550199581204632,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1.4,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.4046159644340221,
+            "offset": 0.0030004679601170372,
+            "rms": 0.000024852058187199662,
+            "validationRms": 0.00003681480730632502,
+            "runnerGap": 0.007132541067817753,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00025611146448227675,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.3550199581204632,
+            "lag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "delay-jump",
+      "label": "Timing jump",
+      "missed": [],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9971458972116661,
+            "offset": 0.0029997171406013975,
+            "rms": 0.000032438637287889313,
+            "validationRms": 0.00004051202961819721,
+            "runnerGap": 0.005047243830523974,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00004487607509791887,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9991280677225332,
+            "offset": 0.0029999217970905355,
+            "rms": 0.00003601077792379722,
+            "validationRms": 0.00003768228366621275,
+            "runnerGap": 0.0050519783842494,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621275,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 1,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 1,
+            "gain": 0.9954234173274242,
+            "offset": 0.002999397385886797,
+            "rms": 0.00002679493977107331,
+            "validationRms": 0.00002433184589143473,
+            "runnerGap": 0.005067033544309074,
+            "passes": true
+          },
+          "event": "WITHDRAWN_RESIDUAL",
+          "residual": 0.008112873042461194,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 1,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 1,
+            "gain": 0.9948566469077167,
+            "offset": 0.00299863831245345,
+            "rms": 0.000022625819899192255,
+            "validationRms": 0.000029423602546030312,
+            "runnerGap": 0.00506665782164051,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.000029423602546030312,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 0.9948566469077167,
+            "lag": 1
+          }
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 1,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 1,
+            "gain": 0.9952263190738366,
+            "offset": 0.002998127159430058,
+            "rms": 0.000023575372093637498,
+            "validationRms": 0.000036048705105880365,
+            "runnerGap": 0.0050651219952799476,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.000036706654485118184,
+          "qualified": true,
+          "certificate": {
+            "issued": 4,
+            "expires": 5,
+            "gain": 0.9948566469077167,
+            "lag": 1
+          }
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 2,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 2,
+            "gain": 1.000551770426678,
+            "offset": 0.002998031622263289,
+            "rms": 0.0000341419468749823,
+            "validationRms": 0.00003696840029957609,
+            "runnerGap": 0.005021896264008888,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003696840029957609,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.000551770426678,
+            "lag": 2
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 2,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 2,
+            "gain": 0.9982435324106037,
+            "offset": 0.002998260837493819,
+            "rms": 0.00003332392476628823,
+            "validationRms": 0.000030325090640744203,
+            "runnerGap": 0.0050130019661258785,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00003786688023881416,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.000551770426678,
+            "lag": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "noise-onset",
+      "label": "Noise interruption",
+      "missed": [],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9971458972116661,
+            "offset": 0.0029997171406013975,
+            "rms": 0.000032438637287889313,
+            "validationRms": 0.00004051202961819721,
+            "runnerGap": 0.005047243830523974,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00004487607509791887,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9991280677225332,
+            "offset": 0.0029999217970905355,
+            "rms": 0.00003601077792379722,
+            "validationRms": 0.00003768228366621275,
+            "runnerGap": 0.0050519783842494,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621275,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0012689896358271,
+            "offset": 0.003000140691866145,
+            "rms": 0.0000356286149599367,
+            "validationRms": 0.00003103639628872039,
+            "runnerGap": 0.00506214887453885,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00003836686163622929,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.0008
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0508618961405662,
+            "offset": 0.0030053435373541388,
+            "rms": 0.0005032152624010171,
+            "validationRms": 0.0003881759532312199,
+            "runnerGap": 0.004779545314623067,
+            "passes": false
+          },
+          "event": "RENEWAL_REJECTED",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.0008
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0721596089373566,
+            "offset": 0.003007463115015706,
+            "rms": 0.0004081937984182557,
+            "validationRms": 0.0003774120358768664,
+            "runnerGap": 0.004990377337560923,
+            "passes": true
+          },
+          "event": "NO_CERTIFICATE",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.005019958120463,
+            "offset": 0.0030005139934072608,
+            "rms": 0.000022128520250870588,
+            "validationRms": 0.00002981716280125364,
+            "runnerGap": 0.005096789503271481,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00002981716280125364,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0046159644340225,
+            "offset": 0.0030004679601170372,
+            "rms": 0.0000248520581871997,
+            "validationRms": 0.0000368148073063254,
+            "runnerGap": 0.005094090721721117,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.000037712276451726644,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-collapse",
+      "label": "Gain collapse and rebound",
+      "missed": [],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 0.95,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9471458972116663,
+            "offset": 0.0029997171406013975,
+            "rms": 0.00003243863728788933,
+            "validationRms": 0.00004051202961819703,
+            "runnerGap": 0.004792440420488489,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00024530773094176263,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 0.85,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.8491280677225332,
+            "offset": 0.002999921797090535,
+            "rms": 0.0000360107779237972,
+            "validationRms": 0.00003768228366621228,
+            "runnerGap": 0.004287569935472214,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621228,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.8491280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 0.7,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.701268989635827,
+            "offset": 0.0030001406918661456,
+            "rms": 0.000035628614959936684,
+            "validationRms": 0.00003103639628872058,
+            "runnerGap": 0.003533328605900861,
+            "passes": true
+          },
+          "event": "WITHDRAWN_RESIDUAL",
+          "residual": 0.0007831934188881994,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 0.52,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.5231788685087854,
+            "offset": 0.0030003339710846337,
+            "rms": 0.000031450953900063694,
+            "validationRms": 0.00002426099707695127,
+            "runnerGap": 0.002629701368627577,
+            "passes": false
+          },
+          "event": "RENEWAL_REJECTED",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 0.4,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.40450997555858476,
+            "offset": 0.003000466444688481,
+            "rms": 0.000025512112401140982,
+            "validationRms": 0.000023588252242304005,
+            "runnerGap": 0.002031594586305546,
+            "passes": false
+          },
+          "event": "NO_CERTIFICATE",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 0.8,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.8050199581204633,
+            "offset": 0.003000513993407261,
+            "rms": 0.000022128520250870577,
+            "validationRms": 0.000029817162801253736,
+            "runnerGap": 0.0040775633008112745,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.000029817162801253736,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 0.8050199581204633,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0046159644340225,
+            "offset": 0.0030004679601170372,
+            "rms": 0.0000248520581871997,
+            "validationRms": 0.0000368148073063254,
+            "runnerGap": 0.005094090721721117,
+            "passes": true
+          },
+          "event": "WITHDRAWN_RESIDUAL",
+          "residual": 0.001064860667213725,
+          "qualified": false,
+          "certificate": null
+        }
+      ]
+    },
+    {
+      "id": "missed-recheck",
+      "label": "Missing renewal and expiry",
+      "missed": [
+        4
+      ],
+      "ledger": [
+        {
+          "epoch": 0,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9956833689161728,
+            "offset": 0.0029995639838988584,
+            "rms": 0.000026567481481560617,
+            "validationRms": 0.00003838303879800248,
+            "runnerGap": 0.00504780242187186,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003838303879800248,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 1,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9971458972116661,
+            "offset": 0.0029997171406013975,
+            "rms": 0.000032438637287889313,
+            "validationRms": 0.00004051202961819721,
+            "runnerGap": 0.005047243830523974,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00004487607509791887,
+          "qualified": true,
+          "certificate": {
+            "issued": 0,
+            "expires": 1,
+            "gain": 0.9956833689161728,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 2,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 0.9991280677225332,
+            "offset": 0.0029999217970905355,
+            "rms": 0.00003601077792379722,
+            "validationRms": 0.00003768228366621275,
+            "runnerGap": 0.0050519783842494,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00003768228366621275,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 3,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0012689896358271,
+            "offset": 0.003000140691866145,
+            "rms": 0.0000356286149599367,
+            "validationRms": 0.00003103639628872039,
+            "runnerGap": 0.00506214887453885,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.00003836686163622929,
+          "qualified": true,
+          "certificate": {
+            "issued": 2,
+            "expires": 3,
+            "gain": 0.9991280677225332,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 4,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0031788685087855,
+            "offset": 0.0030003339710846337,
+            "rms": 0.00003145095390006362,
+            "validationRms": 0.000024260997076951,
+            "runnerGap": 0.005075826868102916,
+            "passes": true
+          },
+          "event": "EXPIRED",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 5,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.004509975558585,
+            "offset": 0.0030004664446884816,
+            "rms": 0.00002551211240114096,
+            "validationRms": 0.000023588252242304133,
+            "runnerGap": 0.005089264704013149,
+            "passes": true
+          },
+          "event": "NO_CERTIFICATE",
+          "residual": null,
+          "qualified": false,
+          "certificate": null
+        },
+        {
+          "epoch": 6,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.005019958120463,
+            "offset": 0.0030005139934072608,
+            "rms": 0.000022128520250870588,
+            "validationRms": 0.00002981716280125364,
+            "runnerGap": 0.005096789503271481,
+            "passes": true
+          },
+          "event": "RENEWED",
+          "residual": 0.00002981716280125364,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        },
+        {
+          "epoch": 7,
+          "actualForAudit": {
+            "gain": 1,
+            "lag": 0,
+            "noise": 0.00005
+          },
+          "candidateFit": {
+            "lag": 0,
+            "gain": 1.0046159644340225,
+            "offset": 0.0030004679601170372,
+            "rms": 0.0000248520581871997,
+            "validationRms": 0.0000368148073063254,
+            "runnerGap": 0.005094090721721117,
+            "passes": true
+          },
+          "event": "ACTIVE",
+          "residual": 0.000037712276451726644,
+          "qualified": true,
+          "certificate": {
+            "issued": 6,
+            "expires": 7,
+            "gain": 1.005019958120463,
+            "lag": 0
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "scenarios": [
+      {
+        "id": "stable",
+        "qualified": 8,
+        "withdrawals": 0,
+        "renewalRejections": 0,
+        "expirations": 0
+      },
+      {
+        "id": "gain-ramp",
+        "qualified": 8,
+        "withdrawals": 0,
+        "renewalRejections": 0,
+        "expirations": 0
+      },
+      {
+        "id": "delay-jump",
+        "qualified": 7,
+        "withdrawals": 1,
+        "renewalRejections": 0,
+        "expirations": 0
+      },
+      {
+        "id": "noise-onset",
+        "qualified": 6,
+        "withdrawals": 0,
+        "renewalRejections": 1,
+        "expirations": 0
+      },
+      {
+        "id": "gain-collapse",
+        "qualified": 4,
+        "withdrawals": 2,
+        "renewalRejections": 1,
+        "expirations": 0
+      },
+      {
+        "id": "missed-recheck",
+        "qualified": 6,
+        "withdrawals": 0,
+        "renewalRejections": 0,
+        "expirations": 1
+      }
+    ],
+    "firstFiveQualified": 33,
+    "totalQualified": 39
+  },
+  "artifact": "experiments/aether-075/index.html",
+  "limitations": [
+    "Epoch-level testing does not guarantee safe operation within an epoch.",
+    "Current monitoring uses the same known excitation as training, allowing source/model shared failure.",
+    "A reference can drift while residual remains under tolerance; passing is threshold dependent.",
+    "The simulated gain/lag values are known only to evaluation/audit and not calibration fitting.",
+    "No statistical confidence coverage or real-world sensor checks established.",
+    "Fundamental-force/fusion channel naming is conceptual, not a physical model."
+  ]
+}
