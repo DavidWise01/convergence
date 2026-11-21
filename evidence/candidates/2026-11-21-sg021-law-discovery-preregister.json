@@ -1,0 +1,46 @@
+{
+  "id": "TD-CROSSDOMAIN-SG021-FREEZE",
+  "recorded_at": "2026-11-21",
+  "status": "PREREGISTERED_BEFORE_TEST_EXECUTION",
+  "next_of": "TD-CROSSDOMAIN-SG020",
+  "protocol": "Infer scalar update laws using exact rational observations, compare polynomial degrees 0..2, rational P/Q degree up to 2/2, zero-hinge piecewise-linear, and affine two-step recurrence. Fit with overdetermined rational elimination; reject inconsistent candidates; choose simplest fitting family; compare held-out predictions.",
+  "sealed_systems": [
+    {
+      "id": "A",
+      "law": "2*x+1",
+      "family": "affine polynomial"
+    },
+    {
+      "id": "B",
+      "law": "x*x-x+2",
+      "family": "quadratic polynomial"
+    },
+    {
+      "id": "C",
+      "law": "1-x+3*max(0,x)",
+      "family": "zero-hinge piecewise linear"
+    },
+    {
+      "id": "D",
+      "law": "(x+1)/(x*x+1)",
+      "family": "rational 1/2"
+    },
+    {
+      "id": "E",
+      "law": "next=2*current-previous+1",
+      "family": "second-order affine recurrence"
+    }
+  ],
+  "training_inputs": "Scalar laws x integers -5..5 inclusive; held-out rational x = ±1/2, ±3/2, ±5/2, ±7/2, ±9/2, ±11/2 plus ±6. Recurrence pair training includes equal-current conflicting-next cases; held-out independent previous,current pairs.",
+  "controls": [
+    "Sparse two-input training permits both affine and quadratic laws to agree on observations while differing elsewhere",
+    "Same current state with different preceding states yields different recurrence next state",
+    "Poles must be checked for rational candidate predictions"
+  ],
+  "hypothesis": "Exact predictions for all 5 generating systems provided appropriate family coverage; evidence should not be treated as open-ended unknown physics or authorship",
+  "limitations": [
+    "Assistant designed candidate families and synthetic systems; not independent blind source",
+    "All examples deterministic toy processes",
+    "No inference of genuine authorship or causal use of ROOT0"
+  ]
+}
