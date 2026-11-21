@@ -1,0 +1,71 @@
+{
+  "id": "TD-CROSSDOMAIN-SG038-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG037",
+  "objective": "Challenge SG037 trend interpretation with a differently constructed estimator. Preserve disagreement as unresolved (not proof of false decision) and measure extra abstentions against actual error prevention.",
+  "baseline": "SG037 identical generator, predecision gate, 20-sample monitors and 20-sample confirmation window, unchanged.",
+  "estimator_A": "Median of pairwise slopes among consecutive 10-sample bin medians, reject if |s|<.0018, confirm if |s|>.0032, else unresolved.",
+  "estimator_B": "Median of first floor(n/3) observations rounded down to a multiple of 10 versus median of last equal-sized window, divided by distance between window centers (n-w); thresholds inherited from estimator A.",
+  "challenge": "At early SG037 candidate commitment, require second estimator classification to equal candidate primary classification, else discard candidate and continue. At final 240, if a shift alarm latched and estimators disagree, record unresolved. No change to frozen SG037 predecision gate or shift monitor.",
+  "pilot": {
+    "seed_start": 31000000,
+    "streams": 140,
+    "SG037": {
+      "correct": 118,
+      "wrong": 1,
+      "unresolved": 21,
+      "loss": 2365.2
+    },
+    "SG038": {
+      "correct": 108,
+      "wrong": 1,
+      "unresolved": 31,
+      "loss": 2545.2
+    },
+    "note": "Pilot-inspected: second estimator caused ten additional abstentions and did not fix one wrong decision. This is a disclosed negative pilot, not holdout."
+  },
+  "holdout": {
+    "seed_start": 34000000,
+    "streams": 560,
+    "per_truth_per_scenario": 40,
+    "seed_formula": "34000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation"
+    ],
+    "comparators": [
+      "SG037",
+      "SG038",
+      "always fixed240"
+    ],
+    "loss": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    },
+    "report": [
+      "correct",
+      "FP",
+      "FN",
+      "unresolved",
+      "early stopping",
+      "observation count",
+      "loss",
+      "exact failure seeds",
+      "disagreement outcomes"
+    ],
+    "no_retuning": true
+  },
+  "limitations": [
+    "Two estimators analyze same data and share signal-model assumptions, not independent source ancestry.",
+    "Abstention may increase; disagreement is not necessarily error.",
+    "Synthetic scenarios, not real-world proof of general reliability."
+  ]
+}
