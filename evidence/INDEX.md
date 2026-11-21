@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG025 · 2026-11-21 | Dual-timescale fast step and slow drift detection | 150/150 holdout synthetic traces, 30/30 drifts; pilot-selected thresholds and overlap limitation | [Freeze](./candidates/2026-11-21-sg025-dual-timescale-freeze.json) · [Evidence](./candidates/2026-11-21-sg025-dual-timescale.json) · [Python](./candidates/2026-11-21-sg025-dual-timescale.py) |
 | AETHER-073 · 2026-11-21 | Diagnostic self-calibration | 384 held-out reference trials; false-gain counterexample and qualified abstention | [Audit](./audits/2026-11-21-aether-073.json) |
 | AETHER-072 · 2026-11-21 | Active observability recovery | Reversible diagnostic pulse, four hypotheses, biased-sensor abstention and baseline controls | [Audit](./audits/2026-11-21-aether-072.json) |
 | TD-CROSSDOMAIN-SG024 · 2026-11-21 | Frozen noisy-stream step vs drift detector | **MIXED** 134/150: 60/60 steps, 60/60 stable/spike, 14/30 drifts; 16 missed | [Freeze](./candidates/2026-11-21-sg024-noise-drift-freeze.json) · [Evidence](./candidates/2026-11-21-sg024-noise-drift.json) · [Python](./candidates/2026-11-21-sg024-noise-drift.py) |
