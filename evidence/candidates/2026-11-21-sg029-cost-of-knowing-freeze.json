@@ -1,0 +1,37 @@
+{
+  "id": "TD-CROSSDOMAIN-SG029-FREEZE",
+  "date": "2026-11-21",
+  "status": "PREREGISTERED_BEFORE_SG029_EXECUTION",
+  "prior": "TD-CROSSDOMAIN-SG028",
+  "objective": "Minimize the number of additional synthetic observations needed to resolve four SG027-unresolved trends while preserving matched no-drift controls and immutable evidence.",
+  "sources": {
+    "unresolved_seeds": [
+      901038,
+      901251,
+      902245,
+      903026
+    ],
+    "comparison": "SG028 fixed 240 additional observations per case",
+    "controls": "Same seeds, noise and step, but injected drift set to zero."
+  },
+  "protocol": {
+    "acquisition": "Observe t=240 onward in blocks of 40, at most 240 new observations; no lookahead or retrospective sampling",
+    "estimator": "For each available prefix with at least 80 observations, split into contiguous nonoverlapping 10-observation bins; take median of pairwise bin-median slopes, indexed at bin centers",
+    "decisions": "rejected if |slope| < 0.0018; confirmed if |slope| > 0.0032; else unresolved",
+    "stop": "Two consecutive eligible checkpoints with the same non-unresolved decision; otherwise acquire the next 40 observations. No forced decision at cap",
+    "budgets": {
+      "batch": 40,
+      "min_evidence": 80,
+      "max_evidence": 240
+    },
+    "cost": "1 unit per observation; 8 cases × 240 = 1920 fixed benchmark units; charged on acquired observations even if unresolved",
+    "score": "Correctly resolved true drifts, correctly rejected no-drift controls, wrong decisions, unresolved cases at cap, observations used, savings vs fixed benchmark",
+    "ledger": "Append-only snapshot for prior unresolved, each 40-observation batch with SHA256 digest, each interim classification, and final status; do not overwrite SG027/028 history"
+  },
+  "limitations": [
+    "Not a statistical confidence interval or an optimal economic decision rule",
+    "Designed on same four known synthetic seed families and known noise distribution as SG028, thus not fresh independent holdout",
+    "No explicit financial loss model; observation cost is an illustrative unit cost",
+    "Safety of stopping is empirical, not formally guaranteed"
+  ]
+}
