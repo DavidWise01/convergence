@@ -1,0 +1,178 @@
+{
+  "id": "TD-CROSSDOMAIN-SG042",
+  "date": "2026-11-21",
+  "status": "MIXED_FALSE_REJECTION_PREVENTED_AT_HIGH_ABSTENTION_COST",
+  "parent": "TD-CROSSDOMAIN-SG041",
+  "freeze": "evidence/candidates/2026-11-21-sg042-trend-uncertainty-freeze.json",
+  "freeze_commit": "fb469053920df0c153d13af6b88b0634d25ce108",
+  "method": "At SG041 stopping time, estimate drift by OLS on nonoverlapping 10-observation bin medians, compute HAC/Newey-West standard error using Bartlett lag 3; nominal 90% interval (z=1.645). Retain SG041 confirmation only when interval excludes 0; retain SG041 rejection only when interval entirely inside ±.0032. Withhold otherwise.",
+  "pilot": {
+    "seed_start": 67000000,
+    "streams": 90,
+    "baseline": {
+      "correct": 82,
+      "FP": 1,
+      "FN": 2,
+      "unresolved": 5,
+      "loss": 1610.4
+    },
+    "sg042": {
+      "correct": 78,
+      "FP": 1,
+      "FN": 1,
+      "unresolved": 10,
+      "loss": 1610.4
+    },
+    "disclosure": "Inspected before freezing; nominal z and HAC lag fixed before fresh holdout."
+  },
+  "holdout": {
+    "seed_start": 71000000,
+    "seed_formula": "71000000+200000*scenario_index+10000*int(drift)+101*k, k=0..19",
+    "streams": 360,
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "SG041": {
+      "correct": 313,
+      "FP": 2,
+      "FN": 2,
+      "unresolved": 43,
+      "observations": 79980,
+      "loss": 6052.8
+    },
+    "SG042": {
+      "correct": 295,
+      "FP": 2,
+      "FN": 1,
+      "unresolved": 62,
+      "observations": 79980,
+      "loss": 6304.8
+    },
+    "fixed240": {
+      "correct": 316,
+      "FP": 2,
+      "FN": 1,
+      "unresolved": 41,
+      "observations": 86400,
+      "loss": 6312
+    },
+    "wrong_prevented": 1,
+    "additional_correct_withheld": 18,
+    "additional_abstentions": 19,
+    "cost_increase_vs_SG041": 252,
+    "failures": [
+      {
+        "scenario": "correlation_switch",
+        "seed": 71200000,
+        "truth": false,
+        "error": "FP",
+        "interval": [
+          -0.005943,
+          -0.0040272
+        ]
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 71200909,
+        "truth": false,
+        "error": "FP",
+        "interval": [
+          0.0018616,
+          0.0053229
+        ]
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 72010404,
+        "truth": true,
+        "error": "FN",
+        "interval": [
+          -0.0013808,
+          0.0010446
+        ]
+      }
+    ],
+    "per_scenario_abstentions": {
+      "reference": {
+        "before": 0,
+        "after": 0
+      },
+      "correlation_switch": {
+        "before": 4,
+        "after": 9
+      },
+      "laplace_tail": {
+        "before": 0,
+        "after": 0
+      },
+      "subtle_drift": {
+        "before": 16,
+        "after": 16
+      },
+      "fast_oscillation": {
+        "before": 5,
+        "after": 13
+      },
+      "late_correlation_switch": {
+        "before": 5,
+        "after": 6
+      },
+      "late_oscillation": {
+        "before": 2,
+        "after": 3
+      },
+      "variable_period": {
+        "before": 0,
+        "after": 1
+      },
+      "colored_control": {
+        "before": 11,
+        "after": 14
+      }
+    },
+    "rows_sha256": "2b657e8bc681f76788318e7f5b0e1e1d81f075740a718159b24165157e2e4bcf"
+  },
+  "findings": [
+    "HAC confirmation gate successfully converted one formerly wrong false rejection into unresolved while preserving both false confirmations and a late-correlation false rejection.",
+    "The gate withheld 18 decisions previously correct, increasing total loss relative to SG041.",
+    "All three remaining wrong decisions also meet fixed-budget decision rule: observing longer under these conditions does not ensure correct interpretation.",
+    "Nominal HAC normal interval assumptions are fragile with only 8-24 bin medians and nonstationary correlation."
+  ],
+  "limitations": [
+    "Short-sample HAC/Newey-West intervals do not have guaranteed 90% coverage with nonstationary correlation, high persistence, or oscillations.",
+    "The estimator and original classifier share the same observation source. This is not an independent witness.",
+    "The threshold +/-0.0032 is a decision margin from the old classifier, not a scientifically determined minimum effect.",
+    "Fresh seeds but simulated generator families reused; no blind external observations.",
+    "The GitHub source imports SG041 repository source and was re-fetched, but has not been run in a clean checkout."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Container pilot Python",
+      "result": "90 synthetic traces, SG042 78 correct, 2 wrong, 10 unresolved; pilot disclosed before freeze"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub frozen protocol",
+      "result": "fb469053920df0c153d13af6b88b0634d25ce108 before testing fresh seed range"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python held-out run",
+      "result": "360 streams, 295 correct, 3 wrong, 62 unresolved, loss 6304.8"
+    }
+  ],
+  "next": "SG043 finite-sample coverage audit and decision-aware slope uncertainty under regime switching; explicitly measure interval miscoverage and selective error.",
+  "executable": "evidence/candidates/2026-11-21-sg042-trend-uncertainty.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
