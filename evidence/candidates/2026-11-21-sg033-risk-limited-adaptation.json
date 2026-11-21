@@ -1,0 +1,122 @@
+{
+  "id": "TD-CROSSDOMAIN-SG033",
+  "recorded_at": "2026-11-21",
+  "status": "MIXED_RISK_GATE_HOLDOUT",
+  "freeze": "evidence/candidates/2026-11-21-sg033-risk-gate-freeze.json",
+  "freeze_commit": "67a9f99026229cf5896949a2898a896cfb5dc305",
+  "protocol": "Prospective rho estimate using only t0..109. If rho_est < 0.60 use SG030 conservative adaptive; otherwise use fixed240. Compare unchanged SG032 threshold .82 and baselines on t240..479. No after-result tuning.",
+  "calibration_disclosure": "240 pilot traces; thresholds .60 through .80 inspected; .60 selected for zero aggressive selections in high-correlation pilot (not for minimal calibration loss).",
+  "holdout": {
+    "streams": 400,
+    "seed_formula": "10300000+100000*scenario_index+10000*int(drift)+101*k; k=0..49",
+    "policies": {
+      "SG032": {
+        "correct": 329,
+        "FP": 7,
+        "FN": 13,
+        "unresolved": 51,
+        "observations": 69320,
+        "loss": 7297.2
+      },
+      "SG033": {
+        "correct": 331,
+        "FP": 2,
+        "FN": 4,
+        "unresolved": 63,
+        "observations": 92800,
+        "loss": 7362,
+        "early_policy_choices": 44
+      },
+      "fixed240": {
+        "correct": 331,
+        "FP": 2,
+        "FN": 3,
+        "unresolved": 64,
+        "observations": 96000,
+        "loss": 7482
+      },
+      "always_adaptive": {
+        "correct": 322,
+        "FP": 18,
+        "FN": 16,
+        "unresolved": 44,
+        "observations": 63080,
+        "loss": 8716.8
+      }
+    },
+    "high_correlation": {
+      "SG032": {
+        "correct": 72,
+        "FP": 6,
+        "FN": 1,
+        "unresolved": 21,
+        "loss": 2719.2,
+        "early_choices": 19
+      },
+      "SG033": {
+        "correct": 74,
+        "FP": 2,
+        "FN": 1,
+        "unresolved": 23,
+        "loss": 2244,
+        "early_choices": 0
+      },
+      "fixed240": {
+        "correct": 74,
+        "FP": 2,
+        "FN": 1,
+        "unresolved": 23,
+        "loss": 2244
+      }
+    },
+    "risk_vs_SG032": {
+      "incorrect_decisions_reduced": 14,
+      "extra_observations": 23480,
+      "cost_increase": 64.8
+    },
+    "cost_vs_fixed240": {
+      "saved": 120,
+      "reduction_percent": 1.604
+    },
+    "row_sha256": "4d330da93a494ad91b1280a1d52e507f8544ded5763a9bf6055134222a8e0bbb"
+  },
+  "negative_results": [
+    "Even fixed240 produces two false confirmations and one false rejection in high correlation.",
+    "Safety gate has higher numeric loss than less cautious SG032 on this holdout.",
+    "Weak drift still yields unresolved cases and false rejections.",
+    "Risk gate uses heuristic threshold without statistically calibrated environment uncertainty."
+  ],
+  "limitations": [
+    "Synthetic model/noise; new random seeds but same generative families.",
+    "Policy comparison paired on identical streams; not independent physical evidence.",
+    "Gate selection uses predecision data only, not continuation; does not prove optimal risk control.",
+    "No causal claim about third-party mathematical provenance or formal proof verification."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python calibration",
+      "result": "Inspected nine risk gates; disclosed before freezing .60."
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "Commit 67a9f99026229cf5896949a2898a896cfb5dc305 before holdout."
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python new holdout",
+      "result": "400 streams; SG033 331 correct, 6 wrong, 63 unresolved, cost 7362."
+    }
+  ],
+  "next": "SG034 validate a probabilistic upper risk estimate for early policy use, then define an explicit risk budget and abstain on policy selection where unsupported.",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG032",
+    "TD-CROSSDOMAIN-SG031"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg033-risk-limited-adaptation.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "media_archived": false
+}
