@@ -1,0 +1,63 @@
+{
+  "id": "TD-CROSSDOMAIN-SG035-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG034",
+  "purpose": "Assess transfer of SG034 calibration under shift and report risk-versus-coverage curves without post-hoc threshold changes.",
+  "calibration_source": "SG034 fixed bin counts [3,122,500,273,62], error counts [0,3,19,52,16], risk one-sided Wilson upper z=1.6448536269514722, min bin count=40, bin edges rho .45,.60,.75,.90",
+  "budgets": [
+    0.04,
+    0.06,
+    0.08,
+    0.15,
+    0.25
+  ],
+  "scenarios": [
+    {
+      "id": "reference",
+      "rho": 0.72,
+      "slope": 0.005,
+      "noise": "uniform(-.23,.23)"
+    },
+    {
+      "id": "correlation_switch",
+      "rho_early": 0.72,
+      "rho_future": 0.94,
+      "slope": 0.005,
+      "noise": "uniform(-.23,.23)"
+    },
+    {
+      "id": "laplace_tail",
+      "rho": 0.72,
+      "slope": 0.005,
+      "noise": "Laplace innovation with scale .115, produced via inverse CDF"
+    },
+    {
+      "id": "subtle_drift",
+      "rho": 0.72,
+      "slope": 0.0027,
+      "noise": "uniform(-.23,.23)"
+    },
+    {
+      "id": "fast_oscillation",
+      "rho": 0.72,
+      "slope": 0.005,
+      "noise": "uniform(-.23,.23), additional post-240 sine amplitude .55, period 60"
+    }
+  ],
+  "sample_count": "40 drift+40 no-drift per scenario, 400 streams total; all risk budgets evaluated paired on same streams",
+  "seed_formula": "17300000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+  "algorithm": "Use predecision t0..109 estimate_rho from SG033; SG034 bins select conservative adaptive if Wilson upper < budget else fixed240. Both compare on only observations t240..479. Fixed loss sample=.06, FP=150, FN=90, abstain=18.",
+  "metrics": [
+    "coverage=proportion routed adaptive, not fraction decided",
+    "conditional wrong/decided among adaptive selections",
+    "overall wrong and unresolved",
+    "loss and samples",
+    "actual wrong rate against nominal budget, with warning against interpreting bound as guaranteed per-subset risk"
+  ],
+  "prohibitions": [
+    "Do not retune bins/budget after holdout",
+    "Do not count reference-generator drift cases as proof of external validity",
+    "Preserve all failures and counterexamples"
+  ]
+}
