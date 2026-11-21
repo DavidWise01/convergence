@@ -1,0 +1,156 @@
+{
+  "id": "TD-CROSSDOMAIN-SG036",
+  "date": "2026-11-21",
+  "status": "MIXED_SHIFT_MONITOR_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG035",
+  "freeze": "evidence/candidates/2026-11-21-sg036-shift-monitor-freeze.json",
+  "freeze_commit": "0212570b28935371741f57e8d7b3aa310e12afe2",
+  "protocol": "Predecision SG034 8% bin gate plus online 80-sample detrended residual lag-1 correlation >0.78 or RMS >0.29; checks only t=80,120,160,200,240 of continuation. Alarm latches and disables premature stopping; at 240 run full classification.",
+  "pilot": "150 traces inspected before freeze; monitor pilot 126 correct, 6 wrong, 18 abstain, loss 2913.6. Initial fallback bug corrected before freeze; neither pilot version counted as holdout.",
+  "holdout": {
+    "seed_formula": "21000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "streams": 400,
+    "summary": {
+      "SG035": {
+        "correct": 323,
+        "FP": 22,
+        "FN": 16,
+        "abstain": 39,
+        "observations": 69240,
+        "loss": 9596.4,
+        "early": 299
+      },
+      "SG036": {
+        "correct": 342,
+        "FP": 6,
+        "FN": 4,
+        "abstain": 48,
+        "observations": 79840,
+        "loss": 6914.4,
+        "early": 165
+      },
+      "fixed240": {
+        "correct": 341,
+        "FP": 4,
+        "FN": 2,
+        "abstain": 53,
+        "observations": 96000,
+        "loss": 7494
+      }
+    },
+    "by_environment": {
+      "reference": {
+        "old_wrong": 0,
+        "new_wrong": 0,
+        "new_loss": 775.2
+      },
+      "correlation_switch": {
+        "old_wrong": 22,
+        "new_wrong": 7,
+        "new_loss": 2383.2,
+        "monitor_alarms": 61
+      },
+      "laplace_tail": {
+        "old_wrong": 0,
+        "new_wrong": 0,
+        "new_loss": 816
+      },
+      "subtle_drift": {
+        "old_wrong": 4,
+        "new_wrong": 3,
+        "new_loss": 1698
+      },
+      "fast_oscillation": {
+        "old_wrong": 12,
+        "new_wrong": 0,
+        "new_loss": 1242,
+        "monitor_alarms": 69
+      }
+    },
+    "remaining_failures": [
+      {
+        "scenario": "correlation_switch",
+        "seed": 21200000,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21200303,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21200707,
+        "error": "FP",
+        "n": 120,
+        "alarm_at": null
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21200909,
+        "error": "FP",
+        "n": 120,
+        "alarm_at": null
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21202525,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21203333,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 21212727,
+        "error": "FN",
+        "n": 240,
+        "alarm_at": null
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 21611616,
+        "error": "FN",
+        "n": 160,
+        "alarm_at": null
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 21612424,
+        "error": "FN",
+        "n": 160,
+        "alarm_at": null
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 21613030,
+        "error": "FN",
+        "n": 120,
+        "alarm_at": null
+      }
+    ],
+    "rows_sha256": "6aaef8114dd960c9730c2c3a0216038bb6676fb4ae4ed44e7bf69943d86d4642"
+  },
+  "limitations": [
+    "Known synthetic scenario families; new seeds but not external validation.",
+    "Pilot-chosen alarm thresholds; not calibrated false alarm probabilities.",
+    "No lookahead into future observations, but checks only every 40; harmful shifts can be missed before early stop.",
+    "Fixed240 still makes six wrong decisions, and monitored gate makes ten.",
+    "Passing a simulated holdout is not evidence of physical causal explanation or proof of unrelated mathematical theorems."
+  ],
+  "next": "SG037: detect earlier shifts with independent volatility/correlation diagnostics and pre-stop challenge windows, test lead time, false alarms and hard adversarial shifts.",
+  "executable": "evidence/candidates/2026-11-21-sg036-shift-monitor.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
