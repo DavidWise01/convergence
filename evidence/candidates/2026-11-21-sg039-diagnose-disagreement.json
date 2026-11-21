@@ -1,0 +1,224 @@
+{
+  "id": "TD-CROSSDOMAIN-SG039",
+  "date": "2026-11-21",
+  "status": "PARTIAL_SUCCESS_OSCILLATION_DIAGNOSIS_NOT_GENERAL_ERROR_REDUCTION",
+  "parent": "TD-CROSSDOMAIN-SG038",
+  "freeze": "evidence/candidates/2026-11-21-sg039-diagnose-disagreement-freeze.json",
+  "freeze_commit": "5a365204162afccc77684b04401c3c50d9333a4b",
+  "method": "SG038 two estimators and frozen SG037 predecision risk gate, with normalized detrended Fourier power for a 60-sample period >=.35. Where the labels disagree and this threshold is met, use primary; otherwise preserve unresolved under alarm or keep acquiring during early challenge.",
+  "pilot": {
+    "seeds": "37000000+200000*i+10000*int(drift)+101*k, k=0..9",
+    "streams": 140,
+    "SG037": {
+      "correct": 125,
+      "wrong": 1,
+      "unresolved": 14,
+      "loss": 2150.4
+    },
+    "SG038": {
+      "correct": 113,
+      "wrong": 1,
+      "unresolved": 26,
+      "loss": 2366.4
+    },
+    "SG039": {
+      "correct": 123,
+      "wrong": 1,
+      "unresolved": 16,
+      "loss": 2186.4
+    },
+    "note": "Pilot examined and threshold frozen before independent seed-range holdout."
+  },
+  "holdout": {
+    "seed_formula": "41000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "streams": 560,
+    "results": {
+      "sg037": {
+        "correct": 487,
+        "FP": 4,
+        "FN": 6,
+        "abstain": 63,
+        "samples": 120740,
+        "loss": 9518.4,
+        "early": 157
+      },
+      "sg038": {
+        "correct": 443,
+        "FP": 3,
+        "FN": 5,
+        "abstain": 109,
+        "samples": 121080,
+        "loss": 10126.8,
+        "early": 154
+      },
+      "sg039": {
+        "correct": 481,
+        "FP": 3,
+        "FN": 5,
+        "abstain": 71,
+        "samples": 121080,
+        "loss": 9442.8,
+        "early": 154
+      },
+      "fixed": {
+        "correct": 483,
+        "FP": 2,
+        "FN": 4,
+        "abstain": 71,
+        "samples": 134400,
+        "loss": 10002,
+        "early": 0
+      }
+    },
+    "by_scenario": {
+      "reference": {
+        "sg038_correct": 80,
+        "sg038_unresolved": 0,
+        "sg039_correct": 80,
+        "sg039_unresolved": 0,
+        "oscillation_diagnoses": 0
+      },
+      "correlation_switch": {
+        "sg038_correct": 54,
+        "sg038_unresolved": 22,
+        "sg039_correct": 55,
+        "sg039_unresolved": 21,
+        "oscillation_diagnoses": 1
+      },
+      "laplace_tail": {
+        "sg038_correct": 80,
+        "sg038_unresolved": 0,
+        "sg039_correct": 80,
+        "sg039_unresolved": 0,
+        "oscillation_diagnoses": 0
+      },
+      "subtle_drift": {
+        "sg038_correct": 53,
+        "sg038_unresolved": 25,
+        "sg039_correct": 53,
+        "sg039_unresolved": 25,
+        "oscillation_diagnoses": 0
+      },
+      "fast_oscillation": {
+        "sg038_correct": 48,
+        "sg038_unresolved": 32,
+        "sg039_correct": 74,
+        "sg039_unresolved": 6,
+        "oscillation_diagnoses": 26
+      },
+      "late_correlation_switch": {
+        "sg038_correct": 65,
+        "sg038_unresolved": 13,
+        "sg039_correct": 65,
+        "sg039_unresolved": 13,
+        "oscillation_diagnoses": 0
+      },
+      "late_oscillation": {
+        "sg038_correct": 63,
+        "sg038_unresolved": 17,
+        "sg039_correct": 74,
+        "sg039_unresolved": 6,
+        "oscillation_diagnoses": 12
+      }
+    },
+    "failures": [
+      {
+        "scenario": "correlation_switch",
+        "seed": 41203333,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 140
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 41210808,
+        "error": "FN",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 41213434,
+        "error": "FN",
+        "n": 240,
+        "alarm_at": 100
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 41213939,
+        "error": "FN",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 41610404,
+        "error": "FN",
+        "n": 140,
+        "alarm_at": null
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 41612020,
+        "error": "FN",
+        "n": 140,
+        "alarm_at": null
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 42001616,
+        "error": "FP",
+        "n": 140,
+        "alarm_at": null
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 42002222,
+        "error": "FP",
+        "n": 240,
+        "alarm_at": 160
+      }
+    ],
+    "total_secondary_disagreements": 60,
+    "total_oscillation_diagnoses": 39,
+    "additional_correct_decisions": 38,
+    "extra_wrong_decisions": 0,
+    "abstentions_reduced": 38,
+    "loss_reduction": 684,
+    "rows_sha256": "4e334510a72cd0be1dbed0ffda42d1cf0fe704eb256e1f151929eaa6bceb760c"
+  },
+  "limitations": [
+    "Diagnostic period 60 comes from known generated oscillations, so result may not transfer to unknown frequencies or adversarial noise",
+    "The two estimators and Fourier diagnostic share one observation source; they do not constitute independent witnesses",
+    "Eight incorrect SG038 classifications remain incorrect under SG039",
+    "Relative to SG037, SG039 reduces 10 wrong decisions to eight, but correct decisions 487 to 481 and abstentions 63 to 71 in this seed set; performance depends on the loss model",
+    "Retrospective synthetic benchmark with prospective use of prefixes, not a physical or formal theorem proof"
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub SG038 prior source",
+      "result": "Retrieved prior simulator and policy rule"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python3 calibration",
+      "result": "140 streams, SG039 123 correct and 1 wrong; pilot used to choose diagnostic"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub protocol freeze",
+      "result": "Commit 5a365204162afccc77684b04401c3c50d9333a4b before holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python3 untouched-seed holdout",
+      "result": "560 streams; SG039 481 correct, 8 wrong, 71 unresolved, loss 9442.8"
+    }
+  ],
+  "next": "SG040 unknown-period spectral diagnosis and negative controls for colored noise; independently validate diagnostic labels rather than rely on single chosen period.",
+  "executable": "evidence/candidates/2026-11-21-sg039-diagnose-disagreement.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
