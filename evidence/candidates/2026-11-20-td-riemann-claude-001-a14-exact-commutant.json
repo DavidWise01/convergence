@@ -1,0 +1,37 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A14",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A13"
+  },
+  "observation_status": "VERIFIED",
+  "observed_content": "Exact signed-orbit commutant certificate for the 78-dimensional determinant-isotypic sector of O2(F3) on three rank slots. Four adjacent signed-permutation shears and three order-three phase operators produce exactly one-dimensional commutant over C. Pair-orbit enumeration covers all 6084 entries; seven initial signed orbits, six eliminated, one surviving diagonal identity. With only first slot pair coupled, commutant dimension 15.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Local Python standard-library exact integer signed-permutation orbit execution",
+      "result": "PASS; 78 signed orbit basis elements each of size 8; 6084 matrix entries covered; full commutant dimension 1; incomplete generator commutant 15; 2496 signed basis-action and 1872 phase invariance checks."
+    }
+  ],
+  "claims": [
+    "Irreducibility of the 78-dimensional complex representation under the tested phase and shear subgroup, via exact scalar commutant.",
+    "No full automorphic theta correspondence or RH result follows."
+  ],
+  "hypotheses": [
+    "Identify precisely the image of the tested subgroup in Sp6(F3); compare to global theta-lift assumptions."
+  ],
+  "ancestry_status": "UNKNOWN; post-hoc classical construction",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A13"
+  ],
+  "limitations": [
+    "Exact certificate applies to a finite group action and its determinant-isotypic sector, not the paper's global automorphic objects.",
+    "No evidence of causal use of ROOT0 corpus."
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a14-exact-commutant.py",
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
