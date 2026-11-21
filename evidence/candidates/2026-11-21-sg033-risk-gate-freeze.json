@@ -1,0 +1,70 @@
+{
+  "id": "TD-CROSSDOMAIN-SG033-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_CALIBRATION_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG032",
+  "goal": "Evaluate a risk-limited prospective policy selector using predecision autocorrelation estimates, comparing errors, abstentions, observations and frozen loss with SG032 and fixed240.",
+  "rule": "Estimate rho using detrended trimmed t0..109; choose SG030 conservative adaptive only when rho_est <0.60; otherwise choose fixed240. Compare SG032's rho_est<0.82 rule and always-fixed240. No continuation leakage.",
+  "calibration": {
+    "stream_count": 240,
+    "seed_formula": "9300000+100000*scenario_index+10000*int(drift)+101*k, k=0..29",
+    "tested_lower_gates": [
+      0.6,
+      0.65,
+      0.68,
+      0.7,
+      0.72,
+      0.74,
+      0.76,
+      0.78,
+      0.8
+    ],
+    "chosen": 0.6,
+    "rationale": "Prioritize avoiding aggressive policy in correlated-noise cases; conservative rule made 0 high-correlation adaptive selections on calibration. Not selected for lowest calibration loss.",
+    "disclosed_calibration": {
+      "gate_0_60": {
+        "loss": 4881.6,
+        "wrong": 8,
+        "abstentions": 34,
+        "samples": 55160,
+        "high_corr_early_choices": 0
+      },
+      "sg032_threshold_0_82": {
+        "loss": 4527.6,
+        "wrong": 12,
+        "abstentions": 29,
+        "samples": 40760
+      }
+    }
+  },
+  "holdout": {
+    "stream_count": 400,
+    "seed_start": 10300000,
+    "seed_formula": "10300000+100000*scenario_index+10000*int(drift)+101*k, k=0..49",
+    "scenarios": [
+      "baseline",
+      "weak_drift",
+      "high_correlation",
+      "heavy_tailed"
+    ],
+    "costs": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    },
+    "metrics": [
+      "wrong decisions by type",
+      "hold vs early policy count",
+      "total cost",
+      "observation savings vs fixed240",
+      "environment misroute counts"
+    ],
+    "no_retuning": true
+  },
+  "limitations": [
+    "Gate chosen from calibration with known scenario types, not validated probabilities",
+    "Synthetic generating family unchanged; only seeds are fresh",
+    "Conservative fallback can retain wrong decisions and ambiguity; not a statistical safety guarantee."
+  ]
+}
