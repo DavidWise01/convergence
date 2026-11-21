@@ -1,0 +1,3325 @@
+{
+  "id": "AETHER-067",
+  "date": "2026-11-21",
+  "predecessor": "AETHER-066",
+  "name": "Energy-constrained pathfinding with bounded frequency slew",
+  "sourceModel": "evidence/audits/2026-11-21-aether-065.json",
+  "failedRouteAncestor": "evidence/audits/2026-11-21-aether-066.json",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "search": {
+    "arm": 11,
+    "startShift": 0.4,
+    "shockTick": 128,
+    "endTick": 512,
+    "targets": [
+      -0.2,
+      -0.1,
+      0,
+      0.08,
+      0.1,
+      0.12,
+      0.14
+    ],
+    "beginTicks": [
+      144,
+      160,
+      176,
+      192,
+      224,
+      256
+    ],
+    "stepIntervals": [
+      8,
+      16,
+      32
+    ],
+    "maxAdjustmentPerStep": [
+      0.025,
+      0.05
+    ],
+    "trials": 252,
+    "passing": 92,
+    "gates": {
+      "Rmin": 0.995,
+      "correctionCostMax": 170
+    },
+    "objective": "Among passing candidates minimize cumulative absolute frequency corrections plus 20 times total absolute actuation changes. Actuation term is a synthetic penalty."
+  },
+  "trials": [
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.995530922861684,
+      "cost": 170.0229042965052,
+      "actuation": 0.26,
+      "weightedCost": 175.2229042965052,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9971004076328086,
+      "cost": 170.05783349074463,
+      "actuation": 0.28,
+      "weightedCost": 175.65783349074462,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9955431701943626,
+      "cost": 170.6106593342826,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 175.81065933428258,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9971111687800241,
+      "cost": 170.6644016053074,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 176.2644016053074,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9983106459140559,
+      "cost": 170.43989792392375,
+      "actuation": 0.3,
+      "weightedCost": 176.43989792392375,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9991615766833378,
+      "cost": 170.3873313381006,
+      "actuation": 0.32,
+      "weightedCost": 176.7873313381006,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9983206018374822,
+      "cost": 171.13243875640913,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 177.13243875640913,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9955774673697948,
+      "cost": 172.33542303868296,
+      "actuation": 0.26,
+      "weightedCost": 177.53542303868295,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9955823119971088,
+      "cost": 172.4617702416049,
+      "actuation": 0.26,
+      "weightedCost": 177.6617702416049,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.998337730451666,
+      "cost": 171.7275982673696,
+      "actuation": 0.3,
+      "weightedCost": 177.7275982673696,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9991632254042494,
+      "cost": 171.34148396863685,
+      "actuation": 0.32,
+      "weightedCost": 177.74148396863686,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9971376788145404,
+      "cost": 172.26354622056644,
+      "actuation": 0.28,
+      "weightedCost": 177.86354622056643,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9991754065631978,
+      "cost": 171.76007189241324,
+      "actuation": 0.32,
+      "weightedCost": 178.16007189241324,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9955948441802757,
+      "cost": 173.0455158408982,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 178.24551584089818,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9971471825346517,
+      "cost": 172.66178777268743,
+      "actuation": 0.28,
+      "weightedCost": 178.26178777268743,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9991701912041381,
+      "cost": 172.02832270525056,
+      "actuation": 0.32,
+      "weightedCost": 178.42832270525057,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9971580953834077,
+      "cost": 173.2638746003003,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 178.8638746003003,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9971701552383547,
+      "cost": 173.4138476361999,
+      "actuation": 0.28,
+      "weightedCost": 179.0138476361999,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9983576704235883,
+      "cost": 173.10033879594192,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 179.10033879594192,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9983502652121471,
+      "cost": 173.204382750859,
+      "actuation": 0.3,
+      "weightedCost": 179.204382750859,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997129177562063,
+      "cost": 171.2800492827903,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 179.2800492827903,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9991806195089908,
+      "cost": 173.2470225414338,
+      "actuation": 0.32,
+      "weightedCost": 179.6470225414338,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9991911985014336,
+      "cost": 173.30154010891218,
+      "actuation": 0.32,
+      "weightedCost": 179.70154010891218,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9983602112141389,
+      "cost": 173.89122141503924,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 179.89122141503924,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9956299403903041,
+      "cost": 174.75916645270016,
+      "actuation": 0.26,
+      "weightedCost": 179.95916645270015,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9956348502594025,
+      "cost": 174.88355552817507,
+      "actuation": 0.26,
+      "weightedCost": 180.08355552817505,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9971919680589857,
+      "cost": 174.6122833222493,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 180.2122833222493,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9956484613764219,
+      "cost": 175.09998210751323,
+      "actuation": 0.26,
+      "weightedCost": 180.29998210751322,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9983771703328769,
+      "cost": 174.47297563378862,
+      "actuation": 0.3,
+      "weightedCost": 180.47297563378862,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.999676066875472,
+      "cost": 170.47800297719877,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 180.47800297719877,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.999676066875472,
+      "cost": 170.47800297719877,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 180.47800297719877,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9956476450249386,
+      "cost": 175.46302892432612,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 180.6630289243261,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9971945536572839,
+      "cost": 175.24580799010036,
+      "actuation": 0.28,
+      "weightedCost": 180.84580799010035,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9992046445083869,
+      "cost": 174.6615131144081,
+      "actuation": 0.32,
+      "weightedCost": 181.06151311440811,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997170903216951,
+      "cost": 173.22664533933678,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 181.22664533933678,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9983781759301463,
+      "cost": 175.2885303815041,
+      "actuation": 0.3,
+      "weightedCost": 181.2885303815041,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9972055848990261,
+      "cost": 175.843100369391,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 181.443100369391,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9956741458770026,
+      "cost": 176.2548417595391,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 181.45484175953908,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.997217566931877,
+      "cost": 175.9849199029238,
+      "actuation": 0.28,
+      "weightedCost": 181.5849199029238,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9983970282860413,
+      "cost": 175.8329487044526,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 181.8329487044526,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997176408562605,
+      "cost": 173.84351365262157,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 181.84351365262157,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9956884359216608,
+      "cost": 177.28711347385007,
+      "actuation": 0.26,
+      "weightedCost": 182.48711347385006,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9992200182772062,
+      "cost": 176.18679738130567,
+      "actuation": 0.32,
+      "weightedCost": 182.58679738130567,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.995702085770478,
+      "cost": 177.49675138145136,
+      "actuation": 0.26,
+      "weightedCost": 182.69675138145135,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9972395654143965,
+      "cost": 177.17313937030866,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 182.77313937030866,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997183401249337,
+      "cost": 174.8528887609537,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 182.8528887609537,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995075356338554,
+      "cost": 172.95308464016827,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 182.95308464016827,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995075356338554,
+      "cost": 172.95308464016827,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 182.95308464016827,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9972327857210411,
+      "cost": 177.41996522577583,
+      "actuation": 0.28,
+      "weightedCost": 183.01996522577582,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9957014648594052,
+      "cost": 177.8620193825204,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 183.0620193825204,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9984164064642437,
+      "cost": 177.192821940628,
+      "actuation": 0.3,
+      "weightedCost": 183.192821940628,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997230114416576,
+      "cost": 175.2272226883958,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 183.2272226883958,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.999221326020865,
+      "cost": 177.14976070762896,
+      "actuation": 0.32,
+      "weightedCost": 183.54976070762896,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.995728195275759,
+      "cost": 178.64203269231032,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 183.8420326923103,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.999233005046512,
+      "cost": 177.53273860551909,
+      "actuation": 0.32,
+      "weightedCost": 183.9327386055191,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9972653375098645,
+      "cost": 178.5330125284366,
+      "actuation": 0.28,
+      "weightedCost": 184.13301252843658,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9992278298014613,
+      "cost": 177.82377612093757,
+      "actuation": 0.32,
+      "weightedCost": 184.22377612093757,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9984361195606817,
+      "cost": 178.53876333839764,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 184.53876333839764,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9984289885768569,
+      "cost": 178.6617816677659,
+      "actuation": 0.3,
+      "weightedCost": 184.6617816677659,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9957379761834549,
+      "cost": 179.55127912911047,
+      "actuation": 0.26,
+      "weightedCost": 184.75127912911046,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997381290496588,
+      "cost": 173.03854645868932,
+      "actuation": 0.6,
+      "weightedCost": 185.03854645868932,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9957565604331781,
+      "cost": 179.87309233386077,
+      "actuation": 0.26,
+      "weightedCost": 185.07309233386076,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9972874543869539,
+      "cost": 179.71012427216766,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 185.31012427216766,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9984387672441946,
+      "cost": 179.3357970871733,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 185.3357970871733,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9992374972254764,
+      "cost": 179.03467235229084,
+      "actuation": 0.32,
+      "weightedCost": 185.43467235229085,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9992479537969308,
+      "cost": 179.03989438672485,
+      "actuation": 0.32,
+      "weightedCost": 185.43989438672486,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.999733926289576,
+      "cost": 173.85177957973116,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 185.85177957973116,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9984553097742123,
+      "cost": 179.88460622638277,
+      "actuation": 0.3,
+      "weightedCost": 185.88460622638277,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9972904479352555,
+      "cost": 180.34802951083253,
+      "actuation": 0.28,
+      "weightedCost": 185.94802951083253,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9957830287938346,
+      "cost": 181.0079969974856,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 186.2079969974856,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9973015945639526,
+      "cost": 180.93459339300105,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 186.53459339300105,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.997313344085412,
+      "cost": 181.0559673031952,
+      "actuation": 0.28,
+      "weightedCost": 186.65596730319518,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9984564386205911,
+      "cost": 180.72099948727896,
+      "actuation": 0.3,
+      "weightedCost": 186.72099948727896,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9992604288583472,
+      "cost": 180.37022667041876,
+      "actuation": 0.32,
+      "weightedCost": 186.77022667041877,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9984748504532108,
+      "cost": 181.21493880856048,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 187.21493880856048,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9957982122069811,
+      "cost": 182.03416226117102,
+      "actuation": 0.26,
+      "weightedCost": 187.234162261171,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9958117602933009,
+      "cost": 182.22721949270243,
+      "actuation": 0.26,
+      "weightedCost": 187.42721949270242,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9958115989618591,
+      "cost": 182.59886345655158,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 187.79886345655157,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9973355218012877,
+      "cost": 182.22089046317336,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 187.82089046317336,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.997329111760486,
+      "cost": 182.4952640217944,
+      "actuation": 0.28,
+      "weightedCost": 188.0952640217944,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9958385225065635,
+      "cost": 183.35079074652057,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 188.55079074652056,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997451616460397,
+      "cost": 181.05092916722452,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 189.05092916722452,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9992747392255801,
+      "cost": 182.87621005004826,
+      "actuation": 0.32,
+      "weightedCost": 189.27621005004826,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996943093248651,
+      "cost": 180.33915930664213,
+      "actuation": 0.44999999999999996,
+      "weightedCost": 189.33915930664213,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996943093248651,
+      "cost": 180.33915930664213,
+      "actuation": 0.44999999999999996,
+      "weightedCost": 189.33915930664213,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9958491546991709,
+      "cost": 184.26941251191803,
+      "actuation": 0.26,
+      "weightedCost": 189.46941251191802,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9992805781279773,
+      "cost": 183.55518748985173,
+      "actuation": 0.32,
+      "weightedCost": 189.95518748985174,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.998505678976726,
+      "cost": 184.04764494473852,
+      "actuation": 0.3,
+      "weightedCost": 190.04764494473852,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9985150946706757,
+      "cost": 184.72662250393665,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 190.72662250393665,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9973866465869009,
+      "cost": 185.38783491782033,
+      "actuation": 0.28,
+      "weightedCost": 190.98783491782032,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997592196814965,
+      "cost": 183.00639283435189,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 191.00639283435189,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9993015171364955,
+      "cost": 184.63187627706307,
+      "actuation": 0.32,
+      "weightedCost": 191.03187627706308,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9985320229188194,
+      "cost": 185.17047701759262,
+      "actuation": 0.3,
+      "weightedCost": 191.17047701759262,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995315432967532,
+      "cost": 182.56953044454244,
+      "actuation": 0.4500000000000001,
+      "weightedCost": 191.56953044454244,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995315432967532,
+      "cost": 182.56953044454244,
+      "actuation": 0.4500000000000001,
+      "weightedCost": 191.56953044454244,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9973977291005304,
+      "cost": 185.9820048350811,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 191.5820048350811,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9974099181842558,
+      "cost": 186.01511839932127,
+      "actuation": 0.28,
+      "weightedCost": 191.61511839932126,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9959103423459635,
+      "cost": 186.72791435462344,
+      "actuation": 0.26,
+      "weightedCost": 191.92791435462343,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9959927807950616,
+      "cost": 186.8329208580149,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 192.03292085801488,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9959240063672531,
+      "cost": 186.85965442401442,
+      "actuation": 0.26,
+      "weightedCost": 192.0596544240144,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9975151163031519,
+      "cost": 186.7151338358184,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 192.3151338358184,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9993130318737112,
+      "cost": 185.9242786695425,
+      "actuation": 0.32,
+      "weightedCost": 192.3242786695425,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9985515128359331,
+      "cost": 186.46287999346606,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 192.46287999346606,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9959239121259936,
+      "cost": 187.30088271297078,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 192.50088271297076,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9986459484185467,
+      "cost": 186.70482477858116,
+      "actuation": 0.3,
+      "weightedCost": 192.70482477858116,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9986459484185467,
+      "cost": 186.70482477858116,
+      "actuation": 0.3,
+      "weightedCost": 192.70482477858116,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9986459484185467,
+      "cost": 186.70482477858116,
+      "actuation": 0.3,
+      "weightedCost": 192.70482477858116,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9986459484185467,
+      "cost": 186.70482477858116,
+      "actuation": 0.3,
+      "weightedCost": 192.70482477858116,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9986459484185467,
+      "cost": 186.70482477858116,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 192.70482477858116,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.997432211862157,
+      "cost": 187.15125839020897,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 192.75125839020896,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9959512672107304,
+      "cost": 187.9567294769825,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 193.1567294769825,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9960759326027641,
+      "cost": 189.0122923519342,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 194.2122923519342,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972587518608177,
+      "cost": 188.9642517623983,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 194.4642517623983,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9961372428370021,
+      "cost": 191.11941552791077,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 196.31941552791076,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9986095260884337,
+      "cost": 190.4385365689478,
+      "actuation": 0.3,
+      "weightedCost": 196.4385365689478,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9993556091764905,
+      "cost": 190.17122044072198,
+      "actuation": 0.32,
+      "weightedCost": 196.571220440722,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9975092488532852,
+      "cost": 190.97707162546234,
+      "actuation": 0.28,
+      "weightedCost": 196.57707162546234,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9972829995810492,
+      "cost": 191.11170023269747,
+      "actuation": 0.27499999999999997,
+      "weightedCost": 196.61170023269747,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.99603967443621,
+      "cost": 191.5155055588654,
+      "actuation": 0.26,
+      "weightedCost": 196.7155055588654,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997318272962091,
+      "cost": 188.72198590227114,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 196.72198590227114,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997318272962091,
+      "cost": 188.72198590227114,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 196.72198590227114,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997318272962091,
+      "cost": 188.72198590227114,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 196.72198590227114,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9975325624200218,
+      "cost": 192.15415301727705,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 197.75415301727705,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9986310409292926,
+      "cost": 191.75701998254036,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 197.75701998254036,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9960680370392091,
+      "cost": 192.65723798999687,
+      "actuation": 0.25999999999999995,
+      "weightedCost": 197.85723798999686,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9993670392613488,
+      "cost": 191.4897030371016,
+      "actuation": 0.32,
+      "weightedCost": 197.8897030371016,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 192,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9953573772905292,
+      "cost": 193.13321120915333,
+      "actuation": 0.24999999999999997,
+      "weightedCost": 198.13321120915333,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9996119432001236,
+      "cost": 190.55924425986808,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 198.55924425986808,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9996119432001236,
+      "cost": 190.55924425986808,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 198.55924425986808,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9996119432001236,
+      "cost": 190.55924425986808,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 198.55924425986808,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 224,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9928974961446926,
+      "cost": 197.1051663270409,
+      "actuation": 0.22499999999999998,
+      "weightedCost": 201.6051663270409,
+      "pass": false
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": 0.08,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": 0.1,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": 0.12,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": 0.14,
+      "begin": 256,
+      "period": 32,
+      "slew": 0.025,
+      "R": 0.9898495006253167,
+      "cost": 200.90366294713894,
+      "actuation": 0.19999999999999998,
+      "weightedCost": 204.90366294713894,
+      "pass": false
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996154474581628,
+      "cost": 125.4109214508014,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 135.4109214508014,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996318877222062,
+      "cost": 130.32894295602253,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 140.32894295602253,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996474146229826,
+      "cost": 135.17877791889563,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 145.17877791889563,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996388467144347,
+      "cost": 135.8471234198164,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 145.8471234198164,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996256962612892,
+      "cost": 138.33255033119053,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 146.33255033119053,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996426371934217,
+      "cost": 137.02099852018887,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 147.02099852018887,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996619045636373,
+      "cost": 139.96692058662723,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 149.96692058662723,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996416362277133,
+      "cost": 142.33910781203602,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 150.33910781203602,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996537741550527,
+      "cost": 140.601964873018,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 150.601964873018,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996572941009171,
+      "cost": 141.76462567040258,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 151.76462567040258,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996493337687166,
+      "cost": 145.99435738926817,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 153.99435738926817,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996565711597639,
+      "cost": 146.34381519692406,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 154.34381519692406,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996529642171432,
+      "cost": 147.00716558326812,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 155.00716558326812,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996675761975718,
+      "cost": 145.31042695801864,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 155.31042695801864,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996707754782893,
+      "cost": 146.46158665658436,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 156.46158665658436,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997001234750602,
+      "cost": 145.5002434046997,
+      "actuation": 0.6,
+      "weightedCost": 157.5002434046997,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996635866173134,
+      "cost": 150.01500806889007,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 158.01500806889007,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996703752869656,
+      "cost": 150.34188417777332,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 158.34188417777332,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996669335491237,
+      "cost": 151.02641669923418,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 159.02641669923418,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996871134837989,
+      "cost": 149.37024964910088,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 159.37024964910088,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996800318322858,
+      "cost": 149.97297188860827,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 159.97297188860827,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.999714295151032,
+      "cost": 149.01860285464002,
+      "actuation": 0.6,
+      "weightedCost": 161.01860285464002,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996828543763409,
+      "cost": 151.1137118915556,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 161.1137118915556,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.999720505429619,
+      "cost": 149.43609067359301,
+      "actuation": 0.6,
+      "weightedCost": 161.43609067359301,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996766678852009,
+      "cost": 154.02356055829713,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 162.02356055829713,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.999723542949117,
+      "cost": 150.2573847491254,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 162.2573847491254,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.999679689933739,
+      "cost": 155.03296483396147,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 163.03296483396147,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997271570271407,
+      "cost": 152.49335671200782,
+      "actuation": 0.6,
+      "weightedCost": 164.49335671200782,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9990266007056995,
+      "cost": 158.37165253312267,
+      "actuation": 0.32,
+      "weightedCost": 164.77165253312268,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997320622134321,
+      "cost": 152.87238007352238,
+      "actuation": 0.6,
+      "weightedCost": 164.87238007352238,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997346384074423,
+      "cost": 153.6882043810711,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 165.6882043810711,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996883956188379,
+      "cost": 158.0176856379431,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 166.0176856379431,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996873638850469,
+      "cost": 156.0818477099019,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 166.0818477099019,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9996939523369068,
+      "cost": 158.30255507560426,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 166.30255507560426,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9996910482655874,
+      "cost": 159.02412837404583,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 167.02412837404583,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9981813406711469,
+      "cost": 161.33138688834683,
+      "actuation": 0.3,
+      "weightedCost": 167.33138688834683,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9990579652864064,
+      "cost": 161.38939883126847,
+      "actuation": 0.32,
+      "weightedCost": 167.78939883126847,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997384942255261,
+      "cost": 155.93077725522485,
+      "actuation": 0.6,
+      "weightedCost": 167.93077725522485,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997416546784118,
+      "cost": 156.28266581264342,
+      "actuation": 0.6,
+      "weightedCost": 168.28266581264342,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997006255611828,
+      "cost": 158.38163428926924,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 168.38163428926924,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997058602859484,
+      "cost": 158.56462959271084,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 168.56462959271084,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9990709962856893,
+      "cost": 162.44325637695144,
+      "actuation": 0.32,
+      "weightedCost": 168.84325637695144,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997436671689991,
+      "cost": 157.09330381355642,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 169.09330381355642,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.999210400914091,
+      "cost": 157.13816612589585,
+      "actuation": 0.6,
+      "weightedCost": 169.13816612589585,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9996998985230642,
+      "cost": 159.16983895011165,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 169.16983895011165,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996894042143823,
+      "cost": 161.29370316247898,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 169.29370316247898,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.999078287539526,
+      "cost": 163.1460942383514,
+      "actuation": 0.32,
+      "weightedCost": 169.5460942383514,
+      "pass": true
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9970000425027455,
+      "cost": 164.3848231494705,
+      "actuation": 0.28,
+      "weightedCost": 169.9848231494705,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9982201631481772,
+      "cost": 164.162526714891,
+      "actuation": 0.3,
+      "weightedCost": 170.162526714891,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997017947412631,
+      "cost": 160.29069894259445,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 170.29069894259445,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9994977862748725,
+      "cost": 159.13676820613836,
+      "actuation": 0.5750000000000002,
+      "weightedCost": 170.63676820613836,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9990892223624432,
+      "cost": 164.38715577218443,
+      "actuation": 0.32,
+      "weightedCost": 170.78715577218443,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997111296127442,
+      "cost": 160.8106844555011,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 170.8106844555011,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9982317866207865,
+      "cost": 164.84740431470019,
+      "actuation": 0.3,
+      "weightedCost": 170.84740431470019,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9996945143747826,
+      "cost": 163.3191278458247,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 171.3191278458247,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9982416376928307,
+      "cost": 165.55024205234096,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 171.55024205234096,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997488293869877,
+      "cost": 159.66800971252394,
+      "actuation": 0.6,
+      "weightedCost": 171.66800971252394,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9991021490445114,
+      "cost": 165.4317973787712,
+      "actuation": 0.32,
+      "weightedCost": 171.8317973787712,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996634200434239,
+      "cost": 161.26457991640225,
+      "actuation": 0.5499999999999999,
+      "weightedCost": 172.26457991640225,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997501486051643,
+      "cost": 160.47347907722792,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 172.47347907722792,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9991093757851378,
+      "cost": 166.12965586581123,
+      "actuation": 0.32,
+      "weightedCost": 172.52965586581124,
+      "pass": true
+    },
+    {
+      "target": 0.12,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9970450923599231,
+      "cost": 167.0287000400984,
+      "actuation": 0.28,
+      "weightedCost": 172.6287000400984,
+      "pass": true
+    },
+    {
+      "target": 0.14,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9954761081663946,
+      "cost": 167.43812673802174,
+      "actuation": 0.26,
+      "weightedCost": 172.63812673802173,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9982593995493559,
+      "cost": 166.9750566468581,
+      "actuation": 0.3,
+      "weightedCost": 172.9750566468581,
+      "pass": true
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9970543585322135,
+      "cost": 167.43521767245062,
+      "actuation": 0.28,
+      "weightedCost": 173.0352176724506,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997278737071625,
+      "cost": 163.13888560247491,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 173.13888560247491,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9996993907713798,
+      "cost": 165.2907511710947,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 173.2907511710947,
+      "pass": true
+    },
+    {
+      "target": 0.12,
+      "begin": 144,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9970649402643583,
+      "cost": 168.04598922006164,
+      "actuation": 0.27999999999999997,
+      "weightedCost": 173.64598922006164,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9982711002965016,
+      "cost": 167.65377231870593,
+      "actuation": 0.3,
+      "weightedCost": 173.65377231870593,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9991202095981301,
+      "cost": 167.3636532201366,
+      "actuation": 0.32,
+      "weightedCost": 173.7636532201366,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.99970696833869,
+      "cost": 165.9538662800224,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 173.9538662800224,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.999710850487987,
+      "cost": 166.20465289096896,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 174.20465289096896,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9982810227765078,
+      "cost": 168.3516306906636,
+      "actuation": 0.29999999999999993,
+      "weightedCost": 174.3516306906636,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995001297118525,
+      "cost": 163.42240449147988,
+      "actuation": 0.5500000000000002,
+      "weightedCost": 174.42240449147988,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997555303372146,
+      "cost": 162.7079828447574,
+      "actuation": 0.6,
+      "weightedCost": 174.7079828447574,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9991329549355044,
+      "cost": 168.39838932332242,
+      "actuation": 0.32,
+      "weightedCost": 174.79838932332243,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997087278650195,
+      "cost": 166.9525552427717,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 174.9525552427717,
+      "pass": true
+    },
+    {
+      "target": 0.14,
+      "begin": 160,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9955261651122825,
+      "cost": 169.89474300100375,
+      "actuation": 0.26,
+      "weightedCost": 175.09474300100374,
+      "pass": true
+    },
+    {
+      "target": 0.12,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9970910048701254,
+      "cost": 169.65530386893101,
+      "actuation": 0.28,
+      "weightedCost": 175.255303868931,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 160,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997039981091541,
+      "cost": 167.3094114883563,
+      "actuation": 0.4000000000000001,
+      "weightedCost": 175.3094114883563,
+      "pass": true
+    },
+    {
+      "target": 0.08,
+      "begin": 176,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9991400746866579,
+      "cost": 169.0909302539299,
+      "actuation": 0.32,
+      "weightedCost": 175.49093025392992,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997344295925882,
+      "cost": 165.59260869513426,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 175.59260869513426,
+      "pass": true
+    },
+    {
+      "target": 0.1,
+      "begin": 192,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9982989196649735,
+      "cost": 169.76780027286264,
+      "actuation": 0.3,
+      "weightedCost": 175.76780027286264,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9992074282109001,
+      "cost": 165.70571436995587,
+      "actuation": 0.5499999999999999,
+      "weightedCost": 176.70571436995587,
+      "pass": true
+    },
+    {
+      "target": 0,
+      "begin": 176,
+      "period": 32,
+      "slew": 0.05,
+      "R": 0.9997082960558531,
+      "cost": 169.26923919862898,
+      "actuation": 0.39999999999999997,
+      "weightedCost": 177.26923919862898,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9997260255562913,
+      "cost": 167.9745347061454,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 177.9745347061454,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997119549502961,
+      "cost": 168.25415046741608,
+      "actuation": 0.49999999999999994,
+      "weightedCost": 178.25415046741608,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 16,
+      "slew": 0.05,
+      "R": 0.9997534170539603,
+      "cost": 166.36997555067063,
+      "actuation": 0.6,
+      "weightedCost": 178.36997555067063,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 176,
+      "period": 16,
+      "slew": 0.025,
+      "R": 0.9995029647859783,
+      "cost": 168.03109506101327,
+      "actuation": 0.5250000000000001,
+      "weightedCost": 178.53109506101327,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 224,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.999752773058932,
+      "cost": 167.16660858412072,
+      "actuation": 0.6000000000000002,
+      "weightedCost": 179.16660858412072,
+      "pass": true
+    },
+    {
+      "target": -0.1,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.025,
+      "R": 0.9997130208468117,
+      "cost": 169.38190346621067,
+      "actuation": 0.5000000000000001,
+      "weightedCost": 179.38190346621067,
+      "pass": true
+    },
+    {
+      "target": -0.2,
+      "begin": 256,
+      "period": 8,
+      "slew": 0.05,
+      "R": 0.9997628338987306,
+      "cost": 169.3678368315479,
+      "actuation": 0.6,
+      "weightedCost": 181.3678368315479,
+      "pass": true
+    }
+  ],
+  "winningRoute": {
+    "target": -0.1,
+    "begin": 144,
+    "period": 8,
+    "slew": 0.05,
+    "R": 0.9996154474581628,
+    "cost": 125.4109214508014,
+    "actuation": 0.49999999999999994,
+    "weightedCost": 135.4109214508014,
+    "pass": true,
+    "trace": [
+      {
+        "t": 0,
+        "R": 0.08634491048379632,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 8,
+        "R": 0.156708846441707,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 16,
+        "R": 0.73864578089207,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 24,
+        "R": 0.9682161917627755,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 32,
+        "R": 0.9824911114015057,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 40,
+        "R": 0.9807229204410972,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 48,
+        "R": 0.979847558233379,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 56,
+        "R": 0.9795776025679696,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 64,
+        "R": 0.9795006926658621,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 72,
+        "R": 0.979479170981605,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 80,
+        "R": 0.9794731726013796,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 88,
+        "R": 0.9794715020028811,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 96,
+        "R": 0.9794710367503119,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 104,
+        "R": 0.9794709071733614,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 112,
+        "R": 0.9794708710835427,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 120,
+        "R": 0.9794708610315651,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 128,
+        "R": 0.979470858231791,
+        "cost": 0,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 136,
+        "R": 0.8842626708878857,
+        "cost": 0.41244057887815355,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 144,
+        "R": 0.8883611527545573,
+        "cost": 2.0665923408456646,
+        "level": 0.4,
+        "actuation": 0
+      },
+      {
+        "t": 152,
+        "R": 0.9173838931019521,
+        "cost": 4.316392578770931,
+        "level": 0.35,
+        "actuation": 0.05
+      },
+      {
+        "t": 160,
+        "R": 0.9453812530579634,
+        "cost": 6.983029169241821,
+        "level": 0.3,
+        "actuation": 0.1
+      },
+      {
+        "t": 168,
+        "R": 0.9664063038837626,
+        "cost": 9.947945188050864,
+        "level": 0.25,
+        "actuation": 0.15000000000000002
+      },
+      {
+        "t": 176,
+        "R": 0.9809979769319827,
+        "cost": 13.113860930264858,
+        "level": 0.2,
+        "actuation": 0.2
+      },
+      {
+        "t": 184,
+        "R": 0.9906641250726941,
+        "cost": 16.404072503371314,
+        "level": 0.15,
+        "actuation": 0.25
+      },
+      {
+        "t": 192,
+        "R": 0.996525718072797,
+        "cost": 19.758493011950932,
+        "level": 0.1,
+        "actuation": 0.3
+      },
+      {
+        "t": 200,
+        "R": 0.9992651250668576,
+        "cost": 23.129819364361364,
+        "level": 0.05,
+        "actuation": 0.35
+      },
+      {
+        "t": 208,
+        "R": 0.9993876914699052,
+        "cost": 26.45347039525898,
+        "level": 0,
+        "actuation": 0.39999999999999997
+      },
+      {
+        "t": 216,
+        "R": 0.99805133920894,
+        "cost": 29.605336044264902,
+        "level": -0.05,
+        "actuation": 0.44999999999999996
+      },
+      {
+        "t": 224,
+        "R": 0.9963400545317426,
+        "cost": 32.489818649470784,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 232,
+        "R": 0.9978775087288113,
+        "cost": 35.070485209589876,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 240,
+        "R": 0.998975100721169,
+        "cost": 37.41736124835374,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 248,
+        "R": 0.9994497713637642,
+        "cost": 39.61056013463016,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 256,
+        "R": 0.9995902277426855,
+        "cost": 41.78239903531835,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 264,
+        "R": 0.9995991448574384,
+        "cost": 44.0313970420703,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 272,
+        "R": 0.9995713859029022,
+        "cost": 46.34481112981558,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 280,
+        "R": 0.9995426277770925,
+        "cost": 48.71221342099575,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 288,
+        "R": 0.999522855428201,
+        "cost": 51.12508413967656,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 296,
+        "R": 0.9995126039072053,
+        "cost": 53.576467356787525,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 304,
+        "R": 0.9995097062472006,
+        "cost": 56.060682181136656,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 312,
+        "R": 0.9995117512274745,
+        "cost": 58.573083199693215,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 320,
+        "R": 0.9995168043789441,
+        "cost": 61.10986367065823,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 328,
+        "R": 0.9995234980413795,
+        "cost": 63.66789503677129,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 336,
+        "R": 0.9995309314266906,
+        "cost": 66.24459678067248,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 344,
+        "R": 0.9995385411643064,
+        "cost": 68.83783131036142,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 352,
+        "R": 0.9995459918918267,
+        "cost": 71.44581929871573,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 360,
+        "R": 0.999553095914321,
+        "cost": 74.06707162009597,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 368,
+        "R": 0.9995597581309337,
+        "cost": 76.70033468395906,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 376,
+        "R": 0.9995659397919785,
+        "cost": 79.34454654103897,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 384,
+        "R": 0.999571635310513,
+        "cost": 81.99880162827078,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 392,
+        "R": 0.9995768577585987,
+        "cost": 84.66232242874766,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 400,
+        "R": 0.9995816299876262,
+        "cost": 87.33443666102461,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 408,
+        "R": 0.9995859793183731,
+        "cost": 90.01455888780215,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 416,
+        "R": 0.9995899344582622,
+        "cost": 92.70217565717198,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 424,
+        "R": 0.9995935237848822,
+        "cost": 95.39683346913708,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 432,
+        "R": 0.9995967744518826,
+        "cost": 98.09812900392221,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 440,
+        "R": 0.9995997119783676,
+        "cost": 100.80570116338379,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 448,
+        "R": 0.999602360113605,
+        "cost": 103.51922456825187,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 456,
+        "R": 0.9996047408512273,
+        "cost": 106.2384042266147,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 464,
+        "R": 0.9996068745184096,
+        "cost": 108.96297114677834,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 472,
+        "R": 0.9996087798970877,
+        "cost": 111.69267871344526,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 480,
+        "R": 0.999610474353441,
+        "cost": 114.42729968251385,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 488,
+        "R": 0.9996119739632569,
+        "cost": 117.16662367866222,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 496,
+        "R": 0.9996132936274441,
+        "cost": 119.91045510280529,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 504,
+        "R": 0.999614447175682,
+        "cost": 122.65861137473969,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      },
+      {
+        "t": 512,
+        "R": 0.9996154474581628,
+        "cost": 125.4109214508014,
+        "level": -0.1,
+        "actuation": 0.49999999999999994
+      }
+    ]
+  },
+  "nearestDestinationControl": {
+    "target": 0.14,
+    "begin": 256,
+    "period": 8,
+    "slew": 0.05,
+    "final": {
+      "R": 0.9958491546991709,
+      "cost": 184.26941251191803,
+      "pass": false
+    }
+  },
+  "otherStartControls": [
+    {
+      "start": 0.35,
+      "finalR": 0.9996058574654331,
+      "cost": 122.65240652503711,
+      "pass": true,
+      "totalCost": 131.65240652503712
+    },
+    {
+      "start": 0.45,
+      "finalR": 0.9996258925106671,
+      "cost": 128.3990469121293,
+      "pass": true,
+      "totalCost": 139.3990469121293
+    }
+  ],
+  "limitations": [
+    "Selecting candidate based on same fixed scenario creates in-sample optimization; controls do not prove generality.",
+    "The oscillatory model presumes direct control over an arm's natural frequency, not an implemented actuator.",
+    "Actuation and correction costs are invented computational proxies, not measured energy.",
+    "Only 252 discrete schedules sampled; no global optimality guarantee.",
+    "All trials share one synthetic model/evidence ancestry; no independent experimental witnesses.",
+    "No real strong/weak forces or nuclear fusion modeled."
+  ]
+}
