@@ -1,0 +1,79 @@
+{
+  "id": "TD-CROSSDOMAIN-SG041-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG040",
+  "goal": "Test whether a scanned spectral peak is surprising relative to an estimated AR1 correlated-noise null, instead of treating peak height alone as an oscillation cause.",
+  "frozen_algorithm": {
+    "baseline": "SG040 predecision risk gate, detector and candidate challenge; threshold 0.45 comparator unchanged",
+    "diagnose_only_on_estimator_disagreement": true,
+    "residuals": "Linearly detrend last min(observed_n,160) samples, require >=100 observations",
+    "null": "Fit zero-intercept lag-one AR coefficient on detrended residuals, clipped to [-0.97,0.97]; estimate innovation sigma from detrended residual variance*(1-rho²); simulate stationary Gaussian AR(1) surrogates of equal length",
+    "surrogates": 31,
+    "seed": "per-call deterministic Python random.Random(original_stream_seed*1009+observed_prefix_length)",
+    "test_statistic": "Maximum normalized Fourier power over periods 25,30,...,100 (16 frequencies); on each surrogate repeat detrending and max over same 16 periods",
+    "p_value": "(1+#surrogates_with_max_power>=observed_max_power)/32",
+    "allow_primary_on_disagreement": "p<=0.0625; otherwise continue gathering data or unresolved at alarmed full decision",
+    "no_future_samples": "On every candidate time n, null fitted to observed continuation prefix only; no holdout truth label or future samples used."
+  },
+  "pilot": {
+    "seed_start": 57000000,
+    "n_per_truth_scenario": 6,
+    "total": 108,
+    "SG040": {
+      "correct": 94,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 13,
+      "observations": 23920,
+      "loss": 1759.2
+    },
+    "SG041": {
+      "correct": 94,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 13,
+      "observations": 23920,
+      "loss": 1759.2
+    },
+    "tested_diagnostics": 10,
+    "approved_diagnostics": 8,
+    "note": "Pilot used only for feasibility, runtime and inspection. Threshold fixed at discrete surrogate-tail resolution; not an independent holdout."
+  },
+  "holdout": {
+    "seed_start": 61000000,
+    "n_per_truth_scenario": 20,
+    "total": 360,
+    "seed_formula": "61000000+200000*scenario_index+10000*int(drift)+101*k, k=0..19",
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "comparators": [
+      "SG040 peak threshold .45",
+      "SG041 AR1 surrogate null",
+      "fixed240"
+    ],
+    "cost": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "unresolved": 18
+    },
+    "retune_after_freeze": false
+  },
+  "limitations": [
+    "31 surrogate draws produce coarse empirical p-values; p<=.0625 is not a formal familywise guarantee across sequential time inspections",
+    "AR1 Gaussian null is estimated on the same data and misspecified for changed correlation/non-Gaussian cases",
+    "Same observations and spectral search may share failures; not independent evidence ancestry",
+    "Synthetic data family and frequency range known in advance",
+    "Selective testing and repeated looks inflate eventual false-diagnosis risk absent further correction"
+  ]
+}
