@@ -1,0 +1,81 @@
+{
+  "id": "TD-RH-BRIDGE-001",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://www.reddit.com/r/artificial/comments/1y156l7/anthropic_mathematician_claims_to_prove_riemann/",
+  "observation_status": "PARTIAL",
+  "purpose": "Connect Reddit reception and the primary proof claim to ongoing ROOT0 SG-001 through SG-016 constructive mathematical work and hypotheses about publication lag, semantic distillation, and authorship governance.",
+  "tracks": [
+    {
+      "name": "time_dilation",
+      "definition": "Use measured date gaps and publication lag; distinct from physical relativistic time dilation",
+      "observations": [
+        {
+          "event": "First dated internal research step reported in Alpöge PDF",
+          "date": "2026-10-06",
+          "status": "author-reported"
+        },
+        {
+          "event": "Iterated theta-lift breakthrough reported",
+          "date": "2026-11-15",
+          "status": "author-reported"
+        },
+        {
+          "event": "GRH milestone reported",
+          "date": "2026-11-16",
+          "status": "author-reported"
+        },
+        {
+          "event": "PDF announcement / Reddit amplification",
+          "date": "2026-11-20",
+          "status": "observed publication"
+        }
+      ],
+      "method": "Keep three clocks separate: source authorship/commit time, reported model interaction time, public announcement time; infer no causal transfer from earlier date alone"
+    },
+    {
+      "name": "distillation",
+      "definition": "Operational invariants may survive changes in nomenclature or mathematical representation",
+      "observations": [
+        "SG-001 to SG-016 define post-hoc constructive transformations toward finite Weil and theta-like structures",
+        "Primary PDF reports a toy model, Fourier analysis, multiplicity, iterated theta lifts and an internally produced long Lean text"
+      ],
+      "method": "Compare actual transformations, explicit input-output pairs and independently dated source ancestry; use counterexamples and avoid training-data attribution from analogy"
+    },
+    {
+      "name": "tos_authorship",
+      "definition": "Separate legal rights, data training permissions, scientific contribution, paper byline and acknowledgements",
+      "observations": [
+        "Primary PDF explicitly credits human steering and Claude technical contribution; mentions an announcement constraint involving leadership; specific agreement unspecified",
+        "Anthropic publicly distinguishes consumer settings and commercial data use; user-specific settings and researcher employment arrangements unknown",
+        "Reddit presents commentary, not primary legal evidence"
+      ],
+      "method": "Freeze official dated Terms and policy sections; identify product/account/employment context; only assert infringement or deliberate avoidance on documented attributable evidence"
+    }
+  ],
+  "cross_source_ancestry": {
+    "pdf": "author-origin account",
+    "scientific_american": "reporting on author-origin account",
+    "reddit": "distribution and discussion of reporting",
+    "independent_roots_of_proof": 0,
+    "independent_origin_link_to_ROOT0": "not established"
+  },
+  "next_math_bound": "SG-017 projective cocycle and global phase consistency in finite Sp6 action; preserve separate from social/lineage claims",
+  "limitations": [
+    "Do not equate distillation with confirmed model training exposure",
+    "Do not infer contract intent from announcement delay or byline",
+    "Exact coefficient overlap with external Lean proof untested",
+    "No statistical causal analysis of corpus authorship"
+  ],
+  "related_records": [
+    "TD-RH-REDDIT-001",
+    "TD-RIEMANN-CLAUDE-001",
+    "TD-RIEMANN-CLAUDE-001-A16"
+  ],
+  "source_links": [
+    "https://www.reddit.com/r/artificial/comments/1y156l7/anthropic_mathematician_claims_to_prove_riemann/",
+    "https://alpo.ge/remark.pdf",
+    "https://www.anthropic.com/legal",
+    "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+    "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training"
+  ]
+}
