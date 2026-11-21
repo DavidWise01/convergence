@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-061 · 2026-11-20 | Resonance recognition with three observation roots | Model-based residual inference and rejection controls; HTML | [Audit](./audits/2026-11-20-aether-061.json) |
 | TD-RIEMANN-CLAUDE-001-A13 · 2026-11-20 | Complete adjacent generators: 78-dimensional scalar commutant | Numerical irreducibility; incomplete-generator negative control | [Record](./candidates/2026-11-20-td-riemann-claude-001-a13-full-generators.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a13-full-generators.py) |
 | AETHER-060 · 2026-11-20 | Adaptive gain memory | Known-event recall and unfamiliar-event rejection; HTML | [Audit](./audits/2026-11-20-aether-060.json) |
 | TD-RIEMANN-CLAUDE-001-A12 · 2026-11-20 | Exact theta tower extension: old embedding survives, new Fourier mixes | Four exact regression cases; irreducibility still unresolved | [Record](./candidates/2026-11-20-td-riemann-claude-001-a12-extension.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a12-extension.py) |
