@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-076 · 2026-11-21 | Decision-aware calibration limits | 896 scenarios; 11 residual-only wrong acceptances; 0 under gain-corner gate | [Audit](./audits/2026-11-21-aether-076.json) |
 | TD-CROSSDOMAIN-SG028 · 2026-11-21 | Evidence-seeking followup of SG027 unresolved drift | 4/4 newly confirmed, 4/4 matched controls rejected; 16 append-only events, old statuses unchanged | [Freeze](./candidates/2026-11-21-sg028-evidence-recovery-freeze.json) · [Evidence](./candidates/2026-11-21-sg028-evidence-recovery.json) · [Ledger](./candidates/2026-11-21-sg028-evidence-recovery.jsonl) · [Python](./candidates/2026-11-21-sg028-evidence-recovery.py) |
 | TD-CROSSDOMAIN-SG027 · 2026-11-21 | Uncertainty-aware step + drift classification | 396 correct decisions, 0 wrong, 4 unresolved / 400 fresh streams; all 200 step locations recovered | [Freeze](./candidates/2026-11-21-sg027-uncertainty-freeze.json) · [Record](./candidates/2026-11-21-sg027-uncertainty-aware.json) · [Python](./candidates/2026-11-21-sg027-uncertainty-aware.py) |
 | AETHER-075 · 2026-11-21 | Calibration drift and expiry | Certificate renewal, residual withdrawal, missing-recheck expiry, six synthetic scenarios | [Audit](./audits/2026-11-21-aether-075.json) |
