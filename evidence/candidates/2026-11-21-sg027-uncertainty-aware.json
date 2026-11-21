@@ -1,0 +1,119 @@
+{
+  "id": "TD-CROSSDOMAIN-SG027",
+  "date": "2026-11-21",
+  "status": "SELECTIVE_HOLDOUT_PASS_WITH_ABSTENTIONS",
+  "prior": "TD-CROSSDOMAIN-SG026",
+  "freeze": "evidence/candidates/2026-11-21-sg027-uncertainty-freeze.json",
+  "freeze_commit": "a06213ca8c6aeeb4a63f907ea32651a1f668fef7",
+  "method": "Offline two-component step and trend classifier with 3-state trend classification: |slope|<0.0018 rejected, |slope|>0.0032 confirmed, else unresolved. Step candidate greatest 13-before/13-after median difference >1.50. Trend median of within-segment bin-median pairwise slopes.",
+  "pilot": {
+    "seed_start": 720000,
+    "traces": 400,
+    "correct_decided": 395,
+    "wrong_decided": 0,
+    "unresolved": 5,
+    "step_localization_correct": 400,
+    "disclosure": "Pilot inspected before freeze; thresholds are pilot-informed; excluded from fresh holdout."
+  },
+  "holdout": {
+    "seed_start": 900000,
+    "formula": "900000+173*kind_index+71*i, i=0..49",
+    "traces": 400,
+    "decided_correct": 396,
+    "decided_wrong": 0,
+    "unresolved": [
+      {
+        "seed": 901038,
+        "kind": "colored_step_drift",
+        "estimated_slope": 0.0025289,
+        "step_at": 117
+      },
+      {
+        "seed": 901251,
+        "kind": "colored_step_drift",
+        "estimated_slope": 0.0030947,
+        "step_at": 114
+      },
+      {
+        "seed": 902245,
+        "kind": "colored_step_drift",
+        "estimated_slope": 0.0026921,
+        "step_at": 116
+      },
+      {
+        "seed": 903026,
+        "kind": "colored_step_drift",
+        "estimated_slope": 0.0021784,
+        "step_at": 125
+      }
+    ],
+    "step_localization_correct": 400,
+    "step_bearing_streams": 200,
+    "coverage": 0.99,
+    "conditional_accuracy_of_decisions": 1,
+    "per_kind": {
+      "steady": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "impulses": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "drift": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "step": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "step_drift": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "colored_steady": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "colored_step_drift": {
+        "correct": 46,
+        "wrong": 0,
+        "unresolved": 4
+      },
+      "negative_drift_step": {
+        "correct": 50,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "observations": [
+    "No incorrect decided labels in this synthetic holdout",
+    "All four abstentions involve genuine drift plus step with colored noise",
+    "Step localization within ±8 for all 200 actual step-bearing traces",
+    "Abstentions are withheld decisions, not classified successes"
+  ],
+  "limitations": [
+    "Threshold bands are heuristic and not confidence intervals with formal coverage guarantees",
+    "Noisy synthetic data of predetermined types and known AR1 noise family; not independent real-world validation",
+    "Retrospective full-stream evaluation; cannot claim live or causal prediction",
+    "This experiment does not verify third-party RH/NS proofs or ROOT0 influence on AI systems"
+  ],
+  "next": "SG028 sequential evidence gathering for unresolved cases without changing original decisions; maintain immutable observation ledger.",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG025",
+    "TD-CROSSDOMAIN-SG026"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg027-uncertainty-aware.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "media_archived": false
+}
