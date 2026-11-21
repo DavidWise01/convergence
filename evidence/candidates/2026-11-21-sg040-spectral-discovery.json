@@ -1,0 +1,214 @@
+{
+  "id": "TD-CROSSDOMAIN-SG040",
+  "date": "2026-11-21",
+  "status": "MIXED_FROZEN_HOLDOUT_NOT_BETTER_TOTAL_LOSS",
+  "parent": "TD-CROSSDOMAIN-SG039",
+  "freeze": "evidence/candidates/2026-11-21-sg040-spectral-discovery-freeze.json",
+  "freeze_commit": "aa2f4ec287466c87db80af6ab05cd80e518644b8",
+  "method": "Search Fourier powers for period 25..100 inclusive every 5; on estimator disagreement trust primary only when detrended max power>=.45 and >=1.4 times best spectral power outside a ±20-period neighborhood. Predecision gate, alarm and two-phase challenge unchanged.",
+  "pilot": {
+    "seed_start": 47000000,
+    "streams": 180,
+    "thresholds_inspected": [
+      0.35,
+      0.45,
+      0.55
+    ],
+    "SG039": {
+      "correct": 151,
+      "FP": 2,
+      "FN": 0,
+      "abstain": 27,
+      "loss": 3188.4
+    },
+    "SG040_035": {
+      "correct": 152,
+      "FP": 2,
+      "FN": 1,
+      "abstain": 25,
+      "loss": 3238.8
+    },
+    "SG040_045": {
+      "correct": 152,
+      "FP": 2,
+      "FN": 0,
+      "abstain": 26,
+      "loss": 3170.4
+    },
+    "disclosure": "Selection of .45 on pilot was disclosed and frozen before fresh holdout."
+  },
+  "holdout": {
+    "seed_start": 51000000,
+    "seed_formula": "51000000 + 200000*scenario_index + 10000*int(drift) + 101*k; k=0..39",
+    "streams": 720,
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "results": {
+      "fixed240": {
+        "correct": 635,
+        "FP": 5,
+        "FN": 2,
+        "abstain": 78,
+        "observations": 172800,
+        "loss": 12702
+      },
+      "SG037": {
+        "correct": 640,
+        "FP": 5,
+        "FN": 3,
+        "abstain": 72,
+        "observations": 159520,
+        "loss": 11887.2
+      },
+      "SG038": {
+        "correct": 564,
+        "FP": 4,
+        "FN": 3,
+        "abstain": 149,
+        "observations": 159520,
+        "loss": 13123.2
+      },
+      "SG039": {
+        "correct": 618,
+        "FP": 4,
+        "FN": 3,
+        "abstain": 95,
+        "observations": 159520,
+        "loss": 12151.2
+      },
+      "SG040": {
+        "correct": 625,
+        "FP": 5,
+        "FN": 3,
+        "abstain": 87,
+        "observations": 159520,
+        "loss": 12157.2
+      }
+    },
+    "relative_to_SG039": {
+      "correct_decisions_recovered": 7,
+      "additional_wrong": 1,
+      "abstentions_removed": 8,
+      "cost_delta": 6
+    },
+    "specific_controls": {
+      "fast_oscillation": {
+        "SG039_correct": 71,
+        "SG039_wrong": 0,
+        "SG039_unresolved": 9,
+        "SG040_correct": 71,
+        "SG040_wrong": 0,
+        "SG040_unresolved": 9
+      },
+      "late_oscillation": {
+        "SG039_correct": 77,
+        "SG039_wrong": 0,
+        "SG039_unresolved": 3,
+        "SG040_correct": 77,
+        "SG040_wrong": 0,
+        "SG040_unresolved": 3
+      },
+      "variable_period": {
+        "SG039_correct": 79,
+        "SG039_wrong": 0,
+        "SG039_unresolved": 1,
+        "SG040_correct": 79,
+        "SG040_wrong": 0,
+        "SG040_unresolved": 1
+      },
+      "correlation_switch": {
+        "SG039_correct": 61,
+        "SG039_wrong": 4,
+        "SG039_unresolved": 15,
+        "SG040_correct": 62,
+        "SG040_wrong": 4,
+        "SG040_unresolved": 14
+      },
+      "colored_control": {
+        "SG039_correct": 50,
+        "SG039_wrong": 2,
+        "SG039_unresolved": 28,
+        "SG040_correct": 53,
+        "SG040_wrong": 3,
+        "SG040_unresolved": 24
+      }
+    }
+  },
+  "failures": [
+    {
+      "seed": 51202020,
+      "scenario": "correlation_switch",
+      "truth": false,
+      "error": "FP",
+      "observations": 240
+    },
+    {
+      "seed": 51203939,
+      "scenario": "correlation_switch",
+      "truth": false,
+      "error": "FP",
+      "observations": 240
+    },
+    {
+      "seed": 51210909,
+      "scenario": "correlation_switch",
+      "truth": true,
+      "error": "FN",
+      "observations": 240
+    },
+    {
+      "seed": 51211717,
+      "scenario": "correlation_switch",
+      "truth": true,
+      "error": "FN",
+      "observations": 240
+    },
+    {
+      "seed": 51612525,
+      "scenario": "subtle_drift",
+      "truth": true,
+      "error": "FN",
+      "observations": 140
+    },
+    {
+      "seed": 52600909,
+      "scenario": "colored_control",
+      "truth": false,
+      "error": "FP",
+      "observations": 240
+    },
+    {
+      "seed": 52601212,
+      "scenario": "colored_control",
+      "truth": false,
+      "error": "FP",
+      "observations": 240
+    },
+    {
+      "seed": 52603535,
+      "scenario": "colored_control",
+      "truth": false,
+      "error": "FP",
+      "observations": 240
+    }
+  ],
+  "local_execution_digest": "e534b0d6e50ebd872cad2b88f3ee5b9edbced0659003597220e07723ae69df8b",
+  "limitations": [
+    "All tests synthetic; period range and thresholds pilot-selected, not universal frequency search",
+    "A higher peak under correlated noise can be spurious; multiple correlated methods do not create independent witnesses",
+    "Compared policies on paired synthetic streams but no guarantee of real-world transfer",
+    "The exact full holdout including all seed rows is regenerable with committed executable; local independently run full source preserved in this turn",
+    "SG040 slightly increased loss vs SG039; not validated improvement in cost"
+  ],
+  "next": "SG041: spectral peak significance against correlation-aware surrogate null distributions; separate estimated periodicity from evidence of true oscillatory mechanism.",
+  "reproducible_script": "evidence/candidates/2026-11-21-sg040-spectral-discovery.py"
+}
