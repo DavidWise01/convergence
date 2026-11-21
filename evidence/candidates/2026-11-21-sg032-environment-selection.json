@@ -1,0 +1,171 @@
+{
+  "id": "TD-CROSSDOMAIN-SG032",
+  "recorded_at": "2026-11-21",
+  "status": "MIXED_PROSPECTIVE_HOLDOUT",
+  "freeze": "evidence/candidates/2026-11-21-sg032-environment-selection-freeze.json",
+  "freeze_commit": "1f122abb8a0290168005d56db8295256d4d30bf4",
+  "method": "Estimate autocorrelation using trimmed, detrended predecision t0..109, choose fixed240 when estimated rho >= .82, otherwise SG030 conservative cost-aware; score only continuation t240..479 on fresh deterministic seeds.",
+  "calibration": {
+    "streams": 200,
+    "environment_correct": 189,
+    "selected_loss": 3073.2,
+    "fixed240_loss": 3750,
+    "note": "Threshold chosen after this calibration; not holdout."
+  },
+  "holdout": {
+    "streams": 400,
+    "policy_evaluations": 800,
+    "seed_start": 8200000,
+    "seed_formula": "8200000+100000*scenario_index+10000*int(drift)+101*k",
+    "k_range": "0..49",
+    "environment_correct": 380,
+    "environment_misclassified": 20,
+    "total": {
+      "selected": {
+        "loss": 6638.4,
+        "samples": 69240,
+        "correct": 342,
+        "FP": 6,
+        "FN": 9,
+        "abstain": 43
+      },
+      "fixed240": {
+        "loss": 6822,
+        "samples": 96000,
+        "correct": 345,
+        "FP": 0,
+        "FN": 1,
+        "abstain": 54
+      },
+      "cost_aware": {
+        "loss": 8241.6,
+        "samples": 62760,
+        "correct": 334,
+        "FP": 20,
+        "FN": 9,
+        "abstain": 37
+      }
+    },
+    "by_environment": {
+      "baseline": {
+        "environment_correct": 99,
+        "total": 100,
+        "selected_fixed240": 1,
+        "selected": {
+          "loss": 1041.6,
+          "correct": 98,
+          "FP": 1,
+          "FN": 0,
+          "abstain": 1,
+          "samples": 14560
+        },
+        "fixed240": {
+          "loss": 1440,
+          "correct": 100,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 0,
+          "samples": 24000
+        }
+      },
+      "weak_drift": {
+        "environment_correct": 100,
+        "total": 100,
+        "selected_fixed240": 0,
+        "selected": {
+          "loss": 2466,
+          "correct": 61,
+          "FP": 1,
+          "FN": 8,
+          "abstain": 30,
+          "samples": 17600
+        },
+        "fixed240": {
+          "loss": 2250,
+          "correct": 59,
+          "FP": 0,
+          "FN": 1,
+          "abstain": 40,
+          "samples": 24000
+        }
+      },
+      "high_correlation": {
+        "environment_correct": 82,
+        "total": 100,
+        "selected_fixed240": 82,
+        "selected": {
+          "loss": 2095.2,
+          "correct": 84,
+          "FP": 3,
+          "FN": 1,
+          "abstain": 12,
+          "samples": 22320
+        },
+        "fixed240": {
+          "loss": 1692,
+          "correct": 86,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 14,
+          "samples": 24000
+        }
+      },
+      "heavy_tailed": {
+        "environment_correct": 99,
+        "total": 100,
+        "selected_fixed240": 1,
+        "selected": {
+          "loss": 1035.6,
+          "correct": 99,
+          "FP": 1,
+          "FN": 0,
+          "abstain": 0,
+          "samples": 14760
+        },
+        "fixed240": {
+          "loss": 1440,
+          "correct": 100,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 0,
+          "samples": 24000
+        }
+      }
+    },
+    "cost_savings_vs_fixed240": 183.6,
+    "observations_saved_vs_fixed240": 26760,
+    "limitations": [
+      "Lower average cost but more wrong decisions; not universally safer.",
+      "20 misclassified environments, 18 in high-correlation cases.",
+      "Weak-drift noise type correctly identified but adaptive policy still costly.",
+      "Synthetic data, no external verification or mathematical theorem proof.",
+      "Policy selection predetermined by pilot-threshold estimator, not optimal decision theory."
+    ]
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local calibration Python",
+      "result": "200 exploratory streams; 189/200 environment recognition; .82 threshold frozen"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "Commit 1f122abb8a0290168005d56db8295256d4d30bf4 before holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local holdout Python",
+      "result": "400 new streams; 380 environment correct; selected total 6638.4 vs fixed240 6822.0; 20 misclassified environments"
+    }
+  ],
+  "next": "SG033 risk-limited selection with abstention over policy and calibrated upper-error bounds; avoid using regime labels known only after evaluation.",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG031",
+    "TD-CROSSDOMAIN-SG030"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg032-environment-selection.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
