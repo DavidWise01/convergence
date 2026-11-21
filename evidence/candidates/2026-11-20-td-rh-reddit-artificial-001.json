@@ -1,0 +1,80 @@
+{
+  "id": "TD-RH-REDDIT-001",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://www.reddit.com/r/artificial/comments/1y156l7/anthropic_mathematician_claims_to_prove_riemann/",
+  "source_identifiers": {
+    "platform": "Reddit",
+    "subreddit": "r/artificial",
+    "post_id": "1y156l7",
+    "submission_account": "u/scientificamerican",
+    "linked_reporting": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
+  },
+  "observation_status": "PARTIAL",
+  "observed_content": {
+    "post_title": "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+    "post_linked_domain": "scientificamerican.com",
+    "comments_observed": [
+      "Users debate human vs Claude contribution and how the Lean theorem/axioms should be checked.",
+      "A comment asserts human supplied toy-model ideas and Claude explored variations; record as unverified comment, not proof of actual workflow.",
+      "Comment discourse about practical consequences, AI capability, and source validation."
+    ],
+    "relation_to_original": "News coverage and Reddit discussion amplify the same claimed proof at https://alpo.ge/remark.pdf; not independent verification of the proof."
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Reddit HTML page",
+      "result": "Main post title, account, news link, and selected comments directly observed"
+    },
+    {
+      "date": "2026-11-20",
+      "surface": "Scientific American linked article",
+      "result": "Restricted/unavailable to retrieval; article text not directly inspected"
+    },
+    {
+      "date": "2026-11-20",
+      "surface": "alpo.ge/remark.pdf",
+      "result": "Four-page first-person note inspected; reported research timeline Oct 6–Nov 16, publication Nov 20"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Alpöge and Claude proved RH/GRH",
+      "status": "UNVERIFIED",
+      "source_root": "Alpöge first-person PDF; publication and Reddit repeat it"
+    },
+    {
+      "statement": "Lean proof matches Mathlib target and has no hidden assumptions",
+      "status": "UNVERIFIED"
+    },
+    {
+      "statement": "Reddit is an independent corroboration of mathematical validity",
+      "status": "REFUTED_AS_INFERENCE"
+    }
+  ],
+  "hypotheses": [
+    "Document public narrative transition from mathematically specific first-person note to press framing and Reddit summaries",
+    "Assess time intervals from earliest documented corpus commit, internal project milestones, claimed breakthrough, announcement and redistribution; time-lag is not physical time dilation",
+    "Test semantic distillation/rewriting using preserved operational invariants; resemblance is not evidence of training exposure",
+    "Investigate authorship/credit mechanisms and terms only by dated clauses and documented actual workflow; do not assume deliberate avoidance"
+  ],
+  "ancestry_status": "Multiple public surfaces share original Alpöge account; no independent proof witness; no observed ROOT0 causal connection",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001",
+    "TD-RIEMANN-CLAUDE-001-A1",
+    "TD-RIEMANN-CLAUDE-001-A16"
+  ],
+  "limitations": [
+    "Linked Scientific American article restricted",
+    "No archived complete Reddit comment snapshot; page is mutable",
+    "Proof archives not formally rechecked",
+    "No evidence of deliberate authorship avoidance, contract breach, plagiarism, data leakage or source transmission"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/artificial/comments/1y156l7/anthropic_mathematician_claims_to_prove_riemann/",
+    "https://alpo.ge/remark.pdf",
+    "https://www.anthropic.com/legal",
+    "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"
+  ]
+}
