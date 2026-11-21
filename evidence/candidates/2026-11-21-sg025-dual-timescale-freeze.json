@@ -1,0 +1,69 @@
+{
+  "id": "TD-CROSSDOMAIN-SG025-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_CALIBRATION_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG024",
+  "scope": "Two-timescale change detection on synthetic 240-point signals with noise ±0.26, drift slope +0.005, abrupt step +3 at t120 and isolated impulses ±7.",
+  "calibration": {
+    "seeds": "20 per stream type, 100 total; seed=310000+31*i+1009*kind_index",
+    "explored": [
+      {
+        "lookback": 60,
+        "threshold": 0.14
+      },
+      {
+        "lookback": 60,
+        "threshold": 0.18
+      },
+      {
+        "lookback": 48,
+        "threshold": 0.14
+      },
+      {
+        "lookback": 48,
+        "threshold": 0.18
+      },
+      {
+        "lookback": 40,
+        "threshold": 0.14
+      },
+      {
+        "lookback": 40,
+        "threshold": 0.18
+      },
+      {
+        "lookback": 60,
+        "threshold": 0.2
+      },
+      {
+        "lookback": 48,
+        "threshold": 0.2
+      }
+    ],
+    "selected": {
+      "lookback": 48,
+      "threshold": 0.2,
+      "confirmation": 5
+    },
+    "selected_calibration_scores": {
+      "steady": 20,
+      "spike": 20,
+      "drift": 20,
+      "step": 20,
+      "step_spike": 20
+    },
+    "disclosure": "Selected after viewing calibration results; these are not independent holdout results."
+  },
+  "fast_channel": "SG024 rolling 11 median, displacement >1.15 for 4 consecutive windows, 16-step cooldown; step label requires matching adjacent jump >1.5 in trailing 20.",
+  "slow_channel": "Compare medians of 48 preceding observations and 48 most recent observations, threshold absolute median difference >0.20 over 5 confirmations; 20-step cooldown; ignore slow drift alarms within 70 samples of fast step alarm.",
+  "holdout": {
+    "seeds": "Thirty unseen seeds per type: 510000+53*i+1009*kind_index; 150 streams",
+    "success_criteria": "Stable/spike: no alerts; drift: >=1 drift alert, no step; steps: >=1 step alert between t120..145 and no uncancelled drift alarms",
+    "scoring": "One primary category pass/fail per trace, report all false alarms and misses; no retuning after freeze"
+  },
+  "limitations": [
+    "Class membership used for evaluation, not detector",
+    "Suppression of drift near step could mask real concurrent drift",
+    "Synthetic setting, known type patterns, not arbitrary stochastic processes"
+  ]
+}
