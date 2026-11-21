@@ -1,0 +1,202 @@
+{
+  "id": "TD-CROSSDOMAIN-SG041",
+  "date": "2026-11-21",
+  "status": "NEGATIVE_NO_ERROR_REDUCTION",
+  "parent": "TD-CROSSDOMAIN-SG040",
+  "freeze": "evidence/candidates/2026-11-21-sg041-surrogate-null-freeze.json",
+  "freeze_commit": "25795f3a284243d9cb2fdaedaad10370641d58c6",
+  "method": "Detrend last min(n,160), calculate maximum normalized Fourier power among 16 periods 25..100 every 5, estimate AR1 lag-one residual autocorrelation and marginal variance, draw 31 stationary Gaussian AR1 surrogates, refit and detrend each; empirical p=(1+surrogate maximum >= observed maximum)/32, allow existing primary estimate on disagreement if p<=0.0625.",
+  "pilot": {
+    "seed_start": 57000000,
+    "streams": 108,
+    "sg040": {
+      "correct": 94,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 13,
+      "samples": 23920,
+      "loss": 1759.2
+    },
+    "sg041": {
+      "correct": 94,
+      "FP": 0,
+      "FN": 1,
+      "abstain": 13,
+      "samples": 23920,
+      "loss": 1759.2
+    },
+    "diagnostics": 10,
+    "approved": 8,
+    "disclosure": "Pilot checked before protocol freeze; used for feasibility inspection, not included in holdout."
+  },
+  "holdout": {
+    "seed_start": 61000000,
+    "formula": "61000000+200000*scenario_index+10000*int(drift)+101*k, k=0..19",
+    "streams": 360,
+    "sg040": {
+      "correct": 313,
+      "FP": 4,
+      "FN": 4,
+      "abstain": 39,
+      "samples": 79340,
+      "loss": 6422.4,
+      "early": 82
+    },
+    "sg041": {
+      "correct": 312,
+      "FP": 4,
+      "FN": 4,
+      "abstain": 40,
+      "samples": 79340,
+      "loss": 6440.4,
+      "early": 82
+    },
+    "fixed240": {
+      "correct": 317,
+      "FP": 4,
+      "FN": 4,
+      "abstain": 35,
+      "samples": 86400,
+      "loss": 6774,
+      "early": 0
+    },
+    "spectral_tests": 44,
+    "spectral_approved": 31,
+    "per_scenario": {
+      "reference": {
+        "sg040_correct": 40,
+        "sg041_correct": 40,
+        "sg041_wrong": 0,
+        "sg041_abstain": 0
+      },
+      "correlation_switch": {
+        "sg040_correct": 24,
+        "sg041_correct": 23,
+        "sg041_wrong": 5,
+        "sg041_abstain": 12
+      },
+      "laplace_tail": {
+        "sg040_correct": 40,
+        "sg041_correct": 40,
+        "sg041_wrong": 0,
+        "sg041_abstain": 0
+      },
+      "subtle_drift": {
+        "sg040_correct": 26,
+        "sg041_correct": 26,
+        "sg041_wrong": 2,
+        "sg041_abstain": 12
+      },
+      "fast_oscillation": {
+        "sg040_correct": 38,
+        "sg041_correct": 38,
+        "sg041_wrong": 0,
+        "sg041_abstain": 2
+      },
+      "late_correlation_switch": {
+        "sg040_correct": 33,
+        "sg041_correct": 33,
+        "sg041_wrong": 0,
+        "sg041_abstain": 7
+      },
+      "late_oscillation": {
+        "sg040_correct": 39,
+        "sg041_correct": 39,
+        "sg041_wrong": 0,
+        "sg041_abstain": 1
+      },
+      "variable_period": {
+        "sg040_correct": 40,
+        "sg041_correct": 40,
+        "sg041_wrong": 0,
+        "sg041_abstain": 0
+      },
+      "colored_control": {
+        "sg040_correct": 33,
+        "sg041_correct": 33,
+        "sg041_wrong": 1,
+        "sg041_abstain": 6
+      }
+    },
+    "failure_seeds": [
+      {
+        "scenario": "correlation_switch",
+        "seed": 61200505,
+        "error": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 61200707,
+        "error": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 61200808,
+        "error": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 61201313,
+        "error": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 61211010,
+        "error": "FN"
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 61610101,
+        "error": "FN"
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 61611212,
+        "error": "FN"
+      },
+      {
+        "scenario": "colored_control",
+        "seed": 62611212,
+        "error": "FN"
+      }
+    ],
+    "raw_rows_sha256": "3201aa4a1a90979f3de2219a4cf1b06a9a19d42b33b84577cab58ecc038d762e",
+    "loss_increase_vs_SG040": 18,
+    "extra_unresolved": 1,
+    "wrong_prevented": 0
+  },
+  "limitations": [
+    "31 surrogates yield coarse p-values (minimum .03125), repeated checks not jointly multiplicity-controlled",
+    "Conditional AR1 Gaussian surrogate null estimated from same residual series, so it may be misspecified for noise regime changes",
+    "No out-of-distribution real dataset and no independent source ancestry",
+    "SG041 did not improve wrong-decision risk; eight errors survive the fixed-240 comparator",
+    "GitHub executable adapts exact algorithm to sibling SG040 repository module; source re-fetch can be checked, but separate GitHub-version runtime confirmation is not claimed"
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Attached SG040 standalone executable",
+      "result": "Inspected simulation and policy before new test"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python pilot",
+      "result": "108 streams, no differences between SG040 and SG041; excluded from holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "25795f3a284243d9cb2fdaedaad10370641d58c6 before new seed range tested"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python holdout",
+      "result": "360 streams, SG041 312 correct, 8 wrong, 40 unresolved; SG040 313 correct, 8 wrong, 39 unresolved"
+    }
+  ],
+  "next": "SG042 test trend-estimator validity rather than spectral evidence: correlated-noise calibrated uncertainty on slopes, independent perturbation/negative-control hypotheses; measure false confirmations and rejections.",
+  "executable": "evidence/candidates/2026-11-21-sg041-surrogate-null.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
