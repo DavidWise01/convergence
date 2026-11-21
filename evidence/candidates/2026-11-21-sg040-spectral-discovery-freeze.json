@@ -1,0 +1,80 @@
+{
+  "id": "TD-CROSSDOMAIN-SG040-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_BEFORE_HOLDOUT_AFTER_DISCLOSED_PILOT",
+  "parent": "TD-CROSSDOMAIN-SG039",
+  "objective": "Replace SG039's known 60-observation Fourier diagnosis with period search, distinguishing actual oscillation from colored-noise false peaks; report abstention and error tradeoffs.",
+  "algorithm": "SG038 primary/secondary estimators, SG039 candidate challenge and SG037 predecision risk gate unchanged. Detrend last min(n,160) observations. Search Fourier powers at integer candidate periods 25,30,...,100. Let highest normalized power P and highest peak >=20 periods away Q. Diagnose oscillation only when P>=0.45 and P>=1.4Q. On disagreement trust primary only when diagnostic passes; otherwise abstain at alarmed final decision or continue early acquisition.",
+  "pilot": {
+    "seed_start": 47000000,
+    "streams": 180,
+    "thresholds_tested": [
+      0.35,
+      0.45,
+      0.55
+    ],
+    "SG039": {
+      "correct": 151,
+      "FP": 2,
+      "FN": 0,
+      "abstain": 27,
+      "samples": 40040,
+      "loss": 3188.4
+    },
+    "SG040_at_0_35": {
+      "correct": 152,
+      "FP": 2,
+      "FN": 1,
+      "abstain": 25,
+      "samples": 39980,
+      "loss": 3238.8
+    },
+    "SG040_at_0_45": {
+      "correct": 152,
+      "FP": 2,
+      "FN": 0,
+      "abstain": 26,
+      "samples": 40040,
+      "loss": 3170.4
+    },
+    "disclosure": "Pilot informed threshold. 0.35 had one extra false rejection, 0.45 avoided it in pilot; not an untouched test."
+  },
+  "negative_controls": [
+    "Correlation switches to rho=.94",
+    "Colored control rho=.94 starting at continuation time 0",
+    "Weak drift +0.0027",
+    "Laplace innovation"
+  ],
+  "positive_conditions": [
+    "Original period-60 oscillation",
+    "Late period-60 oscillation",
+    "Variable-period chirp from 42 to 58 samples"
+  ],
+  "holdout": {
+    "seed_start": 51000000,
+    "count_per_truth_per_scenario": 40,
+    "scenario_count": 9,
+    "total_streams": 720,
+    "seed_formula": "51000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "comparison": [
+      "fixed240",
+      "SG037",
+      "SG038",
+      "SG039",
+      "SG040"
+    ],
+    "loss": {
+      "sample": 0.06,
+      "false_confirmation": 150,
+      "false_rejection": 90,
+      "unresolved": 18
+    },
+    "no_retuning": true
+  },
+  "limits": [
+    "Spectral search on same observation stream not independent witness",
+    "Known candidate frequency range selected from synthetic context, not general arbitrary frequencies",
+    "Periodicity of colored noise may generate spurious peaks and raise false diagnosis",
+    "Experiment evaluates synthetic data only, not formal coverage guarantee"
+  ]
+}
