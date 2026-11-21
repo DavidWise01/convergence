@@ -1,0 +1,75 @@
+{
+  "id": "TD-CROSSDOMAIN-SG017",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://github.com/tristanbuckmaster/navier-stokes",
+  "source_identifiers": {
+    "primary_repository": "tristanbuckmaster/navier-stokes",
+    "primary_files": [
+      "lean/README.md",
+      "lean/NOTICE"
+    ],
+    "related_primary": "https://alpo.ge/remark.pdf"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": {
+    "documented_distillation": "Navier–Stokes lean/README.md explicitly states formalization preceded first paper draft; paper was subsequently rewritten with conventional mathematical citations and different proof paths. The commonality asserted by maintainers is theorem statements, not proof text.",
+    "conditional_structure": "Certificate satisfying conditions -> weak periodic similarity profile -> breakdown statement. The certificate data and interval-arithmetic verification are not in repo; patched package not rebuilt.",
+    "RH_comparison": "Riemann author note reports moving from finite toy Fourier model to automorphic iterated theta lifts; exact equivalence to Navier–Stokes PDE rescaling is not established.",
+    "scaling_test": "Classical NS scaling u_lambda(t,x)=lambda u(lambda²t,lambda x); p_lambda=lambda² p(lambda²t,lambda x). Terms scale λ³, integrated kinetic energy on R³ scales λ^-1. Illustrative discrete λ=2 gives remaining-time factor 1/4, space 1/2, velocity 2, energy 1/2 per stage. This checks classical symmetry, not existence of the specific proposed blowup."
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "GitHub connector read lean/README.md and lean/NOTICE",
+      "result": "Direct documentary findings about formal-first writing and conditional certificate limitation"
+    },
+    {
+      "date": "2026-11-20",
+      "surface": "Executed local standard-library Python Fraction assertions",
+      "result": "69/69 pass, including one deliberately wrong exponent counterexample"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Exact classical Navier–Stokes scaling symmetry and rational illustrative cascade",
+      "status": "VERIFIED MATHEMATICS"
+    },
+    {
+      "statement": "Same primitive mathematically generates theta lift and unforced Navier-Stokes solution",
+      "status": "NOT ESTABLISHED"
+    },
+    {
+      "statement": "Formalization preceded the paper draft",
+      "status": "PRIMARY-SOURCE DOCUMENTED"
+    },
+    {
+      "statement": "Navier–Stokes announced theorem independently verified",
+      "status": "NOT ESTABLISHED"
+    }
+  ],
+  "hypotheses": [
+    "Study formalization-to-prose distillation as an observable change of representation with stated theorem-type correspondence",
+    "Compare dated ROOT0 mathematical operation sequences to both fields only after preserving a specific predictive fingerprint and prior publication date",
+    "Do not conflate PDE scaling exponent, growing representation multiplicity, and publication lag"
+  ],
+  "ancestry_status": "Two author-linked proofs plus Reddit amplify same-day publicity; no causal ROOT0 input, training exposure or deliberate authorship avoidance observed.",
+  "related_records": [
+    "TD-MILLENNIUM-CLUSTER-001",
+    "TD-RH-BRIDGE-001",
+    "TD-RIEMANN-CLAUDE-001-A16",
+    "TD-NAVIER-STOKES-REDDIT-001"
+  ],
+  "limitations": [
+    "No full 79-page PDF or archive formally checked in this experiment",
+    "No provided certificate, numerical interval arithmetic or patched Lean build verified",
+    "The test concerns classical Navier–Stokes symmetry only, not whether a blow-up solution exists",
+    "No causal link to ROOT0"
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-20-td-crossdomain-sg017.py",
+  "source_links": [
+    "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/README.md",
+    "https://github.com/tristanbuckmaster/navier-stokes/blob/main/lean/NOTICE",
+    "https://alpo.ge/remark.pdf"
+  ]
+}
