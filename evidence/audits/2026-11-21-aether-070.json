@@ -1,0 +1,2826 @@
+{
+  "id": "AETHER-070",
+  "date": "2026-11-21",
+  "predecessor": "AETHER-069",
+  "name": "Graceful Sensor Degradation",
+  "sources": [
+    "evidence/audits/2026-11-21-aether-069.json",
+    "evidence/audits/2026-11-21-aether-065.json"
+  ],
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "protocol": {
+    "t0Shock": 0.4,
+    "startTick": 128,
+    "unexpectedChangeTick": 280,
+    "sharedRootLossTick": 128,
+    "restoredRootTick": 320,
+    "missingEndRepresented": 99999,
+    "delay": 8,
+    "noiseAmplitude": 0.015,
+    "independentRootCheck": 3,
+    "requalificationConsecutiveSamples": 3,
+    "adjustmentCadence": 8,
+    "stepCap": 0.05,
+    "guardedFallbackTarget": -0.4,
+    "correctionCostThreshold": 170,
+    "coherenceThreshold": 0.995
+  },
+  "cases": [
+    {
+      "scenario": {
+        "id": "permanent_positive",
+        "label": "Permanent loss · +.35 surprise",
+        "restore": 99999,
+        "surprise": 0.35
+      },
+      "graceful": {
+        "R": 0.9996054497456918,
+        "cost": 124.57353722212949,
+        "actuation": 0.8000000000000002,
+        "pass": true,
+        "accepted": 0,
+        "rejected": 376,
+        "state": "DEGRADED",
+        "events": [
+          {
+            "t": 136,
+            "transition": "LOSS_OF_DIVERSITY"
+          }
+        ],
+        "trace": [
+          {
+            "t": 0,
+            "R": 0.08634491048379632,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 8,
+            "R": 0.156708846441707,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 16,
+            "R": 0.73864578089207,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 24,
+            "R": 0.9682161917627755,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 32,
+            "R": 0.9824911114015057,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 40,
+            "R": 0.9807229204410972,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 48,
+            "R": 0.979847558233379,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 56,
+            "R": 0.9795776025679696,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 64,
+            "R": 0.9795006926658621,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 72,
+            "R": 0.979479170981605,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 80,
+            "R": 0.9794731726013796,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 88,
+            "R": 0.9794715020028811,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 96,
+            "R": 0.9794710367503119,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 104,
+            "R": 0.9794709071733614,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 112,
+            "R": 0.9794708710835427,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 120,
+            "R": 0.9794708610315651,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 128,
+            "R": 0.979470858231791,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 136,
+            "R": 0.8842626708878857,
+            "cost": 0.41244057887815344,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 144,
+            "R": 0.8883611527545573,
+            "cost": 2.0665923408456637,
+            "level": 0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 152,
+            "R": 0.9173838931019521,
+            "cost": 4.31639257877093,
+            "level": 0.35000000000000003,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 160,
+            "R": 0.9453812530579634,
+            "cost": 6.983029169241818,
+            "level": 0.30000000000000004,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 168,
+            "R": 0.9664063038837626,
+            "cost": 9.947945188050864,
+            "level": 0.25000000000000006,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 176,
+            "R": 0.9809979769319827,
+            "cost": 13.113860930264865,
+            "level": 0.20000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 184,
+            "R": 0.9906641250726941,
+            "cost": 16.404072503371324,
+            "level": 0.15000000000000008,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 192,
+            "R": 0.996525718072797,
+            "cost": 19.758493011950943,
+            "level": 0.10000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 200,
+            "R": 0.9992651250668576,
+            "cost": 23.12981936436137,
+            "level": 0.05000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 208,
+            "R": 0.9993876914699052,
+            "cost": 26.453470395258986,
+            "level": 6.938893903907228e-17,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 216,
+            "R": 0.99805133920894,
+            "cost": 29.6053360442649,
+            "level": -0.04999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 224,
+            "R": 0.9963400545317426,
+            "cost": 32.48981864947078,
+            "level": -0.09999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 232,
+            "R": 0.9947574549340722,
+            "cost": 35.044602990784966,
+            "level": -0.14999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 240,
+            "R": 0.9934591114045989,
+            "cost": 37.26629103099703,
+            "level": -0.19999999999999996,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 248,
+            "R": 0.9924496554994429,
+            "cost": 39.60496462933341,
+            "level": -0.24999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 256,
+            "R": 0.9916828731797923,
+            "cost": 42.229229429544304,
+            "level": -0.29999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 264,
+            "R": 0.9897103048167373,
+            "cost": 45.1053390574829,
+            "level": -0.3499999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 272,
+            "R": 0.982621672120627,
+            "cost": 47.970937471342474,
+            "level": -0.3999999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 280,
+            "R": 0.9812753707927944,
+            "cost": 50.776896574052365,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 288,
+            "R": 0.9931501531515741,
+            "cost": 53.5135241727947,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 296,
+            "R": 0.9907871581086476,
+            "cost": 56.14080356998838,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 304,
+            "R": 0.9933825638015734,
+            "cost": 58.68328160245361,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 312,
+            "R": 0.9959307880970439,
+            "cost": 61.16300118743289,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 320,
+            "R": 0.9975335225071201,
+            "cost": 63.59378281682166,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 328,
+            "R": 0.9984280784316119,
+            "cost": 65.98640892894667,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 336,
+            "R": 0.9989147516888072,
+            "cost": 68.3539052621413,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 344,
+            "R": 0.999182960042527,
+            "cost": 70.76176442563519,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 352,
+            "R": 0.9993351320832776,
+            "cost": 73.2141420139171,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 360,
+            "R": 0.9994245040516551,
+            "cost": 75.6969867565033,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 368,
+            "R": 0.9994788809951226,
+            "cost": 78.20120219557867,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 376,
+            "R": 0.9995131466227045,
+            "cost": 80.72092257166813,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 384,
+            "R": 0.9995355235023505,
+            "cost": 83.25237425846474,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 392,
+            "R": 0.9995506980181167,
+            "cost": 85.793130833896,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 400,
+            "R": 0.9995614137092986,
+            "cost": 88.34162864532118,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 408,
+            "R": 0.9995693108801905,
+            "cost": 90.89685327344787,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 416,
+            "R": 0.9995753856114086,
+            "cost": 93.45813751467117,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 424,
+            "R": 0.999580249636196,
+            "cost": 96.02503184856327,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 432,
+            "R": 0.9995842819086859,
+            "cost": 98.5972218567649,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 440,
+            "R": 0.9995877190546437,
+            "cost": 101.17447594571497,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 448,
+            "R": 0.9995907102317433,
+            "cost": 103.75661254879827,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 456,
+            "R": 0.9995933507488134,
+            "cost": 106.34347978838069,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 464,
+            "R": 0.9995957027817625,
+            "cost": 108.93494305887543,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 472,
+            "R": 0.9995978081591939,
+            "cost": 111.5308776060552,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 480,
+            "R": 0.9995996962411712,
+            "cost": 114.13116422581028,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 488,
+            "R": 0.9996013887533514,
+            "cost": 116.73568688433114,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 496,
+            "R": 0.9996029027326298,
+            "cost": 119.34433150005451,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 504,
+            "R": 0.999604252305044,
+            "cost": 121.9569854097882,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 512,
+            "R": 0.9996054497456918,
+            "cost": 124.57353722212949,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          }
+        ]
+      },
+      "guarded": {
+        "R": 0.9308606877328285,
+        "cost": 178.7133251494043,
+        "pass": false
+      },
+      "fixed": {
+        "R": 0.979863342171971,
+        "cost": 164.69292361647786,
+        "pass": false
+      }
+    },
+    {
+      "scenario": {
+        "id": "restored_positive",
+        "label": "Restore at 320 · +.35",
+        "restore": 320,
+        "surprise": 0.35
+      },
+      "graceful": {
+        "R": 0.9995982752431712,
+        "cost": 129.76009734596303,
+        "actuation": 1.0500000000000003,
+        "pass": true,
+        "accepted": 184,
+        "rejected": 192,
+        "state": "TRUSTED",
+        "events": [
+          {
+            "t": 136,
+            "transition": "LOSS_OF_DIVERSITY"
+          },
+          {
+            "t": 330,
+            "transition": "REQUALIFIED"
+          }
+        ],
+        "trace": [
+          {
+            "t": 0,
+            "R": 0.08634491048379632,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 8,
+            "R": 0.156708846441707,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 16,
+            "R": 0.73864578089207,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 24,
+            "R": 0.9682161917627755,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 32,
+            "R": 0.9824911114015057,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 40,
+            "R": 0.9807229204410972,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 48,
+            "R": 0.979847558233379,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 56,
+            "R": 0.9795776025679696,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 64,
+            "R": 0.9795006926658621,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 72,
+            "R": 0.979479170981605,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 80,
+            "R": 0.9794731726013796,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 88,
+            "R": 0.9794715020028811,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 96,
+            "R": 0.9794710367503119,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 104,
+            "R": 0.9794709071733614,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 112,
+            "R": 0.9794708710835427,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 120,
+            "R": 0.9794708610315651,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 128,
+            "R": 0.979470858231791,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 136,
+            "R": 0.8842626708878857,
+            "cost": 0.41244057887815344,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 144,
+            "R": 0.8883611527545573,
+            "cost": 2.0665923408456637,
+            "level": 0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 152,
+            "R": 0.9173838931019521,
+            "cost": 4.31639257877093,
+            "level": 0.35000000000000003,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 160,
+            "R": 0.9453812530579634,
+            "cost": 6.983029169241818,
+            "level": 0.30000000000000004,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 168,
+            "R": 0.9664063038837626,
+            "cost": 9.947945188050864,
+            "level": 0.25000000000000006,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 176,
+            "R": 0.9809979769319827,
+            "cost": 13.113860930264865,
+            "level": 0.20000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 184,
+            "R": 0.9906641250726941,
+            "cost": 16.404072503371324,
+            "level": 0.15000000000000008,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 192,
+            "R": 0.996525718072797,
+            "cost": 19.758493011950943,
+            "level": 0.10000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 200,
+            "R": 0.9992651250668576,
+            "cost": 23.12981936436137,
+            "level": 0.05000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 208,
+            "R": 0.9993876914699052,
+            "cost": 26.453470395258986,
+            "level": 6.938893903907228e-17,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 216,
+            "R": 0.99805133920894,
+            "cost": 29.6053360442649,
+            "level": -0.04999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 224,
+            "R": 0.9963400545317426,
+            "cost": 32.48981864947078,
+            "level": -0.09999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 232,
+            "R": 0.9947574549340722,
+            "cost": 35.044602990784966,
+            "level": -0.14999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 240,
+            "R": 0.9934591114045989,
+            "cost": 37.26629103099703,
+            "level": -0.19999999999999996,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 248,
+            "R": 0.9924496554994429,
+            "cost": 39.60496462933341,
+            "level": -0.24999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 256,
+            "R": 0.9916828731797923,
+            "cost": 42.229229429544304,
+            "level": -0.29999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 264,
+            "R": 0.9897103048167373,
+            "cost": 45.1053390574829,
+            "level": -0.3499999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 272,
+            "R": 0.982621672120627,
+            "cost": 47.970937471342474,
+            "level": -0.3999999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 280,
+            "R": 0.9812753707927944,
+            "cost": 50.776896574052365,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 288,
+            "R": 0.9931501531515741,
+            "cost": 53.5135241727947,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 296,
+            "R": 0.9907871581086476,
+            "cost": 56.14080356998838,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 304,
+            "R": 0.9933825638015734,
+            "cost": 58.68328160245361,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 312,
+            "R": 0.9959307880970439,
+            "cost": 61.16300118743289,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 320,
+            "R": 0.9975335225071201,
+            "cost": 63.59378281682166,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 328,
+            "R": 0.9984280784316119,
+            "cost": 65.98640892894667,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 336,
+            "R": 0.9989147516888072,
+            "cost": 68.3539052621413,
+            "level": -0.4,
+            "state": "TRUSTED",
+            "estimate": 0.35270121833757895
+          },
+          {
+            "t": 344,
+            "R": 0.9996888003022901,
+            "cost": 70.73957907857728,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.3622173471077201
+          },
+          {
+            "t": 352,
+            "R": 0.9997381721043334,
+            "cost": 73.15559847530456,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.3551638398917041
+          },
+          {
+            "t": 360,
+            "R": 0.9997508114386154,
+            "cost": 75.61666841783718,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.36240327224963176
+          },
+          {
+            "t": 368,
+            "R": 0.9997275453665492,
+            "cost": 78.11510907735686,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.352737896207547
+          },
+          {
+            "t": 376,
+            "R": 0.9996893915159863,
+            "cost": 80.6452936068181,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.3583379180696433
+          },
+          {
+            "t": 384,
+            "R": 0.999653209709456,
+            "cost": 83.20262922778099,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.35580429875402364
+          },
+          {
+            "t": 392,
+            "R": 0.999625451731225,
+            "cost": 85.78329196607349,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.34172028060209614
+          },
+          {
+            "t": 400,
+            "R": 0.9996065727088324,
+            "cost": 88.38409868894746,
+            "level": -0.45,
+            "state": "TRUSTED",
+            "estimate": 0.35904975026710645
+          },
+          {
+            "t": 408,
+            "R": 0.999465011533987,
+            "cost": 91.02449388026447,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.35074574426222244
+          },
+          {
+            "t": 416,
+            "R": 0.999576307690762,
+            "cost": 93.74919962067192,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.33917199094671296
+          },
+          {
+            "t": 424,
+            "R": 0.9996836150530922,
+            "cost": 96.54405785203399,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3569966398617654
+          },
+          {
+            "t": 432,
+            "R": 0.9997118398032229,
+            "cost": 99.39615005845032,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.33971940681575374
+          },
+          {
+            "t": 440,
+            "R": 0.9996957837993756,
+            "cost": 102.29565059876734,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3378233413862119
+          },
+          {
+            "t": 448,
+            "R": 0.9996673757324416,
+            "cost": 105.2346145455602,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3458110188420016
+          },
+          {
+            "t": 456,
+            "R": 0.9996412863380714,
+            "cost": 108.20654737942475,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3355455055665956
+          },
+          {
+            "t": 464,
+            "R": 0.9996217266141718,
+            "cost": 111.20614178983998,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.34626027797713027
+          },
+          {
+            "t": 472,
+            "R": 0.999608550850438,
+            "cost": 114.22906610850067,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.33697878979910534
+          },
+          {
+            "t": 480,
+            "R": 0.9996003340784668,
+            "cost": 117.27178648552754,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3449989329671793
+          },
+          {
+            "t": 488,
+            "R": 0.9995955869930468,
+            "cost": 120.3314182844774,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.35740526382998383
+          },
+          {
+            "t": 496,
+            "R": 0.999443280487304,
+            "cost": 123.42769278910039,
+            "level": -0.55,
+            "state": "TRUSTED",
+            "estimate": 0.3354619461590057
+          },
+          {
+            "t": 504,
+            "R": 0.9995320708922472,
+            "cost": 126.5835087283804,
+            "level": -0.5,
+            "state": "TRUSTED",
+            "estimate": 0.3502801903079845
+          },
+          {
+            "t": 512,
+            "R": 0.9995982752431712,
+            "cost": 129.76009734596303,
+            "level": -0.55,
+            "state": "TRUSTED",
+            "estimate": 0.3515962738891781
+          }
+        ]
+      },
+      "guarded": {
+        "R": 0.9996492451562146,
+        "cost": 154.5596059952734,
+        "pass": true
+      },
+      "fixed": {
+        "R": 0.979863342171971,
+        "cost": 164.69292361647786,
+        "pass": false
+      }
+    },
+    {
+      "scenario": {
+        "id": "permanent_none",
+        "label": "Permanent loss · no surprise",
+        "restore": 99999,
+        "surprise": 0
+      },
+      "graceful": {
+        "R": 0.9820017206182206,
+        "cost": 124.09373275885085,
+        "actuation": 0.8000000000000002,
+        "pass": false,
+        "accepted": 0,
+        "rejected": 376,
+        "state": "DEGRADED",
+        "events": [
+          {
+            "t": 136,
+            "transition": "LOSS_OF_DIVERSITY"
+          }
+        ],
+        "trace": [
+          {
+            "t": 0,
+            "R": 0.08634491048379632,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 8,
+            "R": 0.156708846441707,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 16,
+            "R": 0.73864578089207,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 24,
+            "R": 0.9682161917627755,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 32,
+            "R": 0.9824911114015057,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 40,
+            "R": 0.9807229204410972,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 48,
+            "R": 0.979847558233379,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 56,
+            "R": 0.9795776025679696,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 64,
+            "R": 0.9795006926658621,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 72,
+            "R": 0.979479170981605,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 80,
+            "R": 0.9794731726013796,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 88,
+            "R": 0.9794715020028811,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 96,
+            "R": 0.9794710367503119,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 104,
+            "R": 0.9794709071733614,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 112,
+            "R": 0.9794708710835427,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 120,
+            "R": 0.9794708610315651,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 128,
+            "R": 0.979470858231791,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 136,
+            "R": 0.8842626708878857,
+            "cost": 0.41244057887815344,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 144,
+            "R": 0.8883611527545573,
+            "cost": 2.0665923408456637,
+            "level": 0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 152,
+            "R": 0.9173838931019521,
+            "cost": 4.31639257877093,
+            "level": 0.35000000000000003,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 160,
+            "R": 0.9453812530579634,
+            "cost": 6.983029169241818,
+            "level": 0.30000000000000004,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 168,
+            "R": 0.9664063038837626,
+            "cost": 9.947945188050864,
+            "level": 0.25000000000000006,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 176,
+            "R": 0.9809979769319827,
+            "cost": 13.113860930264865,
+            "level": 0.20000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 184,
+            "R": 0.9906641250726941,
+            "cost": 16.404072503371324,
+            "level": 0.15000000000000008,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 192,
+            "R": 0.996525718072797,
+            "cost": 19.758493011950943,
+            "level": 0.10000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 200,
+            "R": 0.9992651250668576,
+            "cost": 23.12981936436137,
+            "level": 0.05000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 208,
+            "R": 0.9993876914699052,
+            "cost": 26.453470395258986,
+            "level": 6.938893903907228e-17,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 216,
+            "R": 0.99805133920894,
+            "cost": 29.6053360442649,
+            "level": -0.04999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 224,
+            "R": 0.9963400545317426,
+            "cost": 32.48981864947078,
+            "level": -0.09999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 232,
+            "R": 0.9947574549340722,
+            "cost": 35.044602990784966,
+            "level": -0.14999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 240,
+            "R": 0.9934591114045989,
+            "cost": 37.26629103099703,
+            "level": -0.19999999999999996,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 248,
+            "R": 0.9924496554994429,
+            "cost": 39.60496462933341,
+            "level": -0.24999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 256,
+            "R": 0.9916828731797923,
+            "cost": 42.229229429544304,
+            "level": -0.29999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 264,
+            "R": 0.9897103048167373,
+            "cost": 45.1053390574829,
+            "level": -0.3499999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 272,
+            "R": 0.982621672120627,
+            "cost": 47.970937471342474,
+            "level": -0.3999999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 280,
+            "R": 0.9812753707927944,
+            "cost": 50.776896574052365,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 288,
+            "R": 0.9810696791313901,
+            "cost": 53.52241108922391,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 296,
+            "R": 0.9811493432134019,
+            "cost": 56.217081171879165,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 304,
+            "R": 0.9812791958677791,
+            "cost": 58.8707086497668,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 312,
+            "R": 0.981396522556404,
+            "cost": 61.49147262585756,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 320,
+            "R": 0.981489610080695,
+            "cost": 64.08591259583385,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 328,
+            "R": 0.9815607189120064,
+            "cost": 66.65920440259109,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 336,
+            "R": 0.9816148693794108,
+            "cost": 69.21544127748867,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 344,
+            "R": 0.9816567127381823,
+            "cost": 71.75786810798519,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 352,
+            "R": 0.9816898793637282,
+            "cost": 74.28906657734174,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 360,
+            "R": 0.9817170281218957,
+            "cost": 76.81109899645338,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 368,
+            "R": 0.9817400488076412,
+            "cost": 79.3256195256217,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 376,
+            "R": 0.9817602607251122,
+            "cost": 81.83396021212876,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 384,
+            "R": 0.9817785718055131,
+            "cost": 84.33719772019033,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 392,
+            "R": 0.9817955976977083,
+            "cost": 86.83620527757554,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 400,
+            "R": 0.9818117484590334,
+            "cost": 89.33169328694359,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 408,
+            "R": 0.9818272908655451,
+            "cost": 91.82424122191256,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 416,
+            "R": 0.9818423928877668,
+            "cost": 94.31432279908746,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 424,
+            "R": 0.9818571552711228,
+            "cost": 96.80232594199525,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 432,
+            "R": 0.9818716338397363,
+            "cost": 99.28856869395314,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 440,
+            "R": 0.9818858551454275,
+            "cost": 101.77331196562962,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 448,
+            "R": 0.9818998273540562,
+            "cost": 104.25676979769379,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 456,
+            "R": 0.9819135477330662,
+            "cost": 106.73911766313566,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 464,
+            "R": 0.9819270077227973,
+            "cost": 109.22049921532357,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 472,
+            "R": 0.9819401962989301,
+            "cost": 111.70103179746053,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 480,
+            "R": 0.9819531021346958,
+            "cost": 114.18081095992473,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 488,
+            "R": 0.9819657149278148,
+            "cost": 116.65991417886934,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 496,
+            "R": 0.9819780261532483,
+            "cost": 119.13840392852981,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 504,
+            "R": 0.9819900294277822,
+            "cost": 121.61633022802592,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 512,
+            "R": 0.9820017206182206,
+            "cost": 124.09373275885085,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          }
+        ]
+      },
+      "guarded": {
+        "R": 0.999614209926983,
+        "cost": 126.92476011241737,
+        "pass": true
+      },
+      "fixed": {
+        "R": 0.9996154474581628,
+        "cost": 125.41092145080108,
+        "pass": true
+      }
+    },
+    {
+      "scenario": {
+        "id": "restored_none",
+        "label": "Restore at 320 · no surprise",
+        "restore": 320,
+        "surprise": 0
+      },
+      "graceful": {
+        "R": 0.9995987003694462,
+        "cost": 135.81964139219295,
+        "actuation": 1.1000000000000003,
+        "pass": true,
+        "accepted": 184,
+        "rejected": 192,
+        "state": "TRUSTED",
+        "events": [
+          {
+            "t": 136,
+            "transition": "LOSS_OF_DIVERSITY"
+          },
+          {
+            "t": 330,
+            "transition": "REQUALIFIED"
+          }
+        ],
+        "trace": [
+          {
+            "t": 0,
+            "R": 0.08634491048379632,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 8,
+            "R": 0.156708846441707,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 16,
+            "R": 0.73864578089207,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 24,
+            "R": 0.9682161917627755,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 32,
+            "R": 0.9824911114015057,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 40,
+            "R": 0.9807229204410972,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 48,
+            "R": 0.979847558233379,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 56,
+            "R": 0.9795776025679696,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 64,
+            "R": 0.9795006926658621,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 72,
+            "R": 0.979479170981605,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 80,
+            "R": 0.9794731726013796,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 88,
+            "R": 0.9794715020028811,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 96,
+            "R": 0.9794710367503119,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 104,
+            "R": 0.9794709071733614,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 112,
+            "R": 0.9794708710835427,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 120,
+            "R": 0.9794708610315651,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 128,
+            "R": 0.979470858231791,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 136,
+            "R": 0.8842626708878857,
+            "cost": 0.41244057887815344,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 144,
+            "R": 0.8883611527545573,
+            "cost": 2.0665923408456637,
+            "level": 0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 152,
+            "R": 0.9173838931019521,
+            "cost": 4.31639257877093,
+            "level": 0.35000000000000003,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 160,
+            "R": 0.9453812530579634,
+            "cost": 6.983029169241818,
+            "level": 0.30000000000000004,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 168,
+            "R": 0.9664063038837626,
+            "cost": 9.947945188050864,
+            "level": 0.25000000000000006,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 176,
+            "R": 0.9809979769319827,
+            "cost": 13.113860930264865,
+            "level": 0.20000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 184,
+            "R": 0.9906641250726941,
+            "cost": 16.404072503371324,
+            "level": 0.15000000000000008,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 192,
+            "R": 0.996525718072797,
+            "cost": 19.758493011950943,
+            "level": 0.10000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 200,
+            "R": 0.9992651250668576,
+            "cost": 23.12981936436137,
+            "level": 0.05000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 208,
+            "R": 0.9993876914699052,
+            "cost": 26.453470395258986,
+            "level": 6.938893903907228e-17,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 216,
+            "R": 0.99805133920894,
+            "cost": 29.6053360442649,
+            "level": -0.04999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 224,
+            "R": 0.9963400545317426,
+            "cost": 32.48981864947078,
+            "level": -0.09999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 232,
+            "R": 0.9947574549340722,
+            "cost": 35.044602990784966,
+            "level": -0.14999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 240,
+            "R": 0.9934591114045989,
+            "cost": 37.26629103099703,
+            "level": -0.19999999999999996,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 248,
+            "R": 0.9924496554994429,
+            "cost": 39.60496462933341,
+            "level": -0.24999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 256,
+            "R": 0.9916828731797923,
+            "cost": 42.229229429544304,
+            "level": -0.29999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 264,
+            "R": 0.9897103048167373,
+            "cost": 45.1053390574829,
+            "level": -0.3499999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 272,
+            "R": 0.982621672120627,
+            "cost": 47.970937471342474,
+            "level": -0.3999999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 280,
+            "R": 0.9812753707927944,
+            "cost": 50.776896574052365,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 288,
+            "R": 0.9810696791313901,
+            "cost": 53.52241108922391,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 296,
+            "R": 0.9811493432134019,
+            "cost": 56.217081171879165,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 304,
+            "R": 0.9812791958677791,
+            "cost": 58.8707086497668,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 312,
+            "R": 0.981396522556404,
+            "cost": 61.49147262585756,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 320,
+            "R": 0.981489610080695,
+            "cost": 64.08591259583385,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 328,
+            "R": 0.9815607189120064,
+            "cost": 66.65920440259109,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 336,
+            "R": 0.9816148693794108,
+            "cost": 69.21544127748867,
+            "level": -0.4,
+            "state": "TRUSTED",
+            "estimate": 0.0027012183375775536
+          },
+          {
+            "t": 344,
+            "R": 0.9888585767764567,
+            "cost": 71.75991464638552,
+            "level": -0.35000000000000003,
+            "state": "TRUSTED",
+            "estimate": 0.012217347107718633
+          },
+          {
+            "t": 352,
+            "R": 0.9947931537720752,
+            "cost": 74.31629284292526,
+            "level": -0.30000000000000004,
+            "state": "TRUSTED",
+            "estimate": 0.005163839891702651
+          },
+          {
+            "t": 360,
+            "R": 0.9981578321906301,
+            "cost": 76.91698470551583,
+            "level": -0.25000000000000006,
+            "state": "TRUSTED",
+            "estimate": 0.012403272249630311
+          },
+          {
+            "t": 368,
+            "R": 0.9985643963204068,
+            "cost": 79.58874122121367,
+            "level": -0.25000000000000006,
+            "state": "TRUSTED",
+            "estimate": 0.0027378962075455308
+          },
+          {
+            "t": 376,
+            "R": 0.999059569335035,
+            "cost": 82.33590433705575,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.008337918069641908
+          },
+          {
+            "t": 384,
+            "R": 0.9989356277818313,
+            "cost": 85.16476664561829,
+            "level": -0.25000000000000006,
+            "state": "TRUSTED",
+            "estimate": 0.005804298754022193
+          },
+          {
+            "t": 392,
+            "R": 0.9992887365718608,
+            "cost": 88.05546241627023,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.008279719397905293
+          },
+          {
+            "t": 400,
+            "R": 0.9992855247712336,
+            "cost": 91.00609420636484,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.009049750267105024
+          },
+          {
+            "t": 408,
+            "R": 0.9993490572965863,
+            "cost": 94.01644053545282,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.000745744262220993
+          },
+          {
+            "t": 416,
+            "R": 0.9994108618339875,
+            "cost": 97.07789324763515,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.010828009053288453
+          },
+          {
+            "t": 424,
+            "R": 0.9994591583706418,
+            "cost": 100.181891051019,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.006996639861763947
+          },
+          {
+            "t": 432,
+            "R": 0.9994950923176839,
+            "cost": 103.32131381370985,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.010280593184247679
+          },
+          {
+            "t": 440,
+            "R": 0.9995216341450829,
+            "cost": 106.49043785570579,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.012176658613789523
+          },
+          {
+            "t": 448,
+            "R": 0.9995413534365655,
+            "cost": 109.68468578552911,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.004188981157999813
+          },
+          {
+            "t": 456,
+            "R": 0.9995561565430457,
+            "cost": 112.9003867997725,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.014454494433405775
+          },
+          {
+            "t": 464,
+            "R": 0.9995674036818221,
+            "cost": 116.13458091154867,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.003739722022871149
+          },
+          {
+            "t": 472,
+            "R": 0.9995760585368002,
+            "cost": 119.38486548737532,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.013021210200896105
+          },
+          {
+            "t": 480,
+            "R": 0.9995828061198496,
+            "cost": 122.64927635923337,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.005001067032822132
+          },
+          {
+            "t": 488,
+            "R": 0.9995881365419921,
+            "cost": 125.92619591210497,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.007405263829982399
+          },
+          {
+            "t": 496,
+            "R": 0.9995924030002455,
+            "cost": 129.2142819040389,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.01453805384099571
+          },
+          {
+            "t": 504,
+            "R": 0.9995958618340772,
+            "cost": 132.512412155909,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.00028019030799020673
+          },
+          {
+            "t": 512,
+            "R": 0.9995987003694462,
+            "cost": 135.81964139219295,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": 0.001596273889176665
+          }
+        ]
+      },
+      "guarded": {
+        "R": 0.9996998700557768,
+        "cost": 136.04467625964773,
+        "pass": true
+      },
+      "fixed": {
+        "R": 0.9996154474581628,
+        "cost": 125.41092145080108,
+        "pass": true
+      }
+    },
+    {
+      "scenario": {
+        "id": "restored_negative",
+        "label": "Restore at 320 · −.10",
+        "restore": 320,
+        "surprise": -0.1
+      },
+      "graceful": {
+        "R": 0.999523532277787,
+        "cost": 130.70745389536984,
+        "actuation": 1.2000000000000004,
+        "pass": true,
+        "accepted": 184,
+        "rejected": 192,
+        "state": "TRUSTED",
+        "events": [
+          {
+            "t": 136,
+            "transition": "LOSS_OF_DIVERSITY"
+          },
+          {
+            "t": 330,
+            "transition": "REQUALIFIED"
+          }
+        ],
+        "trace": [
+          {
+            "t": 0,
+            "R": 0.08634491048379632,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 8,
+            "R": 0.156708846441707,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 16,
+            "R": 0.73864578089207,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 24,
+            "R": 0.9682161917627755,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 32,
+            "R": 0.9824911114015057,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 40,
+            "R": 0.9807229204410972,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 48,
+            "R": 0.979847558233379,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 56,
+            "R": 0.9795776025679696,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 64,
+            "R": 0.9795006926658621,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 72,
+            "R": 0.979479170981605,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 80,
+            "R": 0.9794731726013796,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 88,
+            "R": 0.9794715020028811,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 96,
+            "R": 0.9794710367503119,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 104,
+            "R": 0.9794709071733614,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 112,
+            "R": 0.9794708710835427,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 120,
+            "R": 0.9794708610315651,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 128,
+            "R": 0.979470858231791,
+            "cost": 0,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 136,
+            "R": 0.8842626708878857,
+            "cost": 0.41244057887815344,
+            "level": 0.4,
+            "state": "TRUSTED",
+            "estimate": 0
+          },
+          {
+            "t": 144,
+            "R": 0.8883611527545573,
+            "cost": 2.0665923408456637,
+            "level": 0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 152,
+            "R": 0.9173838931019521,
+            "cost": 4.31639257877093,
+            "level": 0.35000000000000003,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 160,
+            "R": 0.9453812530579634,
+            "cost": 6.983029169241818,
+            "level": 0.30000000000000004,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 168,
+            "R": 0.9664063038837626,
+            "cost": 9.947945188050864,
+            "level": 0.25000000000000006,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 176,
+            "R": 0.9809979769319827,
+            "cost": 13.113860930264865,
+            "level": 0.20000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 184,
+            "R": 0.9906641250726941,
+            "cost": 16.404072503371324,
+            "level": 0.15000000000000008,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 192,
+            "R": 0.996525718072797,
+            "cost": 19.758493011950943,
+            "level": 0.10000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 200,
+            "R": 0.9992651250668576,
+            "cost": 23.12981936436137,
+            "level": 0.05000000000000007,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 208,
+            "R": 0.9993876914699052,
+            "cost": 26.453470395258986,
+            "level": 6.938893903907228e-17,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 216,
+            "R": 0.99805133920894,
+            "cost": 29.6053360442649,
+            "level": -0.04999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 224,
+            "R": 0.9963400545317426,
+            "cost": 32.48981864947078,
+            "level": -0.09999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 232,
+            "R": 0.9947574549340722,
+            "cost": 35.044602990784966,
+            "level": -0.14999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 240,
+            "R": 0.9934591114045989,
+            "cost": 37.26629103099703,
+            "level": -0.19999999999999996,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 248,
+            "R": 0.9924496554994429,
+            "cost": 39.60496462933341,
+            "level": -0.24999999999999994,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 256,
+            "R": 0.9916828731797923,
+            "cost": 42.229229429544304,
+            "level": -0.29999999999999993,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 264,
+            "R": 0.9897103048167373,
+            "cost": 45.1053390574829,
+            "level": -0.3499999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 272,
+            "R": 0.982621672120627,
+            "cost": 47.970937471342474,
+            "level": -0.3999999999999999,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 280,
+            "R": 0.9812753707927944,
+            "cost": 50.776896574052365,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 288,
+            "R": 0.9593895471117179,
+            "cost": 53.518460207753904,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 296,
+            "R": 0.9537284499712116,
+            "cost": 56.16839987681798,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 304,
+            "R": 0.9523318183547415,
+            "cost": 58.71800522621417,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 312,
+            "R": 0.9522731649382754,
+            "cost": 61.18069986939449,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 320,
+            "R": 0.9525865410197731,
+            "cost": 63.57196714840111,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 328,
+            "R": 0.9529531251452937,
+            "cost": 65.90516978225837,
+            "level": -0.4,
+            "state": "DEGRADED",
+            "estimate": 0
+          },
+          {
+            "t": 336,
+            "R": 0.9532799953803971,
+            "cost": 68.19114515707312,
+            "level": -0.4,
+            "state": "TRUSTED",
+            "estimate": -0.09729878166242387
+          },
+          {
+            "t": 344,
+            "R": 0.9666276944579324,
+            "cost": 70.44040777978748,
+            "level": -0.35000000000000003,
+            "state": "TRUSTED",
+            "estimate": -0.08778265289228279
+          },
+          {
+            "t": 352,
+            "R": 0.9793283365243077,
+            "cost": 72.67987500773232,
+            "level": -0.30000000000000004,
+            "state": "TRUSTED",
+            "estimate": -0.09483616010829522
+          },
+          {
+            "t": 360,
+            "R": 0.9887074044388959,
+            "cost": 74.94543036491827,
+            "level": -0.25000000000000006,
+            "state": "TRUSTED",
+            "estimate": -0.08759672775036756
+          },
+          {
+            "t": 368,
+            "R": 0.9947742606420826,
+            "cost": 77.26932929433251,
+            "level": -0.20000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.0972621037924559
+          },
+          {
+            "t": 376,
+            "R": 0.9979452842788638,
+            "cost": 79.67801658361246,
+            "level": -0.15000000000000008,
+            "state": "TRUSTED",
+            "estimate": -0.09166208193035952
+          },
+          {
+            "t": 384,
+            "R": 0.9983877239659641,
+            "cost": 82.19062785833316,
+            "level": -0.15000000000000008,
+            "state": "TRUSTED",
+            "estimate": -0.09419570124597923
+          },
+          {
+            "t": 392,
+            "R": 0.9985737267883845,
+            "cost": 84.80277005377336,
+            "level": -0.15000000000000008,
+            "state": "TRUSTED",
+            "estimate": -0.10827971939790672
+          },
+          {
+            "t": 400,
+            "R": 0.998935431866281,
+            "cost": 87.50031471865559,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.0909502497328964
+          },
+          {
+            "t": 408,
+            "R": 0.9988871806782554,
+            "cost": 90.28509537147194,
+            "level": -0.15000000000000008,
+            "state": "TRUSTED",
+            "estimate": -0.09925425573777688
+          },
+          {
+            "t": 416,
+            "R": 0.9991929507440823,
+            "cost": 93.13586151305304,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.11082800905328988
+          },
+          {
+            "t": 424,
+            "R": 0.9991916109890707,
+            "cost": 96.05004470220639,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.09300336013823392
+          },
+          {
+            "t": 432,
+            "R": 0.9992597163649041,
+            "cost": 99.02696708987905,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.11028059318424555
+          },
+          {
+            "t": 440,
+            "R": 0.9993258088123561,
+            "cost": 102.05765261339016,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.1121766586137874
+          },
+          {
+            "t": 448,
+            "R": 0.9993777810829537,
+            "cost": 105.13322432590114,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.10418898115799768
+          },
+          {
+            "t": 456,
+            "R": 0.9994168133124562,
+            "cost": 108.24628607536722,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.11445449443340364
+          },
+          {
+            "t": 464,
+            "R": 0.9994459864120864,
+            "cost": 111.39087181841221,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.10373972202286902
+          },
+          {
+            "t": 472,
+            "R": 0.9994679844957896,
+            "cost": 114.56219147154164,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.11302121020089398
+          },
+          {
+            "t": 480,
+            "R": 0.999484810353611,
+            "cost": 117.75638791429611,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.10500106703282
+          },
+          {
+            "t": 488,
+            "R": 0.9994978984596717,
+            "cost": 120.9703382586915,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.09259473617001547
+          },
+          {
+            "t": 496,
+            "R": 0.9995082669151425,
+            "cost": 124.20149768177485,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.11453805384099358
+          },
+          {
+            "t": 504,
+            "R": 0.9995166392952002,
+            "cost": 127.44777807333016,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.09971980969200767
+          },
+          {
+            "t": 512,
+            "R": 0.999523532277787,
+            "cost": 130.70745389536984,
+            "level": -0.10000000000000007,
+            "state": "TRUSTED",
+            "estimate": -0.09840372611082121
+          }
+        ]
+      },
+      "guarded": {
+        "R": 0.999685845311033,
+        "cost": 141.9634391849624,
+        "pass": true
+      },
+      "fixed": {
+        "R": 0.9997006875058152,
+        "cost": 141.56750033347018,
+        "pass": true
+      }
+    }
+  ],
+  "artifact": "experiments/aether-070/index.html",
+  "limitations": [
+    "Fallback target -0.4 is a tested scenario-specific proposed control and is not a generally safe frequency.",
+    "Permanent shared-root loss with no surprise fails coherence criterion. Preserve counterexample.",
+    "Delayed/synthetic observations share one underlying deterministic model and are not three independent physical witnesses.",
+    "Recovery still uses ideal oscillator state to calculate residual; model error and real sensor faults untested.",
+    "No physical actuation, actual energy, nuclear fusion or fundamental forces implemented.",
+    "Source-root distinctness is asserted by simulation, not cryptographically verified."
+  ]
+}
