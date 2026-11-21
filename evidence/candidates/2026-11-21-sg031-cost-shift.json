@@ -1,0 +1,232 @@
+{
+  "id": "TD-CROSSDOMAIN-SG031",
+  "date": "2026-11-21",
+  "status": "STRESS_TEST_WITH_FAILURES",
+  "freeze": "evidence/candidates/2026-11-21-sg031-cost-shift-freeze.json",
+  "freeze_commit": "fe32a46e723fe4b3a78ea728f9ee9acb5ec19ee3",
+  "method": "Frozen SG030 baseline policies evaluated on new seeds under baseline, weak slope +.0027, strong AR1 rho .93, and occasional heavy-tail impulse conditions; 40 drift and 40 no-drift each; four fixed loss models; no parameter retuning.",
+  "checks": 2576,
+  "streams": 320,
+  "policy_evaluations": 1280,
+  "results": {
+    "baseline": {
+      "fixed160": {
+        "correct": 76,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 4,
+        "observations": 12800,
+        "original_loss": 840,
+        "high_false_confirm_loss": 840,
+        "cheap_observe_loss": 200,
+        "expensive_observe_loss": 3272
+      },
+      "fixed240": {
+        "correct": 80,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 0,
+        "observations": 19200,
+        "original_loss": 1152,
+        "high_false_confirm_loss": 1152,
+        "cheap_observe_loss": 192,
+        "expensive_observe_loss": 4800
+      },
+      "adaptive": {
+        "correct": 77,
+        "FP": 1,
+        "FN": 1,
+        "unresolved": 1,
+        "observations": 11160,
+        "original_loss": 927.6,
+        "high_false_confirm_loss": 1377.6,
+        "cheap_observe_loss": 369.6,
+        "expensive_observe_loss": 3048
+      },
+      "cost-aware": {
+        "correct": 78,
+        "FP": 0,
+        "FN": 1,
+        "unresolved": 1,
+        "observations": 11400,
+        "original_loss": 792,
+        "high_false_confirm_loss": 792,
+        "cheap_observe_loss": 222,
+        "expensive_observe_loss": 2958
+      }
+    },
+    "weak_drift": {
+      "fixed160": {
+        "correct": 46,
+        "FP": 0,
+        "FN": 9,
+        "unresolved": 25,
+        "observations": 12800,
+        "original_loss": 2028,
+        "high_false_confirm_loss": 2028,
+        "cheap_observe_loss": 1388,
+        "expensive_observe_loss": 4460
+      },
+      "fixed240": {
+        "correct": 44,
+        "FP": 0,
+        "FN": 1,
+        "unresolved": 35,
+        "observations": 19200,
+        "original_loss": 1872,
+        "high_false_confirm_loss": 1872,
+        "cheap_observe_loss": 912,
+        "expensive_observe_loss": 5520
+      },
+      "adaptive": {
+        "correct": 54,
+        "FP": 1,
+        "FN": 10,
+        "unresolved": 15,
+        "observations": 12440,
+        "original_loss": 2066.4,
+        "high_false_confirm_loss": 2516.4,
+        "cheap_observe_loss": 1444.4,
+        "expensive_observe_loss": 4430
+      },
+      "cost-aware": {
+        "correct": 51,
+        "FP": 0,
+        "FN": 7,
+        "unresolved": 22,
+        "observations": 13360,
+        "original_loss": 1827.6,
+        "high_false_confirm_loss": 1827.6,
+        "cheap_observe_loss": 1159.6,
+        "expensive_observe_loss": 4366
+      }
+    },
+    "high_correlation": {
+      "fixed160": {
+        "correct": 52,
+        "FP": 10,
+        "FN": 5,
+        "unresolved": 13,
+        "observations": 12800,
+        "original_loss": 2952,
+        "high_false_confirm_loss": 7452,
+        "cheap_observe_loss": 2312,
+        "expensive_observe_loss": 5384
+      },
+      "fixed240": {
+        "correct": 61,
+        "FP": 0,
+        "FN": 1,
+        "unresolved": 18,
+        "observations": 19200,
+        "original_loss": 1566,
+        "high_false_confirm_loss": 1566,
+        "cheap_observe_loss": 606,
+        "expensive_observe_loss": 5214
+      },
+      "adaptive": {
+        "correct": 51,
+        "FP": 15,
+        "FN": 5,
+        "unresolved": 9,
+        "observations": 12600,
+        "original_loss": 3618,
+        "high_false_confirm_loss": 10368,
+        "cheap_observe_loss": 2988,
+        "expensive_observe_loss": 6012
+      },
+      "cost-aware": {
+        "correct": 49,
+        "FP": 14,
+        "FN": 5,
+        "unresolved": 12,
+        "observations": 13000,
+        "original_loss": 3546,
+        "high_false_confirm_loss": 9846,
+        "cheap_observe_loss": 2896,
+        "expensive_observe_loss": 6016
+      }
+    },
+    "heavy_tailed": {
+      "fixed160": {
+        "correct": 77,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 3,
+        "observations": 12800,
+        "original_loss": 822,
+        "high_false_confirm_loss": 822,
+        "cheap_observe_loss": 182,
+        "expensive_observe_loss": 3254
+      },
+      "fixed240": {
+        "correct": 80,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 0,
+        "observations": 19200,
+        "original_loss": 1152,
+        "high_false_confirm_loss": 1152,
+        "cheap_observe_loss": 192,
+        "expensive_observe_loss": 4800
+      },
+      "adaptive": {
+        "correct": 80,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 0,
+        "observations": 11400,
+        "original_loss": 684,
+        "high_false_confirm_loss": 684,
+        "cheap_observe_loss": 114,
+        "expensive_observe_loss": 2850
+      },
+      "cost-aware": {
+        "correct": 80,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 0,
+        "observations": 11640,
+        "original_loss": 698.4,
+        "high_false_confirm_loss": 698.4,
+        "cheap_observe_loss": 116.4,
+        "expensive_observe_loss": 2910
+      }
+    }
+  },
+  "headline": "Cost-aware lowest under baseline and weak-drift original losses, fixed240 lowest under high correlation, ordinary adaptive lowest under heavy tails. No one policy wins all conditions or costs.",
+  "counterexamples": [
+    "Under high correlation, conservative cost-aware makes 14 false confirmations in 80 cases; fixed240 makes none.",
+    "High correlation plus high false-confirmation penalty yields conservative loss 9846 versus fixed240 1566.",
+    "At weak slope .0027, even fixed240 has 35 unresolved cases and 1 false rejection; slow drift can remain ambiguous.",
+    "Under cheap observation baseline, fixed240 loss 192 versus cost-aware 222 despite higher sample count."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub preregistration",
+      "result": "Commit fe32a46e723fe4b3a78ea728f9ee9acb5ec19ee3 before test"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python 3 standard library",
+      "result": "320 new synthetic streams ×4 policies, 2576 checks passed, archived reproducible Python and summary"
+    }
+  ],
+  "limitations": [
+    "Original noise and consequence model are synthetic; no real-world calibration.",
+    "Costs changed after collection in this stress comparison; no demonstrated live policy switch or expected-value optimization.",
+    "Rare heavy-tailed impulses drawn from fixed distribution specified before test, not adversarial unknown shocks.",
+    "Good model selection from an after-the-fact ranking is not evidence of advance environmental recognition.",
+    "No RH/NS mathematical validation or source ancestry conclusions."
+  ],
+  "next": "SG032: preregister online policy selection using uncertainty-calibrated noise-regime estimates; prevent hindsight leakage; compare with fixed240 under correlated noise.",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG030",
+    "TD-CROSSDOMAIN-SG029"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg031-cost-shift.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
