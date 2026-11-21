@@ -1,0 +1,74 @@
+{
+  "id": "TD-CROSSDOMAIN-SG042-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG041",
+  "objective": "Test whether autocorrelation-robust trend uncertainty can withhold false drift decisions while retaining useful decisions.",
+  "protocol": {
+    "base": "SG041 frozen predecision gate, correlation-matched spectral-null decision and stopping times unchanged.",
+    "estimate": "From only samples observed at the decision's stopping time, split into consecutive non-overlapping groups of 10, compute median per group, fit centered ordinary-least-squares trend, divide slope by 10 for per-observation units.",
+    "uncertainty": "Newey-West HAC covariance on OLS score x*residual, Bartlett weights at lags 1,2,3; standard error of slope divided by 10; interval slope ±1.645*SE (nominal 90%, not guaranteed in short time series).",
+    "decision": "If SG041 confirms drift, retain only when HAC interval excludes zero. If SG041 rejects drift, retain only when entire HAC interval lies inside [-0.0032,+0.0032]. Otherwise abstain. Never turn an unresolved SG041 result into a positive or negative claim.",
+    "cost": "same SG041: 0.06 per observation, 150 false-confirmation, 90 false-rejection, 18 abstention.",
+    "scope": "Retrospective at current stopping time only; no extra observations requested, and original SG041 label preserved separately."
+  },
+  "pilot": {
+    "seed_start": 67000000,
+    "per_class_scenario": 5,
+    "streams": 90,
+    "sg041": {
+      "correct": 82,
+      "FP": 1,
+      "FN": 2,
+      "abstain": 5,
+      "samples": 19840,
+      "loss": 1610.4
+    },
+    "sg042": {
+      "correct": 78,
+      "FP": 1,
+      "FN": 1,
+      "abstain": 10,
+      "samples": 19840,
+      "loss": 1610.4
+    },
+    "fixed240": {
+      "correct": 81,
+      "FP": 1,
+      "FN": 1,
+      "abstain": 7,
+      "samples": 21600,
+      "loss": 1662
+    },
+    "disclosure": "Inspected before freezing; SG042 withheld one false rejection and four correct labels in this pilot; no claim of improved loss."
+  },
+  "holdout": {
+    "seed_start": 71000000,
+    "count_per_truth_per_scenario": 20,
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "streams": 360,
+    "seed_formula": "71000000+200000*scenario_index+10000*int(drift)+101*k, k=0..19",
+    "comparators": [
+      "SG041",
+      "SG042-HAC",
+      "fixed240"
+    ],
+    "no_retuning": true
+  },
+  "limitations": [
+    "HAC short-sample normal intervals are not guaranteed to have nominal coverage under high persistence or nonstationary correlation.",
+    "Estimator based on same observations and binning as original trend; no source independence.",
+    "One chosen z and lag after pilot, no out-of-distribution guarantee.",
+    "Unresolved classifications represent withheld decisions, not correct predictions."
+  ]
+}
