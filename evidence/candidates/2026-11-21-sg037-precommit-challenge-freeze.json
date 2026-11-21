@@ -1,0 +1,112 @@
+{
+  "id": "TD-CROSSDOMAIN-SG037-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG036",
+  "purpose": "Measure whether 20-sample online checks and a mandatory 20-sample post-candidate challenge can revoke early stopping before shifted noise creates wrong drift decisions.",
+  "pilot": {
+    "seed_start": 23000000,
+    "seeds_per_class_scenario": 10,
+    "n": 140,
+    "comparison": {
+      "SG036": {
+        "correct": 120,
+        "wrong": 4,
+        "abstain": 16,
+        "observations": 29480,
+        "loss": 2596.8
+      },
+      "SG037_challenge20": {
+        "correct": 121,
+        "wrong": 1,
+        "abstain": 18,
+        "observations": 30520,
+        "loss": 2305.2
+      },
+      "SG037_challenge40": {
+        "correct": 121,
+        "wrong": 1,
+        "abstain": 18,
+        "observations": 31380,
+        "loss": 2356.8
+      },
+      "fixed240": {
+        "correct": 122,
+        "wrong": 0,
+        "abstain": 18,
+        "observations": 33600,
+        "loss": 2340
+      }
+    },
+    "note": "Pilot examined before freeze and excluded from holdout; SG037_challenge20 selected on pilot."
+  },
+  "frozen_controller": {
+    "predecision": "SG034 calibration risk gate budget .08 based on t0..109 only, unchanged calibration Wilson bins.",
+    "new_interval": 20,
+    "monitor_window": 80,
+    "alarm": "Detrend last 80 acquired observations via least-squares, trigger if residual lag-1 autocorrelation > .78 or residual RMS > .29; latch alarm and use fixed240 decision.",
+    "candidate": "At t>=120 acquired observations, require same strong non-unresolved trend status at two adjacent 20-observation checkpoints; strong means |slope|>.0036 (confirm) or |slope|<.0014 (reject).",
+    "challenge": "After candidate, collect 20 more observations; commit only if label remains same, strong, and no alarm occurred. Invalidate candidate on mismatch. At 240 always use full-budget label.",
+    "comparators": [
+      "SG036 40-sample checkpoints with no mandatory challenge",
+      "always fixed240"
+    ],
+    "timing": "Shift onset known only to evaluator (continuation t0 or t60); record first alarm, candidate time, commitment time, and detection lag. Agent never accesses onset before decision."
+  },
+  "scenarios": [
+    {
+      "name": "reference",
+      "onset": null
+    },
+    {
+      "name": "correlation_switch",
+      "onset": 0
+    },
+    {
+      "name": "laplace_tail",
+      "onset": null
+    },
+    {
+      "name": "subtle_drift",
+      "onset": null
+    },
+    {
+      "name": "fast_oscillation",
+      "onset": 0
+    },
+    {
+      "name": "late_correlation_switch",
+      "onset": 60
+    },
+    {
+      "name": "late_oscillation",
+      "onset": 60
+    }
+  ],
+  "holdout": {
+    "seed_start": 26000000,
+    "seeds_per_class_scenario": 40,
+    "traces": 560,
+    "seed_formula": "26000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "costs": {
+      "observation": 0.06,
+      "false_confirmation": 150,
+      "false_rejection": 90,
+      "unresolved": 18
+    },
+    "outputs": [
+      "correct/FP/FN/abstain",
+      "observations/loss",
+      "alarms and lag",
+      "misclassified cases with exact seeds",
+      "paired comparator"
+    ],
+    "no_retuning": true
+  },
+  "limitations": [
+    "Synthetic known families; no out-of-distribution guarantee",
+    "Monitoring latency intrinsically at least 80 acquired points for first window",
+    "Late shift can happen after early irreversible stop; no zero-risk guarantee",
+    "Pilot-tuned thresholds and confirmation window; holdout tests those choices, not arbitrary ones"
+  ]
+}
