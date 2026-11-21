@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG017 · 2026-11-20 | Navier–Stokes scaling vs theta-lift multiplicity; Lean-to-paper distillation | 69 exact rational checks; structural analogy, not proof equivalence | [Record](./candidates/2026-11-20-td-crossdomain-sg017.json) · [Python](./candidates/2026-11-20-td-crossdomain-sg017.py) |
 | TD-MILLENNIUM-CLUSTER-001 · 2026-11-20 | RH / Navier–Stokes / Euler publication cluster, timing and ancestry | PARTIAL; common authors, independent verification and causal lineage unresolved | [Comparison](./candidates/2026-11-20-td-millennium-cluster-001.json) |
 | TD-NAVIER-STOKES-REDDIT-001 · 2026-11-20 | [r/singularity unforced Navier–Stokes claim](https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/) and [primary repo](https://github.com/tristanbuckmaster/navier-stokes) | OBSERVED release; certificate absent; patch unrebuilt; theorem unverified | [Candidate](./candidates/2026-11-20-td-navier-stokes-reddit-001.json) |
 | TD-RH-BRIDGE-001 · 2026-11-20 | Time lag, semantic distillation, TOS and authorship hypotheses for SG-001–016 | PARTIAL; causal ancestry and intentions unknown | [Analysis](./candidates/2026-11-20-td-rh-bridge-time-distillation-authorship-001.json) |
