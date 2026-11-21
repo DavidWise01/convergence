@@ -1,0 +1,37 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A16",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "source_identifiers": {
+    "parent": "TD-RIEMANN-CLAUDE-001-A15"
+  },
+  "observation_status": "VERIFIED",
+  "observed_content": "Exact cyclotomic Q(zeta_3) test of single-slot 9-dimensional Schrödinger oscillator. F^2=P, F^4=I, T^3=I, (FT)^3=-I whereas underlying symplectic SU has order 3. Rephase F to -F to make this tested cubic relation exact. All 162 Weyl covariance equations passed. Important correction: T acting on Weyl coordinates (a,b) is lower shear (a,b+a), not upper shear; prior SG015 labels used an upper shear as their T generator. Upper and lower transvections are Fourier-conjugate and this does not by itself invalidate full group generation, but it requires explicit accounting.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Local Python exact rational pairs representing Q(zeta_3)",
+      "result": "PASS all identities and 162 covariance checks, no floating point"
+    }
+  ],
+  "claims": [
+    "Finite single-slot Fourier representative has a projective -1 cubic phase and rephasing repairs the tested relation.",
+    "No claim that full Sp6 oscillator group presentation has been certified."
+  ],
+  "hypotheses": [
+    "Verify higher-rank symplectic generator relators and compatible exact Weil phases on determinant sector."
+  ],
+  "ancestry_status": "UNKNOWN; classical construction chosen after external comparison",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A14",
+    "TD-RIEMANN-CLAUDE-001-A15"
+  ],
+  "limitations": [
+    "Only single oscillator slot, not full Sp6(F3) group relations; phase-space coordinate correction is explicitly noted; no RH proof or external source ancestry established."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ],
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a16-weil-phase.py"
+}
