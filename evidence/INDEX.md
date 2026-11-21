@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-074 · 2026-11-21 | Reference calibration without prior trust | Unknown gain/lag estimation, separate excitation validation and 480 holdouts | [Audit](./audits/2026-11-21-aether-074.json) |
 | TD-CROSSDOMAIN-SG025 · 2026-11-21 | Dual-timescale fast step and slow drift detection | 150/150 holdout synthetic traces, 30/30 drifts; pilot-selected thresholds and overlap limitation | [Freeze](./candidates/2026-11-21-sg025-dual-timescale-freeze.json) · [Evidence](./candidates/2026-11-21-sg025-dual-timescale.json) · [Python](./candidates/2026-11-21-sg025-dual-timescale.py) |
 | AETHER-073 · 2026-11-21 | Diagnostic self-calibration | 384 held-out reference trials; false-gain counterexample and qualified abstention | [Audit](./audits/2026-11-21-aether-073.json) |
 | AETHER-072 · 2026-11-21 | Active observability recovery | Reversible diagnostic pulse, four hypotheses, biased-sensor abstention and baseline controls | [Audit](./audits/2026-11-21-aether-072.json) |
