@@ -1,0 +1,59 @@
+{
+  "id": "TD-CROSSDOMAIN-SG018",
+  "recorded_at": "2026-11-21",
+  "observation_status": "VERIFIED_FINITE_MODEL",
+  "prior_freeze": "evidence/candidates/2026-11-21-sg018-prediction-freeze.json",
+  "freeze_commit": "5d1066a29138aedb0e70aa0889e592d2e8ea6d66",
+  "domain": "Cyclic graph diffusion, exact rational arithmetic",
+  "observed_content": "All seven predeclared predictions held for cycle sizes 7,11,13. 311 exact assertions passed over 3 frozen rational initial vectors and 8 iterations each. Mass and constants preserved; rotation commutation; strictly decreasing centered sum of squares on odd rings for nonconstant states. Weighted symmetric defect retains mass but breaks rotation; pure rotation maintains variance; 2I amplifies mass.",
+  "results": [
+    {
+      "n": 7,
+      "initial": "108",
+      "after8": "12097096/43046721"
+    },
+    {
+      "n": 11,
+      "initial": "1734/11",
+      "after8": "159520192/157837977"
+    },
+    {
+      "n": 13,
+      "initial": "2578/13",
+      "after8": "303632198/559607373"
+    }
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Pre-registration commit",
+      "result": "Predictions frozen before local computation"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python3 Fraction script",
+      "result": "311 exact rational assertions pass, 0 failed"
+    }
+  ],
+  "interpretation": "Common operational signature transports to a new classical mathematical domain when assumptions hold; it does not identify a shared generating theorem or causal mathematical ancestry.",
+  "counterexamples": [
+    "Pure rotation conserves mass and commutes but does not dissipate",
+    "Symmetric defect preserves mass but destroys translation symmetry",
+    "2I destroys mass conservation"
+  ],
+  "limitations": [
+    "Graph diffusion is classical mathematics; not new theorem",
+    "Proof-by-examples here, not all weighted graph classes",
+    "No blind historical holdout: assistant selected both model and predictions in same session, though predictions were committed first",
+    "Not evidence of RH, Navier–Stokes blowup, training-data exposure or authorship transfer"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG017",
+    "TD-RH-BRIDGE-001"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg018-predictive-fingerprint.py",
+  "source_links": [
+    "https://github.com/DavidWise01/quanta",
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
