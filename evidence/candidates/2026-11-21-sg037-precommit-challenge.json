@@ -1,0 +1,198 @@
+{
+  "id": "TD-CROSSDOMAIN-SG037",
+  "date": "2026-11-21",
+  "status": "MIXED_FROZEN_HOLDOUT_IMPROVEMENT",
+  "freeze": "evidence/candidates/2026-11-21-sg037-precommit-challenge-freeze.json",
+  "freeze_commit": "7158280ee2e4da69bbb12c0b95df81f85ad640b2",
+  "pilot": {
+    "seed_start": 23000000,
+    "streams": 140,
+    "challenge20": {
+      "correct": 121,
+      "FP": 1,
+      "FN": 0,
+      "abstain": 18,
+      "observations": 30520,
+      "loss": 2305.2
+    },
+    "challenge40": {
+      "correct": 121,
+      "FP": 1,
+      "FN": 0,
+      "abstain": 18,
+      "observations": 31380,
+      "loss": 2356.8
+    },
+    "disclosure": "Pilot examined to choose challenge length before freeze, excluded from fresh holdout."
+  },
+  "holdout": {
+    "seed_start": 26000000,
+    "seed_formula": "26000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "n": 560,
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation"
+    ],
+    "policies": {
+      "SG036": {
+        "correct": 485,
+        "FP": 4,
+        "FN": 7,
+        "unresolved": 64,
+        "observations": 118040,
+        "loss": 9464.4,
+        "early_stops": 172,
+        "alarms": 293
+      },
+      "SG037": {
+        "correct": 487,
+        "FP": 2,
+        "FN": 5,
+        "unresolved": 66,
+        "observations": 121700,
+        "loss": 9240,
+        "early_stops": 148,
+        "alarms": 315
+      },
+      "fixed240": {
+        "correct": 480,
+        "FP": 2,
+        "FN": 3,
+        "unresolved": 75,
+        "observations": 134400,
+        "loss": 9984
+      }
+    },
+    "by_scenario_errors": [
+      {
+        "scenario": "reference",
+        "old": 0,
+        "new": 0,
+        "fixed": 0
+      },
+      {
+        "scenario": "correlation_switch",
+        "old": 4,
+        "new": 3,
+        "fixed": 3,
+        "alarms": 64,
+        "median_alarm_lag": 80
+      },
+      {
+        "scenario": "laplace_tail",
+        "old": 0,
+        "new": 0,
+        "fixed": 0
+      },
+      {
+        "scenario": "subtle_drift",
+        "old": 5,
+        "new": 3,
+        "fixed": 1
+      },
+      {
+        "scenario": "fast_oscillation",
+        "old": 0,
+        "new": 0,
+        "fixed": 0,
+        "alarms": 69,
+        "median_alarm_lag": 80
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "old": 2,
+        "new": 1,
+        "fixed": 1,
+        "alarms": 69,
+        "median_alarm_lag": 40
+      },
+      {
+        "scenario": "late_oscillation",
+        "old": 0,
+        "new": 0,
+        "fixed": 0,
+        "alarms": 72,
+        "median_alarm_lag": 40
+      }
+    ],
+    "remaining_errors": [
+      {
+        "seed": 26202121,
+        "scenario": "correlation_switch",
+        "truth": "no drift",
+        "decision": "confirmed",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "seed": 26203838,
+        "scenario": "correlation_switch",
+        "truth": "no drift",
+        "decision": "confirmed",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "seed": 26213636,
+        "scenario": "correlation_switch",
+        "truth": "drift",
+        "decision": "rejected",
+        "n": 240,
+        "alarm_at": 80
+      },
+      {
+        "seed": 26610101,
+        "scenario": "subtle_drift",
+        "truth": "drift",
+        "decision": "rejected",
+        "n": 140,
+        "alarm_at": null
+      },
+      {
+        "seed": 26610404,
+        "scenario": "subtle_drift",
+        "truth": "drift",
+        "decision": "rejected",
+        "n": 140,
+        "alarm_at": null
+      },
+      {
+        "seed": 26612626,
+        "scenario": "subtle_drift",
+        "truth": "drift",
+        "decision": "rejected",
+        "n": 240,
+        "alarm_at": null
+      },
+      {
+        "seed": 27010707,
+        "scenario": "late_correlation_switch",
+        "truth": "drift",
+        "decision": "rejected",
+        "n": 240,
+        "alarm_at": 80
+      }
+    ],
+    "observations_saved_vs_fixed240": 12700,
+    "loss_saved_vs_fixed240": 744,
+    "loss_saved_vs_SG036": 224.4
+  },
+  "interpretation": "Candidate delay reduces premature decisions and errors under this synthetic family, but detection latency remains constrained by first 80-sample monitor and correct fallback does not guarantee correct classification.",
+  "limitations": [
+    "Pilot-tuned; fresh seeds but same simulation families, not field validation",
+    "The monitor reports alarm time only for streams that are permitted early route; conservative fallback not continuously monitored",
+    "No formal confidence interval for event detection, and late disturbances may occur after early commitments",
+    "Remaining 7 errors include three fixed-budget correlation failures and three weak-drift failures",
+    "Cost units are illustrative; the policy is not guaranteed optimal"
+  ],
+  "next": "SG038: separate shift-alarm reliability from trend-estimator reliability, add independent cross-check at full budget and evaluate unobserved late shifts.",
+  "executable": "evidence/candidates/2026-11-21-sg037-precommit-challenge.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
