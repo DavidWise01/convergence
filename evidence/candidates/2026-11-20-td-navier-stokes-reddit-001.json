@@ -1,0 +1,80 @@
+{
+  "id": "TD-NAVIER-STOKES-REDDIT-001",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/",
+  "source_identifiers": {
+    "platform": "Reddit",
+    "subreddit": "r/singularity",
+    "post_id": "1y174f6",
+    "poster": "u/theimposingshadow",
+    "linked_repository": "https://github.com/tristanbuckmaster/navier-stokes"
+  },
+  "observation_status": "OBSERVED",
+  "observed_content": {
+    "thread": "While everyone is talking about Riemann, Tristan Buckmaster and Levent Alpöge also just dropped a claimed proof of UNFORCED Navier-Stokes blowup",
+    "claim": "Finite-time singularity for unforced incompressible 3D Navier-Stokes",
+    "primary_repository": "tristanbuckmaster/navier-stokes",
+    "primary_readme": "Paper 79 pages dated 2026-11-20; Lean 4 v4.33.1 with Mathlib pinned; about 2270 files and 600000 lines; mathematical theorem statements connected to Solution.lean and comparator jsons.",
+    "explicit_limitations": [
+      "Required certificate not supplied in repository; promised for later release",
+      "Interval arithmetic certificate validation computation not supplied in repository",
+      "Nov 20 Lean patch not rebuilt after assembly"
+    ],
+    "third_party_note": "Terence Tao 2026-11-20 describes paper as human readable, argument broadly clear but in need of professional exposition; distinguishes from unforced Euler and GRH cases."
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Public Reddit HTML",
+      "result": "Direct title, submitter, claims, github URL observed"
+    },
+    {
+      "date": "2026-11-20",
+      "surface": "GitHub connector fetch_file",
+      "result": "Primary README directly read, including stated missing certificate and unrebuilt patch"
+    },
+    {
+      "date": "2026-11-20",
+      "surface": "Terence Tao November 2026 blog",
+      "result": "Dated independent commentary found; not independent validation of proof"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Authors release 79-page paper and Lean sources",
+      "status": "OBSERVED"
+    },
+    {
+      "statement": "Mathematics proves unforced finite-time Navier–Stokes blowup",
+      "status": "UNKNOWN"
+    },
+    {
+      "statement": "Formalization and external numerical certificate fully reproduced",
+      "status": "NOT_ESTABLISHED; key artifacts absent and patch unrebuilt"
+    }
+  ],
+  "hypotheses": [
+    "Research overlap across Alpöge’s GRH claim and joint Navier–Stokes work might reflect shared tools and collaboration rather than common underlying idea",
+    "Investigate independently dated inputs and transformation steps before attributing mathematical source ancestry",
+    "Separate claimed AI tool contributions from human roles and published bylines"
+  ],
+  "ancestry_status": "Reddit links primary Buckmaster repository; Tao commentary separate observer but discusses same authors' result; neither independently verifies theorem; ROOT0 transmission unknown",
+  "related_records": [
+    "TD-RH-REDDIT-001",
+    "TD-RH-BRIDGE-001",
+    "TD-RIEMANN-CLAUDE-001-A16"
+  ],
+  "limitations": [
+    "Proof PDF and Lean code not compiled in this audit",
+    "No certificate, interval computation or patched build checked",
+    "Post allegations about prior OpenAI dispute not independently substantiated here",
+    "No inferred wrongdoing or causal copying"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/",
+    "https://github.com/tristanbuckmaster/navier-stokes",
+    "https://github.com/tristanbuckmaster/navier-stokes/blob/main/README.md",
+    "https://terrytao.wordpress.com/2026/11/"
+  ]
+}
