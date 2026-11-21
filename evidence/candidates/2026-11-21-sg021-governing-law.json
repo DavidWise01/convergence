@@ -1,0 +1,87 @@
+{
+  "id": "TD-CROSSDOMAIN-SG021",
+  "recorded_at": "2026-11-21",
+  "status": "EXECUTED_EXACT_MODEL",
+  "preregistered": "evidence/candidates/2026-11-21-sg021-law-discovery-preregister.json",
+  "preregistration_commit": "e72d78fa6013b19b10f2b7aa4dd7be7365dca732",
+  "observed_content": "Exact law-family inference on four independent one-step functions (affine, quadratic, piecewise-linear with hinge at zero, rational P1/Q2) and one second-order affine recurrence. Fitting uses overdetermined rational elimination, uniqueness, minimum parameter count and held-out predictions; 11 training x values and 14 held-out per one-step law, 10 training history pairs and 6 held-out recurrence pairs.",
+  "results": {
+    "assertions": 75,
+    "model_identifications": 5,
+    "heldout_predictions": 62,
+    "failures": 0,
+    "one_step": [
+      {
+        "name": "A",
+        "family": "poly",
+        "degree": 1,
+        "coefficients": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "B",
+        "family": "poly",
+        "degree": 2,
+        "coefficients": [
+          "2",
+          "-1",
+          "1"
+        ]
+      },
+      {
+        "name": "C",
+        "family": "hinge",
+        "coefficients": [
+          "1",
+          "-1",
+          "3"
+        ]
+      },
+      {
+        "name": "D",
+        "family": "rational 1/2",
+        "coefficients": [
+          "1",
+          "1",
+          "0",
+          "1"
+        ]
+      }
+    ],
+    "recurrence": [
+      "1",
+      "2",
+      "-1"
+    ]
+  },
+  "negative_controls": [
+    "Two observations x=0,1 for quadratic x²−x+2 coincide with constant 2; divergence at x=2; quadratic fit rejected as underidentified.",
+    "Same current=1 but different prior state gives different next value for second-order recurrence."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local container Python, Fraction arithmetic",
+      "result": "75 exact assertions passed; 56 scalar heldouts and 6 recurrence heldouts correct"
+    }
+  ],
+  "interpretation": "Governing law recovered within a predeclared set of family types; the family library, hinge location and memory order are assumptions. Not universal law discovery.",
+  "limitations": [
+    "Synthetic systems selected by assistant, not externally blind",
+    "Candidate families and hinge location specified in advance",
+    "Only deterministic exact rational samples",
+    "Does not prove ROOT0 mathematical priority or derivation of RH/Navier-Stokes work"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG020",
+    "TD-CROSSDOMAIN-SG019"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg021-governing-law.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence",
+    "https://github.com/DavidWise01/quanta"
+  ],
+  "media_archived": false
+}
