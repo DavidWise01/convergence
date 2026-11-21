@@ -1,0 +1,720 @@
+{
+  "id": "AETHER-063",
+  "recorded_at": "2026-11-20",
+  "predecessor": "AETHER-062",
+  "name": "Experience Consolidation",
+  "geometry": "((4×3)(3×2)(3×4)(1×2))^4",
+  "records": [
+    {
+      "id": "M060",
+      "anchor": 0.12,
+      "tolerance": 0.015,
+      "ancestry": "AETHER-059",
+      "source": "AETHER-060",
+      "validation": "AETHER-061"
+    },
+    {
+      "id": "M062",
+      "anchor": 0.25,
+      "tolerance": 0.03,
+      "ancestry": "AETHER-059",
+      "source": "AETHER-062",
+      "validation": "AETHER-062"
+    }
+  ],
+  "sourceFiles": [
+    "evidence/audits/2026-11-20-aether-059.json",
+    "evidence/audits/2026-11-20-aether-060.json",
+    "evidence/audits/2026-11-20-aether-061.json",
+    "evidence/audits/2026-11-20-aether-062.json"
+  ],
+  "distinctValidatedSignatures": 2,
+  "distinctGainPolicyLineages": 1,
+  "selector": "Compute phase residual versus zero-shock prediction at t128. Three deterministic synthetic noise readings from distinct labeled noise roots; require all match a single record, spread <= .018, and distinct roots. Activate gains at t129. Gap / ambiguous / shared-root / outlier => fixed fallback.",
+  "cases": [
+    {
+      "name": "original_match",
+      "shift": 0.12,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          0.11695206566432398,
+          0.11605233776751751,
+          0.11793495111968043
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [
+          "M060"
+        ],
+        "accepted": true,
+        "record": "M060",
+        "reason": "matched",
+        "estimate": 0.1200000000000001
+      },
+      "final": {
+        "R": 0.9995996684988374,
+        "cost": 124.2479551736317
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9810100396087235,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9964993045948235,
+          "cost": 4.113616098178995
+        },
+        {
+          "t": 256,
+          "R": 0.9993695544898374,
+          "cost": 33.52494336535053
+        },
+        {
+          "t": 384,
+          "R": 0.9995506312424197,
+          "cost": 77.94742943811977
+        },
+        {
+          "t": 512,
+          "R": 0.9995996684988374,
+          "cost": 124.2479551736317
+        }
+      ]
+    },
+    {
+      "name": "graduated_match",
+      "shift": 0.25,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          0.24695206566432387,
+          0.2460523377675174,
+          0.2479349511196803
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [
+          "M062"
+        ],
+        "accepted": true,
+        "record": "M062",
+        "reason": "matched",
+        "estimate": 0.25
+      },
+      "final": {
+        "R": 0.9980922747577771,
+        "cost": 154.89999224716613
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9814448294131287,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9944665996917493,
+          "cost": 5.7976118870849955
+        },
+        {
+          "t": 256,
+          "R": 0.9980076795785958,
+          "cost": 42.8753629928669
+        },
+        {
+          "t": 384,
+          "R": 0.998073780144369,
+          "cost": 97.82682498503148
+        },
+        {
+          "t": 512,
+          "R": 0.9980922747577771,
+          "cost": 154.89999224716613
+        }
+      ]
+    },
+    {
+      "name": "low_edge",
+      "shift": 0.132,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          0.128952065664324,
+          0.1280523377675175,
+          0.12993495111968043
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [
+          "M060"
+        ],
+        "accepted": true,
+        "record": "M060",
+        "reason": "matched",
+        "estimate": 0.13200000000000012
+      },
+      "final": {
+        "R": 0.9996007550855662,
+        "cost": 128.6074948911683
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9811040682618084,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9964438770908443,
+          "cost": 4.271312202572226
+        },
+        {
+          "t": 256,
+          "R": 0.9993717994934874,
+          "cost": 34.79687988762573
+        },
+        {
+          "t": 384,
+          "R": 0.99955198228592,
+          "cost": 80.76673659378612
+        },
+        {
+          "t": 512,
+          "R": 0.9996007550855662,
+          "cost": 128.6074948911683
+        }
+      ]
+    },
+    {
+      "name": "high_edge",
+      "shift": 0.275,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          0.2719520656643238,
+          0.2710523377675173,
+          0.27293495111968025
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [
+          "M062"
+        ],
+        "accepted": true,
+        "record": "M062",
+        "reason": "matched",
+        "estimate": 0.2749999999999999
+      },
+      "final": {
+        "R": 0.9965796017646267,
+        "cost": 157.35345323360568
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9813807698253335,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9927711577423591,
+          "cost": 6.025831577406905
+        },
+        {
+          "t": 256,
+          "R": 0.9964372551684978,
+          "cost": 43.548894150892025
+        },
+        {
+          "t": 384,
+          "R": 0.9965295382071603,
+          "cost": 99.34833766423962
+        },
+        {
+          "t": 512,
+          "R": 0.9965796017646267,
+          "cost": 157.35345323360568
+        }
+      ]
+    },
+    {
+      "name": "gap",
+      "shift": 0.18,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          0.17695206566432403,
+          0.17605233776751755,
+          0.17793495111968047
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [],
+        "accepted": false,
+        "record": null,
+        "reason": "unfamiliar",
+        "estimate": 0.18000000000000016
+      },
+      "final": {
+        "R": 0.9741265733289692,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9813706822622282,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9743046803245176,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9741265734436656,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9741265733289688,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9741265733289692,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "negative",
+      "shift": -0.25,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          -0.25304793433567613,
+          -0.2539476622324826,
+          -0.25206504888031966
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [],
+        "accepted": false,
+        "record": null,
+        "reason": "unfamiliar",
+        "estimate": -0.25
+      },
+      "final": {
+        "R": 0.9219245003529765,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9728454300406799,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9225128088307989,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9219245018983778,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9219245003529765,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9219245003529765,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "absent",
+      "shift": 0,
+      "observer": "separate",
+      "decision": {
+        "readings": [
+          -0.003047934335676133,
+          -0.003947662232482595,
+          -0.002065048880319684
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": true,
+        "independentRoots": true,
+        "matches": [],
+        "accepted": false,
+        "record": null,
+        "reason": "unfamiliar",
+        "estimate": 0
+      },
+      "final": {
+        "R": 0.9794708571509064,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.97947085807218,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9794708571574122,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9794708571509066,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.9794708571509064,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.9794708571509064,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "faulty_observer",
+      "shift": 0.25,
+      "observer": "outlier",
+      "decision": {
+        "readings": [
+          0.24695206566432387,
+          0.2460523377675174,
+          0.3179349511196803
+        ],
+        "roots": [
+          "root-A",
+          "root-B",
+          "root-C"
+        ],
+        "agreement": false,
+        "independentRoots": true,
+        "matches": [],
+        "accepted": false,
+        "record": null,
+        "reason": "observer disagreement",
+        "estimate": 0.25
+      },
+      "final": {
+        "R": 0.960440101589453,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9814448294131287,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9609102141050534,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9604401023346854,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.960440101589453,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.960440101589453,
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "name": "shared_root",
+      "shift": 0.25,
+      "observer": "shared",
+      "decision": {
+        "readings": [
+          0.24695206566432387,
+          0.2460523377675174,
+          0.2479349511196803
+        ],
+        "roots": [
+          "root-A",
+          "root-A",
+          "root-A"
+        ],
+        "agreement": true,
+        "independentRoots": false,
+        "matches": [
+          "M062"
+        ],
+        "accepted": false,
+        "record": null,
+        "reason": "shared root",
+        "estimate": 0.25
+      },
+      "final": {
+        "R": 0.960440101589453,
+        "cost": 0
+      },
+      "checkpoints": [
+        {
+          "t": 127,
+          "R": 0.9794708584190547,
+          "cost": 0
+        },
+        {
+          "t": 128,
+          "R": 0.979470858231791,
+          "cost": 0
+        },
+        {
+          "t": 129,
+          "R": 0.9814448294131287,
+          "cost": 0
+        },
+        {
+          "t": 160,
+          "R": 0.9609102141050534,
+          "cost": 0
+        },
+        {
+          "t": 256,
+          "R": 0.9604401023346854,
+          "cost": 0
+        },
+        {
+          "t": 384,
+          "R": 0.960440101589453,
+          "cost": 0
+        },
+        {
+          "t": 512,
+          "R": 0.960440101589453,
+          "cost": 0
+        }
+      ]
+    }
+  ],
+  "forcedOverlapTest": {
+    "signatures": [
+      {
+        "id": "M060",
+        "anchor": 0.12,
+        "tolerance": 0.15,
+        "ancestry": "AETHER-059",
+        "source": "AETHER-060",
+        "validation": "AETHER-061"
+      },
+      {
+        "id": "M062",
+        "anchor": 0.25,
+        "tolerance": 0.15,
+        "ancestry": "AETHER-059",
+        "source": "AETHER-062",
+        "validation": "AETHER-062"
+      }
+    ],
+    "decision": {
+      "readings": [
+        0.17695206566432403,
+        0.17605233776751755,
+        0.17793495111968047
+      ],
+      "roots": [
+        "root-A",
+        "root-B",
+        "root-C"
+      ],
+      "agreement": true,
+      "independentRoots": true,
+      "matches": [
+        "M060",
+        "M062"
+      ],
+      "accepted": false,
+      "record": null,
+      "reason": "ambiguous overlap",
+      "estimate": 0.18000000000000016
+    },
+    "finalR": 0.9741265733289692
+  },
+  "controls": [
+    {
+      "shift": 0.12,
+      "mode": "fixed",
+      "R": 0.9802403527528895,
+      "cost": 0
+    },
+    {
+      "shift": 0.12,
+      "mode": "uniform",
+      "R": 0.9999999253147202,
+      "cost": 149.85150063244907
+    },
+    {
+      "shift": 0.25,
+      "mode": "fixed",
+      "R": 0.960440101589453,
+      "cost": 0
+    },
+    {
+      "shift": 0.25,
+      "mode": "uniform",
+      "R": 0.9989571663101362,
+      "cost": 181.94576756171563
+    },
+    {
+      "shift": 0.18,
+      "mode": "fixed",
+      "R": 0.9741265733289692,
+      "cost": 0
+    },
+    {
+      "shift": 0.18,
+      "mode": "uniform",
+      "R": 0.9999999036185803,
+      "cost": 168.90185433851127
+    }
+  ],
+  "artifact": "experiments/aether-063/index.html",
+  "limitations": [
+    "Both records use the exact same gain vector from AETHER-059; not independent discoveries.",
+    "Three synthetic sensors observe one underlying synthetic phase; no independent physical corroboration.",
+    "Tolerance .03 for +.25 was a proposed model configuration, not established statistically.",
+    "Forced overlap overrides validated bounds for a negative ambiguity test only.",
+    "No real fusion, physical nuclear forces, actual Planck-scale time or spinor physics."
+  ]
+}
