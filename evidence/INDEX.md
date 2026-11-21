@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-068 · 2026-11-21 | Closed-loop stability navigation | Phase-residual feedback, unexpected shifts, fixed-route controls and interactive HTML | [Audit](./audits/2026-11-21-aether-068.json) |
 | TD-CROSSDOMAIN-SG020 · 2026-11-21 | Dictionary-free linear operator discovery and invariants | 3/3 recovered, 60/60 held-out, 12/12 two-step; rank-deficient counterexample | [Record](./candidates/2026-11-21-sg020-operator-discovery.json) · [Python](./candidates/2026-11-21-sg020-operator-discovery.py) |
 | AETHER-067 · 2026-11-21 | Energy-constrained recovery pathfinding | 252 slew-limited schedules; 92 passing; hydrogen-fusion recovery; HTML | [Audit](./audits/2026-11-21-aether-067.json) |
 | AETHER-066 · 2026-11-21 | Stability island navigation | 680 candidate destinations, five dynamic transition trials and counterexample | [Audit](./audits/2026-11-21-aether-066.json) |
