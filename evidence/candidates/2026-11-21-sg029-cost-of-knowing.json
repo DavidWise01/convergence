@@ -1,0 +1,70 @@
+{
+  "id": "TD-CROSSDOMAIN-SG029",
+  "recorded_at": "2026-11-21",
+  "status": "FROZEN_SYNTHETIC_PASS",
+  "freeze": "evidence/candidates/2026-11-21-sg029-cost-of-knowing-freeze.json",
+  "freeze_commit": "077aa32cab4f01a3297ee09035c5552a085fb398",
+  "prior": "TD-CROSSDOMAIN-SG028",
+  "run": {
+    "total_cases": 8,
+    "correct_decided": 8,
+    "incorrect_decisions": 0,
+    "unresolved": 0,
+    "assertions": 32,
+    "history_events": 72,
+    "observation_cost": 1120,
+    "fixed_budget_cost": 1920,
+    "saved": 800,
+    "savings_fraction": 0.4166666666666667,
+    "per_case": [
+      {
+        "seed": 901038,
+        "drift": 120,
+        "control": 120
+      },
+      {
+        "seed": 901251,
+        "drift": 120,
+        "control": 120
+      },
+      {
+        "seed": 902245,
+        "drift": 120,
+        "control": 120
+      },
+      {
+        "seed": 903026,
+        "drift": 200,
+        "control": 200
+      }
+    ]
+  },
+  "method": "SG028 synthetic seeded AR1 continuation t240..479; batches of 40; 10-point bin median pairwise-slope trend; inherited rejection/confirmation thresholds .0018/.0032; require two consecutive non-unresolved identical decisions after >=80 samples; cap 240.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub preregistration",
+      "result": "Committed before evaluating SG029 fixed threshold and stopping rule"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local exact Python execution of simulator",
+      "result": "32 structural assertions; 8/8 correct synthetic decisions, 0 mistakes; 72 audit events"
+    }
+  ],
+  "caveats": [
+    "Synthetic binary64 simulation, not exact rational arithmetic or real-world validation.",
+    "These are original SG027 four ambiguous seeds, not untouched new seed holdout.",
+    "A correct decision under this selected model and eight cases does not establish universal stopping reliability.",
+    "Max observation budget fixed at 240, with no economic penalty for incorrect classification beyond the audit.",
+    "Prior SG027 unresolved evidence was not altered. Reconstructed event history is reproducible by running the committed Python."
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG028",
+    "TD-CROSSDOMAIN-SG027"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg029-cost-of-knowing.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
