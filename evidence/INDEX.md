@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG027 · 2026-11-21 | Uncertainty-aware step + drift classification | 396 correct decisions, 0 wrong, 4 unresolved / 400 fresh streams; all 200 step locations recovered | [Freeze](./candidates/2026-11-21-sg027-uncertainty-freeze.json) · [Record](./candidates/2026-11-21-sg027-uncertainty-aware.json) · [Python](./candidates/2026-11-21-sg027-uncertainty-aware.py) |
 | AETHER-075 · 2026-11-21 | Calibration drift and expiry | Certificate renewal, residual withdrawal, missing-recheck expiry, six synthetic scenarios | [Audit](./audits/2026-11-21-aether-075.json) |
 | TD-CROSSDOMAIN-SG026 · 2026-11-21 | Simultaneous step and drift under correlated noise and impulses | **MIXED** 398/400 holdout; 148/150 simultaneous; two archived misses | [Freeze](./candidates/2026-11-21-sg026-overlapping-change-freeze.json) · [Record](./candidates/2026-11-21-sg026-overlapping-change.json) · [Python](./candidates/2026-11-21-sg026-overlapping-change.py) |
 | AETHER-074 · 2026-11-21 | Reference calibration without prior trust | Unknown gain/lag estimation, separate excitation validation and 480 holdouts | [Audit](./audits/2026-11-21-aether-074.json) |
