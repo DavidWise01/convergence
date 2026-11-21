@@ -1,0 +1,42 @@
+{
+  "id": "TD-CROSSDOMAIN-SG026-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_CALIBRATION_BEFORE_NEW_SEED_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG025",
+  "goal": "Independently identify sudden steps and slow drift occurring in the same observation series even with correlated noise and impulse artifacts",
+  "calibration": {
+    "seed_range": "100000 +137*kind_index +53*i; i=0..29; eight kinds; 240 traces",
+    "observed": "240/240 on calibration after threshold choice; this is not independent holdout",
+    "progression": "2-window slope threshold .003 produced 237/240, robust bin median .003 produced 239/240, threshold .0027 produced 240/240"
+  },
+  "frozen_method": {
+    "N": 240,
+    "step": "Search candidate boundaries 30..209, compare medians of 13 observations on each side, select maximum absolute difference if >1.50, report boundary k",
+    "drift": "Median of pairwise slopes through ten-observation bin medians; if step exists take median of independent pre/post trend slopes excluding ±10 around step, otherwise whole series; label drift when |slope|>0.0027",
+    "noise": "Autoregressive AR1 nuisance, rho=.35 or .72; uniform innovation ±.23; optional impulses ±7 at t42,87,173,211",
+    "drift_rate": "+0.005 or -0.005 per step",
+    "step_magnitude": "+3 or -3 at t120"
+  },
+  "evaluation": {
+    "kinds": [
+      "steady",
+      "impulses",
+      "drift",
+      "step",
+      "step_drift",
+      "colored_steady",
+      "colored_step_drift",
+      "negative_drift_step"
+    ],
+    "holdout_seed": "600000 + 137*kind_index + 53*i for i=0..49, 400 traces total",
+    "metric": "Classification of both step-presence and drift-presence and localization of true step within ±8; each trace counts as pass only if both correct",
+    "no_recalibration": true
+  },
+  "limitations": [
+    "Detector is offline/retrospective and examines all 240 observations; not online change-prediction",
+    "Synthetic noise family and known scenario kinds",
+    "Step is selected as one largest shift; multiple genuine steps are not identified",
+    "Same-person calibration, not independent external data"
+  ],
+  "next": "SG027 externally supplied data or unseen noise distribution/overlapping steps"
+}
