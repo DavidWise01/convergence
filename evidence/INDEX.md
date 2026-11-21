@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-075 · 2026-11-21 | Calibration drift and expiry | Certificate renewal, residual withdrawal, missing-recheck expiry, six synthetic scenarios | [Audit](./audits/2026-11-21-aether-075.json) |
 | TD-CROSSDOMAIN-SG026 · 2026-11-21 | Simultaneous step and drift under correlated noise and impulses | **MIXED** 398/400 holdout; 148/150 simultaneous; two archived misses | [Freeze](./candidates/2026-11-21-sg026-overlapping-change-freeze.json) · [Record](./candidates/2026-11-21-sg026-overlapping-change.json) · [Python](./candidates/2026-11-21-sg026-overlapping-change.py) |
 | AETHER-074 · 2026-11-21 | Reference calibration without prior trust | Unknown gain/lag estimation, separate excitation validation and 480 holdouts | [Audit](./audits/2026-11-21-aether-074.json) |
 | TD-CROSSDOMAIN-SG025 · 2026-11-21 | Dual-timescale fast step and slow drift detection | 150/150 holdout synthetic traces, 30/30 drifts; pilot-selected thresholds and overlap limitation | [Freeze](./candidates/2026-11-21-sg025-dual-timescale-freeze.json) · [Evidence](./candidates/2026-11-21-sg025-dual-timescale.json) · [Python](./candidates/2026-11-21-sg025-dual-timescale.py) |
