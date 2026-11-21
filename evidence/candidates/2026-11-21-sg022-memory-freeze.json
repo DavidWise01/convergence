@@ -1,0 +1,86 @@
+{
+  "id": "TD-CROSSDOMAIN-SG022-FREEZE",
+  "recorded_at": "2026-11-21",
+  "status": "PREREGISTERED_BEFORE_EXECUTION",
+  "goal": "Identify minimum sufficient finite lag for deterministic scalar affine autoregressions over rational numbers using exact linear algebra, not assume past depth.",
+  "methods": "For each lag d=0..4, fit an affine autoregression y_t=c+sum_{i=1}^d a_i*y_(t-i) with full-column rank and exact residual zero on training prefix; select smallest d that passes, then test held-out continuation. Handle constant sequences as d=0. Reject fits without unique coefficients.",
+  "cases": [
+    {
+      "id": "C0",
+      "initial": [
+        5
+      ],
+      "coefficients": [],
+      "constant": 5,
+      "expected_lag": 0
+    },
+    {
+      "id": "C1",
+      "initial": [
+        2
+      ],
+      "coefficients": [
+        2
+      ],
+      "constant": 1,
+      "expected_lag": 1
+    },
+    {
+      "id": "C2",
+      "initial": [
+        0,
+        1
+      ],
+      "coefficients": [
+        1,
+        1
+      ],
+      "constant": 1,
+      "expected_lag": 2
+    },
+    {
+      "id": "C3",
+      "initial": [
+        0,
+        0,
+        1
+      ],
+      "coefficients": [
+        1,
+        1,
+        1
+      ],
+      "constant": 1,
+      "expected_lag": 3
+    },
+    {
+      "id": "C4",
+      "initial": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficients": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "constant": 1,
+      "expected_lag": 4
+    }
+  ],
+  "train_length": 28,
+  "holdout_length": 12,
+  "negative_controls": [
+    "Too-short sequence lacks independent equations, must report unidentifiable",
+    "Periodic pattern can be exactly predicted using an order-2 recurrence, even if given an order-4 generative description; distinguish minimal observable order from authored description",
+    "Noise or changes to recurrence make exact time-invariant model invalid; reject rather than invent fit"
+  ],
+  "limits": [
+    "All systems assistant designed; synthetic arithmetic not external blind benchmark",
+    "Minimum only within constant-coefficient affine autoregressive family up to order 4",
+    "No training corpus ancestry evidence"
+  ]
+}
