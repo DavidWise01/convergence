@@ -1,0 +1,76 @@
+{
+  "id": "TD-CROSSDOMAIN-SG036-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG035",
+  "goal": "Detect correlation shifts and oscillatory noise before adaptive stopping and fall back to full-budget decision using only acquired prefix.",
+  "pilot": {
+    "seeds": "19000000+200000*scenario_index+10000*int(drift)+101*k, k=0..14, 150 streams",
+    "original_gate": {
+      "correct": 116,
+      "FP": 10,
+      "FN": 7,
+      "abstain": 17,
+      "loss": 4070.4
+    },
+    "shift_gate": {
+      "correct": 126,
+      "FP": 3,
+      "FN": 3,
+      "abstain": 18,
+      "loss": 2913.6
+    },
+    "fixed240": {
+      "correct": 127,
+      "FP": 2,
+      "FN": 3,
+      "abstain": 18,
+      "loss": 3054
+    },
+    "disclosure": "Inspected before freeze; not holdout. Repaired pilot bug where an alarm wrongly forced unresolved instead of fixed240 final decision."
+  },
+  "rule": {
+    "predecision": "SG035 rho bins from t0..109; existing SG034 risk budget .08",
+    "checkpoints": [
+      80,
+      120,
+      160,
+      200,
+      240
+    ],
+    "monitor": "From currently collected continuation prefix take last 80 samples; detrend with linear least squares; compute residual lag-1 autocorrelation and root mean square. Alarm if lag-1 autocorrelation > .78 OR residual RMS > .29.",
+    "alarm": "Latch alarm; disallow early stopping thereafter; at 240 use fixed240 classification rather than a forced unresolved.",
+    "no_alarm": "Use original SG030 conservative adaptive 2-consecutive eligible classifications with slope outer margins .0036 or .0014.",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation"
+    ],
+    "costs": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    }
+  },
+  "holdout": {
+    "start": 21000000,
+    "per_class_scenario": 40,
+    "total": 400,
+    "formula": "21000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "comparators": [
+      "SG035 8% risk-gated adaptive",
+      "shift-monitored risk gate",
+      "fixed240"
+    ],
+    "no_retuning": true
+  },
+  "caveats": [
+    "Checks only every 40 observations; shifts preceding an early stop may be undetectable.",
+    "Thresholds pilot-selected; no probability guarantee.",
+    "Fixed240 may also make errors.",
+    "Synthetic known scenarios; fresh seeds but not real-world distribution."
+  ]
+}
