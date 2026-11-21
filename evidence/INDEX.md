@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG023 · 2026-11-21 | Adaptive minimum memory across abrupt changes | 66 exact checks; switches [30,60]; lags [1,2,0]; 54 active forecasts and 24 quarantined observations | [Freeze](./candidates/2026-11-21-sg023-adaptive-memory-freeze.json) · [Record](./candidates/2026-11-21-sg023-adaptive-memory.json) · [Python](./candidates/2026-11-21-sg023-adaptive-memory.py) |
 | AETHER-070 · 2026-11-21 | Graceful sensor degradation | Evidence-root loss, bounded fallback, requalification and no-surprise counterexample; HTML | [Audit](./audits/2026-11-21-aether-070.json) |
 | TD-CROSSDOMAIN-SG022 · 2026-11-21 | Minimum sufficient memory order 0–4 from recurrence observations | 80 exact assertions; 60/60 future predictions; four controls | [Freeze](./candidates/2026-11-21-sg022-memory-freeze.json) · [Record](./candidates/2026-11-21-sg022-minimum-memory.json) · [Python](./candidates/2026-11-21-sg022-minimum-memory.py) |
 | TD-CROSSDOMAIN-SG021 · 2026-11-21 | Preregistered discovery of affine, quadratic, hinge, rational and recurrence laws | 75 exact checks; 62/62 held-out; ambiguous-history controls | [Freeze](./candidates/2026-11-21-sg021-law-discovery-preregister.json) · [Record](./candidates/2026-11-21-sg021-governing-law.json) · [Python](./candidates/2026-11-21-sg021-governing-law.py) |
