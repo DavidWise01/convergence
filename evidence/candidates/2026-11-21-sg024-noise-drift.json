@@ -1,0 +1,77 @@
+{
+  "id": "TD-CROSSDOMAIN-SG024",
+  "date": "2026-11-21",
+  "status": "MIXED_RESULT_FROZEN",
+  "freeze_path": "evidence/candidates/2026-11-21-sg024-noise-drift-freeze.json",
+  "freeze_commit": "2bc02544ba029219823d9930c13eecbc8c89df86",
+  "pilot_disclosure": "Five-case seed-24021 exploratory pilot informed selection of threshold 1.15, 11-point median, four confirmations, 16-point cooldown and abrupt-jump >1.5; 150 holdout seeds executed after freeze.",
+  "result": {
+    "traces": 150,
+    "passed": 134,
+    "failures": 16,
+    "category_results": {
+      "steady": {
+        "passed": 30,
+        "total": 30
+      },
+      "spike": {
+        "passed": 30,
+        "total": 30
+      },
+      "drift": {
+        "passed": 14,
+        "total": 30
+      },
+      "step": {
+        "passed": 30,
+        "total": 30
+      },
+      "step_spike": {
+        "passed": 30,
+        "total": 30
+      }
+    },
+    "first_event_step_at": 128,
+    "programmed_step_at": 120,
+    "step_detection_delay": 8,
+    "missed_drift_seeds": [
+      462055,
+      462129,
+      462166,
+      462203,
+      462314,
+      462388,
+      462425,
+      462499,
+      462536,
+      462573,
+      462610,
+      462721,
+      462758,
+      462906,
+      462943,
+      463054
+    ]
+  },
+  "negative_findings": [
+    "16 gradual drift cases produced no alerts by the end of 240 observations",
+    "Abrupt and outlier rejection look robust on this synthetic holdout but not across external traces"
+  ],
+  "method": "Frozen median deviation detector with persistence and trailing-20 adjacent-jump classification; 30 seeds per synthetic type from fixed seed formula. No threshold retuning after freeze.",
+  "limitations": [
+    "Pilot-informed parameters so not fully independent methodological design",
+    "Synthetic uniform noise magnitude ±0.26 and predefined change types",
+    "Single deterministic stream length 240, no arbitrary noise distributions",
+    "No causal conclusions about ROOT0 ancestry, RH, NS"
+  ],
+  "next": "SG-025 separate drift-sensitive detector with sensitivity/false-alarm calibration and untouched new seed range.",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg024-noise-drift.py",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG023",
+    "TD-CROSSDOMAIN-SG022"
+  ],
+  "media_archived": false
+}
