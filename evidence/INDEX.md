@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-067 · 2026-11-21 | Energy-constrained recovery pathfinding | 252 slew-limited schedules; 92 passing; hydrogen-fusion recovery; HTML | [Audit](./audits/2026-11-21-aether-067.json) |
 | AETHER-066 · 2026-11-21 | Stability island navigation | 680 candidate destinations, five dynamic transition trials and counterexample | [Audit](./audits/2026-11-21-aether-066.json) |
 | TD-CROSSDOMAIN-SG019 · 2026-11-21 | Hidden-operator identification from observations | 7/7 dictionary candidates, 21/21 held-out states; uniform-probe ambiguity | [Record](./candidates/2026-11-21-sg019-hidden-operator.json) · [Python](./candidates/2026-11-21-sg019-hidden-operator.py) |
 | AETHER-065 · 2026-11-21 | Twelve-arm multidimensional stability atlas | 1,092 simulation probes, 412 passing cells, interactive heatmap | [Audit](./audits/2026-11-21-aether-065.json) |
