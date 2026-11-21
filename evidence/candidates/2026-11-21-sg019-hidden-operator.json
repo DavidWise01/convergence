@@ -1,0 +1,44 @@
+{
+  "id": "TD-CROSSDOMAIN-SG019",
+  "recorded_at": "2026-11-21",
+  "submitted_source": "https://github.com/DavidWise01/convergence",
+  "observation_status": "VERIFIED_FINITE_MODEL",
+  "observed_content": "Infer seven secret 7x7 rational operators from two input/output observations using a known seven-model dictionary; test each recovered model against three independent held-out states. Operators are identity, right/left cyclic shift, factor-two amplification, symmetric diffusion, biased diffusion, edge-weight defect diffusion.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python3 Fraction arithmetic",
+      "result": "50/50 assertions passed; seven uniquely identified dictionary members; all 21 held-out vectors predicted exactly."
+    }
+  ],
+  "claims": [
+    "Unique identification within finite supplied candidate dictionary",
+    "Conservation, constant fixed-point property and rotation equivariance recovered from each selected operator"
+  ],
+  "negative_controls": [
+    {
+      "case": "Only a uniform vector observed",
+      "outcome": "Six distinct conservative transformations remain compatible; operator not identifiable"
+    },
+    {
+      "case": "Unrestricted linear operator",
+      "outcome": "Two probes insufficient in general; full basis of seven states recovers entire 7×7 matrix"
+    }
+  ],
+  "limitations": [
+    "Candidates supplied to inference engine beforehand; not open-ended mathematical discovery",
+    "Finite 7-node artificial environment",
+    "No blind independent external evaluator; hypotheses and test generated in same workflow",
+    "No causal link to ROOT0 originality, RH, Navier–Stokes or training exposure"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG017",
+    "TD-CROSSDOMAIN-SG018",
+    "TD-RH-BRIDGE-001"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg019-hidden-operator.py",
+  "source_links": [
+    "https://github.com/DavidWise01/quanta",
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
