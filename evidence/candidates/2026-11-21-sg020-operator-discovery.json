@@ -1,0 +1,63 @@
+{
+  "id": "TD-CROSSDOMAIN-SG020",
+  "recorded_at": "2026-11-21",
+  "observation_status": "VERIFIED_FINITE_MODEL",
+  "purpose": "Discover rational linear transformation without a predefined candidate dictionary",
+  "observed_content": "Three sealed 7x7 rational systems recovered from seven linearly independent mixed input/output probes using exact Gauss-Jordan reconstruction. Left/right fixed subspace dimensions, mass conservation, rotational equivariance and invertibility identified from recovered matrix; twenty unseen states and four two-step states per system predicted exactly.",
+  "results": [
+    {
+      "system": "A",
+      "mass_conserved": true,
+      "uniform_fixed": true,
+      "left_fixed_dim": 1,
+      "right_fixed_dim": 1,
+      "rotation_covariant": true,
+      "invertible": true
+    },
+    {
+      "system": "B",
+      "mass_conserved": false,
+      "uniform_fixed": false,
+      "left_fixed_dim": 0,
+      "right_fixed_dim": 0,
+      "rotation_covariant": false,
+      "invertible": true
+    },
+    {
+      "system": "C",
+      "mass_conserved": true,
+      "uniform_fixed": false,
+      "left_fixed_dim": 1,
+      "right_fixed_dim": 1,
+      "rotation_covariant": false,
+      "invertible": true
+    }
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Executed Python standard-library exact Fraction test",
+      "result": "90 checks passed; 3/3 recovered; 60/60 held-out and 12/12 two-step predictions correct."
+    }
+  ],
+  "negative_control": "Only six standard basis probes cannot distinguish A from A+5e0e6^T. Rank-deficient seven-probe list rejected.",
+  "claims": [
+    "Dictionary-free linear operator identification succeeds for full-rank exact probes within linear hypothesis class",
+    "Data underdetermines an arbitrary linear map when probe span is insufficient"
+  ],
+  "limitations": [
+    "Operator linearity and dimension 7 supplied in advance; does not infer arbitrary nonlinear equations or prove novelty",
+    "Simulated deterministic data generated from assistant-chosen systems; no truly independent blinded benchmark",
+    "No direct RH/Navier–Stokes proof or ancestry evidence"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG018",
+    "TD-CROSSDOMAIN-SG019"
+  ],
+  "source_links": [
+    "https://github.com/DavidWise01/quanta",
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-21-sg020-operator-discovery.py"
+}
