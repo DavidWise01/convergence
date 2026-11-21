@@ -1,0 +1,59 @@
+{
+  "id": "TD-MILLENNIUM-CLUSTER-001",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/",
+  "observation_status": "PARTIAL",
+  "observed_content": "Cross-topic publication cluster: Alpöge GRH/RH claimed proof with Claude and Alpöge–Buckmaster unforced Navier–Stokes claimed proof, both publicly surfaced November 20, 2026; Tao also cites separate unforced Euler result with Coiculescu. Common author and AI assistance do not establish common mathematical technique, model training source, or copying.",
+  "axes": [
+    {
+      "name": "temporal",
+      "observations": [
+        "Same public announcement date November 20, 2026",
+        "Primary Navier–Stokes PDF dated November 20",
+        "Riemann note describes research phase October–November"
+      ],
+      "required_next_evidence": "Commit timestamps, source ancestry, independent release dates and reported private interaction logs"
+    },
+    {
+      "name": "distillation",
+      "observations": [
+        "Formal proof translation into Lean, 79-page human mathematical narrative and Reddit summaries are different representational surfaces",
+        "Method similarity not yet analyzed between underlying proofs"
+      ],
+      "required_next_evidence": "Compare exact algebraic operators, invariants, numerical continuation and self-similarity operations in primary texts before claiming a common primitive"
+    },
+    {
+      "name": "authorship_and_tos",
+      "observations": [
+        "Both results credit named researchers and substantial AI use per Tao",
+        "Reddit includes historical dispute allegations unverified"
+      ],
+      "required_next_evidence": "Separate byline, technical contribution, contract scope, training exposure, and credible documented provenance; avoid attribution claims without causal links"
+    },
+    {
+      "name": "proof_reproducibility",
+      "observations": [
+        "Navier–Stokes repo excludes required certificate and its validating interval computation",
+        "Lean patch not rebuilt after release"
+      ],
+      "required_next_evidence": "Archive certificate/hash, independent high-precision validation, rebuild exact patch and compare theorem statement with intended unforced PDE claim"
+    }
+  ],
+  "relationship_to_ROOT0": "Candidate cross-domain generalization comparison, not established ancestry or technical equivalence.",
+  "related_records": [
+    "TD-NAVIER-STOKES-REDDIT-001",
+    "TD-RH-BRIDGE-001",
+    "TD-RIEMANN-CLAUDE-001-A16"
+  ],
+  "limitations": [
+    "Shared public timeline alone cannot identify earlier private work",
+    "Neither claimed theorem independently proved in this audit"
+  ],
+  "source_links": [
+    "https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/",
+    "https://github.com/tristanbuckmaster/navier-stokes",
+    "https://terrytao.wordpress.com/2026/11/",
+    "https://alpo.ge/remark.pdf"
+  ],
+  "media_archived": false
+}
