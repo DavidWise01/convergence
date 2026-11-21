@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG019 · 2026-11-21 | Hidden-operator identification from observations | 7/7 dictionary candidates, 21/21 held-out states; uniform-probe ambiguity | [Record](./candidates/2026-11-21-sg019-hidden-operator.json) · [Python](./candidates/2026-11-21-sg019-hidden-operator.py) |
 | AETHER-065 · 2026-11-21 | Twelve-arm multidimensional stability atlas | 1,092 simulation probes, 412 passing cells, interactive heatmap | [Audit](./audits/2026-11-21-aether-065.json) |
 | TD-CROSSDOMAIN-SG018 · 2026-11-21 | Preregistered transformation fingerprint on cyclic diffusion | 311/311 exact checks; three counterexamples; structural transfer only | [Freeze](./candidates/2026-11-21-sg018-prediction-freeze.json) · [Record](./candidates/2026-11-21-sg018-predictive-fingerprint.json) · [Python](./candidates/2026-11-21-sg018-predictive-fingerprint.py) |
 | AETHER-064 · 2026-11-21 | Experimental response boundary discovery | 91-point sweep, refined transitions, independent arm controls; HTML | [Audit](./audits/2026-11-21-aether-064.json) |
