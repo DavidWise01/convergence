@@ -1,0 +1,16 @@
+{"seq":1,"seed":901038,"event":"prior_decision","source":"SG027","decision":"unresolved","original_digest":"92786530b64cd747554dba689a34610f132698ccecd80f242aa2998d77b23a04","original_slope":0.0025289}
+{"seq":2,"seed":901038,"event":"request_new_evidence","start":240,"count":240}
+{"seq":3,"seed":901038,"event":"new_observation","start":240,"count":240,"sha256":"f7ba255a37e4d211b326008537bee74c497aec33581e184e4d9615125d892470"}
+{"seq":4,"seed":901038,"event":"followup_decision","decision":"confirmed","slope":0.004789325,"supersedes_prior":false}
+{"seq":5,"seed":901251,"event":"prior_decision","source":"SG027","decision":"unresolved","original_digest":"139291c06ac446cfaf4285f5a6b06a52dcf331482a6ef7b42a1bf21f3c238862","original_slope":0.0030947}
+{"seq":6,"seed":901251,"event":"request_new_evidence","start":240,"count":240}
+{"seq":7,"seed":901251,"event":"new_observation","start":240,"count":240,"sha256":"3827e63f6117d611cfafc1e9d16d972d90bc9833e8d75a4b51d3a03baa1fefb5"}
+{"seq":8,"seed":901251,"event":"followup_decision","decision":"confirmed","slope":0.004719608,"supersedes_prior":false}
+{"seq":9,"seed":902245,"event":"prior_decision","source":"SG027","decision":"unresolved","original_digest":"310621238907136c16cd6c021024d215f6cf8566d1619c6116bfd72f0769e3b0","original_slope":0.0026921}
+{"seq":10,"seed":902245,"event":"request_new_evidence","start":240,"count":240}
+{"seq":11,"seed":902245,"event":"new_observation","start":240,"count":240,"sha256":"d1d74f509587cc617cde7f143b4c6317991022fd1cfade729991eaff3099c175"}
+{"seq":12,"seed":902245,"event":"followup_decision","decision":"confirmed","slope":0.004229688,"supersedes_prior":false}
+{"seq":13,"seed":903026,"event":"prior_decision","source":"SG027","decision":"unresolved","original_digest":"8d3f545b55de41b3ff02028f64cbcea3284b7409b5e079c5fccd79d75ef42287","original_slope":0.0021784}
+{"seq":14,"seed":903026,"event":"request_new_evidence","start":240,"count":240}
+{"seq":15,"seed":903026,"event":"new_observation","start":240,"count":240,"sha256":"849d881be58a83ad75b3faf0a3fb82667baa886d7165f72518605089f86d534d"}
+{"seq":16,"seed":903026,"event":"followup_decision","decision":"confirmed","slope":0.005500671,"supersedes_prior":false}
