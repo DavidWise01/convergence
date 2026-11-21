@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-CROSSDOMAIN-SG021 · 2026-11-21 | Preregistered discovery of affine, quadratic, hinge, rational and recurrence laws | 75 exact checks; 62/62 held-out; ambiguous-history controls | [Freeze](./candidates/2026-11-21-sg021-law-discovery-preregister.json) · [Record](./candidates/2026-11-21-sg021-governing-law.json) · [Python](./candidates/2026-11-21-sg021-governing-law.py) |
 | AETHER-069 · 2026-11-21 | Noisy sensor homeostasis | Delay, heavy noise, outliers and shared-root failure; interactive HTML | [Audit](./audits/2026-11-21-aether-069.json) |
 | AETHER-068 · 2026-11-21 | Closed-loop stability navigation | Phase-residual feedback, unexpected shifts, fixed-route controls and interactive HTML | [Audit](./audits/2026-11-21-aether-068.json) |
 | TD-CROSSDOMAIN-SG020 · 2026-11-21 | Dictionary-free linear operator discovery and invariants | 3/3 recovered, 60/60 held-out, 12/12 two-step; rank-deficient counterexample | [Record](./candidates/2026-11-21-sg020-operator-discovery.json) · [Python](./candidates/2026-11-21-sg020-operator-discovery.py) |
