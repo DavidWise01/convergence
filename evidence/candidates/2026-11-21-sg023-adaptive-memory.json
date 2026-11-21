@@ -1,0 +1,82 @@
+{
+  "id": "TD-CROSSDOMAIN-SG023",
+  "recorded_at": "2026-11-21",
+  "observation_status": "VERIFIED_EXACT_FINITE_MODEL",
+  "prior_freeze": "evidence/candidates/2026-11-21-sg023-adaptive-memory-freeze.json",
+  "freeze_commit": "09481e11fca6f28ef3f79ebd946e64db5bafdc46",
+  "goal": "Detect time-local change of scalar affine autoregression, preserve prior model and residual, recover minimum lag from post-change data only.",
+  "results": {
+    "checks": 66,
+    "change_points": [
+      30,
+      60
+    ],
+    "memory_order": [
+      1,
+      2,
+      0
+    ],
+    "verified_predictions": 54,
+    "quarantine_observations": 24,
+    "observations_after_initial_training": 78,
+    "epochs": [
+      {
+        "start": 0,
+        "end": 29,
+        "lag": 1,
+        "coefficients": [
+          "1",
+          "2"
+        ],
+        "change_residual_at_30": "-536870912"
+      },
+      {
+        "start": 30,
+        "end": 59,
+        "lag": 2,
+        "coefficients": [
+          "1",
+          "1",
+          "1"
+        ],
+        "change_residual_at_60": "-3061714144722938"
+      },
+      {
+        "start": 60,
+        "end": 89,
+        "lag": 0,
+        "coefficients": [
+          "5"
+        ]
+      }
+    ]
+  },
+  "method": "Initial training indices 0..11; exact prediction residuals identify first failure. Model retired on first failure; 12 contiguous post-switch values establish a new minimal unique affine AR model d∈{0,1,2} using only those post-switch values. No prediction credit during quarantine.",
+  "negative_controls": [
+    "Order 1 cannot uniquely fit second regime's stable observations.",
+    "Constant third regime underdetermines lag-2 coefficient recovery.",
+    "Old model snapshots and exact residuals are append-only entries in returned history."
+  ],
+  "observed_limitations": [
+    "Exact switch time detection assumes abrupt change induces an immediate nonzero residual. Hidden or delayed changes may evade detection.",
+    "Model family restricted to exact affine AR with lags 0..2. No noise tolerance.",
+    "12-point quarantine sacrifices prediction coverage; zero errors on active predictions does not imply 100% total coverage.",
+    "Synthetic deterministic sequence selected by assistant; not blind, external or evidence of AI-training ancestry."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python3 exact fractions execution",
+      "result": "66 assertions passed; detected switches at [30,60]; recovered lag sequence [1,2,0]; active forecasts 54 correct, quarantine 24."
+    }
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG021",
+    "TD-CROSSDOMAIN-SG022"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg023-adaptive-memory.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "media_archived": false
+}
