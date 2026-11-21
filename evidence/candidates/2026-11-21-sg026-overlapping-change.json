@@ -1,0 +1,87 @@
+{
+  "id": "TD-CROSSDOMAIN-SG026",
+  "date": "2026-11-21",
+  "status": "MIXED_HOLDOUT_RESULT",
+  "freeze": "evidence/candidates/2026-11-21-sg026-overlapping-change-freeze.json",
+  "freeze_commit": "ef90e314d56480fbc8cf7f210a2e0636e8f697c9",
+  "method": "Offline 240-observation finite stream analysis: largest cross-boundary median shift >1.5 over 13+13 samples estimates step; independent within-regime median pairwise slopes across 10-sample bins, threshold absolute .0027, estimates slow drift even with simultaneous step.",
+  "calibration": {
+    "streams": 240,
+    "passed": 240,
+    "disclosure": "Exploratory; method adjusted using calibration results before freeze."
+  },
+  "holdout": {
+    "streams": 400,
+    "passed": 398,
+    "failed": 2,
+    "seed_formula": "600000 +137*kind_index +53*i, i=0..49",
+    "counts": {
+      "steady": "50/50",
+      "impulses": "50/50",
+      "drift": "50/50",
+      "step": "50/50",
+      "step_drift": "50/50",
+      "colored_steady": "50/50",
+      "colored_step_drift": "48/50",
+      "negative_drift_step": "50/50"
+    },
+    "simultaneous_drift_and_step": "148/150",
+    "any_step": "198/200",
+    "failures": [
+      {
+        "kind": "colored_step_drift",
+        "seed": 601140,
+        "step_index": 118,
+        "drift_found": false,
+        "estimated_slope": 0.002349,
+        "true_slope": 0.005
+      },
+      {
+        "kind": "colored_step_drift",
+        "seed": 603366,
+        "step_index": 122,
+        "drift_found": false,
+        "estimated_slope": 0.002699,
+        "true_slope": 0.005
+      }
+    ]
+  },
+  "findings": [
+    "Distinguishes presence of step and drift across these synthetic conditions in 398/400 cases",
+    "Step identified in all 200 step-bearing cases, within ±8 samples",
+    "Both failures preserve true step while missing associated slow drift under correlated noise",
+    "Zero false event classifications in stable and impulse controls in holdout"
+  ],
+  "limitations": [
+    "Retrospective/offline algorithm requires full 240 samples; not online detection or zero-latency prediction",
+    "Calibration-tuned and condition-aware toy benchmark, not independent external data",
+    "One strongest step per stream; no multi-step scenarios",
+    "Correlated noise occasionally obscures true drift, as explicitly observed",
+    "Not direct evidence of RH or Navier–Stokes claims, physical time dilation, or third-party use of ROOT0 ideas"
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python3 calibration on seeds 100000+...",
+      "result": "240/240 after tuning, disclosed as non-independent"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze before holdout",
+      "result": "ef90e314d56480fbc8cf7f210a2e0636e8f697c9"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python3 holdout seeds 600000+...",
+      "result": "398/400, two drift misses retained unchanged"
+    }
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG025",
+    "TD-CROSSDOMAIN-SG024"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg026-overlapping-change.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
