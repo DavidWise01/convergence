@@ -1,0 +1,181 @@
+{
+  "id": "TD-CROSSDOMAIN-SG038",
+  "date": "2026-11-21",
+  "status": "FAILED_IMPROVEMENT_EXTRA_ABSTENTIONS_NO_ERROR_REDUCTION",
+  "parent": "TD-CROSSDOMAIN-SG037",
+  "freeze": "evidence/candidates/2026-11-21-sg038-dual-estimator-freeze.json",
+  "freeze_commit": "5fbeac554a029f620a81ee660ae49d02988d61b7",
+  "method": "SG037 predecision risk gate, shift alarm and 20-sample challenge unchanged. Secondary estimator takes median difference of beginning and ending thirds (width floor(n/3) rounded to multiple of ten) / (n-w). At early commit require label agreement; after latched shift, at n=240 require agreement or unresolved.",
+  "pilot": {
+    "seed_start": 31000000,
+    "cases": 140,
+    "SG037": {
+      "correct": 118,
+      "FP": 1,
+      "FN": 0,
+      "unresolved": 21,
+      "observations": 30620,
+      "loss": 2365.2
+    },
+    "SG038": {
+      "correct": 108,
+      "FP": 1,
+      "FN": 0,
+      "unresolved": 31,
+      "observations": 30620,
+      "loss": 2545.2
+    },
+    "disclosure": "Pilot negative and inspected before preregistration; no tuning after freeze."
+  },
+  "holdout": {
+    "seed_start": 34000000,
+    "formula": "34000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "cases": 560,
+    "SG037": {
+      "correct": 489,
+      "FP": 3,
+      "FN": 4,
+      "unresolved": 64,
+      "observations": 120860,
+      "loss": 9213.6,
+      "early": 157
+    },
+    "SG038": {
+      "correct": 444,
+      "FP": 3,
+      "FN": 4,
+      "unresolved": 109,
+      "observations": 121080,
+      "loss": 10036.8,
+      "early": 155
+    },
+    "fixed240": {
+      "correct": 486,
+      "FP": 3,
+      "FN": 2,
+      "unresolved": 69,
+      "observations": 134400,
+      "loss": 9936,
+      "early": 0
+    },
+    "abstentions_increase": 45,
+    "incorrect_decisions_prevented": 0,
+    "additional_loss_vs_SG037": 823.2,
+    "by_scenario": {
+      "reference": {
+        "SG037_wrong": 0,
+        "SG038_wrong": 0,
+        "SG037_unresolved": 0,
+        "SG038_unresolved": 0
+      },
+      "correlation_switch": {
+        "SG037_wrong": 3,
+        "SG038_wrong": 3,
+        "SG037_unresolved": 15,
+        "SG038_unresolved": 19
+      },
+      "laplace_tail": {
+        "SG037_wrong": 0,
+        "SG038_wrong": 0,
+        "SG037_unresolved": 0,
+        "SG038_unresolved": 0
+      },
+      "subtle_drift": {
+        "SG037_wrong": 3,
+        "SG038_wrong": 3,
+        "SG037_unresolved": 29,
+        "SG038_unresolved": 30
+      },
+      "fast_oscillation": {
+        "SG037_wrong": 0,
+        "SG038_wrong": 0,
+        "SG037_unresolved": 9,
+        "SG038_unresolved": 36
+      },
+      "late_correlation_switch": {
+        "SG037_wrong": 1,
+        "SG038_wrong": 1,
+        "SG037_unresolved": 6,
+        "SG038_unresolved": 8
+      },
+      "late_oscillation": {
+        "SG037_wrong": 0,
+        "SG038_wrong": 0,
+        "SG037_unresolved": 5,
+        "SG038_unresolved": 16
+      }
+    },
+    "failures": [
+      {
+        "seed": 34200808,
+        "scenario": "correlation_switch",
+        "truth": false,
+        "outcome": "FP",
+        "n": 240,
+        "alarm": true
+      },
+      {
+        "seed": 34202727,
+        "scenario": "correlation_switch",
+        "truth": false,
+        "outcome": "FP",
+        "n": 240,
+        "alarm": false
+      },
+      {
+        "seed": 34203030,
+        "scenario": "correlation_switch",
+        "truth": false,
+        "outcome": "FP",
+        "n": 240,
+        "alarm": true
+      },
+      {
+        "seed": 34611717,
+        "scenario": "subtle_drift",
+        "truth": true,
+        "outcome": "FN",
+        "n": 200,
+        "alarm": false
+      },
+      {
+        "seed": 34612222,
+        "scenario": "subtle_drift",
+        "truth": true,
+        "outcome": "FN",
+        "n": 140,
+        "alarm": false
+      },
+      {
+        "seed": 34613838,
+        "scenario": "subtle_drift",
+        "truth": true,
+        "outcome": "FN",
+        "n": 160,
+        "alarm": false
+      },
+      {
+        "seed": 35011616,
+        "scenario": "late_correlation_switch",
+        "truth": true,
+        "outcome": "FN",
+        "n": 240,
+        "alarm": true
+      }
+    ],
+    "rows_sha256": "e30fea1861a50437bf2aa4934e8e5f3a66c167cc05ce6f6af4c56eac27ed0542"
+  },
+  "finding": "Two estimator constructions on same observations are not independent evidence sources. Label disagreement withheld valid SG037 classifications but did not fix seven wrong labels; more caution can increase loss.",
+  "limits": [
+    "Frozen candidate and gate, pilot-selected and tested on fresh deterministic seeds only",
+    "Independent mathematical estimator is not independent source ancestry",
+    "The second estimator is susceptible to oscillation; no statistical risk guarantee",
+    "Error costs artificial, fixed budget can also err",
+    "No mathematical-theorem proof or authorship conclusion"
+  ],
+  "next": "SG039 test conditional diagnostics of estimator disagreement and source-independent validation; isolate which disturbance harms which estimator before deciding to abstain.",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg038-dual-estimator.py"
+}
