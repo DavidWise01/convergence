@@ -1,0 +1,80 @@
+{
+  "id": "TD-CROSSDOMAIN-SG031-FREEZE",
+  "recorded_at": "2026-11-21",
+  "status": "FROZEN_BEFORE_HOLDOUT",
+  "prior": "TD-CROSSDOMAIN-SG030",
+  "goal": "Test preexisting fixed160, fixed240, adaptive and conservative cost-aware evidence policies under changed consequences and out-of-distribution signal/noise conditions, without retuning classification margins.",
+  "policies": [
+    "fixed160",
+    "fixed240",
+    "adaptive",
+    "cost-aware"
+  ],
+  "scenarios": [
+    {
+      "name": "baseline",
+      "rho": 0.72,
+      "noise": "uniform ±0.23",
+      "drift_slope": 0.005,
+      "spikes": "original"
+    },
+    {
+      "name": "weak_drift",
+      "rho": 0.72,
+      "noise": "uniform ±0.23",
+      "drift_slope": 0.0027,
+      "spikes": "original"
+    },
+    {
+      "name": "high_correlation",
+      "rho": 0.93,
+      "noise": "uniform ±0.23",
+      "drift_slope": 0.005,
+      "spikes": "original"
+    },
+    {
+      "name": "heavy_tailed",
+      "rho": 0.72,
+      "noise": "uniform ±0.23 plus rare ±2.5 impulse at 3% per sample",
+      "drift_slope": 0.005,
+      "spikes": "original"
+    }
+  ],
+  "cost_scenarios": [
+    {
+      "name": "original",
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    },
+    {
+      "name": "high_false_confirm",
+      "sample": 0.06,
+      "FP": 600,
+      "FN": 90,
+      "abstain": 18
+    },
+    {
+      "name": "cheap_observe",
+      "sample": 0.01,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    },
+    {
+      "name": "expensive_observe",
+      "sample": 0.25,
+      "FP": 150,
+      "FN": 90,
+      "abstain": 18
+    }
+  ],
+  "seed_recipe": "7300000 + 100000*scenario_index + 10000*int(drift) + 101*k; k=0..39; 80 streams per scenario",
+  "evaluation": "Run all four policies over 320 frozen synthetic streams; compute full confusion and unresolved counts, observations, loss for all four cost tables. Policies not changed after outcomes observed.",
+  "limits": [
+    "Thresholds were tuned on baseline distribution in prior experiment",
+    "Synthetic deterministic generator and costs",
+    "No inference about training lineage or proof correctness"
+  ]
+}
