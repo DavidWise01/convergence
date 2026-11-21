@@ -1,0 +1,149 @@
+{
+  "id": "TD-CROSSDOMAIN-SG034",
+  "recorded_at": "2026-11-21",
+  "status": "MIXED_CALIBRATED_RISK_HOLDOUT",
+  "freeze": "evidence/candidates/2026-11-21-sg034-calibrated-risk-freeze.json",
+  "freeze_commit": "ee2730651c97245338765f62c6c91179afe621fb",
+  "protocol": "One-sided 95% Wilson upper bound per estimated-rho bin, max error risk 0.08 with bin minimum count 40; adaptive policy allowed only for bins .45-.60 and .60-.75. Calibration n=960 from seed 11200000; fresh holdout n=480 from seed 15200000.",
+  "exploratory_disclosure": "A rehearsal at seed start 13200000 before freeze was excluded; 480 cases, 414 correct, 11 wrong, 55 unresolved. Freezing occurred before seed 15200000 was evaluated.",
+  "calibration": {
+    "bin_edges": [
+      0.45,
+      0.6,
+      0.75,
+      0.9
+    ],
+    "bins": [
+      {
+        "range": "<.45",
+        "n": 3,
+        "errors": 0,
+        "upper95": 0.4741955742,
+        "adaptive_allowed": false
+      },
+      {
+        "range": ".45-.60",
+        "n": 122,
+        "errors": 3,
+        "upper95": 0.0599395608,
+        "adaptive_allowed": true
+      },
+      {
+        "range": ".60-.75",
+        "n": 500,
+        "errors": 19,
+        "upper95": 0.0547316641,
+        "adaptive_allowed": true
+      },
+      {
+        "range": ".75-.90",
+        "n": 273,
+        "errors": 52,
+        "upper95": 0.2325311151,
+        "adaptive_allowed": false
+      },
+      {
+        "range": ">=.90",
+        "n": 62,
+        "errors": 16,
+        "upper95": 0.3582260672,
+        "adaptive_allowed": false
+      }
+    ]
+  },
+  "holdout": {
+    "streams": 480,
+    "seed_formula": "15200000+100000*scenario_index+10000*int(drift)+101*k; k=0..59",
+    "selected": {
+      "correct": 401,
+      "false_confirmations": 7,
+      "false_rejections": 12,
+      "unresolved": 60,
+      "observations": 89640,
+      "loss": 8588.4,
+      "adaptive_selected": 305
+    },
+    "always_fixed240": {
+      "correct": 400,
+      "false_confirmations": 7,
+      "false_rejections": 5,
+      "unresolved": 68,
+      "observations": 115200,
+      "loss": 9636
+    },
+    "always_adaptive": {
+      "correct": 385,
+      "false_confirmations": 16,
+      "false_rejections": 21,
+      "unresolved": 58,
+      "observations": 76240,
+      "loss": 9908.4
+    },
+    "observations_saved_vs_fixed240": 25560,
+    "loss_reduction_vs_fixed240": 1047.6,
+    "error_difference_vs_fixed240": 7,
+    "by_environment": {
+      "baseline": {
+        "correct": 119,
+        "FP": 0,
+        "FN": 1,
+        "unresolved": 0,
+        "loss": 1258.8
+      },
+      "weak_drift": {
+        "correct": 70,
+        "FP": 0,
+        "FN": 9,
+        "unresolved": 41,
+        "loss": 2920.8
+      },
+      "high_correlation": {
+        "correct": 92,
+        "FP": 7,
+        "FN": 2,
+        "unresolved": 19,
+        "loss": 3271.2
+      },
+      "heavy_tailed": {
+        "correct": 120,
+        "FP": 0,
+        "FN": 0,
+        "unresolved": 0,
+        "loss": 1137.6
+      }
+    }
+  },
+  "limitations": [
+    "Confidence bound is a calibration-sample estimate, conditional on exchangeability; not proof of per-stream or out-of-distribution error guarantee.",
+    "Abstentions are excluded from wrong-decision counts but still incur explicit penalty.",
+    "High-correlation subset still had 7 false confirmations; all 19 errors preserved by runnable script.",
+    "Chosen model/noise family synthetic; thresholds and cost assumptions chosen by assistant.",
+    "No evidence of third-party mathematical proof validity or training lineage."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Exploratory rehearsal",
+      "result": "Seed 13200000 was inspected and excluded as final holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "Commit ee2730651c97245338765f62c6c91179afe621fb before holdout start=15200000"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python standard-library",
+      "result": "480 holdout streams, 401 correct, 19 wrong, 60 unresolved, cost 8588.4"
+    }
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG033",
+    "TD-CROSSDOMAIN-SG032"
+  ],
+  "next": "SG035: risk calibration using finer subsets, grouping dependence checks, and risk-coverage curves under unseen noise; avoid relying on identical generator assumptions.",
+  "executable": "evidence/candidates/2026-11-21-sg034-calibrated-risk.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
