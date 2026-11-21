@@ -1,0 +1,89 @@
+{
+  "id": "TD-CROSSDOMAIN-SG022",
+  "recorded_at": "2026-11-21",
+  "observation_status": "VERIFIED_FINITE_MODEL",
+  "prior_freeze": "evidence/candidates/2026-11-21-sg022-memory-freeze.json",
+  "freeze_commit": "561ecea034f2dcd6936cba3557b45fc74860b645",
+  "purpose": "Determine minimum sufficient history length (0..4) of exact scalar affine autoregressions without supplying order to the inference engine",
+  "results": {
+    "checks": 80,
+    "model_order_recovered": "5/5",
+    "holdout_predictions": "60/60",
+    "cases": [
+      {
+        "id": "C0",
+        "lag": 0,
+        "coefficients": [
+          "5"
+        ]
+      },
+      {
+        "id": "C1",
+        "lag": 1,
+        "coefficients": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "id": "C2",
+        "lag": 2,
+        "coefficients": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "id": "C3",
+        "lag": 3,
+        "coefficients": [
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "id": "C4",
+        "lag": 4,
+        "coefficients": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ]
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local execution Python3 Fraction exact Gaussian elimination",
+      "result": "80 assertions passed; all five minimal orders and 60 held-out outputs correct; first test of short-history control failed because [0,1,2] actually identifies affine y=x+1; corrected to [0,1] before final execution."
+    }
+  ],
+  "negative_controls": [
+    "Two observations [0,1] insufficient for unique first-order parameters; no fit promoted",
+    "Order-4 authored recurrence with trailing zero lag weights has minimum observable order 2",
+    "Single tampering in an order-2 trajectory cannot be fit by stationary affine order<=4 over 28 examples",
+    "Constant input history makes lag-4 coefficients rank-deficient"
+  ],
+  "interpretation": "The shortest uniquely fitting autoregression among orders 0–4 is identified for assistant-generated exact trajectories. Observable minimum order can differ from nominal authored equation order.",
+  "limitations": [
+    "Not unrestricted memory discovery: restricted to affine constant-coefficient scalar recurrences",
+    "Training and testing share generating mechanism; independent unseen dataset not provided",
+    "No connection to RH/Navier–Stokes theorem validation or authorship inference"
+  ],
+  "related_records": [
+    "TD-CROSSDOMAIN-SG020",
+    "TD-CROSSDOMAIN-SG021"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg022-minimum-memory.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence",
+    "https://github.com/DavidWise01/quanta"
+  ],
+  "media_archived": false
+}
