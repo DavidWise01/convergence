@@ -4,6 +4,7 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| AETHER-065 · 2026-11-21 | Twelve-arm multidimensional stability atlas | 1,092 simulation probes, 412 passing cells, interactive heatmap | [Audit](./audits/2026-11-21-aether-065.json) |
 | TD-CROSSDOMAIN-SG018 · 2026-11-21 | Preregistered transformation fingerprint on cyclic diffusion | 311/311 exact checks; three counterexamples; structural transfer only | [Freeze](./candidates/2026-11-21-sg018-prediction-freeze.json) · [Record](./candidates/2026-11-21-sg018-predictive-fingerprint.json) · [Python](./candidates/2026-11-21-sg018-predictive-fingerprint.py) |
 | AETHER-064 · 2026-11-21 | Experimental response boundary discovery | 91-point sweep, refined transitions, independent arm controls; HTML | [Audit](./audits/2026-11-21-aether-064.json) |
 | TD-CROSSDOMAIN-SG017 · 2026-11-20 | Navier–Stokes scaling vs theta-lift multiplicity; Lean-to-paper distillation | 69 exact rational checks; structural analogy, not proof equivalence | [Record](./candidates/2026-11-20-td-crossdomain-sg017.json) · [Python](./candidates/2026-11-20-td-crossdomain-sg017.py) |
