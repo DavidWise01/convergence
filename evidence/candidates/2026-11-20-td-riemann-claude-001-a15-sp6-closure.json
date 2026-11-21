@@ -1,0 +1,35 @@
+{
+  "id": "TD-RIEMANN-CLAUDE-001-A15",
+  "recorded_at": "2026-11-20",
+  "submitted_source": "https://alpo.ge/remark.pdf",
+  "observation_status": "VERIFIED",
+  "observed_content": "Exact finite-field generator-closure certificate for Sp6(F3): 3 local Fourier rotations, 3 elementary transvections, 4 directed adjacent coordinate shears. Every 6x6 generator satisfies M^T J M=J mod3. Orbit of nonzero e1 under generators and inverses is all 728 nonzero vectors, diameter six; 364 projective directions. Since T0 is an elementary transvection, conjugation gives transvections in all projective directions; classical theorem says these generate the full symplectic group. Order 9,170,703,360 from known formula.",
+  "retrieval_log": [
+    {
+      "date": "2026-11-20",
+      "surface": "Local Python standard library exact arithmetic",
+      "result": "PASS: 10 generators symplectic, complete 728-vector orbit with shell counts 1,4,23,78,222,328,72; removing adjacent 1↔2 coupling yields orbit of 80."
+    }
+  ],
+  "claims": [
+    "Full group generation at level of Sp6(F3) follows from exact orbit and classical transvection-generation theorem.",
+    "This does not establish that the lifted operators satisfy a consistent nonprojective Weil presentation, nor does it imply automorphic theta lifting or RH."
+  ],
+  "hypotheses": [
+    "Verify the Weil projective cocycle and phase normalization for the oscillator representation; compare finite-group statements to external global paper."
+  ],
+  "ancestry_status": "UNKNOWN; classical finite group mathematics; no direct transmission evidence",
+  "related_records": [
+    "TD-RIEMANN-CLAUDE-001-A14"
+  ],
+  "limitations": [
+    "Uses standard transvection-generation theorem as mathematical input; does not explicitly enumerate nine billion group elements.",
+    "Group closure concerns underlying 6-dimensional phase space; corresponding 78-dimensional operators have not been certified as honest (rather than projective) Weil representation.",
+    "No direct external-author source ancestry established."
+  ],
+  "media_archived": false,
+  "executable": "evidence/candidates/2026-11-20-td-riemann-claude-001-a15-sp6-closure.py",
+  "source_links": [
+    "https://alpo.ge/remark.pdf"
+  ]
+}
