@@ -1,0 +1,57 @@
+{
+  "id": "TD-CROSSDOMAIN-SG030-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_EXPLORATORY_RUN",
+  "prior": "TD-CROSSDOMAIN-SG029",
+  "objective": "Compare decision loss for adaptive/fixed evidence budgets using unseen synthetic seeds, penalizing false confirmations, false rejections, abstentions and observations.",
+  "costs": {
+    "per_observation": 0.06,
+    "false_confirmation": 150,
+    "false_rejection": 90,
+    "unresolved": 18
+  },
+  "policies": [
+    "fixed80",
+    "fixed120",
+    "fixed160",
+    "fixed240",
+    "adaptive",
+    "cost-aware"
+  ],
+  "definition": {
+    "fixed": "Collect fixed n in {80,120,160,240}, classify via SG029 median-pairwise trend and thresholds",
+    "adaptive": "Check every 40 observations starting 80, stop after two consecutive equal non-unresolved classifications; otherwise unresolved at 240",
+    "cost_aware": "Check every 40 starting 80; stop at n>=120 after 2 consistent decided classifications and slope >0.0036 or <0.0014; otherwise unresolved at 240; heuristic, not proven expected-cost optimization"
+  },
+  "stream": {
+    "first_240": "SG027-style synthetic stream discarded as already observed",
+    "fresh_additional": "Continuation 240..479 from per-seed simulated AR1 ±0.23 innovations, rho 0.72, +3 step at t120, ±7 impulses at t42/87/173/211",
+    "classes": [
+      "drift slope +0.005",
+      "no drift"
+    ],
+    "noise_assumptions": "Seeded Python Random, known uniform innovations and AR1 correlation."
+  },
+  "calibration": {
+    "seed_recipe": "3100000+10000*int(drift)+97*k, k=0..59, 120 total",
+    "pre_freeze_status": "Exploratory only; showed fixed80 high errors and adaptive lowest cost in pilot"
+  },
+  "holdout": {
+    "seed_recipe": "4200000+10000*int(drift)+101*k, k=0..99, 200 total",
+    "class_balance": "100 no-drift;100 drift",
+    "measure": [
+      "Total loss",
+      "Count false confirmations and false rejections",
+      "Count abstentions",
+      "Samples collected",
+      "Cost improvement vs fixed240"
+    ],
+    "stop": "No policy or cost changes once frozen"
+  },
+  "scope_limits": [
+    "Heuristic cost-aware policy, not formal Bayes-optimal decision rule",
+    "Reused synthetic distribution and artificial loss units, not external validation",
+    "One sample stream can be evaluated under all policies; comparison paired, not independently randomized",
+    "Accuracy can differ under unseen drift slopes/noise models"
+  ]
+}
