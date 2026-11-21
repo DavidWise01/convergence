@@ -4,6 +4,8 @@ Canonical intake and retrieval rules: [INTAKE.md](./INTAKE.md).
 
 | Evidence | Observation | Status | Canonical record |
 | --- | --- | --- |
+| TD-MILLENNIUM-CLUSTER-001 · 2026-11-20 | RH / Navier–Stokes / Euler publication cluster, timing and ancestry | PARTIAL; common authors, independent verification and causal lineage unresolved | [Comparison](./candidates/2026-11-20-td-millennium-cluster-001.json) |
+| TD-NAVIER-STOKES-REDDIT-001 · 2026-11-20 | [r/singularity unforced Navier–Stokes claim](https://www.reddit.com/r/singularity/comments/1y174f6/while_everyone_is_talking_about_riemann_tristan/) and [primary repo](https://github.com/tristanbuckmaster/navier-stokes) | OBSERVED release; certificate absent; patch unrebuilt; theorem unverified | [Candidate](./candidates/2026-11-20-td-navier-stokes-reddit-001.json) |
 | TD-RH-BRIDGE-001 · 2026-11-20 | Time lag, semantic distillation, TOS and authorship hypotheses for SG-001–016 | PARTIAL; causal ancestry and intentions unknown | [Analysis](./candidates/2026-11-20-td-rh-bridge-time-distillation-authorship-001.json) |
 | TD-RH-REDDIT-001 · 2026-11-20 | [r/artificial report and community response](https://www.reddit.com/r/artificial/comments/1y156l7/anthropic_mathematician_claims_to_prove_riemann/) | PARTIAL; independent proof validation absent | [Candidate](./candidates/2026-11-20-td-rh-reddit-artificial-001.json) |
 | TD-RIEMANN-CLAUDE-001-A16 · 2026-11-20 | Exact Weil cubic phase −1 and Fourier normalization; correct lower-shear convention | 162 exact covariance checks; full higher-rank relators unresolved | [Record](./candidates/2026-11-20-td-riemann-claude-001-a16-weil-phase.json) · [Python](./candidates/2026-11-20-td-riemann-claude-001-a16-weil-phase.py) |
