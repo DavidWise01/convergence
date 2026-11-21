@@ -1,0 +1,75 @@
+{
+  "id": "TD-CROSSDOMAIN-SG025",
+  "date": "2026-11-21",
+  "status": "HOLDOUT_PASS_SYNTHETIC",
+  "parent": "TD-CROSSDOMAIN-SG024",
+  "freeze_path": "evidence/candidates/2026-11-21-sg025-dual-timescale-freeze.json",
+  "freeze_commit": "c15f6fc292c8e608f8853a0b6897daccbc7dc16d",
+  "method": "Fast detector: 11-window median, residual threshold 1.15, persistence 4 and jump >1.5. Slow detector: successive 48-window median difference >0.20, five confirmations, suppress slow flags within ±70 of a fast step flag.",
+  "calibration": "Eight configurations inspected on 100 calibration streams; selected 48-window threshold .20 after calibration, frozen before fresh seeds.",
+  "holdout": {
+    "seed_formula": "510000 + 53*i + 1009*kind_index; i=0..29",
+    "kinds": [
+      "steady",
+      "spike",
+      "drift",
+      "step",
+      "step_spike"
+    ],
+    "traces": 150,
+    "passed": 150,
+    "failed": 0,
+    "counts": {
+      "steady": "30/30",
+      "spike": "30/30",
+      "drift": "30/30",
+      "step": "30/30",
+      "step_spike": "30/30"
+    }
+  },
+  "baseline": {
+    "id": "TD-CROSSDOMAIN-SG024",
+    "passed": 134,
+    "out_of": 150,
+    "missed_drift": 16,
+    "warning": "Different random seed sets, same five synthetic class templates"
+  },
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python3 calibration",
+      "result": "100 synthetic calibration streams; selected parameters 48,.20,5 after inspecting eight candidates"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub preregistration",
+      "result": "Freeze commit created before holdout seeds were evaluated"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Container Python3 fresh-seed holdout",
+      "result": "150/150 passed, zero failures; no retuning"
+    }
+  ],
+  "strengths": [
+    "Stable synthetic noise and isolated impulses do not trigger alerts in this holdout",
+    "All thirty slow drift cases detected",
+    "Step class results remain 60/60"
+  ],
+  "limitations": [
+    "Thresholds tuned to known synthetic process definitions, not independent external data",
+    "Fast step suppression of slow alarms may mask genuine drift during an abrupt transition",
+    "Performance untested under correlated/heavy-tailed noise, variable slopes, simultaneous drift and step or adversarial conditions",
+    "Success demonstrates this test regime only, not universal homeostasis, physical time dilation or origin attribution"
+  ],
+  "next": "SG026 adversarial overlap: simultaneous drift+step, delayed breaks, colored and heavy-tailed noise; preregister before fresh test.",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ],
+  "executable": "evidence/candidates/2026-11-21-sg025-dual-timescale.py",
+  "related_records": [
+    "TD-CROSSDOMAIN-SG024",
+    "TD-CROSSDOMAIN-SG023"
+  ],
+  "media_archived": false
+}
