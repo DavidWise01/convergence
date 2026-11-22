@@ -1,0 +1,32 @@
+name: SG062 Reproducible Diodic Runtime
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - evidence/candidates/sg062_compat.py
+      - .github/workflows/sg062-repro.yml
+jobs:
+  frozen-replay:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 20
+    steps:
+      - name: Checkout actual published sources
+        uses: actions/checkout@v4
+      - name: Python version
+        run: python3 --version
+      - name: Verify exact published source interface and run smoke
+        run: |
+          mkdir -p sg062-audit
+          SG062_REPORT_DIR=sg062-audit python3 evidence/candidates/sg062_compat.py --smoke
+      - name: Reproduce complete frozen benchmark and capture failures
+        run: |
+          SG062_REPORT_DIR=sg062-audit python3 evidence/candidates/sg062_compat.py --full
+      - name: Preserve reproducibility report even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg062-repro-audit
+          path: sg062-audit/
+          if-no-files-found: warn
