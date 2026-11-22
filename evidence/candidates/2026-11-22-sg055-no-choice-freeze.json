@@ -1,0 +1,77 @@
+{
+  "id": "TD-CROSSDOMAIN-SG055-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "status": "FROZEN_AFTER_CALIBRATION_AND_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "parent": "SG054",
+  "algorithm": "One deterministic lexicographic action table from known-truth calibration. At checkpoints 100,140,180,220 evaluate frozen SG052 trailing100 slope, HAC3 SE and z4.327111573414373. Group observable feature: checkpoint:classification:abs(slope/se) band low<3, mid3-5, hi>=5. From paired calibration score commit_now vs waiting until 240 with penalties correct0, mistaken-zero90, wrong-direction150, abstain18 plus sample .06 per observed datum. Authorize early commit if group has at least 20 cases, sample mean commit loss is strictly less than mean wait loss, and smoothed error-rate*(90) < mean wait loss; otherwise observe. At t240 follow SG052 final decision. Exact ties resolve to observe, no oracle truth/future provided at decision.",
+  "calibration": {
+    "start": 197000000,
+    "per_configuration": 20,
+    "n": 540,
+    "authorized_feature_groups": [
+      {
+        "key": "220:negative:hi",
+        "count": 92,
+        "wrong": 6,
+        "mean_commit_loss": 22.9826086956522,
+        "mean_wait_loss": 23.595652173913095
+      }
+    ],
+    "other_groups": "Not authorized; reproduce source for full table",
+    "min_group": 20,
+    "buffer": 0
+  },
+  "pilot": {
+    "start": 199000000,
+    "per_configuration": 8,
+    "n": 216,
+    "SG052_wait": {
+      "correct": 80,
+      "missed_direction": 0,
+      "false_direction": 9,
+      "abstain": 127,
+      "loss": 6746.4,
+      "observations": 51840,
+      "early": 0
+    },
+    "SG054_threshold4": {
+      "correct": 80,
+      "missed_direction": 0,
+      "false_direction": 12,
+      "abstain": 124,
+      "loss": 7106.4,
+      "observations": 51240,
+      "early": 6
+    },
+    "SG055_ranked": {
+      "correct": 87,
+      "missed_direction": 0,
+      "false_direction": 13,
+      "abstain": 116,
+      "loss": 7099.2,
+      "observations": 51020,
+      "early": 41
+    },
+    "disclosure": "Negative pilot for ranked policy. Retaining training-authorized group unchanged; no retuning."
+  },
+  "holdout": {
+    "start": 203000000,
+    "per_configuration": 40,
+    "n": 1080,
+    "formula": "203000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3]",
+    "no_retuning": true
+  },
+  "loss": {
+    "sample": 0.06,
+    "missed_direction": 90,
+    "false_direction": 150,
+    "abstain": 18
+  },
+  "limitations": [
+    "Calibration is generated from same synthetic family, with conditional feature groups possibly nontransferable.",
+    "Empirical means and simple smoothing are not calibrated decision probabilities or verified confidence bounds.",
+    "The policy chooses one action deterministically but may be inferior to waiting.",
+    "No live use and no adaptive decision feedback."
+  ]
+}
