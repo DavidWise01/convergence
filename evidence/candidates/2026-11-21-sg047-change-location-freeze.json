@@ -1,0 +1,89 @@
+{
+  "id": "TD-CROSSDOMAIN-SG047-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_NEGATIVE_PILOT_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG046",
+  "purpose": "Find late change-point locations and assess whether localized 10-sample-median HAC intervals improve worst-scenario true-slope coverage and loss vs SG046.",
+  "rule": {
+    "candidates": [
+      60,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180
+    ],
+    "score": "For each split, linearly detrend each segment and estimate residual AR1 rho and RMS; score = abs(rho_after-rho_before)+0.35*abs(log(RMS_after/RMS_before)); choose highest score. Flag if score > frozen threshold.",
+    "threshold": 0.5186019321426611,
+    "threshold_calibration": "95th percentile of max-scan scores among 280 control calibration streams without a known t=60 late switch; scenario labels used only for calibration, never online inference.",
+    "estimate": "When flagged, fit OLS trend on 10-sample medians of data from estimated change point through t=239, estimate Newey-West HAC SE lag 3, apply split-calibrated local multiplier 5.346129511387088. When unflagged use whole240 HAC and multiplier 2.291027529910169.",
+    "decision": "Confirm if interval excludes zero; reject if entirely within (-0.0032,.0032); otherwise unresolved. Sample cost .06 each; FP 150, FN 90, abstain 18.",
+    "comparators": "SG046 original frozen flag and frozen calibration as published, plus a full240 global calibration fitted on SG047 calibration set."
+  },
+  "calibration": {
+    "seed_start": 111000000,
+    "streams": 360,
+    "negative_controls": 280,
+    "flagged": 64,
+    "global_z": 2.291027529910169,
+    "localized_z": 5.346129511387088,
+    "source_digest": "128a0c9cf1f6e3e355feda2b9f68c713f7ede6e3fee1d6423ddcf356179314bd"
+  },
+  "pilot": {
+    "seed_start": 113000000,
+    "streams": 180,
+    "late_switches": 40,
+    "late_flagged": 22,
+    "non_late": 140,
+    "non_late_flagged": 7,
+    "median_abs_location_error_among_detected": 0,
+    "baseline": {
+      "correct": 141,
+      "wrong": 7,
+      "abstain": 32,
+      "loss": 4158,
+      "covered": 157
+    },
+    "SG046": {
+      "correct": 132,
+      "wrong": 7,
+      "abstain": 41,
+      "loss": 4320,
+      "covered": 162
+    },
+    "SG047": {
+      "correct": 119,
+      "wrong": 7,
+      "abstain": 54,
+      "loss": 4554,
+      "covered": 156
+    },
+    "disclosure": "Negative pilot fully inspected before freeze; rule retained without tuning."
+  },
+  "holdout": {
+    "seed_start": 117000000,
+    "streams": 720,
+    "per_truth_scenario": 40,
+    "seed_formula": "117000000+200000*scenario_index+10000*int(drift)+101*k,k=0..39",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "no_retuning": true
+  },
+  "limits": [
+    "Onset at continuation t=0 is not identifiable from continuation-only data and should never be scored as a successfully localized internal change.",
+    "Late-oscillation onset t=60 is observable but oscillation onset is not the same as AR1 parameter shift.",
+    "Known labels inform false-alarm threshold calibration; do not claim purely unsupervised threshold selection.",
+    "Retrospective full240 analysis, no saved observations, no live change-point action.",
+    "Coverage under changing correlation may not be exchangeable; all confidence statements empirical."
+  ]
+}
