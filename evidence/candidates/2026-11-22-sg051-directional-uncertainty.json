@@ -1,0 +1,331 @@
+{
+  "id": "TD-CROSSDOMAIN-SG051",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 2,
+  "status": "COMPLETED_MIXED_COVERAGE_IMPROVED_LOSS_NOT_IMPROVED",
+  "parent": "TD-CROSSDOMAIN-SG050",
+  "freeze": "evidence/candidates/2026-11-22-sg051-directional-uncertainty-freeze.json",
+  "freeze_commit": "28bb5b6fc1a41220a5af96f8b6c2ce9b4973b72f",
+  "method": "Full240 HAC lag3 on bin-median slope. Split-calibration z=90th percentile of abs(estimate-programmed_slope)/SE on 540 calibration streams, three genuine directions. Three-way SG050 classification rules unchanged. Retrospective fixed240.",
+  "calibration": {
+    "seed_start": 145000000,
+    "n": 540,
+    "rank": 487,
+    "original_z": 2.291027529910169,
+    "calibrated_z": 2.486294325376533,
+    "original_covered": 478,
+    "calibrated_covered": 487
+  },
+  "pilot": {
+    "seed_start": 147000000,
+    "streams": 270,
+    "original": {
+      "correct": 233,
+      "missed_direction": 1,
+      "false_direction": 10,
+      "abstain": 26,
+      "loss": 5946,
+      "covered": 236
+    },
+    "calibrated": {
+      "correct": 232,
+      "missed_direction": 0,
+      "false_direction": 9,
+      "abstain": 29,
+      "loss": 5760,
+      "covered": 244
+    },
+    "disclosure": "Inspected before protocol freeze; no holdout retuning."
+  },
+  "holdout": {
+    "seed_start": 151000000,
+    "streams": 1080,
+    "seed_formula": "151000000+200000*scenario_index+20000*direction_index+101*k; direction_index=(-,0,+); k=0..39",
+    "SG050": {
+      "correct": 930,
+      "missed_direction": 1,
+      "false_direction": 41,
+      "abstain": 108,
+      "loss": 23736,
+      "covered": 937,
+      "observations": 259200
+    },
+    "SG051": {
+      "correct": 900,
+      "missed_direction": 1,
+      "false_direction": 37,
+      "abstain": 142,
+      "loss": 23748,
+      "covered": 955,
+      "observations": 259200
+    },
+    "changes": 34,
+    "coverage_by_scenario": {
+      "reference": [
+        105,
+        107
+      ],
+      "correlation_switch": [
+        91,
+        93
+      ],
+      "laplace_tail": [
+        103,
+        104
+      ],
+      "subtle_drift": [
+        112,
+        113
+      ],
+      "fast_oscillation": [
+        118,
+        120
+      ],
+      "late_correlation_switch": [
+        87,
+        90
+      ],
+      "late_oscillation": [
+        119,
+        119
+      ],
+      "variable_period": [
+        119,
+        120
+      ],
+      "colored_control": [
+        83,
+        89
+      ]
+    },
+    "coverage_by_truth": {
+      "negative": [
+        303,
+        313
+      ],
+      "zero": [
+        319,
+        323
+      ],
+      "positive": [
+        315,
+        319
+      ]
+    },
+    "remaining_wrong_seed_groups": {
+      "reference": [
+        151020909,
+        151023434,
+        151023636
+      ],
+      "correlation_switch": [
+        151220000,
+        151220202,
+        151221212,
+        151221717,
+        151222020,
+        151222121,
+        151222222,
+        151223131,
+        151223636,
+        151240101
+      ],
+      "laplace_tail": [
+        151420303,
+        151420606,
+        151421515,
+        151422020,
+        151422323,
+        151423333,
+        151423838
+      ],
+      "subtle_drift": [
+        151623838
+      ],
+      "fast_oscillation": [],
+      "late_correlation_switch": [
+        152020000,
+        152020808,
+        152021818,
+        152022626,
+        152023535
+      ],
+      "late_oscillation": [
+        152220404
+      ],
+      "variable_period": [],
+      "colored_control": [
+        152620505,
+        152621111,
+        152621919,
+        152622121,
+        152622525,
+        152622626,
+        152622929,
+        152623131,
+        152623232,
+        152623434,
+        152623838
+      ]
+    },
+    "remaining_miscoverage_seed_groups": {
+      "reference": [
+        151000000,
+        151000202,
+        151000505,
+        151001111,
+        151003737,
+        151003838,
+        151020909,
+        151023434,
+        151023636,
+        151040505,
+        151040707,
+        151043232,
+        151043535
+      ],
+      "correlation_switch": [
+        151201010,
+        151201414,
+        151201515,
+        151201919,
+        151202222,
+        151202626,
+        151203434,
+        151203535,
+        151220000,
+        151220202,
+        151221212,
+        151221717,
+        151222020,
+        151222121,
+        151222222,
+        151223131,
+        151223636,
+        151240000,
+        151240101,
+        151240606,
+        151241818,
+        151242525,
+        151242727,
+        151242929,
+        151243030,
+        151243333,
+        151243434
+      ],
+      "laplace_tail": [
+        151400707,
+        151400909,
+        151401717,
+        151402323,
+        151403131,
+        151403232,
+        151403434,
+        151420303,
+        151420606,
+        151421515,
+        151422020,
+        151422323,
+        151423333,
+        151423838,
+        151441313,
+        151442525
+      ],
+      "subtle_drift": [
+        151600909,
+        151601818,
+        151623838,
+        151641818,
+        151642828,
+        151643333,
+        151643434
+      ],
+      "fast_oscillation": [],
+      "late_correlation_switch": [
+        152000606,
+        152001111,
+        152001313,
+        152001616,
+        152001919,
+        152002525,
+        152002727,
+        152002929,
+        152003131,
+        152003434,
+        152003535,
+        152003636,
+        152003939,
+        152020000,
+        152020808,
+        152021818,
+        152022626,
+        152023535,
+        152040202,
+        152040505,
+        152041212,
+        152041616,
+        152041919,
+        152042020,
+        152042727,
+        152043333,
+        152043434,
+        152043636,
+        152043737,
+        152043838
+      ],
+      "late_oscillation": [
+        152220404
+      ],
+      "variable_period": [],
+      "colored_control": [
+        152600000,
+        152600202,
+        152600303,
+        152600404,
+        152601111,
+        152601212,
+        152601717,
+        152602424,
+        152603030,
+        152603636,
+        152603737,
+        152620505,
+        152621111,
+        152621919,
+        152622121,
+        152622525,
+        152622626,
+        152622929,
+        152623131,
+        152623232,
+        152623434,
+        152623838,
+        152640303,
+        152640909,
+        152641212,
+        152641515,
+        152641717,
+        152642424,
+        152642525,
+        152642626,
+        152642828
+      ]
+    },
+    "wrong_count": 38,
+    "miss_count": 125,
+    "all_noncorrect_cases": 180,
+    "rows_sha256": "3849e0695e34b506192d90dbba49d990c97868665308306c91f84b2045671969"
+  },
+  "finding": "Nominal 90% calibration improved marginal test coverage 86.76% to 88.43% but remained below target. False-direction claims 41→37, unresolved 108→142; four fewer wrong vs 30 fewer correct, modeled loss increases by 12. Worst conditional coverage colored noise 89/120 (74.17%), late correlation 90/120 (75%).",
+  "limitations": [
+    "New seeds but known synthetic families and noise mechanisms.",
+    "Calibrated pooled quantile does not guarantee per-environment coverage; nonexchangeability can under-cover.",
+    "No adaptive sample reduction or new decision semantics; both policies collect 240 observations.",
+    "No independent external data.",
+    "GitHub source uses sibling SG050, separately executed locally against mounted SG050; clean GitHub checkout not yet tested."
+  ],
+  "next": "SG052 joint trend-sign and noise-regime transitions, preserving causal direction and testing shift failure under a single deterministic policy.",
+  "source": "evidence/candidates/2026-11-22-sg051-directional-uncertainty.py",
+  "local_full_holdout": "/mnt/data/sg051/holdout.json"
+}
