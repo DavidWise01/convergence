@@ -1,0 +1,30 @@
+name: SG066 Late-Transition Recovery
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - evidence/candidates/sg066_late_transition.py
+      - .github/workflows/sg066-late-transition.yml
+jobs:
+  frozen-holdout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 20
+    steps:
+      - name: Checkout canonical source
+        uses: actions/checkout@v4
+      - name: Test frozen SG066 pilot, no tuning
+        run: |
+          mkdir -p sg066-audit
+          SG066_REPORT_DIR=sg066-audit python3 evidence/candidates/sg066_late_transition.py pilot
+      - name: Test untouched SG066 holdout
+        run: |
+          SG066_REPORT_DIR=sg066-audit python3 evidence/candidates/sg066_late_transition.py holdout
+      - name: Preserve complete synthetic streams and failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg066-holdout-and-failures
+          path: sg066-audit/
+          if-no-files-found: warn
