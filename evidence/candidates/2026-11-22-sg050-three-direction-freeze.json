@@ -1,0 +1,50 @@
+{
+  "id": "TD-CROSSDOMAIN-SG050-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG-050..061",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "problem": "SG049's positive-vs-zero label mapping treats significant negative trend as rejection of positive drift; cannot identify genuine negative trend.",
+  "method": {
+    "generator": "Nine prior synthetic noise scenarios, exact same noise parameters, but programmed slope sign in {-1,0,+1}. Weak drift magnitude .0027; all others .005. Both policies see identical 240-point continuation and same HAC(3) slope from ten-point bin medians.",
+    "interval": "Full240 OLS/HAC lag3, interval slope ± 2.291027529910169*SE, fixed from SG049.",
+    "SG049_projection": "CI lower>0 => positive, CI upper<0 => zero (reject positive hypothesis), CI inside ±.0032 => zero, otherwise unresolved. A deliberately positive-only projection; does not claim full SG049 boundary challenge replication.",
+    "SG050": "CI lower>0 => positive, upper<0 => negative, CI wholly inside ±.0032 => zero, else unresolved.",
+    "cost": "14.4 sample cost for 240 observations; incorrect nonzero directional claim 150; reporting zero when true nonzero 90; unresolved 18. Same loss function across policies.",
+    "nonleakage": "Decisions use only numeric continuation observations and a precommitted rule; generator true sign is used only to score."
+  },
+  "pilot": {
+    "seed_start": 131000000,
+    "count_per_scenario_direction": 10,
+    "n": 270,
+    "SG049_projection": {
+      "correct": 149,
+      "missed_direction": 90,
+      "false_direction": 3,
+      "abstain": 28,
+      "loss": 12942
+    },
+    "SG050": {
+      "correct": 233,
+      "missed_direction": 0,
+      "false_direction": 9,
+      "abstain": 28,
+      "loss": 5742
+    },
+    "changes": 96,
+    "disclosure": "Pilot inspected. SG050 improves sensitivity to genuine negative trend but raises false directional claims from 3 to 9. No retuning after pilot."
+  },
+  "holdout": {
+    "seed_start": 139000000,
+    "count_per_scenario_direction": 40,
+    "n": 1080,
+    "seed_formula": "139000000+200000*scenario_index+20000*direction_index+101*k; direction_index indexes -1,0,+1; k=0..39",
+    "no_retuning": true
+  },
+  "phase_progress": "Count 1/12 (8.3%) only after source, freeze, complete holdout, GitHub record and index verified",
+  "limitations": [
+    "Synthetic scenarios previously known; fresh seeds and genuine negative ground truth but no new independent real-world validation.",
+    "One-sided and two-sided statistical semantics differ; SG049 projection lacks its boundary-warning challenge.",
+    "False direction penalty selected as synthetic decision model, not empirical impact.",
+    "The old positive-only formulation was not designed to classify negative drift; ranking both on ternary labels is a changed task."
+  ]
+}
