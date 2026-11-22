@@ -272,7 +272,7 @@
         118613232
       ]
     },
-    "rows_sha256": ""
+    "rows_sha256": "2c155ee9815b759352338625c1d397cb6f7937851e84a253d4a04c097543a77f"
   },
   "finding": "Change-point localization is useful as a descriptive alarm but its use for cutting history failed the predeclared decision target. SG047 produced 21 fewer covered slopes and 1644 more loss than frozen SG046; abrupt correlation-switch coverage deteriorated from 64/80 to 53/80. Early shift at continuation t=0 cannot be localized within only continuation observations.",
   "limitations": [
