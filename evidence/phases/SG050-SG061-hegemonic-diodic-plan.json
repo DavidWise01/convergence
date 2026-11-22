@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 4,
-  "percent": 33.3,
+  "completed": 5,
+  "percent": 41.7,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-054",
+  "next": "SG-055",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -54,7 +54,8 @@
       "turn": 5,
       "target": "Single deterministic evidence-ranked policy",
       "progress_percent": 41.7,
-      "status": "PENDING"
+      "status": "VERIFIED_NEGATIVE",
+      "evidence": "evidence/candidates/2026-11-22-sg054-hegemonic-policy.json"
     },
     {
       "id": "SG-055",
