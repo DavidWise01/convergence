@@ -1,0 +1,113 @@
+{
+  "id": "TD-CROSSDOMAIN-SG050",
+  "date": "2026-11-22",
+  "status": "COMPLETED_MIXED_DIRECTIONAL_RECOVERY_WITH_MORE_FALSE_CLAIMS",
+  "phase": "SG050-SG061",
+  "phase_milestone": 1,
+  "phase_progress_percent": 8.3,
+  "freeze_commit": "b20a5aee721d220ce30d2d9fa390892ee9297f05",
+  "freeze": "evidence/candidates/2026-11-22-sg050-three-direction-freeze.json",
+  "method": "Full240 HAC(3) slope from ten-sample median blocks. Prior fixed z 2.291027529910169 and margin .0032. Three labels positive if lower>0, negative if upper<0, zero if interval within ±.0032, else unresolved. No future or truth lookahead; negative drift genuinely generated. Compare to positive-only SG049 rule projection, not entire SG049 warning-check pipeline.",
+  "pilot": {
+    "seed_start": 131000000,
+    "streams": 270,
+    "positive_only": {
+      "correct": 149,
+      "missed_direction": 90,
+      "false_direction": 3,
+      "abstain": 28,
+      "loss": 12942
+    },
+    "three_way": {
+      "correct": 233,
+      "missed_direction": 0,
+      "false_direction": 9,
+      "abstain": 28,
+      "loss": 5742
+    },
+    "changed": 96,
+    "disclosure": "Pilot before freeze, no retuning."
+  },
+  "holdout": {
+    "seed_start": 139000000,
+    "streams": 1080,
+    "per_scenario_direction": 40,
+    "seed_formula": "139000000+200000*scenario_index+20000*direction_index+101*k; direction_index=(negative,zero,positive); k=0..39",
+    "positive_only": {
+      "correct": 591,
+      "missed_direction": 353,
+      "false_direction": 25,
+      "abstain": 111,
+      "observations": 259200,
+      "loss": 53070
+    },
+    "three_way": {
+      "correct": 912,
+      "missed_direction": 0,
+      "false_direction": 57,
+      "abstain": 111,
+      "observations": 259200,
+      "loss": 26100
+    },
+    "changed": 385,
+    "transitions": {
+      "missed_direction_to_correct": 353,
+      "correct_to_false_direction": 32
+    },
+    "false_direction_distribution": {
+      "reference": 6,
+      "correlation_switch": 11,
+      "laplace_tail": 9,
+      "subtle_drift": 6,
+      "fast_oscillation": 2,
+      "late_correlation_switch": 9,
+      "late_oscillation": 1,
+      "variable_period": 0,
+      "colored_control": 13
+    },
+    "unresolved_distribution": {
+      "reference": 0,
+      "correlation_switch": 28,
+      "laplace_tail": 0,
+      "subtle_drift": 0,
+      "fast_oscillation": 32,
+      "late_correlation_switch": 8,
+      "late_oscillation": 10,
+      "variable_period": 11,
+      "colored_control": 22
+    },
+    "error_plus_abstention_cases": 168,
+    "examples": [
+      {
+        "seed": 139020202,
+        "scenario": "reference",
+        "truth": "zero",
+        "assigned": "positive"
+      },
+      {
+        "seed": 139020707,
+        "scenario": "reference",
+        "truth": "zero",
+        "assigned": "negative"
+      },
+      {
+        "seed": 139200707,
+        "scenario": "correlation_switch",
+        "truth": "negative",
+        "assigned": "unresolved"
+      }
+    ],
+    "rows_sha256": "fe7dbda4c71148d9257159fd44d46ba3b5032a8dd093db9e98d1949d8fa2f4ac"
+  },
+  "assessment": "Positive-only projection is not intended for true negative hypotheses. Three-way directional classifier correctly resolves 353 negative cases missed by projection, but also makes 32 new false directions versus projection. Do not present loss improvement as proof against a competitive ternary baseline. Correlated noise remains dominant source of errors.",
+  "limitations": [
+    "Synthetic known families and observed samples only; no field deployment.",
+    "Original SG049 boundary warning check not reproduced in projection.",
+    "Loss weights are research choices and not real application stakes.",
+    "A strong direction-only classifier must test against a better ternary baseline and real negative-noise variations.",
+    "No benefit in sample counts; both fixed240."
+  ],
+  "full_ledger": "/mnt/data/sg050/holdout.json",
+  "source": "evidence/candidates/2026-11-22-sg050-three-direction.py",
+  "next": "SG051 directional uncertainty calibration: three-class confidence interval coverage and sign-error control, with explicit conservative ternary comparator and negative controls."
+}
