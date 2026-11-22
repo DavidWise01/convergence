@@ -1,0 +1,99 @@
+{
+  "id": "TD-CROSSDOMAIN-SG060",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 11,
+  "status": "COMPLETED_WITH_PUBLISHED_COMPATIBILITY_FAILURES",
+  "freeze": "evidence/candidates/2026-11-22-sg060-reproducibility-freeze.json",
+  "freeze_commit": "8f791a470161e5410d4378a58f0cdeb417424e91",
+  "method": "Audit ten SG050..059 local executed source copies by Python AST compile, importlib import and JSON evidence parse. Separately fetch exact published GitHub scripts and inspect their exported functions and required downstream calls. Create an isolated temporary staging copy with additive aliases for diagnosis; do not overwrite historical source. Provide a read-only published repository audit runner.",
+  "local_audit": {
+    "syntax_compiled": 10,
+    "total": 10,
+    "imports_passed": 10,
+    "local_json_parsed": 10,
+    "temporary_compat_staging_imports_passed": 10,
+    "local_audit_path": "/mnt/data/sg060/local-audit.json",
+    "local_temp_staging_path": "/mnt/data/sg060/local-stage-smoke.json"
+  },
+  "canonical_published_source": {
+    "source_files_fetched": 10,
+    "source_file_names": [
+      "sg050-three-direction.py",
+      "sg051-directional-uncertainty.py",
+      "sg052-joint-transition.py",
+      "sg053-diodic-replay.py",
+      "sg054-hegemonic-policy.py",
+      "sg055-no-choice.py",
+      "sg056-loss-sensitivity.py",
+      "sg057-adaptive-observation.py",
+      "sg058-unseen-disturbance.py",
+      "sg059-mixture-generalization.py"
+    ],
+    "direct_missing_interfaces": [
+      {
+        "caller": "SG051",
+        "callee": "SG050",
+        "required": "three_way",
+        "actual": "labels (old,new) and outcome",
+        "risk": "SG051.run raises AttributeError upon its first directional classification"
+      },
+      {
+        "caller": "SG053/SG054/SG055",
+        "callee": "SG052",
+        "required": "kind",
+        "actual": "outcome",
+        "risk": "Each consumer calls missing attribute during scoring; SG057, SG058 and SG059 inherit this via SG055"
+      }
+    ],
+    "dependency_risk_categories": [
+      {
+        "consumer": "SG051",
+        "cause": "SG050.three_way absent"
+      },
+      {
+        "consumer": "SG053",
+        "cause": "SG052.kind absent"
+      },
+      {
+        "consumer": "SG054",
+        "cause": "SG052.kind absent"
+      },
+      {
+        "consumer": "SG055",
+        "cause": "SG052.kind absent"
+      },
+      {
+        "consumer": "SG057",
+        "cause": "SG055 calls SG052.kind absent"
+      },
+      {
+        "consumer": "SG058/SG059",
+        "cause": "SG057 transitive missing SG052.kind"
+      }
+    ],
+    "affected_categories": 6,
+    "direct_missing_symbols": 2,
+    "clean_checkout_end_to_end": "NOT_VERIFIED",
+    "canonical_unmodified_dependency_completeness": "FAILED_STATIC_CHECK",
+    "published_full_metric_hash_replay": "NOT_VERIFIED",
+    "temporary_aliases_for_diagnosis_only": [
+      "SG050.three_way(lo,hi)=SG050.labels(lo,hi)[1]",
+      "SG052.kind=SG052.outcome"
+    ],
+    "historical_repo_files_modified": false
+  },
+  "results": {
+    "software_reproducibility": "BLOCKED",
+    "numerical_evidence": "PRESERVED_NOT_INDEPENDENTLY_RECONFIRMED",
+    "causal_prefix_results": "PRIOR_LOCAL_TESTS_ONLY_NOT_REPROVEN_IN_CANONICAL_CHECKOUT"
+  },
+  "limitations": [
+    "Local scripts are not byte-for-byte identical to published scripts; local smoke is not a canonical clean checkout pass.",
+    "No live GitHub Actions runtime or untouched checkout execution was available in this session.",
+    "The exported-function audit is static, so the complete set of possible numerical mismatches remains undetermined.",
+    "Temporary compatibility copy resolves interface names for a smoke test, but alone cannot establish numerical identity of all original result sets."
+  ],
+  "next": "SG061 phase closure, 100% milestones after audited freeze. Adopt SG057 only as synthetic benchmark best under specified costs; preserve SG059 residual errors and block full reproduction claims pending clean source runtime.",
+  "runner": "evidence/candidates/2026-11-22-sg060-repro-check.py"
+}
