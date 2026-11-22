@@ -1,0 +1,27 @@
+name: SG064 Source and Ledger Provenance
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - evidence/candidates/sg064_provenance.py
+      - .github/workflows/sg064-provenance.yml
+jobs:
+  canonical-ledger:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact published sources and evidence
+        uses: actions/checkout@v4
+      - name: Verify source SHA256 and frozen ledger digests
+        run: |
+          mkdir -p sg064-audit
+          SG064_REPORT_DIR=sg064-audit python3 evidence/candidates/sg064_provenance.py
+      - name: Preserve mismatches and passing report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg064-provenance
+          path: sg064-audit/
+          if-no-files-found: warn
