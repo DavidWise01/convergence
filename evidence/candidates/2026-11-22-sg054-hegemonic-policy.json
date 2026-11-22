@@ -1,0 +1,215 @@
+{
+  "id": "TD-CROSSDOMAIN-SG054",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 5,
+  "status": "COMPLETE_NEGATIVE_EARLY_COMMIT_POLICY_REGRESSION",
+  "parent": "TD-CROSSDOMAIN-SG053",
+  "freeze": "evidence/candidates/2026-11-22-sg054-hegemonic-policy-freeze.json",
+  "freeze_commit": "7a61929a1f8a3e053ffd7c02dcfcb4fd1cbe176f",
+  "method": "Deterministic checkpoint-based action among commit_negative, commit_zero, commit_positive, observe and abstain. At n=100,140,180,220, use only first n values and z=17.308446293657492 (4×SG052=4.327111573414373) to decide; at n=240 use SG052 original interval. The first non-observe action ends collection. Every case scored against final post-transition direction, with sample cost .06 per acquired observation.",
+  "pilot": {
+    "start": 185000000,
+    "streams": 162,
+    "threshold_multipliers_swept": [
+      1,
+      1.25,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5,
+      8
+    ],
+    "selected": 4,
+    "baseline": {
+      "correct": 63,
+      "missed_direction": 0,
+      "false_direction": 7,
+      "abstain": 92,
+      "loss": 5038.8,
+      "samples": 38880
+    },
+    "candidate": {
+      "correct": 68,
+      "missed_direction": 0,
+      "false_direction": 11,
+      "abstain": 83,
+      "loss": 5530.8,
+      "samples": 38280,
+      "early_commits": 8
+    },
+    "disclosure": "Multiple thresholds tested on pilot prior to freeze; chosen threshold still a loss regression. Frozen before untouched holdout."
+  },
+  "holdout": {
+    "start": 191000000,
+    "n": 1080,
+    "seed_formula": "191000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3]; k=0..39",
+    "baseline": {
+      "correct": 436,
+      "missed_direction": 2,
+      "false_direction": 45,
+      "abstain": 597,
+      "loss": 33228,
+      "observations": 259200,
+      "early_commits": 0
+    },
+    "candidate": {
+      "correct": 437,
+      "missed_direction": 2,
+      "false_direction": 54,
+      "abstain": 587,
+      "loss": 34286.4,
+      "observations": 257340,
+      "early_commits": 21
+    },
+    "loss_increase": 1058.4,
+    "observation_savings": 1860,
+    "observation_savings_percent": 0.71759,
+    "by_noise": {
+      "stable_rho72": {
+        "baseline": {
+          "correct": 186,
+          "missed_direction": 0,
+          "false_direction": 9,
+          "abstain": 165
+        },
+        "candidate": {
+          "correct": 184,
+          "missed_direction": 0,
+          "false_direction": 13,
+          "abstain": 163
+        }
+      },
+      "rho72_to94": {
+        "baseline": {
+          "correct": 71,
+          "missed_direction": 1,
+          "false_direction": 27,
+          "abstain": 261
+        },
+        "candidate": {
+          "correct": 73,
+          "missed_direction": 1,
+          "false_direction": 29,
+          "abstain": 257
+        }
+      },
+      "rho94_to72": {
+        "baseline": {
+          "correct": 179,
+          "missed_direction": 1,
+          "false_direction": 9,
+          "abstain": 171
+        },
+        "candidate": {
+          "correct": 180,
+          "missed_direction": 1,
+          "false_direction": 12,
+          "abstain": 167
+        }
+      }
+    },
+    "all_wrong_decision_seeds": [
+      191031919,
+      191032525,
+      191200808,
+      191200909,
+      191201111,
+      191201616,
+      191202222,
+      191202626,
+      191230000,
+      191230101,
+      191230202,
+      191230303,
+      191230404,
+      191231616,
+      191233030,
+      191233838,
+      191261717,
+      191262323,
+      191262525,
+      191263232,
+      191263939,
+      191402929,
+      191433535,
+      192030101,
+      192031717,
+      192061010,
+      192201313,
+      192203535,
+      192230505,
+      192232222,
+      192232626,
+      192232727,
+      192232828,
+      192261616,
+      192431616,
+      193000202,
+      193031616,
+      193060202,
+      193200606,
+      193200909,
+      193201111,
+      193230303,
+      193231010,
+      193231212,
+      193231919,
+      193232020,
+      193232929,
+      193233636,
+      193261515,
+      193261717,
+      193262424,
+      193262727,
+      193262929,
+      193431515,
+      193431616,
+      193432424
+    ],
+    "all_early_commit_seeds": [
+      191001414,
+      191002222,
+      191063939,
+      191202222,
+      191202626,
+      191263232,
+      191402929,
+      191433535,
+      191463434,
+      192061717,
+      192461212,
+      192462424,
+      193000202,
+      193030505,
+      193060202,
+      193232929,
+      193261717,
+      193402121,
+      193403434,
+      193431313,
+      193432020
+    ],
+    "full_records_digest": "e7f79a2f3cd416fca03f05a67f4f00f06dc9a0c6fdf142297b954ee365dd1e6b",
+    "full_local_evidence": "/mnt/data/sg054/holdout-full.json",
+    "prefix_replay_test": {
+      "modified_future_trials": 480,
+      "prefix_interference": 0,
+      "json_round_trip_mismatch": 0,
+      "scope": "120 deterministic streams under rho .72→.94 at checkpoints 100,140,180,220, upward ramp suffix changed; limited test not formal proof"
+    }
+  },
+  "conclusion": "At frozen costs, full-window patience dominates SG054 tested early commitment: 1860 fewer measurements worth only 111.6 units, while 9 extra false directional decisions increase total loss 1058.4. Do not adopt candidate as best-option production policy.",
+  "limitations": [
+    "Fresh heldout seeds but same synthetic generator family, no field validation.",
+    "SG054 policy chooses first confidently classified prefix, and the post-change truth may not yet be observable at that time.",
+    "Multiple pilot multipliers were evaluated; subsequent holdout untouched but algorithm selection was pilot informed.",
+    "Prefix tests establish noninterference under tested modifications only.",
+    "GitHub code re-fetched, clean GitHub checkout runtime pending."
+  ],
+  "next": "SG055 deterministic total ordering of actions with explicit risk thresholds, including no-choice best action ‘observe’ when premature commitment is unsafe",
+  "source": "evidence/candidates/2026-11-22-sg054-hegemonic-policy.py",
+  "phase_progress_after_verify": 41.7
+}
