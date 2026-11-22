@@ -1,0 +1,200 @@
+{
+  "id": "SG-PHASE-II-SG061-CLOSURE",
+  "date": "2026-11-22",
+  "phase_name": "Hegemonic Diodic Decision Engine",
+  "status": "CLOSED_RESEARCH_PHASE_WITH_REPRODUCIBILITY_BLOCKERS",
+  "phase_start": "SG-050",
+  "phase_end": "SG-061",
+  "planned_turns": 12,
+  "documented_turns": 12,
+  "completion_percent": 100,
+  "meaning_of_completion": "All 12 scheduled milestones evaluated and evidence documented; NOT all hypotheses successful nor all reproducibility blockers removed.",
+  "freeze": "evidence/phases/SG050-SG061-phase-closure-freeze.json",
+  "freeze_commit": "265b440c6d9d45b201b00f4af9cceba678b06666",
+  "policy_selection": {
+    "name": "SG057 early abstention on prefix-only evidence",
+    "description": "Deterministic controller uses only observed prefixes. At t=220, if still unresolved and one of two frozen low-SE confidence-feature groups is authorized, abstain; otherwise continue to 240 and apply frozen SG052 directional decision.",
+    "policy_source": "evidence/candidates/2026-11-22-sg057-adaptive-observation.py",
+    "policy_evidence": "evidence/candidates/2026-11-22-sg057-adaptive-observation.json",
+    "selection_basis": "Only tested early-adaptation policy with lower heldout modeled loss than wait under original cost weights; benefit remained on SG058 and SG059 synthetic stress tests.",
+    "status": "RESEARCH_CANDIDATE_ONLY_NOT_DEPLOYABLE",
+    "non_adopted": [
+      "SG054 initial early commitment: larger loss than wait",
+      "SG055 empirical ranked early commitment: larger loss than wait"
+    ],
+    "diodic_invariant": "Present action uses observed prefix only, future may not revise earlier actions; historical evidence append-only; tested noninterference is not formal proof.",
+    "hegemonic_invariant": "One deterministic action rank and tie-break, with observe or abstain permitted; not competing authorities or votes."
+  },
+  "holdout_evidence": [
+    {
+      "id": "SG057",
+      "n": 1080,
+      "wait": {
+        "correct": 475,
+        "wrong": 37,
+        "abstain": 568,
+        "observations": 259200,
+        "loss": 31326
+      },
+      "candidate": {
+        "correct": 449,
+        "wrong": 25,
+        "abstain": 606,
+        "observations": 254780,
+        "loss": 29944.8
+      },
+      "saved_observations": 4420,
+      "loss_reduction": 1381.2,
+      "source": "evidence/candidates/2026-11-22-sg057-adaptive-observation.json"
+    },
+    {
+      "id": "SG058",
+      "n": 900,
+      "wait": {
+        "correct": 243,
+        "wrong": 38,
+        "abstain": 619,
+        "observations": 216000,
+        "loss": 29682
+      },
+      "candidate": {
+        "correct": 231,
+        "wrong": 28,
+        "abstain": 641,
+        "observations": 212860,
+        "loss": 28509.6
+      },
+      "saved_observations": 3140,
+      "loss_reduction": 1172.4,
+      "source": "evidence/candidates/2026-11-22-sg058-unseen-disturbance.json"
+    },
+    {
+      "id": "SG059",
+      "n": 720,
+      "wait": {
+        "correct": 141,
+        "wrong": 73,
+        "abstain": 506,
+        "observations": 172800,
+        "loss": 30426
+      },
+      "candidate": {
+        "correct": 137,
+        "wrong": 69,
+        "abstain": 514,
+        "observations": 169860,
+        "loss": 29793.6
+      },
+      "saved_observations": 2940,
+      "loss_reduction": 632.4,
+      "source": "evidence/candidates/2026-11-22-sg059-mixture-generalization.json"
+    }
+  ],
+  "aggregate_descriptive_only": {
+    "streams": 2700,
+    "candidate_wrong": 122,
+    "candidate_abstain": 1761,
+    "observations_saved": 10500,
+    "modeled_loss_reduction": 3186,
+    "warning": "Totals are sums of three distinct synthetic holdouts; not a pooled external validation, not three independent source ancestries."
+  },
+  "milestone_dispositions": [
+    {
+      "id": "SG050",
+      "status": "documented, mixed sign recovery"
+    },
+    {
+      "id": "SG051",
+      "status": "documented, improved coverage but no lower loss"
+    },
+    {
+      "id": "SG052",
+      "status": "documented, lower loss but many abstentions"
+    },
+    {
+      "id": "SG053",
+      "status": "documented, causal audit passed tested paths"
+    },
+    {
+      "id": "SG054",
+      "status": "documented, negative early-commit result"
+    },
+    {
+      "id": "SG055",
+      "status": "documented, negative ranked-commit versus wait"
+    },
+    {
+      "id": "SG056",
+      "status": "documented, cost-dependent policy rankings"
+    },
+    {
+      "id": "SG057",
+      "status": "documented, research candidate selected"
+    },
+    {
+      "id": "SG058",
+      "status": "documented, favorable synthetic disturbance transfer"
+    },
+    {
+      "id": "SG059",
+      "status": "documented, favorable mixed synthetic holdout with failures"
+    },
+    {
+      "id": "SG060",
+      "status": "documented, published API audit failed"
+    },
+    {
+      "id": "SG061",
+      "status": "documented, phase closure"
+    }
+  ],
+  "open_failure_register": [
+    {
+      "id": "BLOCKER-001",
+      "severity": "BLOCKS CLEAN REPRODUCTION",
+      "detail": "Published SG050 lacks three_way() called by SG051; SG052 lacks kind() called directly or indirectly downstream.",
+      "evidence": "evidence/candidates/2026-11-22-sg060-reproducibility.json",
+      "exit_condition": "Compatibility layer or new versioned modules pass isolated checkout, exact frozen outputs and hashes verified; historical evidence remains immutable."
+    },
+    {
+      "id": "BLOCKER-002",
+      "severity": "HIGH",
+      "detail": "SG059 onset165 produced 53 incorrect directional decisions out of 180; post-change samples may be too scarce for current trailing estimator.",
+      "evidence": "evidence/candidates/2026-11-22-sg059-mixture-generalization.json",
+      "exit_condition": "Predeclare a new test for unfamiliar late transitions and demonstrate lower wrong-decision cost on held-out mixtures."
+    },
+    {
+      "id": "BLOCKER-003",
+      "severity": "HIGH",
+      "detail": "SG059 candidate abstained on 514/720 streams and still made 69 wrong directional decisions.",
+      "evidence": "evidence/candidates/2026-11-22-sg059-mixture-generalization.json",
+      "exit_condition": "Calibrate uncertainty and decision cost on a genuinely distinct target distribution."
+    },
+    {
+      "id": "BLOCKER-004",
+      "severity": "HIGH",
+      "detail": "All experiments were constructed synthetic generators and controlled costs, not observed operational data; calibrations are not transferable by assumption.",
+      "exit_condition": "Acquire and preregister independent external or operational test data and stakes before any deployment assessment."
+    },
+    {
+      "id": "BLOCKER-005",
+      "severity": "MEDIUM",
+      "detail": "Hash-chain and prefix tests cover predefined perturbations, not formal verification of arbitrary software behavior.",
+      "evidence": "evidence/candidates/2026-11-22-sg053-diodic-replay.json",
+      "exit_condition": "Module-level static guards plus tests including forbidden lookahead and chain tampering."
+    }
+  ],
+  "next_phase": {
+    "id": "SG062+",
+    "title": "Reproducible Diodic Runtime & Robust Decision Gates",
+    "first_bound": "SG062 — Canonical Dependency Repair",
+    "priorities": [
+      "Make canonical GitHub source executable through additive, versioned compatibility module; run isolated clean checkout and match old summary hashes",
+      "Preserve append-only evidence, re-fetch commit and validate exact source ancestry",
+      "Test late onset165 contamination and false directions",
+      "Use heldout external-type data before deployment claims"
+    ],
+    "handoff": "No authority voting, Byzantine consensus, or witness-root work in this next phase. If it becomes necessary, close and recharter separately."
+  },
+  "repository": "DavidWise01/convergence"
+}
