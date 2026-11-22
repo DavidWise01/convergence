@@ -1,0 +1,240 @@
+{
+  "id": "TD-CROSSDOMAIN-SG045",
+  "date": "2026-11-21",
+  "status": "MIXED_SMALL_MARGINAL_GAIN_WORST_GROUP_STILL_UNDERCOVERED",
+  "parent": "TD-CROSSDOMAIN-SG044",
+  "freeze": "evidence/candidates/2026-11-21-sg045-stability-freeze.json",
+  "freeze_commit": "5138d256cc89eb89ca779083a20fb1dc0240a1c1",
+  "experiment": "Full240 residual AR1 and early/late 120-sample detrended AR1/RMS change diagnostic, flag |delta_rho|>.22 or RMS max/min>1.5, grouped with overall residual AR1 medium/high. HAC lag3 on 24 10-point medians; calibration split-quantile 90%; groups n<30 fallback to pooled.",
+  "calibration": {
+    "seed_start": 99000000,
+    "streams": 360,
+    "global_multiplier": 2.544770048807047,
+    "groups": {
+      "shift_high": {
+        "n": 32,
+        "z": 2.8676243887109742
+      },
+      "shift_medium": {
+        "n": 5,
+        "z": 2.544770048807047,
+        "fallback": true
+      },
+      "stable_high": {
+        "n": 210,
+        "z": 2.546990603383594
+      },
+      "stable_medium": {
+        "n": 113,
+        "z": 2.544770048807047
+      }
+    }
+  },
+  "pilot": {
+    "seed_start": 100000000,
+    "streams": 180,
+    "pooled": {
+      "covered": 163,
+      "correct": 136,
+      "FP": 9,
+      "FN": 0,
+      "abstain": 35,
+      "loss": 4572
+    },
+    "grouped": {
+      "covered": 163,
+      "correct": 135,
+      "FP": 9,
+      "FN": 0,
+      "abstain": 36,
+      "loss": 4590
+    },
+    "disclosure": "Negative pilot inspected before freeze and parameters retained without retuning."
+  },
+  "holdout": {
+    "seed_start": 101000000,
+    "streams": 720,
+    "seed_formula": "101000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "global": {
+      "covered": 659,
+      "coverage": 0.91528,
+      "mean_width": 0.00391624,
+      "correct": 544,
+      "FP": 24,
+      "FN": 0,
+      "abstain": 152,
+      "loss": 16704,
+      "observations": 172800
+    },
+    "grouped": {
+      "covered": 660,
+      "coverage": 0.91667,
+      "mean_width": 0.00397455,
+      "correct": 540,
+      "FP": 23,
+      "FN": 0,
+      "abstain": 157,
+      "loss": 16644,
+      "observations": 172800
+    },
+    "scenario_coverage": {
+      "reference": [
+        73,
+        73
+      ],
+      "correlation_switch": [
+        64,
+        65
+      ],
+      "laplace_tail": [
+        74,
+        74
+      ],
+      "subtle_drift": [
+        75,
+        75
+      ],
+      "fast_oscillation": [
+        80,
+        80
+      ],
+      "late_correlation_switch": [
+        70,
+        70
+      ],
+      "late_oscillation": [
+        79,
+        79
+      ],
+      "variable_period": [
+        79,
+        79
+      ],
+      "colored_control": [
+        65,
+        65
+      ]
+    },
+    "grouped_observable": {
+      "stable_medium": [
+        211,
+        227
+      ],
+      "shift_medium": [
+        11,
+        14
+      ],
+      "stable_high": [
+        389,
+        425
+      ],
+      "shift_high": [
+        49,
+        54
+      ]
+    },
+    "worst_environment": "81.25% (65/80) for abrupt correlation shift and colored noise",
+    "missed_coverage_seeds": [
+      101001010,
+      101001616,
+      101010202,
+      101010404,
+      101010808,
+      101013333,
+      101013737,
+      101200000,
+      101200505,
+      101201010,
+      101201414,
+      101201616,
+      101201717,
+      101202929,
+      101203434,
+      101210404,
+      101210808,
+      101211414,
+      101212323,
+      101212727,
+      101213737,
+      101213838,
+      101403838,
+      101411010,
+      101411313,
+      101412121,
+      101412222,
+      101413434,
+      101601818,
+      101602222,
+      101610606,
+      101611414,
+      101612525,
+      102001414,
+      102001717,
+      102002828,
+      102002929,
+      102010202,
+      102010505,
+      102011010,
+      102011111,
+      102011717,
+      102013838,
+      102211616,
+      102412929,
+      102600303,
+      102600505,
+      102602424,
+      102602626,
+      102603434,
+      102603838,
+      102610101,
+      102611313,
+      102611616,
+      102611717,
+      102612626,
+      102612727,
+      102613030,
+      102613232,
+      102613535
+    ],
+    "miss_count": 60,
+    "rows_sha256": "067b34dc8f629f5046a0909f29f42b0846fadedd10c1e8be1a58afd1bf7d18a8"
+  },
+  "findings": [
+    "Marginal coverage improved by 1/720 and total modeled loss reduced 60 units, but four fewer correct decisions and five more abstentions.",
+    "Worst-environment coverage remained 81.25%; stability flag alone did not resolve conditional miscoverage.",
+    "Diagnostic features and calibration use the full 240-sample continuation; no online warning or causal source identification.",
+    "Pooled calibration on this new calibration range achieves over 90% marginal holdout, unlike previous SG044 seed ranges, illustrating seed sensitivity."
+  ],
+  "limitations": [
+    "Fresh seeds but same synthetic scenario families, not external physical data.",
+    "Stationarity diagnostic threshold pilot-informed and full-data retrospective.",
+    "Scenario-level conditional coverage is not guaranteed by bins of observable features.",
+    "Known truth used only for synthetic calibration and evaluation.",
+    "All 60 miscoverage seeds are archived here; exact slope estimates, uncertainty and features are regenerated by executable and saved in local holdout JSON."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python pilot",
+      "result": "180 streams, no coverage improvement, one extra abstention"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "5138d256cc89eb89ca779083a20fb1dc0240a1c1 prior to holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python frozen holdout",
+      "result": "720 streams; group coverage 660/720, 60 miscoverage; loss 16644 vs 16704 pooled"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local adjusted sibling-dependency rerun",
+      "result": "Reproduced same 660/720 and 16644 after using SG043 dependency as sibling source"
+    }
+  ],
+  "next": "SG046 evaluate calibration under explicit nonstationarity: segment-local intervals, shift flags' sensitivity/specificity, and worst-environment coverage with a fallback to broad uncertainty.",
+  "executable": "evidence/candidates/2026-11-21-sg045-stability.py",
+  "local_full_ledger": "/mnt/data/sg045/holdout.json"
+}
