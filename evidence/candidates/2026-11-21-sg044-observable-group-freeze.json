@@ -1,0 +1,74 @@
+{
+  "id": "TD-CROSSDOMAIN-SG044-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_CALIBRATION_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG043",
+  "objective": "Compare group-conditioned against global split-calibrated HAC trend intervals, grouping solely by observed detrended residual AR1 coefficient, not hidden synthetic scenario labels.",
+  "calibration": {
+    "start_seed": 91000000,
+    "streams": 360,
+    "seed_formula": "91000000+200000*scenario_index+10000*int(drift)+101*k, k=0..19",
+    "target_marginal_coverage": 0.9,
+    "rank_formula": "ceil((n+1)*.90), clipped to n",
+    "global_multiplier": 2.417074521762357,
+    "groups": [
+      {
+        "name": "low",
+        "condition": "rho < .50",
+        "n": 0,
+        "multiplier": 2.417074521762357,
+        "fallback_to_global": true
+      },
+      {
+        "name": "medium",
+        "condition": ".50 <= rho < .80",
+        "n": 118,
+        "multiplier": 3.0158863605624022,
+        "fallback_to_global": false
+      },
+      {
+        "name": "high",
+        "condition": "rho >= .80",
+        "n": 242,
+        "multiplier": 2.1887026468259654,
+        "fallback_to_global": false
+      }
+    ],
+    "calibration_global_coverage": "325/360",
+    "calibration_group_coverage": "327/360"
+  },
+  "features": "Using complete 240-sample continuation, subtract least-squares linear trend from raw measurements then compute residual AR1 as sum(r[t]*r[t-1])/sum(r[t-1]^2). Group by fixed cutoffs .50/.80.",
+  "decision": "Full240 ten-sample medians, centered OLS slope, HAC lag 3 SE. Interval estimate ± group_multiplier*SE. Confirm if interval excludes zero, reject if interval entirely in (-.0032,.0032), otherwise unresolved. Same rule for global benchmark.",
+  "fallback": "Group with <30 calibration points must use global multiplier; empty group explicitly recorded.",
+  "holdout": {
+    "start_seed": 97000000,
+    "streams": 720,
+    "formula": "97000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "report": [
+      "coverage by scenario and observable group",
+      "mean interval width",
+      "false confirmations and rejections",
+      "abstentions",
+      "loss",
+      "all failed-coverage cases"
+    ],
+    "no_parameter_change_after_freeze": true
+  },
+  "limitations": [
+    "Groups selected by full observations, not live predecision; this is an interval audit, not online stopping policy.",
+    "No observations in low bin during calibration; global fallback is not evidence of conditional coverage there.",
+    "Calibrated on known synthetic generator family; only seeds change.",
+    "Split conformal marginal coverage needs exchangeability, cannot guarantee each group's coverage under temporal changes."
+  ]
+}
