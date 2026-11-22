@@ -38,11 +38,13 @@ def install_aliases():
             if self.n==52 and not hasattr(module,"kind"):
                 if not hasattr(module,"outcome"):raise RuntimeError("SG052 lacks outcome")
                 module.kind=module.outcome
+            if self.n==56 and not hasattr(module,"P"):
+                module.P=("SG052_wait","SG054_threshold4","SG055_ranked")
     def hooked(name,location,*a,**kw):
         spec=original(name,location,*a,**kw)
         if spec is not None and spec.loader is not None:
             filename=pathlib.Path(str(location)).name
-            for n in (50,52):
+            for n in (50,52,56):
                 if filename==source(n).name:
                     spec.loader=AliasLoader(spec.loader,n)
                     break
@@ -59,7 +61,7 @@ def metrics(payload,keys):
 def run(full=False):
     started=time.time()
     out=dict(id="TD-CROSSDOMAIN-SG062",source="exact published repository checkout",mode="full" if full else "smoke",
-             historical_source_sha256={},checks=[],aliases=["SG050.three_way via labels()[1]","SG052.kind via outcome()"],
+             historical_source_sha256={},checks=[],aliases=["SG050.three_way via labels()[1]","SG052.kind via outcome()","SG056.P restored as frozen three-policy order"],
              history_changed=False)
     for n in SOURCES:
         p=source(n)
