@@ -5,7 +5,7 @@ import json,hashlib,itertools,importlib.util,pathlib
 ROOT=pathlib.Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location("sg055",ROOT/"2026-11-22-sg055-no-choice.py")
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-P=("SG052_wait","SG054_threshold4","SG055_ranked")
+if not hasattr(m.b,"kind"): m.b.kind=m.b.outcome  # SG052 published source names this outcome()\nP=("SG052_wait","SG054_threshold4","SG055_ranked")
 FALSE=(75,150,300);ABSTAIN=(6,18,36);SAMPLE=(.03,.06,.12)
 def run():
  training=list(m.samples(197000000,20));table=m.train(training,20,0)
