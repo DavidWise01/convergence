@@ -1,13 +1,13 @@
 {
   "id": "SG-PHASE-II-050-061",
   "phase": "Hegemonic Diodic Decision Engine",
-  "status": "PLANNED_NOT_EXECUTED",
+  "status": "CLOSED_ALL_12_DOCUMENTED_WITH_REPRODUCIBILITY_BLOCKERS",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 11,
-  "percent": 91.7,
+  "completed": 12,
+  "percent": 100,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-061",
+  "next": "SG-062",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -115,7 +115,8 @@
       "turn": 12,
       "target": "Freeze, compare to SG049, failure register, next boundary",
       "progress_percent": 100,
-      "status": "PENDING"
+      "status": "VERIFIED_CLOSED_WITH_BLOCKERS",
+      "evidence": "evidence/phases/SG050-SG061-phase-closure.json"
     }
   ],
   "closure": {
@@ -131,5 +132,14 @@
     ],
     "early_stop": "Boundary-triggered immediate close; denominator changes to actually executed verified turns, with planned 12-turn schedule clearly distinguished from early closure."
   },
-  "last_verified": "2026-11-22"
+  "last_verified": "2026-11-22",
+  "closure_evidence": "evidence/phases/SG050-SG061-phase-closure.json",
+  "known_blockers": [
+    "SG050 three_way absent",
+    "SG052 kind absent",
+    "No published chain clean-checkout replay verified",
+    "SG059 onset165 53 wrong / 180",
+    "Synthetic only"
+  ],
+  "next_phase_id": "SG062+"
 }
