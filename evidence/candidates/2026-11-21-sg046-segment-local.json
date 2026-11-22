@@ -1,0 +1,178 @@
+{
+  "id": "TD-CROSSDOMAIN-SG046",
+  "date": "2026-11-21",
+  "status": "MIXED_COVERAGE_GAIN_LOSS_REGRESSION_WORST_GROUP_UNDERCOVERED",
+  "parent": "TD-CROSSDOMAIN-SG045",
+  "freeze": "evidence/candidates/2026-11-21-sg046-segment-local-freeze.json",
+  "freeze_commit": "ad87e204b5c9e3524087651408a0fcd1de0e1c37",
+  "method": "Change flag if early/late detrended AR1 differ by >.22 or RMS ratio >1.5; flagged streams fit last 120 using 12 10-sample medians and HAC lag3 SE; others fit full240. Split calibrate flagged-local multiplier and pooled-full multiplier on 360 known-truth synthetic training traces. Fixed 240 observations for both.",
+  "calibration": {
+    "seed_start": 103000000,
+    "streams": 360,
+    "flagged": 37,
+    "z_full": 2.453084988962486,
+    "z_local_flagged": 5.9182295530936235
+  },
+  "disclosed_pilot": {
+    "seed_start": 104000000,
+    "streams": 180,
+    "whole": {
+      "correct": 142,
+      "FP": 12,
+      "FN": 1,
+      "abstain": 25,
+      "loss": 4932
+    },
+    "segment": {
+      "correct": 132,
+      "FP": 10,
+      "FN": 1,
+      "abstain": 37,
+      "loss": 4848
+    },
+    "disclosure": "Inspected pilot before freeze; segment method decreased error by two and added abstentions. No post-freeze change."
+  },
+  "holdout": {
+    "seed_formula": "107000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "streams": 720,
+    "whole": {
+      "covered": 653,
+      "coverage": 0.90694,
+      "mean_width": 0.0037585,
+      "correct": 558,
+      "FP": 34,
+      "FN": 1,
+      "abstain": 127,
+      "loss": 17844,
+      "observations": 172800
+    },
+    "segment": {
+      "covered": 659,
+      "coverage": 0.91528,
+      "mean_width": 0.0056466,
+      "correct": 522,
+      "FP": 31,
+      "FN": 1,
+      "abstain": 166,
+      "loss": 18096,
+      "observations": 172800
+    },
+    "flagged_count": 70,
+    "flagged_covered": 66,
+    "flagged_mean_interval_width": 0.0241007,
+    "scenario_covered": {
+      "reference": [
+        69,
+        69
+      ],
+      "correlation_switch": [
+        61,
+        62
+      ],
+      "laplace_tail": [
+        71,
+        71
+      ],
+      "subtle_drift": [
+        75,
+        75
+      ],
+      "fast_oscillation": [
+        80,
+        80
+      ],
+      "late_correlation_switch": [
+        69,
+        72
+      ],
+      "late_oscillation": [
+        80,
+        80
+      ],
+      "variable_period": [
+        79,
+        79
+      ],
+      "colored_control": [
+        69,
+        71
+      ]
+    },
+    "worst_environment": "abrupt correlation switch 62/80=77.5%",
+    "miscoverage_count": 61,
+    "miscoverage_seeds": [
+      107000505,
+      107002222,
+      107003333,
+      107003636,
+      107003838,
+      107003939,
+      107010000,
+      107010505,
+      107011414,
+      107012020,
+      107013939,
+      107200404,
+      107200505,
+      107200707,
+      107202020,
+      107202424,
+      107202828,
+      107203131,
+      107203434,
+      107210000,
+      107210404,
+      107210505,
+      107210707,
+      107210909,
+      107211111,
+      107211313,
+      107212121,
+      107212626,
+      107212929,
+      107400707,
+      107403232,
+      107410303,
+      107411919,
+      107412323,
+      107413131,
+      107413232,
+      107413434,
+      107413838,
+      107600101,
+      107600303,
+      107601515,
+      107603636,
+      107612020,
+      108001111,
+      108001717,
+      108002121,
+      108002222,
+      108002727,
+      108010101,
+      108010707,
+      108012828,
+      108413131,
+      108600101,
+      108600606,
+      108601212,
+      108601717,
+      108603535,
+      108603939,
+      108611212,
+      108611313,
+      108613535
+    ],
+    "local_raw_ledger_sha256": "178264f43312e0b5bcaf13f4d4e3bc7190b18d9abc786be52faba410d3dae3f3"
+  },
+  "conclusion": "Six fewer miscoverage events and three fewer false confirmations, but 36 fewer correct classifications, 39 more abstentions, 252 more modeled loss. Segment local triggered only on 70/720; conditional worst-case remained 77.5%. Negative result for improving both safety and cost.",
+  "limits": [
+    "Synthetic model family and known truth for calibration only; no field validation",
+    "Retrospective full240 stationarity flag, not a prospective early stopping detector",
+    "Flagged calibration group n=37 is small; multiplier unstable and intervals very wide",
+    "Overall coverage does not guarantee per-regime coverage",
+    "Local GitHub Python re-fetched but not separately executed in clean GitHub checkout; locally executed companion script /mnt/data/sg046/sg046.py produced holdout"
+  ],
+  "next": "SG047 calibrated change-point localization and lag-aware uncertainty, using only observable prefixes; assess false shift flags and worst regime explicitly.",
+  "reproducible_script": "evidence/candidates/2026-11-21-sg046-segment-local.py"
+}
