@@ -1,0 +1,27 @@
+name: SG065 Prefix Gate and Ledger Representation
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - evidence/candidates/sg065_prefix_gate.py
+      - .github/workflows/sg065-prefix.yml
+jobs:
+  prefix-gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 20
+    steps:
+      - name: Checkout canonical source
+        uses: actions/checkout@v4
+      - name: Enforce observed-prefix decisions and reconcile two legacy digests
+        run: |
+          mkdir -p sg065-audit
+          SG065_REPORT_DIR=sg065-audit python3 evidence/candidates/sg065_prefix_gate.py
+      - name: Preserve audit and counterexamples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg065-prefix-and-digests
+          path: sg065-audit/
+          if-no-files-found: warn
