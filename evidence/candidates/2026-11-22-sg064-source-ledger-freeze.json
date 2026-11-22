@@ -1,0 +1,16 @@
+{
+  "id": "TD-CROSSDOMAIN-SG064-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "parent": "TD-CROSSDOMAIN-SG063",
+  "status": "FROZEN_BEFORE_CANONICAL_DIGEST_EXECUTION",
+  "target": "Exact canonical GitHub checkout with SG062 additive aliases, no historical source modifications, compare ten source SHA256 fingerprints from SG063 and twelve frozen ledger/grid/root SHA256 digests from SG050-SG059 archived evidence.",
+  "compare": "Hash equality of outputs that each published module itself computes, plus exact byte SHA256 of unchanged source files. Include all mismatches, no silent rewrite or rehashing of original records.",
+  "method": "CI runs frozen SG064 Python checker via GitHub Actions, emits JSON artifact and fails on any mismatch, reads SG063 and SG050-SG059 published JSON evidence. SG053 outputs two digests, SG056 outputs two, others one each.",
+  "acceptance": "10/10 source bytes match SG063 captured fingerprints; 12/12 frozen digests match stored evidence. If any mismatch, record counterexample and continue to SG065 only with explicit blocker.",
+  "limitations": [
+    "A hash equality of published recomputation to a recorded value establishes consistency with that record, not independent source ancestry of the record.",
+    "Historical JSON often contains only digest and failure seed summary, not every original detailed stream; compares recomputed digest to the frozen recorded digest.",
+    "No real-world generalization inference from synthetic replay."
+  ]
+}
