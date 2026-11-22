@@ -1,0 +1,31 @@
+{
+  "id": "TD-CROSSDOMAIN-SG065-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "status": "FROZEN_BEFORE_HOSTED_RUNTIME",
+  "objective": "Enforce observed-prefix-only SG054 and SG059 decisions and minimize the SG064 SG054/SG059 ledger digest mismatches, without changing original code or published evidence.",
+  "runtime": "Construct an observation gate exposing a prefix array only at n=100,140,180,220,240. At each checkpoint invoke SG054.classify and SG057-derived SG059 inference only on gate.read(n). Refuse attempts to read beyond released n. Compare actions and stop lengths against immutable historical policy, plus mutate suffix and ensure observed-prefix decision is stable.",
+  "digest_hypotheses": [
+    {
+      "id": "SG054",
+      "transform": "Published SG054 trace uses multiplier field; prior local frozen ledger uses threshold field at same numeric value. Rebuild complete SG054 canonical 1080 records and change only field name; compare original default JSON SHA256."
+    },
+    {
+      "id": "SG059",
+      "transform": "Published SG059 ledger uses default JSON separators; earlier local frozen ledger uses compact separators=(',', ':'). Re-hash same complete 720 records with compact separators."
+    }
+  ],
+  "gate_checks": [
+    "Every checkpoint must have prefix only, deny read n>released",
+    "Compare SG054 1080 streaming actions with frozen select",
+    "Compare SG059 720 streaming actions with frozen online",
+    "Challenge each selected early stop by mutating future observations",
+    "If serialized transforms match archived hashes, mark representational difference not a repaired historical hash"
+  ],
+  "constraints": [
+    "No modification of historical source, frozen ledger hashes or original seeds",
+    "Never claim all possible traces proven prefix-only",
+    "Archive both original and normalized hashes plus source of transformation"
+  ],
+  "accept": "GitHub hosted CI pass only if both original frozen SHA256 match transformed replays and causal gate violations=0, otherwise status FAIL retained."
+}
