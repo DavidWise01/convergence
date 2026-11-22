@@ -1,0 +1,148 @@
+{
+  "id": "TD-CROSSDOMAIN-SG063",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "milestone": 2,
+  "status": "VERIFIED_CANONICAL_CLEAN_CHECKOUT_PASS_WITH_ADDITIVE_COMPATIBILITY",
+  "parent": "TD-CROSSDOMAIN-SG062",
+  "freeze": "evidence/candidates/2026-11-22-sg063-canonical-replay-freeze.json",
+  "freeze_commit": "9d1b0c6dda897118a67c61bf9c54630affcbece9",
+  "environment": "GitHub Actions ubuntu-latest, Python 3.14.4, actions/checkout@v4 at exact head commit; 10 original historical Python sources unmodified",
+  "initial_failed_run": {
+    "id": 45053000596,
+    "head_commit": "ee0ff48dd594ff860a2c810ae5b0629301347647",
+    "conclusion": "failure",
+    "smoke": {
+      "passed": 20,
+      "failed": 0
+    },
+    "full": {
+      "passed": 29,
+      "failed": 1
+    },
+    "first_counterexample": "SG056 full holdout raised NameError: name 'P' is not defined",
+    "job_id": 137302031635,
+    "url": "https://github.com/DavidWise01/convergence/actions/runs/45053000596"
+  },
+  "repair": {
+    "runner": "evidence/candidates/sg062_compat.py",
+    "commit": "668cb90824c0eaf91a579e1aca13759240fb3073",
+    "added_import_alias": "SG056.P = ('SG052_wait','SG054_threshold4','SG055_ranked')",
+    "existing_aliases": [
+      "SG050.three_way = SG050.labels(lo,hi)[1]",
+      "SG052.kind = SG052.outcome"
+    ],
+    "historical_files_modified": false
+  },
+  "successful_run": {
+    "id": 45061692788,
+    "head_commit": "668cb90824c0eaf91a579e1aca13759240fb3073",
+    "conclusion": "success",
+    "job_id": 137328809365,
+    "smoke": {
+      "passed": 20,
+      "failed": 0
+    },
+    "full": {
+      "passed": 30,
+      "failed": 0
+    },
+    "full_benchmark_comparisons": 10,
+    "artifact_id": 14769548221,
+    "artifact_name": "sg062-repro-audit",
+    "artifact_digest": "sha256:ccb16652bb88aa321a9388acf2a071ce6a05aec30710070c024ff00f30417fdf",
+    "artifact_full_json_sha256": "209cdd53c36a244d9efb450a95a6da9362ffba7f751165516c11d9b1adc55623",
+    "url": "https://github.com/DavidWise01/convergence/actions/runs/45061692788",
+    "python_version": "3.14.4"
+  },
+  "expected_vs_observed": [
+    {
+      "id": "SG050",
+      "metric": "correct",
+      "expected": 912,
+      "observed": 912
+    },
+    {
+      "id": "SG051",
+      "metric": "correct",
+      "expected": 900,
+      "observed": 900
+    },
+    {
+      "id": "SG052",
+      "metric": "correct",
+      "expected": 458,
+      "observed": 458
+    },
+    {
+      "id": "SG053",
+      "metric": "leaky negative-control detections",
+      "expected": 7902,
+      "observed": 7902
+    },
+    {
+      "id": "SG054",
+      "metric": "modeled loss",
+      "expected": 34286.4,
+      "observed": 34286.4
+    },
+    {
+      "id": "SG055",
+      "metric": "modeled loss",
+      "expected": 33667.2,
+      "observed": 33667.2
+    },
+    {
+      "id": "SG056",
+      "metric": "27-grid winners",
+      "expected": {
+        "SG052_wait": 24,
+        "SG054_threshold4": 0,
+        "SG055_ranked": 3
+      },
+      "observed": {
+        "SG052_wait": 24,
+        "SG054_threshold4": 0,
+        "SG055_ranked": 3
+      }
+    },
+    {
+      "id": "SG057",
+      "metric": "modeled loss",
+      "expected": 29944.8,
+      "observed": 29944.8
+    },
+    {
+      "id": "SG058",
+      "metric": "modeled loss",
+      "expected": 28509.6,
+      "observed": 28509.6
+    },
+    {
+      "id": "SG059",
+      "metric": "modeled loss",
+      "expected": 29793.6,
+      "observed": 29793.6
+    }
+  ],
+  "source_sha256": {
+    "SG050": "314d14392dffc71867df6ea78d038d2a02af93f49495fc024d1884730c437c3f",
+    "SG051": "ab7faf9089a87248264b22bfc2fad67a9efb77d798d7d6cffaa036f7b7c92091",
+    "SG052": "1757b6fbdd4c81c70419f617b1ee17163e6413946b4341787f7bbf7cd97051e2",
+    "SG053": "9e889894c929cbe71052e5895320238d1286638bd9615cabd9c97bb3e40cc461",
+    "SG054": "1975a5468e83be042071cf18ef29e02068794ed754fc26eda2f07ac353bb3eef",
+    "SG055": "449033ae6cdfd76d9fb73f747ef8b6af7c7938cb37c73544a033c93a701c7f69",
+    "SG056": "4e1b3c23a3e1880e1415ff07b8726e905ec07bd6ebd38ce0126986aaeb008250",
+    "SG057": "5b1b351c2a2ae3e4215b13a4efd9edbc716fcdc0bd7c0ce3dbe0e3f39f820379",
+    "SG058": "cce45c1b57ec595061000f4180e8bd7220da8636743c46ec97567e18fcf23d16",
+    "SG059": "44553673bee001a3da6fda9961217f9cc2557baa4a39a63bde94940a1be19305"
+  },
+  "verified_claim": "Exact published historical source + additive alias shim passed full runner against each of ten frozen scalar or summary expectations in hosted GitHub Actions and published a replay artifact.",
+  "remaining_limits": [
+    "Historical modules are not independently API-compatible without injected shim; standalone original importability is not claimed.",
+    "Each published runner full check currently validates one frozen scalar or summary outcome per SG experiment, not every per-stream historical ledger digest.",
+    "For comparison with historical frozen record hashes, schema, ordering, and complete provenance verification, run SG064.",
+    "All test streams are synthetic and no field validation follows from reproducibility."
+  ],
+  "next": "SG064 source-byte and full ledger-hash provenance reconciliation; leave original source untouched; failures remain evidence rather than rewritten output."
+}
