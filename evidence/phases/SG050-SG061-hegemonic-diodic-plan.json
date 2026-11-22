@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 2,
-  "percent": 16.7,
+  "completed": 3,
+  "percent": 25,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-052",
+  "next": "SG-053",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -38,7 +38,8 @@
       "turn": 3,
       "target": "Joint noise and trend switches",
       "progress_percent": 25,
-      "status": "PENDING"
+      "status": "VERIFIED_MIXED",
+      "evidence": "evidence/candidates/2026-11-22-sg052-joint-transition.json"
     },
     {
       "id": "SG-053",
