@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 8,
-  "percent": 66.7,
+  "completed": 9,
+  "percent": 75,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-058",
+  "next": "SG-059",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -86,7 +86,8 @@
       "turn": 9,
       "target": "Previously unseen disturbances, preserve counterexamples",
       "progress_percent": 75,
-      "status": "PENDING"
+      "status": "VERIFIED_IMPROVED_SYNTHETIC_TRANSFER",
+      "evidence": "evidence/candidates/2026-11-22-sg058-unseen-disturbance.json"
     },
     {
       "id": "SG-059",
