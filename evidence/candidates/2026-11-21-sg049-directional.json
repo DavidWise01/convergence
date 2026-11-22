@@ -1,0 +1,359 @@
+{
+  "id": "TD-CROSSDOMAIN-SG049",
+  "date": "2026-11-21",
+  "status": "SUCCESSFUL_DIRECTIONAL_SEMANTICS_CORRECTION_WITH_RESIDUAL_ERRORS",
+  "parent": "TD-CROSSDOMAIN-SG048",
+  "freeze": "evidence/candidates/2026-11-21-sg049-directional-freeze.json",
+  "freeze_commit": "cdc8ad8451d71384a27023882c70687c99483de0",
+  "algorithm": "Preserve SG048 full240 HAC interval z=2.291027529910169 and warning-only boundary conflict. Confirm positive drift only if CI lower>0; reject positive-drift hypothesis if CI upper<0 (negative direction) or CI contained in +/-0.0032 (negligible); otherwise unresolved. This does not claim absence of negative drift.",
+  "pilot": {
+    "seed_start": 125000000,
+    "streams": 180,
+    "SG048": {
+      "correct": 146,
+      "FP": 10,
+      "FN": 0,
+      "unresolved": 24,
+      "observations": 43200,
+      "loss": 4524
+    },
+    "SG049": {
+      "correct": 149,
+      "FP": 7,
+      "FN": 0,
+      "unresolved": 24,
+      "observations": 43200,
+      "loss": 4074
+    },
+    "changed_decisions": 3,
+    "disclosure": "Inspected and frozen before separate-seed holdout. Three FP changed to correct rejections."
+  },
+  "holdout": {
+    "seed_start": 129000000,
+    "streams": 720,
+    "seed_formula": "129000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "SG048": {
+      "correct": 567,
+      "FP": 44,
+      "FN": 1,
+      "unresolved": 108,
+      "observations": 172800,
+      "loss": 19002
+    },
+    "SG049": {
+      "correct": 587,
+      "FP": 24,
+      "FN": 1,
+      "unresolved": 108,
+      "observations": 172800,
+      "loss": 16002
+    },
+    "changes": 20,
+    "FP_prevented": 20,
+    "FN_added": 0,
+    "extra_abstentions": 0,
+    "loss_reduction": 3000,
+    "loss_reduction_pct": 15.7878,
+    "wrong_decisions_reduction_pct": 44.4444,
+    "by_scenario": {
+      "reference": {
+        "SG048": {
+          "correct": 76,
+          "FP": 4,
+          "FN": 0,
+          "abstain": 0
+        },
+        "SG049": {
+          "correct": 76,
+          "FP": 4,
+          "FN": 0,
+          "abstain": 0
+        }
+      },
+      "correlation_switch": {
+        "SG048": {
+          "correct": 53,
+          "FP": 12,
+          "FN": 0,
+          "abstain": 15
+        },
+        "SG049": {
+          "correct": 60,
+          "FP": 5,
+          "FN": 0,
+          "abstain": 15
+        }
+      },
+      "laplace_tail": {
+        "SG048": {
+          "correct": 73,
+          "FP": 7,
+          "FN": 0,
+          "abstain": 0
+        },
+        "SG049": {
+          "correct": 77,
+          "FP": 3,
+          "FN": 0,
+          "abstain": 0
+        }
+      },
+      "subtle_drift": {
+        "SG048": {
+          "correct": 73,
+          "FP": 6,
+          "FN": 1,
+          "abstain": 0
+        },
+        "SG049": {
+          "correct": 77,
+          "FP": 2,
+          "FN": 1,
+          "abstain": 0
+        }
+      },
+      "fast_oscillation": {
+        "SG048": {
+          "correct": 50,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 30
+        },
+        "SG049": {
+          "correct": 50,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 30
+        }
+      },
+      "late_correlation_switch": {
+        "SG048": {
+          "correct": 58,
+          "FP": 8,
+          "FN": 0,
+          "abstain": 14
+        },
+        "SG049": {
+          "correct": 60,
+          "FP": 6,
+          "FN": 0,
+          "abstain": 14
+        }
+      },
+      "late_oscillation": {
+        "SG048": {
+          "correct": 59,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 21
+        },
+        "SG049": {
+          "correct": 59,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 21
+        }
+      },
+      "variable_period": {
+        "SG048": {
+          "correct": 70,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 10
+        },
+        "SG049": {
+          "correct": 70,
+          "FP": 0,
+          "FN": 0,
+          "abstain": 10
+        }
+      },
+      "colored_control": {
+        "SG048": {
+          "correct": 55,
+          "FP": 7,
+          "FN": 0,
+          "abstain": 18
+        },
+        "SG049": {
+          "correct": 58,
+          "FP": 4,
+          "FN": 0,
+          "abstain": 18
+        }
+      }
+    },
+    "changed_seed_list": [
+      129200303,
+      129200404,
+      129201313,
+      129201515,
+      129201818,
+      129202424,
+      129203434,
+      129402020,
+      129403030,
+      129403636,
+      129403939,
+      129600000,
+      129601616,
+      129603737,
+      129603939,
+      130000707,
+      130002929,
+      130601111,
+      130602828,
+      130603535
+    ],
+    "remaining_failure_cases": [
+      {
+        "scenario": "reference",
+        "seed": 129000404,
+        "kind": "FP"
+      },
+      {
+        "scenario": "reference",
+        "seed": 129001111,
+        "kind": "FP"
+      },
+      {
+        "scenario": "reference",
+        "seed": 129003535,
+        "kind": "FP"
+      },
+      {
+        "scenario": "reference",
+        "seed": 129003636,
+        "kind": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 129200101,
+        "kind": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 129202525,
+        "kind": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 129202626,
+        "kind": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 129203232,
+        "kind": "FP"
+      },
+      {
+        "scenario": "correlation_switch",
+        "seed": 129203636,
+        "kind": "FP"
+      },
+      {
+        "scenario": "laplace_tail",
+        "seed": 129400000,
+        "kind": "FP"
+      },
+      {
+        "scenario": "laplace_tail",
+        "seed": 129400101,
+        "kind": "FP"
+      },
+      {
+        "scenario": "laplace_tail",
+        "seed": 129402121,
+        "kind": "FP"
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 129600404,
+        "kind": "FP"
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 129600606,
+        "kind": "FP"
+      },
+      {
+        "scenario": "subtle_drift",
+        "seed": 129610000,
+        "kind": "FN"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130001010,
+        "kind": "FP"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130001212,
+        "kind": "FP"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130001313,
+        "kind": "FP"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130001616,
+        "kind": "FP"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130001717,
+        "kind": "FP"
+      },
+      {
+        "scenario": "late_correlation_switch",
+        "seed": 130002626,
+        "kind": "FP"
+      },
+      {
+        "scenario": "colored_control",
+        "seed": 130600404,
+        "kind": "FP"
+      },
+      {
+        "scenario": "colored_control",
+        "seed": 130601010,
+        "kind": "FP"
+      },
+      {
+        "scenario": "colored_control",
+        "seed": 130602323,
+        "kind": "FP"
+      },
+      {
+        "scenario": "colored_control",
+        "seed": 130602727,
+        "kind": "FP"
+      }
+    ],
+    "false_rejection_counterexample": {
+      "seed": 129610000,
+      "scenario": "subtle_drift",
+      "true_slope": 0.0027,
+      "estimated_slope": 0.0011267365860868532,
+      "se": 0.000524918432987734,
+      "interval": [
+        -0.00007586599484535133,
+        0.002329339167019058
+      ],
+      "classification": "rejected_as_negligible"
+    },
+    "rows_sha256": "48d9df39ca27ab035c6ae0b28e3502b8d5226c38cf73ae227861f8ba0c52f86c"
+  },
+  "limitations": [
+    "The benchmark's targeted alternative is positive drift. Negative-direction evidence rejects positive drift but would be positive evidence for generic bidirectional drift.",
+    "HAC intervals and global calibration still give false positive claims under correlated noise; 25 wrong decisions remain.",
+    "No new observation savings (all fixed240).",
+    "Synthetic deterministic scenario families, new seeds only, not real deployment validation.",
+    "GitHub sibling-dependent executable is committed and re-fetched; locally executed script uses equivalent absolute-path sibling files; separately running clean GitHub checkout not yet verified."
+  ],
+  "next": "SG050 explicitly model three directional hypotheses (+,0,-), test genuine negative drift generators and signs of contamination, and quantify direction-specific miscoverage under correlated noise.",
+  "executable": "evidence/candidates/2026-11-21-sg049-directional.py",
+  "local_full_holdout": "/mnt/data/sg049/holdout.json"
+}
