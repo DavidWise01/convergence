@@ -1,0 +1,289 @@
+{
+  "id": "TD-CROSSDOMAIN-SG047",
+  "date": "2026-11-21",
+  "status": "FAILED_OBJECTIVE_LOCALIZATION_WORSENS_WORST_GROUP_COVERAGE_AND_LOSS",
+  "parent": "TD-CROSSDOMAIN-SG046",
+  "freeze_commit": "c44cce55f24d07f31b140f2aa4865a088f7cd1e1",
+  "freeze": "evidence/candidates/2026-11-21-sg047-change-location-freeze.json",
+  "method": "Retrospective scan for best changepoint over {60,80,100,120,140,160,180} on 240 continuation observations. Score abs(rho_left-rho_right)+.35*abs(log(RMS_right/RMS_left)); flag score>.5186019321. If flagged use post-changepoint trend on ten-sample median bins and HAC lag3, calibrated local multiplier 5.3461295; otherwise full240 multiplier 2.2910275. Compare SG046 frozen policy and newly calibrated full240 baseline on identical seeds.",
+  "calibration": {
+    "start": 111000000,
+    "n": 360,
+    "negative_without_known_late_switch": 280,
+    "threshold": 0.5186019321426611,
+    "selected": 64,
+    "global_z": 2.291027529910169,
+    "local_z": 5.346129511387088
+  },
+  "pilot": {
+    "start": 113000000,
+    "n": 180,
+    "late_alarm": 22,
+    "late_cases": 40,
+    "other_alarm": 7,
+    "other_cases": 140,
+    "median_late_location_error_given_alarm": 0,
+    "baseline": {
+      "covered": 157,
+      "correct": 141,
+      "wrong": 7,
+      "unresolved": 32,
+      "loss": 4158
+    },
+    "SG046": {
+      "covered": 162,
+      "correct": 132,
+      "wrong": 7,
+      "unresolved": 41,
+      "loss": 4320
+    },
+    "SG047": {
+      "covered": 156,
+      "correct": 119,
+      "wrong": 7,
+      "unresolved": 54,
+      "loss": 4554
+    },
+    "disclosure": "Negative pilot observed before freeze; frozen unchanged."
+  },
+  "holdout": {
+    "start": 117000000,
+    "n": 720,
+    "seed_formula": "117000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "results": {
+      "pooled": {
+        "covered": 613,
+        "coverage": 0.851389,
+        "correct": 560,
+        "FP": 53,
+        "FN": 1,
+        "unresolved": 106,
+        "loss": 20316,
+        "observations": 172800
+      },
+      "SG046": {
+        "covered": 638,
+        "coverage": 0.886111,
+        "correct": 511,
+        "FP": 43,
+        "FN": 0,
+        "unresolved": 166,
+        "loss": 19806,
+        "observations": 172800
+      },
+      "SG047": {
+        "covered": 617,
+        "coverage": 0.856944,
+        "correct": 475,
+        "FP": 50,
+        "FN": 1,
+        "unresolved": 194,
+        "loss": 21450,
+        "observations": 172800
+      }
+    },
+    "detection": {
+      "known_late_cases": 160,
+      "late_flagged": 94,
+      "nonlate_cases": 560,
+      "nonlate_flagged": 37,
+      "median_absolute_location_error_when_late_flagged": 0,
+      "late_alarm_locations": {
+        "60": 83,
+        "80": 8,
+        "100": 1,
+        "180": 2
+      },
+      "nonlate_alarm_locations": {
+        "60": 17,
+        "80": 4,
+        "100": 1,
+        "160": 2,
+        "180": 13
+      }
+    },
+    "scenario_coverage": {
+      "reference": {
+        "pooled": 65,
+        "SG046": 69,
+        "SG047": 65
+      },
+      "correlation_switch": {
+        "pooled": 56,
+        "SG046": 64,
+        "SG047": 53
+      },
+      "laplace_tail": {
+        "pooled": 61,
+        "SG046": 62,
+        "SG047": 62
+      },
+      "subtle_drift": {
+        "pooled": 70,
+        "SG046": 71,
+        "SG047": 70
+      },
+      "fast_oscillation": {
+        "pooled": 80,
+        "SG046": 80,
+        "SG047": 79
+      },
+      "late_correlation_switch": {
+        "pooled": 61,
+        "SG046": 65,
+        "SG047": 66
+      },
+      "late_oscillation": {
+        "pooled": 79,
+        "SG046": 80,
+        "SG047": 80
+      },
+      "variable_period": {
+        "pooled": 77,
+        "SG046": 78,
+        "SG047": 77
+      },
+      "colored_control": {
+        "pooled": 64,
+        "SG046": 69,
+        "SG047": 65
+      }
+    },
+    "misses": 103,
+    "misses_by_scenario": {
+      "reference": [
+        117000000,
+        117000404,
+        117000909,
+        117001515,
+        117003030,
+        117003333,
+        117003434,
+        117003838,
+        117010000,
+        117010404,
+        117010808,
+        117010909,
+        117011010,
+        117012222,
+        117013939
+      ],
+      "correlation_switch": [
+        117200000,
+        117200101,
+        117200606,
+        117201515,
+        117201818,
+        117201919,
+        117202424,
+        117202626,
+        117202727,
+        117203030,
+        117203131,
+        117203636,
+        117203939,
+        117210101,
+        117210505,
+        117210606,
+        117210707,
+        117210808,
+        117211111,
+        117211212,
+        117211313,
+        117211717,
+        117211818,
+        117211919,
+        117212525,
+        117213636,
+        117213737
+      ],
+      "laplace_tail": [
+        117400000,
+        117400202,
+        117401111,
+        117403131,
+        117403535,
+        117403737,
+        117410000,
+        117410101,
+        117410808,
+        117411111,
+        117411212,
+        117411717,
+        117411818,
+        117412323,
+        117412525,
+        117412626,
+        117413030,
+        117413333
+      ],
+      "subtle_drift": [
+        117601313,
+        117601616,
+        117602828,
+        117603434,
+        117611616,
+        117611919,
+        117612424,
+        117612525,
+        117613333,
+        117613434
+      ],
+      "fast_oscillation": [
+        117813535
+      ],
+      "late_correlation_switch": [
+        118000101,
+        118000404,
+        118000505,
+        118000909,
+        118001717,
+        118001919,
+        118002323,
+        118010000,
+        118010202,
+        118010808,
+        118010909,
+        118012222,
+        118012828,
+        118013838
+      ],
+      "late_oscillation": [],
+      "variable_period": [
+        118401111,
+        118402323,
+        118411919
+      ],
+      "colored_control": [
+        118600404,
+        118600505,
+        118601212,
+        118601515,
+        118601818,
+        118602121,
+        118602424,
+        118602828,
+        118603232,
+        118603535,
+        118610202,
+        118610707,
+        118611515,
+        118612121,
+        118613232
+      ]
+    },
+    "rows_sha256": ""
+  },
+  "finding": "Change-point localization is useful as a descriptive alarm but its use for cutting history failed the predeclared decision target. SG047 produced 21 fewer covered slopes and 1644 more loss than frozen SG046; abrupt correlation-switch coverage deteriorated from 64/80 to 53/80. Early shift at continuation t=0 cannot be localized within only continuation observations.",
+  "limitations": [
+    "The known-late subset combines late correlation and late oscillation; a true oscillation onset is not identical to a change in AR1 coefficient.",
+    "The threshold is calibrated using known synthetic scenario labels; per-scenario diagnosis is not unsupervised.",
+    "Median zero boundary error is CONDITIONAL on detection; 66/160 late cases not flagged.",
+    "End-to-end 240 samples collected before making retrospective choice; no computational latency or early-stop advantage measured.",
+    "HAC and split quantile assumptions do not guarantee per-environment coverage.",
+    "The GitHub script imports sibling SG043 source; has not been separately executed in clean checkout.",
+    "Full details (estimates, intervals, alarm scores) in local holdout JSON, deterministic regeneration in GitHub script."
+  ],
+  "next": "SG048 decouple change localization from trend estimation; test warning-only approach, with pre/post split evidence challenge, and no history truncation unless validated by empirical loss.",
+  "reproducible_script": "evidence/candidates/2026-11-21-sg047-change-location.py"
+}
