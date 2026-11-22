@@ -6,10 +6,10 @@
   "start": "SG-062",
   "end": "SG-073",
   "total": 12,
-  "completed": 2,
-  "percent": 16.7,
-  "next": "SG-064",
-  "status": "ACTIVE_NUMERIC_REPLAY_PASS_FULL_HASH_RECONCILIATION_PENDING",
+  "completed": 3,
+  "percent": 25,
+  "next": "SG-065",
+  "status": "ACTIVE_LEDGER_IDENTITY_FAILURES_RETAINED",
   "milestones": [
     {
       "id": "SG-062",
@@ -26,8 +26,8 @@
     {
       "id": "SG-064",
       "title": "Byte and hash provenance audit",
-      "status": "PENDING",
-      "evidence": null
+      "status": "VERIFIED_AUDIT_TWO_HASH_MISMATCHES",
+      "evidence": "evidence/candidates/2026-11-22-sg064-source-ledger.json"
     },
     {
       "id": "SG-065",
@@ -95,5 +95,16 @@
     "full_pass": 30,
     "failures": 0,
     "per_stream_hash_verified": false
+  },
+  "provenance_gate": {
+    "source_hashes": 10,
+    "source_count": 10,
+    "digest_matches": 10,
+    "digest_count": 12,
+    "unresolved": [
+      "SG054 full_records_digest",
+      "SG059 ledger_sha256"
+    ],
+    "canonical_run_id": 45064495673
   }
 }
