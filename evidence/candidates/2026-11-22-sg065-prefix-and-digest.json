@@ -1,0 +1,51 @@
+{
+  "id": "TD-CROSSDOMAIN-SG065",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "milestone": 4,
+  "status": "VERIFIED_CANONICAL_PREFIX_GATE_AND_LEGACY_DIGEST_EQUIVALENCE",
+  "freeze": "evidence/candidates/2026-11-22-sg065-prefix-and-digest-freeze.json",
+  "freeze_commit": "afd5ffe17db5f1ddc410cceb4d49ea2742c2a79e",
+  "source": "evidence/candidates/sg065_prefix_gate.py",
+  "workflow": ".github/workflows/sg065-prefix.yml",
+  "run": {
+    "id": 45065680741,
+    "head_commit": "ea5a88e8c15d1b952036c30f7722f047e5c5c96c",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/DavidWise01/convergence/actions/runs/45065680741",
+    "artifact_id": 14770928061,
+    "artifact_digest": "sha256:678ff84f302a84c94838e47feb63f3d11056c57c1020e0a90b8ec914d6bb4685"
+  },
+  "prefix_gate": {
+    "SG054_streams": 1080,
+    "SG059_streams": 720,
+    "forbidden_future_reads_denied": 6444,
+    "early_future_suffix_modifications": 294,
+    "violations": 0,
+    "description": "Read-only observation gate releases each prefix only at its checkpoint. Explicit future reads n+1 are denied. Runtime classifications compared against frozen policies and future-suffix mutations tested for early choices.",
+    "scope": "Tested 1800 synthetic streams and predefined suffix mutations; not formal arbitrary-program security proof. The Python gate is testing harness and needs hardening for untrusted execution."
+  },
+  "mismatches_resolved_as_representation_only": [
+    {
+      "id": "SG054",
+      "historical_digest": "e7f79a2f3cd416fca03f05a67f4f00f06dc9a0c6fdf142297b954ee365dd1e6b",
+      "published_digest_before_representation_normalization": "94ae9d3c92cd302da5ac320eab219bb4ac7e8d3ff8986982aa858378a1002c69",
+      "normalization": "In policy_trace replace published field multiplier with original local field threshold, keeping the exact float and every action intact, then json.dumps(records,sort_keys=True) SHA256.",
+      "normalized_digest": "e7f79a2f3cd416fca03f05a67f4f00f06dc9a0c6fdf142297b954ee365dd1e6b",
+      "status": "LEGACY_SERIALIZATION_RECONCILED"
+    },
+    {
+      "id": "SG059",
+      "historical_digest": "1aafec137db2ec6afeeed671f125f3fc43b8c773575614675fc1df0ff4088e31",
+      "published_digest_before_representational_normalization": "ca919bc5c9be29d0459641c6060e1c7aa3345f8b40ef4cfc45661100401d5fbb",
+      "normalization": "Hash exact same 720 ledger objects with json.dumps(...,sort_keys=True,separators=(',',':')), matching historical local serialization.",
+      "normalized_digest": "1aafec137db2ec6afeeed671f125f3fc43b8c773575614675fc1df0ff4088e31",
+      "status": "LEGACY_SERIALIZATION_RECONCILED"
+    }
+  ],
+  "historical_source_modified": false,
+  "original_evidence_modified": false,
+  "prior_SG064_status": "Negative hash audit remains preserved; mismatches are now explained through verified forward audit normalization, not retroactively erased.",
+  "next": "SG066 late-transition contamination recovery: freeze pre/post-change timing model and test a prefix-only correction on holdouts; prioritize SG059 onset165 false-direction concentration."
+}
