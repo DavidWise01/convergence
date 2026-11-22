@@ -1,0 +1,188 @@
+{
+  "id": "TD-CROSSDOMAIN-SG052",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "phase_milestone": 3,
+  "phase_progress_after_verification": 25,
+  "status": "MIXED_LARGE_ERROR_REDUCTION_WITH_HIGH_ABSTENTION",
+  "parent": "TD-CROSSDOMAIN-SG051",
+  "freeze": "evidence/candidates/2026-11-22-sg052-joint-transition-freeze.json",
+  "freeze_commit": "6e0087420e16c2b622d99848ff6513921a2ec88f",
+  "method": "27 combinations of before/after directions {-1,0,+1} and AR1 regimes stable .72, .72→.94, .94→.72. Programmed sign and noise change at local observation 100,120,140. Compare full240 frozen SG050/051 HAC intervals against trailing100 window HAC interval with z from prior separate calibration, no knowledge of change time provided to decision.",
+  "calibration": {
+    "start": 157000000,
+    "streams": 324,
+    "rank": 293,
+    "z_local": 4.327111573414373
+  },
+  "pilot": {
+    "start": 160000000,
+    "n": 162,
+    "SG051": {
+      "correct": 73,
+      "missed_direction": 19,
+      "false_direction": 37,
+      "abstain": 33,
+      "loss": 10186.8,
+      "covered": 65
+    },
+    "SG052": {
+      "correct": 69,
+      "missed_direction": 1,
+      "false_direction": 4,
+      "abstain": 88,
+      "loss": 4606.8,
+      "covered": 141
+    },
+    "disclosure": "Pilot inspected then freeze committed before holdout."
+  },
+  "holdout": {
+    "start": 167000000,
+    "n": 1080,
+    "seed_formula": "167000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3], k=0..39",
+    "SG050": {
+      "correct": 543,
+      "missed_direction": 130,
+      "false_direction": 202,
+      "abstain": 205,
+      "loss": 61242,
+      "observations": 259200,
+      "covered": 429
+    },
+    "SG051": {
+      "correct": 530,
+      "missed_direction": 104,
+      "false_direction": 183,
+      "abstain": 263,
+      "loss": 57096,
+      "observations": 259200,
+      "covered": 474
+    },
+    "SG052": {
+      "correct": 458,
+      "missed_direction": 0,
+      "false_direction": 45,
+      "abstain": 577,
+      "loss": 32688,
+      "observations": 259200,
+      "covered": 967
+    },
+    "coverage_fraction": 0.8953703703703704,
+    "wrong_reduction_vs_SG051_pct": 84.3205574912892,
+    "loss_reduction_vs_SG051_pct": 42.749054224464054,
+    "changes_vs_SG051": 686,
+    "per_noise": {
+      "stable_rho72": {
+        "SG051": {
+          "correct": 193,
+          "missed_direction": 44,
+          "false_direction": 82,
+          "abstain": 41,
+          "covered": 114
+        },
+        "SG052": {
+          "correct": 182,
+          "missed_direction": 0,
+          "false_direction": 11,
+          "abstain": 167,
+          "covered": 336
+        }
+      },
+      "rho72_to94": {
+        "SG051": {
+          "correct": 169,
+          "missed_direction": 36,
+          "false_direction": 54,
+          "abstain": 101,
+          "covered": 175
+        },
+        "SG052": {
+          "correct": 79,
+          "missed_direction": 0,
+          "false_direction": 24,
+          "abstain": 257,
+          "covered": 299
+        }
+      },
+      "rho94_to72": {
+        "SG051": {
+          "correct": 168,
+          "missed_direction": 24,
+          "false_direction": 47,
+          "abstain": 121,
+          "covered": 185
+        },
+        "SG052": {
+          "correct": 197,
+          "missed_direction": 0,
+          "false_direction": 10,
+          "abstain": 153,
+          "covered": 332
+        }
+      }
+    },
+    "wrong_seed_list": [
+      167033636,
+      167200404,
+      167202525,
+      167203131,
+      167230000,
+      167230404,
+      167231010,
+      167231111,
+      167231313,
+      167231414,
+      167232424,
+      167233232,
+      167262121,
+      167262626,
+      167263030,
+      167263333,
+      167263535,
+      168033030,
+      168200808,
+      168201313,
+      168201919,
+      168202121,
+      168202323,
+      168232020,
+      168232121,
+      168232727,
+      168233939,
+      168261313,
+      168261414,
+      168262525,
+      168263131,
+      169202020,
+      169203333,
+      169203838,
+      169230303,
+      169230707,
+      169231515,
+      169231818,
+      169231919,
+      169232525,
+      169233434,
+      169233737,
+      169260505,
+      169432727,
+      169433333
+    ],
+    "noncorrect_count": 622,
+    "wrong_count": 45,
+    "abstain_count": 577,
+    "rows_sha256": "2fb70bf766d5fd7f6b40dfa2ad89bf582625e2c23a09722063d3c0f50c6410da"
+  },
+  "assessment": "A preset 100-sample trailing window is a substantially better post-change classifier than using all 240 under this test's simultaneous sign/noise regime transitions, though it abstains in over half of cases, and 90% interval coverage still marginally missed. This does not demonstrate online change detection, optimal stopping, or generalization to unseen transition times beyond 100/120/140.",
+  "limitations": [
+    "Synthetic generator family and transition time set predeclared; holdout changes seeds only.",
+    "Fixed240 observations for all methods; trailing100 is estimator window, not total budget.",
+    "Positive, negative and zero target assessed only after final change; no claims about online trajectory.",
+    "The old full-history policies estimate an average of both regimes, inherently disadvantaged when judged against post-change truth.",
+    "Risk of overly conservative abstention especially when correlation increases.",
+    "GitHub source re-fetched but separate clean-checkout runtime pending; local source executed prior to publishing."
+  ],
+  "next": "SG053 test diodic one-way information flow across sequential checkpoints, forbid hidden truth or future sample access and document deterministic causal replay.",
+  "source": "evidence/candidates/2026-11-22-sg052-joint-transition.py",
+  "local_holdout": "/mnt/data/sg052/holdout.json"
+}
