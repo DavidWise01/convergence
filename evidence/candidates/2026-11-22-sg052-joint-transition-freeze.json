@@ -1,0 +1,90 @@
+{
+  "id": "TD-CROSSDOMAIN-SG052-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "status": "FROZEN_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG051",
+  "purpose": "Test simultaneous sign switches and AR1 regime switches when the target is the post-change direction.",
+  "synthetic_generator": {
+    "n_observed": 240,
+    "directions": [
+      -1,
+      0,
+      1
+    ],
+    "before_after_sign_combinations": 9,
+    "noise_regimes": [
+      "stable rho=.72",
+      "rho .72→.94",
+      "rho .94→.72"
+    ],
+    "onset_values": [
+      100,
+      120,
+      140
+    ],
+    "known_to_policy": false,
+    "seed_formula": "start+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3]",
+    "slope_magnitude": 0.005
+  },
+  "policies": {
+    "SG050": "Whole240 median-bin HAC3, interval z=2.291027529910169",
+    "SG051": "Whole240 median-bin HAC3, interval z=2.486294325376533",
+    "SG052": "Trailing 100 observed samples, median-bin HAC3, calibrated interval z=4.327111573414373; no change-point detector, no future-looking observation beyond t240; after-change truth only used to score"
+  },
+  "classification": "Positive if CI low>0; negative if CI high<0; zero if CI entirely inside ±.0032; otherwise unresolved.",
+  "cost": {
+    "sample": 0.06,
+    "missed_direction": 90,
+    "false_direction": 150,
+    "abstain": 18
+  },
+  "calibration": {
+    "start": 157000000,
+    "n": 324,
+    "rank": 293,
+    "method": "90% empirical split quantile of |trailing100 slope - known programmed post-change slope| / trailing HAC3 SE",
+    "multiplier": 4.327111573414373
+  },
+  "pilot": {
+    "start": 160000000,
+    "n": 162,
+    "SG051": {
+      "correct": 73,
+      "missed_direction": 19,
+      "false_direction": 37,
+      "abstain": 33,
+      "loss": 10186.8,
+      "covered": 65
+    },
+    "SG052": {
+      "correct": 69,
+      "missed_direction": 1,
+      "false_direction": 4,
+      "abstain": 88,
+      "loss": 4606.8,
+      "covered": 141
+    },
+    "note": "Inspected before freeze; increase in abstentions 55, reduction in errors 51; no rule or multiplier retuning after pilot."
+  },
+  "holdout": {
+    "start": 167000000,
+    "n": 1080,
+    "per_sign_pair_noise": 40,
+    "not_evaluated_at_freeze": true,
+    "main_metrics": [
+      "error counts by direction and noise",
+      "slope interval coverage",
+      "abstentions and loss",
+      "all noncorrect cases",
+      "deterministic replay hash"
+    ],
+    "no_retuning": true
+  },
+  "caveats": [
+    "True change time not known to policy; fixed trailing100 includes no prechange samples for onsets <=140.",
+    "This tests full-observation window decisions, not online stopping or actual adaptation.",
+    "The generator uses known noise classes; fresh seeds alone do not establish out-of-family transfer.",
+    "Comparators have nonoptimal full-history estimates for post-change target, so policy gain does not establish a universal optimum."
+  ]
+}
