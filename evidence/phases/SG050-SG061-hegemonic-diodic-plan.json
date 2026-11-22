@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 5,
-  "percent": 41.7,
+  "completed": 6,
+  "percent": 50,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-055",
+  "next": "SG-056",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -62,7 +62,8 @@
       "turn": 6,
       "target": "Total ordering, deterministic tie-break; abstain is action",
       "progress_percent": 50,
-      "status": "PENDING"
+      "status": "VERIFIED_NEGATIVE_VS_WAIT",
+      "evidence": "evidence/candidates/2026-11-22-sg055-no-choice.json"
     },
     {
       "id": "SG-056",
