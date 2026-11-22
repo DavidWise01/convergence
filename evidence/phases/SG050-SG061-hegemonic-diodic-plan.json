@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 6,
-  "percent": 50,
+  "completed": 7,
+  "percent": 58.3,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-056",
+  "next": "SG-057",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -70,7 +70,8 @@
       "turn": 7,
       "target": "Penalties for FP,FN,abstention, sampling",
       "progress_percent": 58.3,
-      "status": "PENDING"
+      "status": "VERIFIED_CONDITIONAL",
+      "evidence": "evidence/candidates/2026-11-22-sg056-loss-sensitivity.json"
     },
     {
       "id": "SG-057",
