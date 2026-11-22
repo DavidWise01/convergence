@@ -6,10 +6,10 @@
   "start": "SG-062",
   "end": "SG-073",
   "total": 12,
-  "completed": 1,
-  "percent": 8.3,
-  "next": "SG-063",
-  "status": "ACTIVE_WITH_OPEN_REPRODUCIBILITY_BLOCKERS",
+  "completed": 2,
+  "percent": 16.7,
+  "next": "SG-064",
+  "status": "ACTIVE_NUMERIC_REPLAY_PASS_FULL_HASH_RECONCILIATION_PENDING",
   "milestones": [
     {
       "id": "SG-062",
@@ -20,8 +20,8 @@
     {
       "id": "SG-063",
       "title": "Clean-checkout execution and frozen metrics reconciliation",
-      "status": "PENDING",
-      "evidence": null
+      "status": "VERIFIED_CANONICAL_CHECKOUT_METRICS_PASS",
+      "evidence": "evidence/candidates/2026-11-22-sg063-canonical-replay.json"
     },
     {
       "id": "SG-064",
@@ -87,5 +87,13 @@
   "advance_rule": "Advance a milestone when task and evidence are published and refetched; preserve negative outcomes and pending CI instead of claiming testing success.",
   "reproducibility_gate": "Do not call SG050..SG059 canonical reproduction verified until exact published checkout completes full replay and frozen hash or numerical comparisons are checked.",
   "inherited_failure_register": "evidence/phases/SG050-SG061-phase-closure.json",
-  "last_documented": "2026-11-22"
+  "last_documented": "2026-11-22",
+  "clean_checkout": {
+    "source_commit": "668cb90824c0eaf91a579e1aca13759240fb3073",
+    "run_id": 45061692788,
+    "smoke_pass": 20,
+    "full_pass": 30,
+    "failures": 0,
+    "per_stream_hash_verified": false
+  }
 }
