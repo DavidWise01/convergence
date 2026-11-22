@@ -1,0 +1,77 @@
+{
+  "id": "TD-CROSSDOMAIN-SG057-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "parent": "SG056",
+  "status": "FROZEN_AFTER_TRAINING_AND_PILOT_BEFORE_HOLDOUT",
+  "goal": "Test whether prefix-only low-risk early abstention can reduce total observation cost without increasing expected modeled loss over final240 waiting.",
+  "generator": "SG052 unchanged synthetic 27 regime/sign configurations, 240-point continuation and unknown onset 100,120,140.",
+  "policy": {
+    "checkpoints": [
+      140,
+      180,
+      220,
+      240
+    ],
+    "candidate": "Only if SG052 calibrated trailing100 HAC z=4.327111573414373 returns unresolved, allow early abstain (no forced directional commitment); otherwise observe and decide at n240.",
+    "observable_feature": "checkpoint:unresolved:|slope/se| band (<1,<2,<4,>=4):SE band high iff SE>=.002; no environment/true direction supplied to policy.",
+    "training": "30 per sign-pair/noise configuration =810 traces, seed_start=215000000; for every unresolved checkpoint compare observed paired final240 loss against early abstain loss, sample cost .06, FP=150 FN=90 abstain=18.",
+    "authorization": "Group >=25 and empirical improvement mean - 1.64*sample_SD/sqrt(n)>0; choose first authorized checkpoint. This is a heuristic one-sided training bound, not a formal probability guarantee.",
+    "authorized_groups": [
+      {
+        "key": "220:unresolved:lt1:low",
+        "n": 93,
+        "mean_gain": 9.2,
+        "lower_bound": 3.0772210656122105
+      },
+      {
+        "key": "220:unresolved:lt2:low",
+        "n": 90,
+        "mean_gain": 7,
+        "lower_bound": 1.0234544418210314
+      }
+    ],
+    "note": "Other checkpoint groups not authorized; no early directional commitment is allowed. At end follow frozen SG052 trailing100 decision."
+  },
+  "pilot": {
+    "seed_start": 219000000,
+    "n": 216,
+    "wait": {
+      "correct": 77,
+      "missed_direction": 0,
+      "false_direction": 11,
+      "abstain": 128,
+      "observations": 51840,
+      "loss": 7064.4
+    },
+    "SG057": {
+      "correct": 69,
+      "missed_direction": 0,
+      "false_direction": 10,
+      "abstain": 137,
+      "observations": 50920,
+      "early": 46,
+      "loss": 7021.2
+    },
+    "disclosure": "Training groups selected before pilot; pilot inspected, no change to thresholds or groups."
+  },
+  "holdout": {
+    "seed_start": 223000000,
+    "per_configuration": 40,
+    "n": 1080,
+    "formula": "223000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3], k=0..39",
+    "no_retuning": true
+  },
+  "checks": [
+    "Compare both policies on identical seeds",
+    "Observation savings actual prefix lengths",
+    "Decision loss as sample .06 each + wrong direction 150 + missed direction 90 + abstention 18",
+    "Record all modified decisions, wrong decisions and full replay ledger",
+    "Compare causal prefix replay and future-suffix perturbations"
+  ],
+  "limitations": [
+    "Heuristic training bound under fitted synthetic data, not rigorous generalization guarantee.",
+    "Early abstention changes the availability of late correct decisions; a lower modeled loss can still mean fewer correct directional outcomes.",
+    "Same family of simulated environments as SG052; no external robustness claims."
+  ]
+}
