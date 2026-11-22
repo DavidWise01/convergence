@@ -1,0 +1,91 @@
+{
+  "id": "SG-PHASE-III-062-073",
+  "date": "2026-11-22",
+  "title": "Reproducible Diodic Runtime & Robust Decision Gates",
+  "governance": "Single deterministic policy; one-way evidence flow; append-only archives; no voting/witness consensus/Byzantine scope in this phase.",
+  "start": "SG-062",
+  "end": "SG-073",
+  "total": 12,
+  "completed": 1,
+  "percent": 8.3,
+  "next": "SG-063",
+  "status": "ACTIVE_WITH_OPEN_REPRODUCIBILITY_BLOCKERS",
+  "milestones": [
+    {
+      "id": "SG-062",
+      "title": "Additive canonical dependency repair",
+      "status": "IMPLEMENTED_CI_UNVERIFIED",
+      "evidence": "evidence/candidates/2026-11-22-sg062-dependency-repair.json"
+    },
+    {
+      "id": "SG-063",
+      "title": "Clean-checkout execution and frozen metrics reconciliation",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-064",
+      "title": "Byte and hash provenance audit",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-065",
+      "title": "Prefix-only runtime enforcement",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-066",
+      "title": "Late-onset contamination recovery",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-067",
+      "title": "Cost-aware abstention boundary validation",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-068",
+      "title": "Distribution-shift loss guard",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-069",
+      "title": "Heteroskedastic and heavy-tail stress",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-070",
+      "title": "Independent dataset preregistration",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-071",
+      "title": "Out-of-generator transfer evaluation",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-072",
+      "title": "Deployment eligibility and safety gate",
+      "status": "PENDING",
+      "evidence": null
+    },
+    {
+      "id": "SG-073",
+      "title": "Phase freeze and signed evidence closeout",
+      "status": "PENDING",
+      "evidence": null
+    }
+  ],
+  "advance_rule": "Advance a milestone when task and evidence are published and refetched; preserve negative outcomes and pending CI instead of claiming testing success.",
+  "reproducibility_gate": "Do not call SG050..SG059 canonical reproduction verified until exact published checkout completes full replay and frozen hash or numerical comparisons are checked.",
+  "inherited_failure_register": "evidence/phases/SG050-SG061-phase-closure.json",
+  "last_documented": "2026-11-22"
+}
