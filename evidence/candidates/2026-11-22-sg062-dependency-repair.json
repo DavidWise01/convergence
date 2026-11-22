@@ -1,0 +1,72 @@
+{
+  "id": "TD-CROSSDOMAIN-SG062",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073 Reproducible Diodic Runtime & Robust Decision Gates",
+  "status": "IMPLEMENTED_COMPATIBILITY_CI_RESULT_UNVERIFIED",
+  "parent": "SG-PHASE-II-SG061-CLOSURE",
+  "problem": "SG060 found missing SG050.three_way and SG052.kind in published SG050-SG059 dependency chain. Original files have been preserved.",
+  "repair": {
+    "runner": "evidence/candidates/sg062_compat.py",
+    "workflow": ".github/workflows/sg062-repro.yml",
+    "principle": "Read-only additive Python loader hook to provide API aliases at module import, no modifications to historical source files.",
+    "aliases": [
+      {
+        "published_file": "2026-11-22-sg050-three-direction.py",
+        "required": "three_way(lo,hi)",
+        "delegation": "labels(lo,hi)[1]"
+      },
+      {
+        "published_file": "2026-11-22-sg052-joint-transition.py",
+        "required": "kind(pred,truth)",
+        "delegation": "outcome(pred,truth)"
+      }
+    ],
+    "execution": "GitHub Actions checked-out sources run 10-module import/function smoke and full frozen result assertions for SG050..SG059, archive JSON outcomes even on failure.",
+    "workflow_commit": "ee0ff48dd594ff860a2c810ae5b0629301347647",
+    "runner_commit": "6c1c97a3252b60ade5ae128490872c0036c49a3d"
+  },
+  "verification": {
+    "published_runner_re_fetched": true,
+    "workflow_re_fetched": true,
+    "github_actions_completion": "UNVERIFIED",
+    "github_combined_statuses_observed": 0,
+    "github_pr_workflow_runs_observed": 0,
+    "limitations": "GitHub connector run listing in current session only returns PR-triggered workflow runs; empty result does not prove workflow did not execute. Browser access to actions page unavailable.",
+    "local_compatibility_diagnostic": {
+      "imports_passed": 10,
+      "imports_tested": 10,
+      "causal_27_violation_count": 0,
+      "local_27_sample_count": 27,
+      "source": "/mnt/data/sg062/local_report.json",
+      "important": "local staged source versions differ from exact published GitHub source versions; cannot count as canonical clean-checkout validation."
+    },
+    "exact_published_full_metric_replay": "NOT_VERIFIED",
+    "sha256_reconciliation": "NOT_VERIFIED"
+  },
+  "disposition": "SG062 engineering task documented as additive repair implemented with CI and test gates authored, not a numerical reproducibility success. Retain SG060 blockers until exact published checkout run and frozen hashes are confirmed.",
+  "next": "SG063 consume actual GitHub Actions logs/artifact or run a clean independent source checkout, fix test harness only (never historical source), reconcile all 10 frozen results and document remaining mismatches.",
+  "failure_register": [
+    {
+      "code": "SG062-REPRO-01",
+      "severity": "HIGH",
+      "state": "OPEN",
+      "detail": "Canonical source clean-checkout full metrics not independently executed and verified in this session."
+    },
+    {
+      "code": "SG062-REPRO-02",
+      "severity": "HIGH",
+      "state": "OPEN",
+      "detail": "SG060 historical sources contain missing symbols; alias shim required; original modules are not standalone API-compatible."
+    },
+    {
+      "code": "SG062-REPRO-03",
+      "severity": "MEDIUM",
+      "state": "OPEN",
+      "detail": "Local smoke used source copies with different provenance/bytes; it cannot validate published-source numerical identity."
+    }
+  ],
+  "links": {
+    "runner": "https://github.com/DavidWise01/convergence/blob/main/evidence/candidates/sg062_compat.py",
+    "workflow": "https://github.com/DavidWise01/convergence/actions/workflows/sg062-repro.yml"
+  }
+}
