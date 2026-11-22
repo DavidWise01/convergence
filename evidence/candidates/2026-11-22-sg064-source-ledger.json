@@ -1,0 +1,65 @@
+{
+  "id": "TD-CROSSDOMAIN-SG064",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "milestone": 3,
+  "status": "AUDIT_COMPLETE_WITH_TWO_LEDGER_HASH_MISMATCHES",
+  "freeze": "evidence/candidates/2026-11-22-sg064-source-ledger-freeze.json",
+  "freeze_commit": "d4f2f70edbbe4a2c6af81164a25c0b6f987eb668",
+  "protocol": "Exact GitHub checkout re-executes published source with SG062/SG063 additive aliases; source byte SHA256 compared with SG063 archived fingerprints; full ledgers/grid/root digests compared with SG050..SG059 published JSON evidence. Historical source and records unchanged.",
+  "workflow": {
+    "run_id": 45064495673,
+    "job_id": 137337494956,
+    "commit": "798a80fd133c61ad763c5cbd8c703dbbfd39c9ce",
+    "conclusion": "failure",
+    "github_url": "https://github.com/DavidWise01/convergence/actions/runs/45064495673",
+    "artifact_id": 14771080120,
+    "artifact_url": "https://github.com/DavidWise01/convergence/actions/runs/45064495673/artifacts/14771080120",
+    "artifact_zip_sha256": "f8e60e0740b702fc1a8d7caec0cea41c3bea5a3b566727092775c1735d3eb074",
+    "python_runner": "evidence/candidates/sg064_provenance.py"
+  },
+  "results": {
+    "source_files_checked": 10,
+    "source_hashes_match": 10,
+    "source_hashes_fail": 0,
+    "digests_checked": 12,
+    "digests_match": 10,
+    "digests_mismatch": 2,
+    "unresolved_mismatches": [
+      {
+        "experiment": "SG054",
+        "field": "full_records_digest",
+        "expected": "e7f79a2f3cd416fca03f05a67f4f00f06dc9a0c6fdf142297b954ee365dd1e6b",
+        "recomputed": "94ae9d3c92cd302da5ac320eab219bb4ac7e8d3ff8986982aa858378a1002c69",
+        "state": "OPEN",
+        "interpretation": "SG054 per-record ledger digest differs despite prior frozen total cost matching. Identity of all entries remains unverified."
+      },
+      {
+        "experiment": "SG059",
+        "field": "ledger_sha256",
+        "expected": "1aafec137db2ec6afeeed671f125f3fc43b8c773575614675fc1df0ff4088e31",
+        "recomputed": "ca919bc5c9be29d0459641c6060e1c7aa3345f8b40ef4cfc45661100401d5fbb",
+        "state": "OPEN",
+        "interpretation": "SG059 per-case ledger digest differs despite SG063 frozen total loss matching. Identity of all entries remains unverified."
+      }
+    ],
+    "all_matching_digest_experiments": [
+      "SG050",
+      "SG051",
+      "SG052",
+      "SG053 (2 digests)",
+      "SG055",
+      "SG056 (2 digests)",
+      "SG057",
+      "SG058"
+    ]
+  },
+  "guardrails": [
+    "No expected digest rewritten to match execution.",
+    "No historical source files modified.",
+    "SG063 remains a verified selected-metric check, not an all-ledger identity check.",
+    "SG064 is complete as a negative provenance audit, NOT complete ledger reproduction."
+  ],
+  "proposed_next": "SG065 Prefix-only runtime enforcement and targeted counterexample minimization of the two ledger mismatches. Distinguish ordering/schema formatting differences from changed semantic per-record output; preserve both digests.",
+  "phase_progress_after_verification": 25
+}
