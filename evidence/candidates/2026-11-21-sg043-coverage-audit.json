@@ -1,0 +1,143 @@
+{
+  "id": "TD-CROSSDOMAIN-SG043",
+  "date": "2026-11-21",
+  "status": "IMPROVED_MARGINAL_COVERAGE_BUT_BELOW_TARGET_AND_CONDITIONAL_FAILURES",
+  "parent": "TD-CROSSDOMAIN-SG042",
+  "freeze": "evidence/candidates/2026-11-21-sg043-coverage-freeze.json",
+  "freeze_commit": "ae8c8e22218fbd62e97cd9be327c9e3393cca820",
+  "method": "SG042 HAC lag-3 SE on 24 ten-sample medians, OLS slope per observation, original nominal 90% z=1.645; split-calibration 90th percentile of |estimate-known_synthetic_slope|/SE, empirical rank ceil((360+1)*.90)=325; fixed240 data and independent decision gate.",
+  "calibration": {
+    "seeds": "81000000 + 200000*scenario_index + 10000*int(drift) + 101*k, k=0..19",
+    "streams": 360,
+    "original_coverage": "274/360",
+    "original_fraction": 0.761111,
+    "corrected_coverage": "325/360",
+    "corrected_fraction": 0.902778,
+    "z": 2.2965902800075613
+  },
+  "holdout": {
+    "seeds": "87000000 + 200000*scenario_index + 10000*int(drift) + 101*k, k=0..39",
+    "streams": 720,
+    "coverage": {
+      "ALL": {
+        "n": 720,
+        "original_covered": 554,
+        "corrected_covered": 636,
+        "remaining_miscoverage": 84
+      },
+      "reference": {
+        "n": 80,
+        "original_covered": 58,
+        "corrected_covered": 68,
+        "remaining_miscoverage": 12
+      },
+      "correlation_switch": {
+        "n": 80,
+        "original_covered": 55,
+        "corrected_covered": 66,
+        "remaining_miscoverage": 14
+      },
+      "laplace_tail": {
+        "n": 80,
+        "original_covered": 56,
+        "corrected_covered": 69,
+        "remaining_miscoverage": 11
+      },
+      "subtle_drift": {
+        "n": 80,
+        "original_covered": 61,
+        "corrected_covered": 69,
+        "remaining_miscoverage": 11
+      },
+      "fast_oscillation": {
+        "n": 80,
+        "original_covered": 75,
+        "corrected_covered": 79,
+        "remaining_miscoverage": 1
+      },
+      "late_correlation_switch": {
+        "n": 80,
+        "original_covered": 57,
+        "corrected_covered": 67,
+        "remaining_miscoverage": 13
+      },
+      "late_oscillation": {
+        "n": 80,
+        "original_covered": 69,
+        "corrected_covered": 77,
+        "remaining_miscoverage": 3
+      },
+      "variable_period": {
+        "n": 80,
+        "original_covered": 75,
+        "corrected_covered": 79,
+        "remaining_miscoverage": 1
+      },
+      "colored_control": {
+        "n": 80,
+        "original_covered": 48,
+        "corrected_covered": 62,
+        "remaining_miscoverage": 18
+      }
+    },
+    "original_mean_interval_width": 0.0024981,
+    "corrected_mean_interval_width": 0.0034877,
+    "original_decision": {
+      "correct": 606,
+      "FP": 87,
+      "FN": 2,
+      "unresolved": 25,
+      "cost": 24048,
+      "observations": 172800
+    },
+    "corrected_decision": {
+      "correct": 577,
+      "FP": 41,
+      "FN": 1,
+      "unresolved": 101,
+      "cost": 18426,
+      "observations": 172800
+    },
+    "relative_cost_improvement_pct": 23.378,
+    "remaining_miscoverage_count": 84,
+    "full_miscoverage_ledger": "Generated deterministically by committed Python executable; locally generated full report /mnt/data/sg043/holdout.json",
+    "holdout_digest": "31e415fb865618165f610628977b57c62c54738ebb59a14d13981cc329db628f"
+  },
+  "findings": [
+    "SG042 original nominal 90% intervals covered true programmed slopes in only 554/720 (76.94%) holdout traces",
+    "Split-calibrated correction covered 636/720 (88.33%), below 90% sample target",
+    "Conditional coverage fell to 62/80 (77.5%) in colored-noise group, 66/80 (82.5%) correlation-switch group",
+    "Corrected interval reduced incorrect decisions 89 to 42 at cost of raising abstentions 25 to 101",
+    "This is fixed240 interval-only decision rule, not direct SG042 end-to-end controller comparison"
+  ],
+  "limitations": [
+    "Split-conformal quantile provides a marginal statement only under exchangeability between calibration and test standardized residuals; synthetic group dependencies or shifts may break it",
+    "Observed 88.33% rather than exact 90% not alone a formal significance rejection of nominal coverage",
+    "The rule prefers confirmed when CI excludes zero, and rejected only when equivalence CI lies within ±0.0032; ambiguity withheld",
+    "Truth labels are known because streams are synthetic; not a real-world data-source validation",
+    "SE and standardized errors are computed on all 240 continuation samples, no early stopping optimization",
+    "Same design family used across calibration/holdout but seeds did not overlap"
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python standard-library 360 calibration traces",
+      "result": "Calibrated z=2.2965902800075613, old coverage 274, calibrated 325"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "GitHub freeze",
+      "result": "Commit ae8c8e22218fbd62e97cd9be327c9e3393cca820 before holdout"
+    },
+    {
+      "date": "2026-11-21",
+      "surface": "Local Python 720 fresh seed holdout",
+      "result": "636 intervals covered, 84 misses; corrected decision cost 18426 vs original 24048"
+    }
+  ],
+  "next": "SG044 conditional/group-aware interval calibration under correlation regime shifts with explicit finite-sample coverage checks and reserve independent negative controls.",
+  "reproducible_script": "evidence/candidates/2026-11-21-sg043-coverage-audit.py",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence"
+  ]
+}
