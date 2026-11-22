@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 7,
-  "percent": 58.3,
+  "completed": 8,
+  "percent": 66.7,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-057",
+  "next": "SG-058",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -78,7 +78,8 @@
       "turn": 8,
       "target": "Stop or continue according to evidence and cost",
       "progress_percent": 66.7,
-      "status": "PENDING"
+      "status": "VERIFIED_IMPROVED_UNDER_FROZEN_LOSS",
+      "evidence": "evidence/candidates/2026-11-22-sg057-adaptive-observation.json"
     },
     {
       "id": "SG-058",
