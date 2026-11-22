@@ -1,0 +1,88 @@
+{
+  "id": "TD-CROSSDOMAIN-SG045-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_FRESH_HOLDOUT",
+  "prior": "TD-CROSSDOMAIN-SG044",
+  "goal": "Determine whether observable within-stream stationarity diagnostics plus persistence improve conditional worst-environment coverage versus pooled conformal correction without observing hidden scenario labels.",
+  "feature": "For full 240-sample continuation, detrend whole stream and its two 120-sample halves independently with OLS, compute residual lag1 correlation and RMS. Flag shift if |rho_second-rho_first|>0.22 OR ratio of maximum/minimum residual RMS>1.5; cross shift/stable with whole-stream rho medium [.5,.8) vs high >=.8 (low <.5 remains fallback).",
+  "calibration": {
+    "seed_start": 99000000,
+    "streams": 360,
+    "rank": "ceil((n+1)*.90) ordered abs(slope estimate - known simulated true slope)/HAC SE",
+    "global_multiplier": 2.544770048807047,
+    "group_multipliers": {
+      "shift_high": {
+        "n": 32,
+        "z": 2.8676243887109742
+      },
+      "shift_medium": {
+        "n": 5,
+        "z": 2.544770048807047,
+        "fallback": true
+      },
+      "stable_high": {
+        "n": 210,
+        "z": 2.546990603383594
+      },
+      "stable_medium": {
+        "n": 113,
+        "z": 2.544770048807047
+      }
+    },
+    "unseen_group": "Fallback global when calibration group has fewer than 30 entries or is absent."
+  },
+  "pilot": {
+    "seed_start": 100000000,
+    "streams": 180,
+    "global": {
+      "covered": 163,
+      "loss": 4572,
+      "correct": 136,
+      "FP": 9,
+      "FN": 0,
+      "abstain": 35
+    },
+    "grouped": {
+      "covered": 163,
+      "loss": 4590,
+      "correct": 135,
+      "FP": 9,
+      "FN": 0,
+      "abstain": 36
+    },
+    "disclosure": "Negative pilot inspected; parameters unchanged and frozen before final holdout."
+  },
+  "holdout": {
+    "seed_start": 101000000,
+    "streams": 720,
+    "seed_formula": "101000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "no_retuning": true
+  },
+  "comparison": "Pooled multiplier learned from SG045's own 360 calibration rows versus observable stationarity/persistence group-specific multipliers; both use same full 240 observations, HAC lag3, 10-sample medians, and SG043 loss model.",
+  "metrics": [
+    "overall and per-scenario true slope coverage",
+    "worst-scenario coverage",
+    "observable group coverage",
+    "interval width",
+    "correct/FP/FN/abstain",
+    "loss",
+    "full miscoverage seed ledger"
+  ],
+  "limitations": [
+    "Full240 feature uses whole continuation and is retrospective, not predecision streaming.",
+    "Calibration data from same known synthetic families, only seeds unseen.",
+    "Hidden true slopes used to evaluate and calibrate synthetic intervals, not provided to policy.",
+    "Pooled split-quantile coverage does not guarantee worst-scenario coverage or conditional validity."
+  ]
+}
