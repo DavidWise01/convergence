@@ -1,0 +1,225 @@
+{
+  "id": "TD-CROSSDOMAIN-SG048",
+  "date": "2026-11-21",
+  "status": "FAILED_IMPROVEMENT_WARNING_ONLY_BOUNDARY_ADDS_ABSTENTION_WITHOUT_ERROR_REDUCTION",
+  "parent": "TD-CROSSDOMAIN-SG047",
+  "freeze": "evidence/candidates/2026-11-21-sg048-warning-only-freeze.json",
+  "freeze_commit": "08e2667bf076ca7d9eb2e4cb545a705562373d69",
+  "method": "Whole240 HAC slope interval with SG047 pooled calibration z=2.291027529910169 always preserved. SG047 boundary scan score>.5186019321 triggers secondary post-changepoint interval z=5.3461295114. Only direct non-unresolved label contradiction changes the primary decision to unresolved. No local interval substitutes for full history.",
+  "pilot": {
+    "seed_start": 119000000,
+    "streams": 180,
+    "pooled": {
+      "correct": 138,
+      "FP": 10,
+      "FN": 0,
+      "abstain": 32,
+      "loss": 4668
+    },
+    "SG046": {
+      "correct": 120,
+      "FP": 5,
+      "FN": 0,
+      "abstain": 55,
+      "loss": 4332
+    },
+    "SG047": {
+      "correct": 119,
+      "FP": 12,
+      "FN": 0,
+      "abstain": 49,
+      "loss": 5274
+    },
+    "SG048": {
+      "correct": 137,
+      "FP": 10,
+      "FN": 0,
+      "abstain": 33,
+      "loss": 4686
+    },
+    "disclosure": "SG048 withheld one correct decision, fixed zero errors in disclosed pilot. Freeze preceded untouched holdout."
+  },
+  "holdout": {
+    "seed_start": 123000000,
+    "seed_formula": "123000000 + 200000*scenario_index + 10000*int(drift) + 101*k, k=0..39",
+    "streams": 720,
+    "comparisons": {
+      "pooled": {
+        "correct": 582,
+        "FP": 39,
+        "FN": 0,
+        "unresolved": 99,
+        "loss": 18000,
+        "observations": 172800,
+        "covered": 633
+      },
+      "SG046": {
+        "correct": 529,
+        "FP": 40,
+        "FN": 0,
+        "unresolved": 151,
+        "loss": 19086,
+        "observations": 172800,
+        "covered": 641
+      },
+      "SG047": {
+        "correct": 493,
+        "FP": 42,
+        "FN": 0,
+        "unresolved": 185,
+        "loss": 19998,
+        "observations": 172800,
+        "covered": 635
+      },
+      "SG048": {
+        "correct": 581,
+        "FP": 39,
+        "FN": 0,
+        "unresolved": 100,
+        "loss": 18018,
+        "observations": 172800,
+        "covered": 633
+      }
+    },
+    "coverage_by_scenario": {
+      "reference": {
+        "pooled": 63,
+        "SG046": 64,
+        "SG047": 62,
+        "SG048": 63
+      },
+      "correlation_switch": {
+        "pooled": 60,
+        "SG046": 64,
+        "SG047": 59,
+        "SG048": 60
+      },
+      "laplace_tail": {
+        "pooled": 70,
+        "SG046": 71,
+        "SG047": 70,
+        "SG048": 70
+      },
+      "subtle_drift": {
+        "pooled": 69,
+        "SG046": 71,
+        "SG047": 69,
+        "SG048": 69
+      },
+      "fast_oscillation": {
+        "pooled": 80,
+        "SG046": 80,
+        "SG047": 80,
+        "SG048": 80
+      },
+      "late_correlation_switch": {
+        "pooled": 64,
+        "SG046": 68,
+        "SG047": 68,
+        "SG048": 64
+      },
+      "late_oscillation": {
+        "pooled": 79,
+        "SG046": 79,
+        "SG047": 80,
+        "SG048": 79
+      },
+      "variable_period": {
+        "pooled": 80,
+        "SG046": 80,
+        "SG047": 80,
+        "SG048": 80
+      },
+      "colored_control": {
+        "pooled": 68,
+        "SG046": 64,
+        "SG047": 67,
+        "SG048": 68
+      }
+    },
+    "changed_decisions": [
+      {
+        "seed": 123000202,
+        "scenario": "reference",
+        "true_drift": false,
+        "prior_decision": "rejected",
+        "SG048_decision": "unresolved",
+        "result": "unnecessary abstention; correct rejection withheld"
+      }
+    ],
+    "wrong_decisions_prevented": 0,
+    "all_39_failure_seeds_by_scenario": {
+      "reference": [
+        123000404,
+        123001212,
+        123001414,
+        123002222,
+        123002626,
+        123003131,
+        123003535
+      ],
+      "correlation_switch": [
+        123200202,
+        123200505,
+        123200808,
+        123201313,
+        123201414,
+        123201515,
+        123201919,
+        123202020,
+        123202323,
+        123202626,
+        123203333,
+        123203838
+      ],
+      "laplace_tail": [
+        123400606,
+        123401212,
+        123401515,
+        123402424,
+        123402828,
+        123403636
+      ],
+      "subtle_drift": [
+        123600000,
+        123600101,
+        123600606,
+        123601010,
+        123602020
+      ],
+      "late_correlation_switch": [
+        124000303,
+        124000909,
+        124002828
+      ],
+      "colored_control": [
+        124601212,
+        124601616,
+        124601919,
+        124602121,
+        124602929,
+        124603636
+      ]
+    },
+    "all_errors_type": "FP",
+    "rows_sha256": "de8629b47fbf95e5c4228ddde5befb84b5fa9d04daf0303e2d54d7bb521f0fb8",
+    "worst_scenario": "correlation_switch 60/80=75% true slope interval coverage"
+  },
+  "findings": [
+    "Warning-only use of the boundary did not prevent wrong decisions; 39 FP persist under pooled and SG048.",
+    "SG048 worsened loss by 18 against the pooled full240 baseline due to withholding one correct rejection.",
+    "SG046 improved coverage from 633 to 641 but had one more wrong classification and higher loss than pooled on these seeds.",
+    "Every remaining incorrect SG048 classification was a false confirmation; model labels any interval outside zero, including negative estimates, as confirmed drift. The positive-only drift experimental hypothesis merits a directional gate test.",
+    "Earlier SG047 lost information by truncating; SG048 preserved full-history but challenge had negligible discriminative power."
+  ],
+  "limitations": [
+    "All experiments synthetic; heldout random seeds from predefined generator families, not external data.",
+    "The study is retrospective and uses full 240 continuation samples for all policies, with no actual savings in observations.",
+    "Local and full slopes share the same observations so disagreement is not an independent source.",
+    "Changing a correct decision to unresolved is assessed against known synthetic truth only, never available during deployment.",
+    "The GitHub source imports sibling SG047 and SG043 files; source committed and re-fetched, but clean checkout execution was not separately verified."
+  ],
+  "next": "SG049 directional drift hypotheses: distinguish positive drift, negative drift, and no trend; test one-sided positive confirmations and negative-control false alarms under colored noise with a preregistered decision cost.",
+  "executable": "evidence/candidates/2026-11-21-sg048-warning-only.py",
+  "local_full_audit": "/mnt/data/sg048/holdout-v1.json"
+}
