@@ -1,0 +1,87 @@
+{
+  "id": "TD-CROSSDOMAIN-SG046-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_CALIBRATION_AND_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG045",
+  "design": "Retrospective 240-point stream; detrended half-stream autocorrelation change >.22 OR residual RMS ratio >1.5 marks a shift. If flagged, fit HAC lag3 drift on last 120 samples (12 bins of ten) and apply shift-flagged split-calibrated 90th-percentile standardized-error multiplier. Otherwise fit whole240 with its pooled calibration multiplier. No hidden scenario labels in policy.",
+  "calibration": {
+    "seed_start": 103000000,
+    "n": 360,
+    "flagged": 37,
+    "whole_z": 2.453084988962486,
+    "local_shift_z": 5.9182295530936235,
+    "minimum_shift_group": 30
+  },
+  "pilot": {
+    "seed_start": 104000000,
+    "n": 180,
+    "whole": {
+      "correct": 142,
+      "FP": 12,
+      "FN": 1,
+      "abstain": 25,
+      "loss": 4932,
+      "coverage_by_scenario": [
+        15,
+        14,
+        18,
+        18,
+        20,
+        17,
+        20,
+        20,
+        14
+      ]
+    },
+    "local": {
+      "correct": 132,
+      "FP": 10,
+      "FN": 1,
+      "abstain": 37,
+      "loss": 4848,
+      "coverage_by_scenario": [
+        15,
+        16,
+        18,
+        18,
+        20,
+        17,
+        20,
+        20,
+        14
+      ]
+    },
+    "disclosure": "Pilot observed before freeze; no post-pilot retuning. Two fewer false confirmations, ten fewer correct decisions, twelve extra abstentions."
+  },
+  "holdout": {
+    "seed_start": 107000000,
+    "per_truth_scenario": 40,
+    "streams": 720,
+    "seed_formula": "107000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "report": [
+      "all-scenario and worst-case coverage",
+      "width",
+      "correct FP FN unresolved",
+      "loss and detailed miss ledger"
+    ],
+    "locked": true
+  },
+  "limitations": [
+    "Full-window retrospective feature, not an online predecision guard",
+    "37 calibration shifted streams gives uncertain group quantile",
+    "Possible synthetic nonstationarity and nonexchangeability mean no finite-sample conditional guarantee",
+    "True slope used in calibration only; policy never sees it",
+    "No scenario-specific tuning"
+  ]
+}
