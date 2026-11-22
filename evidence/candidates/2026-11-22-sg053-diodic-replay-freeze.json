@@ -1,0 +1,69 @@
+{
+  "id": "TD-CROSSDOMAIN-SG053-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "parent": "TD-CROSSDOMAIN-SG052",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "purpose": "Audit causal prefix-only three-way inference, future-suffix noninterference, deterministic replay, and append-only hash-chain integrity under simultaneous trend/noise transitions.",
+  "frozen_protocol": {
+    "generator": "SG052 deterministic synthetic generator, same 27 combinations of previous direction, current direction and AR1 regime. Onset fixed per k at 100,120,140 but unknown to controller.",
+    "checkpoints": [
+      100,
+      140,
+      180,
+      220,
+      240
+    ],
+    "inference": "SG052 frozen trailing min(100,n) HAC3 median-bin estimator, z=4.327111573414373; only observed prefix [0:n] passed. Direction positive,negative,zero,unresolved per frozen SG052 classification.",
+    "suffix_edits": "At each n<240, hold [0:n] unchanged; replace future [n:240] with upward ramp, downward ramp, or deterministic permutation. Exact prior decision must remain identical for every modification. At n=240 future suffix is empty, so no vacuous edits counted.",
+    "replay": "JSON round-trip of same numeric prefix at each checkpoint; classification must match exactly.",
+    "append_only": "Each checkpoint appends event {n,prefix_digest,decision,parent_hash}, with SHA256 of sorted-key compact JSON canonical payload. Subsequent events must link parent hash, and independent chain replay must verify.",
+    "negative_control": "Deliberately invalid policy classifies full 240-point data at early checkpoints, then tests same suffix changes; measured sensitivity demonstrates ability of audit to detect future-lookahead. Control deliberately violates diodic causal rule.",
+    "scoring": "At every checkpoint compare decision to final programmed post-change direction, separately report correct/missed direction/false direction/unresolved. This is diagnostic only, not an online commitment policy.",
+    "acceptance": "Zero tested prefix interference, replay or chain violations on holdout; negative control detects some leakage (nonzero changed decisions), no claim this exhaustively proves absence of all possible leakage."
+  },
+  "pilot": {
+    "seed_start": 173000000,
+    "per_combination": 3,
+    "streams": 81,
+    "causal_violations": 0,
+    "leaky_control_changed_decisions": 603,
+    "leaky_control_challenges": 972,
+    "leaky_streams_detected": 81,
+    "checkpoint100": {
+      "correct": 9,
+      "missed_direction": 1,
+      "false_direction": 23,
+      "abstain": 48
+    },
+    "checkpoint240": {
+      "correct": 41,
+      "missed_direction": 0,
+      "false_direction": 6,
+      "abstain": 34
+    },
+    "disclosure": "Pilot was executed and inspected before freeze, including a prefreeze correction to omit vacuous suffix edits at n=240. Freeze preserves unchanged estimator and thresholds."
+  },
+  "holdout": {
+    "seed_start": 179000000,
+    "count_per_configuration": 40,
+    "n": 1080,
+    "seed_formula": "179000000 + 1000000*before_index + 200000*after_index + 30000*noise_index + 101*k, onset=(100,120,140)[k%3]",
+    "no_retuning": true,
+    "report": [
+      "prefix violations",
+      "replay failures",
+      "chain integrity",
+      "negative control sensitivity",
+      "five checkpoint accuracy/confusion",
+      "all failed cases and immutable event roots"
+    ],
+    "phase_target": "4 of 12 verified =33.3% after source/result/index/tracker refetch."
+  },
+  "limitations": [
+    "Prefix noninterference and hash-chain verification are software tests, not formal proofs against arbitrary code paths.",
+    "Synthetic programmed truth and transition generator are unchanged from SG052; no field transfer.",
+    "A correct prefix-only output may still be wrong about the post-change direction, especially before transition.",
+    "Hash chains provide tamper-evidence only if reference roots are retained in trusted storage; these tests do not establish distributed consensus."
+  ]
+}
