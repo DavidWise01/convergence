@@ -1,0 +1,456 @@
+{
+  "id": "TD-CROSSDOMAIN-SG056",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 7,
+  "status": "VERIFIED_SENSITIVITY_WITH_CONDITIONAL_POLICY_REVERSAL",
+  "freeze": "evidence/candidates/2026-11-22-sg056-loss-sensitivity-freeze.json",
+  "freeze_commit": "329cb6e6c6ee8448bf7ac04a4f440a3efa53787a",
+  "method": "SG055 previously trained deterministic action table (only authorized 220:negative:hi) applied unchanged to 1080 fresh SG052 simulated sign/noise transitions. Compare SG052 full240 wait, SG054 conservative early threshold4, and SG055 empirical ranked early actions. Rescore identical actions under 27 frozen combinations of wrong-direction, abstain and sample costs. Winner retrospectively defined as minimum total holdout loss, fixed tie break wait→SG054→SG055; not a deployable oracle.",
+  "holdout": {
+    "seed_start": 211000000,
+    "n": 1080,
+    "per_configuration": 40,
+    "seed_formula": "211000000+1000000*before_index+200000*after_index+30000*noise_index+101*k,k=0..39",
+    "action_counts": {
+      "SG052_wait": {
+        "correct": 460,
+        "missed_direction": 2,
+        "false_direction": 46,
+        "abstain": 572,
+        "observations": 259200,
+        "early": 0
+      },
+      "SG054_threshold4": {
+        "correct": 464,
+        "missed_direction": 2,
+        "false_direction": 55,
+        "abstain": 559,
+        "observations": 257000,
+        "early": 26
+      },
+      "SG055_ranked": {
+        "correct": 491,
+        "missed_direction": 2,
+        "false_direction": 67,
+        "abstain": 520,
+        "observations": 255360,
+        "early": 192
+      }
+    },
+    "center_cost": {
+      "false_direction": 150,
+      "abstain": 18,
+      "sample": 0.06,
+      "missed_direction": 90
+    },
+    "center_losses": {
+      "SG052_wait": 32928,
+      "SG054_threshold4": 33912,
+      "SG055_ranked": 34911.6
+    },
+    "winner_count": {
+      "SG052_wait": 24,
+      "SG054_threshold4": 0,
+      "SG055_ranked": 3
+    },
+    "ranked_wins_only_when": {
+      "false_direction_cost": 75,
+      "abstain_cost": 36,
+      "sample_costs": [
+        0.03,
+        0.06,
+        0.12
+      ]
+    },
+    "grid": [
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 6,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 14838,
+          "SG054_threshold4": 15369,
+          "SG055_ranked": 15985.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 6,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 22614,
+          "SG054_threshold4": 23079,
+          "SG055_ranked": 23646.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 6,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 38166,
+          "SG054_threshold4": 38499,
+          "SG055_ranked": 38968.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 18,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 21702,
+          "SG054_threshold4": 22077,
+          "SG055_ranked": 22225.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 18,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 29478,
+          "SG054_threshold4": 29787,
+          "SG055_ranked": 29886.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 18,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 45030,
+          "SG054_threshold4": 45207,
+          "SG055_ranked": 45208.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 36,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 31998,
+          "SG054_threshold4": 32139,
+          "SG055_ranked": 31585.8
+        },
+        "winner": "SG055_ranked"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 36,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 39774,
+          "SG054_threshold4": 39849,
+          "SG055_ranked": 39246.6
+        },
+        "winner": "SG055_ranked"
+      },
+      {
+        "false_direction_cost": 75,
+        "abstain_cost": 36,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 55326,
+          "SG054_threshold4": 55269,
+          "SG055_ranked": 54568.2
+        },
+        "winner": "SG055_ranked"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 6,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 18288,
+          "SG054_threshold4": 19494,
+          "SG055_ranked": 21010.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 6,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 26064,
+          "SG054_threshold4": 27204,
+          "SG055_ranked": 28671.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 6,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 41616,
+          "SG054_threshold4": 42624,
+          "SG055_ranked": 43993.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 18,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 25152,
+          "SG054_threshold4": 26202,
+          "SG055_ranked": 27250.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 18,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 32928,
+          "SG054_threshold4": 33912,
+          "SG055_ranked": 34911.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 18,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 48480,
+          "SG054_threshold4": 49332,
+          "SG055_ranked": 50233.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 36,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 35448,
+          "SG054_threshold4": 36264,
+          "SG055_ranked": 36610.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 36,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 43224,
+          "SG054_threshold4": 43974,
+          "SG055_ranked": 44271.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 150,
+        "abstain_cost": 36,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 58776,
+          "SG054_threshold4": 59394,
+          "SG055_ranked": 59593.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 6,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 25188,
+          "SG054_threshold4": 27744,
+          "SG055_ranked": 31060.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 6,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 32964,
+          "SG054_threshold4": 35454,
+          "SG055_ranked": 38721.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 6,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 48516,
+          "SG054_threshold4": 50874,
+          "SG055_ranked": 54043.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 18,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 32052,
+          "SG054_threshold4": 34452,
+          "SG055_ranked": 37300.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 18,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 39828,
+          "SG054_threshold4": 42162,
+          "SG055_ranked": 44961.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 18,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 55380,
+          "SG054_threshold4": 57582,
+          "SG055_ranked": 60283.2
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 36,
+        "sample_cost": 0.03,
+        "loss": {
+          "SG052_wait": 42348,
+          "SG054_threshold4": 44514,
+          "SG055_ranked": 46660.8
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 36,
+        "sample_cost": 0.06,
+        "loss": {
+          "SG052_wait": 50124,
+          "SG054_threshold4": 52224,
+          "SG055_ranked": 54321.6
+        },
+        "winner": "SG052_wait"
+      },
+      {
+        "false_direction_cost": 300,
+        "abstain_cost": 36,
+        "sample_cost": 0.12,
+        "loss": {
+          "SG052_wait": 65676,
+          "SG054_threshold4": 67644,
+          "SG055_ranked": 69643.2
+        },
+        "winner": "SG052_wait"
+      }
+    ],
+    "ranked_wrong_seeds": [
+      211032424,
+      211033232,
+      211062626,
+      211200404,
+      211200606,
+      211200909,
+      211202828,
+      211203232,
+      211230101,
+      211230303,
+      211230404,
+      211230606,
+      211230707,
+      211230909,
+      211231010,
+      211231111,
+      211231313,
+      211231414,
+      211232121,
+      211232323,
+      211232525,
+      211233939,
+      211260808,
+      211261313,
+      211262626,
+      211262828,
+      211263232,
+      211263838,
+      211263939,
+      212030000,
+      212203434,
+      212203838,
+      212230000,
+      212230505,
+      212231515,
+      212232222,
+      212232323,
+      212232929,
+      212233737,
+      212260808,
+      212262424,
+      212263131,
+      212263434,
+      212432424,
+      212433939,
+      213031414,
+      213032121,
+      213200707,
+      213201515,
+      213201818,
+      213202626,
+      213202828,
+      213203535,
+      213203939,
+      213230505,
+      213230606,
+      213231313,
+      213231414,
+      213232222,
+      213232525,
+      213233232,
+      213233636,
+      213233838,
+      213260404,
+      213261818,
+      213262020,
+      213263838,
+      213431010,
+      213432727
+    ],
+    "wrong_seed_count": 69,
+    "stream_ledger_sha256": "c02fad440ece15e2f598c49c52e57c038a81ca9464c88bdd0deb6b418e1a5750",
+    "grid_sha256": "5904a5c3abd2ce3aca86722254b2041b2d92fc670cfdeb34bcc76a24bb735c6e"
+  },
+  "findings": [
+    "Wait is best in 24/27 cost cells including frozen original 150/18/.06 weights.",
+    "SG055 wins three scenarios where error penalty is halved and abstention penalty doubled; SG054 never wins any grid cell.",
+    "SG055 gains 31 correct outcomes and reduces unresolved by 52 vs wait but adds 21 wrong directions; this accounts for its baseline loss regression.",
+    "Training-derived action ranking is not invariant to decision costs; no single decision policy is universally optimal without defining stakes."
+  ],
+  "limitations": [
+    "Loss weights are hypothetical; ranking cannot be transferred without domain-specific cost calibration.",
+    "Choosing a winner after viewing holdout labels is a retrospective grid audit, not causal action policy selection.",
+    "All 27 grid cells use the same 1080 streams, so winner counts are not 27 independent test sets.",
+    "Fresh seeds but synthetic noise family known; no external validation.",
+    "Committed GitHub source has an alias shim for SG052 dependency; separately executing clean GitHub checkout has not been verified."
+  ],
+  "next": "SG057 Adaptive observation: prefreeze a cost-aware checkpoint policy, then test whether actual sampling savings outweigh misclassifications versus wait across the declared cost grid.",
+  "source": "evidence/candidates/2026-11-22-sg056-loss-sensitivity.py",
+  "local_full_holdout": "/mnt/data/sg056/holdout.json"
+}
