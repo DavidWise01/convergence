@@ -1,0 +1,79 @@
+{
+  "id": "TD-CROSSDOMAIN-SG054-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "parent": "TD-CROSSDOMAIN-SG053",
+  "status": "FROZEN_BEFORE_FRESH_HOLDOUT",
+  "design": "One deterministic prefix-only controller. At checkpoints 100,140,180,220,240 compute trend with trailing up-to-100 HAC3; for n<240 commit direction if classified at z=4*(4.327111573414373), otherwise observe; at 240 classify using z=4.327111573414373, commit if directional or zero, else abstain. Earliest allowed commit wins. No future observations accessed until time n.",
+  "actions": [
+    "commit_negative",
+    "commit_zero",
+    "commit_positive",
+    "observe",
+    "abstain"
+  ],
+  "decision_order": "On each prefix exactly one action, with deterministic classification and observation deadline; compare final-only action from SG052 on same streams.",
+  "loss": {
+    "sample_each": 0.06,
+    "false_direction": 150,
+    "missed_direction": 90,
+    "unresolved": 18,
+    "correct": 0
+  },
+  "pilot": {
+    "seed_start": 185000000,
+    "per_combination": 6,
+    "n": 162,
+    "candidate_multiplier_sweep": [
+      1,
+      1.25,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5,
+      8
+    ],
+    "chosen_early_multiplier": 4,
+    "SG052_wait": {
+      "correct": 63,
+      "missed_direction": 0,
+      "false_direction": 7,
+      "abstain": 92,
+      "loss": 5038.8,
+      "observations": 38880,
+      "early_commits": 0
+    },
+    "SG054": {
+      "correct": 68,
+      "missed_direction": 0,
+      "false_direction": 11,
+      "abstain": 83,
+      "loss": 5530.8,
+      "observations": 38280,
+      "early_commits": 8
+    },
+    "disclosure": "Pilot inspected and multiple thresholds tried before freeze. Fixed conservative multiplier 4 chosen to test rare early commitment. It is still inferior to waiting on the pilot; no holdout tuning."
+  },
+  "holdout": {
+    "seed_start": 191000000,
+    "per_configuration": 40,
+    "n": 1080,
+    "seed_formula": "191000000+1000000*before_index+200000*after_index+30000*noise_index+101*k",
+    "programmed_onset": "(100,120,140)[k%3]",
+    "no_retuning": true
+  },
+  "safety_checks": [
+    "No final observation read before checkpoint",
+    "Zero output differences on modified unseen future",
+    "No retroactive commitments or decisions",
+    "Correct count, wrong count, abstentions, sample budget and modeled loss reported",
+    "If early action adds loss, reject action policy rather than declaring success"
+  ],
+  "limits": [
+    "The threshold was selected after looking at one pilot; validation is solely the heldout seed batch.",
+    "Early checkpoint labels compared with ultimate postchange target even when transition has not occurred yet; this penalizes premature commitment appropriately.",
+    "Known synthetic generators, not real-world deployment."
+  ]
+}
