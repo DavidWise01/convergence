@@ -1,0 +1,96 @@
+{
+  "id": "TD-CROSSDOMAIN-SG048-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_NEGATIVE_PILOT_BEFORE_NEW_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG047",
+  "goal": "Preserve whole-stream trend and uncertainty; use SG047 change point solely as a challenge rather than replacing full history.",
+  "frozen_rules": {
+    "whole_history": "Use SG047 globally split calibrated full240 HAC slope interval with multiplier 2.291027529910169",
+    "boundary_detection": "SG047 frozen scan candidates [60,80,100,120,140,160,180], score |delta_AR1|+.35|log(RMS_after/RMS_before)|, alarm if score>.5186019321426611",
+    "post_boundary": "When alarmed, compute post-boundary HAC slope interval with SG047 multiplier 5.346129511387088, but never replace full-history interval or slope.",
+    "conflict": "If full-history classification is confirmed/rejected AND post-boundary classification is the opposing non-unresolved label, change decision to unresolved. Local unresolved or same labels leave full-history decision unchanged. No data discarded.",
+    "classify": "Interval entirely above/below zero -> confirmed; otherwise interval entirely in (-.0032,.0032) -> rejected; otherwise unresolved",
+    "observation_budget": 240,
+    "loss": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "unresolved": 18
+    }
+  },
+  "disclosed_pilot": {
+    "seed_start": 119000000,
+    "streams": 180,
+    "pooled": {
+      "correct": 138,
+      "FP": 10,
+      "FN": 0,
+      "unresolved": 32,
+      "loss": 4668,
+      "covered_worst": 13
+    },
+    "SG046": {
+      "correct": 120,
+      "FP": 5,
+      "FN": 0,
+      "unresolved": 55,
+      "loss": 4332,
+      "covered_worst": 16
+    },
+    "SG047": {
+      "correct": 119,
+      "FP": 12,
+      "FN": 0,
+      "unresolved": 49,
+      "loss": 5274,
+      "covered_worst": 14
+    },
+    "SG048": {
+      "correct": 137,
+      "FP": 10,
+      "FN": 0,
+      "unresolved": 33,
+      "loss": 4686,
+      "covered_worst": 13
+    },
+    "notes": "One formerly correct pooled decision withheld, no wrong prevented. Negative pilot preserved. SG048 still less cautious than SG046."
+  },
+  "holdout": {
+    "seed_start": 123000000,
+    "per_truth_per_scenario": 40,
+    "streams": 720,
+    "seed_formula": "123000000+200000*scenario_index+10000*int(drift)+101*k; k=0..39",
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "comparators": [
+      "SG047 pooled full-stream",
+      "SG046 frozen segment-local",
+      "SG047 frozen change-location",
+      "SG048 warning-only challenge"
+    ],
+    "report": [
+      "paired classification and loss",
+      "full-history coverage",
+      "worst-scenario coverage",
+      "correctness of withheld decisions",
+      "false alarms and missed shifts",
+      "all wrong seeds"
+    ],
+    "no_retuning": true
+  },
+  "limitations": [
+    "All policies retrospective full240, not online.",
+    "One local interval and one full interval share data, so conflict not independent source evidence.",
+    "A warning-only approach can keep confident false decisions when local comparator abstains.",
+    "Split calibration pooled and on synthetic data does not guarantee worst-regime coverage."
+  ]
+}
