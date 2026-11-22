@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 0,
-  "percent": 0,
+  "completed": 1,
+  "percent": 8.3,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-050",
+  "next": "SG-051",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -22,7 +22,8 @@
       "turn": 1,
       "target": "Positive, zero, and negative ground truth",
       "progress_percent": 8.3,
-      "status": "PENDING"
+      "status": "VERIFIED",
+      "evidence": "evidence/candidates/2026-11-22-sg050-three-direction.json"
     },
     {
       "id": "SG-051",
@@ -114,5 +115,6 @@
       "next phase charter"
     ],
     "early_stop": "Boundary-triggered immediate close; denominator changes to actually executed verified turns, with planned 12-turn schedule clearly distinguished from early closure."
-  }
+  },
+  "last_verified": "2026-11-22"
 }
