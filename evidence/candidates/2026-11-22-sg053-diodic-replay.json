@@ -1,0 +1,106 @@
+{
+  "id": "TD-CROSSDOMAIN-SG053",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "phase_milestone": 4,
+  "status": "PASSED_TESTED_CAUSAL_NONINTERFERENCE_WITH_PREDICTIVE_ERRORS",
+  "parent": "TD-CROSSDOMAIN-SG052",
+  "freeze": "evidence/candidates/2026-11-22-sg053-diodic-replay-freeze.json",
+  "freeze_commit": "b35b8680777df7f6cce4e7a16234f09c86c4feae",
+  "experiment": "SG052 fixed trailing100 HAC3 z=4.327111573414373 at checkpoint prefixes of length 100,140,180,220,240. For each n<240 alter only suffix with increasing ramp, decreasing ramp and deterministic permutation. Recompute classification from same acquired prefix. At each checkpoint serialize/deserialize original prefix, append canonical SHA256 event and verify independent hash-chain replay. Negative-control classifier intentionally reads final suffix. Compare checkpoint prediction to programmed final post-change direction separately.",
+  "pilot": {
+    "start": 173000000,
+    "count_per_combination": 3,
+    "n": 81,
+    "causal_violations": 0,
+    "negative_control_changed": 603,
+    "negative_control_trials": 972,
+    "streams_detected": 81,
+    "checkpoint_100": {
+      "correct": 9,
+      "missed_direction": 1,
+      "false_direction": 23,
+      "abstain": 48
+    },
+    "checkpoint_240": {
+      "correct": 41,
+      "missed_direction": 0,
+      "false_direction": 6,
+      "abstain": 34
+    },
+    "disclosure": "Pilot executed before freeze, includes prefreeze correction to exclude vacuous final-checkpoint suffix edits."
+  },
+  "holdout": {
+    "start": 179000000,
+    "count_per_combination": 40,
+    "n": 1080,
+    "seed_formula": "179000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3], k=0..39",
+    "checkpoints": [
+      100,
+      140,
+      180,
+      220,
+      240
+    ],
+    "by_checkpoint": {
+      "100": {
+        "correct": 162,
+        "missed_direction": 24,
+        "false_direction": 308,
+        "abstain": 586
+      },
+      "140": {
+        "correct": 170,
+        "missed_direction": 17,
+        "false_direction": 197,
+        "abstain": 696
+      },
+      "180": {
+        "correct": 270,
+        "missed_direction": 9,
+        "false_direction": 72,
+        "abstain": 729
+      },
+      "220": {
+        "correct": 401,
+        "missed_direction": 3,
+        "false_direction": 42,
+        "abstain": 634
+      },
+      "240": {
+        "correct": 433,
+        "missed_direction": 1,
+        "false_direction": 41,
+        "abstain": 605
+      }
+    },
+    "future_suffix_noninterference_trials": 12960,
+    "causal_violations": 0,
+    "roundtrip_replay_violations": 0,
+    "append_only_chain_verification_errors": 0,
+    "negative_control_changed": 7902,
+    "negative_control_trials": 12960,
+    "streams_detected_negative_control": 1080,
+    "all_rows_sha256": "2d4ec82402826020c9e5f5c8b99e9012d2169b2fa6fdbb08801e97f1a23f001f",
+    "ledger_roots_sha256": "91e0225d472fb151f1bd9ff295dfa9d9ddc57d0dc5e785dbde0bd867651af63c",
+    "full_detail_local_file": "/mnt/data/sg053/179000000-audit.json",
+    "wrong_full_checkpoint": 42,
+    "unresolved_full_checkpoint": 605
+  },
+  "findings": [
+    "No tested prefix decision changed when unseen suffix was altered across 12,960 challenges; JSON prefix replay and chained event verification passed.",
+    "Deliberately leaky negative control changed 7,902 times, demonstrating meaningful attack power of perturbations.",
+    "Observed full240 accuracy still limited: 433 correct, 42 wrong, 605 unresolved. Causal validity does not establish decision quality.",
+    "Earlier checkpoints should not be mistaken for committed decisions: at 100 observations 332 are wrong relative to final target.",
+    "The SHA256 event chain can identify history modifications only if its reference root is retained; this audit does not establish tamper-resistant external storage."
+  ],
+  "limitations": [
+    "Causal noninterference tests cover these three specified mutation operators and checkpoints, not all possible dependencies.",
+    "Test uses same synthetic generator family as SG052 with new seeds, not externally heldout real-world data.",
+    "Negative-control sensitivity 7902/12960 is conditional on tested perturbations, not a false-positive rate.",
+    "Every prefix produces a diagnostic label; no early-stop commit gate was introduced or evaluated.",
+    "GitHub script imports the SG052 sibling, locally equivalent earlier source was executed; clean checkout runtime has not been independently verified."
+  ],
+  "next": "SG054 Hegemonic policy: single deterministic ranking among commit direction, continue observing or abstain; use prefix-only evidence, risk, and cost in a frozen total ordering.",
+  "source": "evidence/candidates/2026-11-22-sg053-diodic-replay.py"
+}
