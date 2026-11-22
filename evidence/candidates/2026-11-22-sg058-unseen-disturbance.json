@@ -1,0 +1,153 @@
+{
+  "id": "TD-CROSSDOMAIN-SG058",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 9,
+  "status": "VERIFIED_SYNTHETIC_OUT_OF_FAMILY_FAVORABLE_COST_WITH_HIGH_ABSTENTION",
+  "parent": "TD-CROSSDOMAIN-SG057",
+  "freeze": "evidence/candidates/2026-11-22-sg058-unseen-disturbance-freeze.json",
+  "freeze_commit": "17de9bb3de025e05b186b9bf6ccb7edb003217b6",
+  "objective": "Check whether SG057 fixed prefix-only early-abstain training policy transfers to five newly programmed disturbance mechanisms under the original frozen cost model.",
+  "method": "SG057 fixed training from 810 SG052 traces at start 215000000. Authorized groups 220:unresolved:lt1:low and 220:unresolved:lt2:low. Evaluate 9 before/after sign pairings × five new mechanisms × 20 heldout seeds = 900 streams, with unknown programmed change onset 100/120/140. Comparator 240 final observation. Early policy observes 220 then abstains in authorized groups, otherwise 240.",
+  "pilot": {
+    "start": 227000000,
+    "n": 225,
+    "wait": {
+      "correct": 59,
+      "missed_direction": 2,
+      "false_direction": 8,
+      "abstain": 156,
+      "observations": 54000,
+      "loss": 7428
+    },
+    "adaptive": {
+      "correct": 58,
+      "missed_direction": 2,
+      "false_direction": 5,
+      "abstain": 160,
+      "observations": 53220,
+      "loss": 7003.2,
+      "early": 39
+    },
+    "negative_environment": "heavy_tails adaptive loss 1507.2 vs wait 1500",
+    "disclosure": "Pilot observed and logged before freeze; no retuning."
+  },
+  "holdout": {
+    "start": 233000000,
+    "n": 900,
+    "per_sign_pair_disturbance": 20,
+    "wait": {
+      "correct": 243,
+      "missed_direction": 2,
+      "false_direction": 36,
+      "abstain": 619,
+      "observations": 216000,
+      "loss": 29682
+    },
+    "adaptive": {
+      "correct": 231,
+      "missed_direction": 0,
+      "false_direction": 28,
+      "abstain": 641,
+      "observations": 212860,
+      "loss": 28509.6,
+      "early": 157
+    },
+    "savings_observations": 3140,
+    "loss_reduction": 1172.4,
+    "loss_reduction_percentage": 3.94987,
+    "by_environment": {
+      "heavy_tails": {
+        "wait_loss": 5904,
+        "adaptive_loss": 5661.6,
+        "wait_correct": 40,
+        "adaptive_correct": 36,
+        "wait_wrong": 6,
+        "adaptive_wrong": 4
+      },
+      "heteroskedastic": {
+        "wait_loss": 6090,
+        "adaptive_loss": 5794.8,
+        "wait_correct": 37,
+        "adaptive_correct": 36,
+        "wait_wrong": 7,
+        "adaptive_wrong": 5
+      },
+      "level_jump": {
+        "wait_loss": 4746,
+        "adaptive_loss": 4687.2,
+        "wait_correct": 75,
+        "adaptive_correct": 70,
+        "wait_wrong": 2,
+        "adaptive_wrong": 1
+      },
+      "oscillatory_bursts": {
+        "wait_loss": 5508,
+        "adaptive_loss": 5484,
+        "wait_correct": 18,
+        "adaptive_correct": 18,
+        "wait_wrong": 0,
+        "adaptive_wrong": 0
+      },
+      "nonlinear_bias": {
+        "wait_loss": 7434,
+        "adaptive_loss": 6882,
+        "wait_correct": 73,
+        "adaptive_correct": 71,
+        "wait_wrong": 23,
+        "adaptive_wrong": 18
+      }
+    },
+    "wrong_count": 28,
+    "wrong_seeds": [
+      233121717,
+      233201919,
+      233231212,
+      233231919,
+      233261919,
+      233320202,
+      233320606,
+      233321414,
+      233321515,
+      234231111,
+      234320505,
+      234320707,
+      234320808,
+      234320909,
+      234321111,
+      234321818,
+      234321919,
+      235000101,
+      235200909,
+      235201515,
+      235230707,
+      235231515,
+      235320202,
+      235320606,
+      235320707,
+      235320808,
+      235320909,
+      235321111
+    ],
+    "modified_decisions": 22,
+    "ledger_sha256": "a6fdb26776923cc2bbbf05c2a980b913c3563ac666d09e586e28fecc48a8161b",
+    "causal_audit": {
+      "strict_prefix_replays": 900,
+      "mismatches": 0,
+      "future_suffix_ramps": 270,
+      "violations": 0
+    },
+    "local_audit": "/mnt/data/sg058/holdout.json"
+  },
+  "interpretation": "Under fixed synthetic costs, early abstention decreases loss on all five newly defined disturbance families, including rare outlier, time-varying scale, level jump, burst oscillation and curvature. This is a synthetic constructed shift test, not proof of arbitrary disturbance or real-world robustness. 641 of 900 policy outcomes remain unresolved; nonlinear_bias 18 false-direction claims persists.",
+  "limitations": [
+    "Generator types were constructed by the experimenter and still use SG052 sign-change schedule and truth labels.",
+    "The prefix-only audit used 900 equivalent full-record decisions and 270 suffix perturbation challenges; not a formal proof of arbitrary data-flow control.",
+    "Policy has high abstention (71.2%); user-facing deployment stakes unknown.",
+    "Modeled loss weights chosen before this holdout, not empirical cost estimates.",
+    "The GitHub-portable script was re-fetched but not independently run in clean checkout; the local equivalent was executed."
+  ],
+  "next": "SG059 Generalization holdout with brand-new sign-transition times and mechanism mixtures, test SG057 frozen policy and risk of cost reversal.",
+  "source": "evidence/candidates/2026-11-22-sg058-unseen-disturbance.py",
+  "phase_percent_after_verification": 75
+}
