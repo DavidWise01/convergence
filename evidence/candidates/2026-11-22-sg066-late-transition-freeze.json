@@ -1,0 +1,78 @@
+{
+  "id": "TD-CROSSDOMAIN-SG066-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "status": "FROZEN_BEFORE_HOLDOUT",
+  "parent": "SG065",
+  "target": "Prevent false directional claims when SG059 recent 100-sample estimate is stale under new late onset.",
+  "policy": "Use original unchanged SG057 early abstention at t220 (both authorized groups), otherwise get SG052 trailing100 final classification at t240. Only if it predicts positive or negative, compute published SG052 HAC slope and SE of last50 observed values [190:240]. VETO to abstain iff sign(original direction)*last50_slope < -1.0*last50_standard_error. Never invent another direction and never revise early actions.",
+  "decision_access": "Every inference receives exactly v[:n]. The t240 veto cannot access v[240:] or programmed change onset, true labels, disturbance type.",
+  "cost": {
+    "correct": 0,
+    "false_direction": 150,
+    "missed_direction": 90,
+    "abstain": 18,
+    "sample_per_tick": 0.06
+  },
+  "calibration": {
+    "seed_start": 245000000,
+    "per_mixture_sign_pair": 8,
+    "n": 288,
+    "explored_windows": [
+      40,
+      50,
+      60,
+      70
+    ],
+    "explored_thresholds": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "selection": "Select simple w50, opposing 1SE guard, favorable loss and false-direction reduction with limited correct suppression. All tuning occurs on calibration only."
+  },
+  "pilot": {
+    "seed_start": 247000000,
+    "n": 180,
+    "per_mixture_sign_pair": 5,
+    "baseline": {
+      "correct": 33,
+      "false_direction": 13,
+      "missed_direction": 0,
+      "abstain": 134,
+      "modeled_loss": 6907.2
+    },
+    "new_veto": {
+      "correct": 32,
+      "false_direction": 9,
+      "missed_direction": 0,
+      "abstain": 139,
+      "modeled_loss": 6397.2
+    },
+    "vetoes": 5,
+    "tradeoff": "4 wrong directions prevented and 1 correct withheld; loss -510; onset205 +18 loss; negative subgroup retained."
+  },
+  "holdout": {
+    "seed_start": 251000000,
+    "per_mixture_sign_pair": 20,
+    "n": 720,
+    "seed_formula": "251000000+1000000*bi+200000*ai+30000*mi+101*k,onset=(40,75,165,205)[k%4]",
+    "status": "UNTOUCHED_AT_FREEZE",
+    "baseline": "Frozen SG057 as used by SG059, no retune"
+  },
+  "checks": [
+    "Summary and onset-stratified decision/loss comparisons",
+    "All vetoed cases and misclassifications archived",
+    "Prefix-only gate at n140,180,220,240; deny unreleased access",
+    "Replay variants replacing all suffix values after each terminal action; no prior change",
+    "No original historical SG050-065 source/evidence files modified"
+  ],
+  "scope_limits": [
+    "New random seeds from SG059 synthetic mixture family, not independent physical measurements.",
+    "A one-standard-error heuristic is neither confidence guarantee nor externally calibrated risk.",
+    "Selection among thresholds on calibration makes calibration performance optimistic; pilot and holdout separated.",
+    "At 240 complete observed window is available; no post240 lookahead."
+  ]
+}
