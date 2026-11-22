@@ -1,0 +1,67 @@
+{
+  "id": "TD-CROSSDOMAIN-SG059-FREEZE",
+  "date": "2026-11-22",
+  "parent": "SG058",
+  "phase": "SG050-SG061",
+  "status": "PREFROZEN_AFTER_DISCLOSED_PILOT_BEFORE_HOLDOUT",
+  "objective": "Test SG057 immutable early-abstain policy under paired disturbance mechanisms and transition onsets outside 100/120/140.",
+  "policy": "Exactly the SG057 table trained with SG052 data start215000000 per_configuration30, min group25, lower mean-1.64 SD/sqrt(n)>0; early abstain only at t220 under keys 220:unresolved:lt1:low and 220:unresolved:lt2:low, else final t240; HAC3 trailing100 z4.327111573414373.",
+  "scenarios": {
+    "mixtures": [
+      "tails_jump",
+      "variance_oscillation",
+      "tails_curvature",
+      "jump_variance"
+    ],
+    "onsets": [
+      40,
+      75,
+      165,
+      205
+    ],
+    "generator": "SG058 base: rho .72, local before/after slope sign -1/0/+1, 240 continuation observations; paired nuisance mechanisms per mixture, rare shocks and variance schedule as SG058."
+  },
+  "pilot": {
+    "seed_start": 237000000,
+    "per_sign_pair_mix": 5,
+    "n": 180,
+    "wait": {
+      "correct": 32,
+      "wrong": 20,
+      "abstain": 128,
+      "observations": 43200,
+      "loss": 7896
+    },
+    "adaptive": {
+      "correct": 30,
+      "wrong": 17,
+      "abstain": 133,
+      "observations": 42400,
+      "loss": 7488,
+      "early": 40
+    },
+    "notable_regression": "Transition onset40: adaptive loss2266.8 vs wait2248.8, 2 correct decisions withheld; overall positive result, no tuning after pilot."
+  },
+  "holdout": {
+    "seed_start": 241000000,
+    "per_sign_pair_mix": 20,
+    "n": 720,
+    "seed_formula": "241000000 + 1000000*before_index + 200000*after_index + 30000*mixture_index + 101*k, onset=(40,75,165,205)[k%4]",
+    "status": "NOT_ACCESSED_AT_FREEZE"
+  },
+  "cost": {
+    "sample": 0.06,
+    "false_direction": 150,
+    "missed_direction": 90,
+    "abstain": 18,
+    "correct": 0
+  },
+  "commitment": "Publish all cases, per-mixture and per-onset losses, wrong-decision seeds; no postfreeze policy retune. Advance progress to83.3% only once GitHub source, freeze, record, index, tracker verified.",
+  "limitations": [
+    "Novel mechanism mixtures and new programmed onsets, but same synthetic sign-pair family.",
+    "All mechanisms are constructed, not external data.",
+    "Pilot is informative but was examined before final freeze.",
+    "Every trial uses a retrospective final target; onset205 occurs before the last checkpoint, so early stopping may be too early for reliable direction.",
+    "Observed loss reduction does not mean all directions successfully classified."
+  ]
+}
