@@ -1,0 +1,155 @@
+{
+  "id": "TD-CROSSDOMAIN-SG057",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "milestone": 8,
+  "status": "VERIFIED_FAVORABLE_COST_TRADEOFF_EARLY_ABSTENTION",
+  "parent": "TD-CROSSDOMAIN-SG056",
+  "freeze": "evidence/candidates/2026-11-22-sg057-adaptive-observation-freeze.json",
+  "freeze_commit": "1ef22e93f5d6021f018be73727c4c1602d28fe84",
+  "objective": "Deterministic prefix-only early abstention when observed evidence suggests continuing is not worth additional sampling cost, versus wait-until240 baseline.",
+  "method": "Train 810 synthetic traces with frozen loss model; at checkpoints 140,180,220 evaluate frozen trailing100 HAC3 classifier. Candidate is early abstain ONLY when current label unresolved and feature-group empirical mean cost gain lower heuristic bound mean-1.64*SD/sqrt(n)>0 and group n>=25. Final240 decision unchanged if no authorized early action. Two authorized groups both at n220: unresolved, |slope/se|<2, low SE<.002. No early directional commits.",
+  "training": {
+    "seed_start": 215000000,
+    "n": 810,
+    "authorized": [
+      {
+        "key": "220:unresolved:lt1:low",
+        "n": 93,
+        "mean_gain": 9.2,
+        "lower_bound": 3.0772210656122105
+      },
+      {
+        "key": "220:unresolved:lt2:low",
+        "n": 90,
+        "mean_gain": 7,
+        "lower_bound": 1.0234544418210314
+      }
+    ]
+  },
+  "pilot": {
+    "seed_start": 219000000,
+    "n": 216,
+    "wait": {
+      "correct": 77,
+      "missed_direction": 0,
+      "false_direction": 11,
+      "abstain": 128,
+      "observations": 51840,
+      "loss": 7064.4
+    },
+    "SG057": {
+      "correct": 69,
+      "missed_direction": 0,
+      "false_direction": 10,
+      "abstain": 137,
+      "observations": 50920,
+      "early": 46,
+      "loss": 7021.2
+    },
+    "note": "Inspected pilot then freeze committed; no post-freeze retuning."
+  },
+  "holdout": {
+    "seed_start": 223000000,
+    "n": 1080,
+    "per_configuration": 40,
+    "seed_formula": "223000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3]",
+    "wait": {
+      "correct": 475,
+      "missed_direction": 0,
+      "false_direction": 37,
+      "abstain": 568,
+      "observations": 259200,
+      "loss": 31326,
+      "early": 0
+    },
+    "SG057": {
+      "correct": 449,
+      "missed_direction": 0,
+      "false_direction": 25,
+      "abstain": 606,
+      "observations": 254780,
+      "loss": 29944.8,
+      "early": 221
+    },
+    "loss_reduction": 1381.2,
+    "loss_reduction_pct": 4.409,
+    "observation_savings": 4420,
+    "changes": 38,
+    "previously_correct_now_abstain": 26,
+    "previously_wrong_now_abstain": 12,
+    "noise_groups": {
+      "stable_rho72": {
+        "n": 360,
+        "early": 85,
+        "wait_wrong": 6,
+        "SG057_wrong": 1,
+        "wait_abstain": 159,
+        "SG057_abstain": 177
+      },
+      "rho72_to94": {
+        "n": 360,
+        "early": 56,
+        "wait_wrong": 23,
+        "SG057_wrong": 21,
+        "wait_abstain": 259,
+        "SG057_abstain": 264
+      },
+      "rho94_to72": {
+        "n": 360,
+        "early": 80,
+        "wait_wrong": 8,
+        "SG057_wrong": 3,
+        "wait_abstain": 150,
+        "SG057_abstain": 165
+      }
+    },
+    "wrong_count": 25,
+    "wrong_seeds": [
+      223230101,
+      223230303,
+      223230606,
+      223231414,
+      223232323,
+      223263333,
+      224202323,
+      224230404,
+      224230505,
+      224230606,
+      224230707,
+      224230909,
+      224231515,
+      224233131,
+      224233434,
+      225032323,
+      225230909,
+      225231010,
+      225231515,
+      225231919,
+      225232323,
+      225233333,
+      225261414,
+      225262323,
+      225431515
+    ],
+    "ledger_sha256": "1c38e5beefa5593eeab09f40787bf9bd85a9d6825ed3b1abc74a9654aeb7f081",
+    "local_full_ledger": "/mnt/data/sg057/holdout.json",
+    "prefix_suffix_mutation_audit": {
+      "checked_streams": 135,
+      "checkpoint_future_mutations": 810,
+      "violations": 0,
+      "scenarios": "Two deterministic future ramps ±8, for n=140,180,220; verifies prefix classifier only."
+    }
+  },
+  "interpretation": "SG057 is better than waiting under the stated synthetic loss model: reduce 12 false directional commits and 4420 observations at cost of withholding 26 correct decisions, leading to loss 31326→29944.8. Unlike SG054 and SG055 it stops early by abstaining, not by committing. Evaluation does not establish external robustness or globally optimal stopping.",
+  "limitations": [
+    "Training uncertainty bound is heuristic and feature groups learned from synthetic training only, not coverage-guaranteed or robust to novel regimes.",
+    "The SG057 policy still abstains on 606/1080 streams; it is conservative rather than an always-correct classifier.",
+    "The measured lower loss relies on chosen penalties; result may reverse with higher abstention cost.",
+    "Known synthetic generator families with fresh holdout seeds, not real-world deployment.",
+    "Repo source uses sibling SG055 and SG052; re-fetch verification does not substitute for clean-checkout execution."
+  ],
+  "next": "SG058 Unseen disturbance stress: test the frozen early-abstain policy on genuinely new generator mechanisms and compare whether its cost gain survives distribution change.",
+  "phase_percent_after_verification": 66.7,
+  "source": "evidence/candidates/2026-11-22-sg057-adaptive-observation.py"
+}
