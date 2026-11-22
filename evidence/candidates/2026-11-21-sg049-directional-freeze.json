@@ -1,0 +1,73 @@
+{
+  "id": "TD-CROSSDOMAIN-SG049-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_DISCLOSED_PILOT_BEFORE_FRESH_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG048",
+  "hypothesis": "The prior two-sided HAC classifier counts statistically significant negative slope as confirmed drift even though simulated positive-only hypothesis tests +0.0027/+0.005 vs 0. Direction-sensitive labels should reduce false confirmations.",
+  "scope": "Positive-drift-or-no-drift synthetic hypothesis only; negative-slope evidence rejects the specified positive-drift hypothesis, not evidence that no negative drift exists.",
+  "frozen_rule": {
+    "baseline": "SG048 original pooled full240 HAC slope with z=2.291027529910169, plus its frozen warning-only boundary contradiction check",
+    "slope_interval": "Use SG048 pooled full-history HAC slope ±2.291027529910169*SE",
+    "decision": "If lower>0 -> positive drift confirmed; else if upper<0 -> negative direction detected, reject positive drift; else if entire interval within ±.0032 -> reject meaningful positive drift; otherwise unresolved",
+    "boundary": "Retain SG048 warning-only contradiction gate unchanged; if post-boundary primary and local diagnoses directly oppose one another, mark unresolved; never discard history",
+    "loss": {
+      "sample": 0.06,
+      "FP": 150,
+      "FN": 90,
+      "unresolved": 18
+    },
+    "observations": 240
+  },
+  "pilot": {
+    "seed_start": 125000000,
+    "streams": 180,
+    "sg048": {
+      "correct": 146,
+      "FP": 10,
+      "FN": 0,
+      "unresolved": 24,
+      "loss": 4524
+    },
+    "sg049": {
+      "correct": 149,
+      "FP": 7,
+      "FN": 0,
+      "unresolved": 24,
+      "loss": 4074
+    },
+    "modified": 3,
+    "changes": "Three false confirmations became correct rejections; no added false rejections or abstentions",
+    "disclosure": "Evaluated before freeze; thresholds and label semantics frozen unchanged for holdout."
+  },
+  "holdout": {
+    "seed_start": 129000000,
+    "streams": 720,
+    "per_truth_per_scenario": 40,
+    "seed_formula": "129000000+200000*scenario_index+10000*int(drift)+101*k,k=0..39",
+    "scenarios": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "do_not_retune": true
+  },
+  "report": [
+    "Paired SG048/SG049 correct FP FN abstain loss",
+    "Transitions with exact seed and interval",
+    "Per-environment wrong counts",
+    "All surviving errors and any new false negatives",
+    "Distinguish directional hypothesis from generic drift detection"
+  ],
+  "limitations": [
+    "This reinterprets the target hypothesis as positive drift; it cannot be applied unmodified to a generic bidirectional drift detector.",
+    "Nominal HAC intervals may under-cover in correlated regimes; directional semantics alone do not fix miscoverage.",
+    "Fixed240 retrospective stream, no online speedup.",
+    "Synthetic generators and scenario families known, only seeds unseen."
+  ]
+}
