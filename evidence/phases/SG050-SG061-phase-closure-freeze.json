@@ -1,0 +1,31 @@
+{
+  "id": "SG-PHASE-II-SG061-CLOSURE-FREEZE",
+  "date": "2026-11-22",
+  "phase": "Hegemonic Diodic Decision Engine",
+  "status": "CLOSURE_CRITERIA_LOCKED_BEFORE_PHASE_TRACKER_FINAL_UPDATE",
+  "milestones": "SG050 through SG061 inclusive, exactly 12 planned and 12 documented upon final close",
+  "selection": {
+    "policy": "SG057 frozen prefix-only early-abstention rule",
+    "scope": "Research candidate only for synthetic benchmark with fixed declared costs",
+    "reason": "SG057 favorable vs wait on original transition holdout; unchanged rule also favorable on novel constructed disturbances SG058 and mixtures/novel onsets SG059.",
+    "rejected": [
+      "SG054 first-confident-early-commit",
+      "SG055 empirical early commit under reference weights"
+    ],
+    "not_claimed": [
+      "Proof of globally optimal action",
+      "External-world calibrated risk",
+      "Clean checkout verified",
+      "Physical validation"
+    ]
+  },
+  "must_preserve": [
+    "SG060 API missing SG050.three_way, SG052.kind",
+    "SG059 onset165 53/180 wrong directional decisions",
+    "SG059 69 wrong / 514 abstentions of 720",
+    "All historical source and failure seeds",
+    "Distinguish milestone completion from experimental success"
+  ],
+  "next_phase": "SG062+ reproducibility repair and causal robustness, new independent phase; no consensus or Byzantine scope",
+  "close_rules": "Write immutable closure record before marking tracker 12/12. Only advance when freeze, closure record, evidence index and tracker are re-fetched."
+}
