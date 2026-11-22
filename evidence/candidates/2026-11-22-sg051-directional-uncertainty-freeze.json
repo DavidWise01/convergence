@@ -1,0 +1,68 @@
+{
+  "id": "TD-CROSSDOMAIN-SG051-FREEZE",
+  "date": "2026-11-22",
+  "parent": "TD-CROSSDOMAIN-SG050",
+  "phase": "SG050-SG061",
+  "status": "FROZEN_BEFORE_FRESH_HOLDOUT",
+  "objective": "Calibrate directional confidence intervals for genuine negative zero and positive trends without changing SG050's HAC estimator or three-way label semantics.",
+  "data": "Nine SG050 synthetic scenario families, each direction {-1,0,+1}; 240 continuation observations; HAC3 ten-observation median blocks.",
+  "calibration": {
+    "seed_start": 145000000,
+    "per_scenario_direction": 20,
+    "n": 540,
+    "quantile": ".90 empirical split quantile of abs(estimated_slope - programmed_slope)/HAC_SE; ceil((n+1)*.90)=487",
+    "z": 2.486294325376533,
+    "calibration_coverage_original": 478,
+    "calibration_coverage_corrected": 487
+  },
+  "baseline": "SG050 fixed multiplier z=2.291027529910169",
+  "decision": "Positive if lower CI>0; negative if upper CI<0; zero if entire CI within [-.0032,+.0032]; unresolved otherwise. No hidden scenario or true slope provided during decision.",
+  "pilot": {
+    "seed_start": 147000000,
+    "per_scenario_direction": 10,
+    "n": 270,
+    "SG050": {
+      "correct": 233,
+      "missed_direction": 1,
+      "false_direction": 10,
+      "abstain": 26,
+      "loss": 5946,
+      "covered": 236
+    },
+    "SG051": {
+      "correct": 232,
+      "missed_direction": 0,
+      "false_direction": 9,
+      "abstain": 29,
+      "loss": 5760,
+      "covered": 244
+    },
+    "changes": 4,
+    "disclosure": "Pilot inspected before freeze; no further parameter tuning."
+  },
+  "holdout": {
+    "seed_start": 151000000,
+    "per_scenario_direction": 40,
+    "n": 1080,
+    "seed_formula": "151000000+200000*scenario_index+20000*direction_index+101*k, direction_index=(negative,zero,positive), k=0..39",
+    "no_retuning": true,
+    "report": [
+      "marginal slope coverage",
+      "coverage per scenario and direction",
+      "correct,missed_direction,false_direction,abstain,loss",
+      "all changes and failures"
+    ]
+  },
+  "penalties": {
+    "sample": 0.06,
+    "missed_direction": 90,
+    "false_direction": 150,
+    "abstain": 18
+  },
+  "limitations": [
+    "Calibration and holdout share generator families; exchangeability and within-regime coverage not established.",
+    "This is a fixed240 interval audit, not an adaptive stopping policy.",
+    "Higher interval width may reduce wrong directional claims but withhold true directions.",
+    "All metrics synthetic; no real-world field validation."
+  ]
+}
