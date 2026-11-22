@@ -1,0 +1,57 @@
+{
+  "id": "TD-CROSSDOMAIN-SG056-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "status": "FROZEN_BEFORE_HOLDOUT",
+  "parent": "SG-055",
+  "goal": "Determine when deterministic wait, early threshold, or SG055 ranking minimize modelled loss as false-direction, abstain and observation costs vary; no oracle in action selection.",
+  "data": {
+    "generator": "Frozen SG052 simultaneous sign/noise transition model; 27 sign-pair/noise combinations",
+    "seed_start": 211000000,
+    "count_per_combination": 40,
+    "total_streams": 1080,
+    "formula": "211000000+1000000*before_index+200000*after_index+30000*noise_index+101*k, onset=(100,120,140)[k%3]"
+  },
+  "compared_policies": [
+    "SG052_wait",
+    "SG054_threshold4",
+    "SG055_ranked"
+  ],
+  "policy_lock": "Use SG055 original training seed 197000000, 20/configuration, original 90/150/18/.06 cost table for authorization, no re-training per scenario cost. Actions fixed and evaluated at each stress-grid cell.",
+  "loss_grid": {
+    "false_direction": [
+      75,
+      150,
+      300
+    ],
+    "abstain": [
+      6,
+      18,
+      36
+    ],
+    "sample_each": [
+      0.03,
+      0.06,
+      0.12
+    ],
+    "missed_direction": 90,
+    "correct": 0,
+    "total_cells": 27
+  },
+  "selection": "For each loss cell select single least observed holdout total loss; tie resolve SG052_wait then SG054_threshold4 then SG055_ranked. This is retrospective evaluation, not an online oracle policy.",
+  "reports": [
+    "Loss of all 3 policies in 27 cells",
+    "Policy winner frequency and worst regret",
+    "Central cost setting and paired stream error counts",
+    "Stability of preference over cost grid",
+    "All error seeds",
+    "Separate sensitivity analysis (not heldout-deployable policy)"
+  ],
+  "acceptance": "Freeze then execute fresh holdout, archive full per-stream decision ledger, SHA256, index, phase tracker at 58.3%. Mark result mixed or negative when appropriate.",
+  "caveats": [
+    "Costs are hypothetical, not probability-calibrated.",
+    "Choosing the best policy after seeing heldout labels is not a validated deployable controller.",
+    "Same generator family; new holdout seeds only.",
+    "The original SG055 policy action table must not change across stress grid."
+  ]
+}
