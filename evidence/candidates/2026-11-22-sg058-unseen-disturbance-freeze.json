@@ -1,0 +1,72 @@
+{
+  "id": "TD-CROSSDOMAIN-SG058-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "parent": "SG-057",
+  "status": "FROZEN_BEFORE_FRESH_OUT_OF_FAMILY_HOLDOUT",
+  "objective": "Test SG057 frozen early abstention on five generator disturbances not in training; no retuning or policy adaptation on holdout.",
+  "disturbances": {
+    "heavy_tails": "Gaussian baseline plus 2.2% rare independent signed spikes magnitude 1.5..3",
+    "heteroskedastic": "alternating 30-observation noise scale .55 vs 2.5",
+    "level_jump": "offset +1.4 after programmed transition onset plus 18 observations",
+    "oscillatory_bursts": "period18 amplitude .8 for 40 ticks in every 80 post-onset ticks",
+    "nonlinear_bias": "curvature .000018*(local_time-120)^2"
+  },
+  "generator": "Frozen SG052 sign path (before/after -1 0 +1 at t100/120/140), AR1 rho .72; 240 observed points of 480-tick process; nuisance mechanisms independent of programmed truth.",
+  "frozen_policy": "Reproduce SG057 train on 810 seeds starting 215000000 with SG055/SG052 generators, authorize only unresolved low SE<.002 at checkpoint 220 and |slope/SE|<1 or [1,2), choose early abstain otherwise wait240. Only observed prefixes. Comparator waits240.",
+  "cost": {
+    "sample_per_observation": 0.06,
+    "false_direction": 150,
+    "missed_direction": 90,
+    "abstain": 18,
+    "correct": 0
+  },
+  "pilot": {
+    "seed_start": 227000000,
+    "n": 225,
+    "per_sign_pair_mechanism": 5,
+    "wait": {
+      "correct": 59,
+      "missed_direction": 2,
+      "false_direction": 8,
+      "abstain": 156,
+      "observations": 54000,
+      "loss": 7428
+    },
+    "early_abstain": {
+      "correct": 58,
+      "missed_direction": 2,
+      "false_direction": 5,
+      "abstain": 160,
+      "observations": 53220,
+      "loss": 7003.2,
+      "early": 39
+    },
+    "heavy_tails_regression": {
+      "wait_loss": 1500,
+      "early_abstain_loss": 1507.2
+    },
+    "disclosure": "Pilot inspected before freeze, five disturbances defined in source. No retuning permitted."
+  },
+  "holdout": {
+    "seed_start": 233000000,
+    "per_sign_pair_mechanism": 20,
+    "n": 900,
+    "seed_formula": "233000000+1000000*before_index+200000*after_index+30000*disturbance_index+101*k; onset=(100,120,140)[k%3]",
+    "run_only_after_freeze": true,
+    "do_not_retune": true
+  },
+  "report": [
+    "Overall policy and comparator confusion, observed samples, loss",
+    "Per-disturbance losses and counterexamples",
+    "Deterministic replay and prefix future noninterference spot checks",
+    "Complete local JSON ledger and GitHub reproducible source",
+    "Update phase progress only after verifiable evidence"
+  ],
+  "limits": [
+    "Fresh disturbance mechanisms are constructed here, not externally obtained datasets.",
+    "Same sign-transition scaffolding as training; unknown environment generalization remains incomplete.",
+    "The pilot may have influenced continued evaluation but the policy and holdout are frozen.",
+    "Early stop is abstention, not direction commitment."
+  ]
+}
