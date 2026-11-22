@@ -6,9 +6,9 @@
   "start": "SG-062",
   "end": "SG-073",
   "total": 12,
-  "completed": 4,
-  "percent": 33.3,
-  "next": "SG-066",
+  "completed": 5,
+  "percent": 41.7,
+  "next": "SG-067",
   "status": "ACTIVE_PROVENANCE_REPRESENTATIONS_RECONCILED",
   "milestones": [
     {
@@ -38,8 +38,8 @@
     {
       "id": "SG-066",
       "title": "Late-onset contamination recovery",
-      "status": "PENDING",
-      "evidence": null
+      "status": "VERIFIED_HELDOUT_LOSS_REDUCTION_WITH_CORRECT_DECISION_TRADEOFF",
+      "evidence": "evidence/candidates/2026-11-22-sg066-late-transition.json"
     },
     {
       "id": "SG-067",
@@ -106,5 +106,7 @@
     "normalized_historical_digest_total": 12,
     "historical_records_rewritten": false,
     "normalization_evidence": "evidence/candidates/2026-11-22-sg065-prefix-and-digest.json"
-  }
+  },
+  "selected_research_candidate": "SG066 prefix-only late-trend veto over SG057 early-abstain baseline",
+  "next_phase_gate": "SG067 cost-aware decision threshold sensitivity"
 }
