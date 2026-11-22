@@ -1,0 +1,30 @@
+{
+  "id": "TD-CROSSDOMAIN-SG060-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG050-SG061",
+  "status": "AUDIT_PROTOCOL_FROZEN_BEFORE_FINAL_REPRODUCIBILITY_GATES",
+  "scope": [
+    "SG050..SG059 published Python files in evidence/candidates",
+    "linkage of relative sibling dependencies and API names",
+    "Python AST syntax validation",
+    "isolated import and minimal smoke invocation",
+    "deterministic local rerun against stored holdout evidence",
+    "no future-prefix data access by published policies",
+    "additive compatibility repairs and separated original failure status"
+  ],
+  "pass_conditions": [
+    "Each module compiles",
+    "Each module's required sibling imports and function names resolve",
+    "At least minimal sample can execute without exception",
+    "Published scripts can be run in isolated checkout with unchanged frozen policy",
+    "Hashes/summary comparisons only claimed when actually reproduced"
+  ],
+  "fail_handling": "Every mismatch persists in failure ledger; never claim fully executable historical GitHub code merely because it was fetched. Any repair is additive under a new path; original source and evidence remain immutable.",
+  "baseline": "SG059 phase progress 10/12=83.3%; advance to 11/12=91.7% on publication of audit regardless of PASS/FAIL, with failures marked.",
+  "observed_preliminary_findings": [
+    "SG051 published source calls SG050.three_way but SG050 published source has only labels and outcome",
+    "SG053-SG055 published sources call SG052.kind but SG052 exports outcome, not kind",
+    "SG056 published source patches SG052.kind locally while SG057 chain may import unpatched SG055"
+  ],
+  "next": "SG061 close phase with reproducibility failures explicitly carried, no retroactive metric rewrites."
+}
