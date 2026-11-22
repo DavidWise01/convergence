@@ -1,0 +1,51 @@
+{
+  "id": "TD-CROSSDOMAIN-SG043-FREEZE",
+  "date": "2026-11-21",
+  "status": "FROZEN_AFTER_CALIBRATION_BEFORE_HOLDOUT",
+  "parent": "TD-CROSSDOMAIN-SG042",
+  "objective": "Audit true slope coverage and calibrate SG042's finite sample HAC uncertainty intervals, explicitly accounting for uncertainty versus decision cost.",
+  "algorithm": "For each complete 240-sample continuation, group into 24 consecutive 10-point medians, compute centered OLS slope, Newey-West HAC lag 3 SE. Original nominal 90% interval uses z=1.645. Corrected interval uses split-calibration empirical 90th percentile of abs(estimate-true_slope)/SE.",
+  "calibration": {
+    "seed_start": 81000000,
+    "n_per_truth_per_scenario": 20,
+    "streams": 360,
+    "quantile_rank": "ceil((n+1)*0.90) among sorted absolute standardized errors",
+    "quantile_rank_observed": 325,
+    "corrected_multiplier": 2.2965902800075613,
+    "original_coverage": "274/360 (76.111%)",
+    "corrected_coverage": "325/360 (90.278%)",
+    "note": "Calibration contains known synthetic programmed slopes; use truth only in calibration/evaluation, never as input to decisions."
+  },
+  "holdout": {
+    "seed_start": 87000000,
+    "n_per_truth_per_scenario": 40,
+    "streams": 720,
+    "seed_formula": "87000000+200000*scenario_index+10000*int(drift)+101*k, k=0..39",
+    "scenario_order": [
+      "reference",
+      "correlation_switch",
+      "laplace_tail",
+      "subtle_drift",
+      "fast_oscillation",
+      "late_correlation_switch",
+      "late_oscillation",
+      "variable_period",
+      "colored_control"
+    ],
+    "freeze_before_evaluation": true
+  },
+  "decision_rule": "On full 240 acquired observations, confirm drift if interval excludes 0, else reject if entire interval inside ±0.0032, else unresolved. 0.06 units per sample; false confirmation 150, false rejection 90, unresolved 18. This rule is evaluated independently of SG041's early stopping: it is an interval coverage/isolation experiment, not a claim of directly improving the full SG041 controller.",
+  "report": [
+    "Overall and per-scenario empirical slope coverage",
+    "Nominal vs corrected interval widths",
+    "Decision cost and abstentions",
+    "All missed-coverage seeds and true slopes",
+    "Distinguish marginal exchangeable guarantee from conditional/per-regime coverage"
+  ],
+  "limitations": [
+    "Conformal rank gives marginal coverage under exchangeability; pooled synthetic regimes and shifts can violate the assumption.",
+    "Same generative families in calibration and holdout, new deterministic seeds only.",
+    "HAC intervals using short bins are approximations; rank calibration does not establish valid per-regime probability bounds.",
+    "Different decision rule than SG042's gate over SG041, so SG042 end-to-end scores are not directly comparable."
+  ]
+}
