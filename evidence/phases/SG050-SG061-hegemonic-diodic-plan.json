@@ -4,10 +4,10 @@
   "status": "PLANNED_NOT_EXECUTED",
   "parent": "SG-049",
   "turns_total": 12,
-  "completed": 10,
-  "percent": 83.3,
+  "completed": 11,
+  "percent": 91.7,
   "percent_formula": "100 * verified_completed_milestones / 12",
-  "next": "SG-060",
+  "next": "SG-061",
   "rules": {
     "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
     "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
@@ -102,7 +102,13 @@
       "turn": 11,
       "target": "Reproducibility, no leakage, immutable archive",
       "progress_percent": 91.7,
-      "status": "PENDING"
+      "status": "VERIFIED_AUDIT_FOUND_BLOCKERS",
+      "evidence": "evidence/candidates/2026-11-22-sg060-reproducibility.json",
+      "blockers": [
+        "SG050 missing three_way",
+        "SG052 missing kind",
+        "published full clean-checkout replay unverified"
+      ]
     },
     {
       "id": "SG-061",
