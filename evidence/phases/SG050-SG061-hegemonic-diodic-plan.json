@@ -1,0 +1,118 @@
+{
+  "id": "SG-PHASE-II-050-061",
+  "phase": "Hegemonic Diodic Decision Engine",
+  "status": "PLANNED_NOT_EXECUTED",
+  "parent": "SG-049",
+  "turns_total": 12,
+  "completed": 0,
+  "percent": 0,
+  "percent_formula": "100 * verified_completed_milestones / 12",
+  "next": "SG-050",
+  "rules": {
+    "hegemonic": "One authoritative deterministic selection procedure; not consensus or competing agent votes.",
+    "diodic": "Evidence and allowed state changes flow in one causal direction; historical records append-only and cannot be rewritten.",
+    "no_choice": "Return top evidence-ranked permissible action using fixed lexicographic order of loss, risk, evidence strength, sampling cost and stable action ID; abstain/observe may rank first when commitment is unsupported.",
+    "freeze": "At each turn predeclare tests, run holdout only afterward, report all outcomes and counterexamples; success is verified evidence, not favorable metrics.",
+    "percent_tracking": "Only count a milestone after source, freeze, results, index entry and refetch are verified; no partial success as completion.",
+    "boundary": "If investigation shifts toward witness consensus, independent witness roots, voting, Byzantine fault tolerance or federated authority, close current phase immediately with freeze and open a separately named next phase. Mentioning those terms as boundary conditions alone is not a trigger."
+  },
+  "milestones": [
+    {
+      "id": "SG-050",
+      "turn": 1,
+      "target": "Positive, zero, and negative ground truth",
+      "progress_percent": 8.3,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-051",
+      "turn": 2,
+      "target": "Calibrate each sign and unresolved",
+      "progress_percent": 16.7,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-052",
+      "turn": 3,
+      "target": "Joint noise and trend switches",
+      "progress_percent": 25,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-053",
+      "turn": 4,
+      "target": "Causal evidence only; prevent future leakage",
+      "progress_percent": 33.3,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-054",
+      "turn": 5,
+      "target": "Single deterministic evidence-ranked policy",
+      "progress_percent": 41.7,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-055",
+      "turn": 6,
+      "target": "Total ordering, deterministic tie-break; abstain is action",
+      "progress_percent": 50,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-056",
+      "turn": 7,
+      "target": "Penalties for FP,FN,abstention, sampling",
+      "progress_percent": 58.3,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-057",
+      "turn": 8,
+      "target": "Stop or continue according to evidence and cost",
+      "progress_percent": 66.7,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-058",
+      "turn": 9,
+      "target": "Previously unseen disturbances, preserve counterexamples",
+      "progress_percent": 75,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-059",
+      "turn": 10,
+      "target": "Fresh generator family and seeds",
+      "progress_percent": 83.3,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-060",
+      "turn": 11,
+      "target": "Reproducibility, no leakage, immutable archive",
+      "progress_percent": 91.7,
+      "status": "PENDING"
+    },
+    {
+      "id": "SG-061",
+      "turn": 12,
+      "target": "Freeze, compare to SG049, failure register, next boundary",
+      "progress_percent": 100,
+      "status": "PENDING"
+    }
+  ],
+  "closure": {
+    "planned_at": "SG-061",
+    "outputs": [
+      "Final status",
+      "holdout metrics",
+      "negative results",
+      "failure ledger",
+      "reproducible code",
+      "change log",
+      "next phase charter"
+    ],
+    "early_stop": "Boundary-triggered immediate close; denominator changes to actually executed verified turns, with planned 12-turn schedule clearly distinguished from early closure."
+  }
+}
