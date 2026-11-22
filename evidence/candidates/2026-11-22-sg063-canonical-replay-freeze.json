@@ -1,0 +1,43 @@
+{
+  "id": "TD-CROSSDOMAIN-SG063-FREEZE",
+  "date": "2026-11-22",
+  "phase": "SG062-SG073",
+  "status": "FROZEN_AFTER_FIRST_CLEAN_CHECKOUT_FAILURE_BEFORE_REPLAY_CONFIRMATION",
+  "objective": "Exact published SG050..SG059 reproducibility using additive import compatibility only, no alterations to historical sources or metric thresholds.",
+  "baseline_run": {
+    "id": 45053000596,
+    "commit": "ee0ff48dd594ff860a2c810ae5b0629301347647",
+    "status": "failure",
+    "details": "GitHub hosted Ubuntu Python 3.14.4 clean checkout. Smoke PASS 20/20; full 29 PASS 1 FAIL. SG056 failed NameError P not defined.",
+    "logs_verified": true
+  },
+  "additive_shims": [
+    {
+      "id": 50,
+      "name": "three_way",
+      "value": "lambda lo,hi:labels(lo,hi)[1]"
+    },
+    {
+      "id": 52,
+      "name": "kind",
+      "value": "outcome"
+    },
+    {
+      "id": 56,
+      "name": "P",
+      "value": [
+        "SG052_wait",
+        "SG054_threshold4",
+        "SG055_ranked"
+      ]
+    }
+  ],
+  "candidate_commit": "668cb90824c0eaf91a579e1aca13759240fb3073",
+  "next_run": {
+    "id": 45061692788,
+    "status_at_freeze": "queued"
+  },
+  "frozen_gate": "20 smoke checks + 10 complete benchmark checks, exact originally declared expected values, fail on any mismatch; source checksums of ten historical scripts; source history unchanged.",
+  "decision_rule": "A complete reproduction pass requires hosted GitHub Actions run success and all full frozen benchmark comparisons. Preserve any new failures, do not alter historical results.",
+  "next": "SG064 provenance hashes and lineage after replay pass, or continue SG063 if new incompatibilities surface."
+}
