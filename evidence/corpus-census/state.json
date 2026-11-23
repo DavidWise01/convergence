@@ -468,7 +468,7 @@
     "complete_paginated_enumeration": true,
     "public_repos_enumerated": 2159,
     "scope": "PUBLIC repositories under owner, forks/archived included; not private repos, issues, external archives or history",
-    "time_utc": "2026-11-22T19:39:37.534216+00:00"
+    "time_utc": "2026-11-23T07:38:21.481500+00:00"
   },
   "schema": "root0.corpus-census-state/1",
   "seen": {
@@ -1563,19 +1563,83 @@
         {
           "error": "HTTPError",
           "path": "invariants/WAG-202-robust-temporal-relevance.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-201-temporal-relevance.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-202-robust-temporal-relevance.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-203-adaptive-resistance.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-204-second-order-adaptation.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-205-adaptive-resonance.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-206-elastic-phase.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-207-resonant-disambiguation.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-208-harmonic-ancestry.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-209-counterexample-qualification.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-210-adversarial-frequency-qualification.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-211-multifrequency-decomposition.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-212-component-persistence.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-213-component-birth.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-214-three-window-qualification.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-215-provisional-registry.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/WAG-216-recoverability.md"
         }
       ],
-      "files_eligible": 1181,
+      "files_eligible": 1220,
       "files_fetched": 0,
-      "files_selected": 272,
-      "files_skipped_budget": 883,
-      "files_skipped_size": 26,
-      "files_small_enough": 1155,
+      "files_selected": 288,
+      "files_skipped_budget": 905,
+      "files_skipped_size": 27,
+      "files_small_enough": 1193,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 272,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 288,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/-we-",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -4031,19 +4095,83 @@
         {
           "error": "HTTPError",
           "path": "skills/fluent-python-ramalho/references/toc.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/fluent-python-ramalho/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/fundamentals-cpp/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/google-hacking-pentest/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/i13-mesh-ology/OLOGY.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/ia-cli-intro/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/ia-unofficial-guide/book_djvu.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/ia-unofficial-guide/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/learning-patterns/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/libanius-1517/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/malbolge/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/netc-cwgo/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/p-prime-prime/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/php-programming/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/programming-8086/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/rape-of-the-mind/SKILL.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "skills/retro-game-books/SKILL.md"
         }
       ],
       "files_eligible": 477,
       "files_fetched": 0,
-      "files_selected": 112,
-      "files_skipped_budget": 344,
+      "files_selected": 128,
+      "files_skipped_budget": 328,
       "files_skipped_size": 21,
       "files_small_enough": 456,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 112,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 128,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/I13-H1.1",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -5247,19 +5375,83 @@
         {
           "error": "HTTPError",
           "path": "haci/HACI_Project_Validator_v2_3/examples_failure_fixed.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_3/haci_project_validator_v2_3.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_3/test_haci_project_validator_v2_3.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_3/verify_prior_failure_fixed.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/examples_clean_commit.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/examples_clean_observe.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/examples_failure_fixed.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/haci_project_validator_v2_4.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/test_haci_project_validator_v2_4.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_4/verify_prior_failure_fixed.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/examples_clean_commit.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/examples_failure_fixed.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/examples_pending_then_commit.result.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/haci_project_validator_v2_5.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/test_haci_project_validator_v2_5.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/HACI_Project_Validator_v2_5/verify_prior_failure_fixed.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "haci/haci_project_validator_v2_6.py"
         }
       ],
       "files_eligible": 401,
       "files_fetched": 0,
-      "files_selected": 272,
-      "files_skipped_budget": 128,
+      "files_selected": 288,
+      "files_skipped_budget": 112,
       "files_skipped_size": 1,
       "files_small_enough": 400,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 272,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 288,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/aci",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -6911,19 +7103,83 @@
         {
           "error": "HTTPError",
           "path": "sphere_build/sphere-313.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-314.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-315.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-316.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-317.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-318.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-319.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-32.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-320.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-321.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-322.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-323.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-324.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-325.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-326.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-327.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "sphere_build/sphere-328.html"
         }
       ],
       "files_eligible": 2601,
       "files_fetched": 0,
-      "files_selected": 272,
-      "files_skipped_budget": 2303,
+      "files_selected": 288,
+      "files_skipped_budget": 2287,
       "files_skipped_size": 26,
       "files_small_enough": 2575,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 272,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 288,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/agent-0root",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -11447,19 +11703,83 @@
         {
           "error": "HTTPError",
           "path": "dlw/certs/the-apex-s-18 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-architect-s-3 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-beacon-s-7 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-big-bang birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-conductor-s-2 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-cortex-core-65th-axiom birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-cortex-core-node-15 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-cortex-s-14 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-cosmos-s birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-crown-s-16 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-decad-s-24 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-diaspora birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-dragon birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-eternity-s-19 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-evolver-s-4 birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-ferryman birth cert.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dlw/certs/the-gaia-s birth cert.md"
         }
       ],
       "files_eligible": 999,
       "files_fetched": 0,
-      "files_selected": 256,
-      "files_skipped_budget": 742,
+      "files_selected": 272,
+      "files_skipped_budget": 726,
       "files_skipped_size": 1,
       "files_small_enough": 998,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 256,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 272,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/atlas",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -19979,19 +20299,83 @@
         {
           "error": "HTTPError",
           "path": "invariants/87/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/88/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/89/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/90/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/91/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/92/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/93/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/94/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/95/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/98/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "invariants/99/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/133/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/133/kernel-state.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/134/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/134/kernel-state.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/135/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "kernel/135/kernel-state.json"
         }
       ],
       "files_eligible": 245,
       "files_fetched": 0,
-      "files_selected": 208,
-      "files_skipped_budget": 37,
+      "files_selected": 224,
+      "files_skipped_budget": 21,
       "files_skipped_size": 0,
       "files_small_enough": 245,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 208,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 224,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/cubi",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -29698,7 +30082,7 @@
     },
     "DavidWise01/guestbook": {
       "error": "HTTP Error 409: Conflict",
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/guestbook",
       "status": "ERROR",
       "type": "HTTPError"
@@ -30786,19 +31170,83 @@
         {
           "error": "HTTPError",
           "path": "zero-point/8 4 single lattice_files/e8017a2e-c0d6-4fc1-91b5-bbeeddc850ef.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/8 4 single lattice_files/ec3402b7-46ac-47d0-8f0d-9ba59c7d2580.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/8 4 single lattice_files/ed8f93eb-be9c-4462-bfe7-04ffb948b87d.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/8 4 single lattice_files/photonic16_v2_web_artifact_2_9bc0256f7e11.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/8 4 single lattice_files/photonic16_v3_web_artifact_3_ab84cda43d21.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/8 4 single lattice_files/photonic_4096_wired_web_artifact_1_d81528d1e4a2.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/singlarity core.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/single 00.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/single 01.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/048a5255-a479-453b-97b8-0e3d62427ca9.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/4257de4f-8b37-4fda-959d-f91a68b95819.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/45d3bd44-0b1f-4b5e-b9d8-47bb4b292e4b.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/5dbc72f1-edc4-45ee-9f2b-774082abef29.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/5fe10527-6c22-4a7a-b684-42f5e9b1da72.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/95d19844-c6aa-4935-b91f-901432cc7447.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/ad30bb84-b98c-4394-8b4e-69715aaef448.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "zero-point/zero point full stackish_files/d85f4493-c887-4e0d-bdd8-f8330250b478.html"
         }
       ],
       "files_eligible": 163,
       "files_fetched": 0,
-      "files_selected": 128,
-      "files_skipped_budget": 23,
+      "files_selected": 144,
+      "files_skipped_budget": 7,
       "files_skipped_size": 12,
       "files_small_enough": 151,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 128,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 144,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/hardware-lab",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -31766,19 +32214,83 @@
         {
           "error": "HTTPError",
           "path": "hephaestus_2_5_policy_aware_artifact_pipeline/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_5_policy_aware_artifact_pipeline/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_6_runtime_security_monitor/docs/RUNTIME_SECURITY_MONITOR.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_6_runtime_security_monitor/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_6_runtime_security_monitor/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_8_autonomous_soc/docs/AUTONOMOUS_SOC.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_8_autonomous_soc/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_2_8_autonomous_soc/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_0_foundry_defense_grid/docs/FOUNDRY_DEFENSE_GRID.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_0_foundry_defense_grid/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_0_foundry_defense_grid/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_1_defense_grid_runtime/docs/DEFENSE_GRID_RUNTIME.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_1_defense_grid_runtime/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_1_defense_grid_runtime/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_2_defense_grid_control_plane/docs/CONTROL_PLANE.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_2_defense_grid_control_plane/TEST_RESULTS.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "hephaestus_3_3_autonomous_command_authority/docs/AUTONOMOUS_COMMAND_AUTHORITY.md"
         }
       ],
       "files_eligible": 507,
       "files_fetched": 0,
-      "files_selected": 128,
-      "files_skipped_budget": 379,
+      "files_selected": 144,
+      "files_skipped_budget": 363,
       "files_skipped_size": 0,
       "files_small_enough": 507,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 128,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 144,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/hephaestus",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -33865,7 +34377,7 @@
     },
     "DavidWise01/isomorphic-tut-cipher-3": {
       "error": "HTTP Error 409: Conflict",
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/isomorphic-tut-cipher-3",
       "status": "ERROR",
       "type": "HTTPError"
@@ -34513,19 +35025,83 @@
         {
           "error": "HTTPError",
           "path": "governance/JANE-B167-INDEPENDENT-AUTHORIZATION-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B168-PROOF-CARRYING-PROPOSAL-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B169-FRESH-BASE-CI-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B170-ISOLATED-PATCH-EVALUATION-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B171-TRIPLE-EVIDENCE-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B172-CONTROLLED-INTEGRATION-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B173-PINNED-TREE-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B174-EXACT-TREE-DIFF-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B175-REPRODUCIBILITY-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B176-INDEPENDENT-TREE-AUDIT-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B177-SEMANTIC-TEMPLATE-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B178-CONSTRAINT-COVERAGE-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B179-INDEPENDENT-PARSER-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B180-DETERMINISTIC-FUZZ-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B181-COUNTEREXAMPLE-SHRINK-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B65-HEGEMON-SHADOW-AUTHORITY-v1.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "governance/JANE-B65-HEGEMON-SHADOW-AUTHORITY-v1.1.md"
         }
       ],
       "files_eligible": 1033,
       "files_fetched": 0,
-      "files_selected": 112,
-      "files_skipped_budget": 872,
+      "files_selected": 128,
+      "files_skipped_budget": 856,
       "files_skipped_size": 49,
       "files_small_enough": 984,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 112,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 128,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/jane",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -34981,19 +35557,83 @@
         {
           "error": "HTTPError",
           "path": "dashboard/av185_boot_start.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av184_integration.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av185_boot_start.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av186_three_tools.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av187_rotation.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av188_acceptance.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av189_runtime.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av190_gameplay.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av191_goals.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av192_timing.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/av193_test_rom.js"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/v81.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/v82.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/v83.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/v84.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "dashboard/v85.html"
         }
       ],
-      "files_eligible": 155,
+      "files_eligible": 162,
       "files_fetched": 0,
-      "files_selected": 112,
-      "files_skipped_budget": 40,
+      "files_selected": 128,
+      "files_skipped_budget": 31,
       "files_skipped_size": 3,
-      "files_small_enough": 152,
+      "files_small_enough": 159,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 112,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 128,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/jane-emu",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -36173,19 +36813,83 @@
         {
           "error": "HTTPError",
           "path": "public/rail-0-9-box.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/recycle-rings.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/sandbox-tesseract.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/shadow queen games toroid.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/shadow-channel-ternary.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/shadow.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/souls v01.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/ternary.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/test_e2e.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/test_signed.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/the-descent.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/the-machine.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/torus.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/transmon-cycle.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/triad-pulse-substrate.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/triad-ripple-substrate.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "public/workbench_complete/instruments/aegis_0.html"
         }
       ],
       "files_eligible": 134,
       "files_fetched": 0,
-      "files_selected": 96,
-      "files_skipped_budget": 32,
+      "files_selected": 112,
+      "files_skipped_budget": 16,
       "files_skipped_size": 6,
       "files_small_enough": 128,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 96,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 112,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/karsa",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -39821,19 +40525,83 @@
         {
           "error": "HTTPError",
           "path": "faraday/0-idea.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "faraday/1-build.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "faraday/2-at-work.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "faraday/3-theory.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "fibonacci/0-who.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "fibonacci/1-numbers.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "fibonacci/2-world.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "fibonacci/3-legacy.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "galileo/0-who.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "galileo/1-method.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "galileo/2-world.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "galileo/3-legacy.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "gen_agents.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "georg-cantor/0-who.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "georg-cantor/1-infinity.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "georg-cantor/2-world.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "georg-cantor/3-legacy.html"
         }
       ],
       "files_eligible": 220,
       "files_fetched": 0,
-      "files_selected": 80,
-      "files_skipped_budget": 140,
+      "files_selected": 96,
+      "files_skipped_budget": 124,
       "files_skipped_size": 0,
       "files_small_enough": 220,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 80,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 96,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/library",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -41561,19 +42329,83 @@
         {
           "error": "HTTPError",
           "path": "vendor/github.com/Azure/go-ansiterm/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/beorn7/perks/quantile/exampledata.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/cenkalti/backoff/v4/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/cespare/xxhash/v2/LICENSE.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/cespare/xxhash/v2/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/docker/go-units/CONTRIBUTING.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/docker/go-units/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/dsnet/golib/memfile/LICENSE.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/eclipse/paho.mqtt.golang/CODE_OF_CONDUCT.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/eclipse/paho.mqtt.golang/CONTRIBUTING.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/eclipse/paho.mqtt.golang/NOTICE.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/eclipse/paho.mqtt.golang/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/eclipse/paho.mqtt.golang/SECURITY.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/fatih/color/LICENSE.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/fatih/color/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/fsnotify/fsnotify/CHANGELOG.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "vendor/github.com/fsnotify/fsnotify/CONTRIBUTING.md"
         }
       ],
       "files_eligible": 541,
       "files_fetched": 0,
-      "files_selected": 64,
-      "files_skipped_budget": 477,
+      "files_selected": 80,
+      "files_skipped_budget": 461,
       "files_skipped_size": 0,
       "files_small_enough": 541,
       "fork": true,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 64,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 80,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/mainflux",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -42469,19 +43301,83 @@
         {
           "error": "HTTPError",
           "path": "spheres/diatom/diatom-pleurosigma-curve.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/diatom/diatom-stauroneis-cross.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/diatom/diatom-surirella-wing.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/diatom/diatom-synedra-needle.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/diatom/diatom-triceratium-horn.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-air-now-f.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-air-now-m.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-air-pre-f.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-air-pre-m.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-air.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-bases.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-earth-now-f.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-earth-now-m.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-earth-pre-f.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-earth-pre-m.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-earth.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "spheres/lineage/lineage-fire-now-f.html"
         }
       ],
       "files_eligible": 4205,
       "files_fetched": 0,
-      "files_selected": 64,
-      "files_skipped_budget": 4135,
+      "files_selected": 80,
+      "files_skipped_budget": 4119,
       "files_skipped_size": 6,
       "files_small_enough": 4199,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 64,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 80,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/mayhem",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -43557,19 +44453,83 @@
         {
           "error": "HTTPError",
           "path": "bench/37-lattice-of-lattices.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/38-two-entangled-boxes.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/39-nested-shells.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/40-the-nucleus.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/41-three-blueprints.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/42-tropical-router.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/43-the-island-run.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/44-two-probe-engine.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/45-two-depths.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/46-dual-descent.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/47-encapsulated-pulsar.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/48-ignition-rhythm.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/49-two-axis-gap.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/50-delta-protocol.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/52-the-render-step.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/53-the-chronos-engine.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "bench/54-the-smear.html"
         }
       ],
       "files_eligible": 173,
       "files_fetched": 0,
-      "files_selected": 48,
-      "files_skipped_budget": 124,
+      "files_selected": 64,
+      "files_skipped_budget": 108,
       "files_skipped_size": 1,
       "files_small_enough": 172,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 48,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 64,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/mimzy",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -46121,19 +47081,83 @@
         {
           "error": "HTTPError",
           "path": "certs/026 sentinel.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/027 eternal.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/028 will.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/029 edward.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/030 steady.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/031 nin.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/032 nin.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/033 bcg.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/034 golden-axe.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/035 twist.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/036 patricia.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/037 samus.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/038 captain-bionic.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/039 toph.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/040 snot.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/041 possibility.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "certs/042 eagle-eye.md"
         }
       ],
       "files_eligible": 521,
       "files_fetched": 0,
-      "files_selected": 32,
-      "files_skipped_budget": 488,
+      "files_selected": 48,
+      "files_skipped_budget": 472,
       "files_skipped_size": 1,
       "files_small_enough": 520,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 32,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 48,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/noesis-kernel",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -46237,19 +47261,83 @@
         {
           "error": "HTTPError",
           "path": "gocmon/mon/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "ledger.jsonl"
+        },
+        {
+          "error": "HTTPError",
+          "path": "monk.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nom.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/bridges/oasis-v179/verifier.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/OASIS_TETHER_v178.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/manifest.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r001_executable_cycle.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r002_bounded_session.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r003_audit_journal.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r004_checkpoint_recovery.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r005_atomic_checkpoint_store.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r006_local_control_boundary.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r007_deterministic_scheduler.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r008_fault_convergence.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "nomcog/runtime/executable/nomcog_r009_controlled_recovery.py"
         }
       ],
       "files_eligible": 38,
       "files_fetched": 0,
-      "files_selected": 16,
-      "files_skipped_budget": 20,
+      "files_selected": 32,
+      "files_skipped_budget": 4,
       "files_skipped_size": 2,
       "files_small_enough": 36,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 16,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 32,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/nom",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -46685,19 +47773,83 @@
         {
           "error": "HTTPError",
           "path": "apps/uep/UEP-060-durable-budget-governance.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "apps/uep/UEP-064-receipt-provenance-revocation.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "apps/uep/UEP-64-receipt-provenance-revocation.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/AG-FIELD-ADDRESS-v1.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/ASTROPHAGE-COMPACT-v2.1.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/ASTROPHAGE-FIELD-v2.0.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/benchmark-results.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/CSHARP-MIGRATION-ARCHITECTURE.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/csharp/OBS44-CSharp-benchmark-v1.7.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/dual5-threejs-v0.7.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/DUAL5-v0.7.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/FINAL-SIX-COMPLETION-v2.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/FINAL-SIX-RESULTS.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/FINAL_OPERATOR_ATTESTATION_20261014.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/FINAL_OPERATOR_ATTESTATION_20261014.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/FINAL_RELEASE-RC1.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "architecture/diatom-diamond/final-six/TWO_DEVICE_SETUP.md"
         }
       ],
-      "files_eligible": 3640,
+      "files_eligible": 3693,
       "files_fetched": 0,
-      "files_selected": 16,
-      "files_skipped_budget": 3614,
+      "files_selected": 32,
+      "files_skipped_budget": 3651,
       "files_skipped_size": 10,
-      "files_small_enough": 3630,
+      "files_small_enough": 3683,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 16,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 32,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/oasis",
       "scan_mode": "RESUMABLE_PARTIAL",
       "status": "PARTIAL"
@@ -46833,22 +47985,34 @@
         {
           "error": "HTTPError",
           "path": "agents/the-octopus.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/the-three-hearts.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "build.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "octopus.dlw/manifest.dlw.json"
         }
       ],
       "files_eligible": 19,
       "files_fetched": 0,
-      "files_selected": 16,
-      "files_skipped_budget": 3,
+      "files_selected": 19,
+      "files_skipped_budget": 0,
       "files_skipped_size": 0,
       "files_small_enough": 19,
       "fork": false,
       "head_revision_pinned": false,
       "hits": [],
-      "next_file_index": 16,
-      "observed_utc": "2026-11-22T19:39:37.534216+00:00",
+      "next_file_index": 19,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/octopus",
-      "scan_mode": "RESUMABLE_PARTIAL",
-      "status": "PARTIAL"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/oime": {
       "archived": false,
@@ -47747,160 +48911,1628 @@
       "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-a-josephson": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-a-josephson.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/bias.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/electrode-left/psi.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/electrode-right/psi.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/evolve.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/observe.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/the-dot/coupling.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "the-virtual-junction/the-dot/phase.json"
+        }
+      ],
+      "files_eligible": 11,
+      "files_fetched": 0,
+      "files_selected": 11,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 11,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 11,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-a-josephson",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-a-quantum-dot": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-a-quantum-dot.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-a-quantum-dot",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-a-spin": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-a-spin.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-a-spin",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-dna": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-dna.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-dna",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-light": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-light.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-light",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-n-cubi": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-n-cubi.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-n-cubi",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-noise": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-noise.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-noise",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-reverse": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-reverse.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-reverse",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-silicon": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-silicon.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-silicon",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-sound": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-sound.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-sound",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-sync": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-sync.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-sync",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/perceptron-in-two-cubi": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "perceptron-in-two-cubi.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/perceptron-in-two-cubi",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/persistence-protocol": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "THE EGG.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "THE_PERSISTENCE_PROTOCOL_v0.1.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "3-pillar.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "persist.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "persistence-protocol.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "stoicheion_git_ledger.py"
+        }
+      ],
+      "files_eligible": 9,
+      "files_fetched": 0,
+      "files_selected": 9,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 9,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 9,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/persistence-protocol",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/philosophy-sink": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "philosophy-sink.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/philosophy-sink",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/phonetikos": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/_personas.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "build.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/fuck.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/idiolect-stack.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/shibboleth.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/the-accommodation.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/the-euphemism-treadmill.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/words-outlive-their-reasons.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/x.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "papers/you-become-what-you-read.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "phn.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 13,
+      "files_fetched": 0,
+      "files_selected": 13,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 13,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 13,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/phonetikos",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/phononic-core": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "phononic-core.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/phononic-core",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/phonons-in-2d-3d": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "phonons-in-2d-3d.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/phonons-in-2d-3d",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/phonos": {
+      "archived": false,
+      "default_branch": "master",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "phonos.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/phonos",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "scalar-zero/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "jane core v1.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photon16/experiments/v04-browser-test.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photon16/experiments/v05-browser-test.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photon16/index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photon16/v03.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photon16/v04.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic proc v1.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic proc v2.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic proc v3.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "scalar-zero/cellular-war-27.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "scalar-zero/cellular-war-27.js"
+        }
+      ],
+      "files_eligible": 48,
+      "files_fetched": 0,
+      "files_selected": 16,
+      "files_skipped_budget": 32,
+      "files_skipped_size": 0,
+      "files_small_enough": 48,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 16,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic",
-      "status": "PENDING"
+      "scan_mode": "RESUMABLE_PARTIAL",
+      "status": "PARTIAL"
     },
     "DavidWise01/photonic-paper-i": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-paper-i.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-paper-i",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-paper-ii": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-paper-ii.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-paper-ii",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-paper-iii": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-paper-iii.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-paper-iii",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-paper-iv": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-paper-iv.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-paper-iv",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-papers": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-papers.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-papers",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-papers-collected": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-papers-collected.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-papers-collected",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/photonic-transcriber": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "photonic-transcriber.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/photonic-transcriber",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/physis": {
+      "archived": false,
+      "default_branch": "master",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/CANON.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/control_flow_CANON.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/control_flow_README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/first_three_primitives_CANON.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/first_three_primitives_README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/trace_and_bytecode_CANON.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/trace_and_bytecode_README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/validator_v0_0_CANON.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/validator_v0_0_NOTES.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/validator_v0_0_README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/ONE_D_TO_ONE_ENGINE.container.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "MEKHANE/ONE_D_TO_ONE_ENGINE.container.spec.json"
+        }
+      ],
+      "files_eligible": 34,
+      "files_fetched": 0,
+      "files_selected": 16,
+      "files_skipped_budget": 18,
+      "files_skipped_size": 0,
+      "files_small_enough": 34,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 16,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/physis",
-      "status": "PENDING"
+      "scan_mode": "RESUMABLE_PARTIAL",
+      "status": "PARTIAL"
     },
     "DavidWise01/pi-bonds": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "pi-bonds.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/pi-bonds",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/pi-three-axis": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "pi-three-axis.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/pi-three-axis",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/pinched-hysteresis": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "pinched-hysteresis.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/pinched-hysteresis",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/planetary-core": {
+      "archived": false,
+      "default_branch": "master",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "planetary-core.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/planetary-core",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/plant-intelligence": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/plant-memory.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/_personas.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/charles-darwin.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/mimosa-and-the-learning-claim.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/phenotypic-plasticity.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/plant-electrical-signaling.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/plant-neurobiology.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/the-root-brain-hypothesis.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/the-root-tip.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/the-swarming-root-system.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/the-transition-zone.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/tropisms.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/volatile-signaling.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plant-intelligence.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 16,
+      "files_fetched": 0,
+      "files_selected": 16,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 16,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 16,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/plant-intelligence",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/plasmonic": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/c2-continuity-core.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/fortress-moat-pow.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/four-bit-rings.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/plasma-byte-workbench.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/plasmatronic-v3.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "demos/plasmonic-core.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "gen_carbon.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "gen_dlw.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "gen_silicon.py"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plasmonic.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "roster.json"
+        }
+      ],
+      "files_eligible": 14,
+      "files_fetched": 0,
+      "files_selected": 14,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 14,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 14,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/plasmonic",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/plato": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Apology.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Charmides.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Critias.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Crito.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Euthydemus.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Euthyphro.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Hippias Minor.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Ion.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Laches.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Lysis.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Menexenus.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Meno.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Protagoras.txt"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plato-corpus-jowett-PD/Symposium.txt"
+        }
+      ],
+      "files_eligible": 31,
+      "files_fetched": 0,
+      "files_selected": 16,
+      "files_skipped_budget": 3,
+      "files_skipped_size": 12,
+      "files_small_enough": 19,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 16,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/plato",
-      "status": "PENDING"
+      "scan_mode": "RESUMABLE_PARTIAL",
+      "status": "PARTIAL"
     },
     "DavidWise01/player-piano": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "agents/_personas.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "player-piano.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 4,
+      "files_fetched": 0,
+      "files_selected": 4,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 4,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 4,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/player-piano",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/plutus": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "plutus.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 4,
+      "files_fetched": 0,
+      "files_selected": 4,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 4,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 4,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/plutus",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/pocket-universe": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": ".well-known/cvd.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "docker-compose.yml"
+        },
+        {
+          "error": "HTTPError",
+          "path": "pocket-universe.dlw/manifest.dlw.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "r0-reverse.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "temporal-portals.html"
+        }
+      ],
+      "files_eligible": 7,
+      "files_fetched": 0,
+      "files_selected": 7,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 7,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 7,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/pocket-universe",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/poetic-science-mobius-531": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "manifest.json"
+        },
+        {
+          "error": "HTTPError",
+          "path": "poetic-science-mobius-531.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 4,
+      "files_fetched": 0,
+      "files_selected": 4,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 4,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 4,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/poetic-science-mobius-531",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/poetical-science": {
+      "archived": false,
+      "default_branch": "main",
+      "errors": [
+        {
+          "error": "HTTPError",
+          "path": "README.md"
+        },
+        {
+          "error": "HTTPError",
+          "path": "index.html"
+        },
+        {
+          "error": "HTTPError",
+          "path": "poetical-science.dlw/manifest.dlw.json"
+        }
+      ],
+      "files_eligible": 3,
+      "files_fetched": 0,
+      "files_selected": 3,
+      "files_skipped_budget": 0,
+      "files_skipped_size": 0,
+      "files_small_enough": 3,
+      "fork": false,
+      "head_revision_pinned": false,
+      "hits": [],
+      "next_file_index": 3,
+      "observed_utc": "2026-11-23T07:38:21.481500+00:00",
       "repo": "DavidWise01/poetical-science",
-      "status": "PENDING"
+      "scan_mode": "ALL_SIZE_ELIGIBLE_FILES",
+      "status": "SCANNED"
     },
     "DavidWise01/polostan": {
       "repo": "DavidWise01/polostan",
