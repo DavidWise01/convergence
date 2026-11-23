@@ -1,0 +1,70 @@
+{
+  "id": "GEMINI-NAMING-2026-11-23-HELIUM-01",
+  "recorded_at": "2026-11-23",
+  "submitted_source": "https://www.reddit.com/r/singularity/comments/1y3iw2a/gemini_4_helium_spotted_on_the_web/#lightbox",
+  "source_identifiers": {
+    "platform": "Reddit",
+    "subreddit": "r/singularity",
+    "post_id": "1y3iw2a",
+    "title": "Gemini 4 Helium spotted on the web",
+    "poster": "u/141_1337"
+  },
+  "observation_status": "PARTIAL",
+  "observed_content": [
+    "Accessible Reddit page title: 'Gemini 4 Helium spotted on the web'.",
+    "Reddit page image alt text describes a new subscription tier called Helium added to Gemini Web and a name teased for a future model.",
+    "Post body exposes a cited X source, https://x.com/lyraxana/status/2124742605015535659 .",
+    "These are third-party observations and descriptions, not direct independent verification of Gemini source code or availability."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-23",
+      "surface": "reddit.com post HTML/text via web retrieval",
+      "result": "Title, image alt text, author, and linked X attribution were accessible; image binary and underlying application code not archived."
+    },
+    {
+      "date": "2026-11-23",
+      "surface": "related public reports",
+      "result": "Reports discuss Helium as a possible tier/model label; official released model status not established from supplied post."
+    }
+  ],
+  "claims": [
+    {
+      "text": "Helium was reportedly observed as a Gemini Web subscription tier and associated with Gemini 4 naming speculation.",
+      "status": "OBSERVED",
+      "scope": "third-party Reddit report, not firsthand site inspection"
+    },
+    {
+      "text": "Gemini 4 Helium is an officially launched model.",
+      "status": "UNKNOWN",
+      "scope": "not demonstrated by the submitted source"
+    }
+  ],
+  "hypotheses": [
+    {
+      "text": "The Helium label is part of an elemental naming convention alongside Hydrogen, Carbon, Neon and Argon.",
+      "status": "UNKNOWN",
+      "note": "Element naming similarity is a comparison, not evidence of common underlying technical architecture or derivation."
+    }
+  ],
+  "ancestry_status": "UNKNOWN — Reddit post attributes an X post; reposts, articles and screenshots tracing to it count as one upstream root unless distinct original observation is demonstrated.",
+  "related_records": [],
+  "limitations": [
+    "No firsthand verified Gemini Web code capture.",
+    "Screenshot image bytes not archived.",
+    "Naming coincidence does not imply copying, coordination, shared architecture or causal relationship.",
+    "No official Helium model release verified here."
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://www.reddit.com/r/singularity/comments/1y3iw2a/gemini_4_helium_spotted_on_the_web/#lightbox",
+    "https://x.com/lyraxana/status/2124742605015535659"
+  ],
+  "tags": [
+    "gemini",
+    "helium",
+    "elemental-naming",
+    "source-lineage",
+    "convergence"
+  ]
+}
