@@ -1,0 +1,83 @@
+{
+  "id": "PROVENANCE-002-EARLY-CORPUS-2026-11-23",
+  "recorded_at": "2026-11-23",
+  "observation_status": "VERIFIED",
+  "scope": "Early January–February GitHub source recovery and intermediary chronological checkpoints",
+  "source_identifiers": [
+    {
+      "repository": "DavidWise01/AI-Audit-Tools",
+      "commit_sha": "f3656f2e730bd9942d969bd0c9ac7c1bc37fa471",
+      "timestamp_utc": "2026-02-18T12:57:50Z",
+      "path": "Toph Complex Math",
+      "blob_sha": "a7485aa3046f48799769b1c9bdd81569a9446bdb"
+    },
+    {
+      "repository": "DavidWise01/knowledge-gates",
+      "commit_sha": "53ad0496b161e5dae6a9931bb945631ab49e4068",
+      "timestamp_utc": "2026-05-30T18:17:21Z"
+    },
+    {
+      "repository": "DavidWise01/jane",
+      "commit_sha": "eb4a1139f28bae98864978be9defc689325ce245",
+      "timestamp_utc": "2026-07-09T23:11:52Z"
+    },
+    {
+      "repository": "DavidWise01/ud0",
+      "commit_sha": "71e1dbd0b627c39ee62cbfcfb258946f6d5bdc71",
+      "timestamp_utc": "2026-07-23T17:09:07Z"
+    }
+  ],
+  "observed_content": [
+    "Feb 18 TOPH Complex Math original HTML has 999 introduced lines, TriPod-IP declaration and technical interface.",
+    "Pinned Feb 18 HTML has zero case-insensitive matches each for ethos, pathos, logos, mythos (one for framework); therefore not proof of the named four-way scheme.",
+    "May 30 Knowledge Gates commit contains Greek myth and Logos as a technical-philosophical item; not proof of four named appeals in one structure.",
+    "July 9 Jane pinned original HTML contains four named roles and central integration.",
+    "July 23 UD0 commit adds GROUPS partition mapping 53 seals to named ETHOS/PATHOS/LOGOS/MYTHOS categories."
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-23",
+      "method": "Connected GitHub commit-message search across DavidWise01, pinned fetch_commit, and pinned fetch_file",
+      "status": "completed",
+      "limitation": "GitHub commit message search not exhaustive full historical content search; code search generally default branch"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Technical TOPH corpus on GitHub by 2026-02-18",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Feb 18 artifact itself demonstrates named four-appeal architecture",
+      "status": "REFUTED_FOR_THIS_FILE"
+    },
+    {
+      "claim": "Jan–Feb originally conceived four named architecture",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "July 9 earliest complete arrangement located by this investigation",
+      "status": "SUPPORTED_WITH_SEARCH_LIMITATIONS"
+    }
+  ],
+  "hypotheses": [
+    "January-February local documents, chats, other repository contents, or archived snapshots may contain earlier full framework.",
+    "A historical code search across all commit trees could uncover a pre-July complete scheme."
+  ],
+  "ancestry_status": "Related owned repos and later mirrors cannot be counted as independent corroboration",
+  "related_records": [
+    "PROVENANCE-001-JANE-2026-11-23"
+  ],
+  "limitations": [
+    "No exhaustive all-commits code-search performed",
+    "No authentic January complete framework found",
+    "Historical Git timestamps require context and do not independently prove when underlying ideas originated"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/DavidWise01/AI-Audit-Tools/commit/f3656f2e730bd9942d969bd0c9ac7c1bc37fa471",
+    "https://github.com/DavidWise01/knowledge-gates/commit/53ad0496b161e5dae6a9931bb945631ab49e4068",
+    "https://github.com/DavidWise01/jane/commit/eb4a1139f28bae98864978be9defc689325ce245",
+    "https://github.com/DavidWise01/ud0/commit/71e1dbd0b627c39ee62cbfcfb258946f6d5bdc71"
+  ]
+}
