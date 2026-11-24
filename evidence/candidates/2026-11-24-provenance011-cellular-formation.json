@@ -1,0 +1,105 @@
+{
+  "id": "PROVENANCE-011-CELLULAR-FORMATION-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "PARTIAL_FORMATION_RULE_RECOVERY",
+  "scope": "Owner-corrected resource/unit grammar for cellular warfare and earliest located related code",
+  "owner_direct_rule": "its cellular warfare 1 resource 1 unit . & . 2 units | .",
+  "verified_sources": [
+    {
+      "repo": "DavidWise01/cellular-automata",
+      "commit": "0abd8bf8e1080467cf3b085176801c1cd1ab68a5",
+      "date_utc": "2026-06-18T00:53:20Z",
+      "finding": "CELLULAR AUTOMATA life-from-rules catalog; original commit includes Conway B3/S23 and related emergents, not the owner's specific resource warfare formation mechanics",
+      "classification": "EARLY_CELLULAR_AUTOMATA_BACKGROUND_NOT_DIRECT_CIPHER_IMPLEMENTATION"
+    },
+    {
+      "repo": "DavidWise01/toph-cortex",
+      "path": "research/isa256/JANE-026-two-cell-symbiotic-homeostasis.md",
+      "blob_sha": "b9ab0c97e367535d4882848fbcceb501b6a0e78d",
+      "finding": "Two cells have one classical resource each and exchange equal/opposite flows in explicitly coupled homeostasis",
+      "classification": "SEPARATE_RESOURCE_TRANSFER_MODEL"
+    },
+    {
+      "repo": "DavidWise01/toph-cortex",
+      "path": "research/isa256/JANE-027-primitive-scale-closure.md",
+      "blob_sha": "0ae5c332b3a4cfd70390f58871eea99f7d6cb248",
+      "finding": "Finite-scale conservative coupling of resource cells, not established as combat grammar",
+      "classification": "SEPARATE_SCALED_CELL_MODEL"
+    },
+    {
+      "repo": "DavidWise01/I13-H1.1",
+      "path": "docs/two-universe-gate-war.html",
+      "blob_sha": "1d2ba1ffdce01c02fe95e596333af3d7f297a9c9",
+      "finding": "Contest for one conserved resource with diverted and vacant ledger, but no dot-to-unit formation rules",
+      "classification": "SEPARATE_CONTEST_MODEL"
+    },
+    {
+      "repo": "DavidWise01/archon",
+      "path": "elements/argon-cipher-020.html",
+      "blob_sha": "965137ef8401f6b6be67364a91342d7aa27b7ed3",
+      "finding": "Dot and bar numeric weighting recorded as symbolic interpretation; not authenticated as original cellular warfare operational economy",
+      "classification": "DISTINCT_CIPHER_INTERPRETER"
+    }
+  ],
+  "stage_table": [
+    {
+      "stage": "resource",
+      "rule": "One resource appears in owner's statement",
+      "status": "USER_ATTESTED"
+    },
+    {
+      "stage": "unit",
+      "rule": "One unit and two units explicitly stated by owner",
+      "status": "USER_ATTESTED"
+    },
+    {
+      "stage": "dot",
+      "rule": "The owner includes . in one-resource/one-unit statement; full operator grammar unresolved",
+      "status": "PARTIAL"
+    },
+    {
+      "stage": "bar",
+      "rule": "The owner associates | with two units; transition conditions unresolved",
+      "status": "PARTIAL"
+    },
+    {
+      "stage": "formation",
+      "rule": null,
+      "status": "NOT_LOCATED_IN_SOURCE"
+    },
+    {
+      "stage": "reproduction",
+      "rule": null,
+      "status": "NOT_LOCATED_IN_SOURCE"
+    },
+    {
+      "stage": "combat_resolution",
+      "rule": null,
+      "status": "NOT_LOCATED_IN_SOURCE"
+    },
+    {
+      "stage": "conservation",
+      "rule": "Demonstrated in separate resource models only",
+      "status": "NOT_LINKED_TO_ARGON_CIPHER"
+    }
+  ],
+  "search_summary": [
+    "Owner-scoped default-branch code search: one resource one unit, two units, cellular war, resource unit conversion, dot bar.",
+    "Historical commit-message searches previously covered cellular warfare, one resource one unit, cellular automata and generic resource terms.",
+    "Found unrelated materials in search results; these were not promoted to evidence of exact formation mechanics."
+  ],
+  "negative_result_scope": "NOT_EXHAUSTIVE_ALL_HISTORICAL_REVISIONS_OR_REPO_CONTENT; false negatives possible",
+  "invariants": [
+    "Do not equate historical weighted 20/22 to combat strength or unit count.",
+    "Do not force atomic number 18 into game resource bookkeeping.",
+    "Do not count owned repository mirrors as independent ancestry.",
+    "Do not invent conversion rate, death rate, resource-growth tick or fight outcome absent source."
+  ],
+  "open_next_search": "Search older model/version files or explicit formation game code with unit creation, resource debits, reproduction/collision and battle resolution, then test isolated examples against owner glyph string",
+  "related_records": [
+    "PROVENANCE-008-ARGON-LIFE-CIPHER-2026-11-24",
+    "PROVENANCE-009-CELLULAR-WARFARE-SEMANTICS-2026-11-24",
+    "PROVENANCE-010-CELLULAR-RESOURCE-ANCESTRY-2026-11-24"
+  ],
+  "media_archived": false
+}
