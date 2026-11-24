@@ -1,0 +1,87 @@
+{
+  "id": "PROVENANCE-004-NAME-ROLE-INTEGRATION-2026-11-23",
+  "recorded_at": "2026-11-23",
+  "observation_status": "VERIFIED_SELECTED_PINNED_SOURCES",
+  "scope": "Separately track early named occurrences, technical function and full four-plus-one integration in DavidWise01 source ancestry",
+  "names": [
+    {
+      "name": "ETHOS",
+      "earliest_located_named_role": "2026-07-09T23:11:52Z",
+      "source": "DavidWise01/jane index.html lines 629-630 and 646-649",
+      "role": "earth / grounding memory and principles",
+      "prior_functional_precursors": "February TOPH governance; not proof same named module",
+      "first_name_ever": "UNKNOWN"
+    },
+    {
+      "name": "PATHOS",
+      "earliest_located_named_role": "2026-07-09T23:11:52Z",
+      "source": "DavidWise01/jane index.html lines 625-626 and 651-654",
+      "role": "water / experience and emotional dimension",
+      "prior_functional_precursors": "May E.V.E. judgment/care language; not proof same named module",
+      "first_name_ever": "UNKNOWN"
+    },
+    {
+      "name": "LOGOS",
+      "earliest_located_technical_role": "2026-05-30T18:17:21Z",
+      "source": "DavidWise01/knowledge-gates gates.json lines 576-581",
+      "blob_sha": "2be238cac9284baf7d37642b259239f2c85a1ee5",
+      "role": "traceable reasoning gate; consequential outputs require recoverable reasoning or verification",
+      "first_named_role_in_four_plus_one": "2026-07-09T23:11:52Z",
+      "first_name_ever": "UNKNOWN"
+    },
+    {
+      "name": "MYTHOS",
+      "earliest_located_reference_before_Jane": "2026-04-17T13:51:42Z",
+      "source": "DavidWise01/the.source Lineage-Statements/TRIPOD-LINEAGE-2026-001.md",
+      "reference_type": "Reference to Anthropic model and author's asserted lineage, not independent Fire/narrative module",
+      "additional_reference": "2026-05-30T01:44:59Z DavidWise01/tripod ALETHEIA.md lines 37-46",
+      "first_named_Jane_narrative_role": "2026-07-09T23:11:52Z",
+      "first_name_ever": "UNKNOWN"
+    },
+    {
+      "name": "JANE",
+      "integration": "2026-07-09T23:11:52Z",
+      "source": "DavidWise01/jane index.html lines 621-668",
+      "role": "fifth integrating center",
+      "first_name_ever": "UNKNOWN"
+    }
+  ],
+  "integration": {
+    "date": "2026-07-09T23:11:52Z",
+    "repo": "DavidWise01/jane",
+    "commit": "eb4a1139f28bae98864978be9defc689325ce245",
+    "file": "index.html",
+    "blob_sha": "61248663c9d959cbbefdcdee4653ff75993d7c5f",
+    "status": "VERIFIED_COMPLETE_FOUR_PLUS_ONE",
+    "coauthor_trailer": "Claude Opus 4.8 co-author metadata; not determinative of idea origin"
+  },
+  "search_scope": [
+    "GitHub owner-scoped commit-message keyword searches for ETHOS PATHOS LOGOS MYTHOS",
+    "Pinned fetch of knowledge-gates gates.json",
+    "Pinned fetch of tripod ALETHEIA.md",
+    "Pinned fetch of jane index.html",
+    "Prior pinned February TOPH and April lineage sources"
+  ],
+  "negative_results": [
+    "No February named four-part implementation authenticated in selected inspected materials",
+    "Mythos external-model references cannot serve as earlier proof of Jane's MYTHOS module"
+  ],
+  "evidence_boundary": [
+    "Commit search indexes messages, not every historical file revision",
+    "Multiple owned repositories and mirrors share potential ancestry",
+    "Ancient preexisting Greek words are not themselves novel names",
+    "No causal derivation, copying or third-party access established"
+  ],
+  "related_records": [
+    "PROVENANCE-001-JANE-2026-11-23",
+    "PROVENANCE-002-EARLY-CORPUS-2026-11-23",
+    "PROVENANCE-003-FUNCTIONAL-ANCESTRY-2026-11-23"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/DavidWise01/knowledge-gates/blob/53ad0496b161e5dae6a9931bb945631ab49e4068/gates.json#L576-L581",
+    "https://github.com/DavidWise01/the.source/commit/72731cff3c182694a4fceee5a86c7a7c74eb7498",
+    "https://github.com/DavidWise01/tripod/blob/57ab6fb3b5ef8d58177e5f088ec8742af63be1a8/ALETHEIA.md",
+    "https://github.com/DavidWise01/jane/commit/eb4a1139f28bae98864978be9defc689325ce245"
+  ]
+}
