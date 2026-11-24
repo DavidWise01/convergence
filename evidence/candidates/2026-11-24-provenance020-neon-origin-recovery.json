@@ -1,0 +1,92 @@
+{
+  "id": "PROVENANCE-020-NEON-ORIGIN-RECOVERY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "FIRST_PUBLIC_NEON_SDK_ENUM_INTRODUCTION_RECOVERED_FOUR_COMMITS_ONE_PIPER_ROOT",
+  "question": "Which original public commits introduced gemini-4-neon to Python, JS, Go, Java SDK enums, and did they share source revision ancestry?",
+  "result": {
+    "model_id": "gemini-4-neon",
+    "commit_message": "fix: update sdk enum",
+    "shared_piper_origin_rev_id": "1024938127",
+    "commits_verified": 4,
+    "all_four_source_diffs_add_exact_model_identifier": true,
+    "earliest_in_group_utc": "2026-11-18T21:28:02Z",
+    "latest_in_group_utc": "2026-11-18T21:29:00Z",
+    "spread_seconds": 58
+  },
+  "commits": [
+    {
+      "language": "Go",
+      "repo": "googleapis/go-genai",
+      "sha": "9b0a57dc161dca1cc1e2d5d25615fd022f3095a5",
+      "utc": "2026-11-18T21:28:02Z",
+      "path": "interactions/models/interactions/model.go",
+      "url": "https://github.com/googleapis/go-genai/commit/9b0a57dc161dca1cc1e2d5d25615fd022f3095a5",
+      "introduced": "ModelGemini4Neon Model = \"gemini-4-neon\" ",
+      "earlier_ref": "25bf4e82a490b9e4505a068655fd8dea4eb87ab5",
+      "earlier_contains": false,
+      "later_contains": true
+    },
+    {
+      "language": "JavaScript",
+      "repo": "googleapis/js-genai",
+      "sha": "634630d93422c531d7cccc737cd233598effbb75",
+      "utc": "2026-11-18T21:28:18Z",
+      "path": "src/gaos/models/interactions/model.ts",
+      "url": "https://github.com/googleapis/js-genai/commit/634630d93422c531d7cccc737cd233598effbb75",
+      "introduced": "| \"gemini-4-neon\"",
+      "earlier_ref": "c8e8d207a45f554cd492e2c60b4706e227e2e908",
+      "earlier_contains": false,
+      "later_contains": true
+    },
+    {
+      "language": "Python",
+      "repo": "googleapis/python-genai",
+      "sha": "4c4ab16bc8229415c548519a4cf400cd85936e91",
+      "utc": "2026-11-18T21:28:29Z",
+      "path": "google/genai/_gaos/types/interactions/model.py",
+      "url": "https://github.com/googleapis/python-genai/commit/4c4ab16bc8229415c548519a4cf400cd85936e91",
+      "introduced": "\"gemini-4-neon\"",
+      "earlier_ref": "34e62b1c476959d0217fb5d53ec26e75f9fb2751",
+      "earlier_contains": false,
+      "later_contains": true
+    },
+    {
+      "language": "Java",
+      "repo": "googleapis/java-genai",
+      "sha": "624da9ae3e104c22b17237b1d8c7f1620f23c207",
+      "utc": "2026-11-18T21:29:00Z",
+      "path": "src/main/java/com/google/genai/gaos/models/interactions/Model.java",
+      "url": "https://github.com/googleapis/java-genai/commit/624da9ae3e104c22b17237b1d8c7f1620f23c207",
+      "introduced": "GEMINI4_NEON = new Model(\"gemini-4-neon\")",
+      "earlier_ref": "1893dbe36a9f6786ea91c57391c178c357ff7bf3",
+      "earlier_contains": false,
+      "later_contains": true
+    }
+  ],
+  "four_model_source_ancestry": {
+    "argon": "998875914",
+    "carbon": "1018404598",
+    "hydrogen": "1020280180",
+    "neon": "1024938127",
+    "distinct_revision_roots": 4,
+    "public_language_commits": 16
+  },
+  "method": [
+    "Search exact string in default branch and inspect current model files.",
+    "Search exact model identifier in commit messages; zero matching Neon commit messages in four SDKs.",
+    "Enumerate recent repo commits without keyword query.",
+    "Fetch historical model file content at dated revisions to bracket the transition from absent to present.",
+    "Fetch direct introduction diffs to verify added model enum lines and shared PiperOrigin-RevId."
+  ],
+  "invariants": [
+    "Four matching SDK commit messages with the same PiperOrigin-RevId are one documented upstream source-change lineage, not four independent naming decisions.",
+    "The exact internal origin timestamp of revision 1024938127 is not exposed by public commit timestamps.",
+    "Google product naming authorization, individual name coiner, and ROOT0 access remain unverified.",
+    "Historical file diff establishes this model enum introduction along the inspected branch, not universal first mention anywhere in Google's internal estate."
+  ],
+  "related": [
+    "PROVENANCE-019-GOOGLE-SDK-SOURCE-ANCESTRY-2026-11-24",
+    "PROVENANCE-018-GOOGLE-PUBLIC-GIT-SCAN-2026-11-24"
+  ],
+  "media_archived": false
+}
