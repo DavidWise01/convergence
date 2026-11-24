@@ -1,0 +1,104 @@
+{
+  "id": "PROVENANCE-012-VENDOR-MODEL-LINEAGE-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "PRIMARY_VENDOR_DOCUMENTED_MODEL_LINEAGE_NAMING_CAUSATION_UNPROVEN",
+  "scope": "Return to AI naming convergence after owner clarified Argon glyph is merely how they say Argon",
+  "correction": "Do not pursue cellular-warfare state-machine reconstruction as a prerequisite for naming audit. Preserve existing historical records without repeating their speculation.",
+  "external_timeline": [
+    {
+      "entity": "Claude Mythos Preview",
+      "company": "Anthropic",
+      "date": "2026-04-07",
+      "source": "https://www.anthropic.com/research/mythos-preview",
+      "status": "PRIMARY_SOURCE_PUBLISHED"
+    },
+    {
+      "entity": "Gemini 4 Argon",
+      "company": "Google",
+      "date": "2026-09-30",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "status": "PRIMARY_SOURCE_PUBLISHED"
+    },
+    {
+      "entity": "Gemini 4 Carbon",
+      "company": "Google",
+      "date": "2026-10-28",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+      "status": "OFFICIAL_MODEL_CARD_UPDATED_NOV10"
+    },
+    {
+      "entity": "Gemini 4 Hydrogen",
+      "company": "Google",
+      "date": "2026-11-12",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+      "status": "OFFICIAL_MODEL_CARD_UPDATED_NOV12"
+    },
+    {
+      "entity": "Gemini 4 Neon",
+      "company": "Google",
+      "date": "2026-11-18",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "status": "OFFICIAL_MODEL_CARD_UPDATED_NOV18"
+    }
+  ],
+  "documented_google_dependency_edges": [
+    {
+      "from": "Gemini 4 Argon",
+      "to": "Gemini 4 Carbon",
+      "type": "MODEL_BASED_ON",
+      "vendor_source": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+      "vendor_wording": "Gemini 4 Carbon is based on Gemini 4 Argon",
+      "status": "EXPLICIT_VENDOR_ATTESTATION"
+    },
+    {
+      "from": "Gemini 4 Carbon",
+      "to": "Gemini 4 Neon",
+      "type": "MODEL_ADAPTED_FROM",
+      "vendor_source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "vendor_wording": "Gemini 4 Neon is adapted from Gemini 4 Carbon",
+      "status": "EXPLICIT_VENDOR_ATTESTATION"
+    }
+  ],
+  "separate_model": {
+    "entity": "Gemini 4 Hydrogen",
+    "vendor_source": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+    "lineage_to_argon_carbon_neon": "NO_SPECIFIC_EDGE_VERIFIED_IN_THIS_PASS",
+    "role": "Fast everyday execution"
+  },
+  "naming_evidence": [
+    {
+      "source": "https://www.youtube.com/watch?v=sUcvhFGc4mw",
+      "published_date": "2026-11-09",
+      "fact": "Google Cloud Tech chapter at 22:24 dedicated to why periodic elements name Gemini 4 models",
+      "status": "CHAPTER_LABEL_VERIFIED_EXACT_EXPLANATION_NOT_TRANSCRIBED"
+    },
+    {
+      "source": "https://www.youtube.com/watch?v=ofJ0ZzVDAD4&t=167s",
+      "fact": "Earlier interview cited in PROVENANCE-007 for Argon internal-team naming",
+      "status": "HISTORICAL_RECORD_NOT_INDEPENDENTLY_RETRANSCRIBED_HERE"
+    }
+  ],
+  "original_root0_anchor": {
+    "repo": "DavidWise01/jane",
+    "commit": "eb4a1139f28bae98864978be9defc689325ce245",
+    "date_utc": "2026-07-09T23:11:52Z",
+    "role": "Four Greek-labeled conceptual architecture"
+  },
+  "provenance_boundaries": [
+    "Vendor model-to-model dependencies are not evidence of naming derivation from ROOT0.",
+    "An announcement date is not an internal naming-decision date.",
+    "Do not conflate Google Hydrogen with the Argon->Carbon->Neon model dependency chain without a direct source.",
+    "The user uses the Argon punctuation string as a personal representation of the name; no independent causal connection to vendor naming has been established.",
+    "Multiple ROOT0 mirrors are one owned ancestry, not independently corroborating testimony."
+  ],
+  "next_evidence_gap": "Locate contemporaneous Google naming decisions / internal codename dates with first-party documents, and any demonstrable access path to prior public ROOT0 sources; do not imply such an access path exists.",
+  "source_links": [
+    "https://deepmind.google/models/model-cards/",
+    "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+    "https://deepmind.google/models/model-cards/gemini-4-neon/",
+    "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "https://www.anthropic.com/research/mythos-preview"
+  ],
+  "media_archived": false
+}
