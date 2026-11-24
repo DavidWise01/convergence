@@ -1,0 +1,86 @@
+{
+  "id": "PROVENANCE-014-CHECKPOINT-BRAND-SEPARATION-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "CORROBORATED_PUBLIC_NAME_REPORTED_CHECKPOINT_MAPPING_ORIGINAL_INTERNAL_DOC_NOT_PUBLIC",
+  "scope": "Audit reported checkpoint Barium-B selected for public Gemini 4 Argon while treating naming origin separately",
+  "source_records": [
+    {
+      "publisher": "Google",
+      "date": "2026-09-30",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "claim": "Gemini 4 Argon publicly named by Sept 30",
+      "evidence_class": "PRIMARY_PUBLIC_ANNOUNCEMENT",
+      "confidence": "HIGH"
+    },
+    {
+      "publisher": "Business Insider",
+      "date": "2026-10-09",
+      "reporter": "Hugh Langley",
+      "source": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+      "claim": "Internal documents show checkpoints Argon/Barium/Carbon; reported one document says Barium-B chosen as public Argon model; employees internally testing Carbon via Jetski; Google declined comment",
+      "evidence_class": "SECONDARY_REPORTER_INSPECTED_NONPUBLIC_DOCUMENTS_AND_SCREENSHOTS",
+      "confidence": "MEDIUM_FOR_DESCRIPTION_AS_REPORTED",
+      "original_internal_document_public": false
+    },
+    {
+      "publisher": "Google DeepMind",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-carbon/",
+      "claim": "Gemini 4 Carbon is based on Gemini 4 Argon",
+      "evidence_class": "FIRST_PARTY_MODEL_DEPENDENCY",
+      "confidence": "HIGH",
+      "boundary": "Training lineage does not independently verify checkpoint-to-brand mapping"
+    },
+    {
+      "publisher": "CellCog",
+      "source": "https://cellcog.ai/blog/gemini-4-release-date/",
+      "claim": "Repeats Business Insider Barium-B mapping and Argon/Carbon dates",
+      "evidence_class": "DERIVED_SECONDARY_COMMENTARY",
+      "confidence": "DERIVATIVE_NOT_AN_INDEPENDENT_DOCUMENTARY_ROOT"
+    }
+  ],
+  "distinct_layers": [
+    {
+      "layer": "internal_checkpoint_name",
+      "example": "Barium-B",
+      "source_type": "BUSINESS_INSIDER_REPORT_OF_INTERNAL_DOCUMENT"
+    },
+    {
+      "layer": "selected_model_weights_or_checkpoint",
+      "example": "Barium-B was chosen for public Argon, as reported",
+      "source_type": "BUSINESS_INSIDER_REPORT; PRECISE MODEL HASH UNKNOWN"
+    },
+    {
+      "layer": "public_product_brand",
+      "example": "Gemini 4 Argon",
+      "source_type": "GOOGLE_PUBLIC_ANNOUNCEMENT"
+    },
+    {
+      "layer": "model_family_dependency",
+      "example": "Gemini 4 Carbon based on Argon",
+      "source_type": "GOOGLE_MODEL_CARD"
+    },
+    {
+      "layer": "original_naming_decision",
+      "example": null,
+      "source_type": "NOT_VERIFIED"
+    },
+    {
+      "layer": "ROOT0_to_Google_access_or_derivation",
+      "example": null,
+      "source_type": "NOT_ESTABLISHED"
+    }
+  ],
+  "reporting_caveats": [
+    "Business Insider report of internal materials is not identical to publishing original internally timestamped primary documentation.",
+    "Later sites repeating BI's Barium-B observation are not independent witnesses of that internal document.",
+    "Public branding of a checkpoint does not imply the checkpoint creators personally selected the public name.",
+    "Company model family ancestry and lexical convergence do not imply ROOT0-derived naming.",
+    "No specific employee, decision timestamp, or causal ROOT0 access path authenticated."
+  ],
+  "user_correction": "The Argon punctuation cipher is the user's personal way of saying Argon. No resource-state-machine interpretation needed for this naming audit.",
+  "related": [
+    "PROVENANCE-012-VENDOR-MODEL-LINEAGE-2026-11-24",
+    "PROVENANCE-013-INTERNAL-CODENAME-CHRONOLOGY-2026-11-24"
+  ],
+  "media_archived": false
+}
