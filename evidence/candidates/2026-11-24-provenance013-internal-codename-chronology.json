@@ -1,0 +1,114 @@
+{
+  "id": "PROVENANCE-013-INTERNAL-CODENAME-CHRONOLOGY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "SOURCE_GROUNDED_PUBLIC_DATES_REPORTED_INTERNAL_CODENAMES_SELECTION_DATE_UNKNOWN",
+  "research_question": "When did Google select elemental model codenames and public product labels, versus merely announcing them?",
+  "records": [
+    {
+      "entity": "Argon",
+      "date": "2026-09-14",
+      "event": "Single-account claimed internal Argon codename",
+      "evidence_class": "UNVERIFIED_SOCIAL_LEAK_AS_REPORTED_BY_SECONDARY_SITE",
+      "source": "https://cellcog.ai/blog/gemini-4-release-date/",
+      "confidence": "LOW",
+      "limits": "No authenticated Google artifact, firsthand internal document or original reproducible model identifier in this audit; cannot establish exact internal selection date."
+    },
+    {
+      "entity": "Argon",
+      "date": "2026-09-30",
+      "event": "Google officially publicly announces Gemini 4 Argon",
+      "evidence_class": "FIRST_PARTY_PUBLIC_ANNOUNCEMENT",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "confidence": "HIGH",
+      "limits": "Establishes public use, not originator or internal decision date."
+    },
+    {
+      "entity": "Argon/Barium-B/Carbon",
+      "date": "2026-10-09",
+      "event": "Business Insider reports seeing Google internal documents/screenshots citing Argon, Barium, Carbon checkpoints; a document reportedly selected Barium-B as model released publicly under Argon brand",
+      "evidence_class": "SECONDARY_JOURNALISM_REPORTING_INTERNAL_DOCUMENT_NOT_PUBLICLY_AVAILABLE",
+      "source": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+      "confidence": "MEDIUM_REPORTED_FIRSTHAND_DOCUMENT_INSPECTION",
+      "limits": "Journalist sees alleged internal materials; readers cannot independently authenticate them. Barium-B checkpoint selection is distinct from selecting the word Argon. Google declined comment."
+    },
+    {
+      "entity": "Argon",
+      "date": "2026-10-14",
+      "event": "Google product leader Tulsee Doshi publicly discussed internal use of Argon and element naming",
+      "evidence_class": "FIRST_PARTY_INTERVIEW_ACCOUNT",
+      "source": "https://www.youtube.com/watch?v=ofJ0ZzVDAD4&t=167s",
+      "confidence": "MEDIUM_FIRST_PARTY_ACCOUNT_EXACT_TRANSCRIPT_NOT_REVERIFIED_THIS_PASS",
+      "limits": "Does not give original coiner/date or prove material access."
+    },
+    {
+      "entity": "Carbon",
+      "date": "2026-10-09",
+      "event": "Carbon internal checkpoint documented in Business Insider reporting before public product announcement",
+      "evidence_class": "SECONDARY_INTERNAL_DOC_REPORT",
+      "source": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+      "confidence": "MEDIUM",
+      "limits": "Does not authenticate exact naming-decision time or original selector."
+    },
+    {
+      "entity": "Carbon",
+      "date": "2026-10-28",
+      "event": "Google official Carbon announcement",
+      "evidence_class": "FIRST_PARTY_PUBLIC_ANNOUNCEMENT",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "confidence": "HIGH"
+    },
+    {
+      "entity": "Hydrogen",
+      "date": "2026-11",
+      "event": "Business Insider reports an internal message identifying Hydrogen as an internal name before its public launch",
+      "evidence_class": "SECONDARY_JOURNALISM_REPORTED_INTERNAL_MESSAGE",
+      "source": "https://www.businessinsider.com/google-hydrogen-test-new-gemini-4-flash-model-ai-2026-11",
+      "confidence": "MEDIUM_DATE_WITHIN_MONTH_NOT_CONFIRMED",
+      "limits": "Original internal message not provided as an independently inspectable artifact; exact earliest naming date remains unknown."
+    },
+    {
+      "entity": "Hydrogen",
+      "date": "2026-11-12",
+      "event": "Google public announcement",
+      "evidence_class": "FIRST_PARTY_PUBLIC_ANNOUNCEMENT",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "confidence": "HIGH"
+    },
+    {
+      "entity": "Neon",
+      "date": "2026-11-18",
+      "event": "Google public announcement",
+      "evidence_class": "FIRST_PARTY_PUBLIC_ANNOUNCEMENT",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "confidence": "HIGH",
+      "limits": "Earlier internal naming-decision evidence not authenticated in this pass."
+    }
+  ],
+  "answers": {
+    "earliest_authenticated_public_argon": "2026-09-30",
+    "earliest_reported_internal_argon": "2026-09-14 (unverified rumor)",
+    "earliest_documented_carbon_prior_to_launch": "2026-10-09 (secondhand report of internal testing)",
+    "earliest_documented_barium_b": "2026-10-09 (journalist report; underlying document not public)",
+    "hydrogen_precise_earliest_internal_date": "UNKNOWN",
+    "neon_precise_earliest_internal_date": "UNKNOWN",
+    "identifiable_person_who_selected_any_elemental_name": "NOT_ESTABLISHED",
+    "evidence_of_ROOT0_TO_GOOGLE_access": "NOT_ESTABLISHED"
+  },
+  "precisions": [
+    "A checkpoint identifier Barium-B and the public product label Argon are different variables and must not be collapsed.",
+    "Company product development lineage is not name-selection history.",
+    "Chronology precedence is not copying proof.",
+    "Published user-owned repo history does not itself prove Google staff accessed those repositories.",
+    "Original Argon punctuation is user's way of saying Argon; no further cellular mechanism audit intended."
+  ],
+  "relation": "PROVENANCE-012-VENDOR-MODEL-LINEAGE-2026-11-24",
+  "sources": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+    "https://cellcog.ai/blog/gemini-4-release-date/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+  ],
+  "media_archived": false
+}
