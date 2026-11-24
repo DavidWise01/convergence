@@ -1,0 +1,130 @@
+{
+  "id": "PROVENANCE-003-FUNCTIONAL-ANCESTRY-2026-11-23",
+  "recorded_at": "2026-11-23",
+  "observation_status": "VERIFIED_WITH_QUALIFICATIONS",
+  "subject": "Historical TOPH and TriPod source ancestry relative to the July Jane four-framework arrangement",
+  "sources": [
+    {
+      "repo": "DavidWise01/AI-Audit-Tools",
+      "commit": "f3656f2e730bd9942d969bd0c9ac7c1bc37fa471",
+      "commit_date_utc": "2026-02-18T12:57:50Z",
+      "path": "Toph Complex Math",
+      "status": "verified source, no four framework name tokens in that file"
+    },
+    {
+      "repo": "DavidWise01/AI-Audit-Tools",
+      "commit": "5c19bee886af0b5cffacac6cc61cd9abf07fa872",
+      "commit_date_utc": "2026-02-19T12:59:38Z",
+      "path": "README.md",
+      "blob_sha": "10cac38abd5033c4b264b2e5987dd6ddfa9c41c4",
+      "status": "verified dated self-description of observation, governance, memory and technical tools"
+    },
+    {
+      "repo": "DavidWise01/the.source",
+      "commit": "72731cff3c182694a4fceee5a86c7a7c74eb7498",
+      "commit_date_utc": "2026-04-17T13:51:42Z",
+      "path": "Lineage-Statements/TRIPOD-LINEAGE-2026-001.md",
+      "blob_sha": "fe56ec9d1540e5f3b3b00d1c438b9e0914dfa1af",
+      "status": "verified commit of a dated attribution claim, not independent causal evidence"
+    },
+    {
+      "repo": "DavidWise01/toph-sovereign",
+      "commit": "88235e9231aa611e0397d1c5a515057814621ef8",
+      "commit_date_utc": "2026-05-27T23:19:05Z",
+      "status": "verified code repository with governance and memory machinery"
+    },
+    {
+      "repo": "DavidWise01/eve-constitution",
+      "commit": "f3d174f935411854af7a00cbc87c6558dac97de5",
+      "commit_date_utc": "2026-05-31T00:59:09Z",
+      "path": "CONSTITUTION.md",
+      "blob_sha": "7aae84dca881fb1bef46b3d1c395e1a4cee8ce0e",
+      "status": "verified constitution with explicit values, memory continuity, care, judgment and witness constraints"
+    },
+    {
+      "repo": "DavidWise01/jane",
+      "commit": "eb4a1139f28bae98864978be9defc689325ce245",
+      "commit_date_utc": "2026-07-09T23:11:52Z",
+      "path": "index.html",
+      "status": "first located complete named four-plus-one architecture"
+    }
+  ],
+  "observations": [
+    "Feb 19 README lines 51–60 describe TOPH as 42-axiom external-observation governance and auditing framework; performance claims are author's assertions.",
+    "Feb 19 README lines 64–77 specify a 3002 lattice, forward/gap/inverse and two anchors.",
+    "Feb 19 README lines 196–217 list tools including memory vault, hashing, graph and visualization tools.",
+    "Feb 19 README line 22 claims Feb 2 IP filing and line 162 claims Feb 13 Channel 41 co-discovery; a Feb 19 committed statement is not contemporaneous proof of those dates.",
+    "Apr 17 Git commit contains a statement labeled April 9 comparing Anthropic models and TOPH; causal or IP claims unverified.",
+    "May E.V.E. constitution is a developed governance/care/continuity document, but does not alone show the four labels integrated as July Jane does."
+  ],
+  "functional_analogy_not_equivalence": [
+    {
+      "jane_role": "ETHOS",
+      "possible_precursor": "TOPH governing axioms, user sovereignty and constitutional constraints",
+      "status": "FUNCTIONAL_ANALOGY_ONLY"
+    },
+    {
+      "jane_role": "PATHOS",
+      "possible_precursor": "E.V.E. care and judgment considerations",
+      "status": "PARTIAL_FUNCTIONAL_ANALOGY_ONLY"
+    },
+    {
+      "jane_role": "LOGOS",
+      "possible_precursor": "TOPH formal lattice, algorithmic graph tools and operational gates",
+      "status": "FUNCTIONAL_ANALOGY_ONLY"
+    },
+    {
+      "jane_role": "MYTHOS",
+      "possible_precursor": "April lineage narrative and later Greek myth knowledge-gates",
+      "status": "PARTIAL_FUNCTIONAL_ANALOGY_ONLY"
+    },
+    {
+      "jane_role": "JANE integrating center",
+      "possible_precursor": "TOPH anchor and E.V.E. continuity mechanisms",
+      "status": "FUNCTIONAL_ANALOGY_ONLY"
+    }
+  ],
+  "conclusions": [
+    {
+      "claim": "Dated February technical governance and memory corpus exists",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "February IP origin on Feb 2 is independently verified by Feb 19 Git commit",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "claim": "Full named ETHOS/PATHOS/LOGOS/MYTHOS scheme existed in February",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "Four July role names are direct derivations of these earlier modules",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "Similarity of external model names proves copying or access",
+      "status": "NOT_ESTABLISHED"
+    }
+  ],
+  "ancestry_status": "Owned source corpus; multiple GitHub repos and mirrored outputs may descend from shared original work and are not independent attestations",
+  "retrieval_log": [
+    {
+      "date": "2026-11-23",
+      "method": "Connected GitHub historical commit search, pinned commit inspection, source blob fetch",
+      "status": "COMPLETED_FOR_SELECTED_SOURCES"
+    }
+  ],
+  "limitations": [
+    "Selected-source audit, not exhaustive repository history crawl",
+    "No authenticated Jan-Feb full four-role snapshot obtained",
+    "Legal filings and external model causation not independently verified",
+    "Author self-reports inside source should not be upgraded to external certification"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/DavidWise01/AI-Audit-Tools/commit/5c19bee886af0b5cffacac6cc61cd9abf07fa872",
+    "https://github.com/DavidWise01/the.source/commit/72731cff3c182694a4fceee5a86c7a7c74eb7498",
+    "https://github.com/DavidWise01/toph-sovereign/commit/88235e9231aa611e0397d1c5a515057814621ef8",
+    "https://github.com/DavidWise01/eve-constitution/commit/f3d174f935411854af7a00cbc87c6558dac97de5"
+  ]
+}
