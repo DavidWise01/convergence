@@ -1,0 +1,69 @@
+{
+  "id": "PROVENANCE-001-JANE-2026-11-23",
+  "recorded_at": "2026-11-23",
+  "submitted_source": "https://github.com/DavidWise01/jane",
+  "source_identifiers": {
+    "repository": "DavidWise01/jane",
+    "commit_sha": "eb4a1139f28bae98864978be9defc689325ce245",
+    "commit_timestamp_utc": "2026-07-09T23:11:52Z",
+    "path": "index.html",
+    "blob_sha": "61248663c9d959cbbefdcdee4653ff75993d7c5f"
+  },
+  "observation_status": "VERIFIED",
+  "observed_content": [
+    "Pinned original GitHub commit adds index.html and jane v1.html with a 4+1 framework",
+    "Original HTML lines 621–634 associate Air/Logos, Water/Pathos, Earth/Ethos, Fire/Mythos",
+    "Original HTML lines 646–668 provide framework-specific sections and Jane as unifying center",
+    "Commit message describes memory-for-life Earth/ethos, Water/pathos, Air/logos, Fire/mythos, fifth love, and includes a Co-Authored-By: Claude Opus 4.8 trailer"
+  ],
+  "retrieval_log": [
+    {
+      "date": "2026-11-23",
+      "method": "Connected GitHub fetch_commit and pinned fetch_file",
+      "status": "retrieved",
+      "note": "Live GitHub connector; exact SHA and HTML blob read"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Four-plus-one framework exists in committed July 9 2026 HTML",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "July 9 predates July 23 2026 by 14 days",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "January-February 2026 framework origin",
+      "status": "UNKNOWN"
+    },
+    {
+      "claim": "Claude coauthor trailer exists in July 9 commit",
+      "status": "VERIFIED"
+    },
+    {
+      "claim": "Coauthor trailer proves conceptual authorship of any participant",
+      "status": "UNKNOWN"
+    }
+  ],
+  "hypotheses": [
+    "Earlier local or repository materials may move the documented framework date back to Jan–Feb 2026; contemporaneous immutable records required",
+    "Later naming parallels are convergence candidates; similarity alone does not show access, copying or derivation"
+  ],
+  "ancestry_status": "SINGLE_REPOSITORY_ROOT; initial commit may contain imported prior work; four labels and roles not four independent roots",
+  "related_records": [
+    "July 23 2026 UD0 framework (previously described; not reverified in this transaction)",
+    "May 30 2026 LOGOS gate (previously described; not reverified in this transaction)"
+  ],
+  "limitations": [
+    "No January-February artifact authenticated here",
+    "Commit metadata proves Git publication date, not date of design conception",
+    "Co-Authored-By trailer is recorded metadata, not independently authenticated statement of which intellectual contributions occurred",
+    "Anthropic Mythos April announcement chronology not reverified in this transaction"
+  ],
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/DavidWise01/jane/commit/eb4a1139f28bae98864978be9defc689325ce245",
+    "https://github.com/DavidWise01/jane/blob/eb4a1139f28bae98864978be9defc689325ce245/index.html"
+  ]
+}
