@@ -1,0 +1,176 @@
+{
+  "id": "PROVENANCE-019-GOOGLE-SDK-SOURCE-ANCESTRY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "TWELVE_OFFICIAL_COMMITS_VERIFIED_THREE_SHARED_SOURCE_REVISION_ROOTS",
+  "question": "Are Gemini 4 model identifiers independently introduced in four Google SDKs or propagated from common source revisions?",
+  "method": "Query commit message for exact model ID across four googleapis SDK repos; fetch original commit and patch; compare commit timestamps and PiperOrigin-RevId; leave Neon unknown if no introduction commit found",
+  "repos": [
+    "googleapis/python-genai",
+    "googleapis/js-genai",
+    "googleapis/go-genai",
+    "googleapis/java-genai"
+  ],
+  "groups": [
+    {
+      "model": "argon",
+      "identifier": "gemini-4-argon",
+      "shared_piper_origin_rev_id": "998875914",
+      "repo_commit_count": 4,
+      "commits": [
+        {
+          "language": "python",
+          "repo": "googleapis/python-genai",
+          "sha": "8554b07d0025e19361b7a10a6384cc143f3a8ea9",
+          "utc": "2026-10-13T21:02:08Z",
+          "url": "https://github.com/googleapis/python-genai/commit/8554b07d0025e19361b7a10a6384cc143f3a8ea9",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "js",
+          "repo": "googleapis/js-genai",
+          "sha": "8a3c3074a6688cc12c9f30c2366089cd94622fd6",
+          "utc": "2026-10-13T21:02:15Z",
+          "url": "https://github.com/googleapis/js-genai/commit/8a3c3074a6688cc12c9f30c2366089cd94622fd6",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "go",
+          "repo": "googleapis/go-genai",
+          "sha": "f8f7050219c05206b0a7d0aab4b72e9e19c109a1",
+          "utc": "2026-10-13T21:02:42Z",
+          "url": "https://github.com/googleapis/go-genai/commit/f8f7050219c05206b0a7d0aab4b72e9e19c109a1",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "java",
+          "repo": "googleapis/java-genai",
+          "sha": "e10046dbe7e5b40980bb611cd7264c11093a2dc1",
+          "utc": "2026-10-13T21:02:56Z",
+          "url": "https://github.com/googleapis/java-genai/commit/e10046dbe7e5b40980bb611cd7264c11093a2dc1",
+          "patch_adds_model_id": true
+        }
+      ],
+      "time_spread_seconds": 48,
+      "ancestry_classification": "SINGLE_UPSTREAM_REVISION_SHARED_BY_FOUR_LANGUAGE_SPECIFIC_PUBLIC_COMMITS"
+    },
+    {
+      "model": "carbon",
+      "identifier": "gemini-4-carbon",
+      "shared_piper_origin_rev_id": "1018404598",
+      "repo_commit_count": 4,
+      "commits": [
+        {
+          "language": "python",
+          "repo": "googleapis/python-genai",
+          "sha": "96102204c4eb1d5b1612ca020dcfca1e547bd0bb",
+          "utc": "2026-11-10T19:36:25Z",
+          "url": "https://github.com/googleapis/python-genai/commit/96102204c4eb1d5b1612ca020dcfca1e547bd0bb",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "js",
+          "repo": "googleapis/js-genai",
+          "sha": "d406013f9f46384dc53e4729be48923fb9fb3942",
+          "utc": "2026-11-10T19:36:25Z",
+          "url": "https://github.com/googleapis/js-genai/commit/d406013f9f46384dc53e4729be48923fb9fb3942",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "go",
+          "repo": "googleapis/go-genai",
+          "sha": "e08c6bef3ff9ac8d5035725522927e91f05b11ed",
+          "utc": "2026-11-10T19:36:22Z",
+          "url": "https://github.com/googleapis/go-genai/commit/e08c6bef3ff9ac8d5035725522927e91f05b11ed",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "java",
+          "repo": "googleapis/java-genai",
+          "sha": "9c125d06d0ef1faa4c55bad9ea75c193dec2a5f6",
+          "utc": "2026-11-10T19:36:37Z",
+          "url": "https://github.com/googleapis/java-genai/commit/9c125d06d0ef1faa4c55bad9ea75c193dec2a5f6",
+          "patch_adds_model_id": true
+        }
+      ],
+      "time_spread_seconds": 15,
+      "ancestry_classification": "SINGLE_UPSTREAM_REVISION_SHARED_BY_FOUR_LANGUAGE_SPECIFIC_PUBLIC_COMMITS"
+    },
+    {
+      "model": "hydrogen",
+      "identifier": "gemini-4-hydrogen",
+      "shared_piper_origin_rev_id": "1020280180",
+      "repo_commit_count": 4,
+      "commits": [
+        {
+          "language": "python",
+          "repo": "googleapis/python-genai",
+          "sha": "4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5",
+          "utc": "2026-11-12T19:14:58Z",
+          "url": "https://github.com/googleapis/python-genai/commit/4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "js",
+          "repo": "googleapis/js-genai",
+          "sha": "a6062824e72ad61d08cff66b0b00596b906add19",
+          "utc": "2026-11-12T19:14:56Z",
+          "url": "https://github.com/googleapis/js-genai/commit/a6062824e72ad61d08cff66b0b00596b906add19",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "go",
+          "repo": "googleapis/go-genai",
+          "sha": "1b7b34c91612454a7cc614418f3df36f8e12fffc",
+          "utc": "2026-11-12T19:14:44Z",
+          "url": "https://github.com/googleapis/go-genai/commit/1b7b34c91612454a7cc614418f3df36f8e12fffc",
+          "patch_adds_model_id": true
+        },
+        {
+          "language": "java",
+          "repo": "googleapis/java-genai",
+          "sha": "d9bbad7674c01de0d26fd1f4d72b22c417cb77d9",
+          "utc": "2026-11-12T19:14:20Z",
+          "url": "https://github.com/googleapis/java-genai/commit/d9bbad7674c01de0d26fd1f4d72b22c417cb77d9",
+          "patch_adds_model_id": true
+        }
+      ],
+      "time_spread_seconds": 38,
+      "ancestry_classification": "SINGLE_UPSTREAM_REVISION_SHARED_BY_FOUR_LANGUAGE_SPECIFIC_PUBLIC_COMMITS"
+    }
+  ],
+  "neon": {
+    "current_model_identifiers_found_in": [
+      "googleapis/python-genai",
+      "googleapis/js-genai",
+      "googleapis/go-genai",
+      "googleapis/java-genai"
+    ],
+    "commit_message_searches_exact_string": 0,
+    "first_introduction_commit": "NOT_IDENTIFIED",
+    "piper_origin_rev_id": "UNKNOWN",
+    "possible_reason": "Model ID present but commit message does not contain name; needs historical diff/path search",
+    "do_not_claim": "This does not imply Neon was absent from these repositories historically or added without upstream source."
+  },
+  "judgment": {
+    "independent_naming_origins_from_four_sdk_commits": 0,
+    "distinct_upstream_revision_identifiers_found": 3,
+    "public_commit_records_examined": 12,
+    "shared_revision_trace": "CONFIRMED_BY_MATCHING_PIPER_ORIGIN_REV_IDS",
+    "internal_original_change_visible": "NO",
+    "person_who_chose_names": "UNKNOWN",
+    "internal_naming_timestamp": "UNKNOWN",
+    "access_to_ROOT0": "NOT_FOUND"
+  },
+  "limits": [
+    "PiperOrigin-RevId in commit message is strong common source lineage evidence for generated/propagated SDK changes, but access to Google internal Piper source/review is not granted.",
+    "Close commit author timestamps do not necessarily equal push time; chronology remains public commit record time.",
+    "Each language repository is a separate downstream manifestation of the same logical upstream change, not an independent naming witness.",
+    "Commit-message searching is not exhaustive for additions whose messages omit the exact model string.",
+    "Do not infer copying from same chemical-element terms."
+  ],
+  "related": [
+    "PROVENANCE-018-GOOGLE-PUBLIC-GIT-SCAN-2026-11-24",
+    "PROVENANCE-017-HISTORICAL-PRIORITY-ACCESS-2026-11-24"
+  ],
+  "media_archived": false
+}
