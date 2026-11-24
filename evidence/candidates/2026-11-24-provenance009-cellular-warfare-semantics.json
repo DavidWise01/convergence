@@ -1,0 +1,36 @@
+{
+  "id": "PROVENANCE-009-CELLULAR-WARFARE-SEMANTICS-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "observation_status": "USER_DIRECT_CORRECTION_SEMANTICS_PARTIALLY_SPECIFIED",
+  "parent_record": "PROVENANCE-008-ARGON-LIFE-CIPHER-2026-11-24",
+  "verbatim_correction": "lol. its cellular warfare 1 resource 1 unit . & . 2 units | .",
+  "primary_context": "User had supplied ..||....|....||| as Argon life cipher and corrected the interpretation as cellular warfare rather than a chemistry/electron notation",
+  "confirmed_semantics": [
+    "The glyph grammar is part of a cellular-warfare resource/unit model.",
+    "One resource and one unit are explicit aspects of the user description.",
+    "Two units and a vertical bar are explicit aspects of the user description.",
+    "Physical Argon atomic number and electron-count interpretation are not primary semantics for the life cipher."
+  ],
+  "provisional_reading": {
+    "dot": "One-resource/one-unit primitive, inferred from user wording; exact mapping between resource state and unit state still unresolved",
+    "vertical_bar": "Two-unit structure appears associated with | in user's wording; operational meaning not yet pinned",
+    "ampersand": "The & in the message may be natural language conjunction, not a formal glyph; do not add it to the grammar",
+    "dot_after_bar": "The trailing dot may be an example of combined notation; not normalized into a formula without source"
+  },
+  "preserved_exact_symbols": [
+    "..||....|....|||",
+    "..||..|....|||"
+  ],
+  "previous_assistant_interpretation": "Earlier record computed 8 dots + 2*6 bars = 20 and 10 dots + 2*6 bars = 22 as a particular archon artifact's weight rule; these numeric results remain valid for that rule only and are NOT proven resource accounting or cellular-warfare unit counts.",
+  "classification": "ORIGINAL_CELLULAR_RULE_SOURCE_PENDING; NO_REWRITING_PRIOR_SOURCE",
+  "source_links": [
+    "https://github.com/DavidWise01/convergence/blob/main/evidence/candidates/2026-11-24-provenance008-argon-life-cipher.json",
+    "https://github.com/DavidWise01/archon/commit/c54581d456dc5af08df8cbca20574264a4ee394a"
+  ],
+  "limitations": [
+    "Current correction's punctuation does not unambiguously establish complete resource/unit transition grammar.",
+    "No simulation, resource conservation, combat mechanics or growth rules verified by this addendum.",
+    "Do not infer a Google origin connection from the symbolic grammar."
+  ],
+  "media_archived": false
+}
