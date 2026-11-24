@@ -1,0 +1,95 @@
+{
+  "id": "PROVENANCE-007-GOOGLE-NAMING-ORIGIN-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "PARTIALLY_DOCUMENTED_NAMING_RATIONALE",
+  "subject": "Named Google sources and direct first-party naming testimony for Gemini 4 elemental names",
+  "findings": [
+    {
+      "model": "Gemini 4 Argon",
+      "speaker": "Tulsee Doshi",
+      "speaker_role": "Senior Director / Head of Gemini Product at Google DeepMind",
+      "interview_date": "2026-10-14",
+      "timestamp": "00:02:47",
+      "claim": "Argon name came from internal Google teams; already referred to internally by this name; periodic-table element naming adopted for Gemini 4 family",
+      "evidence_type": "FIRST_PARTY_SPOKEN_ACCOUNT_IN_THIRD_PARTY_INTERVIEW",
+      "source": "https://www.youtube.com/watch?v=ofJ0ZzVDAD4&t=167s",
+      "transcript": "https://arcmira.com/watch?v=ofJ0ZzVDAD4",
+      "status": "DIRECT_RATIONALE_ATTESTED",
+      "unknowns": [
+        "Which named individual proposed Argon",
+        "Exact internal date of decision",
+        "Specific design selection criteria",
+        "Source influences or material access"
+      ]
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "speaker": "Koray Kavukcuoglu",
+      "speaker_role": "SVP Google DeepMind and Chief AI Architect Google",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "status": "ANNOUNCEMENT_ATTRIBUTED_NAMER_UNVERIFIED",
+      "unknowns": [
+        "Selector identity",
+        "Date of selection",
+        "Why Carbon rather than another element"
+      ]
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "speaker": "Koray Kavukcuoglu",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "status": "ANNOUNCEMENT_ATTRIBUTED_NAMER_UNVERIFIED",
+      "unknowns": [
+        "Selector identity",
+        "Date of selection",
+        "Exact element-selection rationale"
+      ]
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "speaker": "Koray Kavukcuoglu",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "status": "ANNOUNCEMENT_ATTRIBUTED_NAMER_UNVERIFIED",
+      "unknowns": [
+        "Selector identity",
+        "Date of selection",
+        "Exact element-selection rationale"
+      ]
+    }
+  ],
+  "additional_source": {
+    "title": "How Gemini 4 Argon & Carbon were built (ft. DeepMind's Head of Gemini Product)",
+    "publisher": "Google Cloud Tech",
+    "url": "https://www.youtube.com/watch?v=sUcvhFGc4mw",
+    "chapter_timestamp": "00:22:24",
+    "chapter_title": "Why Gemini 4 models are named after periodic table elements",
+    "evidence_status": "CHAPTER_TITLE_VERIFIED_FULL_VERBATIM_EXPLANATION_NOT_VERIFIED"
+  },
+  "controls": {
+    "announcement_author_not_equal_to_namer": true,
+    "public_release_date_not_equal_to_internal_naming_date": true,
+    "internal_team_claim_not_independent_company_records": true,
+    "lexical_similarity_not_causation": true,
+    "owned_corpus_mirrors_one_ancestry_root": true
+  },
+  "prior_record_addendum": "PROVENANCE-005 previously marked internal naming rationale UNKNOWN for all four Google element models. PROVENANCE-007 supersedes that blanket statement for Argon only: first-party spokesperson attributed its name to internal Google team practice. Exact proposer and selection rationale remain unknown; Carbon/Hydrogen/Neon remain unresolved at that granularity.",
+  "causality_status": "NO_ACCESS_OR_DERIVATION_EDGE_ESTABLISHED",
+  "limitations": [
+    "Third-party caption transcript may contain transcription errors; direct video corroborates speaker/topic but specific wording should be treated as speech attributed by captions until independently transcribed.",
+    "Google spokespeople's statements do not independently document the internal naming decision date.",
+    "Google's public articles establish product announcements, not personal authorship of names.",
+    "No ROOT0 material access by Google personnel demonstrated."
+  ],
+  "source_links": [
+    "https://www.youtube.com/watch?v=ofJ0ZzVDAD4&t=167s",
+    "https://arcmira.com/watch?v=ofJ0ZzVDAD4",
+    "https://www.youtube.com/watch?v=sUcvhFGc4mw",
+    "https://blog.google/innovation-and-ai/products/google-gemini-ai-name-meaning/",
+    "https://deepmind.google/models/model-cards/"
+  ],
+  "related_records": [
+    "PROVENANCE-005-EXTERNAL-NAMING-2026-11-23",
+    "PROVENANCE-006-ELEMENT-FUNCTION-COMPARISON-2026-11-24"
+  ],
+  "media_archived": false
+}
