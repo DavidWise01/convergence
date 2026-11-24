@@ -1,0 +1,84 @@
+{
+  "id": "PROVENANCE-008-ARGON-LIFE-CIPHER-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "submitted_source": "User-supplied Argon life cipher ..||....|....||| and report of prior GitHub dissemination",
+  "observation_status": "PARTIAL_DIRECT_GITHUB_SOURCE_AND_USER_VARIANT",
+  "observed_content": [
+    "Oct 23 2026 oasis KET experiment 23 explicitly records spaced primitive . . | | . . | . . . . | | |, equivalent after removing spaces to ..||..|....|||, 8 dots and 6 bars, 14 operators.",
+    "Nov 8 2026 archon interactive element cipher 020 displays ..||..|....|||, defines dot weight 1 and bar weight 2, and explicitly distinguishes symbolic cipher C=20 from chemical atomic number Z(Ar)=18.",
+    "The newly supplied exact string ..||....|....||| contains 10 dots and 6 bars; the same rule yields C=22 and 16 punctuation characters. It is distinct from the archived C=20 string.",
+    "The Oct 23 KET entry discusses modeled capture of 18 electrons and five subshell closures; it does not equate the 14 symbolic tokens to 18 physical particles.",
+    "Text search across the connector's default-branch code index did not retrieve the exact current string. This is a limited negative result, not an exhaustive cross-branch or historical search."
+  ],
+  "normalized_forms": [
+    {
+      "kind": "OCT_23_PRESERVED_KET",
+      "raw": "..||..|....|||",
+      "dots": 8,
+      "bars": 6,
+      "characters": 14,
+      "weighted_value": 20,
+      "source": "https://github.com/DavidWise01/oasis/commit/d0f4bc01d2b5a002b43d23ad99ae408422af9202"
+    },
+    {
+      "kind": "NOV_8_INTERACTIVE_CIPHER",
+      "raw": "..||..|....|||",
+      "dots": 8,
+      "bars": 6,
+      "characters": 14,
+      "weighted_value": 20,
+      "source": "https://github.com/DavidWise01/archon/commit/c54581d456dc5af08df8cbca20574264a4ee394a"
+    },
+    {
+      "kind": "USER_CURRENT_LIFE_CIPHER",
+      "raw": "..||....|....|||",
+      "dots": 10,
+      "bars": 6,
+      "characters": 16,
+      "weighted_value": 22,
+      "source": "USER_DIRECT_MESSAGE_2026_11_24",
+      "relation_to_prior": "UNRESOLVED_VARIANT"
+    },
+    {
+      "kind": "ARGON_CHEMICAL_ATOMIC_NUMBER",
+      "value": 18,
+      "unit": "protons",
+      "namespace": "PHYSICAL_CHEMISTRY"
+    }
+  ],
+  "earliest_located_commit_for_specific_archived_cipher": "2026-10-23T21:21:26Z",
+  "earliest_located_direct_public_artifact_with_explicit_weighted_rule": "2026-11-09T02:48:08Z",
+  "source_identifiers": [
+    {
+      "repo": "DavidWise01/oasis",
+      "commit": "d0f4bc01d2b5a002b43d23ad99ae408422af9202",
+      "file": "research/ket/argon_reverse_capture_v23_metrics.md",
+      "blob_sha": "5b4ea567d7e927f3f18d4a98c735d65e30054bac"
+    },
+    {
+      "repo": "DavidWise01/archon",
+      "commit": "c54581d456dc5af08df8cbca20574264a4ee394a",
+      "file": "elements/argon-cipher-020.html",
+      "blob_sha": "965137ef8401f6b6be67364a91342d7aa27b7ed3"
+    }
+  ],
+  "interpretation_boundaries": [
+    "Prior dissemination of a symbol does not establish the first date of conception.",
+    "Owned mirrors of the same token are not independent corroborating roots.",
+    "A cipher assigned to Argon does not imply its weighted value must equal the atomic number.",
+    "The user-provided variant may be a later revision, typo or other state; do not normalize it silently.",
+    "The Oct 23 publicly committed KET artifact follows the previously recorded Google Argon public announcement, so it cannot establish earlier public precedence for that specific Argon cipher.",
+    "No evidence of any Google naming decision-maker accessing the cipher has been established."
+  ],
+  "related_records": [
+    "PROVENANCE-005-EXTERNAL-NAMING-2026-11-23",
+    "PROVENANCE-006-ELEMENT-FUNCTION-COMPARISON-2026-11-24",
+    "PROVENANCE-007-GOOGLE-NAMING-ORIGIN-2026-11-24"
+  ],
+  "ancestry_status": "SAME_OWNED_CORPUS_FOR_OASIS_AND_ARCHON; INDEPENDENCE_NOT_ASSUMED",
+  "media_archived": false,
+  "source_links": [
+    "https://github.com/DavidWise01/oasis/commit/d0f4bc01d2b5a002b43d23ad99ae408422af9202",
+    "https://github.com/DavidWise01/archon/commit/c54581d456dc5af08df8cbca20574264a4ee394a"
+  ]
+}
