@@ -1,0 +1,135 @@
+{
+  "id": "PROVENANCE-006-ELEMENT-FUNCTION-COMPARISON-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "observation_status": "PRIMARY_SOURCES_RETRIEVED_FUNCTIONAL_MATCH_NOT_ESTABLISHED",
+  "subject": "Compare dated ROOT0 elemental symbols and computing constructs with Google Gemini 4 elemental model naming",
+  "root0_sources": [
+    {
+      "repo": "DavidWise01/hydrogen-vm",
+      "date_utc": "2026-06-30T06:13:35Z",
+      "commit": "51e27f55a875c81fd75ca2d863dd8e5363338642",
+      "file": "index.html",
+      "blob_sha": "35c9a94d54633e628bee1df62f1b37b33a3b77dc",
+      "observation": "Five hydrogen atoms represented as balanced ternary register with n=1/2/3 mapped to -/0/+ and photon transition; source itself explicitly flags short-lived excited state and non-buildable physical memory",
+      "status": "VERIFIED_CODE_AND_AUTHOR_CAVEAT"
+    },
+    {
+      "repo": "DavidWise01/oasis",
+      "date_utc": "2026-10-11T00:49:14Z",
+      "commit": "8a00aba4bc3cf5f1e7f48605459bca2d4a288c96",
+      "file": "audits/lagado-leeluu-element-based-palette-v54-1-2026-10-10.md",
+      "blob_sha": "08c609744bf4af486e887489e4ac799dbd1477a2",
+      "observation": "Green oxygen, orange hydrogen, purple neon, blue nitrogen source-model palette; expressly symbolic and not measured chemical identity",
+      "status": "VERIFIED_DATED_SYMBOLIC_MAPPING"
+    },
+    {
+      "repo": "DavidWise01/oasis",
+      "date_utc": "2026-10-22T18:27:40Z",
+      "commit": "16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+      "file": "docs/y2038/step_cipher_nested.py",
+      "blob_sha": "a255a0249a347770959e1dc671e22bd6d0595146",
+      "observation": "Neon/Argon nested reversible zipper cipher described in commit, with 10+8 cell encode/decode tests",
+      "status": "VERIFIED_PROGRAM_TEXT"
+    }
+  ],
+  "external_sources": [
+    {
+      "provider": "Google",
+      "model": "Gemini 4 Argon",
+      "date": "October 2026",
+      "published_role": "Frontier reasoning, software engineering, research",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "provider": "Google",
+      "model": "Gemini 4 Carbon",
+      "date": "2026-10-28",
+      "published_role": "Frontier reasoning, cybersecurity, long horizon work",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "provider": "Google",
+      "model": "Gemini 4 Hydrogen",
+      "date": "2026-11-12",
+      "published_role": "Fast everyday coding and agentic execution",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "provider": "Google",
+      "model": "Gemini 4 Neon",
+      "date": "2026-11-18",
+      "published_role": "Efficiency/depth balance, frequent complex workflows; model card explicitly says adapted from Carbon",
+      "url": "https://deepmind.google/models/model-cards/gemini-4-neon/"
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "Hydrogen",
+      "name_overlap": true,
+      "ROOT0_role": "atomic energy level ternary encoding and orange state",
+      "Google_role": "fast agentic executor",
+      "matching_technical_mechanism": "NOT_IDENTIFIED",
+      "chronology": "ROOT0 June source precedes November public model"
+    },
+    {
+      "name": "Neon",
+      "name_overlap": true,
+      "ROOT0_role": "purple symbolic color category, later named reversible cipher",
+      "Google_role": "frontier coding/analysis model adapted from Carbon",
+      "matching_technical_mechanism": "NOT_IDENTIFIED",
+      "chronology": "ROOT0 October palette precedes November public model"
+    },
+    {
+      "name": "Argon",
+      "name_overlap": true,
+      "ROOT0_role": "10+8 symbolic nested zipper reversible crossings",
+      "Google_role": "reasoning, code and research",
+      "matching_technical_mechanism": "NOT_IDENTIFIED",
+      "chronology": "ROOT0 Oct 22 commit follows Google's public Argon release and cannot establish naming priority"
+    },
+    {
+      "name": "Carbon",
+      "name_overlap": true,
+      "ROOT0_role": "carbon-side human governor in attribution documentation",
+      "Google_role": "long-horizon cybersecurity frontier model",
+      "matching_technical_mechanism": "NOT_IDENTIFIED",
+      "chronology": "Different concepts; further source-specific temporal comparison required"
+    },
+    {
+      "name": "Oxygen",
+      "name_overlap": false,
+      "ROOT0_role": "green symbolic stable category",
+      "Google_role": "no model verified",
+      "matching_technical_mechanism": "NO_COMPARABLE_PRODUCT"
+    },
+    {
+      "name": "Nitrogen",
+      "name_overlap": false,
+      "ROOT0_role": "blue symbolic category",
+      "Google_role": "no model verified",
+      "matching_technical_mechanism": "NO_COMPARABLE_PRODUCT"
+    }
+  ],
+  "conclusions": {
+    "names_reused": "VERIFIED",
+    "shared_computational_implementation": "NOT_ESTABLISHED",
+    "internal_vendor_naming_rationale": "UNKNOWN",
+    "access_or_copying": "NOT_ESTABLISHED",
+    "archival_rule": "DO_NOT_TREAT_COMMON_ELEMENT_NAMES_AS_ARCHITECTURAL_DERIVATION"
+  },
+  "limitations": [
+    "Google's model cards describe public high-level capabilities and do not expose complete internal architecture",
+    "Github source dates prove publication of specific artifacts, not thought-origin dates",
+    "The Oct palette specifies symbolic categories, not experimental chemical identification",
+    "A shared company model lineage (Neon adapted from Carbon) is not a ROOT0 source lineage",
+    "No independent vendor naming decision record or access provenance found"
+  ],
+  "source_links": [
+    "https://github.com/DavidWise01/hydrogen-vm/commit/51e27f55a875c81fd75ca2d863dd8e5363338642",
+    "https://github.com/DavidWise01/oasis/commit/8a00aba4bc3cf5f1e7f48605459bca2d4a288c96",
+    "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+    "https://deepmind.google/models/model-cards/gemini-4-neon/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+  ]
+}
