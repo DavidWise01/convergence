@@ -1,0 +1,107 @@
+{
+  "id": "PROVENANCE-021-GOOGLE-PIPER-REVISION-CHRONOLOGY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "FOUR_PUBLIC_SOURCE_LINEAGES_CONFIRMED_INTERNAL_NAMING_DECISION_UNVERIFIED",
+  "purpose": "Compare four Gemini model-name public announcements, public SDK source propagation timestamps and increasing upstream source revision identifiers while preserving evidence-root distinctions",
+  "normalized_utc_source": "github.com/googleapis/python-genai original commit object readbacks and diff previously verified in PROVENANCE-019/020",
+  "entries": [
+    {
+      "model": "Argon",
+      "announcement": "2026-09-30",
+      "public_sdk_commit_utc": "2026-10-13T21:02:08Z",
+      "revision": "998875914",
+      "sha": "8554b07d0025e19361b7a10a6384cc143f3a8ea9",
+      "repo": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai/commit/8554b07d0025e19361b7a10a6384cc143f3a8ea9",
+      "source_class": "PUBLIC_GITHUB_SDK_INTEGRATION_COMMIT",
+      "distinct_from_naming_decision": true
+    },
+    {
+      "model": "Carbon",
+      "announcement": "2026-10-28",
+      "public_sdk_commit_utc": "2026-11-10T19:36:25Z",
+      "revision": "1018404598",
+      "sha": "96102204c4eb1d5b1612ca020dcfca1e547bd0bb",
+      "repo": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai/commit/96102204c4eb1d5b1612ca020dcfca1e547bd0bb",
+      "source_class": "PUBLIC_GITHUB_SDK_INTEGRATION_COMMIT",
+      "distinct_from_naming_decision": true
+    },
+    {
+      "model": "Hydrogen",
+      "announcement": "2026-11-12",
+      "public_sdk_commit_utc": "2026-11-12T19:14:58Z",
+      "revision": "1020280180",
+      "sha": "4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5",
+      "repo": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai/commit/4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5",
+      "source_class": "PUBLIC_GITHUB_SDK_INTEGRATION_COMMIT",
+      "distinct_from_naming_decision": true
+    },
+    {
+      "model": "Neon",
+      "announcement": "2026-11-18",
+      "public_sdk_commit_utc": "2026-11-18T21:28:29Z",
+      "revision": "1024938127",
+      "sha": "4c4ab16bc8229415c548519a4cf400cd85936e91",
+      "repo": "googleapis/python-genai",
+      "url": "https://github.com/googleapis/python-genai/commit/4c4ab16bc8229415c548519a4cf400cd85936e91",
+      "source_class": "PUBLIC_GITHUB_SDK_INTEGRATION_COMMIT",
+      "distinct_from_naming_decision": true
+    }
+  ],
+  "official_sources": [
+    {
+      "model": "Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "model": "Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "model": "Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "model": "Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    }
+  ],
+  "source_export_context": [
+    {
+      "url": "https://chromium.googlesource.com/external/github.com/google/styleguide/+/5ec857768df34c038b648d4b407e128d7224bbdb",
+      "observation": "Automated export from internal guides carrying PiperOrigin-RevId marker; example outside Gemini"
+    },
+    {
+      "url": "https://fuchsia.googlesource.com/integration/+/754f9d648a525e7a2390a5acee25b5c6521009c4",
+      "observation": "Public copybara/export trace containing PiperOrigin-RevId and Original-Revision marker; different project"
+    }
+  ],
+  "assessment": {
+    "identifiers_strictly_increasing_with_public_sdk_commit_dates": true,
+    "commit_message_markers_equivalent_to_naming_decision_timestamps": false,
+    "revision_numeric_gaps_are_elapsed_time": false,
+    "four_public_model_string_source_roots": 4,
+    "downstream_sdk_commits_from_prior_records": 16,
+    "internal_revision_diffs_accessible": "NOT_ESTABLISHED",
+    "original_naming_commit_or_approval": "NOT_FOUND",
+    "original_named_individual": "NOT_FOUND",
+    "ROOT0_to_Google_evidence": "NOT_FOUND",
+    "independent_origin_witnesses": "NOT_FOUND"
+  },
+  "cautions": [
+    "Revision numbers identify upstream changes but their numeric differences do not date those changes.",
+    "Four public downstream SDK commits with the same revision marker are one root for that change.",
+    "Google's first public announcement may precede SDK enum additions by days/weeks; SDK integration commits are not first usage of the product name.",
+    "External example PiperOrigin-RevId metadata supports interpreting the marker as export trace; no claim made that source revisions can be reverse looked up publicly.",
+    "Do not treat a company blog post by a senior officer as proof the officer coined the model name.",
+    "Absence of verified access or copying is not a proof that no access ever occurred."
+  ],
+  "next_gate": "Audit public Google repos and Gitiles for the four exact PiperOrigin-RevId markers, recording public source mirrors or source export metadata without inferring internal naming content",
+  "related": [
+    "PROVENANCE-019-GOOGLE-SDK-SOURCE-ANCESTRY-2026-11-24",
+    "PROVENANCE-020-NEON-ORIGIN-RECOVERY-2026-11-24"
+  ],
+  "media_archived": false
+}
