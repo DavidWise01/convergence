@@ -1,0 +1,91 @@
+{
+  "id": "PROVENANCE-015-INDEPENDENT-NAMING-WITNESS-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "NO_AUTHENTICATED_INDEPENDENT_PREANNOUNCEMENT_NAMING_DECISION_WITNESS",
+  "scope": "Independent roots of Google Gemini 4 Argon naming evidence before and after September 30 announcement",
+  "observations": [
+    {
+      "date": "2026-09-14",
+      "source": "https://skalablog.com/p/gemini-4-argon-rumors-what-is-actually-confirmed/",
+      "claim": "Retrospective blog describes first alleged Argon X post dated September 14",
+      "class": "RETROSPECTIVE_SECONDARY_REPORT_OF_UNAUTHENTICATED_SOCIAL_POST",
+      "confidence": "LOW",
+      "independent_origin_witness": false
+    },
+    {
+      "date": "2026-09-17",
+      "source": "https://cellcog.ai/blog/gemini-4-release-date/",
+      "claim": "Retrospective timeline describes alleged Arena testing tied to argon-d",
+      "class": "RETROSPECTIVE_AGGREGATION_UNVERIFIED_MODEL_IDENTITY",
+      "confidence": "LOW",
+      "independent_origin_witness": false
+    },
+    {
+      "date": "2026-09-30",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "claim": "Google first-party official public announcement using Gemini 4 Argon",
+      "class": "FIRST_PARTY_PRIMARY_PUBLIC_NAME",
+      "confidence": "HIGH",
+      "independent_origin_witness": false
+    },
+    {
+      "date": "2026-09-30",
+      "source": "https://www.reuters.com/legal/litigation/google-announces-gemini-4-flagship-ai-model-after-months-delays-2026-09-30/",
+      "claim": "Reuters independently reports same public Argon announcement and Google spokesperson description",
+      "class": "INDEPENDENT_REPORTER_SAME_GOOGLE_COMPANY_ANNOUNCEMENT_ROOT",
+      "confidence": "HIGH_FOR_PUBLIC_NAME",
+      "independent_origin_witness": false
+    },
+    {
+      "date": "2026-10-09",
+      "source": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10",
+      "claim": "Business Insider reports inspecting internal Google materials including Barium-B selected for Argon public brand and Carbon testing",
+      "class": "DISTINCT_JOURNALISTIC_REPORT_OF_NONPUBLIC_INTERNAL_MATERIAL",
+      "confidence": "MEDIUM_AS_REPORTED",
+      "independent_origin_witness": false
+    }
+  ],
+  "provenance_clusters": [
+    {
+      "root": "GOOGLE_OFFICIAL_ARGON_ANNOUNCEMENT",
+      "sources": [
+        "Google September 30 announcement",
+        "Reuters September 30 report"
+      ],
+      "independence_note": "Journalistic confirmation of the announcement is distinct publication, but not an independently dated origin of the internal name."
+    },
+    {
+      "root": "SOCIAL_PREANNOUNCEMENT_ARGON_RUMOR",
+      "sources": [
+        "Retrospective September 14 and September 17 aggregations"
+      ],
+      "independence_note": "Firsthand original post and authenticated platform timestamp not recovered; repeating rumor does not create new witness roots."
+    },
+    {
+      "root": "BUSINESS_INSIDER_INTERNAL_DOCUMENT_ACCOUNT",
+      "sources": [
+        "Business Insider October 9 article",
+        "Follow-on reports citing Business Insider"
+      ],
+      "independence_note": "Reporter-inspected documents distinct from September announcement, but original internal materials not public and post-announcement."
+    }
+  ],
+  "earliest_authenticated_public_use": "2026-09-30",
+  "earliest_authenticated_internal_selection_date": null,
+  "original_naming_author": null,
+  "public_elemental_naming_rationale": "UNSPECIFIED_IN_THIS_EVIDENCE_ROOT",
+  "ROOT0_access_evidence": "NONE_FOUND",
+  "correction_policy": "Do not turn a counted article or a reused claim into an independent witness. Leave earlier speculative entries intact with graded correction addendum.",
+  "related_records": [
+    "PROVENANCE-013-INTERNAL-CODENAME-CHRONOLOGY-2026-11-24",
+    "PROVENANCE-014-CHECKPOINT-BRAND-SEPARATION-2026-11-24"
+  ],
+  "sources": [
+    "https://skalablog.com/p/gemini-4-argon-rumors-what-is-actually-confirmed/",
+    "https://cellcog.ai/blog/gemini-4-release-date/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "https://www.reuters.com/legal/litigation/google-announces-gemini-4-flagship-ai-model-after-months-delays-2026-09-30/",
+    "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10"
+  ],
+  "media_archived": false
+}
