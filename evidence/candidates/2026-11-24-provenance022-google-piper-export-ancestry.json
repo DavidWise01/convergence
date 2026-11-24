@@ -1,0 +1,103 @@
+{
+  "id": "PROVENANCE-022-GOOGLE-PIPER-EXPORT-ANCESTRY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "FOUR_ADDITIONAL_ORIGINAL_EXPORT_COMMITS_VERIFIED_FIFTH_OFFICIAL_REPOSITORY",
+  "task": "Search Google public mirrors and GitHub for four exact PiperOrigin-RevId values, classify additional downstream appearances by ancestry.",
+  "method": [
+    "Public web searches for four literal revision IDs and Gitiles naming references",
+    "GitHub global commit search by four numeric revision markers, max 100 returned per marker",
+    "Fetch original source diff from newly discovered google-gemini/gemini-api-cli commits",
+    "Differentiate same-SHA third-party fork copies from unique commits sharing revision IDs"
+  ],
+  "new_verified_repo": "google-gemini/gemini-api-cli",
+  "new_verification": [
+    {
+      "model": "Argon",
+      "revision_id": "998875914",
+      "sha": "028268295ba3fdc153d11cc417f817a1e0fe9ec1",
+      "utc": "2026-10-13T21:02:10Z",
+      "repo": "google-gemini/gemini-api-cli",
+      "url": "https://github.com/google-gemini/gemini-api-cli/commit/028268295ba3fdc153d11cc417f817a1e0fe9ec1",
+      "changed": [
+        "internal/sdk/models/interactions/model.go",
+        "internal/cli/catalog.go"
+      ],
+      "lineage": "IDENTICAL_PIPER_REVISION_AS_FOUR_GOOGLEAPIS_SDKS",
+      "patch_model_identifier_verified": true
+    },
+    {
+      "model": "Carbon",
+      "revision_id": "1018404598",
+      "sha": "e8fcfc33bdad5d3500274756ad10363bf40eb0f8",
+      "utc": "2026-11-10T19:36:26Z",
+      "repo": "google-gemini/gemini-api-cli",
+      "url": "https://github.com/google-gemini/gemini-api-cli/commit/e8fcfc33bdad5d3500274756ad10363bf40eb0f8",
+      "changed": [
+        "internal/sdk/models/interactions/model.go",
+        "internal/cli/catalog.go"
+      ],
+      "lineage": "IDENTICAL_PIPER_REVISION_AS_FOUR_GOOGLEAPIS_SDKS",
+      "patch_model_identifier_verified": true
+    },
+    {
+      "model": "Hydrogen",
+      "revision_id": "1020280180",
+      "sha": "2030ff16e8b4e0e815c358e7a5156a9e5bb40191",
+      "utc": "2026-11-12T19:14:46Z",
+      "repo": "google-gemini/gemini-api-cli",
+      "url": "https://github.com/google-gemini/gemini-api-cli/commit/2030ff16e8b4e0e815c358e7a5156a9e5bb40191",
+      "changed": [
+        "internal/sdk/models/interactions/model.go",
+        "internal/cli/catalog.go"
+      ],
+      "lineage": "IDENTICAL_PIPER_REVISION_AS_FOUR_GOOGLEAPIS_SDKS",
+      "patch_model_identifier_verified": true
+    },
+    {
+      "model": "Neon",
+      "revision_id": "1024938127",
+      "sha": "d018a0cb5151682c43c3523f2eb9f23a2183f49b",
+      "utc": "2026-11-18T21:27:59Z",
+      "repo": "google-gemini/gemini-api-cli",
+      "url": "https://github.com/google-gemini/gemini-api-cli/commit/d018a0cb5151682c43c3523f2eb9f23a2183f49b",
+      "changed": [
+        "internal/sdk/models/interactions/model.go",
+        "internal/cli/catalog.go"
+      ],
+      "lineage": "IDENTICAL_PIPER_REVISION_AS_FOUR_GOOGLEAPIS_SDKS",
+      "patch_model_identifier_verified": true
+    }
+  ],
+  "aggregate": {
+    "previous_public_downstream_commits": 16,
+    "additional_unique_official_commits": 4,
+    "total_unique_official_commits": 20,
+    "official_repositories": 5,
+    "distinct_upstream_revision_markers": 4,
+    "distinct_independent_name_origin_witnesses": 0,
+    "root_count_rule": "Four root revision IDs across five code export repositories. Twenty committed manifestations do not imply twenty independent naming decisions."
+  },
+  "other_hit": {
+    "repository": "Gamerss1212/python-genai",
+    "kind": "THIRD_PARTY_FORK_OR_MIRROR",
+    "observation": "Same Python SHA for four source revisions also indexed in another repository; no new Git object or independent name-origin record.",
+    "do_not_double_count": true
+  },
+  "gitiles_scan": {
+    "result": "NO_NEW_AUTHENTICATED_GITILES_DOCUMENT_WITH_THE_FOUR_EXACT_IDENTIFIERS_FOUND_IN_THIS_BOUNDED_PASS",
+    "limit": "Web indexes are not a complete scan of all Gitiles refs or repos; no global absence claim"
+  },
+  "caveats": [
+    "PiperOrigin-RevId is a source-export ancestry marker, not a documented record of who chose a codename.",
+    "Repeated copies/forks and language variants must not be counted as independent witnesses.",
+    "Original internal Google revision and name-selection review remain inaccessible/unverified.",
+    "No Google-to-ROOT0 access path was established.",
+    "Only public repositories were inspected."
+  ],
+  "related": [
+    "PROVENANCE-019-GOOGLE-SDK-SOURCE-ANCESTRY-2026-11-24",
+    "PROVENANCE-020-NEON-ORIGIN-RECOVERY-2026-11-24",
+    "PROVENANCE-021-GOOGLE-PIPER-REVISION-CHRONOLOGY-2026-11-24"
+  ],
+  "media_archived": false
+}
