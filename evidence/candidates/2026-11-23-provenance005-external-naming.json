@@ -1,0 +1,129 @@
+{
+  "id": "PROVENANCE-005-EXTERNAL-NAMING-2026-11-23",
+  "recorded_at": "2026-11-23",
+  "observation_status": "VERIFIED_DATES_WITH_UNRESOLVED_NAMING_ORIGINS",
+  "scope": "Public-company naming chronology compared against pinned ROOT0 four-plus-one and elemental corpus",
+  "internal_anchor": {
+    "repo": "DavidWise01/jane",
+    "commit": "eb4a1139f28bae98864978be9defc689325ce245",
+    "date": "2026-07-09T23:11:52Z",
+    "status": "VERIFIED four named frameworks and Jane center"
+  },
+  "external_records": [
+    {
+      "company": "Anthropic",
+      "name": "Claude Mythos Preview",
+      "published": "2026-04-07",
+      "classification": "PRE_DATES_JANE_JULY_9",
+      "primary_source": "https://www.anthropic.com/research/mythos-preview",
+      "naming_rationale_status": "INDIVIDUAL_NAMING_DECISION_NOT_DOCUMENTED_HERE",
+      "comparison": "Same word as Jane MYTHOS, different publicly described model product; April reference cannot be attributed to July source"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini",
+      "public_naming_explanation": "2024-05-15",
+      "classification": "PRE_DATES_2026_ROOT0",
+      "primary_source": "https://blog.google/innovation-and-ai/products/google-gemini-ai-name-meaning/",
+      "naming_rationale_status": "GOOGLE_PUBLISHED team-merger/twins origin account",
+      "comparison": "Name distinct from elemental model suffixes"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini 4 Argon",
+      "published": "2026-09-30",
+      "model_card_updated": "2026-10-13",
+      "classification": "POST_DATES_JANE_JULY_9",
+      "primary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "model_card_index": "https://deepmind.google/models/model-cards/",
+      "naming_rationale_status": "NOT_DOCUMENTED_HERE",
+      "comparison": "Element label shared with ROOT0 element references; no causal link identified"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini 4 Carbon",
+      "published": "2026-10-28",
+      "model_card_updated": "2026-11-10",
+      "classification": "POST_DATES_JANE_JULY_9",
+      "primary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "naming_rationale_status": "NOT_DOCUMENTED_HERE"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini 4 Hydrogen",
+      "published": "2026-11-12",
+      "model_card_updated": "2026-11-12",
+      "classification": "POST_DATES_JANE_JULY_9",
+      "primary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "naming_rationale_status": "NOT_DOCUMENTED_HERE"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini 4 Neon",
+      "published": "2026-11-18",
+      "model_card_updated": "2026-11-18",
+      "classification": "POST_DATES_JANE_JULY_9",
+      "primary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "naming_rationale_status": "NOT_DOCUMENTED_HERE"
+    },
+    {
+      "company": "Google",
+      "name": "Gemini 4 Helium",
+      "published": null,
+      "classification": "UNCONFIRMED_RUMOR_NOT_A_RELEASE",
+      "primary_source": "https://deepmind.google/models/model-cards/",
+      "naming_rationale_status": "NOT_APPLICABLE"
+    },
+    {
+      "company": "OpenAI",
+      "name": "o1",
+      "published": "2024-09",
+      "classification": "PRE_DATES_2026_ROOT0",
+      "primary_source": "https://openai.com/index/learning-to-reason-with-llms/",
+      "naming_rationale_status": "NOT_ESTABLISHED_HERE"
+    },
+    {
+      "company": "OpenAI",
+      "name": "Codex coding agent",
+      "published": "2025-04",
+      "classification": "PRE_DATES_2026_ROOT0",
+      "primary_source": "https://openai.com/index/introducing-codex/",
+      "naming_rationale_status": "NOT_ESTABLISHED_HERE"
+    }
+  ],
+  "evidence_levels": {
+    "source_publication": "VERIFIED where primary dated release exists",
+    "functional_overlap": "COMPARE_ONLY",
+    "internal_naming_decision": "UNKNOWN except Gemini umbrella explanation",
+    "third_party_access_to_ROOT0": "UNKNOWN",
+    "copied_from_ROOT0": "NOT_ESTABLISHED",
+    "independent_external_witnesses": "Public vendor documents are primary for that vendor's own announced products, not independent verification of naming-conception process"
+  },
+  "caution": [
+    "Google Argon public article Sept 30 differs from model-card Oct 13 updated date; preserve both rather than conflating",
+    "Google Carbon model card updated Nov 10, public introduction Oct 28; do not misstate as first launch",
+    "Claude Mythos Preview predates pinned July 9 Jane design",
+    "OpenAI o1 and Codex predate Jan–Feb 2026 claimed framework origin",
+    "No internal design records, employee testimony or demonstrated access edge identified",
+    "Root0 similarities in common words, elements and Greek roots alone do not imply appropriation",
+    "Model-card listing alone is not a documented explanation for why a name was selected"
+  ],
+  "related_records": [
+    "PROVENANCE-001-JANE-2026-11-23",
+    "PROVENANCE-002-EARLY-CORPUS-2026-11-23",
+    "PROVENANCE-003-FUNCTIONAL-ANCESTRY-2026-11-23",
+    "PROVENANCE-004-NAME-ROLE-INTEGRATION-2026-11-23"
+  ],
+  "media_archived": false,
+  "retrieved_from": [
+    "https://www.anthropic.com/research/mythos-preview",
+    "https://blog.google/innovation-and-ai/products/google-gemini-ai-name-meaning/",
+    "https://deepmind.google/models/model-cards/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "https://openai.com/index/learning-to-reason-with-llms/",
+    "https://openai.com/index/introducing-codex/"
+  ]
+}
