@@ -1,0 +1,97 @@
+{
+  "id": "PROVENANCE-016-PREANNOUNCEMENT-POST-AUTHENTICATION-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "CONTEMPORANEOUS_PUBLIC_CIRCULATION_CORROBORATED_ORIGINAL_X_CONTENT_UNAUTHENTICATED",
+  "scope": "Locate September 14-17 original X posts, decode encoded timestamps, classify claimed checkpoint names versus actual Google evidence",
+  "method": {
+    "primary_post_identifiers_from": "Contemporaneously dated embedded X post links in Sep 17 OfficeChai and Sep 19 KOCPC articles",
+    "timestamp_derivation": "X/Twitter Snowflake timestamp = (integer(post_id) >> 22) + 1288834974657 milliseconds UTC",
+    "original_post_fetch": "X pages returned 403 Forbidden; actual post content, attachment, edit history, account and server timestamp not independently fetched",
+    "separate_backups": "September 15 Korean Telegram relay on theddari linking exact @Lentils80 status ID; secondary independent contemporaneous forwarding of URL, not proof of screenshot provenance"
+  },
+  "original_post_candidates": [
+    {
+      "claimed_account": "Lentils80",
+      "status_id": "2099601296516960580",
+      "url": "https://x.com/Lentils80/status/2099601296516960580",
+      "snowflake_utc": "2026-09-14T20:48:52.452Z",
+      "contemporaneous_press": "https://en.kocpc.com.tw/archives/25592",
+      "contemporaneous_press_date": "2026-09-19",
+      "claim": "The article embeds a purported Sept 14 post naming a Gemini 4 checkpoint argon; company affiliation and leaked screenshot not authenticated",
+      "status": "ORIGINAL_URL_OBTAINED_TIMESTAMP_DECODED_DIRECT_POST_FETCH_403"
+    },
+    {
+      "claimed_account": "MaaSonder",
+      "status_id": "2100548822753529944",
+      "url": "https://x.com/MaaSonder/status/2100548822753529944",
+      "snowflake_utc": "2026-09-17T11:34:00.311Z",
+      "contemporaneous_press": "https://officechai.com/ai/gemini-4-0-pro-arena/",
+      "contemporaneous_press_date": "2026-09-17",
+      "claim": "Post claims internal Argon ghost test concealed by Gemini 3.8 Flash label; model identity unconfirmed",
+      "status": "ORIGINAL_URL_OBTAINED_TIMESTAMP_DECODED_DIRECT_POST_FETCH_403"
+    },
+    {
+      "claimed_account": "hakmgpt",
+      "status_id": "2100527753766269408",
+      "url": "https://x.com/hakmgpt/status/2100527753766269408",
+      "snowflake_utc": "2026-09-17T10:10:17.073Z",
+      "contemporaneous_press": "https://officechai.com/ai/gemini-4-0-pro-arena/",
+      "contemporaneous_press_date": "2026-09-17",
+      "claim": "Post alleges Gemini 4 Pro using Gemini 3.8 Flash Arena alias but does not identify Argon in the quoted text",
+      "status": "ORIGINAL_URL_OBTAINED_TIMESTAMP_DECODED_DIRECT_POST_FETCH_403"
+    }
+  ],
+  "corroborating_contemporaneous_items": [
+    {
+      "published": "2026-09-15",
+      "source": "https://eyestech.in/gemini-4-architecture-argon-leak-tpu-8t/",
+      "finding": "A pre-September-30 article repeats and quotes @Lentils80 post and cites same status ID; contains additional technical speculation not independently established",
+      "independence": "SAME_POST_ROOT"
+    },
+    {
+      "published": "2026-09-15",
+      "source": "https://theddari.com/trends/telegram/3515104903/338",
+      "finding": "Telegram relay includes exact Lentils80 status URL; independent circulation of link",
+      "independence": "URL_RELAY_NOT_INDEPENDENT_MODEL_SOURCE"
+    },
+    {
+      "published": "2026-09-17",
+      "source": "https://officechai.com/ai/gemini-4-0-pro-arena/",
+      "finding": "Contemporaneous reporting quotes a Sept 17 post identifying Argon with alleged Arena routing",
+      "independence": "PRESERVES_DISTINCT_POSTER_CLAIM_NOT_VENDOR_AUTHENTICATION"
+    },
+    {
+      "published": "2026-09-19",
+      "source": "https://en.kocpc.com.tw/archives/25592",
+      "finding": "Reproduces direct original Lentils80 quotation, username and Sept 14 date",
+      "independence": "SAME_LENTILS80_POST_ROOT"
+    }
+  ],
+  "official_comparator": {
+    "published": "2026-09-30",
+    "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "status": "AUTHENTICATED_PUBLIC_GOOGLE_ANNOUNCEMENT"
+  },
+  "conclusions": {
+    "pre_announcement_public_usage": "CORROBORATED_BY_ARTICLES_PUBLISHED_BEFORE_SEPTEMBER_30",
+    "earliest_recovered_post_url_date": "2026-09-14",
+    "earliest_X_encoded_timestamp": "2026-09-14T20:48:52.452Z",
+    "original_X_post_authentication": "NOT_COMPLETED_DUE_TO_403",
+    "google_internal_checkpoint_identity": "UNVERIFIED",
+    "original_internal_naming_decision_date": "UNKNOWN",
+    "namer_identity": "UNKNOWN",
+    "ROOT0_ACCESS_OR_DERIVATION": "NOT_ESTABLISHED"
+  },
+  "guardrails": [
+    "Decoded post ID timestamp is a mathematical consistency check conditional on X snowflake ID encoding, not proof that the claimed text appeared as stated in an authentic original post.",
+    "Multiple articles quoting one Lentils80 post share one ancestry; do not triple count.",
+    "Arena alias and impressive model outputs do not establish that Google served Argon under Gemini 3.8 Flash.",
+    "The September 15 Eyestech post makes unsupported architecture claims; preserve only verifiable existence and its referenced post ID.",
+    "Do not confuse public circulation of a name with Google's original naming decision."
+  ],
+  "related": [
+    "PROVENANCE-013-INTERNAL-CODENAME-CHRONOLOGY-2026-11-24",
+    "PROVENANCE-015-INDEPENDENT-NAMING-WITNESS-2026-11-24"
+  ],
+  "media_archived": false
+}
