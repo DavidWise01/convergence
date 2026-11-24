@@ -1,0 +1,175 @@
+{
+  "id": "PROVENANCE-018-GOOGLE-PUBLIC-GIT-SCAN-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "GOOGLE_PUBLIC_GIT_TARGETS_LOCATED_AND_BOUNDED_CODE_SCAN_VERIFIED",
+  "question": "Does Google maintain publicly accessible git suitable for an evidence crawl of Gemini 4 elemental names?",
+  "primary_company_overview": {
+    "source": "https://opensource.googleblog.com/2026/08/adapting-open-source-practices-to-an-ai-first-world-a-retrospective-on-2025.html",
+    "claim": "Google reported >5000 GitHub public repos and >1500 public Git-on-Borg repos in Aug 2026",
+    "classification": "FIRST_PARTY_COMPANY_COUNT"
+  },
+  "targets": [
+    {
+      "type": "github_org",
+      "url": "https://github.com/google-gemini",
+      "audit_value": "Gemini CLI, cookbook, SDK examples and documentation"
+    },
+    {
+      "type": "github_org",
+      "url": "https://github.com/google-deepmind",
+      "audit_value": "DeepMind research repos and API integrations"
+    },
+    {
+      "type": "github_org",
+      "url": "https://github.com/google",
+      "audit_value": "Primary corporate GitHub organization"
+    },
+    {
+      "type": "github_org",
+      "url": "https://github.com/googleapis",
+      "audit_value": "Official Gemini SDK model enums and changelogs"
+    },
+    {
+      "type": "github_org",
+      "url": "https://github.com/GoogleCloudPlatform",
+      "audit_value": "Gemini platform sample notebooks and release examples"
+    },
+    {
+      "type": "gitiles",
+      "url": "https://chromium.googlesource.com",
+      "audit_value": "Public Git-on-Borg mirror with revision history; not a Gemini internal model repository"
+    },
+    {
+      "type": "gitiles",
+      "url": "https://android.googlesource.com",
+      "audit_value": "Public Android Git history; may be useful for model references outside Gemini SDKs"
+    }
+  ],
+  "bounded_default_branch_code_search": {
+    "organizations": [
+      "google-gemini",
+      "google-deepmind",
+      "googleapis",
+      "GoogleCloudPlatform"
+    ],
+    "strings": [
+      "gemini-4-argon",
+      "gemini-4-carbon",
+      "gemini-4-hydrogen",
+      "gemini-4-neon",
+      "barium-b"
+    ],
+    "method": "Connected GitHub search on default branches, max 12 results per org/string; 20 searches; not exhaustive historical/branch/whole-project scan",
+    "results_summary": {
+      "google-gemini": {
+        "argon": 12,
+        "carbon": 12,
+        "hydrogen": 12,
+        "neon": 12,
+        "barium-b": 0
+      },
+      "google-deepmind": {
+        "argon": 2,
+        "carbon": 0,
+        "hydrogen": 7,
+        "neon": 0,
+        "barium-b": 0
+      },
+      "googleapis": {
+        "argon": 9,
+        "carbon": 8,
+        "hydrogen": 12,
+        "neon": 4,
+        "barium-b": 0
+      },
+      "GoogleCloudPlatform": {
+        "argon": 12,
+        "carbon": 6,
+        "hydrogen": 12,
+        "neon": 4,
+        "barium-b": 0
+      }
+    },
+    "zero_results_note": "No barium-b results in this bounded scan. This does NOT establish that there are no occurrences in all public Google repos/branches."
+  },
+  "verified_files": [
+    {
+      "repo": "googleapis/python-genai",
+      "path": "CHANGELOG.md",
+      "blob": "d48faf8c2e84855f7807329ffa4b06114d33d87f",
+      "finding": "References linked feature commits adding Gemini 4 Argon, Carbon, Hydrogen model enum identifiers"
+    },
+    {
+      "repo": "googleapis/python-genai",
+      "path": "google/genai/_gaos/types/interactions/model.py",
+      "blob": "f9476dcd88dd418307f3c10932a2da160754c6ce",
+      "finding": "Contains exact gemini-4-argon, gemini-4-carbon, gemini-4-hydrogen, gemini-4-neon strings; current state is not date of first addition"
+    },
+    {
+      "repo": "GoogleCloudPlatform/generative-ai",
+      "path": "gemini/getting-started/intro_gemini_4_carbon.ipynb",
+      "blob": "0e9e0be45289d1c82dbc962ca8870668954043a6",
+      "finding": "Explicit gemini-4-carbon model ID and notebook about public model usage"
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "path": "README.md",
+      "blob": "22cd5a1311378355b533140665d25fed89496d00",
+      "finding": "Explicit Argon usage and linked public product announcement"
+    }
+  ],
+  "historical_source_commit_candidates": [
+    {
+      "identifier": "gemini-4-argon",
+      "repo": "googleapis/python-genai",
+      "commit": "8554b07d0025e19361b7a10a6384cc143f3a8ea9",
+      "commit_utc": "2026-10-13T21:02:08Z",
+      "piper_origin_rev_id": "998875914",
+      "finding": "Added model enum identifier after Sept 30 public announcement"
+    },
+    {
+      "identifier": "gemini-4-carbon",
+      "repo": "googleapis/python-genai",
+      "commit": "96102204c4eb1d5b1612ca020dcfca1e547bd0bb",
+      "commit_utc": "2026-11-10T19:36:25Z",
+      "piper_origin_rev_id": "1018404598",
+      "finding": "Added model enum identifier after Oct public announcement"
+    },
+    {
+      "identifier": "gemini-4-hydrogen",
+      "repo": "googleapis/python-genai",
+      "commit": "4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5",
+      "commit_utc": "2026-11-12T19:14:58Z",
+      "piper_origin_rev_id": "1020280180",
+      "finding": "Added model enum identifier on Nov 12, public model launch date"
+    },
+    {
+      "identifier": "gemini-4-neon",
+      "repo": "google-gemini/cookbook",
+      "commit": "aa11ed69636f18a2277c8044635efcae84fa0f61",
+      "commit_author_date": "2026-11-23T12:10:23+02:00",
+      "finding": "Commit-message search matched Neon; exact diff not yet inspected"
+    }
+  ],
+  "assessment": {
+    "public_code_exists": true,
+    "direct_file_and_commit_scan_performed": true,
+    "google_internal_model_checkpoints_open_source": "NOT_ESTABLISHED",
+    "barium_b_public_corroboration": "NO_MATCH_IN_BOUNDED_SCAN",
+    "piper_origin_ids": "INTERNAL_SOURCE_REVISION_MARKERS_IN_PUBLIC_COMMITS_NOT_ACCESS_TO_ORIGINAL_INTERNAL_CHANGELOGS",
+    "name_selection_author": "UNKNOWN",
+    "ROOT0_access": "NOT_ESTABLISHED"
+  },
+  "next_step": "Build bounded Gitiles/GitHub history traversal with exact identifier search, date gates, original commit links, distinct primary origin grouping; no crawling of private materials or authentication bypass.",
+  "limitations": [
+    "Code search only indexed default branches and capped responses; zero matches are narrowly scoped.",
+    "Named external model APIs and sample code expose public references, not model weight/checkpoint or internal naming process.",
+    "Commit timestamp is public source integration timing and not a naming-decision timestamp.",
+    "GitHub org coverage is deliberately limited to four likely targets; google org not searched within this bounded batch."
+  ],
+  "related": [
+    "PROVENANCE-013-INTERNAL-CODENAME-CHRONOLOGY-2026-11-24",
+    "PROVENANCE-017-HISTORICAL-PRIORITY-ACCESS-2026-11-24"
+  ],
+  "media_archived": false
+}
