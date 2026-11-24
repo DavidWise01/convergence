@@ -1,0 +1,95 @@
+{
+  "id": "PROVENANCE-010-CELLULAR-RESOURCE-ANCESTRY-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "VERIFIED_SELECTED_RESOURCE_MODELS_CIPHER_MAPPING_UNRESOLVED",
+  "subject": "Recover resource, cellular coupling and adversarial exchange mechanics without equating them to user's dot-bar cipher before source proof",
+  "prior_direct_user_correction": "its cellular warfare 1 resource 1 unit . & . 2 units | .",
+  "sources": [
+    {
+      "repo": "DavidWise01/toph-cortex",
+      "path": "research/isa256/JANE-026-two-cell-symbiotic-homeostasis.md",
+      "blob_sha": "b9ab0c97e367535d4882848fbcceb501b6a0e78d",
+      "evidence": "Each cell begins with one classical resource; paired 72-position cells conserve total resource 2; feedback/isolation/passive diffusion; external 0.06 pulses at ticks 40,90,140",
+      "status": "SOURCE_TEXT_VERIFIED_NOT_INDEPENDENT_SIM_EXECUTION"
+    },
+    {
+      "repo": "DavidWise01/toph-cortex",
+      "path": "research/isa256/JANE-027-primitive-scale-closure.md",
+      "blob_sha": "0ae5c332b3a4cfd70390f58871eea99f7d6cb248",
+      "commit": "77b39c8cd36e21675a5709bd5e48d6b36c0a17ca",
+      "date_utc": "2026-11-07T18:43:25Z",
+      "evidence": "Each primitive pair 144 component positions; neighboring exchanges equal and opposite; full resource total 2n conserved; finite n=1,2,3,5,8,13; tests asserted in spec",
+      "status": "SPEC_AND_DATED_COMMIT_VERIFIED_CODE_BUNDLE_NOT_VERIFIED"
+    },
+    {
+      "repo": "DavidWise01/I13-H1.1",
+      "path": "docs/two-universe-gate-war.html",
+      "blob_sha": "1d2ba1ffdce01c02fe95e596333af3d7f297a9c9",
+      "evidence": "Two universes demand one conserved total resource; 3 voting agents per side; diverted and vacant resources retained in conservation ledger; computed deliveredL+deliveredR+diverted+vacant=1",
+      "status": "PINNED_REPO_FILE_TEXT_VERIFIED_RUNTIME_UNTESTED"
+    },
+    {
+      "repo": "DavidWise01/cellular-automata",
+      "commit": "0abd8bf8e1080467cf3b085176801c1cd1ab68a5",
+      "date_utc": "2026-06-18T00:53:20Z",
+      "evidence": "Early cellular automata and life-from-rules catalog, not a demonstrated combat resource grammar",
+      "status": "EARLY_TOPIC_ANCESTRY_ONLY"
+    },
+    {
+      "repo": "DavidWise01/oasis",
+      "commit": "d0f4bc01d2b5a002b43d23ad99ae408422af9202",
+      "date_utc": "2026-10-23T21:21:26Z",
+      "evidence": "Argon symbolic primitive documented with separate capture experiment and no established mapping to resource warfare",
+      "status": "EARLIER_CIPHER_ARTIFACT"
+    }
+  ],
+  "model_separation": {
+    "JANE": "Conservative coupled cell resources, total=2 or 2n",
+    "GATE_WAR": "Adversarial allocation/diversion, total=1",
+    "ARGON_CIPHER": "User says cellular-warfare resource/unit tokens; exact operator semantics not sourced",
+    "DO_NOT_MERGE": "The above are related research threads, not interchangeable implementations."
+  },
+  "provisional_cycle": [
+    {
+      "stage": "Resource",
+      "status": "VERIFIED_IN_CELL_AND_GATE_SIMULATIONS"
+    },
+    {
+      "stage": "Unit",
+      "status": "USER_ASSERTED_RESOURCE_UNIT_RULE_NOT_OPERATIONALLY_PINNED"
+    },
+    {
+      "stage": "Formation",
+      "status": "UNVERIFIED_FOR_ARGON_TOKEN"
+    },
+    {
+      "stage": "Interaction",
+      "status": "VERIFIED_IN_SEPARATE_GATE_WAR_AND_JANE_SIMULATIONS"
+    },
+    {
+      "stage": "Resource conservation",
+      "status": "VERIFIED_BY_FORMULAS_IN_SEPARATE_SOURCE_MODELS"
+    },
+    {
+      "stage": "Growth/reproduction/combat outcomes",
+      "status": "NOT_RECONSTRUCTED_FOR_ARGON_TOKEN"
+    }
+  ],
+  "negative_searches": [
+    "Commit-message search for 'cellular warfare' returned only recent convergence addenda; this is not exhaustive content search.",
+    "Code search retrieved related resource models but not exact combat token transition grammar."
+  ],
+  "falsification_boundary": "Do not claim dot=one combat resource, bar=two fighters, or a full transfer algebra without the original code or explicit owner rule. Numerical weighted dot/bar sum from archon is a distinct interpretive implementation.",
+  "related_records": [
+    "PROVENANCE-008-ARGON-LIFE-CIPHER-2026-11-24",
+    "PROVENANCE-009-CELLULAR-WARFARE-SEMANTICS-2026-11-24"
+  ],
+  "ancestry": "Multiple owned projects may share concept ancestry; not independent corroboration",
+  "source_urls": [
+    "https://github.com/DavidWise01/toph-cortex/blob/main/research/isa256/JANE-026-two-cell-symbiotic-homeostasis.md",
+    "https://github.com/DavidWise01/toph-cortex/commit/77b39c8cd36e21675a5709bd5e48d6b36c0a17ca",
+    "https://github.com/DavidWise01/I13-H1.1/blob/main/docs/two-universe-gate-war.html",
+    "https://github.com/DavidWise01/cellular-automata/commit/0abd8bf8e1080467cf3b085176801c1cd1ab68a5"
+  ],
+  "media_archived": false
+}
