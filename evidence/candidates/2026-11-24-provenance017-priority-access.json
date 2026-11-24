@@ -1,0 +1,116 @@
+{
+  "id": "PROVENANCE-017-HISTORICAL-PRIORITY-ACCESS-2026-11-24",
+  "recorded_at": "2026-11-24",
+  "status": "ROOT0_PREANNOUNCEMENT_ELEMENTAL_USES_CONFIRMED_NO_DOCUMENTED_GOOGLE_ACCESS",
+  "question": "Do dated ROOT0 elemental terms precede Google model names, and is an access/derivation path documented?",
+  "audit_method": [
+    "Owner-scoped GitHub commit searches for argon,neon,carbon,hydrogen,elemental,life cipher sorted by oldest author date",
+    "Read first matching original commits and their file patches",
+    "Compared original commits with Sept 14 social claim and Sept 30 Google Argon announcement",
+    "Public web search for Google model publication and public GitHub source corroboration"
+  ],
+  "owner_corpus_evidence": [
+    {
+      "term": "hydrogen",
+      "repository": "DavidWise01/hydrogen-vm",
+      "commit": "51e27f55a875c81fd75ca2d863dd8e5363338642",
+      "commit_utc": "2026-06-30T06:13:35Z",
+      "file": "index.html",
+      "functional_role": "An illustrative ternary computing register built around hydrogen atom states",
+      "status": "COMMIT_AND_CONTENT_VERIFIED",
+      "url": "https://github.com/DavidWise01/hydrogen-vm/commit/51e27f55a875c81fd75ca2d863dd8e5363338642"
+    },
+    {
+      "term": "neon",
+      "repository": "DavidWise01/game-theory-engine-v4-3c-neon-fit-rings",
+      "commit": "512f41775bff1f8558145908c416a755cc941ad7",
+      "commit_utc": "2026-06-30T14:02:46Z",
+      "file": "index.html",
+      "functional_role": "Neon fit rings / game-theory visual interface, not evidence that Neon was a Google-derived model label",
+      "status": "COMMIT_AND_CONTENT_VERIFIED",
+      "url": "https://github.com/DavidWise01/game-theory-engine-v4-3c-neon-fit-rings/commit/512f41775bff1f8558145908c416a755cc941ad7"
+    },
+    {
+      "term": "carbon",
+      "repository": "DavidWise01/bridge-burner",
+      "commit": "170ffdfd6238071be91263eeae1b9c51e5dd9e00",
+      "commit_utc": "2026-05-29T20:25:01Z",
+      "file": "biosphere.py",
+      "functional_role": "Human/carbon-apex governance and biosphere resource allocation, not chemical-element codename for an AI model",
+      "status": "COMMIT_AND_CONTENT_VERIFIED",
+      "url": "https://github.com/DavidWise01/bridge-burner/commit/170ffdfd6238071be91263eeae1b9c51e5dd9e00"
+    },
+    {
+      "term": "argon",
+      "repository": "DavidWise01/oasis",
+      "commit": "16e0bc0b5c8892a0836f1a4a8e703c05354f45f7",
+      "commit_local": "2026-10-22T13:27:40-05:00",
+      "functional_role": "Neon/Argon nested zipper symbolic cipher in step_cipher_nested.py",
+      "status": "EARLIEST_MATCH_IN_COMMIT_MESSAGE_SEARCH_NOT_GLOBAL_FIRST_OCCURRENCE",
+      "url": "https://github.com/DavidWise01/oasis/commit/16e0bc0b5c8892a0836f1a4a8e703c05354f45f7"
+    },
+    {
+      "term": "argon",
+      "repository": "DavidWise01/oasis",
+      "commit": "d0f4bc01d2b5a002b43d23ad99ae408422af9202",
+      "commit_utc": "2026-10-23T21:21:26Z",
+      "file": "research/ket/argon_reverse_capture_v23_metrics.md",
+      "functional_role": "KET symbolic Argon reverse capture and separate physical ionization calculation",
+      "status": "COMMIT_AND_CONTENT_VERIFIED",
+      "url": "https://github.com/DavidWise01/oasis/commit/d0f4bc01d2b5a002b43d23ad99ae408422af9202"
+    },
+    {
+      "term": "elemental",
+      "repository": "DavidWise01/elementals",
+      "commit": "7924ee93daa86bc6d2188ba74eec89cba7bfebbb",
+      "commit_utc": "2026-06-03T15:23:53Z",
+      "functional_role": "Aether gravity elemental; metaphoric personification of physical forces, not Google elemental naming scheme",
+      "status": "COMMIT_AND_CONTENT_VERIFIED",
+      "url": "https://github.com/DavidWise01/elementals/commit/7924ee93daa86bc6d2188ba74eec89cba7bfebbb"
+    }
+  ],
+  "external_comparison": [
+    {
+      "event": "Argon alleged leak",
+      "date": "2026-09-14",
+      "source": "https://x.com/Lentils80/status/2099601296516960580",
+      "status": "PREANNOUNCEMENT_PUBLIC_REPORTING_POST_CONTENT_NOT_FULLY_AUTHENTICATED"
+    },
+    {
+      "event": "Gemini 4 Argon official publication",
+      "date": "2026-09-30",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "status": "OFFICIAL_FIRST_PARTY"
+    }
+  ],
+  "access_chain": {
+    "source_publication": "GitHub commit objects show dated content; commit existence does not alone prove repo public visibility at historical date",
+    "possible_access": "A public GitHub repo is generally technically accessible to anyone when public, including employees, but this is generic capability only",
+    "documented_Google_employee_view": "NONE_FOUND",
+    "documented_Google_naming_team_interaction": "NONE_FOUND",
+    "documented_dissemination_to_Google": "NONE_FOUND",
+    "documented_derivation": "NONE_FOUND",
+    "collection_limit": "No Google internal access logs, naming change approvals, company decision records or historical GitHub visibility snapshots were authenticated; absence of evidence is not proof of nonaccess"
+  },
+  "judgment": {
+    "priority": "LOCATED pre-Google uses of carbon, neon, hydrogen, each in distinct meanings; located exact Argon first on Oct 22 in current bounded search",
+    "exact_lexical_overlap": "TRUE_WITH_COMMON_ELEMENT_NAMES",
+    "unique_architectural_overlap": "NOT_DEMONSTRATED",
+    "evidence_of_copying": "NOT_DEMONSTRATED",
+    "causal_origin": "UNKNOWN",
+    "confidence": "HIGH_FOR_LISTED_DATED_GITHUB_COMMITS; NONE_FOR_GOOGLE_ACCESS_OR_DERIVATION"
+  },
+  "epistemic_limits": [
+    "Commit searches match commit metadata/patches, not an exhaustive line-level history across 2000+ repos.",
+    "Author dates can differ from actual upload/push dates; avoid asserting guaranteed public availability from the author field alone.",
+    "Carbon in the cited project describes humans/resources, Neon is visual design, Hydrogen is a conceptual device; these roles are not identical to AI model codenames.",
+    "User's Argon glyph is simply personal notation and not an independent mechanism claim.",
+    "Historical chronological ordering, visibility, access, and derivation are distinct propositions.",
+    "GitHub repositories under same owner are one source ancestry for witness-count purposes."
+  ],
+  "related": [
+    "PROVENANCE-015-INDEPENDENT-NAMING-WITNESS-2026-11-24",
+    "PROVENANCE-016-PREANNOUNCEMENT-POST-AUTHENTICATION-2026-11-24"
+  ],
+  "media_archived": false
+}
