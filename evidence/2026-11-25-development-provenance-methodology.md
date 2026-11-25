@@ -1,0 +1,5 @@
+# CONVERGENCE-010 — Development provenance methodology
+
+User-directed methodological revision: evaluate software features through problem origin, design rationale, conceptual ancestry, named contributors, implementation, failures, corrections, tests, integration and release, rather than timestamps alone. EVE Tangent has recovered raw dialogue, correction, closure and constitutional synthesis (Exhibits 001–008). User reports a book about Tangent; exact book and contents still require retrieval. Claude /btw has documented experimental hint, user failure reports and named representative acknowledgment, but original design rationale, inventor, source implementation and inspiration not yet recovered in this audit. Missing public documentation is a provenance gap, not affirmative evidence of copying or concealment; private software development may not publish all stages. Apply symmetric standards to both corpora. Preserve chronology and counterevidence. Next: locate exact Tangent book and compare its design history to external feature documentation, historical issues, releases and attributable design records. No transmission established.
+
+.dlw
